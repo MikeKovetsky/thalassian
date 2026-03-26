@@ -1,112 +1,226 @@
 [
   {
-    "word": "belore",
-    "translation": {
-      "uk": "сонце",
-      "en": "sun"
-    },
+    "word": "alar",
+    "translation": { "uk": "фенікс", "en": "phoenix" },
     "pos": "noun",
     "canon": true,
-    "root": "bel",
-    "notes": "Used in 'Anu belore dela'na'"
-  },
-  {
-    "word": "sindo",
-    "translation": {
-      "uk": "кров",
-      "en": "blood"
-    },
-    "pos": "noun",
-    "canon": true,
-    "root": "sin",
-    "notes": "Used in 'Sin'dorei'"
-  },
-  {
-    "word": "dorei",
-    "translation": {
-      "uk": "діти/народ",
-      "en": "children/people"
-    },
-    "pos": "noun",
-    "canon": true,
-    "root": "dor",
-    "notes": "Used in Sin'dorei, Kal'dorei, Quel'dorei"
-  },
-  {
-    "word": "felo",
-    "translation": {
-      "uk": "магія/полум'я",
-      "en": "magic/flame"
-    },
-    "pos": "noun",
-    "canon": true,
-    "root": "fel",
-    "notes": "Used in Felo'melorn (Flamestrike)"
-  },
-  {
-    "word": "shindu",
-    "translation": {
-      "uk": "падіння/горе",
-      "en": "falling/tragedy"
-    },
-    "pos": "noun",
-    "canon": true,
-    "root": "shin",
-    "notes": "Used in 'Shindu fallah na!'"
-  },
-  {
-    "word": "selama",
-    "translation": {
-      "uk": "справедливість",
-      "en": "justice"
-    },
-    "pos": "noun",
-    "canon": true,
-    "root": "sel",
-    "notes": "Used in 'Selama ashal'anore'"
-  },
-  {
-    "word": "ashal",
-    "translation": {
-      "uk": "великий/світлий",
-      "en": "great/bright"
-    },
-    "pos": "adjective",
-    "canon": true,
-    "root": "ash",
-    "notes": ""
+    "root": "alar",
+    "notes": "Name of Kael'thas' pet phoenix god, Al'ar."
   },
   {
     "word": "anore",
-    "translation": {
-      "uk": "нація/народ",
-      "en": "nation/people"
-    },
+    "translation": { "uk": "народ/нація", "en": "people/nation" },
     "pos": "noun",
     "canon": true,
     "root": "anor",
-    "notes": ""
+    "notes": "Used in 'ashal'anore' (great people)."
   },
   {
-    "word": "malanore",
-    "translation": {
-      "uk": "мандрівник",
-      "en": "traveler"
-    },
-    "pos": "noun",
+    "word": "anu",
+    "translation": { "uk": "хай/привіт", "en": "hail/greetings" },
+    "pos": "interjection",
     "canon": true,
-    "root": "mala",
-    "notes": "Used in 'Bal'a dash, malanore'"
+    "root": "anu",
+    "notes": "Used in 'Anu belore dela'na'."
   },
   {
-    "word": "bal",
-    "translation": {
-      "uk": "привіт",
-      "en": "hello/greetings"
-    },
+    "word": "ashal",
+    "translation": { "uk": "великий/світлий", "en": "great/glorious" },
+    "pos": "adjective",
+    "canon": true,
+    "root": "ashal",
+    "notes": "Used in 'Selama ashal'anore' (Justice for our great people)."
+  },
+  {
+    "word": "bal'a",
+    "translation": { "uk": "вітаю", "en": "greetings" },
     "pos": "interjection",
     "canon": true,
     "root": "bal",
-    "notes": "Bal'a dash"
+    "notes": "Used in 'Bal'a dash, malanore' (Greetings, traveler)."
+  },
+  {
+    "word": "dash",
+    "translation": { "uk": "мир/шлях", "en": "peace/path" },
+    "pos": "noun",
+    "canon": true,
+    "root": "dash",
+    "notes": "Contextual from 'Bal'a dash' (Greetings/Peace be with you)."
+  },
+  {
+    "word": "belore",
+    "translation": { "uk": "сонце", "en": "sun" },
+    "pos": "noun",
+    "canon": true,
+    "root": "bel",
+    "notes": "Central concept of Blood Elf culture. 'Anu belore dela'na' (The sun guides us)."
+  },
+  {
+    "word": "dela",
+    "translation": { "uk": "вести/світити", "en": "guide/shine" },
+    "pos": "verb",
+    "canon": true,
+    "root": "del",
+    "notes": "Used in 'dela'na' (guides us)."
+  },
+  {
+    "word": "na",
+    "translation": { "uk": "нас/ми", "en": "us/we" },
+    "pos": "pronoun",
+    "canon": true,
+    "root": "na",
+    "notes": "Pronoun suffix."
+  },
+  {
+    "word": "dorei",
+    "translation": { "uk": "діти/народжені", "en": "children/born of" },
+    "pos": "noun",
+    "canon": true,
+    "root": "dor",
+    "notes": "Sin'dorei (Children of Blood), Quel'dorei (High Elves), Kal'dorei (Night Elves)."
+  },
+  {
+    "word": "sin",
+    "translation": { "uk": "кров", "en": "blood" },
+    "pos": "noun",
+    "canon": true,
+    "root": "sin",
+    "notes": "Sin'dorei."
+  },
+  {
+    "word": "quel",
+    "translation": { "uk": "високий/шляхетний", "en": "high/noble" },
+    "pos": "adjective",
+    "canon": true,
+    "root": "quel",
+    "notes": "Quel'Thalas (High Kingdom), Quel'dorei (High Elves), Quel'Serrar (High Blade)."
+  },
+  {
+    "word": "thalas",
+    "translation": { "uk": "дім/королівство", "en": "home/kingdom" },
+    "pos": "noun",
+    "canon": true,
+    "root": "thal",
+    "notes": "Quel'Thalas (High Kingdom)."
+  },
+  {
+    "word": "felo",
+    "translation": { "uk": "вогонь/полум'я", "en": "fire/flame" },
+    "pos": "noun",
+    "canon": true,
+    "root": "fel",
+    "notes": "Felo'melorn (Flamestrike)."
+  },
+  {
+    "word": "melorn",
+    "translation": { "uk": "удар/гнів", "en": "strike/fury" },
+    "pos": "noun",
+    "canon": true,
+    "root": "mel",
+    "notes": "Felo'melorn (Flamestrike)."
+  },
+  {
+    "word": "malanore",
+    "translation": { "uk": "мандрівник", "en": "traveler" },
+    "pos": "noun",
+    "canon": true,
+    "root": "mal",
+    "notes": "Bal'a dash, malanore."
+  },
+  {
+    "word": "selama",
+    "translation": { "uk": "справедливість", "en": "justice" },
+    "pos": "noun",
+    "canon": true,
+    "root": "selam",
+    "notes": "Selama ashal'anore (Justice for our great people)."
+  },
+  {
+    "word": "shindu",
+    "translation": { "uk": "падіння/поразка", "en": "failing/doom" },
+    "pos": "noun",
+    "canon": true,
+    "root": "shind",
+    "notes": "Shindu fallah na! (They're breaking through!)."
+  },
+  {
+    "word": "fallah",
+    "translation": { "uk": "прорив/напад", "en": "breakthrough/attack" },
+    "pos": "verb",
+    "canon": true,
+    "root": "fal",
+    "notes": "Shindu fallah na!"
+  },
+  {
+    "word": "anaria",
+    "translation": { "uk": "говорити/сказати", "en": "speak/say" },
+    "pos": "verb",
+    "canon": true,
+    "root": "anar",
+    "notes": "Anaria shola (Speak your business)."
+  },
+  {
+    "word": "shola",
+    "translation": { "uk": "справа/намір", "en": "business/intent" },
+    "pos": "noun",
+    "canon": true,
+    "root": "shol",
+    "notes": "Anaria shola."
+  },
+  {
+    "word": "bash'a",
+    "translation": { "uk": "смерть/руйнування", "en": "death/destruction" },
+    "pos": "noun",
+    "canon": true,
+    "root": "bash",
+    "notes": "Bash'a no falor talah! (Kael'thas combat quote)."
+  },
+  {
+    "word": "serrar",
+    "translation": { "uk": "лезо/клинок", "en": "blade" },
+    "pos": "noun",
+    "canon": true,
+    "root": "ser",
+    "notes": "Quel'Serrar (High Blade)."
+  },
+  {
+    "word": "delar",
+    "translation": { "uk": "меч/охоронець", "en": "sword/keeper" },
+    "pos": "noun",
+    "canon": true,
+    "root": "del",
+    "notes": "Quel'Delar."
+  },
+  {
+    "word": "ban",
+    "translation": { "uk": "брама/прохід", "en": "gate/passage" },
+    "pos": "noun",
+    "canon": true,
+    "root": "ban",
+    "notes": "Ban'dinoriel (The Gatekeeper / shield in Silvermoon)."
+  },
+  {
+    "word": "dinoriel",
+    "translation": { "uk": "сторож/охоронець", "en": "watcher/keeper" },
+    "pos": "noun",
+    "canon": true,
+    "root": "din",
+    "notes": "Ban'dinoriel."
+  },
+  {
+    "word": "el",
+    "translation": { "uk": "мир/спокій", "en": "peace" },
+    "pos": "noun",
+    "canon": true,
+    "root": "el",
+    "notes": "Al diel shala (Travel in peace)."
+  },
+  {
+    "word": "talah",
+    "translation": { "uk": "виживання/виживати", "en": "survive/endure" },
+    "pos": "verb",
+    "canon": true,
+    "root": "tal",
+    "notes": "Bash'a no falor talah!"
   }
 ]
