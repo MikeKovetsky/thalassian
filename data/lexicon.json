@@ -1006,5 +1006,41 @@
     "root": "ana",
     "notes": "Doral ana'diel?",
     "source": "thalassian"
+  },
+  {
+    "word": "carth",
+    "translation": {
+      "uk": "працювати/робити",
+      "en": "work/do"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "carth",
+    "notes": "Generated for modern conversational conlang",
+    "source": "generated"
+  },
+  {
+    "word": "neal",
+    "translation": {
+      "uk": "новий",
+      "en": "new"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "neal",
+    "notes": "Generated",
+    "source": "generated"
+  },
+  {
+    "word": "sira",
+    "translation": {
+      "uk": "сьогодні/день",
+      "en": "today/day"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "sir",
+    "notes": "Generated",
+    "source": "generated"
   }
 ]
