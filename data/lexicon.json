@@ -1042,5 +1042,281 @@
     "root": "sir",
     "notes": "Generated",
     "source": "generated"
+  },
+  {
+    "word": "thala",
+    "translation": {
+      "uk": "жити/існувати",
+      "en": "live/exist"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "thal",
+    "notes": "From Thalas (home)",
+    "source": "generated"
+  },
+  {
+    "word": "tana",
+    "translation": {
+      "uk": "торкатися/відчувати",
+      "en": "touch/feel"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "tan",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "mith",
+    "translation": {
+      "uk": "говорити/сказати (просто)",
+      "en": "speak/say (simple)"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "mith",
+    "notes": "Phonotactically generated (contrast with anaria - formal speak)",
+    "source": "generated"
+  },
+  {
+    "word": "ashad",
+    "translation": {
+      "uk": "шукати/знаходити",
+      "en": "find/seek"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ashad",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "iel",
+    "translation": {
+      "uk": "любити/бажати",
+      "en": "love/desire"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "iel",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "doras",
+    "translation": {
+      "uk": "розуміти/знати",
+      "en": "understand/know"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "doras",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "sir",
+    "translation": {
+      "uk": "день",
+      "en": "day"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "sir",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "lura",
+    "translation": {
+      "uk": "вода/море",
+      "en": "water/sea"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "lur",
+    "notes": "Lura (Sea) from Voyage to the Sunken City",
+    "source": "thalassian"
+  },
+  {
+    "word": "fa",
+    "translation": {
+      "uk": "дерево/ліс",
+      "en": "tree/wood"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "fa",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "suran",
+    "translation": {
+      "uk": "серце/душа",
+      "en": "heart/soul"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "suran",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "reom",
+    "translation": {
+      "uk": "їжа/хліб",
+      "en": "food/bread"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "reom",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "isbab",
+    "translation": {
+      "uk": "фортеця/дім",
+      "en": "fortress/house"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "isbab",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "dara",
+    "translation": {
+      "uk": "добрий/хороший",
+      "en": "good/pleasant"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "dara",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "astor",
+    "translation": {
+      "uk": "сильний/потужний",
+      "en": "strong/powerful"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "astor",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "nubu",
+    "translation": {
+      "uk": "швидкий",
+      "en": "fast/quick"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "nub",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "morn",
+    "translation": {
+      "uk": "чорний/темний",
+      "en": "black/dark"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "morn",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "nu",
+    "translation": {
+      "uk": "білий/світлий",
+      "en": "white/light"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "nu",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "san",
+    "translation": {
+      "uk": "червоний",
+      "en": "red"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "san",
+    "notes": "Phonotactically generated (related to sin/blood)",
+    "source": "generated"
+  },
+  {
+    "word": "aroth",
+    "translation": {
+      "uk": "синій",
+      "en": "blue"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "aroth",
+    "notes": "Phonotactically generated",
+    "source": "generated"
+  },
+  {
+    "word": "isera",
+    "translation": {
+      "uk": "зелений",
+      "en": "green"
+    },
+    "pos": "adjective",
+    "canon": true,
+    "root": "iser",
+    "notes": "Ysera (Green Aspect) -> isera (green)",
+    "source": "darnassian"
+  },
+  {
+    "word": "on",
+    "translation": {
+      "uk": "я (називний)",
+      "en": "I (nominative)"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "on",
+    "notes": "Independent pronoun (derived from suffix 'o)",
+    "source": "generated"
+  },
+  {
+    "word": "la",
+    "translation": {
+      "uk": "ні/не",
+      "en": "no/not"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "la",
+    "notes": "Negative particle",
+    "source": "generated"
+  },
+  {
+    "word": "fanah",
+    "translation": {
+      "uk": "так/справді",
+      "en": "yes/indeed"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "fana",
+    "notes": "Affirmative particle",
+    "source": "generated"
   }
 ]
