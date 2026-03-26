@@ -1,7 +1,10 @@
 [
   {
     "word": "alar",
-    "translation": { "uk": "фенікс", "en": "phoenix" },
+    "translation": {
+      "uk": "фенікс",
+      "en": "phoenix"
+    },
     "pos": "noun",
     "canon": true,
     "root": "alar",
@@ -9,7 +12,10 @@
   },
   {
     "word": "anore",
-    "translation": { "uk": "народ/нація", "en": "people/nation" },
+    "translation": {
+      "uk": "народ/нація",
+      "en": "people/nation"
+    },
     "pos": "noun",
     "canon": true,
     "root": "anor",
@@ -17,7 +23,10 @@
   },
   {
     "word": "anu",
-    "translation": { "uk": "хай/привіт", "en": "hail/greetings" },
+    "translation": {
+      "uk": "хай/привіт",
+      "en": "hail/greetings"
+    },
     "pos": "interjection",
     "canon": true,
     "root": "anu",
@@ -25,7 +34,10 @@
   },
   {
     "word": "ashal",
-    "translation": { "uk": "великий/світлий", "en": "great/glorious" },
+    "translation": {
+      "uk": "великий/світлий",
+      "en": "great/glorious"
+    },
     "pos": "adjective",
     "canon": true,
     "root": "ashal",
@@ -33,7 +45,10 @@
   },
   {
     "word": "bal'a",
-    "translation": { "uk": "вітаю", "en": "greetings" },
+    "translation": {
+      "uk": "вітаю",
+      "en": "greetings"
+    },
     "pos": "interjection",
     "canon": true,
     "root": "bal",
@@ -41,7 +56,10 @@
   },
   {
     "word": "dash",
-    "translation": { "uk": "мир/шлях", "en": "peace/path" },
+    "translation": {
+      "uk": "мир/шлях",
+      "en": "peace/path"
+    },
     "pos": "noun",
     "canon": true,
     "root": "dash",
@@ -49,7 +67,10 @@
   },
   {
     "word": "belore",
-    "translation": { "uk": "сонце", "en": "sun" },
+    "translation": {
+      "uk": "сонце",
+      "en": "sun"
+    },
     "pos": "noun",
     "canon": true,
     "root": "bel",
@@ -57,7 +78,10 @@
   },
   {
     "word": "dela",
-    "translation": { "uk": "вести/світити", "en": "guide/shine" },
+    "translation": {
+      "uk": "вести/світити",
+      "en": "guide/shine"
+    },
     "pos": "verb",
     "canon": true,
     "root": "del",
@@ -65,7 +89,10 @@
   },
   {
     "word": "na",
-    "translation": { "uk": "нас/ми", "en": "us/we" },
+    "translation": {
+      "uk": "нас/ми",
+      "en": "us/we"
+    },
     "pos": "pronoun",
     "canon": true,
     "root": "na",
@@ -73,7 +100,10 @@
   },
   {
     "word": "dorei",
-    "translation": { "uk": "діти/народжені", "en": "children/born of" },
+    "translation": {
+      "uk": "діти/народжені",
+      "en": "children/born of"
+    },
     "pos": "noun",
     "canon": true,
     "root": "dor",
@@ -81,7 +111,10 @@
   },
   {
     "word": "sin",
-    "translation": { "uk": "кров", "en": "blood" },
+    "translation": {
+      "uk": "кров",
+      "en": "blood"
+    },
     "pos": "noun",
     "canon": true,
     "root": "sin",
@@ -89,7 +122,10 @@
   },
   {
     "word": "quel",
-    "translation": { "uk": "високий/шляхетний", "en": "high/noble" },
+    "translation": {
+      "uk": "високий/шляхетний",
+      "en": "high/noble"
+    },
     "pos": "adjective",
     "canon": true,
     "root": "quel",
@@ -97,7 +133,10 @@
   },
   {
     "word": "thalas",
-    "translation": { "uk": "дім/королівство", "en": "home/kingdom" },
+    "translation": {
+      "uk": "дім/королівство",
+      "en": "home/kingdom"
+    },
     "pos": "noun",
     "canon": true,
     "root": "thal",
@@ -105,7 +144,10 @@
   },
   {
     "word": "felo",
-    "translation": { "uk": "вогонь/полум'я", "en": "fire/flame" },
+    "translation": {
+      "uk": "вогонь/полум'я",
+      "en": "fire/flame"
+    },
     "pos": "noun",
     "canon": true,
     "root": "fel",
@@ -113,7 +155,10 @@
   },
   {
     "word": "melorn",
-    "translation": { "uk": "удар/гнів", "en": "strike/fury" },
+    "translation": {
+      "uk": "удар/гнів",
+      "en": "strike/fury"
+    },
     "pos": "noun",
     "canon": true,
     "root": "mel",
@@ -121,7 +166,10 @@
   },
   {
     "word": "malanore",
-    "translation": { "uk": "мандрівник", "en": "traveler" },
+    "translation": {
+      "uk": "мандрівник",
+      "en": "traveler"
+    },
     "pos": "noun",
     "canon": true,
     "root": "mal",
@@ -129,7 +177,10 @@
   },
   {
     "word": "selama",
-    "translation": { "uk": "справедливість", "en": "justice" },
+    "translation": {
+      "uk": "справедливість",
+      "en": "justice"
+    },
     "pos": "noun",
     "canon": true,
     "root": "selam",
@@ -137,7 +188,10 @@
   },
   {
     "word": "shindu",
-    "translation": { "uk": "падіння/поразка", "en": "failing/doom" },
+    "translation": {
+      "uk": "падіння/поразка",
+      "en": "failing/doom"
+    },
     "pos": "noun",
     "canon": true,
     "root": "shind",
@@ -145,7 +199,10 @@
   },
   {
     "word": "fallah",
-    "translation": { "uk": "прорив/напад", "en": "breakthrough/attack" },
+    "translation": {
+      "uk": "прорив/напад",
+      "en": "breakthrough/attack"
+    },
     "pos": "verb",
     "canon": true,
     "root": "fal",
@@ -153,7 +210,10 @@
   },
   {
     "word": "anaria",
-    "translation": { "uk": "говорити/сказати", "en": "speak/say" },
+    "translation": {
+      "uk": "говорити/сказати",
+      "en": "speak/say"
+    },
     "pos": "verb",
     "canon": true,
     "root": "anar",
@@ -161,7 +221,10 @@
   },
   {
     "word": "shola",
-    "translation": { "uk": "справа/намір", "en": "business/intent" },
+    "translation": {
+      "uk": "справа/намір",
+      "en": "business/intent"
+    },
     "pos": "noun",
     "canon": true,
     "root": "shol",
@@ -169,7 +232,10 @@
   },
   {
     "word": "bash'a",
-    "translation": { "uk": "смерть/руйнування", "en": "death/destruction" },
+    "translation": {
+      "uk": "смерть/руйнування",
+      "en": "death/destruction"
+    },
     "pos": "noun",
     "canon": true,
     "root": "bash",
@@ -177,7 +243,10 @@
   },
   {
     "word": "serrar",
-    "translation": { "uk": "лезо/клинок", "en": "blade" },
+    "translation": {
+      "uk": "лезо/клинок",
+      "en": "blade"
+    },
     "pos": "noun",
     "canon": true,
     "root": "ser",
@@ -185,7 +254,10 @@
   },
   {
     "word": "delar",
-    "translation": { "uk": "меч/охоронець", "en": "sword/keeper" },
+    "translation": {
+      "uk": "меч/охоронець",
+      "en": "sword/keeper"
+    },
     "pos": "noun",
     "canon": true,
     "root": "del",
@@ -193,7 +265,10 @@
   },
   {
     "word": "ban",
-    "translation": { "uk": "брама/прохід", "en": "gate/passage" },
+    "translation": {
+      "uk": "брама/прохід",
+      "en": "gate/passage"
+    },
     "pos": "noun",
     "canon": true,
     "root": "ban",
@@ -201,7 +276,10 @@
   },
   {
     "word": "dinoriel",
-    "translation": { "uk": "сторож/охоронець", "en": "watcher/keeper" },
+    "translation": {
+      "uk": "сторож/охоронець",
+      "en": "watcher/keeper"
+    },
     "pos": "noun",
     "canon": true,
     "root": "din",
@@ -209,7 +287,10 @@
   },
   {
     "word": "el",
-    "translation": { "uk": "мир/спокій", "en": "peace" },
+    "translation": {
+      "uk": "мир/спокій",
+      "en": "peace"
+    },
     "pos": "noun",
     "canon": true,
     "root": "el",
@@ -217,10 +298,189 @@
   },
   {
     "word": "talah",
-    "translation": { "uk": "виживання/виживати", "en": "survive/endure" },
+    "translation": {
+      "uk": "виживання/виживати",
+      "en": "survive/endure"
+    },
     "pos": "verb",
     "canon": true,
     "root": "tal",
     "notes": "Bash'a no falor talah!"
+  },
+  {
+    "word": "drassil",
+    "translation": {
+      "uk": "корона",
+      "en": "crown"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "dras",
+    "notes": "Darnassian: Teldrassil, Nordrassil, Andrassil"
+  },
+  {
+    "word": "tel",
+    "translation": {
+      "uk": "земля",
+      "en": "earth"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "tel",
+    "notes": "Darnassian: Teldrassil"
+  },
+  {
+    "word": "nor",
+    "translation": {
+      "uk": "небеса",
+      "en": "heavens"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "nor",
+    "notes": "Darnassian: Nordrassil"
+  },
+  {
+    "word": "an",
+    "translation": {
+      "uk": "сніг",
+      "en": "snow"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "an",
+    "notes": "Darnassian: Andrassil"
+  },
+  {
+    "word": "kal",
+    "translation": {
+      "uk": "зірка/зірки",
+      "en": "star(s)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "kal",
+    "notes": "Darnassian: Kal'dorei (Children of the Stars)"
+  },
+  {
+    "word": "ishnu",
+    "translation": {
+      "uk": "удача/добробут",
+      "en": "good fortune"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "ish",
+    "notes": "Darnassian: Ishnu-alah"
+  },
+  {
+    "word": "alah",
+    "translation": {
+      "uk": "тобі/вам",
+      "en": "to you"
+    },
+    "pos": "pronoun",
+    "canon": true,
+    "root": "alah",
+    "notes": "Darnassian: Ishnu-alah (Good fortune to you)"
+  },
+  {
+    "word": "dieb",
+    "translation": {
+      "uk": "родина/сім'я",
+      "en": "family"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "dieb",
+    "notes": "Darnassian: Ishnu-dal-dieb"
+  },
+  {
+    "word": "dal",
+    "translation": {
+      "uk": "твоїй/вашій",
+      "en": "to your"
+    },
+    "pos": "pronoun",
+    "canon": true,
+    "root": "dal",
+    "notes": "Darnassian: Ishnu-dal-dieb"
+  },
+  {
+    "word": "shan",
+    "translation": {
+      "uk": "шановний/поважний",
+      "en": "honored"
+    },
+    "pos": "adjective",
+    "canon": true,
+    "root": "shan",
+    "notes": "Darnassian: Shan'do, Thero'shan"
+  },
+  {
+    "word": "do",
+    "translation": {
+      "uk": "вчитель",
+      "en": "teacher"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "do",
+    "notes": "Darnassian: Shan'do"
+  },
+  {
+    "word": "thero",
+    "translation": {
+      "uk": "учень",
+      "en": "student"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "thero",
+    "notes": "Darnassian: Thero'shan"
+  },
+  {
+    "word": "zin",
+    "translation": {
+      "uk": "слава",
+      "en": "glory"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "zin",
+    "notes": "Darnassian: Zin-Azshari"
+  },
+  {
+    "word": "finel",
+    "translation": {
+      "uk": "останній",
+      "en": "the last"
+    },
+    "pos": "adjective",
+    "canon": true,
+    "root": "finel",
+    "notes": "Darnassian: Finel"
+  },
+  {
+    "word": "minda",
+    "translation": {
+      "uk": "мама",
+      "en": "mama"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "min",
+    "notes": "Darnassian: Min'da"
+  },
+  {
+    "word": "anda",
+    "translation": {
+      "uk": "тато",
+      "en": "papa"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "an",
+    "notes": "Darnassian: An'da"
   }
 ]
