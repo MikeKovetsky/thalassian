@@ -201,7 +201,23 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            min-height: 24px;
+            min-height: 48px;
+        }
+
+        .label-text-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            justify-content: center;
+        }
+
+        .label-hint {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.65rem;
+            text-transform: none;
+            color: #665;
+            letter-spacing: 0;
+            white-space: nowrap;
         }
 
         textarea {
@@ -385,13 +401,19 @@
 
         <div class="translator-grid">
             <div class="io-box">
-                <label for="input-text">English / Ukrainian / Thalassian</label>
+                <label for="input-text">
+                    <div class="label-text-group">
+                        <span>English / Ukrainian / Thalassian</span>
+                    </div>
+                </label>
                 <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us.&#10;e.g., Belore dela'na."></textarea>
             </div>
             <div class="io-box">
                 <label for="output-text">
-                    Translation Output
-                    <span style="font-size: 0.75rem; text-transform: none; color: #665; white-space: nowrap; margin-left: auto;">(Auto-detected direction)</span>
+                    <div class="label-text-group">
+                        <span>Translation Output</span>
+                        <span class="label-hint">(Auto-detected direction)</span>
+                    </div>
                 </label>
                 <textarea id="output-text" readonly placeholder="Translation will manifest here..."></textarea>
             </div>
