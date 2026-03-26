@@ -1,4 +1,4 @@
-# Open Thalassian (Sin'dorei Language Engine)
+# Thalassian (Sin'dorei Language Engine)
 
 Engineering a fully functional spoken language based on Thalassian (Blood Elves, World of Warcraft). 
 This repository contains the phonotactic engine, the single-source-of-truth lexicon, and eventually the grammar compiler.
