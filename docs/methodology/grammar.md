@@ -1,26 +1,36 @@
-# Граматика Талассіану (Thalassian Grammar)
+# Thalassian Grammar
 
-Цей документ описує структурні правила (синтаксис та морфологію) мови, реконструйовані з канонічних фраз World of Warcraft та екстрапольовані для конлангу.
+This document describes the structural rules (syntax and morphology) of the language, reconstructed from canonical World of Warcraft phrases and extrapolated for the conlang.
 
-## 1. Порядок слів (Word Order)
-Ми використовуємо стандартний аналітичний порядок: **Підмет — Присудок — Додаток (SVO)**.
-Це найприродніший порядок для більшості світових мов, а також він прослідковується у більшості перекладених фраз Бліззард.
-- *Приклад:* Я бачу сонце -> SVO.
+## 1. Word Order
+We use standard analytical word order: **Subject — Verb — Object (SVO)**.
+This is the most natural order for the majority of global languages and is observable in most of Blizzard's translated phrases.
+- *Example:* The sun guides us -> SVO.
 
-## 2. Відмінки (Cases)
-Ельфійська мова не має складних відмінків для іменників (на відміну від української). Вона використовує прийменники або просто жорсткий порядок слів, як в англійській чи есперанто.
+## 2. Cases
+Elven language does not utilize complex noun cases (unlike Slavic languages). It relies on a strict word order and agglutination, similar to English or Esperanto.
 
-## 3. Часи дієслів (Tenses)
-Щоб зберегти мову "лоре-френдлі" та уникнути перевантаження таблицями дієвідмін, використовуються часові маркери (частинки, що додаються до дієслова):
-- **Теперішній час:** Базовий корінь дієслова (напр. *dela* - вести).
-- **Минулий час:** Суфікс `-ash` (від *ashal* - завершений/великий). Напр. *dela'ash* (вів).
-- **Майбутній час:** Префікс `ru-` (від *ru shanna* - буде виживати). Напр. *ru'dela* (буде вести).
+## 3. Verb Tenses
+To keep the language "lore-friendly" and avoid overloading it with conjugation tables, tense markers (particles/affixes) are used:
+- **Present Tense:** Base verb root (e.g., *dela* - guide).
+- **Past Tense:** Suffix `-ash` (derived from *ashal* - complete/great). E.g., *dela'ash* (guided).
+- **Future Tense:** Prefix `ru-` (derived from *ru shanna* - will survive). E.g., *ru'dela* (will guide).
 
-## 4. Множина (Plurals)
-З канону ми знаємо, що множина часто формується закінченням `-i` або зміною кінцевої голосної на дифтонг `-ei` (dore -> dorei).
-- **Правило 1:** Якщо слово закінчується на приголосну, додається `-i` (напр. *alar* -> *alari* - фенікси).
-- **Правило 2:** Якщо слово закінчується на голосну, додається `-i` з утворенням дифтонгу, або голосна подовжується (напр. *sindo* -> *sindorei*, *shola* -> *sholai*).
+## 4. Plurals
+From the canon, we know plurals are often formed by adding the suffix `-i` or changing the final vowel to the diphthong `-ei` (dore -> dorei).
+- **Rule 1:** If the word ends with a consonant, add `-i` (e.g., *alar* -> *alari* - phoenixes).
+- **Rule 2:** If the word ends with a vowel, add `-i` to form a diphthong, or extend the vowel (e.g., *sindo* -> *sindorei*, *shola* -> *sholai*).
 
-## 5. Прикметники (Adjectives)
-Прикметник може стояти як ПЕРЕД іменником (якщо вони зливаються у термін, напр. *Quel'dorei* - Високі ельфи), так і ПІСЛЯ іменника у поетичному або описовому контексті (напр. *Selama ashal* - Справедливість велика). 
-Для конлангу базовим правилом для складених слів є: **Прикметник + Іменник**.
+## 5. Agglutination (Pronouns & Prepositions)
+This is the core feature of Thalassian grammar:
+- **Pronouns:** Pronouns are not standalone subjects/objects when a verb is present. They attach to the end of verbs using an apostrophe.
+  - `o` = me/I
+  - `a` = you
+  - `na` = us/we
+  - *Example:* `dela'na` (guides us).
+- **Prepositions:** Elves generally drop prepositions ("for", "of", "to") for brevity. The relationship is conveyed by context or compounding.
+  - *Example:* `Selama ashal'anore` (Justice [for our] great people).
+
+## 6. Adjectives
+Adjectives can precede the noun when they merge into a term (e.g., *Quel'dorei* - High elves), or follow the noun in poetic contexts.
+For the conlang, the base rule for compound words is: **Adjective + Noun**.

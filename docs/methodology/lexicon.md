@@ -1,30 +1,30 @@
-# Методологія збору Лексикону (Lexicon Methodology)
+# Lexicon Methodology (Canon-First Approach)
 
-Цей документ описує суворий "Canon-First" підхід до створення та розширення мови Талассіан.
+This document outlines the strict "Canon-First" methodology used to construct and expand the Thalassian language.
 
-## 1. Проблема старого підходу
-Більшість існуючих фанатських проєктів (напр. вікі PBWorks з 2008 року) базувалися на вигадуванні слів з нуля через відсутність достатньої кількості лору. Це призвело до того, що старі словники жорстко суперечать офіційному канону, який Blizzard (зокрема Loreology) випустили у 2014-2024 роках.
+## 1. The Problem with Legacy Projects
+Most existing fan projects (e.g., the PBWorks wiki from 2008) relied heavily on inventing words from scratch due to a lack of available lore at the time. This resulted in legacy dictionaries that starkly contradict the official canon released by Blizzard (particularly by Loreology between 2014-2024).
 
-**Наша мета:** Жодних випадкових вигадок. Ми будуємо мову на основі етимології та існуючих коренів.
+**Our Goal:** Zero random inventions. We build the language based on etymology, linguistic drift, and verified existing roots.
 
-## 2. Canon-First підхід (Збір коренів)
-Усі слова в `data/lexicon.json` збираються виключно з трьох офіційних джерел (діалектів):
-1. **Thalassian (Вищі Ельфи / Ельфи Крові / Ельфи Безодні):** Основний сучасний діалект.
-2. **Darnassian (Нічні Ельфи):** Мова-пращур. Ми екстрагуємо базові корені (наприклад, `drassil` - корона, `kal` - зірки) для розуміння словотворення. Звертаємо увагу на лінгвістичний дрейф (напр. Дарнассіан `Falo` -> Талассіан `Felo`).
-3. **Shalassian (Нічнонароджені / Сурамар):** Архаїчний діалект, що законсервувався під куполом. Надає доступ до стародавніх Високонароджених (Highborne) коренів.
+## 2. Canon-First Approach (Root Gathering)
+All words in `data/lexicon.json` are gathered exclusively from three official lore dialects:
+1. **Thalassian (High Elves / Blood Elves / Void Elves):** The primary modern dialect.
+2. **Darnassian (Night Elves):** The ancestral language. We extract base roots (e.g., `drassil` - crown, `kal` - stars) to understand word formation. We also study linguistic drift (e.g., Darnassian `Falo` -> Thalassian `Felo`).
+3. **Shalassian (Nightborne / Suramar):** An archaic dialect preserved under the dome. It provides access to ancient Highborne roots.
 
-Кожне зібране слово розбивається на атрибути: `word`, `root` (корінь), `translation` (переклад uk/en), `pos` (частина мови), `canon` (чи це слово від Blizzard) та `source` (діалект).
+Each gathered word is broken down into attributes: `word`, `root`, `translation` (EN/UK), `pos` (part of speech), `canon` (boolean flag), and `source` (dialect).
 
-## 3. Розширення словника (Екстраполяція)
-Оскільки Blizzard не надали словник Сводеша (базові 100-200 слів для спілкування), ми розширюємо мову двома інструментами:
+## 3. Lexicon Expansion (Extrapolation)
+Because Blizzard did not provide a full Swadesh list (the basic 100-200 words needed for communication), we expand the language using two tools:
 
-### A. Phonotactic Generator (Генератор нових коренів)
-Для слів, яких немає у лорі (напр. "вода", "камінь", "бігти"), ми не вигадуємо їх вручну. Алгоритм (Ланцюги Маркова) аналізує частотність буквосполучень і складів у 75+ канонічних коренях і генерує абсолютно нові корені, які на 100% звучать лоре-френдлі (напр. `Thela`, `Falol`). Цим словам надається статус `canon: false`.
+### A. Phonotactic Generator (New Roots)
+For words that do not exist in the lore (e.g., "water", "stone", "run"), we do not invent them manually. A Markov-chain algorithm analyzes the frequency of letter combinations and syllables in our 75+ canon roots to generate entirely new roots that sound 100% lore-friendly (e.g., `Thela`, `Falol`). These words are marked with `canon: false`.
 
-### B. Lexicon Combiner (Комбінатор)
-Маючи базу канонічних і згенерованих коренів, ми створюємо складні слова за правилами ельфійського словотворення (з кінця на початок або злиттям). Наприклад:
-- `thas` (ліс) + `aran` (місто) = **Thas'aran** (Лісове місто)
-- `sin` (кров) + `dash` (шлях) = **Sindash** (Кривавий шлях)
+### B. Lexicon Combiner (Complex Words)
+Using the database of canon and generated roots, we create complex words following Elvish compounding rules (reverse order or seamless merging). For example:
+- `thas` (forest) + `aran` (city) = **Thas'aran** (Forest City)
+- `sin` (blood) + `dash` (path) = **Sindash** (Blood Path)
 
-## 4. Датамайнінг (Midnight та майбутні патчі)
-Для підтримки словника в актуальному стані створено `scraper_wowhead.py`. Цей інструмент парсить текстові дампи діалогів (наприклад, з доповнення *World of Warcraft: Midnight*, яке фокусується на Кель'Таласі) і витягує нові слова на основі лінгвістичних патернів (наявність апострофів, специфічні закінчення), відкидаючи англійський текст. Ці слова додаються до бази як нові канонічні корені.
+## 4. Datamining (Midnight and Future Patches)
+To keep the dictionary updated, we use `scraper_wowhead.py`. This tool parses text dumps of dialogues (e.g., from the *World of Warcraft: Midnight* expansion, which focuses on Quel'Thalas) and extracts new words based on linguistic patterns (apostrophes, specific endings), filtering out English text. These words are added to the database as new canon roots.
