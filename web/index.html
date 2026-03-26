@@ -1,260 +1,403 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thalassian Translator | Sin'dorei Language Engine</title>
+    <title>Thalassian Translator | Sin'dorei Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #1a0f14;
-            --panel-bg: #2a1b24;
-            --text-color: #e0d0c1;
-            --gold-accent: #d4af37;
-            --gold-hover: #f1c40f;
-            --red-accent: #8b0000;
-            --border-radius: 8px;
+            /* Portal AI inspired modern dark theme with subtle gold/ruby accents */
+            --bg-main: #0B0B0E;
+            --bg-panel: rgba(25, 20, 24, 0.6);
+            --bg-input: rgba(10, 8, 12, 0.8);
+            --text-main: #EAE0D5;
+            --text-muted: #A09080;
+            --accent-gold: #D4AF37;
+            --accent-gold-glow: rgba(212, 175, 55, 0.3);
+            --accent-ruby: #9B2226;
+            --accent-ruby-glow: rgba(155, 34, 38, 0.5);
+            --border-subtle: rgba(212, 175, 55, 0.15);
+            --border-focus: rgba(212, 175, 55, 0.6);
+            --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(155, 34, 38, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease-out;
         }
 
         h1 {
-            color: var(--gold-accent);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(to bottom right, #FFFFFF 20%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 0 20px var(--accent-gold-glow));
         }
 
         .subtitle {
-            color: #a09080;
-            margin-bottom: 30px;
-            font-style: italic;
-            text-align: center;
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            letter-spacing: 0.05em;
         }
 
-        .container {
+        .glass-container {
             width: 100%;
-            max-width: 800px;
-            background-color: var(--panel-bg);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--red-accent);
+            max-width: 900px;
+            background: var(--bg-panel);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+            animation: fadeInUp 1s ease-out;
         }
 
-        .translator-boxes {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .translator-boxes {
-                flex-direction: column;
-            }
-        }
-
-        .box {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .box label {
-            color: var(--gold-accent);
-            font-weight: bold;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            font-size: 0.9em;
-            letter-spacing: 1px;
-        }
-
-        textarea {
-            width: 100%;
-            height: 150px;
-            background-color: #150a0f;
-            color: var(--text-color);
-            border: 1px solid #4a2a3a;
-            border-radius: var(--border-radius);
-            padding: 15px;
-            font-size: 16px;
-            resize: vertical;
-            outline: none;
-            transition: border-color 0.3s;
-            box-sizing: border-box;
-        }
-
-        textarea:focus {
-            border-color: var(--gold-accent);
-        }
-
-        /* The runic font placeholder - we use a cursive fallback for now */
-        #output-text {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 18px;
-            letter-spacing: 1px;
-        }
-
-        .controls {
+        .controls-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #4a2a3a;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 16px;
         }
 
-        .mode-selector select {
-            background-color: #150a0f;
-            color: var(--text-color);
-            border: 1px solid var(--gold-accent);
-            padding: 8px 15px;
-            border-radius: var(--border-radius);
-            font-size: 14px;
+        .mode-selector {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .mode-selector label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            letter-spacing: 0.05em;
+        }
+
+        select, input[type="password"] {
+            background: var(--bg-input);
+            color: var(--text-main);
+            border: 1px solid var(--border-subtle);
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
             outline: none;
+            transition: var(--transition);
+        }
+
+        select {
             cursor: pointer;
+            appearance: none;
+            padding-right: 30px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px;
+        }
+
+        select:hover, input[type="password"]:focus, select:focus {
+            border-color: var(--border-focus);
+            box-shadow: 0 0 10px var(--accent-gold-glow);
         }
 
         .api-key-container {
             display: flex;
-            gap: 10px;
             align-items: center;
-        }
-
-        .api-key-container input {
-            background-color: #150a0f;
-            color: var(--text-color);
-            border: 1px solid #4a2a3a;
-            padding: 8px 15px;
-            border-radius: var(--border-radius);
-            outline: none;
-            width: 250px;
-        }
-
-        .api-key-container input:focus {
-            border-color: var(--gold-accent);
-        }
-
-        button {
-            background: linear-gradient(135deg, var(--red-accent), #600000);
-            color: var(--gold-accent);
-            border: 1px solid var(--gold-accent);
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            transition: all 0.3s;
-            display: block;
-            margin: 0 auto;
-        }
-
-        button:hover {
-            background: linear-gradient(135deg, #a00000, #8b0000);
-            color: var(--gold-hover);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
-        }
-
-        .stats {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.8em;
-            color: #807060;
-        }
-
-        .stats span {
-            color: var(--gold-accent);
-            font-weight: bold;
+            gap: 12px;
         }
         
-        .loading {
-            display: none;
+        .api-key-container input {
+            width: 240px;
+            font-family: monospace;
+        }
+
+        .api-note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            max-width: 200px;
+            line-height: 1.4;
+        }
+
+        .translator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .translator-grid {
+                grid-template-columns: 1fr;
+            }
+            .controls-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            h1 { font-size: 2rem; }
+        }
+
+        .io-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .io-box label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        textarea {
+            width: 100%;
+            height: 180px;
+            background: var(--bg-input);
+            color: var(--text-main);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            resize: none;
+            outline: none;
+            transition: var(--transition);
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        textarea:focus {
+            border-color: var(--border-focus);
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.5), 0 0 15px var(--accent-gold-glow);
+        }
+
+        textarea::placeholder {
+            color: #554A40;
+            font-weight: 300;
+        }
+
+        #output-text {
+            background: rgba(212, 175, 55, 0.02);
+            color: var(--accent-gold);
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+
+        button.btn-translate {
+            background: linear-gradient(135deg, var(--accent-ruby) 0%, #5A1015 100%);
+            color: #FFF;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 14px 40px;
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button.btn-translate::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-20deg);
+            transition: 0.5s;
+        }
+
+        button.btn-translate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px var(--accent-ruby-glow), 0 0 0 1px var(--accent-gold);
+        }
+
+        button.btn-translate:hover::before {
+            left: 150%;
+        }
+
+        button.btn-translate:active {
+            transform: translateY(1px);
+        }
+
+        .footer {
+            margin-top: 40px;
             text-align: center;
-            color: var(--gold-accent);
-            margin-top: 10px;
-            font-style: italic;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .lexicon-status {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            background: rgba(0,0,0,0.3);
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .lexicon-status span {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .github-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .github-link:hover {
+            color: #FFF;
+        }
+        
+        .loading-spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #FFF;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
 
-    <h1>Thalassian Translator</h1>
-    <div class="subtitle">Official Sin'dorei Linguistic Engine (Canon-First)</div>
+    <div class="header">
+        <h1>Thalassian Translator</h1>
+        <div class="subtitle">Official Sin'dorei Linguistic Engine (Canon-First)</div>
+    </div>
 
-    <div class="container">
-        <div class="controls">
+    <div class="glass-container">
+        <div class="controls-row">
             <div class="mode-selector">
-                <label for="mode" style="color: var(--gold-accent); margin-right: 10px;">Translation Mode:</label>
+                <label for="mode">Engine Mode</label>
                 <select id="mode" onchange="toggleApiKey()">
-                    <option value="2">Mode 2: Strict Programmatic (Local Lexicon)</option>
-                    <option value="3">Mode 3: Hybrid Gap-Fill (Requires OpenAI Key)</option>
-                    <option value="1">Mode 1: Pure LLM Driven (Requires OpenAI Key)</option>
+                    <option value="2">Strict Programmatic (Local Lexicon)</option>
+                    <option value="3">Hybrid Gap-Fill (Requires OpenAI Key)</option>
+                    <option value="1">Pure LLM Driven (Requires OpenAI Key)</option>
                 </select>
             </div>
             
             <div class="api-key-container" id="apiKeyContainer" style="display: none;">
-                <input type="password" id="apiKey" placeholder="Enter OpenAI API Key (sk-proj-...)" title="Your API key stays in your browser.">
-                <span style="font-size: 12px; color: #807060; margin-left: 5px;">We need an OpenAI key to use LLM features. It runs locally and is never saved.</span>
+                <input type="password" id="apiKey" placeholder="sk-proj-..." autocomplete="off" spellcheck="false">
+                <div class="api-note">Key is used locally in browser memory for OpenAI API calls.</div>
             </div>
         </div>
 
-        <div class="translator-boxes">
-            <div class="box">
+        <div class="translator-grid">
+            <div class="io-box">
                 <label for="input-text">English / Ukrainian</label>
-                <textarea id="input-text" placeholder="Enter text to translate... (e.g., The sun guides us)"></textarea>
+                <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us."></textarea>
             </div>
-            <div class="box">
-                <label for="output-text">Thalassian (Elvish)</label>
-                <textarea id="output-text" readonly placeholder="Translation will appear here..."></textarea>
+            <div class="io-box">
+                <label for="output-text">
+                    Thalassian
+                    <span style="font-size: 0.75rem; text-transform: none; color: #665;">(Output)</span>
+                </label>
+                <textarea id="output-text" readonly placeholder="Translation will manifest here..."></textarea>
             </div>
         </div>
 
-        <button onclick="translateText()">Translate</button>
-        <div class="loading" id="loadingIndicator">Calling the Sunwell...</div>
-        
-        <div class="stats">
-            Lexicon loaded: <span id="lexicon-count">0</span> canon roots.
-            <br><br>
-            <a href="https://github.com/MikeKovetsky/thalassian" target="_blank" style="color: #a09080; text-decoration: none; font-size: 0.9em; transition: color 0.3s;">
-                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                View on GitHub (Source & Lore Docs)
-            </a>
+        <button class="btn-translate" onclick="translateText()">
+            <span id="btn-text">Translate</span>
+            <div class="loading-spinner" id="loading-spinner"></div>
+        </button>
+    </div>
+
+    <div class="footer">
+        <div class="lexicon-status">
+            Connected to Sunwell. <span id="lexicon-count">0</span> roots loaded.
         </div>
+        <a href="https://github.com/MikeKovetsky/thalassian" target="_blank" class="github-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            View Source & Methodology
+        </a>
     </div>
 
     <script>
         let lexiconData = [];
 
-        // Load the JSON lexicon on page load
         window.onload = async () => {
             try {
-                // Since this will be hosted on GitHub Pages, we fetch from the relative /data folder
-                // When running from /docs, we need to go up one level, or copy lexicon.json to docs/
-                // For GitHub pages, setting root correctly is key. Let's fetch from raw github if local fails.
                 const response = await fetch('../data/lexicon.json');
                 lexiconData = await response.json();
                 document.getElementById('lexicon-count').innerText = lexiconData.length;
             } catch (error) {
-                console.error("Local fetch failed, trying direct GitHub raw link...", error);
                 try {
-                    // Fallback to direct raw url for GitHub pages
                     const response = await fetch('https://raw.githubusercontent.com/MikeKovetsky/thalassian/main/data/lexicon.json');
                     lexiconData = await response.json();
                     document.getElementById('lexicon-count').innerText = lexiconData.length;
                 } catch (e) {
-                    document.getElementById('output-text').value = "Error loading lexicon database. Ensure data/lexicon.json is accessible.";
+                    document.getElementById('output-text').value = "Error connecting to lexicon database.";
                 }
             }
         };
@@ -264,15 +407,15 @@
             const keyContainer = document.getElementById('apiKeyContainer');
             if (mode === "1" || mode === "3") {
                 keyContainer.style.display = 'flex';
+                keyContainer.style.animation = 'fadeIn 0.3s ease-out';
             } else {
                 keyContainer.style.display = 'none';
             }
         }
 
         // Extremely naive JS-based exact matching (Mode 2)
-        // A true NLP lemmatizer requires Python backend.
         function strictTranslate(text) {
-            const dropWords = ["для", "в", "до", "на", "з", "за", "від", "про", "і", "та", "але", "for", "to", "the", "a", "an", "and", "of"];
+            const dropWords = ["для", "в", "до", "на", "з", "за", "від", "про", "і", "та", "але", "for", "to", "the", "a", "an", "and", "of", "in", "on", "with", "by", "but"];
             const pronounSuffixes = {
                 "нас": "na", "ми": "anu", "нам": "na", "us": "na", "we": "anu",
                 "ти": "a", "тобі": "a", "тебе": "a", "you": "a",
@@ -280,7 +423,6 @@
                 "їх": "dan", "вони": "danu", "them": "dan", "they": "danu"
             };
 
-            // Tokenize roughly
             const tokens = text.match(/[A-Za-zА-Яа-яЄєІіЇїҐґ\']+|[.,!?;]/g) || [];
             let translated = [];
             
@@ -299,16 +441,14 @@
                     let nextWord = tokens[i+1].toLowerCase();
                     if (pronounSuffixes[nextWord]) {
                         suffix = "'" + pronounSuffixes[nextWord];
-                        i++; // skip next
+                        i++; 
                     }
                 }
 
-                // Search in Lexicon (naive substring/exact)
                 let found = lexiconData.find(e => {
                     let uk = e.translation.uk.toLowerCase().split(/[^\wа-яєіїґ\']+/);
                     let en = e.translation.en.toLowerCase().split(/[^\w']+/);
                     return uk.includes(lower) || en.includes(lower) || 
-                           // basic plural handling fallback
                            (lower.endsWith('и') && uk.includes(lower.slice(0,-1))) ||
                            (lower.endsWith('s') && en.includes(lower.slice(0,-1)));
                 });
@@ -318,9 +458,9 @@
                     if (translated.length === 0 || (translated.length > 0 && /[.!?;]$/.test(translated[translated.length-1]))) {
                         elven = elven.charAt(0).toUpperCase() + elven.slice(1);
                     }
-                    translated.append(elven + suffix);
+                    translated.push(elven + suffix);
                 } else {
-                    translated.append(`[${word}]${suffix}`);
+                    translated.push(`[${word}]${suffix}`);
                 }
             }
 
@@ -328,16 +468,19 @@
         }
 
         async function translateText() {
-            const input = document.getElementById('input-text').value;
+            const input = document.getElementById('input-text').value.trim();
             if (!input) return;
 
             const mode = document.getElementById('mode').value;
             const outputBox = document.getElementById('output-text');
-            const apiKey = document.getElementById('apiKey').value;
-            const loading = document.getElementById('loadingIndicator');
+            const apiKey = document.getElementById('apiKey').value.trim();
+            
+            const btnText = document.getElementById('btn-text');
+            const spinner = document.getElementById('loading-spinner');
 
             if ((mode === "1" || mode === "3") && !apiKey) {
-                alert("Please enter your OpenAI API key for LLM-driven modes.");
+                alert("Please enter an OpenAI API key to unlock the LLM engine.");
+                document.getElementById('apiKey').focus();
                 return;
             }
 
@@ -346,23 +489,23 @@
                 return;
             }
 
-            // --- LLM Logic for Mode 1 & 3 ---
-            loading.style.display = 'block';
+            // UI Loading state
+            btnText.style.display = 'none';
+            spinner.style.display = 'block';
             outputBox.value = "";
             
             try {
                 let prompt = "";
                 if (mode === "1") {
-                    const sample = lexiconData.slice(0, 30).map(e => `${e.translation.uk}=${e.word}`).join(", ");
+                    const sample = lexiconData.slice(0, 40).map(e => `${e.translation.en}=${e.word}`).join(", ");
                     prompt = `You are a Thalassian linguist. Translate this text to Thalassian Elvish: "${input}". 
 Canon lexicon sample: ${sample}. 
-Rules: Agglutinative (pronouns attach as suffixes to verbs with apostrophes: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
+Rules: Agglutinative (pronouns attach as suffixes to verbs: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
 Return ONLY the Thalassian translation.`;
                 } else if (mode === "3") {
                     let draft = strictTranslate(input);
                     if (!draft.includes("[")) {
                         outputBox.value = draft;
-                        loading.style.display = 'none';
                         return;
                     }
                     const gapsMatch = draft.match(/\[(.*?)\]/g) || [];
@@ -373,7 +516,6 @@ Invent new Thalassian roots for these words using Elvish phonotactics (lots of v
 Return ONLY the completed sentence without brackets.`;
                 }
 
-                // Call OpenAI API
                 const response = await fetch("https://api.openai.com/v1/chat/completions", {
                     method: "POST",
                     headers: {
@@ -382,7 +524,7 @@ Return ONLY the completed sentence without brackets.`;
                     },
                     body: JSON.stringify({
                         model: "gpt-4o-mini",
-                        messages: [{role: "user", content: prompt}],
+                        messages: [{role: "system", content: prompt}],
                         temperature: 0.7
                     })
                 });
@@ -392,14 +534,12 @@ Return ONLY the completed sentence without brackets.`;
                 
                 outputBox.value = data.choices[0].message.content.trim();
             } catch (err) {
-                outputBox.value = `API Error: ${err.message}`;
+                outputBox.value = `Engine Error: ${err.message}`;
             } finally {
-                loading.style.display = 'none';
+                btnText.style.display = 'block';
+                spinner.style.display = 'none';
             }
         }
-        
-        // Helper to mimic Array.push but named append for consistency with python style
-        Array.prototype.append = function(val) { this.push(val); }
     </script>
 </body>
 </html>
