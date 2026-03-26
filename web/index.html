@@ -6,7 +6,7 @@
     <title>Thalassian Translator | Sin'dorei Engine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <style>
         :root {
             /* Portal AI inspired modern dark theme with subtle gold/ruby accents */
@@ -236,6 +236,14 @@
             letter-spacing: 0.02em;
         }
 
+        .runic-text {
+            font-family: 'Tangerine', cursive !important;
+            font-size: 2.2rem !important;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+            letter-spacing: 0.05em;
+            line-height: 1.2 !important;
+        }
+
         button.btn-translate {
             background: linear-gradient(135deg, var(--accent-ruby) 0%, #5A1015 100%);
             color: #FFF;
@@ -361,6 +369,10 @@
                     <option value="3">Hybrid Gap-Fill (Requires OpenAI Key)</option>
                     <option value="1">Pure LLM Driven (Requires OpenAI Key)</option>
                 </select>
+                <div style="margin-left: 20px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="runic-toggle" onchange="toggleRunes()" style="cursor: pointer;">
+                    <label for="runic-toggle" style="cursor: pointer; text-transform: none; color: var(--text-muted);">Show in Elvish Runes</label>
+                </div>
             </div>
             
             <div class="api-key-container" id="apiKeyContainer" style="display: none;">
@@ -371,13 +383,13 @@
 
         <div class="translator-grid">
             <div class="io-box">
-                <label for="input-text">English / Ukrainian</label>
-                <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us."></textarea>
+                <label for="input-text">English / Ukrainian / Thalassian</label>
+                <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us.&#10;e.g., Belore dela'na."></textarea>
             </div>
             <div class="io-box">
                 <label for="output-text">
-                    Thalassian
-                    <span style="font-size: 0.75rem; text-transform: none; color: #665;">(Output)</span>
+                    Translation Output
+                    <span style="font-size: 0.75rem; text-transform: none; color: #665;">(Auto-detected direction)</span>
                 </label>
                 <textarea id="output-text" readonly placeholder="Translation will manifest here..."></textarea>
             </div>
@@ -430,6 +442,60 @@
         }
 
         // Extremely naive JS-based exact matching (Mode 2)
+        function toggleRunes() {
+            const outputBox = document.getElementById('output-text');
+            if (document.getElementById('runic-toggle').checked) {
+                outputBox.classList.add('runic-text');
+            } else {
+                outputBox.classList.remove('runic-text');
+            }
+        }
+
+        // Detects if text is primarily Thalassian (lots of apostrophes, vowels, known roots)
+        function isThalassian(text) {
+            let matches = 0;
+            const words = text.toLowerCase().split(/[ \.,!?]+/);
+            for (let w of words) {
+                if (w.includes("'")) matches += 2;
+                if (lexiconData.find(e => e.word === w || e.word === w.split("'")[0])) matches += 3;
+            }
+            return matches >= 3;
+        }
+
+        function reverseTranslate(text) {
+            const pronounPrefixes = { "na": "us", "anu": "we", "a": "you", "o": "me", "dan": "them", "danu": "they" };
+            
+            // Split keeping punctuation
+            const tokens = text.match(/[A-Za-z\']+|[.,!?;]/g) || [];
+            let translated = [];
+
+            for (let word of tokens) {
+                if (/[.,!?;]/.test(word)) {
+                    if (translated.length > 0) translated[translated.length-1] += word;
+                    continue;
+                }
+
+                let subWords = word.toLowerCase().split("'");
+                for (let i=0; i<subWords.length; i++) {
+                    let w = subWords[i];
+                    if (i > 0 && pronounPrefixes[w]) {
+                        translated.push(pronounPrefixes[w]);
+                        continue;
+                    }
+
+                    let found = lexiconData.find(e => e.word === w || e.word + "i" === w || e.word.slice(0,-1)+"ei" === w);
+                    if (found) {
+                        let t = found.translation.en;
+                        if (w.endsWith("i") && found.pos === "noun") t += "(s)";
+                        translated.push(t);
+                    } else {
+                        translated.push(`[${w}]`);
+                    }
+                }
+            }
+            return translated.join(" ").replace(/ ([.,!?;])/g, "$1");
+        }
+
         function strictTranslate(text) {
             const dropWords = ["для", "в", "до", "на", "з", "за", "від", "про", "і", "та", "але", "for", "to", "the", "a", "an", "and", "of", "in", "on", "with", "by", "but"];
             const pronounSuffixes = {
@@ -501,7 +567,14 @@
             }
 
             if (mode === "2") {
-                outputBox.value = strictTranslate(input);
+                // Auto-detect direction
+                const isElvish = input.includes("'") || input.toLowerCase().includes("belore") || input.toLowerCase().includes("dorei");
+                
+                if (isElvish) {
+                    outputBox.value = reverseTranslate(input);
+                } else {
+                    outputBox.value = strictTranslate(input);
+                }
                 return;
             }
 

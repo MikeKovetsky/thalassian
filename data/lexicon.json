@@ -1318,5 +1318,461 @@
     "root": "fana",
     "notes": "Affirmative particle",
     "source": "generated"
+  },
+  {
+    "word": "lorala",
+    "translation": {
+      "uk": "зброя",
+      "en": "weapon"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lorala",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "fanur",
+    "translation": {
+      "uk": "лук",
+      "en": "bow"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "fanur",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "thal",
+    "translation": {
+      "uk": "магія",
+      "en": "magic"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thal",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "lubala",
+    "translation": {
+      "uk": "світло",
+      "en": "light"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lubala",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "ubelala",
+    "translation": {
+      "uk": "темрява",
+      "en": "darkness"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ubelala",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "lelora",
+    "translation": {
+      "uk": "життя",
+      "en": "life"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lelora",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "othina",
+    "translation": {
+      "uk": "вітер",
+      "en": "wind"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "othina",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "irelo",
+    "translation": {
+      "uk": "камінь",
+      "en": "stone"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "irelo",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "sindor",
+    "translation": {
+      "uk": "золото",
+      "en": "gold"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "sindor",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "felash",
+    "translation": {
+      "uk": "срібло",
+      "en": "silver"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "felash",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "misi",
+    "translation": {
+      "uk": "король",
+      "en": "king"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "misi",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "abelu",
+    "translation": {
+      "uk": "королева",
+      "en": "queen"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "abelu",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "tabe",
+    "translation": {
+      "uk": "захисник",
+      "en": "defender"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "tabe",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "aluta",
+    "translation": {
+      "uk": "ворог",
+      "en": "enemy"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "aluta",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "alalan",
+    "translation": {
+      "uk": "друг",
+      "en": "friend"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "alalan",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "indasi",
+    "translation": {
+      "uk": "брат",
+      "en": "brother"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "indasi",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "lalalon",
+    "translation": {
+      "uk": "сестра",
+      "en": "sister"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lalalon",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "lashanu",
+    "translation": {
+      "uk": "шлях",
+      "en": "path"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lashanu",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "talu",
+    "translation": {
+      "uk": "місто",
+      "en": "city"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "talu",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "llarana",
+    "translation": {
+      "uk": "стіна",
+      "en": "wall"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "llarana",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "athar",
+    "translation": {
+      "uk": "брама",
+      "en": "gate"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "athar",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "ururann",
+    "translation": {
+      "uk": "книга",
+      "en": "book"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ururann",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "inalla",
+    "translation": {
+      "uk": "знання",
+      "en": "knowledge"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "inalla",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "mishar",
+    "translation": {
+      "uk": "сила",
+      "en": "power"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "mishar",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "melal",
+    "translation": {
+      "uk": "слабкість",
+      "en": "weakness"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "melal",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "onar",
+    "translation": {
+      "uk": "хоробрий",
+      "en": "brave"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "onar",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "anortha",
+    "translation": {
+      "uk": "старий",
+      "en": "old"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "anortha",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "oranuer",
+    "translation": {
+      "uk": "мудрий",
+      "en": "wise"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "oranuer",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "elandi",
+    "translation": {
+      "uk": "прекрасний",
+      "en": "beautiful"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "elandi",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "eralleb",
+    "translation": {
+      "uk": "вбивати",
+      "en": "kill"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "eralleb",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "tora",
+    "translation": {
+      "uk": "захищати",
+      "en": "protect"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "tora",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "irora",
+    "translation": {
+      "uk": "йти",
+      "en": "go"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "irora",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "melanal",
+    "translation": {
+      "uk": "бігти",
+      "en": "run"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "melanal",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "lanelot",
+    "translation": {
+      "uk": "літати",
+      "en": "fly"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "lanelot",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "tala",
+    "translation": {
+      "uk": "бачити",
+      "en": "see"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "tala",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "selorue",
+    "translation": {
+      "uk": "чути",
+      "en": "hear"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "selorue",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "ondore",
+    "translation": {
+      "uk": "відчувати",
+      "en": "feel"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ondore",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
+  },
+  {
+    "word": "orene",
+    "translation": {
+      "uk": "пам'ятати",
+      "en": "remember"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "orene",
+    "notes": "Mass phonotactic expansion",
+    "source": "generated"
   }
 ]
