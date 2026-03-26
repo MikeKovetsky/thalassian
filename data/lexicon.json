@@ -898,5 +898,53 @@
     "root": "kanesh",
     "notes": "Ith'el kanesh / Ith'nala kanesh",
     "source": "shalassian"
+  },
+  {
+    "word": "shal'na",
+    "translation": {
+      "uk": "ні! / благаю (вигук горя)",
+      "en": "no! / please (cry of grief)"
+    },
+    "pos": "interjection",
+    "canon": true,
+    "root": "shal",
+    "notes": "Midnight (12.0) Alpha: Vereesa cries this seeing Rhonin's death",
+    "source": "thalassian"
+  },
+  {
+    "word": "anu'shalla",
+    "translation": {
+      "uk": "вісник тіні",
+      "en": "herald of shadow"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shalla",
+    "notes": "Midnight (12.0) Alpha: Anu'shalla Void Owl",
+    "source": "thalassian"
+  },
+  {
+    "word": "shalla",
+    "translation": {
+      "uk": "тінь",
+      "en": "shadow"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shalla",
+    "notes": "Anu'shalla, Shalla'tor",
+    "source": "darnassian"
+  },
+  {
+    "word": "rutaani",
+    "translation": {
+      "uk": "рутаані (фракція/істоти)",
+      "en": "rutaani (faction/creatures)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "rutaan",
+    "notes": "Midnight (12.0) Alpha: Halduron mentions Light drove them to zealotry",
+    "source": "thalassian"
   }
 ]
