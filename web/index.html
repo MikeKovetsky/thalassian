@@ -382,6 +382,14 @@
     <div class="glass-container">
         <div class="controls-row">
             <div class="mode-selector">
+                <label for="direction">Direction</label>
+                <select id="direction" onchange="updateLabels()">
+                    <option value="to_th">English / UKR → Thalassian</option>
+                    <option value="from_th">Thalassian → English</option>
+                </select>
+            </div>
+            
+            <div class="mode-selector">
                 <label for="mode">Engine Mode</label>
                 <select id="mode" onchange="toggleApiKey()">
                     <option value="2">Strict Programmatic (Local Lexicon)</option>
@@ -404,16 +412,15 @@
             <div class="io-box">
                 <label for="input-text">
                     <div class="label-text-group">
-                        <span>English / Ukrainian / Thalassian</span>
+                        <span id="label-input">English / Ukrainian</span>
                     </div>
                 </label>
-                <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us.&#10;e.g., Belore dela'na."></textarea>
+                <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us."></textarea>
             </div>
             <div class="io-box">
                 <label for="output-text">
                     <div class="label-text-group">
-                        <span>Translation Output</span>
-                        <span class="label-hint">(Auto-detected direction)</span>
+                        <span id="label-output">Thalassian (Elvish)</span>
                     </div>
                 </label>
                 <textarea id="output-text" readonly placeholder="Translation will manifest here..."></textarea>
@@ -469,6 +476,29 @@
                 keyContainer.style.animation = 'fadeIn 0.3s ease-out';
             } else {
                 keyContainer.style.display = 'none';
+            }
+        }
+
+        function updateLabels() {
+            const dir = document.getElementById('direction').value;
+            const lblIn = document.getElementById('label-input');
+            const lblOut = document.getElementById('label-output');
+            const boxIn = document.getElementById('input-text');
+            const modeSelect = document.getElementById('mode');
+            
+            if (dir === "to_th") {
+                lblIn.innerText = "English / Ukrainian";
+                lblOut.innerText = "Thalassian (Elvish)";
+                boxIn.placeholder = "Enter text to translate...\ne.g., The sun guides us.";
+                modeSelect.disabled = false; // Allow all modes
+            } else {
+                lblIn.innerText = "Thalassian (Elvish)";
+                lblOut.innerText = "English (Translated)";
+                boxIn.placeholder = "Enter Elvish to translate...\ne.g., Belore dela'na.";
+                // Force Mode 2 for reverse translation (simplest)
+                modeSelect.value = "2";
+                modeSelect.disabled = true;
+                toggleApiKey();
             }
         }
 
@@ -597,11 +627,11 @@
                 return;
             }
 
+            // --- Execution Logic ---
+            const dir = document.getElementById('direction').value;
+
             if (mode === "2") {
-                // Auto-detect direction
-                const isElvish = input.includes("'") || input.toLowerCase().includes("belore") || input.toLowerCase().includes("dorei");
-                
-                if (isElvish) {
+                if (dir === "from_th") {
                     outputBox.value = reverseTranslate(input);
                 } else {
                     outputBox.value = strictTranslate(input);
