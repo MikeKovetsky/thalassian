@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalassian Translator | Sin'dorei Language Engine</title>
+    <style>
+        :root {
+            --bg-color: #1a0f14;
+            --panel-bg: #2a1b24;
+            --text-color: #e0d0c1;
+            --gold-accent: #d4af37;
+            --gold-hover: #f1c40f;
+            --red-accent: #8b0000;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: var(--gold-accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        .subtitle {
+            color: #a09080;
+            margin-bottom: 30px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--panel-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--red-accent);
+        }
+
+        .translator-boxes {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .translator-boxes {
+                flex-direction: column;
+            }
+        }
+
+        .box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box label {
+            color: var(--gold-accent);
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            background-color: #150a0f;
+            color: var(--text-color);
+            border: 1px solid #4a2a3a;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            font-size: 16px;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        textarea:focus {
+            border-color: var(--gold-accent);
+        }
+
+        /* The runic font placeholder - we use a cursive fallback for now */
+        #output-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #4a2a3a;
+        }
+
+        .mode-selector select {
+            background-color: #150a0f;
+            color: var(--text-color);
+            border: 1px solid var(--gold-accent);
+            padding: 8px 15px;
+            border-radius: var(--border-radius);
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .api-key-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .api-key-container input {
+            background-color: #150a0f;
+            color: var(--text-color);
+            border: 1px solid #4a2a3a;
+            padding: 8px 15px;
+            border-radius: var(--border-radius);
+            outline: none;
+            width: 250px;
+        }
+
+        .api-key-container input:focus {
+            border-color: var(--gold-accent);
+        }
+
+        button {
+            background: linear-gradient(135deg, var(--red-accent), #600000);
+            color: var(--gold-accent);
+            border: 1px solid var(--gold-accent);
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #a00000, #8b0000);
+            color: var(--gold-hover);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .stats {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #807060;
+        }
+
+        .stats span {
+            color: var(--gold-accent);
+            font-weight: bold;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            color: var(--gold-accent);
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thalassian Translator</h1>
+    <div class="subtitle">Official Sin'dorei Linguistic Engine (Canon-First)</div>
+
+    <div class="container">
+        <div class="controls">
+            <div class="mode-selector">
+                <label for="mode" style="color: var(--gold-accent); margin-right: 10px;">Translation Mode:</label>
+                <select id="mode" onchange="toggleApiKey()">
+                    <option value="2">Mode 2: Strict Programmatic (Local Lexicon)</option>
+                    <option value="3">Mode 3: Hybrid Gap-Fill (Requires OpenAI Key)</option>
+                    <option value="1">Mode 1: Pure LLM Driven (Requires OpenAI Key)</option>
+                </select>
+            </div>
+            
+            <div class="api-key-container" id="apiKeyContainer" style="display: none;">
+                <input type="password" id="apiKey" placeholder="sk-proj-..." title="Your API key stays in your browser.">
+            </div>
+        </div>
+
+        <div class="translator-boxes">
+            <div class="box">
+                <label for="input-text">Ukrainian / English</label>
+                <textarea id="input-text" placeholder="Enter text to translate... (e.g., Сонце веде нас)"></textarea>
+            </div>
+            <div class="box">
+                <label for="output-text">Thalassian (Elvish)</label>
+                <textarea id="output-text" readonly placeholder="Translation will appear here..."></textarea>
+            </div>
+        </div>
+
+        <button onclick="translateText()">Translate / Перекласти</button>
+        <div class="loading" id="loadingIndicator">Calling the Sunwell...</div>
+        
+        <div class="stats">
+            Lexicon loaded: <span id="lexicon-count">0</span> canon roots.
+        </div>
+    </div>
+
+    <script>
+        let lexiconData = [];
+
+        // Load the JSON lexicon on page load
+        window.onload = async () => {
+            try {
+                // Since this will be hosted on GitHub Pages, we fetch from the relative /data folder
+                // When running from /docs, we need to go up one level, or copy lexicon.json to docs/
+                // For GitHub pages, setting root correctly is key. Let's fetch from raw github if local fails.
+                const response = await fetch('../data/lexicon.json');
+                lexiconData = await response.json();
+                document.getElementById('lexicon-count').innerText = lexiconData.length;
+            } catch (error) {
+                console.error("Local fetch failed, trying direct GitHub raw link...", error);
+                try {
+                    // Fallback to direct raw url for GitHub pages
+                    const response = await fetch('https://raw.githubusercontent.com/MikeKovetsky/thalassian/main/data/lexicon.json');
+                    lexiconData = await response.json();
+                    document.getElementById('lexicon-count').innerText = lexiconData.length;
+                } catch (e) {
+                    document.getElementById('output-text').value = "Error loading lexicon database. Ensure data/lexicon.json is accessible.";
+                }
+            }
+        };
+
+        function toggleApiKey() {
+            const mode = document.getElementById('mode').value;
+            const keyContainer = document.getElementById('apiKeyContainer');
+            if (mode === "1" || mode === "3") {
+                keyContainer.style.display = 'flex';
+            } else {
+                keyContainer.style.display = 'none';
+            }
+        }
+
+        // Extremely naive JS-based exact matching (Mode 2)
+        // A true NLP lemmatizer requires Python backend.
+        function strictTranslate(text) {
+            const dropWords = ["для", "в", "до", "на", "з", "за", "від", "про", "і", "та", "але", "for", "to", "the", "a", "an", "and", "of"];
+            const pronounSuffixes = {
+                "нас": "na", "ми": "anu", "нам": "na", "us": "na", "we": "anu",
+                "ти": "a", "тобі": "a", "тебе": "a", "you": "a",
+                "я": "o", "мені": "o", "мене": "o", "i": "o", "me": "o",
+                "їх": "dan", "вони": "danu", "them": "dan", "they": "danu"
+            };
+
+            // Tokenize roughly
+            const tokens = text.match(/[A-Za-zА-Яа-яЄєІіЇїҐґ\']+|[.,!?;]/g) || [];
+            let translated = [];
+            
+            for (let i = 0; i < tokens.length; i++) {
+                let word = tokens[i];
+                if (/[.,!?;]/.test(word)) {
+                    if (translated.length > 0) translated[translated.length-1] += word;
+                    continue;
+                }
+
+                let lower = word.toLowerCase();
+                if (dropWords.includes(lower)) continue;
+
+                let suffix = "";
+                if (i + 1 < tokens.length) {
+                    let nextWord = tokens[i+1].toLowerCase();
+                    if (pronounSuffixes[nextWord]) {
+                        suffix = "'" + pronounSuffixes[nextWord];
+                        i++; // skip next
+                    }
+                }
+
+                // Search in Lexicon (naive substring/exact)
+                let found = lexiconData.find(e => {
+                    let uk = e.translation.uk.toLowerCase().split(/[^\wа-яєіїґ\']+/);
+                    let en = e.translation.en.toLowerCase().split(/[^\w']+/);
+                    return uk.includes(lower) || en.includes(lower) || 
+                           // basic plural handling fallback
+                           (lower.endsWith('и') && uk.includes(lower.slice(0,-1))) ||
+                           (lower.endsWith('s') && en.includes(lower.slice(0,-1)));
+                });
+
+                if (found) {
+                    let elven = found.word;
+                    if (translated.length === 0 || (translated.length > 0 && /[.!?;]$/.test(translated[translated.length-1]))) {
+                        elven = elven.charAt(0).toUpperCase() + elven.slice(1);
+                    }
+                    translated.append(elven + suffix);
+                } else {
+                    translated.append(`[${word}]${suffix}`);
+                }
+            }
+
+            return translated.join(" ").replace(/ ([.,!?;])/g, "$1");
+        }
+
+        async function translateText() {
+            const input = document.getElementById('input-text').value;
+            if (!input) return;
+
+            const mode = document.getElementById('mode').value;
+            const outputBox = document.getElementById('output-text');
+            const apiKey = document.getElementById('apiKey').value;
+            const loading = document.getElementById('loadingIndicator');
+
+            if ((mode === "1" || mode === "3") && !apiKey) {
+                alert("Please enter your OpenAI API key for LLM-driven modes.");
+                return;
+            }
+
+            if (mode === "2") {
+                outputBox.value = strictTranslate(input);
+                return;
+            }
+
+            // --- LLM Logic for Mode 1 & 3 ---
+            loading.style.display = 'block';
+            outputBox.value = "";
+            
+            try {
+                let prompt = "";
+                if (mode === "1") {
+                    const sample = lexiconData.slice(0, 30).map(e => `${e.translation.uk}=${e.word}`).join(", ");
+                    prompt = `You are a Thalassian linguist. Translate this text to Thalassian Elvish: "${input}". 
+Canon lexicon sample: ${sample}. 
+Rules: Agglutinative (pronouns attach as suffixes to verbs with apostrophes: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
+Return ONLY the Thalassian translation.`;
+                } else if (mode === "3") {
+                    let draft = strictTranslate(input);
+                    if (!draft.includes("[")) {
+                        outputBox.value = draft;
+                        loading.style.display = 'none';
+                        return;
+                    }
+                    const gapsMatch = draft.match(/\[(.*?)\]/g) || [];
+                    const gaps = gapsMatch.map(g => g.replace(/\[|\]/g, ''));
+                    prompt = `Here is a drafted Thalassian sentence with missing words in brackets: "${draft}". 
+The missing words mean: ${gaps.join(", ")}. 
+Invent new Thalassian roots for these words using Elvish phonotactics (lots of vowels, soft consonants l, r, s, sh, th). 
+Return ONLY the completed sentence without brackets.`;
+                }
+
+                // Call OpenAI API
+                const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify({
+                        model: "gpt-4o-mini",
+                        messages: [{role: "user", content: prompt}],
+                        temperature: 0.7
+                    })
+                });
+
+                const data = await response.json();
+                if (data.error) throw new Error(data.error.message);
+                
+                outputBox.value = data.choices[0].message.content.trim();
+            } catch (err) {
+                outputBox.value = `API Error: ${err.message}`;
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+        
+        // Helper to mimic Array.push but named append for consistency with python style
+        Array.prototype.append = function(val) { this.push(val); }
+    </script>
+</body>
+</html>
