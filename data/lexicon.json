@@ -8,7 +8,8 @@
     "pos": "noun",
     "canon": true,
     "root": "alar",
-    "notes": "Name of Kael'thas' pet phoenix god, Al'ar."
+    "notes": "Name of Kael'thas' pet phoenix god, Al'ar.",
+    "source": "thalassian"
   },
   {
     "word": "anore",
@@ -19,7 +20,8 @@
     "pos": "noun",
     "canon": true,
     "root": "anor",
-    "notes": "Used in 'ashal'anore' (great people)."
+    "notes": "Used in 'ashal'anore' (great people).",
+    "source": "thalassian"
   },
   {
     "word": "anu",
@@ -30,7 +32,8 @@
     "pos": "interjection",
     "canon": true,
     "root": "anu",
-    "notes": "Used in 'Anu belore dela'na'."
+    "notes": "Used in 'Anu belore dela'na'.",
+    "source": "thalassian"
   },
   {
     "word": "ashal",
@@ -41,7 +44,8 @@
     "pos": "adjective",
     "canon": true,
     "root": "ashal",
-    "notes": "Used in 'Selama ashal'anore' (Justice for our great people)."
+    "notes": "Used in 'Selama ashal'anore' (Justice for our great people).",
+    "source": "thalassian"
   },
   {
     "word": "bal'a",
@@ -52,7 +56,8 @@
     "pos": "interjection",
     "canon": true,
     "root": "bal",
-    "notes": "Used in 'Bal'a dash, malanore' (Greetings, traveler)."
+    "notes": "Used in 'Bal'a dash, malanore' (Greetings, traveler).",
+    "source": "thalassian"
   },
   {
     "word": "dash",
@@ -63,7 +68,8 @@
     "pos": "noun",
     "canon": true,
     "root": "dash",
-    "notes": "Contextual from 'Bal'a dash' (Greetings/Peace be with you)."
+    "notes": "Contextual from 'Bal'a dash' (Greetings/Peace be with you).",
+    "source": "thalassian"
   },
   {
     "word": "belore",
@@ -74,7 +80,8 @@
     "pos": "noun",
     "canon": true,
     "root": "bel",
-    "notes": "Central concept of Blood Elf culture. 'Anu belore dela'na' (The sun guides us)."
+    "notes": "Central concept of Blood Elf culture. 'Anu belore dela'na' (The sun guides us).",
+    "source": "thalassian"
   },
   {
     "word": "dela",
@@ -85,7 +92,8 @@
     "pos": "verb",
     "canon": true,
     "root": "del",
-    "notes": "Used in 'dela'na' (guides us)."
+    "notes": "Used in 'dela'na' (guides us).",
+    "source": "thalassian"
   },
   {
     "word": "na",
@@ -96,7 +104,8 @@
     "pos": "pronoun",
     "canon": true,
     "root": "na",
-    "notes": "Pronoun suffix."
+    "notes": "Pronoun suffix.",
+    "source": "thalassian"
   },
   {
     "word": "dorei",
@@ -107,7 +116,8 @@
     "pos": "noun",
     "canon": true,
     "root": "dor",
-    "notes": "Sin'dorei (Children of Blood), Quel'dorei (High Elves), Kal'dorei (Night Elves)."
+    "notes": "Sin'dorei (Children of Blood), Quel'dorei (High Elves), Kal'dorei (Night Elves).",
+    "source": "thalassian"
   },
   {
     "word": "sin",
@@ -118,7 +128,8 @@
     "pos": "noun",
     "canon": true,
     "root": "sin",
-    "notes": "Sin'dorei."
+    "notes": "Sin'dorei.",
+    "source": "thalassian"
   },
   {
     "word": "quel",
@@ -129,7 +140,8 @@
     "pos": "adjective",
     "canon": true,
     "root": "quel",
-    "notes": "Quel'Thalas (High Kingdom), Quel'dorei (High Elves), Quel'Serrar (High Blade)."
+    "notes": "Quel'Thalas (High Kingdom), Quel'dorei (High Elves), Quel'Serrar (High Blade).",
+    "source": "thalassian"
   },
   {
     "word": "thalas",
@@ -140,7 +152,8 @@
     "pos": "noun",
     "canon": true,
     "root": "thal",
-    "notes": "Quel'Thalas (High Kingdom)."
+    "notes": "Quel'Thalas (High Kingdom).",
+    "source": "thalassian"
   },
   {
     "word": "felo",
@@ -151,7 +164,8 @@
     "pos": "noun",
     "canon": true,
     "root": "fel",
-    "notes": "Felo'melorn (Flamestrike)."
+    "notes": "Felo'melorn (Flamestrike).",
+    "source": "thalassian"
   },
   {
     "word": "melorn",
@@ -162,7 +176,8 @@
     "pos": "noun",
     "canon": true,
     "root": "mel",
-    "notes": "Felo'melorn (Flamestrike)."
+    "notes": "Felo'melorn (Flamestrike).",
+    "source": "thalassian"
   },
   {
     "word": "malanore",
@@ -173,7 +188,8 @@
     "pos": "noun",
     "canon": true,
     "root": "mal",
-    "notes": "Bal'a dash, malanore."
+    "notes": "Bal'a dash, malanore.",
+    "source": "thalassian"
   },
   {
     "word": "selama",
@@ -184,7 +200,8 @@
     "pos": "noun",
     "canon": true,
     "root": "selam",
-    "notes": "Selama ashal'anore (Justice for our great people)."
+    "notes": "Selama ashal'anore (Justice for our great people).",
+    "source": "thalassian"
   },
   {
     "word": "shindu",
@@ -195,7 +212,8 @@
     "pos": "noun",
     "canon": true,
     "root": "shind",
-    "notes": "Shindu fallah na! (They're breaking through!)."
+    "notes": "Shindu fallah na! (They're breaking through!).",
+    "source": "thalassian"
   },
   {
     "word": "fallah",
@@ -206,7 +224,8 @@
     "pos": "verb",
     "canon": true,
     "root": "fal",
-    "notes": "Shindu fallah na!"
+    "notes": "Shindu fallah na!",
+    "source": "thalassian"
   },
   {
     "word": "anaria",
@@ -217,7 +236,8 @@
     "pos": "verb",
     "canon": true,
     "root": "anar",
-    "notes": "Anaria shola (Speak your business)."
+    "notes": "Anaria shola (Speak your business).",
+    "source": "thalassian"
   },
   {
     "word": "shola",
@@ -228,7 +248,8 @@
     "pos": "noun",
     "canon": true,
     "root": "shol",
-    "notes": "Anaria shola."
+    "notes": "Anaria shola.",
+    "source": "thalassian"
   },
   {
     "word": "bash'a",
@@ -239,7 +260,8 @@
     "pos": "noun",
     "canon": true,
     "root": "bash",
-    "notes": "Bash'a no falor talah! (Kael'thas combat quote)."
+    "notes": "Bash'a no falor talah! (Kael'thas combat quote).",
+    "source": "thalassian"
   },
   {
     "word": "serrar",
@@ -250,7 +272,8 @@
     "pos": "noun",
     "canon": true,
     "root": "ser",
-    "notes": "Quel'Serrar (High Blade)."
+    "notes": "Quel'Serrar (High Blade).",
+    "source": "thalassian"
   },
   {
     "word": "delar",
@@ -261,7 +284,8 @@
     "pos": "noun",
     "canon": true,
     "root": "del",
-    "notes": "Quel'Delar."
+    "notes": "Quel'Delar.",
+    "source": "thalassian"
   },
   {
     "word": "ban",
@@ -272,7 +296,8 @@
     "pos": "noun",
     "canon": true,
     "root": "ban",
-    "notes": "Ban'dinoriel (The Gatekeeper / shield in Silvermoon)."
+    "notes": "Ban'dinoriel (The Gatekeeper / shield in Silvermoon).",
+    "source": "thalassian"
   },
   {
     "word": "dinoriel",
@@ -283,7 +308,8 @@
     "pos": "noun",
     "canon": true,
     "root": "din",
-    "notes": "Ban'dinoriel."
+    "notes": "Ban'dinoriel.",
+    "source": "thalassian"
   },
   {
     "word": "el",
@@ -294,7 +320,8 @@
     "pos": "noun",
     "canon": true,
     "root": "el",
-    "notes": "Al diel shala (Travel in peace)."
+    "notes": "Al diel shala (Travel in peace).",
+    "source": "thalassian"
   },
   {
     "word": "talah",
@@ -305,7 +332,8 @@
     "pos": "verb",
     "canon": true,
     "root": "tal",
-    "notes": "Bash'a no falor talah!"
+    "notes": "Bash'a no falor talah!",
+    "source": "thalassian"
   },
   {
     "word": "drassil",
@@ -316,7 +344,8 @@
     "pos": "noun",
     "canon": true,
     "root": "dras",
-    "notes": "Darnassian: Teldrassil, Nordrassil, Andrassil"
+    "notes": "Teldrassil, Nordrassil, Andrassil",
+    "source": "darnassian"
   },
   {
     "word": "tel",
@@ -327,7 +356,8 @@
     "pos": "noun",
     "canon": true,
     "root": "tel",
-    "notes": "Darnassian: Teldrassil"
+    "notes": "Teldrassil",
+    "source": "darnassian"
   },
   {
     "word": "nor",
@@ -338,7 +368,8 @@
     "pos": "noun",
     "canon": true,
     "root": "nor",
-    "notes": "Darnassian: Nordrassil"
+    "notes": "Nordrassil",
+    "source": "darnassian"
   },
   {
     "word": "an",
@@ -349,7 +380,8 @@
     "pos": "noun",
     "canon": true,
     "root": "an",
-    "notes": "Darnassian: Andrassil"
+    "notes": "Andrassil",
+    "source": "darnassian"
   },
   {
     "word": "kal",
@@ -360,7 +392,8 @@
     "pos": "noun",
     "canon": true,
     "root": "kal",
-    "notes": "Darnassian: Kal'dorei (Children of the Stars)"
+    "notes": "Kal'dorei (Children of the Stars)",
+    "source": "darnassian"
   },
   {
     "word": "ishnu",
@@ -371,7 +404,8 @@
     "pos": "noun",
     "canon": true,
     "root": "ish",
-    "notes": "Darnassian: Ishnu-alah"
+    "notes": "Ishnu-alah",
+    "source": "darnassian"
   },
   {
     "word": "alah",
@@ -382,7 +416,8 @@
     "pos": "pronoun",
     "canon": true,
     "root": "alah",
-    "notes": "Darnassian: Ishnu-alah (Good fortune to you)"
+    "notes": "Ishnu-alah (Good fortune to you)",
+    "source": "darnassian"
   },
   {
     "word": "dieb",
@@ -393,7 +428,8 @@
     "pos": "noun",
     "canon": true,
     "root": "dieb",
-    "notes": "Darnassian: Ishnu-dal-dieb"
+    "notes": "Ishnu-dal-dieb",
+    "source": "darnassian"
   },
   {
     "word": "dal",
@@ -404,7 +440,8 @@
     "pos": "pronoun",
     "canon": true,
     "root": "dal",
-    "notes": "Darnassian: Ishnu-dal-dieb"
+    "notes": "Ishnu-dal-dieb",
+    "source": "darnassian"
   },
   {
     "word": "shan",
@@ -415,7 +452,8 @@
     "pos": "adjective",
     "canon": true,
     "root": "shan",
-    "notes": "Darnassian: Shan'do, Thero'shan"
+    "notes": "Shan'do, Thero'shan",
+    "source": "darnassian"
   },
   {
     "word": "do",
@@ -426,7 +464,8 @@
     "pos": "noun",
     "canon": true,
     "root": "do",
-    "notes": "Darnassian: Shan'do"
+    "notes": "Shan'do",
+    "source": "darnassian"
   },
   {
     "word": "thero",
@@ -437,7 +476,8 @@
     "pos": "noun",
     "canon": true,
     "root": "thero",
-    "notes": "Darnassian: Thero'shan"
+    "notes": "Thero'shan",
+    "source": "darnassian"
   },
   {
     "word": "zin",
@@ -448,7 +488,8 @@
     "pos": "noun",
     "canon": true,
     "root": "zin",
-    "notes": "Darnassian: Zin-Azshari"
+    "notes": "Zin-Azshari",
+    "source": "darnassian"
   },
   {
     "word": "finel",
@@ -459,7 +500,8 @@
     "pos": "adjective",
     "canon": true,
     "root": "finel",
-    "notes": "Darnassian: Finel"
+    "notes": "Finel",
+    "source": "darnassian"
   },
   {
     "word": "minda",
@@ -470,7 +512,8 @@
     "pos": "noun",
     "canon": true,
     "root": "min",
-    "notes": "Darnassian: Min'da"
+    "notes": "Min'da",
+    "source": "darnassian"
   },
   {
     "word": "anda",
@@ -481,6 +524,7 @@
     "pos": "noun",
     "canon": true,
     "root": "an",
-    "notes": "Darnassian: An'da"
+    "notes": "An'da",
+    "source": "darnassian"
   }
 ]
