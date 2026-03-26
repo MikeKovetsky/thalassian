@@ -1774,5 +1774,17 @@
     "root": "orene",
     "notes": "Mass phonotactic expansion",
     "source": "generated"
+  },
+  {
+    "word": "manore",
+    "translation": {
+      "uk": "зустріч/зустрінутий",
+      "en": "met/encountered"
+    },
+    "pos": "verb",
+    "canon": true,
+    "root": "manor",
+    "notes": "Sinu a'manore (Well met)",
+    "source": "thalassian"
   }
 ]
