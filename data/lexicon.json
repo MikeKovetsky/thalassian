@@ -982,5 +982,29 @@
     "root": "ledel",
     "notes": "Extrapolated from Prince Keleseth summoning skeletons: 'Aranal, ledel!' (Rise, dead ones!)",
     "source": "extrapolated"
+  },
+  {
+    "word": "doral",
+    "translation": {
+      "uk": "як",
+      "en": "how"
+    },
+    "pos": "adverb",
+    "canon": true,
+    "root": "doral",
+    "notes": "Doral ana'diel? (How fare you?)",
+    "source": "thalassian"
+  },
+  {
+    "word": "ana",
+    "translation": {
+      "uk": "справи/стан",
+      "en": "fare/status"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "ana",
+    "notes": "Doral ana'diel?",
+    "source": "thalassian"
   }
 ]
