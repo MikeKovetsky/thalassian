@@ -199,7 +199,9 @@
             color: var(--text-muted);
             letter-spacing: 0.1em;
             display: flex;
+            align-items: center;
             justify-content: space-between;
+            min-height: 24px;
         }
 
         textarea {
@@ -389,7 +391,7 @@
             <div class="io-box">
                 <label for="output-text">
                     Translation Output
-                    <span style="font-size: 0.75rem; text-transform: none; color: #665;">(Auto-detected direction)</span>
+                    <span style="font-size: 0.75rem; text-transform: none; color: #665; white-space: nowrap; margin-left: auto;">(Auto-detected direction)</span>
                 </label>
                 <textarea id="output-text" readonly placeholder="Translation will manifest here..."></textarea>
             </div>
