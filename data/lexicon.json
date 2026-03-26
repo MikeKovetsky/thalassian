@@ -946,5 +946,41 @@
     "root": "rutaan",
     "notes": "Midnight (12.0) Alpha: Halduron mentions Light drove them to zealotry",
     "source": "thalassian"
+  },
+  {
+    "word": "min",
+    "translation": {
+      "uk": "вибух/удар",
+      "en": "blast/strike"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "min",
+    "notes": "Extrapolated from Kael'thas casting Flamestrike: 'Felomin ashal!' (Felo = fire, ashal = great, min = blast)",
+    "source": "extrapolated"
+  },
+  {
+    "word": "alon",
+    "translation": {
+      "uk": "вічність/вічний",
+      "en": "eternal/eternity"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "alon",
+    "notes": "Extrapolated from Nethermancer Sepethrea dying quote: 'Anu bala belore alon!' (Hail the sun's eternal blessing)",
+    "source": "extrapolated"
+  },
+  {
+    "word": "ledel",
+    "translation": {
+      "uk": "мертвий/слуга",
+      "en": "dead/servant"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ledel",
+    "notes": "Extrapolated from Prince Keleseth summoning skeletons: 'Aranal, ledel!' (Rise, dead ones!)",
+    "source": "extrapolated"
   }
 ]
