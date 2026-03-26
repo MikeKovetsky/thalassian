@@ -507,15 +507,10 @@
                 lblIn.innerText = "English / Ukrainian";
                 lblOut.innerText = "Thalassian (Elvish)";
                 boxIn.placeholder = "Enter text to translate...\ne.g., The sun guides us.";
-                modeSelect.disabled = false; // Allow all modes
             } else {
                 lblIn.innerText = "Thalassian (Elvish)";
                 lblOut.innerText = "English (Translated)";
                 boxIn.placeholder = "Enter Elvish to translate...\ne.g., Belore dela'na.";
-                // Force Mode 2 for reverse translation (simplest)
-                modeSelect.value = "2";
-                modeSelect.disabled = true;
-                toggleApiKey();
             }
         }
 
@@ -665,23 +660,37 @@
                 let prompt = "";
                 if (mode === "1") {
                     const sample = lexiconData.map(e => `${e.word}=${e.translation.en}`).join(", ");
-                    prompt = `You are an expert Thalassian linguist. Translate the following text to Thalassian Elvish: "${input}"
+                    if (dir === "to_th") {
+                        prompt = `You are an expert Thalassian linguist. Translate the following text to Thalassian Elvish: "${input}"
 Use ONLY roots from this exact lexicon: ${sample}
 Do NOT invent new roots unless absolutely necessary.
 Rules: Agglutinative (pronouns attach as suffixes to verbs with apostrophes: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
 Return ONLY the raw translated Thalassian text. Do NOT wrap the translation in quotation marks. Do NOT provide explanations.`;
+                    } else {
+                        prompt = `You are an expert Thalassian linguist. Translate the following Thalassian Elvish text into English: "${input}"
+Use this exact lexicon reference: ${sample}
+Return ONLY the raw translated English text. Do NOT wrap the translation in quotation marks. Do NOT provide explanations.`;
+                    }
                 } else if (mode === "3") {
-                    let draft = strictTranslate(input);
+                    let draft = dir === "to_th" ? strictTranslate(input) : reverseTranslate(input);
                     if (!draft.includes("[")) {
                         outputBox.value = draft;
                         return;
                     }
                     const gapsMatch = draft.match(/\[(.*?)\]/g) || [];
                     const gaps = gapsMatch.map(g => g.replace(/\[|\]/g, ''));
-                    prompt = `Here is a drafted Thalassian sentence with missing words in brackets: "${draft}". 
+                    
+                    if (dir === "to_th") {
+                        prompt = `Here is a drafted Thalassian sentence with missing words in brackets: "${draft}". 
 The missing words mean: ${gaps.join(", ")}. 
 Invent new Thalassian roots for these words using Elvish phonotactics (lots of vowels, soft consonants l, r, s, sh, th). 
 Return ONLY the completed sentence without brackets.`;
+                    } else {
+                        prompt = `Here is a drafted English sentence translated from Thalassian, with unknown untranslated words in brackets: "${draft}".
+The unknown Thalassian words are: ${gaps.join(", ")}.
+Based on context and fantasy elven lore, provide a smooth, coherent English translation guessing the meaning of the bracketed words.
+Return ONLY the completed English sentence without brackets.`;
+                    }
                 }
 
                 const response = await fetch("https://api.openai.com/v1/chat/completions", {
