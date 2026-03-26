@@ -397,7 +397,7 @@
                     <option value="1">Pure LLM Driven (Requires OpenAI Key)</option>
                 </select>
                 <div style="margin-left: 20px; display: flex; align-items: center; gap: 10px;">
-                    <input type="checkbox" id="runic-toggle" onchange="toggleRunes()" style="cursor: pointer;">
+                    <input type="checkbox" id="runic-toggle" onchange="toggleRunes()" style="cursor: pointer;" checked>
                     <label for="runic-toggle" style="cursor: pointer; text-transform: none; color: var(--text-muted);">Show in Elvish Runes</label>
                 </div>
             </div>
@@ -423,7 +423,7 @@
                         <span id="label-output">Thalassian (Elvish)</span>
                     </div>
                 </label>
-                <textarea id="output-text" readonly placeholder="Translation will manifest here..."></textarea>
+                <textarea id="output-text" class="runic-text" readonly placeholder="Translation will manifest here..."></textarea>
             </div>
         </div>
 
