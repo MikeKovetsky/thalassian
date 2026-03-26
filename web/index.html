@@ -25,6 +25,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <style>
+/* ... adding pill styles ... */
+        .pill-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .pill-btn {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--accent-gold);
+            border: 1px solid var(--border-subtle);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pill-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: var(--accent-gold);
+            transform: translateY(-1px);
+        }
+</style>
         :root {
             /* Portal AI inspired modern dark theme with subtle gold/ruby accents */
             --bg-main: #0B0B0E;
@@ -413,9 +439,15 @@
                     <option value="3">Hybrid Gap-Fill (Requires OpenAI Key)</option>
                     <option value="1">Pure LLM Driven (Requires OpenAI Key)</option>
                 </select>
-                <div style="margin-left: 20px; display: flex; align-items: center; gap: 10px;">
-                    <input type="checkbox" id="runic-toggle" onchange="toggleRunes()" style="cursor: pointer;" checked>
-                    <label for="runic-toggle" style="cursor: pointer; text-transform: none; color: var(--text-muted);">Show in Elvish Runes</label>
+                <div style="margin-left: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <input type="checkbox" id="runic-toggle" onchange="toggleRunes()" style="cursor: pointer;" checked>
+                        <label for="runic-toggle" style="cursor: pointer; text-transform: none; color: var(--text-muted);">Show in Elvish Runes</label>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <input type="checkbox" id="canon-toggle" style="cursor: pointer;">
+                        <label for="canon-toggle" style="cursor: pointer; text-transform: none; color: var(--text-muted);" title="If checked, restricts dictionary and LLM to officially confirmed Blizzard lore words only.">Canon Only</label>
+                    </div>
                 </div>
             </div>
             
@@ -433,6 +465,11 @@
                     </div>
                 </label>
                 <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us."></textarea>
+                <div class="pill-container" id="pills-container">
+                    <button class="pill-btn" onclick="fillAndTranslate('The sun guides us.')">The sun guides us</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Justice for our great people!')">Justice for our great people</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Taste the chill of true death!')">Taste the chill of true death</button>
+                </div>
             </div>
             <div class="io-box">
                 <label for="output-text">
@@ -463,6 +500,9 @@
                 <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 View Source & Lore
             </a>
+        </div>
+        <div style="margin-top: 15px; font-size: 0.8rem; color: #665; letter-spacing: 0.05em;">
+            Architected by an autonomous agent powered by <a href="https://portal.ai" target="_blank" style="color: var(--accent-gold); text-decoration: none;">Portal OS</a>.
         </div>
     </div>
 
@@ -496,21 +536,46 @@
             }
         }
 
+        function fillAndTranslate(text) {
+            document.getElementById('input-text').value = text;
+            translateText();
+        }
+
         function updateLabels() {
             const dir = document.getElementById('direction').value;
             const lblIn = document.getElementById('label-input');
             const lblOut = document.getElementById('label-output');
             const boxIn = document.getElementById('input-text');
+            const boxOut = document.getElementById('output-text');
             const modeSelect = document.getElementById('mode');
+            const pillsContainer = document.getElementById('pills-container');
             
+            const currentIn = boxIn.value;
+            const currentOut = boxOut.value;
+            
+            if (currentIn && currentOut && !currentOut.includes("Error") && !currentOut.includes("[")) {
+                boxIn.value = currentOut;
+                boxOut.value = "";
+            }
+
             if (dir === "to_th") {
                 lblIn.innerText = "English / Ukrainian";
                 lblOut.innerText = "Thalassian (Elvish)";
                 boxIn.placeholder = "Enter text to translate...\ne.g., The sun guides us.";
+                pillsContainer.innerHTML = `
+                    <button class="pill-btn" onclick="fillAndTranslate('The sun guides us.')">The sun guides us</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Justice for our great people!')">Justice for our great people</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Taste the chill of true death!')">Taste the chill of true death</button>
+                `;
             } else {
                 lblIn.innerText = "Thalassian (Elvish)";
                 lblOut.innerText = "English (Translated)";
                 boxIn.placeholder = "Enter Elvish to translate...\ne.g., Belore dela'na.";
+                pillsContainer.innerHTML = `
+                    <button class="pill-btn" onclick="fillAndTranslate('Anu belore dela\\'na.')">Anu belore dela'na</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Selama ashal\\'anore!')">Selama ashal'anore</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Bal\\'a dash, malanore.')">Bal'a dash, malanore</button>
+                `;
             }
         }
 
@@ -542,6 +607,8 @@
             const tokens = text.match(/[A-Za-z\']+|[.,!?;]/g) || [];
             let translated = [];
 
+            const canonOnly = document.getElementById('canon-toggle').checked;
+            
             for (let word of tokens) {
                 if (/[.,!?;]/.test(word)) {
                     if (translated.length > 0) translated[translated.length-1] += word;
@@ -556,7 +623,10 @@
                         continue;
                     }
 
-                    let found = lexiconData.find(e => e.word === w || e.word + "i" === w || e.word.slice(0,-1)+"ei" === w);
+                    let found = lexiconData.find(e => {
+                        if (canonOnly && !e.canon) return false;
+                        return e.word === w || e.word + "i" === w || e.word.slice(0,-1)+"ei" === w;
+                    });
                     if (found) {
                         let t = found.translation.en;
                         if (w.endsWith("i") && found.pos === "noun") t += "(s)";
@@ -600,7 +670,9 @@
                     }
                 }
 
+                const canonOnly = document.getElementById('canon-toggle').checked;
                 let found = lexiconData.find(e => {
+                    if (canonOnly && !e.canon) return false;
                     let uk = e.translation.uk.toLowerCase().split(/[^\wа-яєіїґ\']+/);
                     let en = e.translation.en.toLowerCase().split(/[^\w']+/);
                     return uk.includes(lower) || en.includes(lower) || 
@@ -659,7 +731,11 @@
             try {
                 let prompt = "";
                 if (mode === "1") {
-                    const sample = lexiconData.map(e => `${e.word}=${e.translation.en}`).join(", ");
+                    const canonOnly = document.getElementById('canon-toggle').checked;
+                    let filteredSample = lexiconData;
+                    if (canonOnly) filteredSample = lexiconData.filter(e => e.canon);
+                    const sample = filteredSample.map(e => `${e.word}=${e.translation.en}`).join(", ");
+                    
                     if (dir === "to_th") {
                         prompt = `You are an expert Thalassian linguist. Translate the following text to Thalassian Elvish: "${input}"
 Use ONLY roots from this exact lexicon: ${sample}
