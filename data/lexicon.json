@@ -766,5 +766,137 @@
     "root": "aran",
     "notes": "Bashal'Aran, Ameth'Aran",
     "source": "darnassian"
+  },
+  {
+    "word": "shal",
+    "translation": {
+      "uk": "ніч/тінь",
+      "en": "night/shadow"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shal",
+    "notes": "Shal'dorei (Nightborne), Shalla'tor",
+    "source": "shalassian"
+  },
+  {
+    "word": "ru",
+    "translation": {
+      "uk": "буде/воля",
+      "en": "will/survive"
+    },
+    "pos": "verb",
+    "canon": true,
+    "root": "ru",
+    "notes": "Ru shanna shal'dorei (The nightborne will survive)",
+    "source": "shalassian"
+  },
+  {
+    "word": "shanna",
+    "translation": {
+      "uk": "вижити",
+      "en": "survive"
+    },
+    "pos": "verb",
+    "canon": true,
+    "root": "shanna",
+    "notes": "Ru shanna shal'dorei",
+    "source": "shalassian"
+  },
+  {
+    "word": "vala",
+    "translation": {
+      "uk": "через/шлях",
+      "en": "through"
+    },
+    "pos": "preposition",
+    "canon": true,
+    "root": "vala",
+    "notes": "Quel'vala thonos (Nobility through tradition)",
+    "source": "shalassian"
+  },
+  {
+    "word": "thonos",
+    "translation": {
+      "uk": "традиція",
+      "en": "tradition"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "thonos",
+    "notes": "Quel'vala thonos",
+    "source": "shalassian"
+  },
+  {
+    "word": "ashar",
+    "translation": {
+      "uk": "дуель/честь",
+      "en": "duel/honor"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "ashar",
+    "notes": "Tal'ashar (An honor duel)",
+    "source": "shalassian"
+  },
+  {
+    "word": "erana",
+    "translation": {
+      "uk": "тисяча",
+      "en": "thousand"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "eran",
+    "notes": "Erana-dora isil (A thousand thanks upon you)",
+    "source": "shalassian"
+  },
+  {
+    "word": "dora",
+    "translation": {
+      "uk": "подяка",
+      "en": "thanks"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "dora",
+    "notes": "Erana-dora isil",
+    "source": "shalassian"
+  },
+  {
+    "word": "isil",
+    "translation": {
+      "uk": "тобі/на тебе",
+      "en": "upon you"
+    },
+    "pos": "pronoun",
+    "canon": true,
+    "root": "isil",
+    "notes": "Erana-dora isil",
+    "source": "shalassian"
+  },
+  {
+    "word": "rath",
+    "translation": {
+      "uk": "щит/ракета",
+      "en": "shield/missile"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "rath",
+    "notes": "E'rath omnas (arcane shield), Rath-domaas (missiles)",
+    "source": "shalassian"
+  },
+  {
+    "word": "kanesh",
+    "translation": {
+      "uk": "запис/магія",
+      "en": "record/magic"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "kanesh",
+    "notes": "Ith'el kanesh / Ith'nala kanesh",
+    "source": "shalassian"
   }
 ]
