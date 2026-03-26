@@ -552,9 +552,15 @@
             const currentIn = boxIn.value;
             const currentOut = boxOut.value;
             
-            if (currentIn && currentOut && !currentOut.includes("Error") && !currentOut.includes("[")) {
-                boxIn.value = currentOut;
-                boxOut.value = "";
+            if (currentIn || currentOut) {
+                // If it's an error message or loading state, don't put it in input
+                if (!currentOut.includes("Error") && !currentOut.includes("...")) {
+                    boxIn.value = currentOut;
+                    boxOut.value = currentIn;
+                } else {
+                    boxIn.value = currentIn;
+                    boxOut.value = "";
+                }
             }
 
             if (dir === "to_th") {
