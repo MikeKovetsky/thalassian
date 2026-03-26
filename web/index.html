@@ -664,11 +664,12 @@
             try {
                 let prompt = "";
                 if (mode === "1") {
-                    const sample = lexiconData.slice(0, 40).map(e => `${e.translation.en}=${e.word}`).join(", ");
-                    prompt = `You are a Thalassian linguist. Translate this text to Thalassian Elvish: "${input}". 
-Canon lexicon sample: ${sample}. 
-Rules: Agglutinative (pronouns attach as suffixes to verbs: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
-Return ONLY the Thalassian translation.`;
+                    const sample = lexiconData.map(e => `${e.word}=${e.translation.en}`).join(", ");
+                    prompt = `You are an expert Thalassian linguist. Translate the following text to Thalassian Elvish: "${input}"
+Use ONLY roots from this exact lexicon: ${sample}
+Do NOT invent new roots unless absolutely necessary.
+Rules: Agglutinative (pronouns attach as suffixes to verbs with apostrophes: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
+Return ONLY the raw translated Thalassian text. Do NOT wrap the translation in quotation marks. Do NOT provide explanations.`;
                 } else if (mode === "3") {
                     let draft = strictTranslate(input);
                     if (!draft.includes("[")) {
@@ -690,7 +691,7 @@ Return ONLY the completed sentence without brackets.`;
                         "Authorization": `Bearer ${apiKey}`
                     },
                     body: JSON.stringify({
-                        model: "gpt-4o-mini",
+                        model: "gpt-5-mini",
                         messages: [{role: "system", content: prompt}],
                         temperature: 0.7
                     })
