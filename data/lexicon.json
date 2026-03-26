@@ -526,5 +526,245 @@
     "root": "an",
     "notes": "An'da",
     "source": "darnassian"
+  },
+  {
+    "word": "annalas",
+    "translation": {
+      "uk": "лорд/володар",
+      "en": "lord"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "annal",
+    "notes": "Alar'annalas",
+    "source": "thalassian"
+  },
+  {
+    "word": "shala",
+    "translation": {
+      "uk": "шлях/подорож",
+      "en": "travel/path"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shal",
+    "notes": "Al diel shala (Safe travels)",
+    "source": "thalassian"
+  },
+  {
+    "word": "diel",
+    "translation": {
+      "uk": "безпека/добро",
+      "en": "safe/well"
+    },
+    "pos": "adjective",
+    "canon": true,
+    "root": "diel",
+    "notes": "Al diel shala, Doral ana'diel?",
+    "source": "thalassian"
+  },
+  {
+    "word": "arkhana",
+    "translation": {
+      "uk": "магія/аркана",
+      "en": "magic/arcane"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "arkhan",
+    "notes": "Ama noral'arkhana (Saved by magic)",
+    "source": "thalassian"
+  },
+  {
+    "word": "anar",
+    "translation": {
+      "uk": "світло/клятва",
+      "en": "light/by"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "anar",
+    "notes": "Anar'alah belore",
+    "source": "thalassian"
+  },
+  {
+    "word": "endal",
+    "translation": {
+      "uk": "подих",
+      "en": "breath"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "endal",
+    "notes": "Anar'endal dracon",
+    "source": "thalassian"
+  },
+  {
+    "word": "dracon",
+    "translation": {
+      "uk": "дракон",
+      "en": "dragon"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "dracon",
+    "notes": "Anar'endal dracon",
+    "source": "darnassian"
+  },
+  {
+    "word": "aranal",
+    "translation": {
+      "uk": "встань/піднімись",
+      "en": "rise"
+    },
+    "pos": "verb",
+    "canon": true,
+    "root": "aran",
+    "notes": "Aranal (Rise)",
+    "source": "thalassian"
+  },
+  {
+    "word": "bandor",
+    "translation": {
+      "uk": "готуйся",
+      "en": "prepare"
+    },
+    "pos": "verb",
+    "canon": true,
+    "root": "band",
+    "notes": "Band'or shorel'aran",
+    "source": "thalassian"
+  },
+  {
+    "word": "shorel",
+    "translation": {
+      "uk": "прощання",
+      "en": "farewell"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shor",
+    "notes": "Shorel'aran",
+    "source": "thalassian"
+  },
+  {
+    "word": "falor",
+    "translation": {
+      "uk": "холод/мороз",
+      "en": "chill"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "falor",
+    "notes": "Bash'a no falor talah!",
+    "source": "thalassian"
+  },
+  {
+    "word": "elor",
+    "translation": {
+      "uk": "спати/сон",
+      "en": "sleep"
+    },
+    "pos": "verb",
+    "canon": true,
+    "root": "elor",
+    "notes": "Elor bindel felallan",
+    "source": "thalassian"
+  },
+  {
+    "word": "bindel",
+    "translation": {
+      "uk": "вічно",
+      "en": "forever"
+    },
+    "pos": "adverb",
+    "canon": true,
+    "root": "bindel",
+    "notes": "Elor bindel",
+    "source": "thalassian"
+  },
+  {
+    "word": "alann",
+    "translation": {
+      "uk": "серце",
+      "en": "heart"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "alan",
+    "notes": "Elu'meniel mal alann",
+    "source": "thalassian"
+  },
+  {
+    "word": "rea",
+    "translation": {
+      "uk": "і/та",
+      "en": "and"
+    },
+    "pos": "conjunction",
+    "canon": true,
+    "root": "rea",
+    "notes": "Connects words",
+    "source": "thalassian"
+  },
+  {
+    "word": "ren",
+    "translation": {
+      "uk": "пустота",
+      "en": "void"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "ren",
+    "notes": "Ren'dorei",
+    "source": "thalassian"
+  },
+  {
+    "word": "sinu",
+    "translation": {
+      "uk": "добре/радий",
+      "en": "well"
+    },
+    "pos": "adverb",
+    "canon": true,
+    "root": "sinu",
+    "notes": "Sinu a'manore",
+    "source": "thalassian"
+  },
+  {
+    "word": "tal",
+    "translation": {
+      "uk": "смерть",
+      "en": "death"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "tal",
+    "notes": "Tal anu'men no Sin'dorei",
+    "source": "thalassian"
+  },
+  {
+    "word": "thas",
+    "translation": {
+      "uk": "ліс",
+      "en": "forest"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "thas",
+    "notes": "Thas'alah (Light of the forest)",
+    "source": "thalassian"
+  },
+  {
+    "word": "aran",
+    "translation": {
+      "uk": "місто/поселення",
+      "en": "town/settlement"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "aran",
+    "notes": "Bashal'Aran, Ameth'Aran",
+    "source": "darnassian"
   }
 ]
