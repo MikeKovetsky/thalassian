@@ -5,18 +5,40 @@ build-backend = "hatchling.build"
 [project]
 name = "thalassian-lang"
 version = "0.1.0"
-description = "Thalassian language construction package"
+description = "Thalassian language construction package for World of Warcraft lore translation"
 readme = "README.md"
 authors = [
     { name = "Portal AI", email = "adam@my.portal.ai" }
 ]
 requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Other Audience",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
 dependencies = [
     "spacy",
     "en_core_web_sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl",
     "pymorphy3",
-    "pymorphy3-dicts-uk"
+    "pymorphy3-dicts-uk",
+    "mkdocs-material"
 ]
+
+[project.urls]
+Homepage = "https://github.com/Portal-OS/thalassian"
+Repository = "https://github.com/Portal-OS/thalassian.git"
+Documentation = "https://github.com/Portal-OS/thalassian/tree/main/docs"
 
 [project.scripts]
 thalassian = "thalassian.cli.main:main"

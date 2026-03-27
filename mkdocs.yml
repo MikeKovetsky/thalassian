@@ -1,0 +1,21 @@
+site_name: Thalassian Lang
+site_description: Documentation for the Thalassian language construction package
+site_author: Portal AI
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: deep purple
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Citations: citations.md
+  - Methodology:
+    - Grammar: methodology/grammar.md
+    - Lexicon: methodology/lexicon.md
+    - Typography: methodology/typography.md
