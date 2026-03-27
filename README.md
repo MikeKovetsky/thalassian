@@ -35,34 +35,44 @@ Our engine understands agglutinative grammar (pronouns attach to verbs, preposit
     **Thalassian:** `Aranal, ledel!` *(Extrapolated from Prince Keleseth)*
 *   **English:** *"Justice for our great people."*
     **Thalassian:** `Selama ashal'anore.` *(Canon match)*
-*   **English:** *"I work on a new project today."* (Modern conversational)
-    **Thalassian:** `Carth'o neal shola sira.` *(Generated via phonotactic engine)*
+
+### Poetic Translation (Song Adaptation)
+Because Elves don't use modern words like "chains" or "confession", translating modern songs requires poetic adaptation of the roots. Here is a translation of a famous rock song (*Foo Fighters - Best of You*) using our LLM-Hybrid engine:
+
+*   *"I've got another confession to make"* -> `Mith'o dalah'shola` (I speak my truth/business)
+*   *"I'm your fool"* -> `On dal'thielin` (I am your little one)
+*   *"Everyone's got their chains to break"* -> `Ethala shindu doren` (All break their bonds)
+*   *"Holding you"* -> `Ari'a` (Hold'you)
+*   *"Were you born to resist or be abused?"* -> `Dorei'a menta rea shindara?` (Born'you to oppose or fear?)
 
 ---
 
 ## 🏗️ Project Architecture
 
-We treat conlanging as software engineering. 
+We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
-- `data/lexicon.json` - The Single Source of Truth database for 100+ canon and phonotactically generated roots.
-- `src/thalassian/grammar_en.py` - The NLP Grammar Compiler (using `spaCy` to stem English and compile SVO Elven grammar).
-- `src/thalassian/analyzer.py` - A Phonotactic Markov-chain engine to generate new vocabulary that sounds 100% lore-friendly.
-- `src/thalassian/scraper_wowhead.py` - A datamine scanner built to extract Elvish apostrophized words from raw WoW text dumps (e.g., Midnight expansion files).
+- `src/thalassian/data/lexicon.json` - The Single Source of Truth database for 200+ canon and phonotactically generated roots.
+- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler (using AST and `spaCy` to parse English and compile SVO Elven grammar).
+- `src/thalassian/phonetics/markov.py` - A Phonotactic Markov-chain engine to generate new vocabulary that sounds 100% lore-friendly.
+- `src/thalassian/morphology/` - Rules for agglutination and vocalic mutation (pluralization).
 
 ### Dive deeper into our methodology:
 1. 📖 **[Lexicon Methodology (Canon-First)](docs/methodology/lexicon.md)**
-2. 🖋️ **[Typography Methodology (Runic Visuals)](docs/methodology/typography.md)**
-3. 🤖 **[Architecting with Portal OS (How an AI built this)](docs/methodology/how-to-use-portal.md)**
+2. 📜 **[Grammar Methodology (AST & Agglutination)](docs/methodology/grammar.md)**
+3. 🖋️ **[Typography Methodology (Runic Visuals)](docs/methodology/typography.md)**
+4. 📚 **[Bibliography & Sources (Citations)](docs/citations.md)**
+5. 🤖 **[Architecting with Portal OS (How an AI built this)](docs/methodology/how-to-use-portal.md)**
 
 ---
 
-## 🚀 TODO & Future Roadmap
-- [x] **Lexicon Combiner**: Script to automatically merge roots into complex nouns (e.g., `felo` + `alar` = `Felo'alar` / Fire Phoenix).
+## 🚀 Future Roadmap
+- [x] **Lexicon Combiner**: Script to automatically merge roots into complex nouns.
 - [x] **Grammar Compiler**: Syntax rules (SVO, pluralization, pronoun agglutination).
 - [x] **Web Interface**: Multi-mode translator hosted on GitHub Pages.
 - [x] **Midnight (12.0) Datamining**: Integrate the newest canonical words (`Shal'na`, `Anu'shalla`).
-- [ ] **Typography Engine**: Integrate custom TTF/WOFF Elvish Runic fonts for visual rendering in the web app.
-- [ ] **Reverse Translator**: Convert Thalassian back to English.
+- [x] **Typography Engine**: Integrated Elvish Runic fonts for visual rendering in the web app.
+- [x] **Reverse Translator**: Auto-detects Elvish and translates back to English.
+- [x] **Syntax Tree Visualizer**: D3.js interactive parse trees for Elven grammar.
 - [ ] **Audio Generation**: TTS integration that speaks Thalassian with a Silvermoon accent.
 
 ---
