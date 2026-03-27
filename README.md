@@ -52,6 +52,7 @@ We treat conlanging as software engineering.
 ### Dive deeper into our methodology:
 1. 📖 **[Lexicon Methodology (Canon-First)](docs/methodology/lexicon.md)**
 2. 🖋️ **[Typography Methodology (Runic Visuals)](docs/methodology/typography.md)**
+3. 🤖 **[Architecting with Portal OS (How an AI built this)](docs/methodology/how-to-use-portal.md)**
 
 ---
 
