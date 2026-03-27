@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguistic Syntax Tree Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        :root {
+            --bg-main: #0B0B0E;
+            --bg-panel: rgba(25, 20, 24, 0.6);
+            --text-main: #EAE0D5;
+            --text-muted: #A09080;
+            --accent-gold: #D4AF37;
+            --accent-ruby: #9B2226;
+            --radius-lg: 16px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: var(--bg-panel);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+        }
+        .nav-links a:hover { color: #FFF; }
+        
+        svg {
+            width: 100%;
+            height: 400px;
+        }
+        .node circle {
+            fill: #150a0f;
+            stroke: var(--accent-gold);
+            stroke-width: 2px;
+        }
+        .node text {
+            font-family: 'Inter', sans-serif;
+            fill: var(--text-main);
+            font-size: 14px;
+        }
+        .node .label {
+            fill: var(--accent-ruby);
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .link {
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 1.5px;
+            opacity: 0.6;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+        }
+        button:hover { background: rgba(212, 175, 55, 0.2); }
+    </style>
+</head>
+<body>
+
+    <h1>Linguistic Syntax Tree</h1>
+    <div class="nav-links">
+        <a href="index.html">← Back to Translator</a>
+    </div>
+
+    <div class="container">
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+            This interactive diagram demonstrates how the Thalassian AST (Abstract Syntax Tree) works. 
+            Elven grammar is agglutinative, meaning the Subject (S), Verb (V), and Object (O) nodes are physically compiled into compound words (e.g., S + V'O).
+        </p>
+        
+        <div class="controls">
+            <button onclick="drawTree('sentence1')">The sun guides us</button>
+            <button onclick="drawTree('sentence2')">Justice for our people</button>
+        </div>
+
+        <div id="d3-container"></div>
+    </div>
+
+    <script>
+        const treeData = {
+            "sentence1": {
+                name: "Sentence (SVO)",
+                tag: "ROOT",
+                children: [
+                    {
+                        name: "belore",
+                        tag: "Subject (Noun)",
+                        en: "sun"
+                    },
+                    {
+                        name: "dela'na",
+                        tag: "Verb Phrase",
+                        en: "guides us",
+                        children: [
+                            { name: "dela", tag: "Verb", en: "guides" },
+                            { name: "'na", tag: "Agglutinated Object", en: "us" }
+                        ]
+                    }
+                ]
+            },
+            "sentence2": {
+                name: "Sentence",
+                tag: "ROOT",
+                children: [
+                    {
+                        name: "selama",
+                        tag: "Subject (Noun)",
+                        en: "justice"
+                    },
+                    {
+                        name: "[dropped]",
+                        tag: "Preposition",
+                        en: "for"
+                    },
+                    {
+                        name: "ashal'anore",
+                        tag: "Object Phrase",
+                        en: "our great people",
+                        children: [
+                            { name: "ashal", tag: "Adjective", en: "great" },
+                            { name: "anore", tag: "Noun", en: "people" }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        function drawTree(sentenceId) {
+            document.getElementById('d3-container').innerHTML = "";
+            const data = treeData[sentenceId];
+
+            const width = document.getElementById('d3-container').clientWidth;
+            const height = 400;
+            const margin = {top: 40, right: 90, bottom: 50, left: 90};
+
+            const svg = d3.select("#d3-container").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", `translate(${width/2},${margin.top})`);
+
+            const tree = d3.tree().size([width - margin.left - margin.right, height - margin.top - margin.bottom]);
+            const root = d3.hierarchy(data);
+            
+            tree(root);
+
+            // Lines
+            svg.selectAll(".link")
+                .data(root.links())
+                .enter().append("path")
+                .attr("class", "link")
+                .attr("d", d3.linkVertical()
+                    .x(d => d.x - width/2 + margin.left)
+                    .y(d => d.y));
+
+            // Nodes
+            const node = svg.selectAll(".node")
+                .data(root.descendants())
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x - width/2 + margin.left},${d.y})`);
+
+            node.append("circle").attr("r", 6);
+
+            node.append("text")
+                .attr("dy", -15)
+                .attr("text-anchor", "middle")
+                .text(d => d.data.name);
+
+            node.append("text")
+                .attr("class", "label")
+                .attr("dy", 15)
+                .attr("text-anchor", "middle")
+                .text(d => d.data.tag);
+                
+            if(data.en) {
+                node.append("text")
+                    .attr("dy", 30)
+                    .attr("text-anchor", "middle")
+                    .style("fill", "#666")
+                    .style("font-size", "10px")
+                    .text(d => d.data.en ? `(${d.data.en})` : "");
+            }
+        }
+
+        // Init
+        drawTree('sentence1');
+    </script>
+</body>
+</html>
