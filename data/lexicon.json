@@ -1786,5 +1786,689 @@
     "root": "manor",
     "notes": "Sinu a'manore (Well met)",
     "source": "thalassian"
+  },
+  {
+    "word": "al'ore",
+    "translation": {
+      "uk": "я",
+      "en": "I"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "anu + ore",
+    "notes": "From anu (self) + ore (one/being), contraction al'ore = 'the self'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "il'ore",
+    "translation": {
+      "uk": "ти",
+      "en": "you"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "il + ore",
+    "notes": "il- prefix denoting second person, modeled on al'ore pattern",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "an'dorei",
+    "translation": {
+      "uk": "ми",
+      "en": "we"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "anu + dorei",
+    "notes": "From anu (self) + dorei (children/people) = 'our selves, we the people'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "era",
+    "translation": {
+      "uk": "це",
+      "en": "this"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "era",
+    "notes": "Short demonstrative proximal; soft vowel-initial, typical Thalassian deictic",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "osa",
+    "translation": {
+      "uk": "те",
+      "en": "that"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "osa",
+    "notes": "Distal demonstrative; vowel contrast e/o marks proximal/distal",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "theli",
+    "translation": {
+      "uk": "хто",
+      "en": "who"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "theli",
+    "notes": "Interrogative animate; th- onset common in Thalassian question words",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thera",
+    "translation": {
+      "uk": "що",
+      "en": "what"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "thera",
+    "notes": "Interrogative inanimate; parallels theli with -ra ending for things vs -li for persons",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "nath",
+    "translation": {
+      "uk": "не",
+      "en": "not"
+    },
+    "pos": "particle",
+    "canon": false,
+    "root": "nath",
+    "notes": "Negation particle; soft nasal onset, echoes shindu (failing) in semantic field",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ethala",
+    "translation": {
+      "uk": "все",
+      "en": "all"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "ethala",
+    "notes": "Totality marker; resonates with thalas (home/hearth = totality of dwelling)",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "shari",
+    "translation": {
+      "uk": "багато",
+      "en": "many"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "shari",
+    "notes": "New root for abundance; sh-onset follows Thalassian phonotactics",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ore",
+    "translation": {
+      "uk": "один",
+      "en": "one"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "ore",
+    "notes": "Base numeral; also used as 'being/individual' in compounds",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "elai",
+    "translation": {
+      "uk": "два",
+      "en": "two"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "elai",
+    "notes": "Base numeral two; diphthong -ai marks duality",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "loriel",
+    "translation": {
+      "uk": "довгий",
+      "en": "long"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "loriel",
+    "notes": "Evokes elongation; -iel suffix common in Thalassian adjectives",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thiel",
+    "translation": {
+      "uk": "малий",
+      "en": "small"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "thiel",
+    "notes": "Diminutive root; contrasts with ashal (great)",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "serith",
+    "translation": {
+      "uk": "жінка",
+      "en": "woman"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "serith",
+    "notes": "New root for woman; soft sibilant + liquid, distinctly elvish",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "dorin",
+    "translation": {
+      "uk": "людина",
+      "en": "person"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "dor + -in",
+    "notes": "From dorei (children/people) stem dor- + singular -in",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "lura'thiel",
+    "translation": {
+      "uk": "риба",
+      "en": "fish"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lura + thiel",
+    "notes": "Compound: lura (water) + thiel (small) = 'small water-creature'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "rovalin",
+    "translation": {
+      "uk": "птах",
+      "en": "bird"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "roval + -in",
+    "notes": "From new root roval (wing/flight) + -in (one who) = 'winged one'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "rashiel",
+    "translation": {
+      "uk": "собака",
+      "en": "dog"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "rashiel",
+    "notes": "New root; soft r- onset + sh cluster, loyal-companion connotation",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thas'ore",
+    "translation": {
+      "uk": "дерево",
+      "en": "tree"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thas + ore",
+    "notes": "Compound: thas (forest) + ore (one) = 'one of the forest, a single tree'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "sorin",
+    "translation": {
+      "uk": "насіння",
+      "en": "seed"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "sorin",
+    "notes": "New root; sor- evokes origin/source, -in singulative",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thas'iel",
+    "translation": {
+      "uk": "листок",
+      "en": "leaf"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thas + iel",
+    "notes": "Compound: thas (forest) + -iel (small/thin piece) = 'forest-piece'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thas'nor",
+    "translation": {
+      "uk": "корінь",
+      "en": "root (plant)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thas + nor",
+    "notes": "Compound: thas (forest) + nor (beneath/deep) = 'forest-deep'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "rethis",
+    "translation": {
+      "uk": "шкіра",
+      "en": "skin"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "rethis",
+    "notes": "New root for skin/hide; soft consonants reth- typical Thalassian",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "sin'rae",
+    "translation": {
+      "uk": "плоть",
+      "en": "flesh"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "sin + rae",
+    "notes": "Compound: sin (blood) + rae (substance/matter) = 'blood-matter'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ossira",
+    "translation": {
+      "uk": "кістка",
+      "en": "bone"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ossira",
+    "notes": "New root; echoes osseous, fits Thalassian vowel-heavy pattern",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "luriel",
+    "translation": {
+      "uk": "яйце",
+      "en": "egg"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lur + iel",
+    "notes": "From lur- (life-liquid) + -iel (small vessel) = 'small life-vessel'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "roval'iel",
+    "translation": {
+      "uk": "перо",
+      "en": "feather"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "roval + iel",
+    "notes": "Compound: roval (wing) + iel (piece) = 'wing-piece'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "silaren",
+    "translation": {
+      "uk": "волосся",
+      "en": "hair"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "silaren",
+    "notes": "New root; sil- evokes silk/thread, -aren noun suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "dris'al",
+    "translation": {
+      "uk": "голова",
+      "en": "head"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "dris + al",
+    "notes": "From dris (eye/sight) + al (the/of) = 'the seeing one, crown of body'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thelis",
+    "translation": {
+      "uk": "вухо",
+      "en": "ear"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thelis",
+    "notes": "New root for ear; thel- (sense/perceive) + -is body-part suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "dris",
+    "translation": {
+      "uk": "око",
+      "en": "eye"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "dris",
+    "notes": "New fundamental root for eye/sight; used in many compounds",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "rashis",
+    "translation": {
+      "uk": "ніс",
+      "en": "nose"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "rashis",
+    "notes": "New root; rash- (breath/air sense) + -is body-part suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "oris",
+    "translation": {
+      "uk": "рот",
+      "en": "mouth"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "oris",
+    "notes": "New root for mouth; or- (voice/speech) + -is body suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "nethis",
+    "translation": {
+      "uk": "зуб",
+      "en": "tooth"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "nethis",
+    "notes": "New root; neth- (bite/sharp) + -is body suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "lashis",
+    "translation": {
+      "uk": "язик",
+      "en": "tongue"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "lashis",
+    "notes": "New root; lash- (taste/speak) + -is body suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "talor",
+    "translation": {
+      "uk": "стопа",
+      "en": "foot"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "talor",
+    "notes": "New root for foot; tal- (path/walk) + -or agent-like suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "shalis",
+    "translation": {
+      "uk": "нога",
+      "en": "leg"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "shalis",
+    "notes": "New root; shal- (stride/step) + -is body suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ethis",
+    "translation": {
+      "uk": "рука",
+      "en": "hand"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ethis",
+    "notes": "New root for hand; eth- (craft/grasp) + -is body suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "roval",
+    "translation": {
+      "uk": "крило",
+      "en": "wing"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "roval",
+    "notes": "New root for wing/flight; ro- (sky/air) + -val (span)",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thalis",
+    "translation": {
+      "uk": "живіт",
+      "en": "belly"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thalas + -is",
+    "notes": "From thalas (home/hearth) + -is body suffix = 'body-home'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "enaris",
+    "translation": {
+      "uk": "шия",
+      "en": "neck"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "enaris",
+    "notes": "New root; enar- (bridge/link) + -is body suffix",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ishala",
+    "translation": {
+      "uk": "серце",
+      "en": "heart"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ishala",
+    "notes": "New root; ish- (inner/deep) + -ala (essence) = 'inner essence'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "lura'sin",
+    "translation": {
+      "uk": "пити",
+      "en": "drink"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "lura + sin",
+    "notes": "Compound: lura (water) + sin (blood/take in) = 'take water'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "nethael",
+    "translation": {
+      "uk": "їсти",
+      "en": "eat"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "neth + ael",
+    "notes": "From neth- (tooth/bite) + -ael (action) = 'to use teeth'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "nethira",
+    "translation": {
+      "uk": "кусати",
+      "en": "bite"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "neth + ira",
+    "notes": "From neth- (tooth) + -ira (pierce) = 'tooth-pierce'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ro'ael",
+    "translation": {
+      "uk": "дути",
+      "en": "blow"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ro + ael",
+    "notes": "From ro- (air/sky) + ael (action) = 'move air'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ro'shin",
+    "translation": {
+      "uk": "дихати",
+      "en": "breathe"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ro + shin",
+    "notes": "From ro- (air) + shin- (sustain/flow) = 'sustain air'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "elara",
+    "translation": {
+      "uk": "сміятися",
+      "en": "laugh"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "elara",
+    "notes": "New root; bright vowels evoke joy, el- (light/bright) + -ara",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "dris'ael",
+    "translation": {
+      "uk": "бачити",
+      "en": "see"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "dris + ael",
+    "notes": "Compound: dris (eye) + ael (action) = 'to use eyes'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "thelis'ael",
+    "translation": {
+      "uk": "чути",
+      "en": "hear"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "thelis + ael",
+    "notes": "Compound: thelis (ear) + ael (action) = 'to use ears'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ishari",
+    "translation": {
+      "uk": "знати",
+      "en": "know"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ish + ari",
+    "notes": "From ish- (inner/deep) + -ari (hold) = 'hold within'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "ish'thero",
+    "translation": {
+      "uk": "думати",
+      "en": "think"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ish + thero",
+    "notes": "Compound: ish- (inner) + thero (student/study) = 'study inwardly'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "rashis'ael",
+    "translation": {
+      "uk": "нюхати",
+      "en": "smell"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "rashis + ael",
+    "notes": "Compound: rashis (nose) + ael (action) = 'to use nose'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "shindara",
+    "translation": {
+      "uk": "боятися",
+      "en": "fear"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "shindu + ara",
+    "notes": "From shindu (failing) + -ara (state) = 'to feel failing'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "elu'shin",
+    "translation": {
+      "uk": "спати",
+      "en": "sleep"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "elu + shin",
+    "notes": "From elu- (rest/dim) + shin (sustain) = 'sustained rest'",
+    "source": "generated_swadesh"
+  },
+  {
+    "word": "anor'ael",
+    "translation": {
+      "uk": "жити",
+      "en": "live"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "anore + ael",
+    "notes": "From anore (people/nation) + ael (action) = 'to be of the people, live'",
+    "source": "generated_swadesh"
   }
 ]
