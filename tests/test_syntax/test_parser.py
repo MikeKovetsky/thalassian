@@ -3,8 +3,9 @@ import json
 import os
 import sys
 
-sys.path.append(os.path.dirname(__file__))
-from grammar_en import compile_sentence_en, load_lexicon, apply_plural
+from thalassian.core.lexicon import load_lexicon
+from thalassian.syntax.parser import compile_sentence_en
+from thalassian.morphology.pluralization import apply_plural
 
 class TestThalassianGrammar(unittest.TestCase):
     

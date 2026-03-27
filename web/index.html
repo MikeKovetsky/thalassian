@@ -510,12 +510,12 @@
 
         window.onload = async () => {
             try {
-                const response = await fetch('../data/lexicon.json');
+                const response = await fetch('../src/thalassian/data/lexicon.json');
                 lexiconData = await response.json();
                 document.getElementById('lexicon-count').innerText = lexiconData.length;
             } catch (error) {
                 try {
-                    const response = await fetch('https://raw.githubusercontent.com/MikeKovetsky/thalassian/main/data/lexicon.json');
+                    const response = await fetch('https://raw.githubusercontent.com/MikeKovetsky/thalassian/main/src/thalassian/data/lexicon.json');
                     lexiconData = await response.json();
                     document.getElementById('lexicon-count').innerText = lexiconData.length;
                 } catch (e) {

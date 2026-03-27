@@ -45,9 +45,9 @@ Our engine understands agglutinative grammar (pronouns attach to verbs, preposit
 We treat conlanging as software engineering. 
 
 - `data/lexicon.json` - The Single Source of Truth database for 100+ canon and phonotactically generated roots.
-- `scripts/grammar_en.py` - The NLP Grammar Compiler (using `spaCy` to stem English and compile SVO Elven grammar).
-- `scripts/analyzer.py` - A Phonotactic Markov-chain engine to generate new vocabulary that sounds 100% lore-friendly.
-- `scripts/scraper_wowhead.py` - A datamine scanner built to extract Elvish apostrophized words from raw WoW text dumps (e.g., Midnight expansion files).
+- `src/thalassian/grammar_en.py` - The NLP Grammar Compiler (using `spaCy` to stem English and compile SVO Elven grammar).
+- `src/thalassian/analyzer.py` - A Phonotactic Markov-chain engine to generate new vocabulary that sounds 100% lore-friendly.
+- `src/thalassian/scraper_wowhead.py` - A datamine scanner built to extract Elvish apostrophized words from raw WoW text dumps (e.g., Midnight expansion files).
 
 ### Dive deeper into our methodology:
 1. 📖 **[Lexicon Methodology (Canon-First)](docs/methodology/lexicon.md)**

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "thalassian-lang"
+version = "0.1.0"
+description = "Thalassian language construction package"
+readme = "README.md"
+authors = [
+    { name = "Portal AI", email = "adam@my.portal.ai" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "spacy",
+    "en_core_web_sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl",
+    "pymorphy3",
+    "pymorphy3-dicts-uk"
+]
+
+[project.scripts]
+thalassian = "thalassian.cli.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/thalassian"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/thalassian/**/*.json"]
