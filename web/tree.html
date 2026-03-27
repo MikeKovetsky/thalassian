@@ -115,6 +115,8 @@
         <div class="controls">
             <button onclick="drawTree('sentence1')">The sun guides us</button>
             <button onclick="drawTree('sentence2')">Justice for our people</button>
+            <button onclick="drawTree('sentence3')">Taste the chill of true death!</button>
+            <button onclick="drawTree('sentence4')">The winged-one flies to the forest</button>
         </div>
 
         <div id="d3-container"></div>
@@ -125,6 +127,7 @@
             "sentence1": {
                 name: "Sentence (SVO)",
                 tag: "ROOT",
+                en: "The sun guides us",
                 children: [
                     {
                         name: "belore",
@@ -145,6 +148,7 @@
             "sentence2": {
                 name: "Sentence",
                 tag: "ROOT",
+                en: "Justice for our great people",
                 children: [
                     {
                         name: "selama",
@@ -166,6 +170,68 @@
                         ]
                     }
                 ]
+            },
+            "sentence3": {
+                name: "Imperative Sentence",
+                tag: "ROOT",
+                en: "Taste the chill of true death!",
+                children: [
+                    {
+                        name: "bash'a",
+                        tag: "Verb Phrase",
+                        en: "taste you",
+                        children: [
+                            { name: "bash", tag: "Verb (Imperative)", en: "taste/destroy" },
+                            { name: "'a", tag: "Agglutinated Subject", en: "you" }
+                        ]
+                    },
+                    {
+                        name: "[dropped]",
+                        tag: "Preposition",
+                        en: "of"
+                    },
+                    {
+                        name: "falor",
+                        tag: "Direct Object",
+                        en: "chill"
+                    },
+                    {
+                        name: "talah",
+                        tag: "Modifier Noun",
+                        en: "true death"
+                    }
+                ]
+            },
+            "sentence4": {
+                name: "Sentence (SVO)",
+                tag: "ROOT",
+                en: "The bird (winged-one) flies to the forest",
+                children: [
+                    {
+                        name: "rovalin",
+                        tag: "Subject (Compound Noun)",
+                        en: "bird",
+                        children: [
+                            { name: "roval", tag: "Root Noun", en: "wing" },
+                            { name: "in", tag: "Suffix", en: "one who" }
+                        ]
+                    },
+                    {
+                        name: "fal",
+                        tag: "Verb",
+                        en: "flies"
+                    },
+                    {
+                        name: "[dropped]",
+                        tag: "Preposition",
+                        en: "to"
+                    },
+                    {
+                        name: "thas",
+                        tag: "Object (Location)",
+                        en: "forest"
+                    }
+                ]
             }
         };
 
@@ -174,8 +240,8 @@
             const data = treeData[sentenceId];
 
             const width = document.getElementById('d3-container').clientWidth;
-            const height = 400;
-            const margin = {top: 40, right: 90, bottom: 50, left: 90};
+            const height = 450;
+            const margin = {top: 60, right: 90, bottom: 50, left: 90};
 
             const svg = d3.select("#d3-container").append("svg")
                 .attr("width", width)
@@ -207,8 +273,9 @@
             node.append("circle").attr("r", 6);
 
             node.append("text")
-                .attr("dy", -15)
+                .attr("dy", -20)
                 .attr("text-anchor", "middle")
+                .style("font-weight", "600")
                 .text(d => d.data.name);
 
             node.append("text")
@@ -217,14 +284,12 @@
                 .attr("text-anchor", "middle")
                 .text(d => d.data.tag);
                 
-            if(data.en) {
-                node.append("text")
-                    .attr("dy", 30)
-                    .attr("text-anchor", "middle")
-                    .style("fill", "#666")
-                    .style("font-size", "10px")
-                    .text(d => d.data.en ? `(${d.data.en})` : "");
-            }
+            node.append("text")
+                .attr("dy", 30)
+                .attr("text-anchor", "middle")
+                .style("fill", "#A09080")
+                .style("font-size", "11px")
+                .text(d => d.data.en ? `(${d.data.en})` : "");
         }
 
         // Init
