@@ -1,25 +1,41 @@
 // The "Strict" engine of index.html, in both directions: pure functions over the lexicon, so node can
 // test them (tests/web/run_translator.js runs them for tests/test_syntax/test_translator_canon.py).
-// The forward rules mirror src/thalassian/syntax/parser.py: whole canon phrases first, then
-// "by X" -> anar'X, then "X of the Y" -> Y'X, then pronoun suffixes, and word lookup that prefers
-// what Blizzard glossed.
+// The forward rules mirror src/thalassian/syntax/parser.py and docs/methodology/grammar.md: whole canon
+// phrases first, then "By X" opening a clause -> anar'X, then names "X of the Y" -> Y'X, then possessives,
+// then pronoun suffixes, and word lookup that prefers what Blizzard glossed. Nouns have no plural.
 (function (root) {
     "use strict";
 
-    // "and" and "by" are not dropped: canon has rea (and) and anar (by).
+    // "and" is not dropped: canon rea. "by" is dropped except where it opens an oath or invocation, where it
+    // is anar' ("By the light", Anar'alah); the "by" of a passive is not anar' ("Saved by magic").
     const DROP_WORDS = new Set(["для", "в", "до", "на", "з", "за", "від", "про", "але",
-        "for", "to", "the", "a", "an", "of", "in", "on", "with", "but"]);
+        "for", "to", "the", "a", "an", "of", "in", "on", "with", "by", "but"]);
     // Words that translate but never take a pronoun suffix: "and you" is not "rea'a".
-    const FUNCTION_WORDS = new Set([...DROP_WORDS, "and", "by", "і", "та"]);
+    const FUNCTION_WORDS = new Set([...DROP_WORDS, "and", "і", "та"]);
     const ARTICLES = new Set(["the", "a", "an"]);
+    // Pronouns (grammar section 5), the same tables as src/thalassian/morphology/agglutination.py. One form
+    // serves every role: an object clitic after a verb (dela'na), a free word elsewhere (na "we"). 'na and 'o
+    // are canon; 'a and 'dan are invented. anu is a wish particle, not "we".
     // Maps, not plain objects: a typed word such as "constructor" must not find Object.prototype.
-    const PRONOUN_SUFFIXES = new Map(Object.entries({
-        "нас": "na", "ми": "anu", "нам": "na", "us": "na", "we": "anu",
-        "ти": "a", "тобі": "a", "тебе": "a", "you": "a",
-        "я": "o", "мені": "o", "мене": "o", "i": "o", "me": "o",
-        "їх": "dan", "вони": "danu", "them": "dan", "they": "danu"
+    const PRONOUN_FORMS = new Map(Object.entries({
+        "we": "na", "us": "na", "i": "o", "me": "o", "you": "a",
+        "he": "dan", "she": "dan", "it": "dan", "they": "dan", "him": "dan", "her": "dan", "them": "dan",
+        "ми": "na", "нас": "na", "нам": "na", "я": "o", "мене": "o", "мені": "o",
+        "ти": "a", "тебе": "a", "тобі": "a", "ви": "a", "вас": "a", "вам": "a",
+        "він": "dan", "вона": "dan", "воно": "dan", "вони": "dan",
+        "його": "dan", "її": "dan", "їх": "dan", "йому": "dan", "їй": "dan", "їм": "dan"
     }));
-    const PRONOUN_ENCLITICS = new Map(Object.entries({ "na": "us", "anu": "we", "a": "you", "o": "me", "dan": "them", "danu": "they" }));
+    // Possessives: [form, before the noun]. mal "your" comes first (canon: mal alann, "your heart"); na "our"
+    // follows the noun; o "my" and dan "his, her, its, their" follow it by analogy (invented).
+    const POSSESSIVES = new Map([
+        ...["your", "твій", "твоя", "твоє", "твої", "ваш", "ваша", "ваше", "ваші"].map(w => [w, ["mal", true]]),
+        ...["our", "наш", "наша", "наше", "наші"].map(w => [w, ["na", false]]),
+        ...["my", "мій", "моя", "моє", "мої"].map(w => [w, ["o", false]]),
+        ...["his", "her", "its", "their", "його", "її", "їхній", "їхня", "їхнє", "їхні"].map(w => [w, ["dan", false]])
+    ]);
+    const PRONOUN_ENCLITICS = new Map(Object.entries({ "na": "us", "a": "you", "o": "me", "dan": "him/her/it/them" }));
+    // Free pronouns and possessives the lexicon lacks (na "us/our" is an entry).
+    const FREE_PRONOUNS = new Map(Object.entries({ "o": "I/me/my", "a": "you", "dan": "he/she/it/they", "mal": "your" }));
     const BASIS_RANK = new Map(Object.entries({ attested: 0, segment: 1, name: 2, epithet: 2, inferred: 3, unverified: 4, generated: 5 }));
     const NOUN_POS = new Set(["noun", "proper noun"]);
     const CONTRACTIONS = [[/'re\b/gi, " are"], [/'m\b/gi, " am"], [/'ve\b/gi, " have"], [/'ll\b/gi, " will"]];
@@ -115,12 +131,23 @@
     const OF = new Set(["of"]);
     const isWord = item => item.kind === "token" && !item.punct;
     const isAny = (item, words) => isWord(item) && words.has(item.lower);
-    const isPronoun = item => isWord(item) && PRONOUN_SUFFIXES.has(item.lower);
+    const isPronoun = item => isWord(item) && (PRONOUN_FORMS.has(item.lower) || POSSESSIVES.has(item.lower));
+    const isCapitalized = item => isWord(item) && /^\p{Lu}/u.test(item.text);
     // An item that translates to an elven word of its own: not punctuation, a function word or a pronoun.
     const isContent = item => item.kind !== "token" || (!item.punct && !FUNCTION_WORDS.has(item.lower) && !isPronoun(item));
 
+    // Whether items[i] opens a clause: nothing but articles before it, back to the start or punctuation.
+    function clauseStart(items, i) {
+        let k = i - 1;
+        while (k >= 0 && isAny(items[k], ARTICLES)) k--;
+        return k < 0 || (items[k].kind === "token" && items[k].punct);
+    }
+    const clauseEnd = (items, j) => j + 1 >= items.length || (items[j + 1].kind === "token" && items[j + 1].punct);
+
     // The longest spans whose words equal a phrasebook sense. A span starts at a word that counts (not an
-    // article) and may run over commas, but not over other punctuation.
+    // article) and may run over commas, but not over other punctuation. A whole phrase is a fixed formula
+    // used whole, so it must fill its clause: "The light of the sun guides us" must not put the
+    // clause-opening anu of anu belore dela'na in the middle.
     function applyPhrasebook(tokens, book) {
         let longest = 0;
         for (const k of book.keys()) longest = Math.max(longest, k.split(" ").length);
@@ -136,7 +163,10 @@
                     }
                     const words = phraseKey(tokens[j].text);
                     key.push(...words);
-                    if (words.length && book.has(key.join(" "))) found = { end: j, entry: book.get(key.join(" ")) };
+                    const entry = words.length ? book.get(key.join(" ")) : undefined;
+                    if (entry && (!isPhrase(entry) || (clauseStart(tokens, i) && clauseEnd(tokens, j)))) {
+                        found = { end: j, entry };
+                    }
                 }
             }
             if (found) {
@@ -155,11 +185,12 @@
         return k;
     }
 
-    // "by [the] X" -> anar'X, as in Anar'alah and Anar'endal.
+    // "By [the] X", opening a clause, -> anar'X, as in the oaths Anar'alah and Anar'endal dracon. Any other
+    // "by" is dropped.
     function applyProclitics(items) {
         const out = [];
         for (let i = 0; i < items.length; i++) {
-            if (isAny(items[i], BY)) {
+            if (isAny(items[i], BY) && clauseStart(items, i)) {
                 const k = skipArticles(items, i + 1);
                 if (k < items.length && isContent(items[k])) {
                     out.push({ kind: "proclitic", word: items[i], target: items[k] });
@@ -172,16 +203,18 @@
         return out;
     }
 
-    // "X of [the] Y" -> Y'X, as in Sin'dorei and Thas'alah. The word after Y, if it is a content word, is
-    // kept as `after`: render decides whether the "of" phrase goes on past Y. "of" after "by X" ("by the
-    // light of the sun", anar'alah belore) stays a free genitive, head first, as in canon.
+    // A name, "X of [the] Y" with X and Y capitalized ("Light of the Forest"), -> Y'X, as in Thas'alah and
+    // Sin'dorei. The word after Y, if it is a content word, is kept as `after`: render decides whether the
+    // name goes on past Y. Any other "of" phrase is left as it is: "of" and "the" drop out and the head
+    // comes first, as in canon alah belore, endal dracon and falor talah.
     function applyCompounds(items) {
         const out = [];
         const contentWord = item => isWord(item) && isContent(item);
         for (let i = 0; i < items.length; i++) {
-            if (isAny(items[i], OF) && out.length && contentWord(out[out.length - 1])) {
+            const head = out[out.length - 1];
+            if (isAny(items[i], OF) && out.length && contentWord(head) && isCapitalized(head)) {
                 const k = skipArticles(items, i + 1);
-                if (k < items.length && contentWord(items[k])) {
+                if (k < items.length && contentWord(items[k]) && isCapitalized(items[k])) {
                     const after = k + 1 < items.length && isContent(items[k + 1]) ? items[k + 1] : null;
                     out[out.length - 1] = { kind: "compound", head: out[out.length - 1], modifier: items[k], after };
                     i = k;
@@ -193,14 +226,37 @@
         return out;
     }
 
+    // A possessive before a content word: mal goes before it, na, o and dan after it. Anywhere else a
+    // possessive word is a pronoun ("guide her" -> dela'dan).
+    function applyPossessives(items) {
+        const out = [];
+        for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            if (isWord(item) && POSSESSIVES.has(item.lower) && i + 1 < items.length && isContent(items[i + 1])) {
+                const [form, before] = POSSESSIVES.get(item.lower);
+                out.push({ kind: "possessive", form, before, target: items[i + 1] });
+                i++;
+                continue;
+            }
+            out.push(item);
+        }
+        return out;
+    }
+
+    // The free form of a pronoun or possessive standing on its own ("we" -> na, "you" -> a).
+    const pronounForm = lower => PRONOUN_FORMS.has(lower) ? PRONOUN_FORMS.get(lower) :
+        POSSESSIVES.has(lower) ? POSSESSIVES.get(lower)[0] : null;
+
     // A word followed by an object pronoun takes it as a suffix ("guide us" -> dela'na). A function word
-    // does not ("justice for you" keeps its "you").
+    // does not ("justice for you" keeps its "you"), nor does a pronoun: "I guide you" is o dela'a, with the
+    // subject a free word before the verb.
     function pairPronouns(items) {
         const out = [];
         for (let i = 0; i < items.length; i++) {
             const item = items[i];
-            if (isWord(item) && !FUNCTION_WORDS.has(item.lower) && i + 1 < items.length && isPronoun(items[i + 1])) {
-                out.push({ ...item, suffix: "'" + PRONOUN_SUFFIXES.get(items[i + 1].lower) });
+            if (isWord(item) && !FUNCTION_WORDS.has(item.lower) && !isPronoun(item) && i + 1 < items.length &&
+                isPronoun(items[i + 1])) {
+                out.push({ ...item, suffix: "'" + pronounForm(items[i + 1].lower) });
                 i++;
                 continue;
             }
@@ -216,24 +272,31 @@
         const tokens = (expandContractions(text).match(/[A-Za-zА-Яа-яЄєІіЇїҐґ\']+|[.,!?;]/g) || [])
             .map(t => ({ kind: "token", text: t, lower: t.toLowerCase(), punct: PUNCT.test(t) }));
         const book = options.phrasebook === false ? new Map() : buildPhrasebook(lexicon, canonOnly);
-        const items = pairPronouns(applyCompounds(applyProclitics(applyPhrasebook(tokens, book))));
+        const items = pairPronouns(applyPossessives(applyCompounds(applyProclitics(applyPhrasebook(tokens, book)))));
 
         // "" for a dropped word; [word] for one the lexicon lacks.
         const word = item => {
             if (DROP_WORDS.has(item.lower)) return "";
+            const form = pronounForm(item.lower);
+            if (form) return form;
             const found = findWord(lexicon, item.lower, canonOnly);
             return found ? found.word : `[${item.text}]`;
         };
+        const by = findWord(lexicon, "by", canonOnly);
         const isNoun = item => {
             const found = item && item.kind === "token" ? findWord(lexicon, item.lower, canonOnly) : null;
             return !!found && NOUN_POS.has(found.pos);
         };
         const render = item => {
             if (item.kind === "fixed") return item.text;
-            if (item.kind === "proclitic") return attach(word(item.word), render(item.target));
+            if (item.kind === "proclitic") return attach(by ? by.word : "", render(item.target));
+            if (item.kind === "possessive") {
+                const target = render(item.target);
+                return (item.before ? [item.form, target] : [target, item.form]).filter(Boolean).join(" ");
+            }
             if (item.kind === "compound") {
-                // The "of" phrase goes on past Y when Y is not a noun ("the chill of true death", "father of
-                // our people") or a noun follows it; a verb after Y ends it ("children of the blood guide us").
+                // The name goes on past Y when Y is not a noun or a noun follows it; a verb after Y ends it
+                // ("the Children of the Blood guide us").
                 const goesOn = item.after !== null && (!isNoun(item.modifier) || isNoun(item.after));
                 if (isNoun(item.head) && !goesOn) return attach(render(item.modifier), render(item.head));
                 return [render(item.head), render(item.modifier)].filter(Boolean).join(" ");
@@ -287,17 +350,12 @@
                 .trim().replace(/\s*[.!?]+$/, "");
             return t || `[${w}]`;
         };
+        // Nouns have no plural, so a word is looked up as it is; a free pronoun the lexicon lacks reads
+        // from the pronoun table.
         const lookup = w => {
             const exact = usable.filter(e => e.word.toLowerCase() === w);
             if (exact.length) return gloss(best(exact), w, false);
-            const plural = usable.filter(e => {
-                const s = e.word.toLowerCase();
-                return s + "i" === w || s.slice(0, -1) + "ei" === w;
-            });
-            const found = best(plural);
-            if (!found) return null;
-            const t = gloss(found, w, false);
-            return found.pos === "noun" && !t.startsWith("[") ? t + "(s)" : t;
+            return FREE_PRONOUNS.has(w) ? FREE_PRONOUNS.get(w) : null;
         };
 
         const tokens = plainApostrophes(text).match(/[A-Za-z\']+|[.,!?;]/g) || [];

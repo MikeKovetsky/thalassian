@@ -296,22 +296,28 @@ Worst cases:
 
 The cheapest large win is a phrasebook that matches whole canon phrases first.
 
-**Status on 2026-11-18:** bugs 1 to 4 and 12 are fixed, and both engines match whole canon phrases first. The scores below come from [scripts/evaltranslator.py](scripts/evaltranslator.py), on the current lexicon. "Before" is the code on `main` before the fix, scored the same way. With the phrasebook on, a phrase whose gloss is in the lexicon is reproduced by lookup, so 39 of 39 only shows that the lookup works. The phrasebook-off column shows the word-by-word rules on their own. "Exact" compares the words in order and ignores case, punctuation and apostrophes, as the March evaluation did, so 4 of the 20 phrasebook-off matches lack the canon apostrophe (*Alar annalas*, *Ban dinoriel*, *Felo melorn*, *Quel thalas*).
+**Status on 2026-11-18:** bugs 1 to 4 and 12 are fixed, and both engines match whole canon phrases first. Both engines also follow the grammar audit of the same day ([grammar.md](../../docs/methodology/grammar.md)). The scores below come from [scripts/evaltranslator.py](scripts/evaltranslator.py), on the current lexicon. "Before" is the code on `main` before the fix, scored the same way. With the phrasebook on, a phrase whose gloss is in the lexicon is reproduced by lookup, so 39 of 39 only shows that the lookup works. The phrasebook-off column shows the word-by-word rules on their own. "Exact" compares the words in order and ignores case, punctuation and apostrophes, as the March evaluation did, so 4 of the 15 phrasebook-off matches lack the canon apostrophe (*Alar annalas*, *Ban dinoriel*, *Felo melorn*, *Quel thalas*).
 
 | Engine | Before | Phrasebook on | Phrasebook off |
 |---|---|---|---|
-| Python, English → Thalassian | 9 exact, F1 0.716 | 39 exact, F1 1.0 | 20 exact, F1 0.779 |
-| Web, English → Thalassian | 9 exact, F1 0.743 | 39 exact, F1 1.0 | 20 exact, F1 0.806 |
+| Python, English → Thalassian | 9 exact, F1 0.716 | 39 exact, F1 1.0 | 15 exact, F1 0.817 |
+| Web, English → Thalassian | 9 exact, F1 0.743 | 39 exact, F1 1.0 | 15 exact, F1 0.817 |
 | Web, Thalassian → English | 6 exact, F1 0.439 | 32 exact, F1 0.902 | (no switch) |
 
-The 11 phrases gained word by word come from these rules. The compounds (5 phrases) and *anar'* (3) follow section 6; *rea* (1) is bug 1, and the lookup (2: *dinoriel* for "keeper", *Shorel'aran* for "farewell") is bug 2.
-- "X of [the] Y", where X is a noun and the "of" phrase ends at Y, becomes the compound Y'X (*Sin'dorei*, *Ren'dorei*, *Thas'alah*, *Thas'dorah*). A verb after Y ends the phrase: "the children of the blood guide us" is *Sin'dorei dela'na*.
-- "by [the] X" becomes *anar'X* (*Anar'alah*, *Anar'endal*). A following "of the Y" stays a free genitive, head first (*Anar'alah belore*, *Anar'endal dracon*).
-- A longer "of" phrase, where Y is not a noun or a noun follows it, also stays free and head first (*falor talah*, "the chill of true death").
+Word by word, the two engines now give the same output for all 39 glosses. The 6 phrases gained come from *anar'* (3), *rea* (1, bug 1) and the canon-first lookup (2: *dinoriel* for "keeper", *Shorel'aran* for "farewell", bug 2). The rules:
+- A "By [the] X" that opens a clause becomes *anar'X* (*Anar'alah*). A following "of the Y" puts its head first (*Anar'alah belore*, *Anar'endal dracon*). Any other "by" is left out, because the "by" of a passive is not *anar'*: "Saved by magic" is *Ama noral'arkhana*.
+- An "of" phrase puts its head first, with no word for "of" (*alah belore*, *endal dracon*, *falor talah*). Only a capitalized name, "X of the Y", becomes the compound Y'X (*Sin'dorei* for "Children of the Blood"). The corpus writes "Children of the blood" in lower case, so word by word it gives *Dorei sin*, and the phrasebook gives the name.
 - "and" gives *rea*.
+- Pronouns follow grammar section 5:
+  - *'na*, *'o*, *'a* and *'dan* join the verb.
+  - A subject pronoun is the same form as a free word before the verb.
+  - *mal* "your" comes before the noun, and *na* "our" after it.
+  - *anu* and *danu* are no longer pronouns.
+- Nouns take no plural.
+- A whole canon phrase must fill its clause, so *Anu belore dela'na* is not spliced into a longer sentence.
 - Lookup prefers attested entries over segments, then names, then inferred, unverified and generated words, and Thalassian over the other dialects.
 
-Both English builders run the phrasebook and these rules. The spaCy builder, used when spaCy is installed, only adds spaCy's lemmas and plural tags, and keeps the input's word order. It is tested with a stand-in for spaCy, not with spaCy itself, which is not installed here (bug 6).
+Both English builders run the phrasebook and these rules. The spaCy builder, used when spaCy is installed, only adds spaCy's lemmas, and keeps the input's word order. It is tested with a stand-in for spaCy, not with spaCy itself, which is not installed here (bug 6).
 
 ## 6. Grammar findings from the canon
 

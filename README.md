@@ -29,14 +29,18 @@ Try the language engine directly in your browser:
 
 ## 📚 Examples of Elven Grammar at Work
 
-Our engine matches whole canon phrases first. Word by word, pronouns attach to verbs, most prepositions are dropped (but "by" is *anar'* and "and" is *rea*), and "X of the Y" becomes a modifier-first compound.
+Our engine matches whole canon phrases first. Word by word it follows the [grammar](docs/methodology/grammar.md):
+- object pronouns join the verb (*dela'na*, "guides us");
+- *mal* "your" comes before its noun, and nouns take no plural;
+- "and" is *rea*, and a "By" that opens an oath is *anar'*;
+- an "of" phrase puts its head first (*alah belore*, "the light of the sun"). Only a capitalized name becomes a modifier-first compound (*Sin'dorei*, "Children of the Blood").
 
 *   **English:** *"The sun guides us."*
     **Thalassian:** `Anu belore dela'na.` *(Canon match)*
-*   **English:** *"Children of the void"*
-    **Thalassian:** `Ren'dorei` *(Canon match; word by word it is also built as void + children)*
-*   **English:** *"Rise, dead ones!"*
-    **Thalassian:** `Aranal, ledel ore!` *(Extrapolated from Prince Keleseth; "ones" is the generated word ore)*
+*   **English:** *"Children of the Void"*
+    **Thalassian:** `Ren'dorei` *(Canon match; word by word, the name is also built as void + children)*
+*   **English:** *"Rise, dead!"*
+    **Thalassian:** `Aranal, ledel!` *(Prince Keleseth's words as he raises skeletons; canon* aranal *"rise", and* ledel *"dead", inferred from this line)*
 *   **English:** *"Justice for our people."*
     **Thalassian:** `Selama ashal'anore.` *(Canon match)*
 
@@ -56,9 +60,9 @@ Because Elves don't use modern words like "chains" or "confession", translating 
 We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
 - `src/thalassian/data/lexicon.json` - The single source of truth: 314 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
-- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler: whole canon phrases first, then word by word with the canon rules (*anar'*, modifier-first compounds, pronoun suffixes), in the input's word order. `spaCy`, when installed, supplies the lemmas. `web/translator.js` runs the same rules in the browser.
+- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler: whole canon phrases first, then word by word with the grammar's rules (*anar'* in oaths, compounds for names, head-first "of" phrases, possessives, pronoun suffixes), in the input's word order. `spaCy`, when installed, supplies the lemmas. `web/translator.js` runs the same rules in the browser.
 - `src/thalassian/phonetics/markov.py` - A character Markov-chain engine that generates new vocabulary from canon letter patterns. The November 2026 audit found its words easy to tell apart from canon and describes a better generator ([Method 7](research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model)).
-- `src/thalassian/morphology/` - Rules for agglutination and vocalic mutation (pluralization).
+- `src/thalassian/morphology/` - The pronoun and possessive tables (grammar section 5). Nouns have no plural, so there is no plural rule.
 
 ### Dive deeper into our methodology:
 1. 📖 **[Lexicon Methodology (Canon-First)](docs/methodology/lexicon.md)**
@@ -72,7 +76,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 
 ## 🚀 Future Roadmap
 - [x] **Lexicon Combiner**: Script to automatically merge roots into complex nouns.
-- [x] **Grammar Compiler**: Syntax rules (SVO, pluralization, pronoun agglutination).
+- [x] **Grammar Compiler**: Syntax rules (word order, compounds, pronoun agglutination; no plurals since the November 2026 grammar audit).
 - [x] **Web Interface**: Multi-mode translator hosted on GitHub Pages.
 - [x] **WoW Forever client mining**: Read the game client's tables, hotfixes and caches (`tools/wowf/`).
 - [x] **Canon audit**: Every canon entry checked against its source; wrong meanings fixed (November 2026).

@@ -1,8 +1,7 @@
 import re
 from typing import List, Dict, Optional
 from ..core.lexicon import load_lexicon
-from ..morphology.pluralization import apply_plural
-from ..morphology.agglutination import PRONOUN_SUFFIXES_EN, PRONOUN_SUFFIXES_UK
+from ..morphology.agglutination import PRONOUN_FORMS_EN, PRONOUN_FORMS_UK, POSSESSIVES_EN, POSSESSIVES_UK
 
 try:
     import spacy
@@ -18,12 +17,16 @@ try:
 except ImportError:
     USE_UK_NLP = False
 
-# "and" and "by" are not dropped: canon has rea (and) and anar (by).
-DROP_WORDS_EN = {"for", "to", "in", "on", "with", "of", "but", "the", "a", "an"}
+# "and" is not dropped: canon rea. "by" is dropped except where it opens an oath or invocation, where it is
+# anar' ("By the light", Anar'alah); the "by" of a passive is not anar' ("Saved by magic", Ama noral'arkhana).
+DROP_WORDS_EN = {"for", "to", "in", "on", "with", "of", "by", "but", "the", "a", "an"}
 DROP_WORDS_UK = {"для", "в", "до", "на", "з", "за", "від", "про", "але"}
 # Words that translate but never take a pronoun suffix: "and you" is not "rea'a".
-FUNCTION_WORDS_EN = DROP_WORDS_EN | {"and", "by"}
+FUNCTION_WORDS_EN = DROP_WORDS_EN | {"and"}
 FUNCTION_WORDS_UK = DROP_WORDS_UK | {"і", "та"}
+# Pronouns and possessives have their own forms (grammar section 5), never a lexicon word.
+PRONOUNS_EN = set(PRONOUN_FORMS_EN) | set(POSSESSIVES_EN)
+PRONOUNS_UK = set(PRONOUN_FORMS_UK) | set(POSSESSIVES_UK)
 ARTICLES_EN = {"the", "a", "an"}
 WORD_EN = r"[a-z']+"
 WORD_UK = r"[а-яєіїґ']+"
@@ -120,6 +123,8 @@ class ASTNode:
         raise NotImplementedError
 
 class WordNode(ASTNode):
+    """A word or a punctuation mark. is_plural only lets "travelers" find "traveler": nouns have no plural
+    (grammar 3.2), so the elven word never changes."""
     def __init__(self, original: str, lemma: str, is_plural: bool, is_punct: bool = False, pos: str = ""):
         self.original = original
         self.lemma = lemma
@@ -144,14 +149,25 @@ class WordNode(ASTNode):
         if self.is_any(DROP_WORDS_EN if lang == 'en' else DROP_WORDS_UK):
             return ""
 
+        form = self.pronoun_form(lang)
+        if form:
+            return form
+
         found = self.entry(lexicon, lang)
-        if found:
-            elven_word = found.get("word", "")
-            if self.is_plural and found.get("pos") == "noun":
-                elven_word = apply_plural(elven_word)
-            return elven_word
-        else:
-            return f"[{self.original}]"
+        return found.get("word", "") if found else f"[{self.original}]"
+
+    def pronoun_form(self, lang: str) -> Optional[str]:
+        """The free form of a pronoun or possessive standing on its own ("we" -> na, "you" -> a)."""
+        if self.is_punct:
+            return None
+        forms = PRONOUN_FORMS_EN if lang == 'en' else PRONOUN_FORMS_UK
+        possessives = POSSESSIVES_EN if lang == 'en' else POSSESSIVES_UK
+        for key in (self.original.lower(), self.lemma):
+            if key in forms:
+                return forms[key]
+            if key in possessives:
+                return possessives[key][0]
+        return None
 
 class FixedNode(ASTNode):
     """A whole canon phrase or compound found by the phrasebook."""
@@ -162,13 +178,15 @@ class FixedNode(ASTNode):
         return self.text
 
 class ProcliticNode(ASTNode):
-    """"by the light" -> anar'alah: canon attaches anar before its object (Anar'alah, Anar'endal)."""
+    """"By the light" -> anar'alah: in oaths and invocations canon joins anar before its object (Anar'alah,
+    Anar'endal dracon, and six untranslated exclamations of the same shape)."""
     def __init__(self, word: WordNode, target: ASTNode):
         self.word = word
         self.target = target
 
     def compile(self, lexicon: List[Dict], lang: str) -> str:
-        return _attach(self.word.compile(lexicon, lang), self.target.compile(lexicon, lang))
+        found = find_word_en(lexicon, self.word.lemma)
+        return _attach(found["word"] if found else "", self.target.compile(lexicon, lang))
 
 NOUN_POS = {"noun", "proper noun"}
 
@@ -177,13 +195,12 @@ def _is_noun(node: Optional[ASTNode], lexicon: List[Dict], lang: str) -> bool:
     return bool(entry) and entry.get("pos") in NOUN_POS
 
 class CompoundNode(ASTNode):
-    """"children of the blood" -> sin'dorei: the modifier comes first and the head last, as in all ten
-    Thalassian compounds whose parts are known (report 1, section 6). It stays a free genitive, head
-    first, when the head is not an elven noun ("[child] belore") or when the "of" phrase goes on past
-    the modifier: the modifier is not a noun ("the chill of true death", falor talah; "father of our
-    people", ann'da na anore) or a noun follows it. A verb after the modifier ends the phrase:
-    "children of the blood guide us" is sin'dorei dela'na. `after` is the content word after the
-    modifier, if any."""
+    """A name: "Children of the Blood" -> sin'dorei. Compounds put the modifier first and the head last
+    (grammar 3.3), and they name things: peoples, places, weapons, titles. apply_compounds_en builds one
+    only for a capitalized "X of the Y"; an ordinary "of" phrase stays free, head first (grammar 3.4).
+    It also stays free when the head is not an elven noun or the name goes on past the modifier: the
+    modifier is not a noun, or a noun follows it. A verb after the modifier ends the name: "the Children
+    of the Blood guide us" is sin'dorei dela'na. `after` is the content word after the modifier, if any."""
     def __init__(self, head: WordNode, modifier: WordNode, after: Optional[ASTNode] = None):
         self.head = head
         self.modifier = modifier
@@ -196,6 +213,19 @@ class CompoundNode(ASTNode):
         if _is_noun(self.head, lexicon, lang) and not goes_on:
             return _attach(modifier, head)
         return " ".join(p for p in (head, modifier) if p)
+
+class PossessiveNode(ASTNode):
+    """"your heart" -> mal alann, "our hearts" -> alann na (grammar 5.2)."""
+    def __init__(self, word: WordNode, target: ASTNode, form: str, before: bool):
+        self.word = word
+        self.target = target
+        self.form = form
+        self.before = before
+
+    def compile(self, lexicon: List[Dict], lang: str) -> str:
+        target = self.target.compile(lexicon, lang)
+        parts = (self.form, target) if self.before else (target, self.form)
+        return " ".join(p for p in parts if p)
 
 class PhraseNode(ASTNode):
     def __init__(self, words: List[WordNode]):
@@ -221,19 +251,28 @@ class Verb(PhraseNode):
         if not base:
             # A dropped base must not take the pronoun with it ("justice for you").
             return self.pronoun.compile(lexicon, lang)
-        PRON_MAP = PRONOUN_SUFFIXES_EN if lang == 'en' else PRONOUN_SUFFIXES_UK
-        pron_key = self.pronoun.original.lower()
-        if pron_key not in PRON_MAP:
-            pron_key = self.pronoun.lemma
-        if pron_key in PRON_MAP:
+        form = self.pronoun.pronoun_form(lang)
+        if form:
             parts = base.split(" ")
-            parts[-1] += "'" + PRON_MAP[pron_key]
+            parts[-1] += "'" + form
             return " ".join(parts)
         return base + " " + self.pronoun.compile(lexicon, lang)
 
+def _clause_start(nodes: List[ASTNode], i: int) -> bool:
+    """Whether nodes[i] opens a clause: nothing but articles before it, back to the start or punctuation."""
+    k = i - 1
+    while k >= 0 and isinstance(nodes[k], WordNode) and nodes[k].is_any(ARTICLES_EN):
+        k -= 1
+    return k < 0 or (isinstance(nodes[k], WordNode) and nodes[k].is_punct)
+
+def _clause_end(nodes: List[ASTNode], j: int) -> bool:
+    return j + 1 >= len(nodes) or (isinstance(nodes[j + 1], WordNode) and nodes[j + 1].is_punct)
+
 def apply_phrasebook(nodes: List[WordNode], book: Dict[tuple, Dict], lang: str) -> List[ASTNode]:
     """Replace the longest spans whose words equal a phrasebook sense. A span starts at a word that
-    counts (not an article) and may run over commas, but not over other punctuation."""
+    counts (not an article) and may run over commas, but not over other punctuation. A whole phrase is a
+    fixed formula used whole (grammar 8), so it must fill its clause: "The light of the sun guides us"
+    must not put the clause-opening anu of anu belore dela'na in the middle."""
     longest = max((len(k) for k in book), default=0)
     out, i = [], 0
     while i < len(nodes):
@@ -247,7 +286,8 @@ def apply_phrasebook(nodes: List[WordNode], book: Dict[tuple, Dict], lang: str) 
                 if not node.is_punct:
                     words = phrase_key(node.original, lang)
                     key += words
-                    if words and key in book:
+                    if words and key in book and (not is_phrase(book[key]) or (
+                            _clause_start(nodes, i) and _clause_end(nodes, j))):
                         best = (j, book[key])
                 j += 1
         if best:
@@ -265,16 +305,15 @@ def _is_content(node: ASTNode, function_words, pronouns) -> bool:
     return True
 
 def apply_proclitics_en(nodes: List[ASTNode]) -> List[ASTNode]:
-    """"by [the] X" -> anar'X."""
-    pronouns = set(PRONOUN_SUFFIXES_EN)
+    """"By [the] X", opening a clause, -> anar'X. Any other "by" is dropped."""
     out, i = [], 0
     while i < len(nodes):
         node = nodes[i]
-        if isinstance(node, WordNode) and node.is_any({"by"}):
+        if isinstance(node, WordNode) and node.is_any({"by"}) and _clause_start(nodes, i):
             k = i + 1
             while k < len(nodes) and isinstance(nodes[k], WordNode) and nodes[k].is_any(ARTICLES_EN):
                 k += 1
-            if k < len(nodes) and _is_content(nodes[k], FUNCTION_WORDS_EN, pronouns):
+            if k < len(nodes) and _is_content(nodes[k], FUNCTION_WORDS_EN, PRONOUNS_EN):
                 out.append(ProcliticNode(node, nodes[k]))
                 i = k + 1
                 continue
@@ -282,22 +321,24 @@ def apply_proclitics_en(nodes: List[ASTNode]) -> List[ASTNode]:
         i += 1
     return out
 
+def _capitalized(node: ASTNode) -> bool:
+    return isinstance(node, WordNode) and node.original[:1].isupper()
+
 def apply_compounds_en(nodes: List[ASTNode]) -> List[ASTNode]:
-    """"X of [the] Y" -> Y'X; CompoundNode decides, from the lexicon, whether the "of" phrase goes on past
-    Y. "of" after "by X" ("by the light of the sun", anar'alah belore) stays a free genitive, head first,
-    as in canon."""
-    pronouns = set(PRONOUN_SUFFIXES_EN)
-    content = lambda n: isinstance(n, WordNode) and _is_content(n, FUNCTION_WORDS_EN, pronouns)
+    """A name, "X of [the] Y" with X and Y capitalized ("Light of the Forest"), -> Y'X; CompoundNode decides,
+    from the lexicon, whether the name goes on past Y. Any other "of" phrase is left as it is: "of" and
+    "the" drop out and the head comes first, as in canon alah belore, endal dracon and falor talah."""
+    content = lambda n: isinstance(n, WordNode) and _is_content(n, FUNCTION_WORDS_EN, PRONOUNS_EN)
     out, i = [], 0
     while i < len(nodes):
         node = nodes[i]
-        if isinstance(node, WordNode) and node.is_any({"of"}) and out and content(out[-1]):
+        if isinstance(node, WordNode) and node.is_any({"of"}) and out and content(out[-1]) and _capitalized(out[-1]):
             k = i + 1
             while k < len(nodes) and isinstance(nodes[k], WordNode) and nodes[k].is_any(ARTICLES_EN):
                 k += 1
-            if k < len(nodes) and content(nodes[k]):
+            if k < len(nodes) and content(nodes[k]) and _capitalized(nodes[k]):
                 nxt = nodes[k + 1] if k + 1 < len(nodes) else None
-                after = nxt if nxt is not None and _is_content(nxt, FUNCTION_WORDS_EN, pronouns) else None
+                after = nxt if nxt is not None and _is_content(nxt, FUNCTION_WORDS_EN, PRONOUNS_EN) else None
                 out[-1] = CompoundNode(out[-1], nodes[k], after)
                 i = k + 1
                 continue
@@ -305,15 +346,34 @@ def apply_compounds_en(nodes: List[ASTNode]) -> List[ASTNode]:
         i += 1
     return out
 
+def apply_possessives(nodes: List[ASTNode], possessives, function_words, pronouns) -> List[ASTNode]:
+    """A possessive before a content word: mal goes before it, na, o and dan after it (grammar 5.2).
+    Anywhere else a possessive word is a pronoun ("guide her" -> dela'dan)."""
+    out, i = [], 0
+    while i < len(nodes):
+        node = nodes[i]
+        nxt = nodes[i + 1] if i + 1 < len(nodes) else None
+        if isinstance(node, WordNode) and node.is_any(possessives) and nxt is not None and \
+                _is_content(nxt, function_words, pronouns):
+            key = node.original.lower() if node.original.lower() in possessives else node.lemma
+            form, before = possessives[key]
+            out.append(PossessiveNode(node, nxt, form, before))
+            i += 2
+        else:
+            out.append(node)
+            i += 1
+    return out
+
 def pair_pronouns(nodes: List[ASTNode], pronouns, function_words) -> List[ASTNode]:
     """A word followed by an object pronoun takes it as a suffix ("guide us" -> dela'na). A function word
-    does not ("justice for you" keeps its "you")."""
+    does not ("justice for you" keeps its "you"), nor does a pronoun: "I guide you" is o dela'a, with the
+    subject a free word before the verb (grammar 5.3)."""
     out, i = [], 0
     while i < len(nodes):
         node = nodes[i]
         nxt = nodes[i + 1] if i + 1 < len(nodes) else None
         if (isinstance(node, WordNode) and not node.is_punct and not node.is_any(function_words)
-                and isinstance(nxt, WordNode) and nxt.is_any(pronouns)):
+                and not node.is_any(pronouns) and isinstance(nxt, WordNode) and nxt.is_any(pronouns)):
             out.append(Verb([node], pronoun=nxt))
             i += 2
         else:
@@ -368,7 +428,8 @@ class Sentence(ASTNode):
         return text.capitalize() if text else ""
 
 def tokens_en(en_sentence: str) -> List[WordNode]:
-    """Words and punctuation. The plural guess is a final -s, not -ss, on a word of four letters or more."""
+    """Words and punctuation. The plural guess (a final -s, not -ss, on a word of four letters or more)
+    only finds the singular's entry."""
     tokens = []
     for t in re.findall(r"[A-Za-z']+|[.,!?;]", expand_contractions(en_sentence)):
         if re.match(r"[.,!?;]", t):
@@ -380,11 +441,12 @@ def tokens_en(en_sentence: str) -> List[WordNode]:
     return tokens
 
 def canon_passes_en(tokens: List[WordNode], phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
-    """The passes in canon order: whole phrases first, then "by X" (anar'X), then "X of the Y" compounds
-    (Y'X), then pronoun suffixes. Word order follows the input."""
+    """The passes in canon order: whole phrases first, then "By X" (anar'X), then names "X of the Y" (Y'X),
+    then possessives, then pronoun suffixes. Word order follows the input."""
     nodes = apply_phrasebook(tokens, phrasebook or {}, "en")
     nodes = apply_compounds_en(apply_proclitics_en(nodes))
-    return Sentence(front=pair_pronouns(nodes, set(PRONOUN_SUFFIXES_EN), FUNCTION_WORDS_EN))
+    nodes = apply_possessives(nodes, POSSESSIVES_EN, FUNCTION_WORDS_EN, PRONOUNS_EN)
+    return Sentence(front=pair_pronouns(nodes, PRONOUNS_EN, FUNCTION_WORDS_EN))
 
 def build_ast_en_fallback(en_sentence: str, phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
     """The regex builder."""
@@ -436,7 +498,8 @@ def build_ast_uk_fallback(uk_sentence: str, phrasebook: Optional[Dict[tuple, Dic
             word_nodes.append(WordNode(t, lemma, is_plural, False))
             
     nodes = apply_phrasebook(word_nodes, phrasebook or {}, "uk")
-    return Sentence(front=pair_pronouns(nodes, set(PRONOUN_SUFFIXES_UK), FUNCTION_WORDS_UK))
+    nodes = apply_possessives(nodes, POSSESSIVES_UK, FUNCTION_WORDS_UK, PRONOUNS_UK)
+    return Sentence(front=pair_pronouns(nodes, PRONOUNS_UK, FUNCTION_WORDS_UK))
 
 def build_ast_uk_pymorphy(uk_sentence: str, phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
     tokens = re.findall(r"[А-Яа-яЄєІіЇїҐґ']+|[.,!?;]", uk_sentence)
@@ -452,7 +515,8 @@ def build_ast_uk_pymorphy(uk_sentence: str, phrasebook: Optional[Dict[tuple, Dic
             word_nodes.append(WordNode(t, lemma, is_plural, False, pos=str(parsed.tag.POS)))
 
     nodes = apply_phrasebook(word_nodes, phrasebook or {}, "uk")
-    return Sentence(front=pair_pronouns(nodes, set(PRONOUN_SUFFIXES_UK), FUNCTION_WORDS_UK))
+    nodes = apply_possessives(nodes, POSSESSIVES_UK, FUNCTION_WORDS_UK, PRONOUNS_UK)
+    return Sentence(front=pair_pronouns(nodes, PRONOUNS_UK, FUNCTION_WORDS_UK))
 
 def compile_sentence_uk(uk_sentence: str, lexicon: List[Dict] = None, phrasebook: bool = True) -> str:
     if lexicon is None:

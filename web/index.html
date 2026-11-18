@@ -618,6 +618,18 @@
             return matches >= 3;
         }
 
+        // Sections 2 to 7 of docs/methodology/grammar.md, for the LLM modes. "Canon" marks Blizzard's evidence;
+        // the rest is the project's convention or invention.
+        const GRAMMAR = `Thalassian grammar:
+- Order: a command opens with the bare verb, the object after it (Anaria shola "Speak your business"; Bash'a no falor talah "Taste the chill of true death"). A statement is subject, verb, object by default (Anu belore dela'na "The sun guides us"). Question words come first (Doral ana'diel? "How fare you?"). The person addressed comes last, after a comma (Bal'a dash, malanore "Greetings, traveler"). A wish may open with the particle anu, which is not a pronoun.
+- Nouns have no case and no plural: dorei is both "child" and "children". Never add -i or -ei for a plural.
+- Compounds put the modifier first and the head last, joined by an apostrophe, and they name things (peoples, places, weapons, titles): Sin'dorei "Children of the Blood", Thas'alah "Light of the Forest", Quel'Thalas "High Home". In ordinary speech an "of" phrase puts the head first with no word for "of": alah belore "the light of the sun", endal dracon "the breath of the dragon", falor talah "the chill of true death".
+- no may stand before a definite object (Bash'a no falor talah). Kinship words end in 'da (Ann'da "father", Minn'da "mother").
+- An adjective comes before its noun (Al diel shala "Safe travels"). Put an adverb after the verb.
+- Pronouns: an object pronoun is joined to its verb by an apostrophe: 'na "us" and 'o "me" (canon), 'a "you" and 'dan "him/her/it/them" (invented). A subject pronoun is the same form as a free word before the verb (na "we", o "I", a "you", dan "he/she/it/they"), or is left out. Possessives: mal "your" before the noun (mal alann "your heart"); na "our", o "my" and dan "his/her/their" after the noun. Do not use anu or danu as pronouns, or Darnassian dal for "your".
+- Verbs have one bare form, with no agreement and no past ending; show the past with a time word. The future is ru before the verb (a Shalassian loan).
+- "of" is never a word. anar' is "by" only in oaths and invocations, joined to its noun (Anar'alah belore "By the light of the sun"); it is not the "by" of a passive ("Saved by magic" is Ama noral'arkhana). ashal' is "for" (Selama ashal'anore "Justice for our people"). rea is "and", never "or". Other prepositions have no Thalassian form: leave them out when the meaning stays clear.`;
+
         // The Strict engine lives in translator.js, where node tests it.
         const isCanonOnly = () => document.getElementById('canon-toggle').checked;
         const reverseTranslate = text => Translator.reverseTranslate(lexiconData, text, { canonOnly: isCanonOnly() });
@@ -669,11 +681,12 @@
                         prompt = `You are an expert Thalassian linguist. Translate the following text to Thalassian Elvish: "${input}"
 Use ONLY roots from this exact lexicon: ${sample}
 Do NOT invent new roots unless absolutely necessary.
-Rules: Agglutinative (pronouns attach as suffixes to verbs with apostrophes: me/I='o, us='na, you='a), SVO word order, drop prepositions, adjectives before nouns. 
+${GRAMMAR}
 Return ONLY the raw translated Thalassian text. Do NOT wrap the translation in quotation marks. Do NOT provide explanations.`;
                     } else {
                         prompt = `You are an expert Thalassian linguist. Translate the following Thalassian Elvish text into English: "${input}"
 Use this exact lexicon reference: ${sample}
+${GRAMMAR}
 Return ONLY the raw translated English text. Do NOT wrap the translation in quotation marks. Do NOT provide explanations.`;
                     }
                 } else if (mode === "3") {
@@ -688,12 +701,14 @@ Return ONLY the raw translated English text. Do NOT wrap the translation in quot
                     if (dir === "to_th") {
                         prompt = `Here is a drafted Thalassian sentence with missing words in brackets: "${draft}". 
 The missing words mean: ${gaps.join(", ")}. 
-Invent new Thalassian roots for these words using Elvish phonotactics (lots of vowels, soft consonants l, r, s, sh, th). 
+Invent new Thalassian roots for these words using Elvish phonotactics (lots of vowels, soft consonants l, r, s, sh, th), and keep the sentence to this grammar:
+${GRAMMAR}
 Return ONLY the completed sentence without brackets.`;
                     } else {
                         prompt = `Here is a drafted English sentence translated from Thalassian, with unknown untranslated words in brackets: "${draft}".
 The unknown Thalassian words are: ${gaps.join(", ")}.
-Based on context and fantasy elven lore, provide a smooth, coherent English translation guessing the meaning of the bracketed words.
+Based on context and fantasy elven lore, provide a smooth, coherent English translation guessing the meaning of the bracketed words. Read the sentence by this grammar:
+${GRAMMAR}
 Return ONLY the completed English sentence without brackets.`;
                     }
                 }
