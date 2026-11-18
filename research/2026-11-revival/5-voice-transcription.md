@@ -11,6 +11,8 @@ Run on 2026-11-18 over the 196 Skyborne voice files extracted from the WoW Forev
    - *banu adora* is a greeting of both NPC voice sets.
    - *aradash ... banu* is a greeting of both NPC voice sets; its middle word is unresolved.
    - *aeesha'el banu zephrali* is the farewell above.
+
+   A person listening to all 12 lines hears *banu* stressed on the second syllable every time: ba-NU (see "A person's listening").
 4. ***banu* names what the blessing invokes: the winds, or their blessing.** It stands where *Elune* stands in Darnassian *Elune-adore* "Elune be with you", and where *ishnu* "good fortune" stands in *Ishnu-alah* "good fortune to you". Almost every English blessing of the same voices invokes the winds; the only NPC blessings below that do not are "May you always land with grace" and "The Skysight will guide you". (Of all 49 English NPC greetings and farewells, 25 mention the wind; most of the rest are shop lines and plain hellos and goodbyes.) For example, one NPC voice set greets with both *banu alah* and, probably, "Favorable winds to you, friend" (Wizper alone heard it, as "wins"). Medium confidence.
 5. **Three names are now heard, not just read:**
    - *shen'dorei* is "shen-dor-eye", ending in "eye", in the /charge "For the Shen'dorei!". Where the stress falls is unclear.
@@ -66,11 +68,20 @@ The columns give each listener's reading, verbatim. The Gemini columns give the 
 | 7745188 | NPC farewell (set 7478494) | Harshael Bono Zafrali | Hi, I'm Shael Bonu Zephrali. | a sheal banu zafra li | ha'she'al bonu zefrali | *aeesha'el banu zephrali* (three heard *bono* or *bonu*) |
 
 **Spelling choices:**
-- *alah* follows *Ishnu-alah*; the listeners heard *Allah* (Wizper and Scribe), *ala* or *alah*.
+- *alah* follows *Ishnu-alah*; the listeners heard *Allah* (Wizper and Scribe), *ala* or *alah*. A person hears the final *h* usually, but faintly.
 - *banu* follows the letter and the other farewell file. In file 7745188, three of four listeners, one from each family, heard *bono* or *bonu*, so the two-family rule alone would give *bonu* there.
 - *adora* is spelled as heard, not as Darnassian *adore*. Across the three clear files it was heard as *adora* 8 times out of 12, *adara* 3 times and *adura* once.
 - *aeesha'el* follows the letter's spelling; it sounds like "ai-SHAY-el".
 - *zephrali* follows the item names ("Zephrali Chainmail"), although five of its eight readings begin with *zaf-*. The voice has no final *-s*, unlike the letter's *zepharaalis*.
+
+## A person's listening
+
+On 2026-11-18 a person listened to the 12 elvish files above on the MacBook's speakers, each twice, and answered two of the questions:
+
+1. **"Stress always ba-NU."** *banu* is stressed on its second syllable in every line. The machines disagreed on this; Gemini 3.1 Pro's IPA had it both ways.
+2. **"H is usually heard but it is not clear."** The final *h* of *alah* is usually audible but faint, which supports the spelling *alah* over *ala*.
+
+The vowels of *adora*, the middle word of *aradash ... banu*, the sound of *aeesha'el* and file 7745197 were not settled by this listening.
 
 ## Names in English lines
 
@@ -116,9 +127,9 @@ These lines show what the elvish formulas sit beside. They are Wizper's readings
 
 ## Limits
 
-1. **No person has listened to these files.** Machine listeners map unfamiliar speech onto real words: Wizper heard "I share" and "Harshael", and Scribe heard "Hi, I'm Shael", all for *aeesha'el*. That is why a form needs two families to agree.
+1. **A person has listened for two questions only** (see "A person's listening"); every other reading rests on the machines. Machine listeners map unfamiliar speech onto real words: Wizper heard "I share" and "Harshael", and Scribe heard "Hi, I'm Shael", all for *aeesha'el*. That is why a form needs two families to agree.
 2. **The Gemini models' own notes are unreliable.** Some said "no audio file was provided" or that they worked "from the provided text", although their readings match the other listeners'. Gemini 3.8 Flash wrote the lore word *sin'dorei* for a line the other three heard as *Shindorai*, so a model that knows Warcraft can hear what it expects. Gemini 3.1 Pro heard "Gale's greetings" once as "Chaos greetings".
-3. **Vowels and stress are the weakest part** (*adora*, *adara* or *adura*). Consonant skeletons agree far better.
+3. **Vowels and stress are the machines' weakest part** (*adora*, *adara* or *adura*); a person settled the stress of *banu*. Consonant skeletons agree far better.
 4. **Some forms stay unresolved:**
    - The middle word of the *aradash ... banu* greeting. One file was heard as *ishtalah*, *i talha*, *ith tala* and *ith dala*; the other as *estalav*, *efdala*, *eftala* and *estala*.
    - File 7745197, which three listeners heard as "The new Adura" and Wizper as "The new Ardura".
@@ -140,7 +151,7 @@ Sixteen more requests were rejected (HTTP 422, which fal does not bill) or faile
 
 ## Next steps
 
-1. **A person listening to the 12 elvish files** (24 seconds of audio, in `.wowf-extract/skyborne_vo/`) would settle the vowels, the *aradash* middle word and file 7745197.
+1. **More listening by a person to the 12 elvish files** (24 seconds of audio, in `.wowf-extract/skyborne_vo/`) would settle the vowels, the *aradash* middle word, *aeesha'el* and file 7745197. The stress of *banu* and the final *h* of *alah* are settled.
 2. **The 392 unextracted files.**
    - The 11 aggro lines and the alert lines are the likeliest to hold more battle cries.
    - `tools/wowf/run_all.sh` can extract them on the Mac mini.

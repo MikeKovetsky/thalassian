@@ -6016,11 +6016,11 @@
     "pos": "noun",
     "canon": false,
     "root": "banu",
-    "notes": "Darnassian (Skyborne dialect). In all four elvish formulas of the Skyborne voice files: banu alah and banu adora (greetings), aradash ... banu (a greeting) and aeesha'el banu zephrali (a farewell), and written once in the letter MailTemplate 652. It takes the place of Elune in Darnassian Elune-adore 'Elune be with you' and of ishnu 'good fortune' in Ishnu-alah 'good fortune to you', so it names what the blessing wishes on the listener. Almost every English blessing of the same NPC voices invokes the winds ('Gale's greetings, friend', 'Blessing of the winds upon you', 'May the winds guide your path'; only 'May you always land with grace' and 'The Skysight will guide you' do not), as does the player /welcome 'Winds welcome you', and the letter that ends with banu says 'I am unsure where the winds will lead you'. In all, 25 of the 49 English greetings and farewells of those voices mention the wind; most of the rest are shop lines and plain hellos and goodbyes. Whether banu is the winds themselves or their blessing is open. Replaces the low 'way, passage' guess of report 3.",
+    "notes": "Darnassian (Skyborne dialect). In all four elvish formulas of the Skyborne voice files: banu alah and banu adora (greetings), aradash ... banu (a greeting) and aeesha'el banu zephrali (a farewell), and written once in the letter MailTemplate 652. It takes the place of Elune in Darnassian Elune-adore 'Elune be with you' and of ishnu 'good fortune' in Ishnu-alah 'good fortune to you', so it names what the blessing wishes on the listener. Almost every English blessing of the same NPC voices invokes the winds ('Gale's greetings, friend', 'Blessing of the winds upon you', 'May the winds guide your path'; only 'May you always land with grace' and 'The Skysight will guide you' do not), as does the player /welcome 'Winds welcome you', and the letter that ends with banu says 'I am unsure where the winds will lead you'. In all, 25 of the 49 English greetings and farewells of those voices mention the wind; most of the rest are shop lines and plain hellos and goodbyes. Whether banu is the winds themselves or their blessing is open. Replaces the low 'way, passage' guess of report 3. A person listening to all 12 elvish lines (2026-11-18) hears the stress on the second syllable every time: ba-NU.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
-    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings + a person listening (stress of banu, final h of alah)",
     "evidence": [
       {
         "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Allah.' / 'Banu Allah' / 'banu ala' / 'banu ala'",
@@ -6045,6 +6045,10 @@
       {
         "quote": "I am unsure where the winds will lead you ... Aeesha'el banu zepharaalis, Lotheluum Starbreeze",
         "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      },
+      {
+        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
   },
@@ -6057,11 +6061,11 @@
     "pos": "phrase",
     "canon": false,
     "root": "banu + alah",
-    "notes": "Darnassian (Skyborne dialect). The female player voice says it for /hello, beside the English hellos 'Hello', 'Land with grace' and 'Gale's greetings, friend'; two Skyborne NPC voice sets say it as a greeting. The male /hello was heard as 'anu ala' by three of four listeners and 'Benu Allah' by one: probably the same phrase with a weak b. Built like Darnassian Ishnu-alah 'good fortune to you', with alah 'to you' (the Thalassian homograph alah 'light' fits a greeting less well); compare the English greeting of the same NPC voice, probably 'Favorable winds to you, friend' (heard only by Wizper, as 'wins'). Spelled alah after Ishnu-alah; the listeners heard Allah, ala or alah.",
+    "notes": "Darnassian (Skyborne dialect). The female player voice says it for /hello, beside the English hellos 'Hello', 'Land with grace' and 'Gale's greetings, friend'; two Skyborne NPC voice sets say it as a greeting. The male /hello was heard as 'anu ala' by three of four listeners and 'Benu Allah' by one: probably the same phrase with a weak b. Built like Darnassian Ishnu-alah 'good fortune to you', with alah 'to you' (the Thalassian homograph alah 'light' fits a greeting less well); compare the English greeting of the same NPC voice, probably 'Favorable winds to you, friend' (heard only by Wizper, as 'wins'). Spelled alah after Ishnu-alah; the listeners heard Allah, ala or alah. A person listening (2026-11-18) hears ba-NU, and the final h of alah usually but faintly, which supports the spelling alah.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
-    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings + a person listening (stress of banu, final h of alah)",
     "evidence": [
       {
         "quote": "/hello emote, female player voice: 'Banu Allah.' / 'Banu Allah' / 'banu ala' / 'banu ala'",
@@ -6082,6 +6086,10 @@
       {
         "quote": "Skyborne NPC greeting (NPCSounds 3764), English: 'Favorable wins to you, friend.' (Wizper; probably 'Favorable winds to you, friend')",
         "where": "client voice file sound/creature/7478494/7478494_greetings_7744875.ogg (FileDataID 7744875), transcribed 2026-11-18 by Wizper only; report 5"
+      },
+      {
+        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
   },
@@ -6094,11 +6102,11 @@
     "pos": "phrase",
     "canon": false,
     "root": "banu + adora (compare Darnassian adore)",
-    "notes": "Darnassian (Skyborne dialect). A greeting of both Skyborne NPC voice sets. A fourth file (FileDataID 7745197) was heard as 'The new Adura' by three listeners and 'The new Ardura' by Wizper, and may be the same line. Built like Darnassian Elune-adore 'Elune be with you' and Shalassian An'ratha adore (a farewell), with banu in Elune's place. Spelled as heard: the twelve readings give adora eight times, adara three times and adura once, never adore.",
+    "notes": "Darnassian (Skyborne dialect). A greeting of both Skyborne NPC voice sets. A fourth file (FileDataID 7745197) was heard as 'The new Adura' by three listeners and 'The new Ardura' by Wizper, and may be the same line. Built like Darnassian Elune-adore 'Elune be with you' and Shalassian An'ratha adore (a farewell), with banu in Elune's place. Spelled as heard: the twelve readings give adora eight times, adara three times and adura once, never adore. A person listening (2026-11-18) hears banu stressed on the second syllable: ba-NU.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
-    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings + a person listening (stress of banu, final h of alah)",
     "evidence": [
       {
         "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Adora.' / 'Banu Adora' / 'banu adora' / 'Banu Adorha'",
@@ -6111,6 +6119,10 @@
       {
         "quote": "Skyborne NPC greeting (NPCSounds 3764): 'Banu Adara.' / 'Banu Adhara' / 'panu adara' / 'banu adora'",
         "where": "client voice file sound/creature/7478494/7478494_greetings_7744878.ogg (FileDataID 7744878), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
   },
@@ -6123,11 +6135,11 @@
     "pos": "phrase",
     "canon": false,
     "root": "aeesha'el + banu + zephrali",
-    "notes": "Darnassian (Skyborne dialect). The spoken farewell of two Skyborne NPC voice sets: the letter's closing line aeesha'el banu zepharaalis, with zephrali 'of Zephras' (the item-name adjective) as the last word. aeesha'el is spelled as in the letter; it sounds like ai-SHAY-el, and its meaning is still unknown. In the second set's file three of four listeners heard bono or bonu; banu is spelled as in the letter and the first set's file.",
+    "notes": "Darnassian (Skyborne dialect). The spoken farewell of two Skyborne NPC voice sets: the letter's closing line aeesha'el banu zepharaalis, with zephrali 'of Zephras' (the item-name adjective) as the last word. aeesha'el is spelled as in the letter; it sounds like ai-SHAY-el, and its meaning is still unknown. In the second set's file three of four listeners heard bono or bonu; banu is spelled as in the letter and the first set's file. A person listening (2026-11-18) hears banu stressed on the second syllable: ba-NU.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
-    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings + a person listening (stress of banu, final h of alah)",
     "evidence": [
       {
         "quote": "Skyborne NPC farewell (NPCSounds 3776): 'I share Banu Zafrali.' / 'Ayesha Banu Zafraly' / 'ai shei el banu, zefrali' / 'ai sheyel banu zafrali'",
@@ -6140,6 +6152,10 @@
       {
         "quote": "I am unsure where the winds will lead you ... Aeesha'el banu zepharaalis, Lotheluum Starbreeze",
         "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      },
+      {
+        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
   }
