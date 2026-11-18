@@ -53,11 +53,13 @@ class EngineCases:
         self.assertEqual(self.translate(["and", "the sun and the forest"]), ["Rea", "Belore rea thas"])
 
     def test_by_is_anar_only_where_it_opens_an_oath(self):
-        # Grammar 7.2: anar' is the "by" of oaths and invocations, not of a passive (Ama noral'arkhana is
-        # "Saved by magic"). Any other "by" is left out.
-        self.assertEqual(self.translate(["By the light", "Saved by magic", "For the sun, by the light!", "by"],
+        # Grammar 7.2: anar' is the "by" of oaths and invocations, a "By" that opens a clause. Any other "by" is
+        # left out. The "by" of a passive is not anar': the canon line "Saved by magic" is Ama noral'arkhana,
+        # which only the phrasebook gives.
+        self.assertEqual(self.translate(["By the light", "We rise by the light", "Rise, by the light!", "by"],
                                         phrasebook=False),
-                         ["Anar'alah", "[Saved] arkhana", "Belore, anar'alah!", ""])
+                         ["Anar'alah", "Na aranal alah", "Aranal, anar'alah!", ""])
+        self.assertEqual(self.tr("Saved by magic"), "Ama noral'arkhana")
 
     def test_lookup_prefers_canon(self):
         # Bug 2: keeper was delar (unverified) before dinoriel (segment).
