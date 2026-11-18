@@ -25,13 +25,13 @@
   {
     "word": "anore",
     "translation": {
-      "en": "people, kin (our people)",
-      "uk": "народ, родичі (наш народ)"
+      "en": "people (our people)",
+      "uk": "народ (наш народ)"
     },
     "pos": "noun",
     "canon": true,
     "root": "anor",
-    "notes": "Used in 'Selama ashal'anore' (Justice for our people) and 'Ann'da anore' (father of our people). zhTW renders 'our people' in Vereesa's gloss as 族人 'kinsfolk', koKR as 우리 동족 'our kin'.",
+    "notes": "Used in 'Selama ashal'anore' (Justice for our people); the Canticle of Sacrifice lyric sheet glosses its line made of ann'da + anore as 'father of our people' (translation unsourced). zhTW and koKR render 'our people' in Vereesa's English gloss as 族人 'clansfolk' and 우리 동족 'our own people': they translate the English, so they confirm 'people' and add no new sense.",
     "source": "thalassian",
     "canon_basis": "segment",
     "evidence": [
@@ -40,12 +40,16 @@
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
       },
       {
-        "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+        "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW localization of BroadcastText 309952, build 12.1.7.70892; 'uphold justice for our clansfolk')",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952&locale=zhTW"
       },
       {
-        "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+        "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR localization of BroadcastText 309952, build 12.1.7.70892; 'justice for our own people')",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952&locale=koKR"
+      },
+      {
+        "quote": "[description; lyrics not reproduced] The Canticle of Sacrifice lyric table pairs the line made of ann'da + anore with an English line meaning father of our people (no 'for'), so anore = our people and ashal = for.",
+        "where": "https://warcraft.wiki.gg/wiki/Canticle_of_Sacrifice#Lyrics"
       }
     ]
   },
@@ -361,8 +365,16 @@
     "canon_basis": "segment",
     "evidence": [
       {
+        "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
+        "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
         "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+      },
+      {
+        "quote": "Vereesa Windrunner says: Selama ashal'anore, Blood Knight. Justice for our people.",
+        "where": "https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru"
       }
     ]
   },
@@ -1349,12 +1361,12 @@
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
       },
       {
-        "quote": "Shal'na！快醒醒！ (zhTW keeps the word); 샬나! 돌아오십시오. (koKR transliterates)",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 302349 and koKR"
+        "quote": "Shal'na！快醒醒！ (zhTW localization of BroadcastText 302349, build 12.1.7.70892; keeps the word)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhTW"
       },
       {
-        "quote": "阿姨！快醒醒啊。",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 302349"
+        "quote": "샬나! 돌아오십시오. (koKR localization of BroadcastText 302349, build 12.1.7.70892; transliterates the word)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=koKR"
       }
     ]
   },
@@ -3523,16 +3535,16 @@
         "where": "https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru"
       },
       {
-        "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+        "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW localization of BroadcastText 309952, build 12.1.7.70892; 'uphold justice for our clansfolk')",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952&locale=zhTW"
       },
       {
-        "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+        "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR localization of BroadcastText 309952, build 12.1.7.70892; 'justice for our own people')",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952&locale=koKR"
       },
       {
-        "quote": "Selama ashal'anore，血骑士。我只求正义得以昭雪。 (zhCN: 'I only ask that justice be done'; looser)",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 309952"
+        "quote": "Selama ashal'anore，血骑士。我只求正义得以昭雪。 (zhCN localization of BroadcastText 309952, build 12.1.7.70892; 'I only ask that justice be done', looser)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952&locale=zhCN"
       }
     ]
   },
@@ -3606,12 +3618,12 @@
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
       },
       {
-        "quote": "Shorel'aran…… (zhCN keeps the word); 쇼렐러란... (koKR transliterates)",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 321680 and koKR"
+        "quote": "Shorel'aran…… (zhCN localization of BroadcastText 321680, build 12.1.7.70892; keeps the word)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhCN"
       },
       {
-        "quote": "再會了...",
-        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 321680"
+        "quote": "쇼렐러란... (koKR localization of BroadcastText 321680, build 12.1.7.70892; transliterates the word)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=koKR"
       }
     ]
   },
@@ -3739,7 +3751,7 @@
         "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
       },
       {
-        "quote": "Farewell ... Al diel shala. ... Vendel'o eranu. (quote list of the Garrison follower)",
+        "quote": "Farewell ... Al diel shala. ... Vendel'o eranu. (her on-click quotes, under Farewell)",
         "where": "https://warcraft.wiki.gg/wiki/Dark_Ranger_Velonara"
       }
     ]
@@ -3967,7 +3979,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "andu + falah + dor",
-    "notes": "War cry after the Sundering; also used as a parting blessing ('Andu-falah-dor, old friend. Watch her well.', BroadcastText 215394). No locale translates it.",
+    "notes": "War cry after the Sundering; in-game it is also said to an old friend, apparently in parting ('Andu-falah-dor, old friend. Watch her well.', BroadcastText 215394). No locale translates it.",
     "source": "darnassian",
     "canon_basis": "attested",
     "confidence": "high",
