@@ -1,8 +1,22 @@
 import argparse
+import re
 import sys
 from ..core.lexicon import load_lexicon
 from ..syntax.parser import compile_sentence_en, compile_sentence_uk
 from ..phonetics.markov import build_markov_chain, generate_word, build_phonotactics, generate_root
+
+SINGLE_FORM = re.compile(r"[a-z]+(?:'[a-z]+)*")
+
+def single_forms(values):
+    """Single-word forms to train the generators on. Canon phrases ("al diel shala") and
+    composite roots ("anar + alah", "zephr + -as") would teach the chains spaces, '+' and '-'."""
+    forms = []
+    for value in values:
+        for part in value.lower().split("+"):
+            part = part.strip()
+            if SINGLE_FORM.fullmatch(part):
+                forms.append(part)
+    return forms
 
 def main():
     parser = argparse.ArgumentParser(description="Thalassian Language Tools")
@@ -37,7 +51,7 @@ def main():
         print(result)
         
     elif args.command == "generate-words":
-        canon_words = [entry["word"] for entry in lexicon if entry.get("canon")]
+        canon_words = single_forms(entry["word"] for entry in lexicon if entry.get("canon"))
         transitions = build_markov_chain(canon_words)
         
         generated = set()
@@ -52,7 +66,7 @@ def main():
             print(f"- {word.capitalize()}")
             
     elif args.command == "generate-roots":
-        canon_roots = [entry["root"] for entry in lexicon if entry.get("canon") and "root" in entry]
+        canon_roots = single_forms(entry["root"] for entry in lexicon if entry.get("canon") and "root" in entry)
         transitions = build_phonotactics(canon_roots)
         
         for _ in range(args.n):
