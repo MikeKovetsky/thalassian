@@ -172,18 +172,28 @@ class ProcliticNode(ASTNode):
 
 NOUN_POS = {"noun", "proper noun"}
 
+def _is_noun(node: Optional[ASTNode], lexicon: List[Dict], lang: str) -> bool:
+    entry = node.entry(lexicon, lang) if isinstance(node, WordNode) else None
+    return bool(entry) and entry.get("pos") in NOUN_POS
+
 class CompoundNode(ASTNode):
     """"children of the blood" -> sin'dorei: the modifier comes first and the head last, as in all ten
-    Thalassian compounds whose parts are known (report 1, section 6). Unless the head is an elven noun,
-    it stays a free genitive, head first ("[child] belore")."""
-    def __init__(self, head: WordNode, modifier: WordNode):
+    Thalassian compounds whose parts are known (report 1, section 6). It stays a free genitive, head
+    first, when the head is not an elven noun ("[child] belore") or when the "of" phrase goes on past
+    the modifier: the modifier is not a noun ("the chill of true death", falor talah; "father of our
+    people", ann'da na anore) or a noun follows it. A verb after the modifier ends the phrase:
+    "children of the blood guide us" is sin'dorei dela'na. `after` is the content word after the
+    modifier, if any."""
+    def __init__(self, head: WordNode, modifier: WordNode, after: Optional[ASTNode] = None):
         self.head = head
         self.modifier = modifier
+        self.after = after
 
     def compile(self, lexicon: List[Dict], lang: str) -> str:
         head, modifier = self.head.compile(lexicon, lang), self.modifier.compile(lexicon, lang)
-        head_entry = self.head.entry(lexicon, lang)
-        if head_entry and head_entry.get("pos") in NOUN_POS:
+        goes_on = self.after is not None and (
+            not _is_noun(self.modifier, lexicon, lang) or _is_noun(self.after, lexicon, lang))
+        if _is_noun(self.head, lexicon, lang) and not goes_on:
             return _attach(modifier, head)
         return " ".join(p for p in (head, modifier) if p)
 
@@ -273,9 +283,9 @@ def apply_proclitics_en(nodes: List[ASTNode]) -> List[ASTNode]:
     return out
 
 def apply_compounds_en(nodes: List[ASTNode]) -> List[ASTNode]:
-    """"X of [the] Y" -> Y'X when X and Y are single words. "of" before a longer phrase ("the chill of
-    true death", falor talah) or after "by X" ("by the light of the sun", anar'alah belore) stays a free
-    genitive, head first, as in canon."""
+    """"X of [the] Y" -> Y'X; CompoundNode decides, from the lexicon, whether the "of" phrase goes on past
+    Y. "of" after "by X" ("by the light of the sun", anar'alah belore) stays a free genitive, head first,
+    as in canon."""
     pronouns = set(PRONOUN_SUFFIXES_EN)
     content = lambda n: isinstance(n, WordNode) and _is_content(n, FUNCTION_WORDS_EN, pronouns)
     out, i = [], 0
@@ -285,10 +295,10 @@ def apply_compounds_en(nodes: List[ASTNode]) -> List[ASTNode]:
             k = i + 1
             while k < len(nodes) and isinstance(nodes[k], WordNode) and nodes[k].is_any(ARTICLES_EN):
                 k += 1
-            single = k < len(nodes) and content(nodes[k]) and not (
-                k + 1 < len(nodes) and _is_content(nodes[k + 1], FUNCTION_WORDS_EN, pronouns))
-            if single:
-                out[-1] = CompoundNode(out[-1], nodes[k])
+            if k < len(nodes) and content(nodes[k]):
+                nxt = nodes[k + 1] if k + 1 < len(nodes) else None
+                after = nxt if nxt is not None and _is_content(nxt, FUNCTION_WORDS_EN, pronouns) else None
+                out[-1] = CompoundNode(out[-1], nodes[k], after)
                 i = k + 1
                 continue
         out.append(node)

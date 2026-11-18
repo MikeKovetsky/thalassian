@@ -172,19 +172,18 @@
         return out;
     }
 
-    // "X of [the] Y" -> Y'X when X and Y are single words, as in Sin'dorei and Thas'alah. "of" before a
-    // longer phrase ("the chill of true death", falor talah) or after "by X" ("by the light of the sun",
-    // anar'alah belore) stays a free genitive, head first, as in canon.
+    // "X of [the] Y" -> Y'X, as in Sin'dorei and Thas'alah. The word after Y, if it is a content word, is
+    // kept as `after`: render decides whether the "of" phrase goes on past Y. "of" after "by X" ("by the
+    // light of the sun", anar'alah belore) stays a free genitive, head first, as in canon.
     function applyCompounds(items) {
         const out = [];
         const contentWord = item => isWord(item) && isContent(item);
         for (let i = 0; i < items.length; i++) {
             if (isAny(items[i], OF) && out.length && contentWord(out[out.length - 1])) {
                 const k = skipArticles(items, i + 1);
-                const single = k < items.length && contentWord(items[k]) &&
-                    !(k + 1 < items.length && isContent(items[k + 1]));
-                if (single) {
-                    out[out.length - 1] = { kind: "compound", head: out[out.length - 1], modifier: items[k] };
+                if (k < items.length && contentWord(items[k])) {
+                    const after = k + 1 < items.length && isContent(items[k + 1]) ? items[k + 1] : null;
+                    out[out.length - 1] = { kind: "compound", head: out[out.length - 1], modifier: items[k], after };
                     i = k;
                     continue;
                 }
@@ -225,12 +224,18 @@
             const found = findWord(lexicon, item.lower, canonOnly);
             return found ? found.word : `[${item.text}]`;
         };
+        const isNoun = item => {
+            const found = item && item.kind === "token" ? findWord(lexicon, item.lower, canonOnly) : null;
+            return !!found && NOUN_POS.has(found.pos);
+        };
         const render = item => {
             if (item.kind === "fixed") return item.text;
             if (item.kind === "proclitic") return attach(word(item.word), render(item.target));
             if (item.kind === "compound") {
-                const head = findWord(lexicon, item.head.lower, canonOnly);
-                if (head && NOUN_POS.has(head.pos)) return attach(render(item.modifier), render(item.head));
+                // The "of" phrase goes on past Y when Y is not a noun ("the chill of true death", "father of
+                // our people") or a noun follows it; a verb after Y ends it ("children of the blood guide us").
+                const goesOn = item.after !== null && (!isNoun(item.modifier) || isNoun(item.after));
+                if (isNoun(item.head) && !goesOn) return attach(render(item.modifier), render(item.head));
                 return [render(item.head), render(item.modifier)].filter(Boolean).join(" ");
             }
             const w = word(item);

@@ -48,9 +48,16 @@ class EngineCases:
         for (english, canon), out in zip(RULE_GOLD.items(), outputs):
             self.assertEqual(E.words(out), E.words(canon), english)
 
+    def test_compound_ends_before_a_verb(self):
+        # A verb after Y does not make the "of" phrase longer. "children of the sun" is not in the
+        # phrasebook (Belore'dorei is glossed "child of the sun"), so the rules build it either way.
+        self.assertEqual(self.tr("The children of the blood guide us", phrasebook=False), "Sin'dorei dela'na")
+        self.assertEqual(self.tr("The children of the sun rise"), "Belore'dorei aranal")
+
     def test_of_before_a_longer_phrase_stays_a_free_genitive(self):
-        # Canon falor talah, "the chill of true death": head first.
-        self.assertEqual(self.tr("taste the chill of true death", phrasebook=False), "Bash'a falor [true] talah")
+        # Canon falor talah, "the chill of true death", and Ann'da anore, "father of our people": head first.
+        self.assertEqual(self.translate(["taste the chill of true death", "father of our people"], phrasebook=False),
+                         ["Bash'a falor [true] talah", "Ann'da na anore"])
 
     def test_compound_needs_a_noun_head(self):
         # anaria (speak) is a verb, so "speak of the sun" is not a compound.

@@ -305,9 +305,9 @@ The cheapest large win is a phrasebook that matches whole canon phrases first.
 | Web, Thalassian → English | 6 exact, F1 0.439 | 32 exact, F1 0.902 | (no switch) |
 
 The rules behind the phrasebook-off gain all come from section 6:
-- "X of [the] Y", where X and Y are single words and X is a noun, becomes the compound Y'X (*Sin'dorei*, *Ren'dorei*, *Thas'alah*, *Thas'dorah*).
+- "X of [the] Y", where X is a noun and the "of" phrase ends at Y, becomes the compound Y'X (*Sin'dorei*, *Ren'dorei*, *Thas'alah*, *Thas'dorah*). A verb after Y ends the phrase: "the children of the blood guide us" is *Sin'dorei dela'na*.
 - "by [the] X" becomes *anar'X* (*Anar'alah*, *Anar'endal*). A following "of the Y" stays a free genitive, head first (*Anar'alah belore*, *Anar'endal dracon*).
-- "of" before a longer phrase also stays free and head first (*falor talah*, "the chill of true death").
+- A longer "of" phrase, where Y is not a noun or a noun follows it, also stays free and head first (*falor talah*, "the chill of true death").
 - "and" gives *rea*.
 - Lookup prefers attested entries over segments, then names, then inferred, unverified and generated words, and Thalassian over the other dialects.
 
