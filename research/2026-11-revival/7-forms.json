@@ -2283,20 +2283,6 @@
   "attestations": []
  },
  {
-  "form": "Shan'do",
-  "branch": "shalassian",
-  "kind": "word",
-  "gloss": null,
-  "gloss_basis": "none",
-  "speaker_or_referent": "\"honored teacher\" (term used by nightborne)",
-  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Other",
-  "reference": "Network Security",
-  "wiki_section": "Other",
-  "wiki_note": "Though the Shalassian word is unknown, nightborne do use the term \"honored teacher\" like the night elves.",
-  "caveat": "The wiki says the Shalassian word is unknown; Shan'do is the night elf term its link points to, not an attested Shalassian form.",
-  "attestations": []
- },
- {
   "form": "Tor ilisar'thera'nal",
   "branch": "shalassian",
   "kind": "phrase",
@@ -3616,7 +3602,8 @@
  },
  {
   "branch": "ancient-name",
-  "form": "Jewels of Aellis",
+  "form": "Aellis",
+  "name": "Jewels of Aellis",
   "kind": "artifact",
   "gloss": null,
   "gloss_basis": "none",
@@ -4018,7 +4005,8 @@
  },
  {
   "branch": "ancient-name",
-  "form": "Lord Del'theon",
+  "form": "Del'theon",
+  "name": "Lord Del'theon",
   "kind": "person",
   "gloss": null,
   "gloss_basis": "none",
@@ -4050,7 +4038,8 @@
  },
  {
   "branch": "ancient-name",
-  "form": "Lord Ro'minate",
+  "form": "Ro'minate",
+  "name": "Lord Ro'minate",
   "kind": "person",
   "gloss": null,
   "gloss_basis": "none",
@@ -4317,7 +4306,8 @@
  },
  {
   "branch": "ancient-name",
-  "form": "Crystal of Zin-Malor",
+  "form": "Zin-Malor",
+  "name": "Crystal of Zin-Malor",
   "kind": "artifact",
   "gloss": null,
   "gloss_basis": "none",
@@ -4375,7 +4365,7 @@
   "speaker_context": "Disturbed Spectres are night elf ghosts located in Tel'anor in Suramar.",
   "speaker_context_url": "https://warcraft.wiki.gg/wiki/Disturbed_Spectre",
   "note": "The Darnassian page lists this as 'Shu dales-na' and calls it 'Presumably a variant of Shu dalas na' ('Heavy are our hearts', Hearthstone Sunken City lyrics); that is the wiki's guess, not a Blizzard gloss.",
-  "form": "Our people... shu dalees-na."
+  "form": "shu dalees-na."
  },
  {
   "branch": "ancient-speech",
@@ -4472,7 +4462,7 @@
   "speaker_context": "Disturbed Apparitions are spectres located in Tel'anor in Suramar.",
   "speaker_context_url": "https://warcraft.wiki.gg/wiki/Disturbed_Apparition",
   "note": "Same lines as the Disturbed Spectre; the Darnassian page's 'variant of Shu dalas na' remark is the wiki's guess, not a Blizzard gloss.",
-  "form": "Our people... shu dalees-na."
+  "form": "shu dalees-na."
  },
  {
   "branch": "ancient-speech",
@@ -4497,7 +4487,7 @@
   "speaker_context": "Haunting Protectors are spectres located in Suramar.",
   "speaker_context_url": "https://warcraft.wiki.gg/wiki/Haunting_Protector",
   "note": "Same lines as the Disturbed Spectre; the Darnassian page's 'variant of Shu dalas na' remark is the wiki's guess, not a Blizzard gloss.",
-  "form": "Our people... shu dalees-na."
+  "form": "shu dalees-na."
  },
  {
   "branch": "ancient-speech",

@@ -477,37 +477,6 @@
   "controls": []
  },
  {
-  "part": "shan",
-  "tier": 1,
-  "branches": {
-   "ancient": {
-    "exact": [
-     "Shan'do",
-     "Thero'shan"
-    ],
-    "inside": [
-     "Shandris Feathermoon"
-    ]
-   },
-   "darnassian": {
-    "exact": [
-     "ama'shan",
-     "shan"
-    ],
-    "inside": []
-   },
-   "shalassian": {
-    "exact": [
-     "Shan'do"
-    ],
-    "inside": []
-   }
-  },
-  "controls": [
-   "zandali"
-  ]
- },
- {
   "part": "shen",
   "tier": 1,
   "branches": {
@@ -653,7 +622,6 @@
   "branches": {
    "ancient": {
     "exact": [
-     "Crystal of Zin-Malor",
      "Zin-Azshari",
      "Zin-Malor"
     ],
@@ -1348,12 +1316,37 @@
   "controls": []
  },
  {
+  "part": "shan",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shan'do",
+     "Thero'shan"
+    ],
+    "inside": [
+     "Shandris Feathermoon"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "ama'shan",
+     "shan"
+    ],
+    "inside": []
+   }
+  },
+  "controls": [
+   "zandali"
+  ]
+ },
+ {
   "part": "shu",
   "tier": 3,
   "branches": {
    "ancient": {
     "exact": [
-     "Our people... shu dalees-na."
+     "shu dalees-na."
     ],
     "inside": []
    },
@@ -1512,7 +1505,7 @@
   "branches": {
    "ancient": {
     "exact": [
-     "Jewels of Aellis"
+     "Aellis"
     ],
     "inside": []
    }
@@ -1690,25 +1683,12 @@
   "controls": []
  },
  {
-  "part": "crystal",
-  "tier": 3,
-  "branches": {
-   "ancient": {
-    "exact": [
-     "Crystal of Zin-Malor"
-    ],
-    "inside": []
-   }
-  },
-  "controls": []
- },
- {
   "part": "dalees",
   "tier": 3,
   "branches": {
    "ancient": {
     "exact": [
-     "Our people... shu dalees-na."
+     "shu dalees-na."
     ],
     "inside": []
    }
@@ -1734,7 +1714,7 @@
   "branches": {
    "ancient": {
     "exact": [
-     "Lord Del'theon"
+     "Del'theon"
     ],
     "inside": []
    }
@@ -2054,19 +2034,6 @@
   "controls": []
  },
  {
-  "part": "jewels",
-  "tier": 3,
-  "branches": {
-   "ancient": {
-    "exact": [
-     "Jewels of Aellis"
-    ],
-    "inside": []
-   }
-  },
-  "controls": []
- },
- {
   "part": "kalimdor",
   "tier": 3,
   "branches": {
@@ -2213,20 +2180,6 @@
   "controls": []
  },
  {
-  "part": "lord",
-  "tier": 3,
-  "branches": {
-   "ancient": {
-    "exact": [
-     "Lord Del'theon",
-     "Lord Ro'minate"
-    ],
-    "inside": []
-   }
-  },
-  "controls": []
- },
- {
   "part": "loreth",
   "tier": 3,
   "branches": {
@@ -2297,7 +2250,6 @@
   "branches": {
    "ancient": {
     "exact": [
-     "Crystal of Zin-Malor",
      "Zin-Malor"
     ],
     "inside": []
@@ -2376,7 +2328,7 @@
   "branches": {
    "ancient": {
     "exact": [
-     "Lord Ro'minate"
+     "Ro'minate"
     ],
     "inside": []
    }
@@ -2520,32 +2472,6 @@
    "ancient": {
     "exact": [
      "Ordil'Aran"
-    ],
-    "inside": []
-   }
-  },
-  "controls": []
- },
- {
-  "part": "our",
-  "tier": 3,
-  "branches": {
-   "ancient": {
-    "exact": [
-     "Our people... shu dalees-na."
-    ],
-    "inside": []
-   }
-  },
-  "controls": []
- },
- {
-  "part": "people",
-  "tier": 3,
-  "branches": {
-   "ancient": {
-    "exact": [
-     "Our people... shu dalees-na."
     ],
     "inside": []
    }
@@ -2980,7 +2906,7 @@
   "branches": {
    "ancient": {
     "exact": [
-     "Lord Del'theon"
+     "Del'theon"
     ],
     "inside": []
    }
