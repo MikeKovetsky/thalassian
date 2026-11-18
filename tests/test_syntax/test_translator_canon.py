@@ -16,14 +16,22 @@ from thalassian.syntax.parser import compile_sentence_en, compile_sentence_uk  #
 
 PHRASES = [p for p, _ in E.GOLD]
 GLOSSES = [g for _, g in E.GOLD]
-# Word by word (phrasebook off), the rules alone must still give these canon forms.
+# Word by word (phrasebook off), the rules alone must still give these canon forms, apostrophes included.
 RULE_GOLD = {
     "Children of the blood": "Sin'dorei", "Children of the void": "Ren'dorei",
     "Light of the forest": "Thas'alah", "Valor of the forest": "Thas'dorah",
     "Failing children of the blood": "Shindu sin'dorei",
     "By the light": "Anar'alah", "By the light of the sun": "Anar'alah belore",
-    "By the breath of the dragon": "Anar'endal dracon", "And": "Rea", "Gate keeper": "Ban'dinoriel",
+    "By the breath of the dragon": "Anar'endal dracon", "And": "Rea",
 }
+# The glosses both engines reproduce word by word on 2026-11-18 (9 before the fix, which had no phrasebook).
+# "Exact" compares words, as E.score does, so "Ban dinoriel" counts for Ban'dinoriel.
+WORD_BY_WORD_EXACT = [
+    "Ranger Lord", "By the light", "By the light of the sun", "By the breath of the dragon", "Father", "Rise",
+    "Gate keeper", "The sun", "Flame strike", "Mother", "High home", "And", "Children of the void", "Aunt",
+    "Failing children of the blood", "Farewell", "Children of the blood", "Light of the forest",
+    "Valor of the forest", "Help me forget",
+]
 
 
 class EngineCases:
@@ -45,11 +53,13 @@ class EngineCases:
         # Bug 3: "Justice for you" lost its "you".
         self.assertEqual(self.tr("Justice for you"), "Selama " + self.tr("you").lower())
 
+    def test_function_words_take_no_pronoun_suffix(self):
+        # "and you" is not rea'a, and "by you" is not anar'a.
+        self.assertEqual([out.split()[0] for out in self.translate(["and you", "by you"])], ["Rea", "Anar"])
+
     def test_modifier_comes_first_in_compounds(self):
         # Bug 4: "children of the blood" was "Dorei sin".
-        outputs = self.translate(list(RULE_GOLD), phrasebook=False)
-        for (english, canon), out in zip(RULE_GOLD.items(), outputs):
-            self.assertEqual(E.words(out), E.words(canon), english)
+        self.assertEqual(self.translate(list(RULE_GOLD), phrasebook=False), list(RULE_GOLD.values()))
 
     def test_compound_ends_before_a_verb(self):
         # A verb after Y does not make the "of" phrase longer. "children of the sun" is not in the
@@ -67,17 +77,19 @@ class EngineCases:
         self.assertEqual(self.tr("speak of the sun", phrasebook=False), "Anaria belore")
 
     def test_phrasebook_takes_the_longest_span_over_commas_and_contractions(self):
-        self.assertEqual(self.translate(["The sun guides us.", "Greetings, traveler", "They're breaking through!"]),
-                         ["Anu belore dela'na.", "Bal'a dash, malanore", "Shindu fallah na!"])
+        self.assertEqual(self.translate(["The sun guides us.", "Greetings, traveler", "They're breaking through!",
+                                         "They’re breaking through", "those who remain hidden"]),
+                         ["Anu belore dela'na.", "Bal'a dash, malanore", "Shindu fallah na!", "Shindu fallah na",
+                          "Shen'dralar"])
 
     def test_phrasebook_reproduces_every_canon_phrase(self):
         for phrase, gloss, out in zip(PHRASES, GLOSSES, self.translate(GLOSSES)):
             self.assertEqual(E.words(out), E.words(phrase), gloss)
 
     def test_word_by_word_score_does_not_regress(self):
-        # 20 of 39 exact on 2026-11-18, against 9 before the fix (which had no phrasebook).
-        exact, _ = E.score(list(zip(PHRASES, self.translate(GLOSSES, phrasebook=False))))
-        self.assertGreaterEqual(exact, 20)
+        outputs = self.translate(GLOSSES, phrasebook=False)
+        exact = [g for p, g, out in zip(PHRASES, GLOSSES, outputs) if E.words(out) == E.words(p)]
+        self.assertEqual([g for g in WORD_BY_WORD_EXACT if g not in exact], [])
 
 
 class TestPythonEngine(EngineCases, unittest.TestCase):
@@ -118,11 +130,17 @@ class TestSpacyBuilder(unittest.TestCase):
 
 @unittest.skipUnless(E.NODE, "node is not installed")
 class TestWebEngine(EngineCases, unittest.TestCase):
-    def translate(self, inputs, phrasebook=True):
-        return E.web_translate(inputs, phrasebook=phrasebook)
+    def translate(self, inputs, phrasebook=True, **options):
+        return E.web_translate(inputs, phrasebook=phrasebook, **options)
 
     def reverse(self, inputs, **options):
         return E.web_translate(inputs, "reverse", **options)
+
+    def test_canon_only_drops_inferred_phrases_and_words(self):
+        # morin'aminor ("quiet serenity") and 'o ("me") are inferred; vendel'o eranu is attested.
+        inputs = ["quiet serenity", "me", "help me forget"]
+        self.assertEqual(self.translate(inputs), ["Morin'aminor", "'o", "Vendel'o eranu"])
+        self.assertEqual(self.translate(inputs, canonOnly=True), ["[quiet] [serenity]", "[me]", "Vendel'o eranu"])
 
     def test_words_named_like_object_properties(self):
         # "constructor" once found Object.prototype.constructor in the pronoun tables.
