@@ -25,15 +25,18 @@ def is_phrase(entry: Dict) -> bool:
     """Whole phrases (e.g. "anar'alah" = "by the Light") are not used for word-by-word lookup."""
     return entry.get("pos") == "phrase" or " " in entry.get("word", "")
 
+def gloss_proper(gloss: str) -> str:
+    """The gloss without commentary: parentheses go first, because they may hold a ';'
+    ("the Veiled One (title of ...; rebel battle cry)"), then everything after the first ';'."""
+    return re.sub(r"\([^)]*\)", " ", gloss.lower()).split(";")[0]
+
 def gloss_words(gloss: str, pattern: str) -> List[str]:
-    """Words of the gloss proper: text after the first ';' and inside parentheses is commentary."""
-    core = re.sub(r"\([^)]*\)", " ", gloss.split(";")[0].lower())
-    return re.findall(pattern, core)
+    """Words of the gloss proper."""
+    return re.findall(pattern, gloss_proper(gloss))
 
 def gloss_senses(gloss: str) -> List[str]:
     """Whole senses of the gloss proper: "guide/lead, show" -> ["guide", "lead", "show"]."""
-    core = re.sub(r"\([^)]*\)", " ", gloss.split(";")[0].lower())
-    return [s.strip() for s in re.split(r"[/,]", core) if s.strip()]
+    return [s.strip() for s in re.split(r"[/,]", gloss_proper(gloss)) if s.strip()]
 
 def _find_word(lexicon: List[Dict], target: str, lang: str, pattern: str) -> Optional[Dict]:
     target = target.lower()

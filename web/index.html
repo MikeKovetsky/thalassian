@@ -475,7 +475,7 @@
                 <textarea id="input-text" placeholder="Enter text to translate...&#10;e.g., The sun guides us."></textarea>
                 <div class="pill-container" id="pills-container">
                     <button class="pill-btn" onclick="fillAndTranslate('The sun guides us.')">The sun guides us</button>
-                    <button class="pill-btn" onclick="fillAndTranslate('Justice for our great people!')">Justice for our great people</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Justice for our people!')">Justice for our people</button>
                     <button class="pill-btn" onclick="fillAndTranslate('Taste the chill of true death!')">Taste the chill of true death</button>
                 </div>
             </div>
@@ -581,7 +581,7 @@
                 boxIn.placeholder = "Enter text to translate...\ne.g., The sun guides us.";
                 pillsContainer.innerHTML = `
                     <button class="pill-btn" onclick="fillAndTranslate('The sun guides us.')">The sun guides us</button>
-                    <button class="pill-btn" onclick="fillAndTranslate('Justice for our great people!')">Justice for our great people</button>
+                    <button class="pill-btn" onclick="fillAndTranslate('Justice for our people!')">Justice for our people</button>
                     <button class="pill-btn" onclick="fillAndTranslate('Taste the chill of true death!')">Taste the chill of true death</button>
                 `;
             } else {
@@ -617,6 +617,12 @@
             return matches >= 3;
         }
 
+        // The gloss without commentary: parentheses go first, because they may hold a ';'
+        // ("the Veiled One (title of ...; rebel battle cry)"), then everything after the first ';'.
+        function glossProper(s) {
+            return s.replace(/\([^)]*\)/g, " ").split(";")[0];
+        }
+
         function reverseTranslate(text) {
             const pronounPrefixes = { "na": "us", "anu": "we", "a": "you", "o": "me", "dan": "them", "danu": "they" };
             
@@ -644,8 +650,9 @@
                         if (canonOnly && !e.canon) return false;
                         return e.word === w || e.word + "i" === w || e.word.slice(0,-1)+"ei" === w;
                     });
-                    if (found) {
-                        let t = found.translation.en;
+                    // An entry whose meaning is unknown (empty gloss proper) shows as [word], like a missing one.
+                    let t = found ? glossProper(found.translation.en).trim() : "";
+                    if (t) {
                         if (w.endsWith("i") && found.pos === "noun") t += "(s)";
                         translated.push(t);
                     } else {
@@ -688,8 +695,8 @@
                 }
 
                 const canonOnly = document.getElementById('canon-toggle').checked;
-                // Gloss proper only: text after ';' and inside parentheses is commentary.
-                const glossWords = (s, splitter) => s.split(";")[0].replace(/\([^)]*\)/g, " ").toLowerCase().split(splitter);
+                // Gloss proper only: text inside parentheses and after ';' is commentary.
+                const glossWords = (s, splitter) => glossProper(s).toLowerCase().split(splitter);
                 const usable = e => !(canonOnly && !e.canon) &&
                     // Whole phrases (e.g. anar'alah = "by the Light") are not used word by word.
                     !(e.pos === "phrase" || e.word.includes(" "));
