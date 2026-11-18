@@ -10,7 +10,7 @@ Most older fan projects (for example the PBWorks Thalassian Language Institute f
 ## 2. Canon sources
 Canon meanings come only from Blizzard: in-game text that gives an English gloss, Blizzard developer statements (for example Loreology), official books, and Blizzard's own localizations of elven lines. The lexicon draws on four lore dialects:
 1. **Thalassian** (High Elves, Blood Elves, Void Elves): the main modern dialect.
-2. **Darnassian** (Night Elves): the ancestral language and the source of many shared roots.
+2. **Darnassian** (Night Elves): the closest living relative of the ancient elven tongue the other dialects come from, and the source of many shared roots. Blizzard's encyclopedia says Thalassian derives from Darnassian and also calls it a cousin language; see [the elven origins note](../../research/2026-11-revival/6-elven-origins.md).
 3. **Shalassian** (Nightborne of Suramar): an archaic Highborne dialect.
 4. **Skyborne** (Shen'dorei of WoW Forever, added November 2026): a Darnassian dialect; players of the race learn "Language: Darnassian". See [the Skyborne report](../../research/2026-11-revival/3-new-elven-race.md).
 
