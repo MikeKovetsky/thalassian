@@ -368,7 +368,7 @@ class Sentence(ASTNode):
         return text.capitalize() if text else ""
 
 def tokens_en(en_sentence: str) -> List[WordNode]:
-    """Words and punctuation. The plural guess is a final -s on a word of four letters or more."""
+    """Words and punctuation. The plural guess is a final -s, not -ss, on a word of four letters or more."""
     tokens = []
     for t in re.findall(r"[A-Za-z']+|[.,!?;]", expand_contractions(en_sentence)):
         if re.match(r"[.,!?;]", t):
