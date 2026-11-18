@@ -1,0 +1,647 @@
+[
+ {
+  "action": "add",
+  "word": "shen'dorei",
+  "translation": {
+   "en": "hidden people; the Skyborne's own name for themselves, also the name of their language",
+   "uk": "приховані люди; самоназва небонароджених (Skyborne), також назва їхньої мови"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shen",
+  "notes": "New in WoW Forever. The client pairs the English race name with this lore name in ChrRaces rows 95 (High Order Skyborne, Alliance) and 96 (Windshaper Skyborne, Horde), the same pairing it uses for Blood Elf/Sin'dorei and Night Elf/Kaldorei. Blizzard's own news post gives the gloss 'hidden people'. The client also has a separate language, Languages 310 'Shen'dorei', whose garble word list is identical to Darnassian's (retail 12.1.5 has no row 310 and lists races 95/96 as 'TBD NPC Race'). Overlaps 3-candidates.json; this entry adds the client row IDs.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Name_lang 'High Order Skyborne', Lore_name_lang 'Shen'dorei'",
+    "where": "ChrRaces#95 (DB2, hotfix push 113187)"
+   },
+   {
+    "quote": "Name_lang 'Windshaper Skyborne', Lore_name_lang 'Shen'dorei'",
+    "where": "ChrRaces#96 (DB2, hotfix push 113187)"
+   },
+   {
+    "quote": "These \"Skyborne,\" as they call themselves,",
+    "where": "BroadcastText#316349 (DB2, race intro cinematic)"
+   },
+   {
+    "quote": "Shen'dorei",
+    "where": "Languages#310 Name_lang; Faction#2748 Name_lang; Creature#273554 'Shen'dorei Wisp'"
+   },
+   {
+    "quote": "Through your deeds the forest has now become much safer for both wildlife and shen'dorei.",
+    "where": "MailTemplate#652"
+   },
+   {
+    "quote": "the Skyborne, also known as the shen'dorei or hidden people.",
+    "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071 (Blizzard, fetched 2026-11-17)"
+   }
+  ],
+  "method": "Client pairs English name and lore name in the same ChrRaces rows; the gloss 'hidden people' is stated by Blizzard's news post.",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "esarus thar no'darador",
+  "translation": {
+   "en": "by blood and honor we serve",
+   "uk": "кров'ю і честю ми служимо"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "esarus",
+  "notes": "Motto on a memorial page for General Turalyon, signed by Uther the Lightbringer. The client gives the English right after the phrase. Word-by-word alignment is not stated (three words against five), and the page does not name the language. Not in the lexicon or anywhere in the repo's git history.",
+  "source": "unattributed",
+  "evidence": [
+   {
+    "quote": "Esarus thar no'Darador' - By Blood and Honor We Serve.",
+    "where": "wdb:pagetextcache#290 (page text 'General Turalyon')"
+   }
+  ],
+  "method": "Gloss stated in the same page text.",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "eldre'thalas",
+  "translation": {
+   "en": "Eldre'Thalas: the ancient Highborne city now called Dire Maul; ancestral home of the Skyborne High Order",
+   "uk": "Ельдре'Талас: стародавнє місто Високорождених, нині Dire Maul; прабатьківщина Вищого Ордену небонароджених"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "thalas",
+  "notes": "'thalas' matches the lexicon's thalas (home/kingdom), as in Quel'Thalas. 'eldre' is not explained in the client.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "This was once a part of Eldre'Thalas - the ancient city of my people that lies just over the southern mountains. Dire Maul, I believe it is commonly called these days.",
+    "where": "BroadcastText#307136 (hotfix push 113301)"
+   },
+   {
+    "quote": "The High Order is made up of the descendants of the ancient Highborne scholars of Eldre'Thalas.",
+    "where": "ChrRaces#95 LoreDescription_lang"
+   },
+   {
+    "quote": "Eldre' Thalas",
+    "where": "WMOAreaTable#143206"
+   }
+  ],
+  "method": "Referent stated in NPC speech and in the race description.",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shen'dralar",
+  "translation": {
+   "en": "Shen'dralar: the Highborne order of Eldre'Thalas (Dire Maul), from which the Skyborne descend",
+   "uk": "Шен'дралар: орден Високорождених з Ельдре'Таласа (Dire Maul), від якого походять небонароджені"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "shen",
+  "notes": "Classic-era name the lexicon never took in. It shares 'shen' with shen'dorei. 3-new-elven-race.md cites Chronicle Vol. 1 for the gloss 'Those Who Remain Hidden'; the client itself only gives the referent.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shen'dralar",
+    "where": "Faction#809 Name_lang"
+   },
+   {
+    "quote": "I still count myself among the Shen'dralar, but these days I am long estranged from the library I once called home.",
+    "where": "BroadcastText#313613 (hotfix push 113301)"
+   },
+   {
+    "quote": "Some of the Shen'dralar protested this decision and proposed a compelling alternative",
+    "where": "BroadcastText#302214 (hotfix push 113301)"
+   },
+   {
+    "quote": "Blessed by the Shen'dralar Ancients.",
+    "where": "ItemSparse#18465 Description_lang (hotfix)"
+   }
+  ],
+  "method": "Referent stated by faction name and NPC speech.",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "jai'vhanel",
+  "translation": {
+   "en": "Swordfeather (name of a black owl in Darkshore)",
+   "uk": "Мечоперо (Swordfeather): ім'я чорної сови в Darkshore"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "jai'vhanel",
+  "notes": "Night elf (Darnassian) naming. The quest gives the English name as an alias; which half means 'sword' and which 'feather' is not stated. Not in the lexicon or the repo history.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "A reward is being offered for the death of the owl \"Jai'vhanel\" also known as \"Swordfeather\".",
+    "where": "wdb:questcache#98025 (quest 'WANTED: Jai'vhanel', Auberdine)"
+   }
+  ],
+  "method": "Alias stated in quest text ('also known as').",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "shen",
+  "translation": {
+   "en": "hidden (stem of shen'dorei 'hidden people')",
+   "uk": "прихований (основа shen'dorei «приховані люди»)"
+  },
+  "pos": "adjective",
+  "canon": false,
+  "root": "shen",
+  "notes": "Segmentation shen + dorei (lexicon: dorei = children/born of), as in sin'dorei, kal'dorei, ren'dorei, shal'dorei. Every other 'shen' form in the client fits a hidden people rather than 'sky': Shen'dralar (Highborne order), Shen'dralas (their new zone), Shen'dar (Skyborne highlands and village). Read 'sky' only from the English name Skyborne; that reading does not fit Shen'dralar, so it is rejected.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "the Skyborne, also known as the shen'dorei or hidden people.",
+    "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+   },
+   {
+    "quote": "Shen'dar Highlands / Shen'dar Village",
+    "where": "AreaTable#16623, #16624 (Zephras Isle)"
+   },
+   {
+    "quote": "Shen'dralas",
+    "where": "AreaTable#16651 (Kalimdor)"
+   },
+   {
+    "quote": "Shen'dralar",
+    "where": "Faction#809"
+   }
+  ],
+  "method": "Segmentation of a Blizzard-glossed compound, checked against every 'shen' form in the client.",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "naar",
+  "translation": {
+   "en": "place, settlement (suffix of elven place names)",
+   "uk": "місце, поселення (суфікс ельфійських назв місць)"
+  },
+  "pos": "suffix",
+  "canon": false,
+  "root": "naar",
+  "notes": "Every client name ending in -naar is an elven place: Dolanaar (village), Astranaar (town), Thalanaar (outpost), Falanaar (ancient city), Vor'danaar (prison in the new Barrow Deeps) and the new Skyborne town Valanaar. Compare the lexicon's aran (town/settlement).",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Dolanaar",
+    "where": "AreaTable#186 (Teldrassil)"
+   },
+   {
+    "quote": "Astranaar",
+    "where": "AreaTable#415 (Ashenvale)"
+   },
+   {
+    "quote": "Thalanaar",
+    "where": "AreaTable#489 (Feralas)"
+   },
+   {
+    "quote": "Falanaar Tunnels",
+    "where": "WMOAreaTable#87064"
+   },
+   {
+    "quote": "Vor'danaar Prison",
+    "where": "WMOAreaTable#139377"
+   },
+   {
+    "quote": "Valanaar",
+    "where": "AreaTable#16638 (Zephras Isle)"
+   }
+  ],
+  "method": "Distribution across all client place names.",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "eluvi'ana",
+  "translation": {
+   "en": "Eluvi'ana, the Night Dancer: an ancient Shen'dorei spirit",
+   "uk": "Елуві'ана, Нічна Танцівниця: давній дух шен'дорей"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "eluvi",
+  "notes": "The client pairs the name with the epithet 'the Night Dancer'; an epithet need not be a literal translation. Pairs with Eluvi'tor (eluvi + ana vs eluvi + tor).",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Raising Eluvi'ana, the Night Dancer.",
+    "where": "Spell#1314923 AuraDescription_lang"
+   },
+   {
+    "quote": "Raise Eluvi'ana to bind the Ancient Hilt.",
+    "where": "Spell#1314923 Description_lang"
+   },
+   {
+    "quote": "Eluvi'ana",
+    "where": "ItemSparse#276188 Display_lang (hotfix push 17053404)"
+   }
+  ],
+  "method": "Name plus epithet in a spell aura text.",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "valanaar",
+  "translation": {
+   "en": "Valanaar: the Skyborne town and skydocks on Zephras Isle",
+   "uk": "Валанаар: місто і небесні доки небонароджених на острові Зефрас"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "naar",
+  "notes": "Shows the -naar place suffix. Etymology of 'vala' is not stated.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Valanaar / Valanaar Skydocks",
+    "where": "AreaTable#16638, #16628"
+   },
+   {
+    "quote": "Valanaar Port Authority / Valanaar Central Hall",
+    "where": "GameObjects#652536, #652537"
+   },
+   {
+    "quote": "This missive contains orders from someone located in Valanaar. From the elegant script it seems like a person of status.",
+    "where": "ItemSparse#265782 Description_lang"
+   },
+   {
+    "quote": "Portal to Valanaar",
+    "where": "SpellName#1269464"
+   }
+  ],
+  "method": "Referent stated by the zone table and object names.",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "shen'dar",
+  "translation": {
+   "en": "Shen'dar: highlands and village on Zephras Isle",
+   "uk": "Шен'дар: нагір'я і село на острові Зефрас"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "shen",
+  "notes": "Shares 'shen' with shen'dorei; 'dar' is not explained.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Shen'dar Highlands / Shen'dar Village",
+    "where": "AreaTable#16623, #16624"
+   },
+   {
+    "quote": "I'm in charge of Shen'dar Village operations",
+    "where": "BroadcastText#300665 (hotfix push 112709)"
+   }
+  ],
+  "method": "Referent stated by the zone table.",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "shen'dralas",
+  "translation": {
+   "en": "Shen'dralas: a new Kalimdor zone around Desolace's Valley of Bones, with ruined gardens and mana pylons",
+   "uk": "Шен'дралас: нова зона Калімдору довкола Долини Кісток у Desolace, з руїнами садів і пілонами мани"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "shen",
+  "notes": "New in WoW Forever. Place/people pair with Shen'dralar (-as place, -ar people?), compare Quel'Thalas; that split is inference only.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shen'dralas (children include Valley of Bones, Magram Front, Forlorn Gardens)",
+    "where": "AreaTable#16651, #2657, #16675, #16742"
+   },
+   {
+    "quote": "Once an enchanted necklace that sustained life in the gardens of Shen'dralas.",
+    "where": "ItemSparse#260247 Description_lang"
+   },
+   {
+    "quote": "A shattered pendant with the broken seal of Shen'dralas.",
+    "where": "ItemSparse#272021 Description_lang"
+   },
+   {
+    "quote": "Explore Shen'dralas",
+    "where": "Achievement#63684"
+   }
+  ],
+  "method": "Referent stated by the zone table and item texts.",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "eluvi'tor",
+  "translation": {
+   "en": "Eluvi'tor: the Imbued Hilt used to bind an ancient Shen'dorei spirit",
+   "uk": "Елуві'тор: Насичене руків'я, яким зв'язують давнього духа шен'дорей"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "eluvi",
+  "notes": "Weapon counterpart of Eluvi'ana. Whether -tor marks a weapon is a guess from this one pair.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Bind an ancient Shen'dorei spirit using the Imbued Hilt of Eluvi'tor.",
+    "where": "Spell#1314956 Description_lang"
+   },
+   {
+    "quote": "Wield Eluvi'tor",
+    "where": "SpellName#1314917"
+   }
+  ],
+  "method": "Referent stated in spell texts.",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "thendal",
+  "translation": {
+   "en": "Thendal: grove, village, cave and standing stones on Zephras Isle",
+   "uk": "Тендал: гай, село, печера і стоячі камені на острові Зефрас"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "thendal",
+  "notes": "Proper noun only; meaning not stated.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Thendal Grove / Thendal Village / Thendal Cave / Thendal Standing Stones",
+    "where": "AreaTable#16622, #16635, #16673, #17678"
+   }
+  ],
+  "method": "Referent stated by the zone table.",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "falaath",
+  "translation": {
+   "en": "Falaath: a village on Zephras Isle",
+   "uk": "Фалаат: село на острові Зефрас"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "fal",
+  "notes": "Proper noun only. Compare Lake Falathim (AreaTable#441, Ashenvale).",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Falaath Village",
+    "where": "AreaTable#16636"
+   }
+  ],
+  "method": "Referent stated by the zone table.",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "ban'aethal",
+  "translation": {
+   "en": "Ban'aethal: ruins on Zephras Isle",
+   "uk": "Бан'етал: руїни на острові Зефрас"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "ban",
+  "notes": "Proper noun only. Mirrors Ban'ethil Barrow Den (AreaTable#262, Teldrassil) and Ban'Thallow Barrow Den (AreaTable#2254); the lexicon has ban = gate/passage.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Ruins of Ban'aethal",
+    "where": "AreaTable#16833"
+   }
+  ],
+  "method": "Referent stated by the zone table.",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "zephras",
+  "translation": {
+   "en": "Zephras Isle: the flying island of the Skyborne in Skywall",
+   "uk": "Зефрас: летючий острів небонароджених у Skywall"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "zephar",
+  "notes": "Built on English 'zephyr'. The same stem gives the item prefix 'Zephrali' (32 items, ItemSparse#277080-277111) and the Skyborne surname 'Zephraalis' (NameGen#25277 and others).",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Zephras Isle",
+    "where": "AreaTable#16593; Map#2991"
+   },
+   {
+    "quote": "a band of high elven exiles has remained safe / and hidden upon their flying sanctuary of Zephras Isle.",
+    "where": "BroadcastText#316346, #316348"
+   }
+  ],
+  "method": "Referent stated by zone table and intro cinematic.",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "aeesha'el banu zepharaalis",
+  "translation": {
+   "en": "closing blessing of a Shen'dorei letter (not translated in the client)",
+   "uk": "прощальне благословення в кінці листа шен'дорей (у клієнті не перекладено)"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "zephar",
+  "notes": "Written by Lotheluum Starbreeze, a Shen'dorei druid, right before her signature; the line before reads 'I am unsure where the winds will lead you'. 'zepharaalis' shares the zephar- stem with Zephras and the NameGen surname Zephraalis. 'banu' is close to the garble word 'Bandu'. Overlaps 3-candidates.json.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Aeesha'el banu zepharaalis,\nLotheluum Starbreeze",
+    "where": "MailTemplate#652 Body_lang"
+   },
+   {
+    "quote": "Zephraalis",
+    "where": "NameGen#25277, #25363, #25449, #25535 (races 95/96)"
+   }
+  ],
+  "method": "Position in the letter (valediction) and shared stem; no gloss in the client.",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "ursera",
+  "translation": {
+   "en": "ursera: a clawed, feathered beast of Zephras Isle (known from its drops)",
+   "uk": "урсера: звір острова Зефрас з кігтями й пір'ям (відомий за здобиччю)"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "urs",
+  "notes": "Only item names are in the client; the creature itself is server-side. Overlaps 3-candidates.json.",
+  "source": "skyborne",
+  "evidence": [
+   {
+    "quote": "Scrawny Ursera Claw / Tattered Ursera Feather / Sharp Ursera Tooth / Chipped Ursera Bone",
+    "where": "ItemSparse#251918, #251925, #263183, #263184"
+   },
+   {
+    "quote": "Mark of Urs'endris",
+    "where": "ItemSparse#263435"
+   }
+  ],
+  "method": "Inferred from item names.",
+  "confidence": "low"
+ },
+ {
+  "action": "fix",
+  "word": "dorei",
+  "field": "notes",
+  "old": "Sin'dorei (Children of Blood), Quel'dorei (High Elves), Kal'dorei (Night Elves).",
+  "new": "Sin'dorei (Children of Blood), Quel'dorei (High Elves), Kal'dorei (Night Elves), Shen'dorei (hidden people: the Skyborne of WoW Forever).",
+  "evidence": [
+   {
+    "quote": "Shen'dorei",
+    "where": "ChrRaces#95, #96 Lore_name_lang (Name_lang 'High Order Skyborne', 'Windshaper Skyborne')"
+   },
+   {
+    "quote": "the Skyborne, also known as the shen'dorei or hidden people.",
+    "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+   }
+  ],
+  "confidence": "high",
+  "method": "New attestation of the same suffix."
+ },
+ {
+  "action": "fix",
+  "word": "ethala",
+  "field": "notes",
+  "old": "Totality marker; resonates with thalas (home/hearth = totality of dwelling)",
+  "new": "Totality marker; resonates with thalas (home/hearth = totality of dwelling). The form is not new: Blizzard uses it as a garble word (LanguageWords #154 Darnassian, #853 Thalassian, #3816 Shen'dorei), which is meaningless filler in garbled speech, so the meaning stays the project's own.",
+  "evidence": [
+   {
+    "quote": "Ethala",
+    "where": "LanguageWords #154 Darnassian, #853 Thalassian, #3816 Shen'dorei"
+   }
+  ],
+  "confidence": "high",
+  "method": "The project marks this word as phonotactically generated; the client already has the exact form in its Elvish garble lists."
+ },
+ {
+  "action": "fix",
+  "word": "shari",
+  "field": "notes",
+  "old": "New root for abundance; sh-onset follows Thalassian phonotactics",
+  "new": "New root for abundance; sh-onset follows Thalassian phonotactics. The form is not new: Blizzard uses it as a garble word (LanguageWords #148 Darnassian, #847 Thalassian, #3763 Shen'dorei), which is meaningless filler in garbled speech, so the meaning stays the project's own.",
+  "evidence": [
+   {
+    "quote": "Shari",
+    "where": "LanguageWords #148 Darnassian, #847 Thalassian, #3763 Shen'dorei"
+   }
+  ],
+  "confidence": "high",
+  "method": "The project marks this word as phonotactically generated; the client already has the exact form in its Elvish garble lists."
+ },
+ {
+  "action": "fix",
+  "word": "thera",
+  "field": "notes",
+  "old": "Interrogative inanimate; parallels theli with -ra ending for things vs -li for persons",
+  "new": "Interrogative inanimate; parallels theli with -ra ending for things vs -li for persons. The form is not new: Blizzard uses it as a garble word (LanguageWords #146 Darnassian, #845 Thalassian, #3762 Shen'dorei), which is meaningless filler in garbled speech, so the meaning stays the project's own.",
+  "evidence": [
+   {
+    "quote": "Thera",
+    "where": "LanguageWords #146 Darnassian, #845 Thalassian, #3762 Shen'dorei"
+   }
+  ],
+  "confidence": "high",
+  "method": "The project marks this word as phonotactically generated; the client already has the exact form in its Elvish garble lists."
+ },
+ {
+  "action": "fix",
+  "word": "osa",
+  "field": "notes",
+  "old": "Distal demonstrative; vowel contrast e/o marks proximal/distal",
+  "new": "Distal demonstrative; vowel contrast e/o marks proximal/distal. The form is not new: Blizzard uses it as a garble word (LanguageWords #127 Darnassian, #826 Thalassian, #3800 Shen'dorei), which is meaningless filler in garbled speech, so the meaning stays the project's own.",
+  "evidence": [
+   {
+    "quote": "Osa",
+    "where": "LanguageWords #127 Darnassian, #826 Thalassian, #3800 Shen'dorei"
+   }
+  ],
+  "confidence": "high",
+  "method": "The project marks this word as phonotactically generated; the client already has the exact form in its Elvish garble lists."
+ },
+ {
+  "action": "fix",
+  "word": "fallah",
+  "field": "notes",
+  "old": "Shindu fallah na!",
+  "new": "Shindu fallah na! The Thalassian garble list holds 'Fallah' (LanguageWords #854) and the whole phrase 'Shindu'fallah'na' (#896) as one filler entry; the Darnassian and Shen'dorei lists spell it 'Falla' / 'Shindu'falla'na' (#155, #197, #3765, #3780). In-game occurrences can therefore be garble output; keep the gloss only if a non-garble source gives it.",
+  "evidence": [
+   {
+    "quote": "Fallah / Shindu'fallah'na",
+    "where": "LanguageWords#854, #896 (LanguageID 10 Thalassian)"
+   },
+   {
+    "quote": "Falla / Shindu'falla'na",
+    "where": "LanguageWords#155, #197 (2 Darnassian), #3765, #3780 (310 Shen'dorei)"
+   }
+  ],
+  "confidence": "medium",
+  "method": "Comparison of the client's garble lists; the -h spelling is the only difference between the Thalassian and Darnassian lists."
+ },
+ {
+  "action": "fix",
+  "word": "aran",
+  "field": "notes",
+  "old": "Bashal'Aran, Ameth'Aran",
+  "new": "Bashal'Aran, Ameth'Aran, Ordil'Aran (ruins in Darkshore and Ashenvale).",
+  "evidence": [
+   {
+    "quote": "Bashal'Aran / Ameth'Aran / The Ruins of Ordil'Aran",
+    "where": "AreaTable#446, #447, #412"
+   }
+  ],
+  "confidence": "high",
+  "method": "One more attestation of the same suffix in the client."
+ },
+ {
+  "action": "fix",
+  "word": "rath",
+  "field": "notes",
+  "old": "E'rath omnas (arcane shield), Rath-domaas (missiles)",
+  "new": "E'rath omnas (arcane shield), Rath-domaas (missiles). Caution: all of E'rath, Omnas, Rath, Rath-domaas and Domaas are entries of Blizzard's retail Shalassian garble list, so Nightborne speech containing them can be filler. The gloss holds only where the word is tied to a specific spell cast.",
+  "evidence": [
+   {
+    "quote": "E'rath / Omnas / Rath / Rath-domaas / Domaas",
+    "where": "retail 12.1.5.70961 LanguageWords (LanguageID 181 Shalassian), via wago.tools/db2/LanguageWords #3088, #3089, #3084, #3085, #3095"
+   }
+  ],
+  "confidence": "medium",
+  "method": "Comparison with Blizzard's retail garble list (not in the Forever client, which has no Shalassian language)."
+ },
+ {
+  "action": "fix",
+  "word": "kanesh",
+  "field": "notes",
+  "old": "Ith'el kanesh / Ith'nala kanesh",
+  "new": "Ith'el kanesh / Ith'nala kanesh. Caution: Ith'el, Ith'nala and Kanesh are all entries of Blizzard's retail Shalassian garble list, so these phrases may be garbled speech rather than meaningful text; the gloss needs a non-garble source.",
+  "evidence": [
+   {
+    "quote": "Ith'el / Ith'nala / Kanesh",
+    "where": "retail 12.1.5.70961 LanguageWords (LanguageID 181 Shalassian), via wago.tools/db2/LanguageWords #2979, #3083, #3082"
+   }
+  ],
+  "confidence": "medium",
+  "method": "Comparison with Blizzard's retail garble list (not in the Forever client)."
+ }
+]

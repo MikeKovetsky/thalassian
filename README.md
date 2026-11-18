@@ -1,14 +1,16 @@
-# Thalassian: The Official Sin'dorei Language Engine
+# Thalassian: A Sin'dorei Language Engine
 
 [![GitHub Pages](https://img.shields.io/badge/Live_Demo-Play_Now-d4af37?style=for-the-badge&logo=github)](https://MikeKovetsky.github.io/thalassian/)
-[![World of Warcraft: Midnight](https://img.shields.io/badge/Patch-12.0_Midnight-8b0000?style=for-the-badge)](https://MikeKovetsky.github.io/thalassian/)
+[![WoW Forever client data](https://img.shields.io/badge/WoW_Forever-1.60.1_client_data-8b0000?style=for-the-badge)](research/2026-11-revival/2-client-mining.md)
 [![Built with Portal OS](https://img.shields.io/badge/Built_by-Portal_AI-black?style=for-the-badge)](https://portal.ai)
 
 > *“Bal'a dash, malanore. Anu belore dela'na.”*
 
-Welcome to **Thalassian**, the most comprehensive and scientifically reconstructed conlang engine for the Blood Elves (Sin'dorei), High Elves (Quel'dorei), and Void Elves (Ren'dorei) of *World of Warcraft*. 
+Welcome to **Thalassian**, a fan conlang engine for the Blood Elves (Sin'dorei), High Elves (Quel'dorei), Void Elves (Ren'dorei) and the Skyborne (Shen'dorei) of *World of Warcraft*.
 
-Unlike older fan wikis that invented vocabulary from thin air, this project strictly adheres to a **Canon-First** methodology. We reverse-engineered the actual phrases datamined from the game (including Darnassian roots, Shalassian archaic forms, and brand new **Patch 12.0 Midnight** datamines) to build a working, speakable Elven language.
+The project follows a **Canon-First** methodology: every word says whether Blizzard stated its meaning (`canon: true`) and on what basis (`canon_basis`: attested, segment, epithet, name, inferred, generated or unverified). Canon comes from Blizzard's own glossed phrases in Thalassian, Darnassian and Shalassian, and since November 2026 from the [WoW Forever game client](research/2026-11-revival/2-client-mining.md). Words Blizzard never gave are filled in by inference or generation, and are marked as such.
+
+**November 2026 revival.** A [canon audit](research/2026-11-revival/1-review-and-methods.md) corrected wrong meanings (for example *bash'a* is "taste", not "death"; *shal'na* is "aunt") and found that the March 2026 "Midnight datamine" never happened. The lexicon grew from 206 to 310 entries, including the [Skyborne words](research/2026-11-revival/3-new-elven-race.md) of WoW Forever (*shen'dorei*, "hidden people"). Every change and its evidence is in [the merge log](research/2026-11-revival/merge-log.md).
 
 This project was conceived by **Mike Kovetsky** and architected by an autonomous agent powered by **Portal OS** ([Portal AI](https://portal.ai)).
 
@@ -33,7 +35,7 @@ Our engine understands agglutinative grammar (pronouns attach to verbs, preposit
     **Thalassian:** `Belore dela'na.` *(Canon match)*
 *   **English:** *"Rise, dead ones!"*
     **Thalassian:** `Aranal, ledel!` *(Extrapolated from Prince Keleseth)*
-*   **English:** *"Justice for our great people."*
+*   **English:** *"Justice for our people."*
     **Thalassian:** `Selama ashal'anore.` *(Canon match)*
 
 ### Poetic Translation (Song Adaptation)
@@ -51,7 +53,7 @@ Because Elves don't use modern words like "chains" or "confession", translating 
 
 We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
-- `src/thalassian/data/lexicon.json` - The Single Source of Truth database for 200+ canon and phonotactically generated roots.
+- `src/thalassian/data/lexicon.json` - The single source of truth: 310 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
 - `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler (using AST and `spaCy` to parse English and compile SVO Elven grammar).
 - `src/thalassian/phonetics/markov.py` - A Phonotactic Markov-chain engine to generate new vocabulary that sounds 100% lore-friendly.
 - `src/thalassian/morphology/` - Rules for agglutination and vocalic mutation (pluralization).
@@ -62,6 +64,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 3. 🖋️ **[Typography Methodology (Runic Visuals)](docs/methodology/typography.md)**
 4. 📚 **[Bibliography & Sources (Citations)](docs/citations.md)**
 5. 🤖 **[Architecting with Portal OS (How an AI built this)](docs/methodology/how-to-use-portal.md)**
+6. 🔎 **[November 2026 revival: audit, client mining and the Skyborne](research/2026-11-revival/)**
 
 ---
 
@@ -69,7 +72,11 @@ We treat conlanging as software engineering. The project is structured as a prop
 - [x] **Lexicon Combiner**: Script to automatically merge roots into complex nouns.
 - [x] **Grammar Compiler**: Syntax rules (SVO, pluralization, pronoun agglutination).
 - [x] **Web Interface**: Multi-mode translator hosted on GitHub Pages.
-- [x] **Midnight (12.0) Datamining**: Integrate the newest canonical words (`Shal'na`, `Anu'shalla`).
+- [x] **WoW Forever client mining**: Read the game client's tables, hotfixes and caches (`tools/wowf/`).
+- [x] **Canon audit**: Every canon entry checked against its source; wrong meanings fixed (November 2026).
+- [x] **Skyborne (Shen'dorei)**: Vocabulary of the new WoW Forever elven race.
+- [ ] **Localized text mining**: Chinese and Korean clients sometimes translate elven lines; mine them for new meanings.
+- [ ] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`).
 - [x] **Typography Engine**: Integrated Elvish Runic fonts for visual rendering in the web app.
 - [x] **Reverse Translator**: Auto-detects Elvish and translates back to English.
 - [x] **Syntax Tree Visualizer**: D3.js interactive parse trees for Elven grammar.

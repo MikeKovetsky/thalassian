@@ -2,6 +2,13 @@
 
 This document describes the structural rules (syntax and morphology) of the language, reconstructed from canonical World of Warcraft phrases and extrapolated for the conlang.
 
+> **November 2026 audit: what the canon actually supports.** The rules below are the engine's conventions; several go beyond the canon. From all Blizzard-glossed phrases ([full analysis](../../research/2026-11-revival/1-review-and-methods.md#6-grammar-findings-from-the-canon)):
+> 1. Apostrophe compounds put the modifier first and the head last (*Quel'Thalas* "High Home", *Thas'alah* "Light of the Forest", *Sin'dorei*), in 10 of 10 Thalassian cases.
+> 2. Free genitive phrases put the head first (*falor talah*, "chill of true death").
+> 3. The enclitic pronouns *'na* (us/our) and *'o* (me) are attested; *'a* (you) is not.
+> 4. Imperatives come first in the clause. Strict SVO is not established: Shalassian *Ru shanna shal'dorei* ("The nightborne will survive") is verb-subject.
+> 5. Prepositions exist (*anar* "by", Shalassian *vala* "through", Darnassian *bessae* "from the"). Number is unmarked on *dorei* (child or children). No tense morphology is attested, so the `-ash` and `ru-` tense markers below are inventions.
+
 ## 1. Word Order
 We use standard analytical word order: **Subject — Verb — Object (SVO)**.
 This is the most natural order for the majority of global languages and is observable in most of Blizzard's translated phrases.
@@ -18,7 +25,7 @@ To keep the language "lore-friendly" and avoid overloading it with conjugation t
 
 ## 4. Plurals
 From the canon, we know plurals are often formed by adding the suffix `-i` or changing the final vowel to the diphthong `-ei` (dore -> dorei).
-- **Rule 1:** If the word ends with a consonant, add `-i` (e.g., *alar* -> *alari* - phoenixes).
+- **Rule 1:** If the word ends with a consonant, add `-i` (e.g., *alar* -> *alari* - rangers).
 - **Rule 2:** If the word ends with a vowel, add `-i` to form a diphthong, or extend the vowel (e.g., *sindo* -> *sindorei*, *shola* -> *sholai*).
 
 ## 5. Agglutination (Pronouns & Prepositions)
@@ -29,7 +36,7 @@ This is the core feature of Thalassian grammar:
   - `na` = us/we
   - *Example:* `dela'na` (guides us).
 - **Prepositions:** Elves generally drop prepositions ("for", "of", "to") for brevity. The relationship is conveyed by context or compounding.
-  - *Example:* `Selama ashal'anore` (Justice [for our] great people).
+  - *Example:* `Selama ashal'anore` (Justice for our people). The audit reads *ashal* as "for", so this example does keep a preposition.
 
 ## 6. Adjectives
 Adjectives can precede the noun when they merge into a term (e.g., *Quel'dorei* - High elves), or follow the noun in poetic contexts.

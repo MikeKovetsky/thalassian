@@ -1,0 +1,3716 @@
+[
+ {
+  "action": "fix",
+  "word": "alar",
+  "field": "translation",
+  "old": {
+   "uk": "фенікс",
+   "en": "phoenix"
+  },
+  "new": {
+   "uk": "рейнджер",
+   "en": "ranger"
+  },
+  "evidence": [
+   {
+    "quote": "Alar'annalas = Ranger Lord.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "The Thalassian term for this rank is Alar'annalas.",
+    "where": "https://warcraft.wiki.gg/wiki/Farstriders"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "No Blizzard source glosses 'alar' as phoenix; Al'ar is a proper name. The only gloss is Alar'annalas = Ranger Lord; Thalassian compounds are modifier-first (Quel'Thalas = High Home, Thas'alah = Light of the Forest), so alar = ranger, annalas = lord."
+ },
+ {
+  "action": "fix",
+  "word": "alar",
+  "field": "notes",
+  "old": "Name of Kael'thas' pet phoenix god, Al'ar.",
+  "new": "First element of Alar'annalas 'Ranger Lord' (Blood of the Highborne, ch. 2). Meaning from segmentation of an official compound. Al'ar (the phoenix) is a proper name with no official gloss.",
+  "evidence": [
+   {
+    "quote": "Alar'annalas = Ranger Lord.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "The Thalassian term for this rank is Alar'annalas.",
+    "where": "https://warcraft.wiki.gg/wiki/Farstriders"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "fix",
+  "word": "anu",
+  "field": "translation",
+  "old": {
+   "uk": "хай/привіт",
+   "en": "hail/greetings"
+  },
+  "new": {
+   "uk": "(частка звертання/побажання; точне значення невідоме)",
+   "en": "(invocation/blessing particle; exact meaning unknown)"
+  },
+  "evidence": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Anu'dorini Talah = Let my will be known.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Anu'shalla, Shadow's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance"
+   },
+   {
+    "quote": "Anu bala belore alon (or belore'alon) — Said by Nethermancer Sepethrea on death, and as a click quote by blood elf civilians in Midnight.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "confidence": "high",
+  "reason": "No gloss containing anu says hail or greetings. Anu occurs in blessings and wishes (Anu belore dela'na; Anu'dorini Talah = Let my will be known; Anu bala belore'alon). Best hypothesis: an optative 'may/let' particle; alternative from two mount epithets: 'guidance'."
+ },
+ {
+  "action": "fix",
+  "word": "ashal",
+  "field": "translation",
+  "old": {
+   "uk": "великий/світлий",
+   "en": "great/glorious"
+  },
+  "new": {
+   "uk": "для (у 'ashal'anore' = 'для нашого народу')",
+   "en": "for (in ashal'anore 'for our people')"
+  },
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "[description; lyrics not reproduced] The Canticle of Sacrifice lyric table pairs the line made of ann'da + anore with an English line meaning father of our people (no 'for'), so anore = our people and ashal = for.",
+    "where": "https://warcraft.wiki.gg/wiki/Canticle_of_Sacrifice#Lyrics"
+   },
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   }
+  ],
+  "confidence": "medium",
+  "reason": "The official gloss 'Justice for our people' has no 'great'. Alignment gives ashal = 'for'. A zhTW localization of 'Felomin ashal!' (Fire consumes!) suggests ashal is also a verb or a homonym, so the meaning is not settled."
+ },
+ {
+  "action": "fix",
+  "word": "dash",
+  "field": "translation",
+  "old": {
+   "uk": "мир/шлях",
+   "en": "peace/path"
+  },
+  "new": {
+   "uk": "частина вітання 'bal'a dash' (вітаю)",
+   "en": "part of the greeting bal'a dash ('greetings')"
+  },
+  "evidence": [
+   {
+    "quote": "Bal'a dash, malanore. || Greetings, traveler. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high",
+  "reason": "The only gloss covers 'bal'a dash' as a unit ('Greetings'); 'peace' and 'path' have no source."
+ },
+ {
+  "action": "fix",
+  "word": "dela",
+  "field": "translation",
+  "old": {
+   "uk": "вести/світити",
+   "en": "guide/shine"
+  },
+  "new": {
+   "uk": "вести",
+   "en": "guide"
+  },
+  "evidence": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'shine' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "na",
+  "field": "translation",
+  "old": {
+   "uk": "нас/ми",
+   "en": "us/we"
+  },
+  "new": {
+   "uk": "нас/наш (енклітика 1-ї особи множини)",
+   "en": "us/our (1st person plural enclitic)"
+  },
+  "evidence": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Shindu fallah na = \"They are breaking through\" or \"Our enemies are breaking through\".",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Shu dalas na = Heavy are our hearts.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Tor ilisar'thera'nal = Let our enemies beware.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'na' is 'us' in dela'na and 'our' in the Lament gloss and in Darnassian 'Shu dalas na' (Heavy are our hearts); no source gives 'we'."
+ },
+ {
+  "action": "fix",
+  "word": "thalas",
+  "field": "translation",
+  "old": {
+   "uk": "дім/королівство",
+   "en": "home/kingdom"
+  },
+  "new": {
+   "uk": "дім",
+   "en": "home"
+  },
+  "evidence": [
+   {
+    "quote": "Quel'Thalas = High Home.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Quel'Thalas = \"High Kingdom\" or \"High Home\".",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#In_the_RPG"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'Kingdom' comes only from the non-canon RPG (Lands of Conflict); the canon gloss is High Home (Chronicle Vol. 1 p.120)."
+ },
+ {
+  "action": "fix",
+  "word": "melorn",
+  "field": "translation",
+  "old": {
+   "uk": "удар/гнів",
+   "en": "strike/fury"
+  },
+  "new": {
+   "uk": "удар",
+   "en": "strike"
+  },
+  "evidence": [
+   {
+    "quote": "Felo'melorn = Flamestrike.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'fury' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "shindu",
+  "field": "translation",
+  "old": {
+   "uk": "падіння/поразка",
+   "en": "failing/doom"
+  },
+  "new": {
+   "uk": "занепалий; у 'Shindu fallah na' = 'вони / наші вороги'",
+   "en": "failing; in 'Shindu fallah na' it renders 'they / our enemies'"
+  },
+  "evidence": [
+   {
+    "quote": "Shindu fallah na! || They're breaking through!",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Shindu fallah na = \"They are breaking through\" or \"Our enemies are breaking through\".",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Shindu sin'dorei = Failing children of the blood.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "'doom' has no source; the two official glosses disagree, so both readings are kept."
+ },
+ {
+  "action": "fix",
+  "word": "fallah",
+  "field": "translation",
+  "old": {
+   "uk": "прорив/напад",
+   "en": "breakthrough/attack"
+  },
+  "new": {
+   "uk": "проривати(ся)",
+   "en": "break through"
+  },
+  "evidence": [
+   {
+    "quote": "Shindu fallah na! || They're breaking through!",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Shindu fallah na = \"They are breaking through\" or \"Our enemies are breaking through\".",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'attack' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "bash'a",
+  "field": "translation",
+  "old": {
+   "uk": "смерть/руйнування",
+   "en": "death/destruction"
+  },
+  "new": {
+   "uk": "скуштуй (наказовий спосіб)",
+   "en": "taste (imperative)"
+  },
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Bash'a no falor talah! = Taste the chill of true death! Spoken by Sylvanas Windrunner in Warcraft III.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'Death' is talah (cf. tal = death in Tal anu'men no Sin'dorei); the sentence-initial verb of 'Taste the chill of true death' is bash'a."
+ },
+ {
+  "action": "fix",
+  "word": "bash'a",
+  "field": "pos",
+  "old": "noun",
+  "new": "verb",
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Bash'a no falor talah! = Taste the chill of true death! Spoken by Sylvanas Windrunner in Warcraft III.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "bash'a",
+  "field": "notes",
+  "old": "Bash'a no falor talah! (Kael'thas combat quote).",
+  "new": "Bash'a no falor talah! = Taste the chill of true death! Spoken by Sylvanas Windrunner in Warcraft III (Warcraft Encyclopedia, 2006).",
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Bash'a no falor talah! = Taste the chill of true death! Spoken by Sylvanas Windrunner in Warcraft III.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "talah",
+  "field": "translation",
+  "old": {
+   "uk": "виживання/виживати",
+   "en": "survive/endure"
+  },
+  "new": {
+   "uk": "(справжня) смерть",
+   "en": "(true) death"
+  },
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Bash'a no falor talah! = Taste the chill of true death! Spoken by Sylvanas Windrunner in Warcraft III.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Tal anu'men no Sin'dorei = Death to all who oppose the children of the blood. Spoken by High Astromancer Solarian in Tempest Keep.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "In 'Taste the chill of true death', taste = bash'a, chill = falor, so talah = (true) death; it shares the root tal 'death'."
+ },
+ {
+  "action": "fix",
+  "word": "talah",
+  "field": "pos",
+  "old": "verb",
+  "new": "noun",
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Bash'a no falor talah! = Taste the chill of true death! Spoken by Sylvanas Windrunner in Warcraft III.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "anar",
+  "field": "translation",
+  "old": {
+   "uk": "світло/клятва",
+   "en": "light/by"
+  },
+  "new": {
+   "uk": "через/клянусь (прийменник 'by')",
+   "en": "by"
+  },
+  "evidence": [
+   {
+    "quote": "Anar'alah = By the light.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Anar'alah belore. || By the light of the sun.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Anar'endal dracon = By the breath of the dragon.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Three official glosses start with 'By': Anar'alah, Anar'alah belore, Anar'endal dracon. 'Light' is alah (Thas'alah = Light of the Forest)."
+ },
+ {
+  "action": "fix",
+  "word": "serrar",
+  "field": "source",
+  "old": "thalassian",
+  "new": "darnassian",
+  "evidence": [
+   {
+    "quote": "Quel'Serrar = The High Blade.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "It was forged by the combined effort of the five dragonflights and the night elves ... and was gifted to the kaldorei long ago.",
+    "where": "https://warcraft.wiki.gg/wiki/Quel%27Serrar"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "dracon",
+  "field": "source",
+  "old": "darnassian",
+  "new": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'endal dracon = By the breath of the dragon.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "The phrase is listed in the Thalassian primer (Revelations comic; Through the Mirror Darkly)."
+ },
+ {
+  "action": "fix",
+  "word": "shal'na",
+  "field": "translation",
+  "old": {
+   "uk": "ні! / благаю (вигук горя)",
+   "en": "no! / please (cry of grief)"
+  },
+  "new": {
+   "uk": "тітка",
+   "en": "aunt"
+  },
+  "evidence": [
+   {
+    "quote": "Shal'na = Aunt.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Arator: Shal'na! Come back to us.",
+    "where": "https://warcraft.wiki.gg/wiki/What_Might_Come#Notes"
+   },
+   {
+    "quote": "阿姨！快醒醒啊。 (zhCN localization of BroadcastText 302349; 阿姨 = 'auntie')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Arator calls his aunt Vereesa 'Shal'na!' in the 11.2.7 quest What Might Come; Blizzard's zhCN localization renders it 阿姨 (auntie). Darnassian cognate: Shal'nar = Aunt."
+ },
+ {
+  "action": "fix",
+  "word": "shal'na",
+  "field": "pos",
+  "old": "interjection",
+  "new": "noun",
+  "evidence": [
+   {
+    "quote": "Shal'na = Aunt.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Arator: Shal'na! Come back to us.",
+    "where": "https://warcraft.wiki.gg/wiki/What_Might_Come#Notes"
+   },
+   {
+    "quote": "阿姨！快醒醒啊。 (zhCN localization of BroadcastText 302349; 阿姨 = 'auntie')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "shal'na",
+  "field": "notes",
+  "old": "Midnight (12.0) Alpha: Vereesa cries this seeing Rhonin's death",
+  "new": "Aunt. Said by Arator to Vereesa Windrunner in What Might Come (patch 11.2.7). Darnassian cognate Shal'nar 'Aunt' (Curse of the Worgen).",
+  "evidence": [
+   {
+    "quote": "Shal'na = Aunt.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Arator: Shal'na! Come back to us.",
+    "where": "https://warcraft.wiki.gg/wiki/What_Might_Come#Notes"
+   },
+   {
+    "quote": "阿姨！快醒醒啊。 (zhCN localization of BroadcastText 302349; 阿姨 = 'auntie')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "anu'shalla",
+  "field": "translation",
+  "old": {
+   "uk": "вісник тіні",
+   "en": "herald of shadow"
+  },
+  "new": {
+   "uk": "Провід Тіні (епітет маунта)",
+   "en": "Shadow's Guidance (mount epithet)"
+  },
+  "evidence": [
+   {
+    "quote": "Anu'shalla, Shadow's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance"
+   },
+   {
+    "quote": "A purple recolor of this mount, Anu'shalla, Shadow's Guidance, is an achievement reward from Insurmountable Collection, granted by collecting at least 600 mounts usable by a single character.",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   }
+  ],
+  "confidence": "high",
+  "reason": "It is a somnowl mount (reward for 600 mounts, added 12.0.0), a recolor of Anu'relos, Flame's Guidance from Amirdrassil; not a 'Void Owl' and not 'herald'."
+ },
+ {
+  "action": "fix",
+  "word": "anu'shalla",
+  "field": "source",
+  "old": "thalassian",
+  "new": "darnassian",
+  "evidence": [
+   {
+    "quote": "Reins of Anu'relos, Flame's Guidance teach Anu'relos, Flame's Guidance, a fiery somnowl mount. This item drops from Fyrakk the Blazing in Mythic Amirdrassil, the Dream's Hope.",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "Emerald Dream / night elf context; the language is not stated, Darnassian is presumed."
+ },
+ {
+  "action": "fix",
+  "word": "lura",
+  "field": "source",
+  "old": "thalassian",
+  "new": "darnassian",
+  "evidence": [
+   {
+    "quote": "Lura = Sea.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Hearthstone on Twitter, 2022-05-06 (Voyage to the Sunken City lyrics)",
+    "where": "https://twitter.com/PlayHearthstone/status/1522675071134879748"
+   }
+  ],
+  "confidence": "high",
+  "reason": "The Voyage to the Sunken City song is Darnassian per the Hearthstone tweet. A Thalassian 'lura' is only a comparative-method prediction (identity)."
+ },
+ {
+  "action": "fix",
+  "word": "lura",
+  "field": "translation",
+  "old": {
+   "uk": "вода/море",
+   "en": "water/sea"
+  },
+  "new": {
+   "uk": "море",
+   "en": "sea"
+  },
+  "evidence": [
+   {
+    "quote": "Lura = Sea.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "ru",
+  "field": "translation",
+  "old": {
+   "uk": "буде/воля",
+   "en": "will/survive"
+  },
+  "new": {
+   "uk": "буде (частка майбутнього/модальності)",
+   "en": "will (future/modal particle)"
+  },
+  "evidence": [
+   {
+    "quote": "Ru shanna shal'dorei or Ru-shanna shal'dorei = The nightborne will survive.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "'survive' is shanna; ru aligns with 'will'."
+ },
+ {
+  "action": "fix",
+  "word": "ashar",
+  "field": "translation",
+  "old": {
+   "uk": "дуель/честь",
+   "en": "duel/honor"
+  },
+  "new": {
+   "uk": "дуель",
+   "en": "duel"
+  },
+  "evidence": [
+   {
+    "quote": "Tal'ashar = An honor duel.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "Modifier-first compound: tal'ashar = honor-duel, so ashar = duel; 'tal' here is a Shalassian homograph of Thalassian tal 'death'."
+ },
+ {
+  "action": "fix",
+  "word": "do",
+  "field": "translation",
+  "old": {
+   "uk": "вчитель",
+   "en": "teacher"
+  },
+  "new": {
+   "uk": "вчитель; шанобливий суфікс -'do",
+   "en": "teacher; honorific suffix -'do"
+  },
+  "evidence": [
+   {
+    "quote": "Shan'do = Honored Teacher.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Minn'do = Mother. Seems to be more formal than min'da, based on the suffix 'do which is shared with shan'do and nahlen'do.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Nahlen'do = Master of the Fang",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "fix",
+  "word": "minda",
+  "field": "word",
+  "old": "minda",
+  "new": "min'da",
+  "evidence": [
+   {
+    "quote": "Min'da = Mama.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Attested spelling has an apostrophe; this entry is Darnassian. Thalassian is Minn'da (see add)."
+ },
+ {
+  "action": "fix",
+  "word": "anda",
+  "field": "word",
+  "old": "anda",
+  "new": "an'da",
+  "evidence": [
+   {
+    "quote": "An'da = Papa/Father.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Attested spelling has an apostrophe; this entry is Darnassian. Thalassian is Ann'da (see add)."
+ },
+ {
+  "action": "fix",
+  "word": "bandor",
+  "field": "word",
+  "old": "bandor",
+  "new": "band'or",
+  "evidence": [
+   {
+    "quote": "Band'or shorel'aran — (roughly) Prepare to say farewell. Spoken by Commander Sarannis, officially translated in the Chinese version of WoW.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "fix",
+  "word": "bandor",
+  "field": "notes",
+  "old": "Band'or shorel'aran",
+  "new": "From Band'or shorel'aran, '(roughly) Prepare to say farewell', a zhTW localization back-translated by a wiki user. Cognate of Darnassian bandu 'prepare' (Bandu thoribas = Prepare to fight).",
+  "evidence": [
+   {
+    "quote": "Bandu Thoribas = Prepare to fight. (A challenge to an enemy.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "fix",
+  "word": "ban",
+  "field": "translation",
+  "old": {
+   "uk": "брама/прохід",
+   "en": "gate/passage"
+  },
+  "new": {
+   "uk": "брама",
+   "en": "gate"
+  },
+  "evidence": [
+   {
+    "quote": "Ban'dinoriel = Gatekeeper.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'passage' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "dinoriel",
+  "field": "translation",
+  "old": {
+   "uk": "сторож/охоронець",
+   "en": "watcher/keeper"
+  },
+  "new": {
+   "uk": "охоронець",
+   "en": "keeper"
+  },
+  "evidence": [
+   {
+    "quote": "Ban'dinoriel = Gatekeeper.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'watcher' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "shala",
+  "field": "translation",
+  "old": {
+   "uk": "шлях/подорож",
+   "en": "travel/path"
+  },
+  "new": {
+   "uk": "подорож/мандри",
+   "en": "travels/journey"
+  },
+  "evidence": [
+   {
+    "quote": "Al diel shala. || Safe travels. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'path' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "shola",
+  "field": "translation",
+  "old": {
+   "uk": "справа/намір",
+   "en": "business/intent"
+  },
+  "new": {
+   "uk": "справа",
+   "en": "business"
+  },
+  "evidence": [
+   {
+    "quote": "Anaria shola. || Speak your business.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high",
+  "reason": "'intent' has no source."
+ },
+ {
+  "action": "fix",
+  "word": "dris",
+  "field": "source",
+  "old": "generated_swadesh",
+  "new": "darnassian",
+  "evidence": [
+   {
+    "quote": "Elun'dris = the Eye of Elune.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "\"Dris\" = \"Eye\"",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Speculation"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "This 'generated' word coincides with the Darnassian morpheme dris 'eye' segmented from Elun'dris. Keep canon:false (segmentation), method 'segmentation of official compound'."
+ },
+ {
+  "action": "fix",
+  "word": "nu",
+  "field": "translation",
+  "old": {
+   "uk": "білий/світлий",
+   "en": "white/light"
+  },
+  "new": {
+   "uk": "білий",
+   "en": "white"
+  },
+  "evidence": [
+   {
+    "quote": "Anar'alah = By the light.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "Generated word whose 'light' sense shadows the canon alah and lu in the translator's first-match lookup."
+ },
+ {
+  "action": "demote",
+  "word": "anu",
+  "reason": "No Blizzard source gives 'hail/greetings'; meaning unknown (see fix).",
+  "evidence": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "ashal",
+  "reason": "The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "dash",
+  "reason": "No separate meaning is attested; only the unit 'bal'a dash' = 'Greetings'.",
+  "evidence": [
+   {
+    "quote": "Bal'a dash, malanore. || Greetings, traveler.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "delar",
+  "reason": "No source glosses 'delar' as sword or keeper. The weapon's epithet is 'the Sister Blade', which does not decompose with quel = high.",
+  "evidence": [
+   {
+    "quote": "Quel'Delar, the Sister Blade ... is one of the first Prismatic Blades.",
+    "where": "https://warcraft.wiki.gg/wiki/Quel%27Delar"
+   },
+   {
+    "quote": "\"Quel'Serrar\" means \"the High Blade\" and \"Quel'Delar\" means \"the Sister Blade\", which is odd because it is the \"Quel\" part that means \"high\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#The_Twin_Blades"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "aran",
+  "reason": "'Aran = Town' is listed only in the wiki's Speculation section, drawn from untranslated place names (Bashal'Aran, Ameth'Aran).",
+  "evidence": [
+   {
+    "quote": "Based on the primer above, one can draw several conclusions as to the meanings of specific words ... \"Aran\" = \"Town\"",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Speculation"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "rath",
+  "reason": "Untranslated; meaning guessed from the spell being cast.",
+  "evidence": [
+   {
+    "quote": "Rath and Rath-domaas - Said by First Arcanist Thalyssra to fire arcane missiles at enemies.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   },
+   {
+    "quote": "E'rath omnas - Said by First Arcanist Thalyssra while casting an arcane shield bubble.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "kanesh",
+  "reason": "Untranslated; meaning guessed from context (start/end of a recording).",
+  "evidence": [
+   {
+    "quote": "Ith'el kanesh - Said by First Arcanist Thalyssra to start her magical recordings.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   },
+   {
+    "quote": "Ith'nala kanesh - Said by First Arcanist Thalyssra to end her magical recordings.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "anu'shalla",
+  "reason": "Mount epithet, not a Blizzard translation statement; not Thalassian; previous gloss and 'Midnight datamine' provenance were wrong.",
+  "evidence": [
+   {
+    "quote": "Anu'shalla, Shadow's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "demote",
+  "word": "isera",
+  "reason": "No source glosses 'isera' as green. Ysera's name is not glossed, and 'Isera'duna' is a word from the in-game language scrambler.",
+  "evidence": [
+   {
+    "quote": "Ten-letter words | Thero'shan, Isera'duna, Ash'therod, Dorados'no, Shar'adore",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "remove",
+  "word": "el",
+  "reason": "Fabricated by mis-segmenting 'diel' in 'Al diel shala' (Safe travels); there is no 'el' = peace. In Darnassian, Alor'el = Lover's Leaf, where el would be 'leaf'.",
+  "evidence": [
+   {
+    "quote": "Al diel shala. || Safe travels. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Alor'el = Lover's Leaf.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "remove",
+  "word": "rutaani",
+  "reason": "Not a Thalassian word: the rutaani are a plant-like race native to Harandar in Midnight.",
+  "evidence": [
+   {
+    "quote": "The rutaani are a race of plant-like humanoids native to Harandar.",
+    "where": "https://warcraft.wiki.gg/wiki/Rutaani"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "action": "remove",
+  "word": "min",
+  "reason": "Extrapolated from 'Felomin ashal!' on the false premise ashal = great. Blizzard's zhTW line reads 'Fire consumes!', which makes felomin the fire word, not min = blast.",
+  "evidence": [
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "elu'shin",
+  "reason": "Generated 'sleep' that duplicates canon elor 'sleep' and reuses elu- from the canon phrase Elu'meniel with an invented meaning. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "ishala",
+  "reason": "Generated 'heart' that duplicates canon alann 'heart'. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "suran",
+  "reason": "Generated 'heart/soul' that duplicates canon alann and echoes Suramar. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "lubala",
+  "reason": "Generated 'light' that duplicates the attested alah and lu 'light'. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "athar",
+  "reason": "Generated 'gate' that duplicates canon ban 'gate' (Ban'dinoriel). Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "thal",
+  "reason": "Generated 'magic' that duplicates canon arkhana and reuses the root of thalas 'home'. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "thera",
+  "reason": "Identical to a word in Blizzard's in-game Thalassian scrambler list; also an attested Darnassian form (Tor ilisar'thera'nal). Rename or drop.",
+  "evidence": [
+   {
+    "quote": "Five-letter words | Talah, Adore, Ishnu, Bandu, Balah, Fandu, Thera, Turus, Shari, Shano, Terro, Eburi",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "ethala",
+  "reason": "Identical to a word in Blizzard's in-game Thalassian scrambler list. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "Five-letter words | Talah, Adore, Ishnu, Bandu, Balah, Fandu, Thera, Turus, Shari, Shano, Terro, Eburi",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "shari",
+  "reason": "Identical to a word in Blizzard's in-game Thalassian scrambler list. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "Five-letter words | Talah, Adore, Ishnu, Bandu, Balah, Fandu, Thera, Turus, Shari, Shano, Terro, Eburi",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "osa",
+  "reason": "Identical to a word in Blizzard's in-game Thalassian scrambler list. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "Five-letter words | Talah, Adore, Ishnu, Bandu, Balah, Fandu, Thera, Turus, Shari, Shano, Terro, Eburi",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "an'dorei",
+  "reason": "Etymology rests on an invented 'anu = self'; the form reads like a -dorei race name ('snow children', cf. an = snow in Andrassil). Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "remove",
+  "word": "al'ore",
+  "reason": "Etymology rests on an invented 'anu = self'; duplicates 'on' (I). Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "action": "remove",
+  "word": "tala",
+  "reason": "One edit from canon tal/talah 'death'; duplicates dris'ael 'see'. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "action": "remove",
+  "word": "thala",
+  "reason": "Identical to the attested Shalassian form in 'Thala nar'valas' (untranslated); duplicates anor'ael 'live'. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "action": "remove",
+  "word": "sindor",
+  "reason": "Reads as Sin'dor(ei) 'blood children'; misleading for 'gold'. Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "action": "remove",
+  "word": "dorin",
+  "reason": "One edit from attested 'dorini' (Enshu-falah-nah, dorini; scrambler list). Rename or drop.",
+  "evidence": [
+   {
+    "quote": "[analysis] Generated-word collision report: scripted edit-distance check against 273 attested elven forms.",
+    "where": "research/2026-11-revival/1-review-and-methods.md#13-generated-words-that-collide-with-or-shadow-canon"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "alar'annalas",
+  "translation": {
+   "en": "ranger lord",
+   "uk": "лорд-рейнджер"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "alar + annalas",
+  "notes": "Farstriders rank (Blood of the Highborne, ch. 2).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Alar'annalas = Ranger Lord.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "The Thalassian term for this rank is Alar'annalas.",
+    "where": "https://warcraft.wiki.gg/wiki/Farstriders"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "fora'nal",
+  "translation": {
+   "en": "ceremonial cloth draped on a newly appointed ranger lord",
+   "uk": "церемоніальне полотно лорда-рейнджера"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "fora'nal",
+  "notes": "Blood of the Highborne: 'With this Fora'nal I appoint you Alar'annalas'.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "The ranger-general drapes the new ranger lord in a Fora'nal cloth, symbolizing their progression",
+    "where": "https://warcraft.wiki.gg/wiki/Farstriders"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "al diel shala",
+  "translation": {
+   "en": "safe travels",
+   "uk": "безпечної дороги"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "al + diel + shala",
+  "notes": "A farewell.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Al diel shala. || Safe travels. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ama noral'arkhana",
+  "translation": {
+   "en": "saved by magic",
+   "uk": "врятовані магією"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ama + noral + arkhana",
+  "notes": "Loreology tweet 438752691678744576 (dead link).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Ama noral'arkhana = Saved by magic.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "anar'alah",
+  "translation": {
+   "en": "by the Light",
+   "uk": "клянусь Світлом"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "anar + alah",
+  "notes": "Oath / battle cry.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'alah = By the light.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "anar'alah belore",
+  "translation": {
+   "en": "by the light of the sun",
+   "uk": "світлом сонця"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "anar + alah + belore",
+  "notes": "Battle cry or vow.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'alah belore. || By the light of the sun. || Used as either a battle cry or a vow.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "anaria shola",
+  "translation": {
+   "en": "speak your business",
+   "uk": "кажи, з чим прийшов"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "anaria + shola",
+  "notes": "Businesslike greeting.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anaria shola. || Speak your business. || A greeting often used in a businesslike context.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "anar'endal dracon",
+  "translation": {
+   "en": "by the breath of the dragon",
+   "uk": "диханням дракона"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "anar + endal + dracon",
+  "notes": "Revelations (comic); Through the Mirror Darkly.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'endal dracon = By the breath of the dragon.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ann'da",
+  "translation": {
+   "en": "father, papa",
+   "uk": "тато, батько"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "ann'da",
+  "notes": "Thalassian form (Descent, p.16); Darnassian An'da.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Ann'da = Papa/Father.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "minn'da",
+  "translation": {
+   "en": "mother, mama",
+   "uk": "мама, мати"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "minn'da",
+  "notes": "Thalassian form (Descent, p.16); Darnassian Min'da.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Minn'da = Mama/Mother.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "anu belore dela'na",
+  "translation": {
+   "en": "the sun guides us",
+   "uk": "сонце веде нас"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "anu + belore + dela + na",
+  "notes": "Greeting among blood and high elves.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us. || A greeting exchanged only with blood elves or high elves.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "bal'a dash, malanore",
+  "translation": {
+   "en": "greetings, traveler",
+   "uk": "вітаю, мандрівнику"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "bal'a dash + malanore",
+  "notes": "Greeting.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Bal'a dash, malanore. || Greetings, traveler. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ban'dinoriel",
+  "translation": {
+   "en": "gatekeeper (Silvermoon's shield)",
+   "uk": "брамник (щит Срібномісяця)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "ban + dinoriel",
+  "notes": "Arthas: Rise of the Lich King p.227.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Ban'dinoriel = Gatekeeper.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "bash'a no falor talah",
+  "translation": {
+   "en": "taste the chill of true death",
+   "uk": "скуштуй холод справжньої смерті"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "bash'a + no + falor + talah",
+  "notes": "Sylvanas, Warcraft III.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "belono sil'aru, belore'dorei",
+  "translation": {
+   "en": "shoulder your burdens well, child of the sun",
+   "uk": "неси свій тягар гідно, дитя сонця"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "belono + sil'aru + belore'dorei",
+  "notes": "Ends the ranger lord appointing ceremony (Blood of the Highborne, ch. 2).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Belono sil'aru, belore'dorei = Shoulder your burdens well, child of the sun.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "belore'dorei",
+  "translation": {
+   "en": "child of the sun",
+   "uk": "дитя сонця"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "belore + dorei",
+  "notes": "Sean Copeland tweet 979043020837285888 (dead link).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Belore'dorei = Child of the Sun.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "doral ana'diel",
+  "translation": {
+   "en": "how fare you?",
+   "uk": "як ся маєш?"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "doral + ana + diel",
+  "notes": "Greeting.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Doral ana'diel? || How fare you? || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "elor bindel felallan morin'aminor",
+  "translation": {
+   "en": "sleep forever in quiet serenity",
+   "uk": "спи вічно в тихому спокої"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "elor + bindel + felallan + morin'aminor",
+  "notes": "Loreology tweet 451393848195821568 (dead link).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Elor bindel felallan morin'aminor = Sleep forever in quiet serenity.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "elu'meniel mal alann",
+  "translation": {
+   "en": "may peace calm your heart",
+   "uk": "хай мир заспокоїть твоє серце"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "elu'meniel + mal + alann",
+  "notes": "Loreology tweet 451393978949062656 (dead link).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Elu'meniel mal alann = May peace calm your heart.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "felo'melorn",
+  "translation": {
+   "en": "Flamestrike (Sunstrider runeblade)",
+   "uk": "Вогнеудар (рунічний меч Сонцеходів)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "felo + melorn",
+  "notes": "Arthas pp.237, 293.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Felo'melorn = Flamestrike.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "kim'jael",
+  "translation": {
+   "en": "little rat",
+   "uk": "щуреня"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "kim + jael",
+  "notes": "Nickname given by blood elves to a goblin scout.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Kim'jael = Little rat.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "It means \"little rat\" in Thalassian.",
+    "where": "https://warcraft.wiki.gg/wiki/Kim%27jael"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "medivh",
+  "translation": {
+   "en": "keeper of secrets",
+   "uk": "охоронець таємниць"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "medivh",
+  "notes": "Warcraft Encyclopedia (2006).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "medivh || keeper of secrets || When used as a proper noun, Medivh refers to the last Guardian of Tirisfal.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "quel'dorei",
+  "translation": {
+   "en": "children of noble birth; high elves",
+   "uk": "діти шляхетного роду; високі ельфи"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "quel + dorei",
+  "notes": "Also Darnassian.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Quel'dorei = Children of Noble Birth (Highborne, High-borne, high elves).",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "quel'thalas",
+  "translation": {
+   "en": "High Home",
+   "uk": "Високий Дім"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "quel + thalas",
+  "notes": "Chronicle Vol. 1 p.120.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Quel'Thalas = High Home.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ren'dorei",
+  "translation": {
+   "en": "children of the Void",
+   "uk": "діти Безодні"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "ren + dorei",
+  "notes": "Void elves.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Ren'dorei = Children of the Void.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "sin'dorei",
+  "translation": {
+   "en": "children of the blood",
+   "uk": "діти крові"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "sin + dorei",
+  "notes": "Blood elves.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "sin'dorei || children of the blood || Can also be interpreted as \"people of the bloodline\".",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "selama ashal'anore",
+  "translation": {
+   "en": "justice for our people",
+   "uk": "справедливість для нашого народу"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "selama + ashal + anore",
+  "notes": "Vow or farewell.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shindu fallah na",
+  "translation": {
+   "en": "they're breaking through! / our enemies are breaking through",
+   "uk": "вони проривають! / наші вороги проривають"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "shindu + fallah + na",
+  "notes": "Warning that defenses are breached.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Shindu fallah na! || They're breaking through!",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Shindu fallah na = \"They are breaking through\" or \"Our enemies are breaking through\".",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shindu sin'dorei",
+  "translation": {
+   "en": "failing children of the blood",
+   "uk": "занепалі діти крові"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "shindu + sin + dorei",
+  "notes": "Lament of the Highborne (item).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Shindu sin'dorei = Failing children of the blood.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shorel'aran",
+  "translation": {
+   "en": "farewell",
+   "uk": "прощавай"
+  },
+  "pos": "interjection",
+  "canon": true,
+  "root": "shorel + aran",
+  "notes": "zhTW localization of BroadcastText 321680 renders it 再會了 'farewell'.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Shorel'aran. || Farewell. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "再會了... (zhTW localization of BroadcastText 321680 'Shorel'aran...')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "sinu a'manore",
+  "translation": {
+   "en": "well met",
+   "uk": "радий зустрічі"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "sinu + a + manore",
+  "notes": "Also used by Aethas Sunreaver in The World Awaits (Midnight 12.0.1).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Sinu a'manore. || Well met. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Sinu a'manore, <class>.",
+    "where": "https://warcraft.wiki.gg/wiki/The_World_Awaits_(Midnight)#Description"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "tal anu'men no sin'dorei",
+  "translation": {
+   "en": "death to all who oppose the children of the blood",
+   "uk": "смерть усім, хто проти дітей крові"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "tal + anu'men + no + sin'dorei",
+  "notes": "High Astromancer Solarian (Loreology tweet 377918675669770241, dead link).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Tal anu'men no Sin'dorei = Death to all who oppose the children of the blood. Spoken by High Astromancer Solarian in Tempest Keep.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "thas'alah",
+  "translation": {
+   "en": "Light of the Forest",
+   "uk": "Світло Лісу"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "thas + alah",
+  "notes": "Mother tree of Eversong.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Thas'alah = Light of the Forest.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "thas'dorah",
+  "translation": {
+   "en": "Valor of the Forest",
+   "uk": "Звитяга Лісу"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "thas + dorah",
+  "notes": "Windrunner bow.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Thas'dorah = Valor of the Forest.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "He named the weapon Thas'dorah, \"Valor of the Forest.\"",
+    "where": "https://warcraft.wiki.gg/wiki/Thas%27dorah,_Legacy_of_the_Windrunners"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "vendel'o eranu",
+  "translation": {
+   "en": "help me forget",
+   "uk": "допоможи мені забути"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "vendel + o + eranu",
+  "notes": "Beyond the Dark Portal pp.204, 238.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Vendel'o eranu = Help me forget.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "band'or shorel'aran",
+  "translation": {
+   "en": "(roughly) prepare to say farewell",
+   "uk": "(приблизно) готуйся прощатися"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "band'or + shorel'aran",
+  "notes": "Commander Sarannis; meaning from Blizzard's zhTW localization, English is a wiki back-translation.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Band'or shorel'aran — (roughly) Prepare to say farewell. Spoken by Commander Sarannis, officially translated in the Chinese version of WoW.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "shal'dorei",
+  "translation": {
+   "en": "Nightborne",
+   "uk": "Нічнонароджені"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shal + dorei",
+  "notes": "",
+  "source": "shalassian",
+  "evidence": [
+   {
+    "quote": "Shal'dorei = Nightborne.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "tal'ashar",
+  "translation": {
+   "en": "an honor duel",
+   "uk": "дуель честі"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "tal + ashar",
+  "notes": "",
+  "source": "shalassian",
+  "evidence": [
+   {
+    "quote": "Tal'ashar = An honor duel.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "erana-dora isil",
+  "translation": {
+   "en": "a thousand thanks upon you",
+   "uk": "тисяча дяк тобі"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "erana + dora + isil",
+  "notes": "",
+  "source": "shalassian",
+  "evidence": [
+   {
+    "quote": "Erana-dora isil = A thousand thanks upon you.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "quel'vala thonos",
+  "translation": {
+   "en": "nobility through tradition",
+   "uk": "шляхетність через традицію"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "quel + vala + thonos",
+  "notes": "",
+  "source": "shalassian",
+  "evidence": [
+   {
+    "quote": "Quel'vala thonos = Nobility through tradition.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ru shanna shal'dorei",
+  "translation": {
+   "en": "the Nightborne will survive",
+   "uk": "нічнонароджені виживуть"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ru + shanna + shal'dorei",
+  "notes": "",
+  "source": "shalassian",
+  "evidence": [
+   {
+    "quote": "Ru shanna shal'dorei or Ru-shanna shal'dorei = The nightborne will survive.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shaha lor'ma",
+  "translation": {
+   "en": "thank you",
+   "uk": "дякую"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "shaha + lor'ma",
+  "notes": "War Crimes ch. 6; Christie Golden confirmed on Twitter.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shaha lor'ma = Thank you.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "elune-adore",
+  "translation": {
+   "en": "Elune be with you",
+   "uk": "хай Елуна буде з тобою"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "elune + adore",
+  "notes": "Greeting of the Sisters of Elune.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Elune-Adore = Elune be with you. (A greeting.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ishnu-alah",
+  "translation": {
+   "en": "good fortune to you",
+   "uk": "щастя тобі"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ishnu + alah",
+  "notes": "Common greeting; used by Kael'thas in Warcraft III.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ishnu-alah = Good fortune to you. (A greeting.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ishnu-dal-dieb",
+  "translation": {
+   "en": "good fortune to your family",
+   "uk": "щастя твоїй родині"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ishnu + dal + dieb",
+  "notes": "Greeting.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ishnu-dal-dieb = Good fortune to your family. (A greeting.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "andu-falah-dor",
+  "translation": {
+   "en": "let balance be restored",
+   "uk": "хай рівновагу буде відновлено"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "andu + falah + dor",
+  "notes": "War cry after the Sundering.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Andu-falah-dor = Let balance be restored. (A war cry.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ande'thoras-ethil",
+  "translation": {
+   "en": "may your troubles be diminished",
+   "uk": "хай поменшає твоїх турбот"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ande + thoras + ethil",
+  "notes": "A farewell.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ande'thoras-ethil = May your troubles be diminished. (A farewell.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "bandu thoribas",
+  "translation": {
+   "en": "prepare to fight",
+   "uk": "готуйся до бою"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "bandu + thoribas",
+  "notes": "Challenge to battle.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Bandu Thoribas = Prepare to fight. (A challenge to an enemy.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ash karath",
+  "translation": {
+   "en": "do it",
+   "uk": "зроби це"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ash + karath",
+  "notes": "Generic command.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ash karath = Do it.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "fandu-dath-belore",
+  "translation": {
+   "en": "who goes there?",
+   "uk": "хто йде?"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "fandu + dath + belore",
+  "notes": "Military challenge. Note: belore here does not mean 'sun'.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Fandu-dath-belore? = Who goes there?",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "tor ilisar'thera'nal",
+  "translation": {
+   "en": "let our enemies beware",
+   "uk": "хай стережуться наші вороги"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "tor + ilisar + thera + nal",
+  "notes": "Ancient war cry.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Tor ilisar'thera'nal = Let our enemies beware. (A war cry used against enemies since ancient times.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "anu'dorini talah",
+  "translation": {
+   "en": "let my will be known",
+   "uk": "хай знають мою волю"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "anu + dorini + talah",
+  "notes": "Malfurion's war cry; Loreology tweet 465903699592626176.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Anu'dorini Talah = Let my will be known.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shu dalas na",
+  "translation": {
+   "en": "heavy are our hearts",
+   "uk": "важкі наші серця"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "shu + dalas + na",
+  "notes": "Hearthstone Voyage to the Sunken City song (Hearthstone tweet 2022-05-06).",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shu dalas na = Heavy are our hearts.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "aria",
+  "translation": {
+   "en": "we face",
+   "uk": "ми зустрічаємо (лицем до лиця)"
+  },
+  "pos": "verb",
+  "canon": true,
+  "root": "aria",
+  "notes": "Hearthstone song.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Aria = We face.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "bessae",
+  "translation": {
+   "en": "from the",
+   "uk": "від (артикль+прийменник)"
+  },
+  "pos": "preposition",
+  "canon": true,
+  "root": "bessae",
+  "notes": "Hearthstone song.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Bessae = From the.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "denalore",
+  "translation": {
+   "en": "oblivion, devastation",
+   "uk": "забуття, спустошення"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "denalore",
+  "notes": "Hearthstone song.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Denalore = Oblivion, devastation.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shal'nar",
+  "translation": {
+   "en": "aunt",
+   "uk": "тітка"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shal'nar",
+  "notes": "Curse of the Worgen. Thalassian cognate: shal'na.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shal'nar = Aunt.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "minn'do",
+  "translation": {
+   "en": "mother (formal)",
+   "uk": "мати (шанобливо)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "minn + do",
+  "notes": "More formal than min'da.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Minn'do = Mother.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shen'dorei",
+  "translation": {
+   "en": "hidden people (the Skyborne)",
+   "uk": "приховані люди (Небонароджені)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shen + dorei",
+  "notes": "WoW Forever (2026); also the name of language ID 310 in the Forever client.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shen'dorei = hidden people.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shen'dralar",
+  "translation": {
+   "en": "those who remain hidden",
+   "uk": "ті, що лишаються прихованими"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shen + dralar",
+  "notes": "Chronicle Vol. 1 p.139.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shen'dralar = Those Who Remain Hidden.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "xaxas",
+  "translation": {
+   "en": "elemental fury, chaos, catastrophe",
+   "uk": "стихійна лють, хаос"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "xaxas",
+  "notes": "Also a name for Deathwing.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Xaxas = A short title with many meanings, all dire. \"Chaos\", \"fury\", \"The embodiment of elemental rage, such as found in erupting volcanos or shattering earthquakes\", \"elemental fury\", \"catastrophe\".",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "kaldorei",
+  "translation": {
+   "en": "children of the stars",
+   "uk": "діти зірок"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "kal + dorei",
+  "notes": "Night elves.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Kaldorei = Children of the stars, people of the stars.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "tal'doren",
+  "translation": {
+   "en": "the wild home",
+   "uk": "дикий дім"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "tal + doren",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Tal'doren = The wild home.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "elun'dris",
+  "translation": {
+   "en": "the Eye of Elune",
+   "uk": "Око Елуни"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "elun + dris",
+  "notes": "Chronicle Vol. 1 p.94.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Elun'dris = the Eye of Elune.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "irana'ethil",
+  "translation": {
+   "en": "shield against the Shadow",
+   "uk": "щит проти Тіні"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "irana + ethil",
+  "notes": "Scarab Wall (Exploring Azeroth: Kalimdor p.108).",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Irana'ethil = Shield against the Shadow.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "jai'alator",
+  "translation": {
+   "en": "noble blade of Elune",
+   "uk": "шляхетний клинок Елуни"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "jai + alator",
+  "notes": "Stormrage p.84.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Jai'alator = Noble blade of Elune.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "lathar'lazal",
+  "translation": {
+   "en": "Seat of the Sky",
+   "uk": "Престол Неба"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "lathar + lazal",
+  "notes": "Chronicle Vol. 1 p.95.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Lathar'Lazal = Seat of the Sky.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "nar'valas",
+  "translation": {
+   "en": "View of Unending Stars",
+   "uk": "Вид на безкінечні зорі"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "nar + valas",
+  "notes": "Exploring Azeroth: Kalimdor p.56.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Nar'valas = View of Unending Stars.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shalla'tor",
+  "translation": {
+   "en": "Shadow Render",
+   "uk": "Роздирач Тіней"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shalla + tor",
+  "notes": "Flashback p.22.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shalla'tor = Shadow Render.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shal'nan",
+  "translation": {
+   "en": "the Veiled One",
+   "uk": "Завуальований"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "shal + nan",
+  "notes": "Title of the Skyborne rebel leader.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shal'nan = The Veiled One.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ellemayne",
+  "translation": {
+   "en": "reaver",
+   "uk": "спустошувач"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "ellemayne",
+  "notes": "Flashback p.22.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ellemayne = Reaver.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "alor'el",
+  "translation": {
+   "en": "lover's leaf",
+   "uk": "листок закоханих"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "alor + el",
+  "notes": "A plant (Seeds of Faith).",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Alor'el = Lover's Leaf.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "al'anath",
+  "translation": {
+   "en": "Frostsoul",
+   "uk": "Морозна душа"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "al + anath",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Al'anath = Frostsoul.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "alash'anir",
+  "translation": {
+   "en": "venom and storm",
+   "uk": "отрута і буря"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "alash + anir",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Alash'anir = Venom and storm.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "alara'shinu",
+  "translation": {
+   "en": "finding beauty in imperfection",
+   "uk": "бачити красу в недосконалості"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "alara + shinu",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Alara'shinu = Finding beauty in imperfection.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ama'shan",
+  "translation": {
+   "en": "Honor of the Goddess (a title)",
+   "uk": "Честь Богині (титул)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "ama + shan",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ama'shan = Honor of the Goddess. A title.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "bel'ameth",
+  "translation": {
+   "en": "the arms of the Goddess",
+   "uk": "обійми Богині"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "bel + ameth",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Bel'ameth = The arms of the Goddess.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "eluvi'ana",
+  "translation": {
+   "en": "the Night Dancer",
+   "uk": "Нічна Танцівниця"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "eluvi + ana",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Eluvi'ana = The Night Dancer",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "t'lara",
+  "translation": {
+   "en": "(derogatory) a warrior armed only with words",
+   "uk": "(зневажл.) воїн, озброєний лише словами"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "t'lara",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "T'lara = A derogatory term for \"a warrior armed only with words\".",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "shanna melor'ne adala fal",
+  "translation": {
+   "en": "the truth is a guiding light",
+   "uk": "правда — провідне світло"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "shanna + melor'ne + adala + fal",
+  "notes": "Curse of the Worgen. Note: shanna here is not Shalassian shanna 'survive'.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shanna melor'ne adala fal = The truth is a guiding light.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "ru shallora enudoril",
+  "translation": {
+   "en": "I anoint these caretakers of the wild",
+   "uk": "я помазую цих доглядачів дикої природи"
+  },
+  "pos": "phrase",
+  "canon": true,
+  "root": "ru + shallora + enudoril",
+  "notes": "Voice of Elune; Loreology tweet 465903699592626176.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Ru shallora enudoril = I anoint these caretakers of the wild.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "zin-azshari",
+  "translation": {
+   "en": "the glory of Azshara",
+   "uk": "слава Азшари"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "zin + azshari",
+  "notes": "",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Zin-Azshari = The glory of Azshara.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "nahlen'do",
+  "translation": {
+   "en": "Master of the Fang",
+   "uk": "Володар Ікла"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "nahlen + do",
+  "notes": "Wielder of the Scythe of Elune.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Nahlen'do = Master of the Fang",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "official gloss",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "alah",
+  "translation": {
+   "en": "light",
+   "uk": "світло"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "alah",
+  "notes": "Thalassian 'alah' = light. Homograph of the existing Darnassian entry alah 'to you' (Ishnu-alah); the lexicon needs homograph support (word + source as key). Shalassian In'alah (said while lighting lamps) fits the same sense.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'alah = By the light.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Anar'alah belore. || By the light of the sun.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Thas'alah = Light of the Forest.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "In Thalassian, \"alah\" translates \"light\" in Common",
+    "where": "https://warcraft.wiki.gg/wiki/Alah%27endal,_the_Dawnsong"
+   },
+   {
+    "quote": "In'alah - Said by First Arcanist Thalyssra while casting a spell that powers up lights all over the outer wall.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   }
+  ],
+  "method": "segmentation of official compounds + cross-situational alignment (3 phrases)",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "lu",
+  "translation": {
+   "en": "light",
+   "uk": "світло"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "lu",
+  "notes": "From the item name Lu'selama, Light's Justice (12.1.5).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "\"Light's Justice\" is likely the literal translation of \"Lu'selama\".",
+    "where": "https://warcraft.wiki.gg/wiki/Lu%27selama,_Light%27s_Justice"
+   }
+  ],
+  "method": "item epithet + segmentation (selama = justice is established)",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "lu'selama",
+  "translation": {
+   "en": "Light's Justice",
+   "uk": "Справедливість Світла"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "lu + selama",
+  "notes": "Item name with English epithet; the wiki lists it in the official primer.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "item epithet",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "dorah",
+  "translation": {
+   "en": "valor",
+   "uk": "звитяга"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "dorah",
+  "notes": "From Thas'dorah 'Valor of the Forest' with thas = forest.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Thas'dorah = Valor of the Forest.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official compound",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "'o",
+  "translation": {
+   "en": "me (1st person singular object enclitic)",
+   "uk": "мене (енклітика)"
+  },
+  "pos": "pronoun",
+  "canon": false,
+  "root": "o",
+  "notes": "Vendel'o eranu = Help me forget. Confirms the parser's 'o suffix, which the lexicon lacked.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Vendel'o eranu = Help me forget.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official phrase",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "vendel",
+  "translation": {
+   "en": "help (verb)",
+   "uk": "допомагати"
+  },
+  "pos": "verb",
+  "canon": false,
+  "root": "vendel",
+  "notes": "Vendel'o eranu = Help me forget: verb + 'o + verb.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Vendel'o eranu = Help me forget.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official phrase",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "eranu",
+  "translation": {
+   "en": "forget (verb)",
+   "uk": "забувати"
+  },
+  "pos": "verb",
+  "canon": false,
+  "root": "eranu",
+  "notes": "Vendel'o eranu = Help me forget.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Vendel'o eranu = Help me forget.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official phrase",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "morin'aminor",
+  "translation": {
+   "en": "(in) quiet serenity",
+   "uk": "(у) тихому спокої"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "morin + aminor",
+  "notes": "Canticle of Sacrifice lyric table glosses the line made of this word alone as 'in quiet serenity'; matches the Loreology phrase.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Elor bindel felallan morin'aminor = Sleep forever in quiet serenity.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "[description; lyrics not reproduced] The Canticle of Sacrifice lyric table glosses the line consisting only of Morin'aminor as quiet serenity; the wiki does not cite a source for the translation.",
+    "where": "https://warcraft.wiki.gg/wiki/Canticle_of_Sacrifice#Lyrics"
+   }
+  ],
+  "method": "cross-situational alignment (tweet + lyric sheet)",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "felallan",
+  "translation": {
+   "en": "(unglossed; possibly 'in' or an intensifier)",
+   "uk": "(без перекладу)"
+  },
+  "pos": "unknown",
+  "canon": false,
+  "root": "felallan",
+  "notes": "Present in the Loreology phrase but absent from the Canticle line with the same English, so it carries no visible meaning.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Elor bindel felallan morin'aminor = Sleep forever in quiet serenity.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "cross-situational alignment (negative evidence)",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "mal",
+  "translation": {
+   "en": "your (possessive, before noun)",
+   "uk": "твій"
+  },
+  "pos": "pronoun",
+  "canon": false,
+  "root": "mal",
+  "notes": "Elu'meniel mal alann = May peace calm your heart; alann = heart, so mal = your by elimination.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Elu'meniel mal alann = May peace calm your heart.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "cross-situational alignment (elimination)",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "anu'men",
+  "translation": {
+   "en": "all who oppose",
+   "uk": "усі, хто протистоїть"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "anu + men",
+  "notes": "Tal anu'men no Sin'dorei: tal = death, Sin'dorei = children of the blood, no = the/to.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Tal anu'men no Sin'dorei = Death to all who oppose the children of the blood. Spoken by High Astromancer Solarian in Tempest Keep.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official phrase",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "no",
+  "translation": {
+   "en": "the / of (linking particle before a noun phrase)",
+   "uk": "(сполучна частка 'the/of')"
+  },
+  "pos": "particle",
+  "canon": false,
+  "root": "no",
+  "notes": "Occurs only in the two 'death' phrases, before falor and Sin'dorei; aligns with English 'the'. Do not map English 'no' to anything else.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Bash'a no falor talah! || Taste the chill of true death! || Not a widespread expression or battle cry.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Tal anu'men no Sin'dorei = Death to all who oppose the children of the blood. Spoken by High Astromancer Solarian in Tempest Keep.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "cross-situational alignment",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "anar'sin arkhana! anar'endal belore!",
+  "translation": {
+   "en": "by blood (and) magic! by the breath of the sun!",
+   "uk": "кров'ю і магією! диханням сонця!"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "anar + sin + arkhana; anar + endal + belore",
+  "notes": "Untranslated ritual chant (Talandra Dawnsprite, Flowers for Amalthea) decoded word by word with established morphemes.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'sin arkhana! Anar'endal belore! — Said by Talandra Dawnsprite as part of a necromantic ritual during Flowers for Amalthea.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "method": "compositional decoding with established morphemes",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "endala finel endal",
+  "translation": {
+   "en": "breathe your last breath!",
+   "uk": "зроби останній подих!"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "endala + finel + endal",
+  "notes": "Said by Nethermancer Sepethrea when killing a player; endal = breath (official), finel = the last (Darnassian, Elegy p.87).",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Endala finel endal! — Said by Nethermancer Sepethrea when killing a player.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   },
+   {
+    "quote": "Finel = The last.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "compositional decoding + context",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "din",
+  "translation": {
+   "en": "keep, defend",
+   "uk": "охороняти"
+  },
+  "pos": "verb",
+  "canon": false,
+  "root": "din",
+  "notes": "Ban'dinoriel = Gatekeeper; flavor text 'Thalas'din belore' on Fal'inrush, Defender of Quel'thalas.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Ban'dinoriel = Gatekeeper.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Thalas'din belore — From the flavor text on Fal'inrush, Defender of Quel'thalas#Heroic.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "method": "segmentation + item-name context",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "thalas'din belore",
+  "translation": {
+   "en": "defender of the home of the sun",
+   "uk": "оборонець дому сонця"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "thalas + din + belore",
+  "notes": "Flavor text of the crossbow Fal'inrush, Defender of Quel'thalas.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Thalas'din belore. (item flavor text of Fal'inrush, Defender of Quel'thalas)",
+    "where": "https://warcraft.wiki.gg/wiki/Fal%27inrush,_Defender_of_Quel%27thalas"
+   }
+  ],
+  "method": "compositional decoding + item-name context",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "felomin ashal",
+  "translation": {
+   "en": "fire consumes!",
+   "uk": "вогонь пожирає!"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "felomin + ashal",
+  "notes": "Kael'thas (Magisters' Terrace) casting Flamestrike. Meaning from a zhTW client line reported on the wiki talk page; not independently verified.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   }
+  ],
+  "method": "Blizzard zhTW localization (reported)",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "balamore shanal",
+  "translation": {
+   "en": "prepare to die!",
+   "uk": "готуйся до смерті!"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "balamore + shanal",
+  "notes": "Kael'thas (The Eye). zhTW localization as reported on the wiki talk page; not independently verified.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   }
+  ],
+  "method": "Blizzard zhTW localization (reported)",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "anar'anel belore",
+  "translation": {
+   "en": "for the sun! / by the power of the sun",
+   "uk": "заради сонця! / силою сонця"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "anar + anel + belore",
+  "notes": "Kael'thas summoning a phoenix. zhTW 'For the sun' (reported); in English he alternates it with 'By the power of the sun' for the same ability, so anel may mean 'power'.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "Anar'anel belore — ... May translate to \"By the power of the sun,\" another line Kael'thas says for the same ability.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "method": "Blizzard zhTW localization (reported) + context",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "quel'zaram",
+  "translation": {
+   "en": "High Blade (Lothar's sword)",
+   "uk": "Високий Клинок"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "quel + zaram",
+  "notes": "Retail item 'Quel'Zaram, High Blade of the Lion' (10.1.5); the gloss originates in the non-canon RPG Shadows & Light p.172.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "The sword impressed Medivh and he dubbed it Quel'Zaram - Thalassian for \"high blade\". (In the RPG section; source Shadows & Light p.172)",
+    "where": "https://warcraft.wiki.gg/wiki/Quel%27Zaram,_High_Blade_of_the_Lion#In_the_RPG"
+   }
+  ],
+  "method": "item epithet + RPG",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "dor",
+  "translation": {
+   "en": "land, home",
+   "uk": "земля, дім"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "dor",
+  "notes": "Kalimdor 'land of eternal starlight', Tal'doren 'the wild home', and the Canticle lyric gloss 'watch our land' for Ash'thero'dalah'dor.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Kalimdor ... (Titan and Darnassian for land of eternal starlight)",
+    "where": "https://warcraft.wiki.gg/wiki/Kalimdor"
+   },
+   {
+    "quote": "Tal'doren = The wild home.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "[description; lyrics not reproduced] The Canticle of Sacrifice lyric table glosses the line Ash'thero'dalah'dor with an English line about watching over our land.",
+    "where": "https://warcraft.wiki.gg/wiki/Canticle_of_Sacrifice#Lyrics"
+   }
+  ],
+  "method": "cross-situational alignment across Darnassian and Thalassian",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "shen",
+  "translation": {
+   "en": "hidden",
+   "uk": "прихований"
+  },
+  "pos": "adjective",
+  "canon": false,
+  "root": "shen",
+  "notes": "Shen'dorei = hidden people; Shen'dralar = those who remain hidden.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Shen'dorei = hidden people.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Shen'dralar = Those Who Remain Hidden.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of two official compounds",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "amir",
+  "translation": {
+   "en": "harmony",
+   "uk": "гармонія"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "amir",
+  "notes": "Amirdrassil = Crown of Harmony.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Amirdrassil = Crown of Harmony.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official compound (drassil = crown)",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "vor",
+  "translation": {
+   "en": "broken",
+   "uk": "зламаний"
+  },
+  "pos": "adjective",
+  "canon": false,
+  "root": "vor",
+  "notes": "Vordrassil = Broken Crown.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Vordrassil = Broken Crown.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "segmentation of official compound (drassil = crown)",
+  "confidence": "high"
+ },
+ {
+  "action": "add",
+  "word": "adore",
+  "translation": {
+   "en": "be with you (blessing)",
+   "uk": "будь з тобою"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "adore",
+  "notes": "Elune-adore = Elune be with you; Shalassian farewell An'ratha adore uses the same word.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Elune-Adore = Elune be with you. (A greeting.)",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "An'ratha ador and An'ratha adore - Said by Silgryn and First Arcanist Thalyssra as a farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   }
+  ],
+  "method": "segmentation + Shalassian usage context",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "relos",
+  "translation": {
+   "en": "flame",
+   "uk": "полум'я"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "relos",
+  "notes": "Anu'relos, Flame's Guidance vs Anu'shalla, Shadow's Guidance (shalla = shadow); also Belor'relos, the Suncaller.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Reins of Anu'relos, Flame's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   },
+   {
+    "quote": "Anu'shalla, Shadow's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance"
+   }
+  ],
+  "method": "contrastive item epithets",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "ilisar",
+  "translation": {
+   "en": "enemies",
+   "uk": "вороги"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "ilisar",
+  "notes": "Tor ilisar'thera'nal = Let our enemies beware: nal = our (cf. na), so ilisar is the best candidate for 'enemies'.",
+  "source": "darnassian",
+  "evidence": [
+   {
+    "quote": "Tor ilisar'thera'nal = Let our enemies beware.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   }
+  ],
+  "method": "cross-situational alignment (elimination)",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "arcana",
+  "translation": {
+   "en": "magic (Shalassian cognate of Thalassian arkhana)",
+   "uk": "магія"
+  },
+  "pos": "noun",
+  "canon": false,
+  "root": "arcana",
+  "notes": "Aran'arcana is a nightborne greeting and farewell; Thalassian arkhana = magic (Ama noral'arkhana).",
+  "source": "shalassian",
+  "evidence": [
+   {
+    "quote": "Aran'arcana = Said as a greeting by First Arcanist Thalyssra and Silgryn, and as a farewell by Valtrois.",
+    "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+   },
+   {
+    "quote": "Ama noral'arkhana = Saved by magic.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "method": "comparative method (kh ~ c correspondence, 1 pair)",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "shaha lor'ma",
+  "translation": {
+   "en": "thank you (predicted Thalassian form)",
+   "uk": "дякую (передбачена талассійська форма)"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "shaha + lor'ma",
+  "notes": "Darnassian 'thank you'. Shared Darnassian/Thalassian vocabulary is mostly identical (quel, dorei, felo'melorn, ishnu'alah used by Kael'thas), so the predicted Thalassian form is unchanged. Intentional homograph of the Darnassian add with the same spelling.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Shaha lor'ma = Thank you.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Darnassian, Thalassian, and Najza seem to have many common phrases, as is evidenced by Prince Kael'thas' use of \"Ishnu'alah\"",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Related_languages"
+   }
+  ],
+  "method": "comparative method (identity prediction)",
+  "confidence": "low"
+ }
+]

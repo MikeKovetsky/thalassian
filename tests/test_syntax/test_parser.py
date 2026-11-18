@@ -38,9 +38,9 @@ class TestThalassianGrammar(unittest.TestCase):
         self.assertEqual(res.strip().lower(), "dela'na")
         
     def test_pronoun_agglutination_you(self):
-        # "hail you" -> "anu'a"
-        res = compile_sentence_en("hail you", self.lexicon)
-        self.assertEqual(res.strip().lower(), "anu'a")
+        # The 2026-11 audit dropped the unsupported "anu = hail" gloss, so this uses canon dela (guide).
+        res = compile_sentence_en("guide you", self.lexicon)
+        self.assertEqual(res.strip().lower(), "dela'a")
         
     def test_pronoun_agglutination_me(self):
         res = compile_sentence_en("bind me", self.lexicon)

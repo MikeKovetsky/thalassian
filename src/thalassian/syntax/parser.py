@@ -21,23 +21,37 @@ except ImportError:
 DROP_WORDS_EN = {"for", "to", "in", "on", "with", "by", "of", "and", "but", "the", "a", "an"}
 DROP_WORDS_UK = {"для", "в", "до", "на", "з", "за", "від", "про", "і", "та", "але"}
 
-def find_word_en(lexicon: List[Dict], target_en: str) -> Optional[Dict]:
-    target_en = target_en.lower()
-    for entry in lexicon:
-        if "en" in entry.get("translation", {}):
-            en_words = re.findall(r"[a-z']+", entry["translation"]["en"].lower())
-            if target_en in en_words:
-                return entry
+def is_phrase(entry: Dict) -> bool:
+    """Whole phrases (e.g. "anar'alah" = "by the Light") are not used for word-by-word lookup."""
+    return entry.get("pos") == "phrase" or " " in entry.get("word", "")
+
+def gloss_words(gloss: str, pattern: str) -> List[str]:
+    """Words of the gloss proper: text after the first ';' and inside parentheses is commentary."""
+    core = re.sub(r"\([^)]*\)", " ", gloss.split(";")[0].lower())
+    return re.findall(pattern, core)
+
+def gloss_senses(gloss: str) -> List[str]:
+    """Whole senses of the gloss proper: "guide/lead, show" -> ["guide", "lead", "show"]."""
+    core = re.sub(r"\([^)]*\)", " ", gloss.split(";")[0].lower())
+    return [s.strip() for s in re.split(r"[/,]", core) if s.strip()]
+
+def _find_word(lexicon: List[Dict], target: str, lang: str, pattern: str) -> Optional[Dict]:
+    target = target.lower()
+    candidates = [e for e in lexicon if lang in e.get("translation", {}) and not is_phrase(e)]
+    # An entry whose sense is exactly the word wins over one that only mentions it ("light" vs "Light of the Forest").
+    for entry in candidates:
+        if target in gloss_senses(entry["translation"][lang]):
+            return entry
+    for entry in candidates:
+        if target in gloss_words(entry["translation"][lang], pattern):
+            return entry
     return None
 
+def find_word_en(lexicon: List[Dict], target_en: str) -> Optional[Dict]:
+    return _find_word(lexicon, target_en, "en", r"[a-z']+")
+
 def find_word_uk(lexicon: List[Dict], target_uk: str) -> Optional[Dict]:
-    target_uk = target_uk.lower()
-    for entry in lexicon:
-        if "uk" in entry.get("translation", {}):
-            uk_words = re.findall(r"[а-яєіїґ']+", entry["translation"]["uk"].lower())
-            if target_uk in uk_words:
-                return entry
-    return None
+    return _find_word(lexicon, target_uk, "uk", r"[а-яєіїґ']+")
 
 class ASTNode:
     def compile(self, lexicon: List[Dict], lang: str) -> str:

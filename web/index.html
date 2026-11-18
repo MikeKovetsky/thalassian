@@ -688,11 +688,20 @@
                 }
 
                 const canonOnly = document.getElementById('canon-toggle').checked;
-                let found = lexiconData.find(e => {
-                    if (canonOnly && !e.canon) return false;
-                    let uk = e.translation.uk.toLowerCase().split(/[^\wа-яєіїґ\']+/);
-                    let en = e.translation.en.toLowerCase().split(/[^\w']+/);
-                    return uk.includes(lower) || en.includes(lower) || 
+                // Gloss proper only: text after ';' and inside parentheses is commentary.
+                const glossWords = (s, splitter) => s.split(";")[0].replace(/\([^)]*\)/g, " ").toLowerCase().split(splitter);
+                const usable = e => !(canonOnly && !e.canon) &&
+                    // Whole phrases (e.g. anar'alah = "by the Light") are not used word by word.
+                    !(e.pos === "phrase" || e.word.includes(" "));
+                // An entry whose sense is exactly the word wins over one that only mentions it.
+                const senses = e => [e.translation.en, e.translation.uk]
+                    .flatMap(s => glossWords(s, /[\/,]/)).map(s => s.trim());
+                let found = lexiconData.find(e => usable(e) && senses(e).includes(lower)) ||
+                    lexiconData.find(e => {
+                    if (!usable(e)) return false;
+                    let uk = glossWords(e.translation.uk, /[^\wа-яєіїґ\']+/);
+                    let en = glossWords(e.translation.en, /[^\w']+/);
+                    return uk.includes(lower) || en.includes(lower) ||
                            (lower.endsWith('и') && uk.includes(lower.slice(0,-1))) ||
                            (lower.endsWith('s') && en.includes(lower.slice(0,-1)));
                 });

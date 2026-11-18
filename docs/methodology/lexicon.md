@@ -1,30 +1,46 @@
 # Lexicon Methodology (Canon-First Approach)
 
-This document outlines the strict "Canon-First" methodology used to construct and expand the Thalassian language.
+This document describes how the Thalassian lexicon (`src/thalassian/data/lexicon.json`) is built and how each entry records how much of it is canon.
 
-## 1. The Problem with Legacy Projects
-Most existing fan projects (e.g., the PBWorks wiki from 2008) relied heavily on inventing words from scratch due to a lack of available lore at the time. This resulted in legacy dictionaries that starkly contradict the official canon released by Blizzard (particularly by Loreology between 2014-2024).
+## 1. The problem with legacy projects
+Most older fan projects (for example the PBWorks Thalassian Language Institute from 2008) invented much of their vocabulary because little lore was available. Many of those words contradict what Blizzard later published.
 
-**Our Goal:** Zero random inventions. We build the language based on etymology, linguistic drift, and verified existing roots.
+**Our goal:** never present an invention as canon. Invented and inferred words are allowed, because a usable language needs them, but every entry says what it rests on.
 
-## 2. Canon-First Approach (Root Gathering)
-All words in `data/lexicon.json` are gathered exclusively from three official lore dialects:
-1. **Thalassian (High Elves / Blood Elves / Void Elves):** The primary modern dialect.
-2. **Darnassian (Night Elves):** The ancestral language. We extract base roots (e.g., `drassil` - crown, `kal` - stars) to understand word formation. We also study linguistic drift (e.g., Darnassian `Falo` -> Thalassian `Felo`).
-3. **Shalassian (Nightborne / Suramar):** An archaic dialect preserved under the dome. It provides access to ancient Highborne roots.
+## 2. Canon sources
+Canon meanings come only from Blizzard: in-game text that gives an English gloss, Blizzard developer statements (for example Loreology), official books, and Blizzard's own localizations of elven lines. The lexicon draws on four lore dialects:
+1. **Thalassian** (High Elves, Blood Elves, Void Elves): the main modern dialect.
+2. **Darnassian** (Night Elves): the ancestral language and the source of many shared roots.
+3. **Shalassian** (Nightborne of Suramar): an archaic Highborne dialect.
+4. **Skyborne** (Shen'dorei of WoW Forever, added November 2026): a Darnassian dialect; players of the race learn "Language: Darnassian". See [the Skyborne report](../../research/2026-11-revival/3-new-elven-race.md).
 
-Each gathered word is broken down into attributes: `word`, `root`, `translation` (EN/UK), `pos` (part of speech), `canon` (boolean flag), and `source` (dialect).
+## 3. Entry fields
+Each entry has `word`, `translation` (`en`, `uk`), `pos`, `canon`, `root`, `notes` and `source` (the dialect, or `generated` / `generated_swadesh` / `extrapolated` for invented words).
 
-## 3. Lexicon Expansion (Extrapolation)
-Because Blizzard did not provide a full Swadesh list (the basic 100-200 words needed for communication), we expand the language using two tools:
+Since November 2026 every entry also has `canon_basis`:
 
-### A. Phonotactic Generator (New Roots)
-For words that do not exist in the lore (e.g., "water", "stone", "run"), we do not invent them manually. A Markov-chain algorithm analyzes the frequency of letter combinations and syllables in our 75+ canon roots to generate entirely new roots that sound 100% lore-friendly (e.g., `Thela`, `Falol`). These words are marked with `canon: false`.
+| canon_basis | canon | Meaning |
+|---|---|---|
+| `attested` | true | Blizzard glossed this word or phrase itself. |
+| `segment` | true | A piece cut out of a Blizzard-glossed phrase or compound; the meaning is inferred from the glossed whole. |
+| `epithet` | true | A name Blizzard pairs with an English epithet (for example *Eluvi'ana, the Night Dancer*); the epithet may not be a literal translation. |
+| `name` | true or false | A name whose referent Blizzard states (a place, a race, a faction), without a word-for-word meaning. |
+| `inferred` | false | Meaning inferred by alignment, segmentation, comparison or context. |
+| `generated` | false | Invented for this project (see section 4). |
+| `unverified` | false | Formerly marked canon, but no Blizzard source supports the meaning (demoted in the November 2026 audit). |
 
-### B. Lexicon Combiner (Complex Words)
-Using the database of canon and generated roots, we create complex words following Elvish compounding rules (reverse order or seamless merging). For example:
-- `thas` (forest) + `aran` (city) = **Thas'aran** (Forest City)
-- `sin` (blood) + `dash` (path) = **Sindash** (Blood Path)
+Entries added since November 2026 also carry `confidence` (high or medium), `method` and `evidence` (the exact quote and where it is: a URL, or a client table and row ID). Low-confidence candidates are kept out of the lexicon and stay in the `research/2026-11-revival/*-candidates.json` files.
 
-## 4. Datamining (Midnight and Future Patches)
-To keep the dictionary updated, we use `scraper_wowhead.py`. This tool parses text dumps of dialogues (e.g., from the *World of Warcraft: Midnight* expansion, which focuses on Quel'Thalas) and extracts new words based on linguistic patterns (apostrophes, specific endings), filtering out English text. These words are added to the database as new canon roots.
+## 4. Filling the gaps
+Blizzard never provided a full basic vocabulary, so the lexicon fills gaps in two ways, always with `canon: false`:
+
+### A. Generated words
+- **March 2026:** 62 roots from the Markov-chain generator in `src/thalassian/phonetics/markov.py`, and 57 Swadesh-list words written by an LLM (see [how-to-use-portal.md](how-to-use-portal.md)), marked `generated_swadesh`.
+- **November 2026 audit:** a classifier tells these generated words apart from canon fairly easily, and six of them were identical to attested forms or to words from Blizzard's in-game language scrambler. Those collisions and the generated words that duplicated a canon meaning were removed. A better generator (an order-4 Kneser-Ney model with phonotactic and collision filters) is described in [the audit](../../research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model) and is not yet wired in.
+
+### B. Inferred words and compounds
+Meanings are inferred by aligning glossed phrases word by word, by segmenting glossed compounds, and from context. Elvish compounds put the modifier first and the head last: `thas` (forest) + `alah` (light) = **Thas'alah**, "Light of the Forest"; `sin` (blood) + `dorei` (children) = **Sin'dorei**.
+
+## 5. Datamining
+- **March 2026:** the project cited a "Midnight 12.0 datamine", but the scraper (`scripts/scraper_wowhead.py`, since deleted) was a stub and collected nothing. The three words it was credited with came from other sources; see the [canon audit](../../research/2026-11-revival/1-review-and-methods.md).
+- **November 2026:** `tools/wowf/` reads the WoW Forever game client directly (its CASC storage, DB2 tables, hotfix cache and quest caches). The raw extract stays local in the gitignored `.wowf-extract/` folder. See the [client mining report](../../research/2026-11-revival/2-client-mining.md).

@@ -7,9 +7,13 @@ This document lists the primary canonical sources, community resources, and data
   - *Eversong Woods & Silvermoon City (The Burning Crusade)*: In-game dialogue, NPC greetings, and interactable environmental objects (e.g., "Anar'alah Belore" shrines).
   - *Suramar (Legion)*: Shalassian dialogue, spellcasting quotes, and Ancient Nightborne Tomes. Quotes from First Arcanist Thalyssra, Chief Telemancer Oculeth, and Arcanist Valtrois.
   - *Tempest Keep & Magister's Terrace (The Burning Crusade)*: Boss combat dialogue (Kael'thas Sunstrider, High Astromancer Solarian, Nethermancer Sepethrea).
-- **World of Warcraft: Midnight (Patch 12.0)**
-  - *Datamined Broadcast Text (2026 Alpha/Beta)*: Leaked dialogue from Vereesa Windrunner, Halduron Brightwing, and Lor'themar Theron.
-  - *Datamined Items*: Thalassian Missives, Flasks, and mounts (e.g., Anu'shalla Void Owl).
+- **World of Warcraft: The War Within and Midnight (patches 11.2.7 to 12.1.5)**
+  - *Shal'na* ("aunt"): Arator to Vereesa in the quest [What Might Come](https://warcraft.wiki.gg/wiki/What_Might_Come#Notes) (11.2.7). Blizzard's zhCN localization renders it 阿姨, "auntie".
+  - *Anu'shalla*: the mount [Anu'shalla, Shadow's Guidance](https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance), an epithet rather than a translation.
+  - *Correction (November 2026):* earlier versions of this page cited "leaked Midnight broadcast text" from Vereesa, Halduron and Lor'themar, and an "Anu'shalla Void Owl". Neither existed; the scraper that was meant to collect them was a stub. See the [canon audit](../research/2026-11-revival/1-review-and-methods.md).
+- **World of Warcraft: Forever (client 1.60.1.70938, November 2026)**
+  - *Game client tables, hotfixes and caches*, read with [tools/wowf](../tools/wowf/): race names (ChrRaces 95 and 96, lore name Shen'dorei), the Shen'dorei language (Languages 310), item, spell, place and name-generator data, and the letter MailTemplate 652. See the [client mining report](../research/2026-11-revival/2-client-mining.md).
+  - *Skyborne (Shen'dorei)*: Blizzard's [BlizzCon 2026 panel recap](https://worldofwarcraft.blizzard.com/en-us/news/24304071) gives *shen'dorei* = "hidden people". See the [Skyborne report](../research/2026-11-revival/3-new-elven-race.md).
 - **Warcraft Novels & Comics**
   - *Arthas: Rise of the Lich King* by Christie Golden (e.g., Felo'melorn translations).
   - *Stormrage* by Richard A. Knaak.

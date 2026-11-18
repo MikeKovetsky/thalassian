@@ -307,15 +307,23 @@
             renderTable(lexiconData);
         };
 
+        // Non-canon entries are either invented (generated) or inferred from canon; see canon_basis in lexicon.json.
+        function statusText(entry) {
+            if (entry.canon) return 'Canon';
+            if (entry.canon_basis === 'unverified') return 'Unverified';
+            if (entry.canon_basis === 'inferred') return 'Inferred';
+            return 'Generated';
+        }
+
         function renderTable(data) {
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
 
             data.forEach(entry => {
                 const tr = document.createElement('tr');
-                
+
                 const badgeClass = entry.canon ? 'canon-true' : 'canon-false';
-                const badgeText = entry.canon ? 'Canon' : 'Generated';
+                const badgeText = statusText(entry);
                 const sourceText = entry.source ? entry.source : 'unknown';
                 
                 const enTranslation = entry.translation && entry.translation.en ? entry.translation.en : '-';
@@ -338,7 +346,7 @@
                 const wordMatch = entry.word.toLowerCase().includes(input);
                 const enMatch = entry.translation && entry.translation.en && entry.translation.en.toLowerCase().includes(input);
                 const sourceMatch = entry.source && entry.source.toLowerCase().includes(input);
-                const statusMatch = (entry.canon ? 'canon' : 'generated').includes(input);
+                const statusMatch = statusText(entry).toLowerCase().includes(input);
                 const notesMatch = entry.notes && entry.notes.toLowerCase().includes(input);
                 
                 return wordMatch || enMatch || sourceMatch || statusMatch || notesMatch;

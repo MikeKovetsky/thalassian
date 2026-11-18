@@ -1,0 +1,686 @@
+[
+  {
+    "action": "add",
+    "word": "shen'dorei",
+    "translation": {
+      "en": "hidden people; the Skyborne (self-name); also the name of their language",
+      "uk": "приховані люди; небесонароджені (самоназва); також назва їхньої мови"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shen + dorei",
+    "notes": "Darnassian (Skyborne dialect). Self-name of the Skyborne. Used for one person ('I am shen'dorei') and for the people; adjectival in 33 item names (ItemSparse 271722 onward). The client lists it as the lore name of both Skyborne races (ChrRaces 95, 96), beside Kaldorei, Sin'dorei, Shal'dorei and Ren'dorei, and as the name of their language (Languages 310; its 102 garble words are identical to Darnassian's). Same entry as 2-candidates.json shen'dorei.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "the Skyborne, also known as the shen'dorei or hidden people",
+        "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+      },
+      {
+        "quote": "I am no \"quel'dorei\". I am Lumina Windsinger and I am shen'dorei.",
+        "where": "quest 91862 Lumina Windsinger, https://warcraft.wiki.gg/wiki/Lumina_Windsinger_%28quest%29"
+      },
+      {
+        "quote": "Lore_name_lang Shen'dorei (Name_lang High Order Skyborne / Windshaper Skyborne)",
+        "where": "client db2:ChrRaces#95, #96.Lore_name_lang"
+      },
+      {
+        "quote": "Name_lang Shen'dorei",
+        "where": "client db2:Languages#310.Name_lang"
+      },
+      {
+        "quote": "Name_lang Shen'dorei",
+        "where": "client db2:Faction#2748.Name_lang"
+      },
+      {
+        "quote": "protect the shen'dorei way of life within Skywall",
+        "where": "client db2:Faction#2778.Description_lang (Windshapers)"
+      },
+      {
+        "quote": "safer for both wildlife and shen'dorei",
+        "where": "client db2:MailTemplate#652.Body_lang"
+      },
+      {
+        "quote": "Sanctuary of the Shen'dorei; Shen'dorei Wisp; Shen'dorei Windwell; Shen'dorei Battlegarb",
+        "where": "client db2:SpellName#1253151, Creature#273554, ItemSparse#280740, TransmogSetGroup#393"
+      }
+    ],
+    "method": "Blizzard gloss (official news recap of the BlizzCon 2026 Found Photos panel)",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "shen",
+    "translation": {
+      "en": "hidden, concealed",
+      "uk": "прихований, захований"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "shen",
+    "notes": "Darnassian (Skyborne dialect); also in Highborne Darnassian. Modifier slot like quel ('high'): shen'dorei 'hidden people' vs quel'dorei 'high/noble-born'. Also in Shen'dralar 'Those Who Remain Hidden', Shen'dralas (zone), Shen'dar Village, Shen'dramar (town). 2-candidates.json rates shen medium; this file keeps high because two compounds are glossed independently (shen'dorei by Blizzard news, Shen'dralar by the Chronicle).",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "the Skyborne, also known as the shen'dorei or hidden people",
+        "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+      },
+      {
+        "quote": "Shen'dralar ... meaning \"Those Who Remain Hidden\"",
+        "where": "World of Warcraft: Chronicle Volume 1, cited at https://warcraft.wiki.gg/wiki/Shen%27dralar"
+      },
+      {
+        "quote": "Shen'dar Highlands; Shen'dar Village",
+        "where": "client db2:AreaTable#16623, #16624.AreaName_lang"
+      },
+      {
+        "quote": "Shen'dralas",
+        "where": "client db2:AreaTable#16651.AreaName_lang"
+      },
+      {
+        "quote": "Shen'dralar",
+        "where": "client db2:Faction#809.Name_lang"
+      }
+    ],
+    "method": "segmentation of two independently Blizzard-glossed compounds: shen'dorei minus dorei (canon 'children/people'); Shen'dralar shares shen and the 'hidden' sense",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "shal'nan",
+    "translation": {
+      "en": "the Veiled One (title of the masked first leader of the Skyborne; rebel battle cry)",
+      "uk": "Завуальований (титул першого ватажка небесонароджених; бойовий клич повстанців)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shal + nan",
+    "notes": "Darnassian (Skyborne dialect). In-game audio crystal: the rebels' masked leader in Eldre'Thalas; 'the word Shal'nan became a battle cry synonymous with rebellion'. Listed among Blizzard-confirmed Darnassian translations on warcraft.wiki.gg. Not related to Thalassian shal'na 'no!/please' (similar shape only); compare Darnassian Shal'nar 'aunt'.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "known only as the 'Shal'nan' or, 'The Veiled One.'",
+        "where": "object 658840 The Rebellion in Eldre'Thalas, Part 3, https://warcraft.wiki.gg/wiki/The_Rebellion_In_Eldre%27Thalas,_Part_3"
+      },
+      {
+        "quote": "Shal'nan = The Veiled One.",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian"
+      },
+      {
+        "quote": "not found: no Shal'nan or Shalnan in corpus.jsonl or wdb_strings.jsonl; the audio-crystal page text is server-side",
+        "where": "client .wowf-extract (searched 2026-11-17)"
+      }
+    ],
+    "method": "Blizzard gloss (in-game text)",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "nan",
+    "translation": {
+      "en": "one (who is), person-forming suffix",
+      "uk": "той, хто (суфікс особи)"
+    },
+    "pos": "particle",
+    "canon": false,
+    "root": "nan",
+    "notes": "Darnassian (Skyborne dialect). Only source: Shal'nan 'The Veiled One' = shal 'shadow/veil' + nan 'one'. Single data point; keep out of generators until a second form appears.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "known only as the 'Shal'nan' or, 'The Veiled One.'",
+        "where": "object 658840, https://warcraft.wiki.gg/wiki/The_Rebellion_In_Eldre%27Thalas,_Part_3"
+      },
+      {
+        "quote": "not found: no Shal'nan or Shalnan in corpus.jsonl or wdb_strings.jsonl; the audio-crystal page text is server-side",
+        "where": "client .wowf-extract (searched 2026-11-17)"
+      }
+    ],
+    "method": "segmentation of Shal'nan against lexicon shal (night/shadow)",
+    "confidence": "low"
+  },
+  {
+    "action": "add",
+    "word": "al'aketh",
+    "translation": {
+      "en": "the Al'Aketh, cult of Al'Akir the Windlord",
+      "uk": "Аль'Акет, культ Аль'Акіра, Володаря вітрів"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "al + aketh (cf. Akir)",
+    "notes": "Darnassian (Skyborne dialect). Referent stated by Blizzard; literal meaning not stated (perhaps 'those of Akir', low). Al' detaches in Skyborne usage: 'Shrine of Akir', 'Mark of Akir'. The client spells it Al'Aketh everywhere (74 strings, none lower-case 'Al'aketh' as the wiki has). 24 common items prefix the faction name, right before the 32 Zephrali items.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "the Windshapers, the High Order, and the Al'Aketh",
+        "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+      },
+      {
+        "quote": "these shen'dorei broke with the rest of society and dedicated themselves to the service of Al'Akir",
+        "where": "BlizzCon 2026 panel, cited at https://warcraft.wiki.gg/wiki/Skyborne"
+      },
+      {
+        "quote": "Name_lang Al'Aketh",
+        "where": "client db2:Faction#2749.Name_lang"
+      },
+      {
+        "quote": "Al'Aketh Windstone Charm; Al'Aketh Cultist's Ear; Al'Aketh Zealot's Belt",
+        "where": "client db2:ItemSparse#255658, #258771, #271756"
+      },
+      {
+        "quote": "Al'Aketh Cord ... Al'Aketh Shoes (24 common items)",
+        "where": "client db2:ItemSparse#277056-277079"
+      }
+    ],
+    "method": "Blizzard-stated referent (faction name), like rutaani in the lexicon",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "eluvi'ana",
+    "translation": {
+      "en": "the Night Dancer (sword of the magesmith Luminarian)",
+      "uk": "Нічна танцівниця (меч майстра-чарозбройника Люмінаріана)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "eluvi + ana",
+    "notes": "Darnassian (Skyborne dialect). Item 276188 flavor text 'The Night Dancer.' (client ItemSparse hotfix) and spell 1314923 aura 'Raising Eluvi'ana, the Night Dancer.'; twin of Eluvi'tor. eluvi likely from Elune (moon/night), cf. Elun'dris 'Eye of Elune'. If literal, ana = 'dancer', which clashes with lexicon ana 'fare/status' (Thalassian); not resolved. 2-candidates.json glosses it as 'an ancient Shen'dorei spirit'; the client contradicts that: ItemSparse 276188 is a one-hand sword, and Spell 1314956 binds an unnamed 'ancient Shen'dorei spirit' using the hilt of Eluvi'tor.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "flavor=The Night Dancer.",
+        "where": "item 276188 Eluvi'ana, https://warcraft.wiki.gg/wiki/Eluvi%27ana"
+      },
+      {
+        "quote": "Raising Eluvi'ana, the Night Dancer.",
+        "where": "client db2:Spell#1314923.AuraDescription_lang"
+      },
+      {
+        "quote": "Raise Eluvi'ana to bind the Ancient Hilt.",
+        "where": "client db2:Spell#1314923.Description_lang"
+      }
+    ],
+    "method": "item flavor-text epithet read as a gloss; Blizzard does not say it is a translation",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "urs",
+    "translation": {
+      "en": "bear",
+      "uk": "ведмідь"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "urs",
+    "notes": "Darnassian (Skyborne dialect). Urs'endris 'The Great Windborne Bear Spirit' (teaches Bear Form), Urs'anah 'The Den Mother', Ur'endra, Ur'seris (urs + seris with ss > s?); creature family ursera. Cf. the night elf bear demigods Ursoc and Ursol.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "title = The Great Windborne Bear Spirit",
+        "where": "NPC 255853 Urs'endris, https://warcraft.wiki.gg/wiki/Urs%27endris"
+      },
+      {
+        "quote": "title = The Den Mother | race = Ursera",
+        "where": "NPC 251115 Urs'anah, https://warcraft.wiki.gg/wiki/Urs%27anah"
+      },
+      {
+        "quote": "Mark of Urs'endris",
+        "where": "client db2:ItemSparse#263435.Display_lang"
+      },
+      {
+        "quote": "Head of Urs'anah",
+        "where": "client db2:ItemSparse#252665.Display_lang"
+      }
+    ],
+    "method": "recurring element in names of bear-like beasts and the Bear Form spirit; matches Ursoc/Ursol",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "ursera",
+    "translation": {
+      "en": "ursera (bear-like, feathered beast of Zephras Isle)",
+      "uk": "урсера (ведмедеподібний пернатий звір острова Зефрас)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "urs + -era",
+    "notes": "Darnassian (Skyborne dialect). Creature family on Zephras Isle (Highlands Ursera, Shadowgale Ursera, Scrawny Ursera); eggs are fried in ursera tallow. The Great Ursera Spirit Urs'endris teaches Bear Form. The client drops show claws, teeth and feathers (Skywall gave some beasts feathers, per the wiki). Same entry as 2-candidates.json ursera.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Urs'endris is an ursera spirit beast",
+        "where": "https://warcraft.wiki.gg/wiki/Urs%27endris"
+      },
+      {
+        "quote": "Scrawny Ursera Claw; Tattered Ursera Feather; Sharp Ursera Tooth; Chipped Ursera Bone",
+        "where": "client db2:ItemSparse#251918, #251925, #263183, #263184"
+      }
+    ],
+    "method": "in-game creature family name; referent shown in game, no translation stated",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "naar",
+    "translation": {
+      "en": "settlement, town (place-name suffix)",
+      "uk": "поселення, містечко (суфікс топонімів)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "naar",
+    "notes": "Darnassian ending, kept in Skyborne. Dolanaar, Astranaar, Thalanaar (night elf towns), Valanaar (Skyborne capital), New Eldre'naar (wiki) and Vord'anaar (Forever prison); a variant -narr in Eldre'narr (wiki) and Zaalanarr (client cheese name). Bound suffix; coexists with the free noun aran 'town/settlement'. Source changed to darnassian to match 2-candidates.json.",
+    "source": "darnassian",
+    "evidence": [
+      {
+        "quote": "sharing the -naar ending found in Darnassian place names such as Dolanaar and Astranaar",
+        "where": "https://warcraft.wiki.gg/wiki/Skyborne (Inspirations)"
+      },
+      {
+        "quote": "Major settlements Valanaar",
+        "where": "https://warcraft.wiki.gg/wiki/Zephras_Isle"
+      },
+      {
+        "quote": "Valanaar; Valanaar Skydocks",
+        "where": "client db2:AreaTable#16638, #16628.AreaName_lang"
+      },
+      {
+        "quote": "Dolanaar; Astranaar; Thalanaar",
+        "where": "client db2:AreaTable#186, #415, #489.AreaName_lang"
+      },
+      {
+        "quote": "Zaalanarr Sharp (a level-5 cheese priced like Darnassian Bleu)",
+        "where": "client db2:ItemSparse#252023.Display_lang"
+      },
+      {
+        "quote": "Grants access to the Vord'anaar Prison within Barrow Deeps.",
+        "where": "client db2:ItemSparse#277136.Description_lang"
+      }
+    ],
+    "method": "distribution: every attested -naar name is a settlement",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "zephar",
+    "translation": {
+      "en": "zephyr, gentle (west) wind; the stem of Zephras",
+      "uk": "зефір, лагідний (західний) вітер; основа назви Зефрас"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "zephr",
+    "notes": "Darnassian (Skyborne dialect). Stem of the island name and its derivatives: Zephr-as (island), Zephr-ali (demonym on 32 items), Zephr-aalis (surname), zephar-aalis (letter, with an extra a). The other Skyborne islands are also weather words + -as: Sirocc-as (sirocco), Anvil-as (anvil cloud). The 'wind' sense is the designers' etymology (Greek Zephyros); no Skyborne text uses zephr- as a free noun for 'wind'. Overlaps generated othina 'wind' (canon:false).",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Zephras Isle",
+        "where": "client db2:AreaTable#16593.AreaName_lang"
+      },
+      {
+        "quote": "Zephrali Chainmail",
+        "where": "client db2:ItemSparse#277080.Display_lang (32 Zephrali items, 277080-277111)"
+      },
+      {
+        "quote": "Zephras may derive from Zephyrus, the personification of the west wind",
+        "where": "https://warcraft.wiki.gg/wiki/Skyborne (Notes)"
+      },
+      {
+        "quote": "Siroccas ... resemble the Sirocco; Anvilas ... anvil-shaped upper portion of a cumulonimbus",
+        "where": "https://warcraft.wiki.gg/wiki/Skyborne (Notes)"
+      }
+    ],
+    "method": "stem shared by the island name and three derived client forms; 'wind' gloss from the designers' naming pattern (weather word + -as for every Skyborne island)",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "aeesha'el banu zepharaalis",
+    "translation": {
+      "en": "(farewell blessing closing a letter) roughly 'may peace and the winds of Zephras go with you'; literally '... of Zephras'",
+      "uk": "(прощальне благословення наприкінці листа) приблизно 'хай мир і вітри Зефраса будуть з тобою'; дослівно '... Зефраса'"
+    },
+    "pos": "interjection",
+    "canon": false,
+    "root": "aeesha'el + banu + zephara-alis",
+    "notes": "Darnassian (Skyborne dialect). The only Skyborne sentence in the client: the valediction of MailTemplate 652, from the Valanaar druid trainer Lotheluum Starbreeze to a young Skyborne druid ($n) after the Bear Form quests, in the slot where other letters close with 'Regards,' or 'Light be with you.' zepharaalis = Zephraalis, a Skyborne surname built on Zephras. aeesha'el and banu are attested nowhere else; their glosses are guesses. 2-candidates.json has the same phrase at low ('not translated'); this file rates the gloss medium because of the Zephraalis match and the letter's closing slot.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "I am unsure where the winds will lead you ... Aeesha'el banu zepharaalis, Lotheluum Starbreeze",
+        "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      },
+      {
+        "quote": "Zephraalis (NameGen NameType 1 = surname, races 95 and 96, both sexes)",
+        "where": "client db2:NameGen#25277, #25363, #25449, #25535"
+      },
+      {
+        "quote": "know that the winds of home will be with you wherever you travel",
+        "where": "quest 92460 Coming of Age, https://warcraft.wiki.gg/wiki/Coming_of_Age_%28Forever%29"
+      },
+      {
+        "quote": "Light be with you. -Katherine",
+        "where": "client db2:MailTemplate#624.Body_lang (comparable closing slot)"
+      },
+      {
+        "quote": "not found anywhere else: no aeesha, banu or zephar in corpus.jsonl or wdb_strings.jsonl outside this letter",
+        "where": "client .wowf-extract (searched 2026-11-17)"
+      }
+    ],
+    "method": "position (valediction slot, so a farewell blessing: certain); last word matched to the client surname Zephraalis and the demonym Zephrali (Zephras link: medium-high); first two words unknown",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "zephras",
+    "translation": {
+      "en": "Zephras (the Skyborne home island in Skywall)",
+      "uk": "Зефрас (рідний острів небесонароджених у Небесній Стіні)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "zephr + -as",
+    "notes": "Darnassian (Skyborne dialect). Island lifted into Skywall by the wind spirits; capital Valanaar. Built like the other Skyborne islands, Siroccas and Anvilas: a weather word + place suffix -as. Spelled 'Zephras Isle' in AreaTable 16593, Map 2991 and UiMap 2521; the UI atlas is named 'skyborne-zephras-isles'. 2-candidates.json rates zephras low; this file keeps high because the referent is stated by Blizzard.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "flying sanctuary of Zephras Isle",
+        "where": "client db2:GlobalStrings#55263 RACE_INFO_SKYBORNE; BroadcastText#316348"
+      },
+      {
+        "quote": "players will discover Zephras Isle and the Skyborne",
+        "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+      },
+      {
+        "quote": "Zephras Isle",
+        "where": "client db2:AreaTable#16593.AreaName_lang; Map#2991; UiMap#2521; Faction#2757 'Zephras Peacekeepers'; SpellName#1258510 'Blessing of Zephras'"
+      }
+    ],
+    "method": "Blizzard place name (referent stated), like alar in the lexicon",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "zephrali",
+    "translation": {
+      "en": "Zephran, of Zephras (adjective)",
+      "uk": "зефраський, із Зефраса"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "zephra + -li",
+    "notes": "Darnassian (Skyborne dialect). Prefix of 32 common-quality level-14 items in the starting zone (Zephrali Chainmail, Zephrali Greatstaff, etc.), the way Darnassian and Thalassian are used in English item names. Built with a demonym -i like Zandalar > Zandalari and Rohash > Rohashi Spires; the stem keeps the island's a and drops -s: Zephra(s) > Zephra-li.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Zephrali Chainmail ... Zephrali Greatstaff ... Zephrali Bow",
+        "where": "client db2:ItemSparse#277080-277111.Display_lang"
+      },
+      {
+        "quote": "Zephrali Greatstaff Item Level 14",
+        "where": "https://warcraft.wiki.gg/wiki/Zephrali_Greatstaff"
+      },
+      {
+        "quote": "Zephrali Chainmail",
+        "where": "client db2:ItemSparse#277080.Display_lang"
+      }
+    ],
+    "method": "derivation: island name + demonym ending, used as an item-name adjective",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "zepharaalis",
+    "translation": {
+      "en": "of Zephras; a Zephran (also a Skyborne family name, Zephraalis)",
+      "uk": "із Зефраса; зефрасець (також родове ім'я небесонароджених, Зефраліс)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "zephra + -alis",
+    "notes": "Darnassian (Skyborne dialect). Two spellings: zepharaalis (letter MailTemplate 652) and Zephraalis (surname in NameGen, the character-name generator, for both Skyborne races and sexes). Parse Zephra(s) + -alis, with the stem's a and the suffix's a written as the Skyborne double aa. Parallel: island Siroccas > surname Siroccaa. Of 86 Skyborne surnames, these two are the only non-English ones, and both come from island names.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Aeesha'el banu zepharaalis,",
+        "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      },
+      {
+        "quote": "Zephraalis (NameType 1, races 95/96)",
+        "where": "client db2:NameGen#25277"
+      },
+      {
+        "quote": "Siroccaa (NameType 1, races 95/96)",
+        "where": "client db2:NameGen#25248"
+      }
+    ],
+    "method": "match with the client surname and the demonym Zephrali; island-to-surname parallel Siroccas > Siroccaa",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "aeesha'el",
+    "translation": {
+      "en": "(first word of a farewell blessing; perhaps 'peace be [with you]', with el 'peace')",
+      "uk": "(перше слово прощального благословення; можливо 'мир [тобі]', з el 'мир')"
+    },
+    "pos": "interjection",
+    "canon": false,
+    "root": "aeesha + el",
+    "notes": "Darnassian (Skyborne dialect). Attested once, in MailTemplate 652; not in NameGen, LanguageWords or any other client text. The -'el ending matches lexicon el 'peace' (Thalassian, canon). aeesha alone is unknown.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Aeesha'el banu zepharaalis,",
+        "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      },
+      {
+        "quote": "not found anywhere else: no aeesha, banu or zephar in corpus.jsonl or wdb_strings.jsonl outside this letter",
+        "where": "client .wowf-extract (searched 2026-11-17)"
+      }
+    ],
+    "method": "segmentation against the lexicon (el 'peace') plus the farewell position",
+    "confidence": "low"
+  },
+  {
+    "action": "add",
+    "word": "banu",
+    "translation": {
+      "en": "(word in a farewell blessing; perhaps 'way, passage', from ban 'gate/passage')",
+      "uk": "(слово з прощального благословення; можливо 'шлях, прохід', від ban 'брама/прохід')"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ban + -u",
+    "notes": "Darnassian (Skyborne dialect). Attested once, in MailTemplate 652. Compare lexicon ban 'gate/passage' (Thalassian, canon) and the spoken Skyborne farewell 'May the winds guide your path'. Not related to Arabic banu ('sons of'), which only looks alike.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Aeesha'el banu zepharaalis,",
+        "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      },
+      {
+        "quote": "May the winds guide you",
+        "where": "quest 92472 The Next Step, https://warcraft.wiki.gg/wiki/The_Next_Step_%28Skyborne%29"
+      },
+      {
+        "quote": "not found anywhere else: no aeesha, banu or zephar in corpus.jsonl or wdb_strings.jsonl outside this letter",
+        "where": "client .wowf-extract (searched 2026-11-17)"
+      }
+    ],
+    "method": "segmentation against the lexicon (ban) plus the farewell context",
+    "confidence": "low"
+  },
+  {
+    "action": "add",
+    "word": "as",
+    "translation": {
+      "en": "place suffix (island, land)",
+      "uk": "суфікс місця (острів, земля)"
+    },
+    "pos": "particle",
+    "canon": false,
+    "root": "as",
+    "notes": "Darnassian (Skyborne dialect). Every Skyborne island name ends in -as on a weather word: Zephr-as (zephyr), Sirocc-as (sirocco), Anvil-as (anvil cloud). Also the Forever zone Shen'dral-as beside the house name Shen'dral-ar, which gives -as 'place' against -ar 'people, house'. Perhaps the same -as as in thal-as 'home/kingdom' (lexicon).",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Other islands the Skyborne live on include Anvilas and Siroccas",
+        "where": "https://warcraft.wiki.gg/wiki/Skyborne (quest Crab Season)"
+      },
+      {
+        "quote": "the addition of Shen'dralas opens a fresh, new area",
+        "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+      },
+      {
+        "quote": "Zephras Isle (ZoneName ZephrasIsle); Shen'dralas",
+        "where": "client db2:AreaTable#16593, #16651"
+      },
+      {
+        "quote": "Shen'dralar",
+        "where": "client db2:Faction#809.Name_lang"
+      }
+    ],
+    "method": "distribution across four Forever place names, plus the Shen'dralar/Shen'dralas pair",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "zaalanarr",
+    "translation": {
+      "en": "Zaalanarr (a place, known only from the cheese 'Zaalanarr Sharp')",
+      "uk": "Заланарр (місцевість, відома лише з назви сиру 'Zaalanarr Sharp')"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "zaala + narr",
+    "notes": "Darnassian (Skyborne dialect). Client-only. 'Zaalanarr Sharp' (item 252023) sits among the Zephras Isle items (251918 to 252760) and has exactly the stats and price of the night elf starter cheese Darnassian Bleu (item 2070: item level 5, required level 1, buy 25, sell 1). It is named the way 'Dalaran Sharp' (item 414) is named after Dalaran, so Zaalanarr is presumably a Skyborne place. Ending -narr as in Eldre'narr, beside -naar in Valanaar. Zaal- also appears in the NPC name Zaal Stormshield and the NameGen names Zal and Zhaal.",
+    "source": "skyborne",
+    "evidence": [
+      {
+        "quote": "Zaalanarr Sharp",
+        "where": "client db2:ItemSparse#252023.Display_lang"
+      },
+      {
+        "quote": "Darnassian Bleu (ItemLevel 5, RequiredLevel 1, BuyPrice 25, SellPrice 1); Dalaran Sharp",
+        "where": "client db2:ItemSparse#2070, #414"
+      }
+    ],
+    "method": "item-name pattern '<place> Sharp' for cheese, plus the settlement ending -narr",
+    "confidence": "medium"
+  },
+  {
+    "action": "add",
+    "word": "shen'dralar",
+    "translation": {
+      "en": "Those Who Remain Hidden (Highborne house of Eldre'Thalas)",
+      "uk": "Ті, що лишаються прихованими (дім високорождених Ельдре'Таласа)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shen + dralar",
+    "notes": "Highborne Darnassian, older than Forever but not yet in the lexicon. Ancestral house of the Skyborne rebels; the new Forever zone Shen'dralas is named from it. Independent check on shen 'hidden'. Same word as 2-candidates.json shen'dralar.",
+    "source": "darnassian",
+    "evidence": [
+      {
+        "quote": "Shen'dralar = Those Who Remain Hidden.",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian (cites World of Warcraft: Chronicle Volume 1)"
+      },
+      {
+        "quote": "Shen'dralar (A remnant of the once powerful elves living in Dire Maul)",
+        "where": "client db2:Faction#809.Name_lang, Description_lang"
+      },
+      {
+        "quote": "I still count myself among the Shen'dralar",
+        "where": "client hotfix:BroadcastText#313613 (push 113301)"
+      },
+      {
+        "quote": "Savory Shen'dralar Steak; Shen'dralar Relic",
+        "where": "client db2:ItemSparse#260627; hotfix:ItemSparse#277559"
+      }
+    ],
+    "method": "Blizzard gloss (World of Warcraft: Chronicle Volume 1)",
+    "confidence": "high"
+  },
+  {
+    "action": "add",
+    "word": "dralar",
+    "translation": {
+      "en": "those who remain",
+      "uk": "ті, що лишаються"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "dral",
+    "notes": "Highborne Darnassian. Shen'dralar 'Those Who Remain Hidden' minus shen 'hidden'. Related forms Shen'dralas (zone) and Den'dralass (ursera 'The Great Mother') are not glossed.",
+    "source": "darnassian",
+    "evidence": [
+      {
+        "quote": "Shen'dralar = Those Who Remain Hidden.",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian"
+      },
+      {
+        "quote": "Shen'dralar",
+        "where": "client db2:Faction#809.Name_lang"
+      }
+    ],
+    "method": "segmentation of a Blizzard-glossed compound after isolating shen",
+    "confidence": "medium"
+  },
+  {
+    "action": "fix",
+    "word": "dorei",
+    "field": "translation",
+    "old": {
+      "en": "children/born of",
+      "uk": "діти/народжені"
+    },
+    "new": {
+      "en": "children/born of/people",
+      "uk": "діти/народжені/народ"
+    },
+    "evidence": [
+      {
+        "quote": "the Skyborne, also known as the shen'dorei or hidden people",
+        "where": "https://worldofwarcraft.blizzard.com/en-us/news/24304071"
+      },
+      {
+        "quote": "Kaldorei = Children of the stars, people of the stars.",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian (The Warcraft Encyclopedia)"
+      },
+      {
+        "quote": "Lore_name_lang Kaldorei, Sin'dorei, Shal'dorei, Ren'dorei, Shen'dorei",
+        "where": "client db2:ChrRaces#4, #10, #27, #29, #95, #96.Lore_name_lang"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "action": "fix",
+    "word": "shal",
+    "field": "translation",
+    "old": {
+      "en": "night/shadow",
+      "uk": "ніч/тінь"
+    },
+    "new": {
+      "en": "night/shadow/veil",
+      "uk": "ніч/тінь/вуаль"
+    },
+    "evidence": [
+      {
+        "quote": "known only as the 'Shal'nan' or, 'The Veiled One.'",
+        "where": "object 658840, https://warcraft.wiki.gg/wiki/The_Rebellion_In_Eldre%27Thalas,_Part_3"
+      },
+      {
+        "quote": "no client text glosses Shal'nan; the only client support is Lore_name Shal'dorei for the Nightborne",
+        "where": "client db2:ChrRaces#27.Lore_name_lang"
+      }
+    ],
+    "confidence": "medium"
+  }
+]
