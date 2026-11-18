@@ -250,7 +250,7 @@ The wiki talk page reports zhTW glosses for three more Kael'thas lines: *Balamor
 **Findings:**
 - There is a new language, **ID 310 "Shen'dorei"**.
 - Its scrambler word list is the Darnassian list (the same 102 words, shuffled). In Blizzard's data it is a skin over Darnassian.
-- No glossed elven text exists in the client. Quest and NPC speech are served by the server: BroadcastText has only 288 rows, none of them elven.
+- No glossed elven text exists in the client. Quest and NPC speech are served by the server: BroadcastText has only 139 rows in the finished extract (12 shipped, 127 cached from play), none of them elven.
 - Names only: Shen'dralas, Shen'dar, Shen'dramar, Ban'aethal, Urs'endris, Jai'vhanel, Nord'el, Al'Aketh.
 
 **Limits:** the folder had no `README.md` when I checked, and it was still being filled during this run. The server-cached text (WDB) will grow as the client is played.
@@ -275,6 +275,7 @@ Sample new words: mallann, aluel, nariath, shorah, enalora, ishana, thallan, bet
 **Limits:**
 - Leave-one-out perplexity barely changes (8.12 for order 4 vs 8.14 for order 2). The gain comes from the filters, not from a better fit, because the data are too small.
 - One output, `rthalah`, shows the filter should also ban word-initial clusters other than th, sh and dr.
+- The new generator was trained on all 273 forms, including the classifier's test folds, which pulls its AUC toward 0.5. A strictly held-out test would retrain the generator inside each fold, so read 0.52 as a slightly optimistic figure.
 
 ### Method 8: Translator evaluation on canon phrases
 
