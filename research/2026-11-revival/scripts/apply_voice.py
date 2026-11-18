@@ -2,7 +2,8 @@
 
 Runs after apply_localization.py, with the same policy: high and medium confidence only; a fix applies
 only while its "old" value still matches, and its evidence is merged into the entry. An add applies only
-when no entry has the same word and source. Everything else is logged. Appends a section to merge-log.md.
+when no entry has the same word and source. Everything else is logged, and an action other than add or fix
+is refused. Appends a section to merge-log.md.
 From the repo root:
   python3 research/2026-11-revival/scripts/apply_voice.py
 """
@@ -20,11 +21,14 @@ ENTRY_FIELDS = ("word", "translation", "pos", "canon", "root", "notes", "source"
 
 
 def apply_adds(lexicon, candidates):
-    """Append the new entries in place; return the added, duplicate and held labels."""
+    """Append the new entries in place; return the added, duplicate and held labels. Fixes are left to
+    apply_fixes; any other action is refused, because neither function would log it."""
     added, duplicate, held = [], [], []
     for c in candidates:
-        if c["action"] != "add":
+        if c["action"] == "fix":
             continue
+        if c["action"] != "add":
+            raise ValueError(f"{c['word']}: apply_voice.py applies only adds and fixes, not {c['action']!r}")
         if c.get("canon"):
             raise ValueError(f"{c['word']}: a voice line carries no Blizzard gloss, so a voice add is never canon")
         label = f"add {c['word']} ({c['confidence']})"

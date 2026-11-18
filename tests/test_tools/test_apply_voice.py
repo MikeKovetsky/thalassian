@@ -44,6 +44,11 @@ class TestApplyAdds(unittest.TestCase):
         with self.assertRaises(ValueError):
             apply_voice.apply_adds([], [add("banu", canon=True)])
 
+    def test_an_action_other_than_add_or_fix_is_refused(self):
+        # Nothing would apply or log a removal, so it must not pass silently.
+        with self.assertRaises(ValueError):
+            apply_voice.apply_adds([], [add("banu"), {"action": "remove", "word": "anu", "confidence": "high"}])
+
 
 class TestVoiceEntriesInLexicon(unittest.TestCase):
     def test_every_applied_candidate_left_its_evidence_in_the_lexicon(self):
@@ -56,6 +61,9 @@ class TestVoiceEntriesInLexicon(unittest.TestCase):
             if c["confidence"] not in apply_voice.APPLY:
                 if c["action"] == "add":
                     self.assertEqual(entries, [], c["word"])
+                else:
+                    self.assertEqual(len(entries), 1, c["word"])
+                    self.assertNotEqual(entries[0][c["field"]], c["new"], c["word"])
                 continue
             self.assertEqual(len(entries), 1, c["word"])
             for ev in c["evidence"]:
