@@ -89,14 +89,24 @@ class TestWebEngine(EngineCases, unittest.TestCase):
     def reverse(self, inputs, **options):
         return E.web_translate(inputs, "reverse", **options)
 
+    def test_words_named_like_object_properties(self):
+        # "constructor" once found Object.prototype.constructor in the pronoun tables.
+        self.assertEqual(self.translate(["guide constructor"]), ["Dela [constructor]"])
+        self.assertEqual(self.reverse(["zzz'constructor"]), ["[zzz] [constructor]"])
+
     def test_reverse_looks_up_whole_words_before_splitting(self):
         # Bug 12: every word was split at its apostrophes, so Bal'a became "[bal] you".
         self.assertEqual(self.reverse(["Bal'a", "Shal'na", "Bash'a", "Anar'alah", "Belore dela'na"]),
                          ["greetings", "aunt", "taste", "by the Light", "sun guide us"])
 
+    def test_reverse_reads_curly_and_quoted_apostrophes(self):
+        # Phones type ’; quote marks around a word are not part of it; 'o (me) keeps its apostrophe.
+        self.assertEqual(self.reverse(["Bal’a", "'Bal'a'", "Anar’alah belore", "'Bal'a dash, malanore'", "Selama 'o"]),
+                         ["greetings", "greetings", "by the light of the sun", "greetings, traveler", "justice me"])
+
     def test_reverse_matches_whole_phrases_first(self):
-        self.assertEqual(self.reverse(["Bal'a dash, malanore!", "Al diel shala"]),
-                         ["greetings, traveler!", "safe travels"])
+        self.assertEqual(self.reverse(["Bal'a dash, malanore!", "Al diel shala", "Doral ana'diel?"]),
+                         ["greetings, traveler!", "safe travels", "how fare you?"])
 
     def test_reverse_canon_only_skips_generated_words(self):
         self.assertEqual(self.reverse(["la"], canonOnly=True), ["[la]"])

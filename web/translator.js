@@ -1,7 +1,8 @@
 // The "Strict" engine of index.html, in both directions: pure functions over the lexicon, so node can
-// test them (tests/web/translator.test.js). The forward rules mirror src/thalassian/syntax/parser.py:
-// whole canon phrases first, then "by X" -> anar'X, then "X of the Y" -> Y'X, then pronoun suffixes,
-// and word lookup that prefers what Blizzard glossed.
+// test them (tests/web/run_translator.js runs them for tests/test_syntax/test_translator_canon.py).
+// The forward rules mirror src/thalassian/syntax/parser.py: whole canon phrases first, then
+// "by X" -> anar'X, then "X of the Y" -> Y'X, then pronoun suffixes, and word lookup that prefers
+// what Blizzard glossed.
 (function (root) {
     "use strict";
 
@@ -11,14 +12,15 @@
     // Words that translate but never take a pronoun suffix: "and you" is not "rea'a".
     const FUNCTION_WORDS = new Set([...DROP_WORDS, "and", "by", "і", "та"]);
     const ARTICLES = new Set(["the", "a", "an"]);
-    const PRONOUN_SUFFIXES = {
+    // Maps, not plain objects: a typed word such as "constructor" must not find Object.prototype.
+    const PRONOUN_SUFFIXES = new Map(Object.entries({
         "нас": "na", "ми": "anu", "нам": "na", "us": "na", "we": "anu",
         "ти": "a", "тобі": "a", "тебе": "a", "you": "a",
         "я": "o", "мені": "o", "мене": "o", "i": "o", "me": "o",
         "їх": "dan", "вони": "danu", "them": "dan", "they": "danu"
-    };
-    const PRONOUN_ENCLITICS = { "na": "us", "anu": "we", "a": "you", "o": "me", "dan": "them", "danu": "they" };
-    const BASIS_RANK = { attested: 0, segment: 1, name: 2, epithet: 2, inferred: 3, unverified: 4, generated: 5 };
+    }));
+    const PRONOUN_ENCLITICS = new Map(Object.entries({ "na": "us", "anu": "we", "a": "you", "o": "me", "dan": "them", "danu": "they" }));
+    const BASIS_RANK = new Map(Object.entries({ attested: 0, segment: 1, name: 2, epithet: 2, inferred: 3, unverified: 4, generated: 5 }));
     const NOUN_POS = new Set(["noun", "proper noun"]);
     const CONTRACTIONS = [[/'re\b/gi, " are"], [/'m\b/gi, " am"], [/'ve\b/gi, " have"], [/'ll\b/gi, " will"]];
     const WORD = /[a-zа-яєіїґ']+/g;
@@ -44,7 +46,7 @@
     // Lookup prefers what Blizzard glossed over what was inferred or generated, then Thalassian over
     // the other dialects; ties keep lexicon order.
     function canonRank(e) {
-        const basis = e.canon_basis in BASIS_RANK ? BASIS_RANK[e.canon_basis] : Object.keys(BASIS_RANK).length;
+        const basis = BASIS_RANK.has(e.canon_basis) ? BASIS_RANK.get(e.canon_basis) : BASIS_RANK.size;
         return [basis, e.source === "thalassian" ? 0 : 1];
     }
 
@@ -113,7 +115,7 @@
     const OF = new Set(["of"]);
     const isWord = item => item.kind === "token" && !item.punct;
     const isAny = (item, words) => isWord(item) && words.has(item.lower);
-    const isPronoun = item => isWord(item) && item.lower in PRONOUN_SUFFIXES;
+    const isPronoun = item => isWord(item) && PRONOUN_SUFFIXES.has(item.lower);
     // An item that translates to an elven word of its own: not punctuation, a function word or a pronoun.
     const isContent = item => item.kind !== "token" || (!item.punct && !FUNCTION_WORDS.has(item.lower) && !isPronoun(item));
 
@@ -199,7 +201,7 @@
         for (let i = 0; i < items.length; i++) {
             const item = items[i];
             if (isWord(item) && !FUNCTION_WORDS.has(item.lower) && i + 1 < items.length && isPronoun(items[i + 1])) {
-                out.push({ ...item, suffix: "'" + PRONOUN_SUFFIXES[items[i + 1].lower] });
+                out.push({ ...item, suffix: "'" + PRONOUN_SUFFIXES.get(items[i + 1].lower) });
                 i++;
                 continue;
             }
@@ -251,6 +253,11 @@
         return translated.join(" ").replace(/ ([.,!?;])/g, "$1");
     }
 
+    // Phones type ’ for the apostrophe ("Bal’a"), and a quote mark around a word is not part of it
+    // ("'Bal'a'" is Bal'a).
+    const plainApostrophes = text => text.replace(/[‘’ʼ]/g, "'");
+    const unquoted = w => w.replace(/^'+|'+$/g, "") || w;
+
     // Thalassian -> English. Multi-word entries ("al diel shala") are matched first, then each whole word
     // ("bal'a", "anar'alah"); only a word the lexicon lacks is split at its apostrophes, with 'na, 'o and
     // the other enclitic pronouns read as pronouns.
@@ -267,10 +274,12 @@
             if (!phrases.has(k) || moreCanon(e, phrases.get(k))) phrases.set(k, e);
             longest = Math.max(longest, n);
         }
-        // A phrase's gloss is shown by its first sense; a word's whole gloss proper is shown.
+        // A phrase's gloss is shown by its first sense; a word's whole gloss proper is shown. Its closing
+        // ? or ! is left to the input's own punctuation ("Doral ana'diel?" is "how fare you?", not "??").
         // An entry whose meaning is unknown (empty gloss proper) shows as [word], like a missing one.
         const gloss = (e, w, first) => {
-            const t = (first ? glossProper(e.translation.en).split("/")[0] : glossProper(e.translation.en)).trim();
+            const t = (first ? glossProper(e.translation.en).split("/")[0] : glossProper(e.translation.en))
+                .trim().replace(/\s*[.!?]+$/, "");
             return t || `[${w}]`;
         };
         const lookup = w => {
@@ -286,7 +295,7 @@
             return found.pos === "noun" && !t.startsWith("[") ? t + "(s)" : t;
         };
 
-        const tokens = text.match(/[A-Za-z\']+|[.,!?;]/g) || [];
+        const tokens = plainApostrophes(text).match(/[A-Za-z\']+|[.,!?;]/g) || [];
         const translated = [];
         for (let i = 0; i < tokens.length;) {
             const token = tokens[i];
@@ -302,7 +311,7 @@
                     if (tokens[j] !== ",") break;
                     continue;
                 }
-                key.push(tokens[j].toLowerCase());
+                key.push(unquoted(tokens[j].toLowerCase()));
                 const k = key.join(" ");
                 if (key.length >= 2 && phrases.has(k)) match = { end: j, entry: phrases.get(k), text: k };
             }
@@ -311,13 +320,15 @@
                 i = match.end + 1;
                 continue;
             }
-            const w = token.toLowerCase();
+            // The word as typed first: 'o (me) is an entry with its apostrophe.
+            const typed = token.toLowerCase();
+            const w = lookup(typed) !== null ? typed : unquoted(typed);
             const whole = lookup(w);
             if (whole !== null) {
                 translated.push(whole);
             } else {
                 w.split("'").filter(Boolean).forEach((part, n) => {
-                    if (n > 0 && PRONOUN_ENCLITICS[part]) translated.push(PRONOUN_ENCLITICS[part]);
+                    if (n > 0 && PRONOUN_ENCLITICS.has(part)) translated.push(PRONOUN_ENCLITICS.get(part));
                     else translated.push(lookup(part) || `[${part}]`);
                 });
             }
