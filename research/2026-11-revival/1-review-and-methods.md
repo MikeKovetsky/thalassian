@@ -110,7 +110,7 @@ The check behind this table is an edit-distance scan against 273 attested forms 
 | 17 | `tests/test_syntax/test_parser.py:47,57-59` | Tests lock in bugs: `[bind]'o` and `Quel thalas` (canon is `Quel'Thalas`) | Fixing order or compounding will "break" tests. `tests/test_morphology/` and `tests/test_phonetics/` are empty, and `test_ast.py` duplicates `test_parser.py`. |
 | 18 | `pyproject.toml:39,32,35` | Homepage is `github.com/Portal-OS/thalassian` (the repo is MikeKovetsky/thalassian); the spaCy model is pinned 3.7.1 while spaCy is unpinned; `mkdocs-material` is a runtime dependency | Install and version drift. |
 
-Bugs 1 to 4, 12 and 17 were fixed on 2026-11-18. The web translator now lives in `web/translator.js`, so node can test it.
+Bugs 1 to 4, 12 and 17 were fixed on 2026-11-18. The web translator now lives in `web/translator.js`, so node can test it. The same day both engines followed the grammar audit, which fixed bugs 7 and 13 and the code half of bug 8: *anu* and *danu* are no longer pronouns (*dan* stays, as the grammar's labelled invention), and no engine adds or undoes a plural ending. `grammar.md` states the plural until the audit's rewrite of it lands.
 
 ## 3. Docs and claims that do not hold
 
@@ -305,19 +305,20 @@ The cheapest large win is a phrasebook that matches whole canon phrases first.
 | Web, Thalassian → English | 6 exact, F1 0.439 | 32 exact, F1 0.902 | (no switch) |
 
 Word by word, the two engines now give the same output for all 39 glosses. The 6 phrases gained come from *anar'* (3), *rea* (1, bug 1) and the canon-first lookup (2: *dinoriel* for "keeper", *Shorel'aran* for "farewell", bug 2). The rules:
-- A "By [the] X" that opens a clause becomes *anar'X* (*Anar'alah*). A following "of the Y" puts its head first (*Anar'alah belore*, *Anar'endal dracon*). Any other "by" is left out, because the "by" of a passive is not *anar'*: "Saved by magic" is *Ama noral'arkhana*.
+- A "By [the] X" that opens a clause becomes *anar'X* (*Anar'alah*), also before a possessive ("By our blood" is *Anar'sin na*). A following "of the Y" puts its head first (*Anar'alah belore*, *Anar'endal dracon*). Any other "by" is left out, because the "by" of a passive is not *anar'*: "Saved by magic" is *Ama noral'arkhana*, which only the phrasebook gives.
 - An "of" phrase puts its head first, with no word for "of" (*alah belore*, *endal dracon*, *falor talah*). Only a capitalized name, "X of the Y", becomes the compound Y'X (*Sin'dorei* for "Children of the Blood"). The corpus writes "Children of the blood" in lower case, so word by word it gives *Dorei sin*, and the phrasebook gives the name.
 - "and" gives *rea*.
 - Pronouns follow grammar section 5:
   - *'na*, *'o*, *'a* and *'dan* join the verb.
-  - A subject pronoun is the same form as a free word before the verb.
-  - *mal* "your" comes before the noun, and *na* "our" after it.
+  - A subject pronoun is the same form as a free word before the verb, and never joins the word before it ("Forever we rise" is *Bindel na aranal*).
+  - *mal* "your" comes before the noun, and *na* "our" after it, past any adjective the lexicon knows ("our noble heart" is *Quel alann na*).
   - *anu* and *danu* are no longer pronouns.
+  - With "Canon only" on, the web engine keeps a pronoun form only when the lexicon has it as a canon word (*na*), and leaves the others in brackets.
 - Nouns take no plural.
 - A whole canon phrase must fill its clause, so *Anu belore dela'na* is not spliced into a longer sentence.
 - Lookup prefers attested entries over segments, then names, then inferred, unverified and generated words, and Thalassian over the other dialects.
 
-Both English builders run the phrasebook and these rules. The spaCy builder, used when spaCy is installed, only adds spaCy's lemmas, and keeps the input's word order. It is tested with a stand-in for spaCy, not with spaCy itself, which is not installed here (bug 6).
+Both English builders run the phrasebook and these rules. The spaCy builder, used when spaCy is installed, adds only spaCy's lemmas and plural tags, which help find a word's entry, and keeps the input's word order. It is tested with a stand-in for spaCy, not with spaCy itself, which is not installed here (bug 6).
 
 ## 6. Grammar findings from the canon
 

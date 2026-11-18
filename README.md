@@ -30,9 +30,9 @@ Try the language engine directly in your browser:
 ## 📚 Examples of Elven Grammar at Work
 
 Our engine matches whole canon phrases first. Word by word it follows the [grammar](docs/methodology/grammar.md):
-- object pronouns join the verb (*dela'na*, "guides us");
-- *mal* "your" comes before its noun, and nouns take no plural;
-- "and" is *rea*, and a "By" that opens an oath is *anar'*;
+- object pronouns join the verb (*dela'na*, "guides us"), and a subject pronoun is a free word before it (*na*, "we");
+- *mal* "your" comes before its noun, *na* "our" after it, and nouns take no plural;
+- "and" is *rea*, and a "By" that opens a clause, as an oath does, is *anar'*;
 - an "of" phrase puts its head first (*alah belore*, "the light of the sun"). Only a capitalized name becomes a modifier-first compound (*Sin'dorei*, "Children of the Blood").
 
 *   **English:** *"The sun guides us."*
