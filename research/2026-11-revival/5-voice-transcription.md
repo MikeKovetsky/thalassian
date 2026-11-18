@@ -22,7 +22,7 @@ Applied to the lexicon (314 entries, up from 310) by [scripts/apply_voice.py](sc
 - **6 notes updated:** *aeesha'el banu zepharaalis*, *zephrali*, *shen'dorei*, *shen'dar*, *zephras* and *adore*.
 - **3 held back as low confidence:** *aeesha'el* alone, *aradash*, and a note on *anu*.
 
-Every candidate, with the four readings behind it, is in [5-candidates.json](5-candidates.json).
+Every candidate, with the readings behind it, is in [5-candidates.json](5-candidates.json): four for each voice line, except "Favorable wins to you, friend", which Wizper alone heard.
 
 ## Method
 
