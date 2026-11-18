@@ -31,7 +31,7 @@
     "pos": "noun",
     "canon": true,
     "root": "anor",
-    "notes": "Used in 'ashal'anore' (great people).",
+    "notes": "Used in 'Selama ashal'anore' (Justice for our people).",
     "source": "thalassian",
     "canon_basis": "segment"
   },
@@ -72,10 +72,10 @@
       "uk": "для (у 'ashal'anore' = 'для нашого народу')",
       "en": "for (in ashal'anore 'for our people')"
     },
-    "pos": "adjective",
+    "pos": "preposition",
     "canon": false,
     "root": "ashal",
-    "notes": "Used in 'Selama ashal'anore' (Justice for our great people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
+    "notes": "Used in 'Selama ashal'anore' (Justice for our people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
     "source": "thalassian",
     "canon_basis": "unverified",
     "evidence": [
@@ -127,7 +127,7 @@
     "pos": "noun",
     "canon": false,
     "root": "dash",
-    "notes": "Contextual from 'Bal'a dash' (Greetings/Peace be with you). Not canon (2026-11 audit): No separate meaning is attested; only the unit 'bal'a dash' = 'Greetings'.",
+    "notes": "Contextual from 'Bal'a dash' (Greetings). Not canon (2026-11 audit): No separate meaning is attested; only the unit 'bal'a dash' = 'Greetings'.",
     "source": "thalassian",
     "canon_basis": "unverified",
     "evidence": [
@@ -261,7 +261,7 @@
     "pos": "adjective",
     "canon": true,
     "root": "quel",
-    "notes": "Quel'Thalas (High Kingdom), Quel'dorei (High Elves), Quel'Serrar (High Blade).",
+    "notes": "Quel'Thalas (High Home), Quel'dorei (High Elves), Quel'Serrar (High Blade).",
     "source": "thalassian",
     "canon_basis": "segment"
   },
@@ -274,7 +274,7 @@
     "pos": "noun",
     "canon": true,
     "root": "thal",
-    "notes": "Quel'Thalas (High Kingdom).",
+    "notes": "Quel'Thalas (High Home).",
     "source": "thalassian",
     "canon_basis": "segment",
     "evidence": [
@@ -342,7 +342,7 @@
     "pos": "noun",
     "canon": true,
     "root": "selam",
-    "notes": "Selama ashal'anore (Justice for our great people).",
+    "notes": "Selama ashal'anore (Justice for our people).",
     "source": "thalassian",
     "canon_basis": "segment"
   },
@@ -868,7 +868,7 @@
       "uk": "через/клянусь (прийменник 'by')",
       "en": "by"
     },
-    "pos": "noun",
+    "pos": "preposition",
     "canon": true,
     "root": "anar",
     "notes": "Anar'alah belore",
@@ -1139,7 +1139,7 @@
       "uk": "буде (частка майбутнього/модальності)",
       "en": "will (future/modal particle)"
     },
-    "pos": "verb",
+    "pos": "particle",
     "canon": true,
     "root": "ru",
     "notes": "Ru shanna shal'dorei (The nightborne will survive)",
@@ -1339,7 +1339,7 @@
     "pos": "noun",
     "canon": false,
     "root": "shalla",
-    "notes": "Midnight (12.0) Alpha: Anu'shalla Void Owl Not canon (2026-11 audit): Mount epithet, not a Blizzard translation statement; not Thalassian; previous gloss and 'Midnight datamine' provenance were wrong.",
+    "notes": "Formerly cited as 'Midnight (12.0) Alpha: Anu'shalla Void Owl'. Not canon (2026-11 audit): Mount epithet, not a Blizzard translation statement; not Thalassian; previous gloss and 'Midnight datamine' provenance were wrong.",
     "source": "darnassian",
     "canon_basis": "unverified",
     "evidence": [
@@ -1379,7 +1379,7 @@
     "pos": "adjective",
     "canon": false,
     "root": "alon",
-    "notes": "Extrapolated from Nethermancer Sepethrea dying quote: 'Anu bala belore alon!' (Hail the sun's eternal blessing)",
+    "notes": "Extrapolated from Nethermancer Sepethrea dying quote: 'Anu bala belore alon!' (an old fan reading, 'Hail the sun's eternal blessing'; the phrase is untranslated, and no source gives anu = 'hail')",
     "source": "extrapolated",
     "canon_basis": "inferred"
   },
@@ -1724,7 +1724,7 @@
     "pos": "adjective",
     "canon": false,
     "root": "iser",
-    "notes": "Ysera (Green Aspect) -> isera (green) Not canon (2026-11 audit): No source glosses 'isera' as green. Ysera's name is not glossed, and 'Isera'duna' is a word from the in-game language scrambler.",
+    "notes": "Ysera (Green Aspect) -> isera (green). Not canon (2026-11 audit): No source glosses 'isera' as green. Ysera's name is not glossed, and 'Isera'duna' is a word from the in-game language scrambler.",
     "source": "darnassian",
     "canon_basis": "unverified",
     "evidence": [
@@ -2354,7 +2354,7 @@
     "pos": "adjective",
     "canon": false,
     "root": "thiel",
-    "notes": "Diminutive root; contrasts with ashal (great)",
+    "notes": "Diminutive root.",
     "source": "generated_swadesh",
     "canon_basis": "generated"
   },
@@ -2588,9 +2588,9 @@
     "pos": "noun",
     "canon": false,
     "root": "dris",
-    "notes": "New fundamental root for eye/sight; used in many compounds",
+    "notes": "Darnassian 'eye', segmented from Elun'dris 'the Eye of Elune'. First added in March 2026 as a generated word.",
     "source": "darnassian",
-    "canon_basis": "generated",
+    "canon_basis": "inferred",
     "evidence": [
       {
         "quote": "Elun'dris = the Eye of Elune.",
@@ -4475,7 +4475,7 @@
     "pos": "noun",
     "canon": true,
     "root": "shal + nan",
-    "notes": "Darnassian (Skyborne dialect). In-game audio crystal: the rebels' masked leader in Eldre'Thalas; 'the word Shal'nan became a battle cry synonymous with rebellion'. Listed among Blizzard-confirmed Darnassian translations on warcraft.wiki.gg. Not related to Thalassian shal'na 'no!/please' (similar shape only); compare Darnassian Shal'nar 'aunt'.",
+    "notes": "Darnassian (Skyborne dialect). In-game audio crystal: the rebels' masked leader in Eldre'Thalas; 'the word Shal'nan became a battle cry synonymous with rebellion'. Listed among Blizzard-confirmed Darnassian translations on warcraft.wiki.gg. Similar in shape to Thalassian shal'na and Darnassian Shal'nar, both 'aunt', but not related in meaning.",
     "source": "skyborne",
     "canon_basis": "attested",
     "confidence": "high",
@@ -4655,7 +4655,7 @@
     "pos": "noun",
     "canon": true,
     "root": "eluvi + ana",
-    "notes": "",
+    "notes": "Darnassian (Skyborne dialect). A sword (item 276188, flavor text 'The Night Dancer.'), raised in spell 1314923 ('Raising Eluvi'ana, the Night Dancer.'); twin of Eluvi'tor. The epithet may not be a literal translation: if it were, ana would mean 'dancer', against Thalassian ana 'fare/status'.",
     "source": "skyborne",
     "canon_basis": "epithet",
     "confidence": "high",
@@ -5299,7 +5299,7 @@
     "pos": "proper noun",
     "canon": true,
     "root": "thalas",
-    "notes": "'thalas' matches the lexicon's thalas (home/kingdom), as in Quel'Thalas. 'eldre' is not explained in the client.",
+    "notes": "'thalas' matches the lexicon's thalas (home), as in Quel'Thalas. 'eldre' is not explained in the client.",
     "source": "darnassian",
     "canon_basis": "name",
     "confidence": "high",
@@ -5536,13 +5536,13 @@
   {
     "word": "aeesha'el banu zepharaalis",
     "translation": {
-      "en": "(farewell blessing closing a letter) roughly 'may peace and the winds of Zephras go with you'; literally '... of Zephras'",
-      "uk": "(прощальне благословення наприкінці листа) приблизно 'хай мир і вітри Зефраса будуть з тобою'; дослівно '... Зефраса'"
+      "en": "(farewell blessing closing a letter) roughly 'may the winds of Zephras go with you'; literally '... of Zephras'",
+      "uk": "(прощальне благословення наприкінці листа) приблизно 'хай вітри Зефраса будуть з тобою'; дослівно '... Зефраса'"
     },
     "pos": "interjection",
     "canon": false,
     "root": "aeesha'el + banu + zephara-alis",
-    "notes": "Darnassian (Skyborne dialect). The only Skyborne sentence in the client: the valediction of MailTemplate 652, from the Valanaar druid trainer Lotheluum Starbreeze to a young Skyborne druid ($n) after the Bear Form quests, in the slot where other letters close with 'Regards,' or 'Light be with you.' zepharaalis = Zephraalis, a Skyborne surname built on Zephras. aeesha'el and banu are attested nowhere else; their glosses are guesses. 2-candidates.json has the same phrase at low ('not translated'); this file rates the gloss medium because of the Zephraalis match and the letter's closing slot.",
+    "notes": "Darnassian (Skyborne dialect). The only Skyborne sentence in the client: the valediction of MailTemplate 652, from the Valanaar druid trainer Lotheluum Starbreeze to a young Skyborne druid ($n) after the Bear Form quests, in the slot where other letters close with 'Regards,' or 'Light be with you.' zepharaalis = Zephraalis, a Skyborne surname built on Zephras. aeesha'el and banu are attested nowhere else; their glosses are guesses. An earlier 'peace' reading of aeesha'el rested on el 'peace', which the audit removed. 2-candidates.json has the same phrase at low ('not translated'); this file rates the gloss medium because of the Zephraalis match and the letter's closing slot.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
@@ -5781,7 +5781,7 @@
     "pos": "particle",
     "canon": false,
     "root": "as",
-    "notes": "Darnassian (Skyborne dialect). Every Skyborne island name ends in -as on a weather word: Zephr-as (zephyr), Sirocc-as (sirocco), Anvil-as (anvil cloud). Also the Forever zone Shen'dral-as beside the house name Shen'dral-ar, which gives -as 'place' against -ar 'people, house'. Perhaps the same -as as in thal-as 'home/kingdom' (lexicon).",
+    "notes": "Darnassian (Skyborne dialect). Every Skyborne island name ends in -as on a weather word: Zephr-as (zephyr), Sirocc-as (sirocco), Anvil-as (anvil cloud). Also the Forever zone Shen'dral-as beside the house name Shen'dral-ar, which gives -as 'place' against -ar 'people, house'. Perhaps the same -as as in thal-as 'home' (lexicon).",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
