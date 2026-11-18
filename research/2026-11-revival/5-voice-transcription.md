@@ -44,7 +44,7 @@ The Gemini models got a blind prompt (in [scripts/transcribe.py](scripts/transcr
 2. Wizper, the cheapest listener, heard the other 186 lines.
 3. The other three listeners heard 22 lines: the 20 where Wizper's reading was not English or had an elvish name, the line it heard as "The sky site will guide you" (it is "The Skysight will guide you"), and the one line where Wizper had timed out, which turned out to be English ("For the Windshapers!").
 
-**Readings.** A form is accepted when listeners from at least two families agree on it. Meanings come only from the slot that plays the line (the emote, or the NPC's greeting or farewell list) and from the English lines in the same slot. They never come from the listeners.
+**Readings.** A form is accepted when listeners from at least two families agree on it. Where the letter, an item name or a Darnassian phrase already writes the word, its spelling is kept, even against the listeners' vowels (see the spelling choices below). Meanings come only from the slot that plays the line (the emote, or the NPC's greeting or farewell list) and from the English lines in the same slot. They never come from the listeners.
 
 ## Elvish lines
 
