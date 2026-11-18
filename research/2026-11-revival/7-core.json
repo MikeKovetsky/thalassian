@@ -1,0 +1,3098 @@
+[
+ {
+  "part": "dorei",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Quel'dorei"
+    ],
+    "inside": [
+     "Kaldorei"
+    ]
+   },
+   "darnassian": {
+    "exact": [],
+    "inside": [
+     "kaldorei"
+    ]
+   },
+   "nazja": {
+    "exact": [
+     "Ba'anthalso-dorei!"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Ru shanna shal'dorei",
+     "Ru-shanna shal'dorei",
+     "Shal'dorei",
+     "ru shanna shal'dorei",
+     "shal'dorei"
+    ],
+    "inside": []
+   },
+   "skyborne": {
+    "exact": [
+     "shen'dorei"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "belono sil'aru, belore'dorei",
+     "belore'dorei",
+     "dorei",
+     "quel'dorei",
+     "ren'dorei",
+     "shindu sin'dorei",
+     "sin'dorei",
+     "tal anu'men no sin'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "alah",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ishnu-alah.",
+     "Thandae-alah..."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "alah",
+     "ishnu-alah"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "In'alah"
+    ],
+    "inside": []
+   },
+   "skyborne": {
+    "exact": [
+     "banu alah"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "alah",
+     "anar'alah",
+     "anar'alah belore",
+     "thas'alah"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "adore",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Elune-Adore."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "adore",
+     "elune-adore"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [
+     "Zin-Azshari adore."
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "An'ratha adore"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thalas",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Eldre'Thalas",
+     "Nar'thalas"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "eldre'thalas"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Nar'thalas vas manari"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "quel'thalas",
+     "thalas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "aran",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ameth'Aran",
+     "Bashal'Aran",
+     "Biel'aran",
+     "Loreth'Aran",
+     "Morlos'Aran",
+     "Ordil'Aran",
+     "Tethris Aran"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Aran'arcana",
+     "Aran'ethil",
+     "Shal'Aran"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "band'or shorel'aran",
+     "shorel'aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ari",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [],
+    "inside": [
+     "Zin-Azshari"
+    ]
+   },
+   "darnassian": {
+    "exact": [],
+    "inside": [
+     "zin-azshari"
+    ]
+   },
+   "nazja": {
+    "exact": [
+     "Azsh'ari"
+    ],
+    "inside": [
+     "Zin-Azshari adore."
+    ]
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "azsh",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [],
+    "inside": [
+     "Azshara",
+     "Zin-Azshari"
+    ]
+   },
+   "darnassian": {
+    "exact": [],
+    "inside": [
+     "zin-azshari"
+    ]
+   },
+   "nazja": {
+    "exact": [
+     "Azsh'ari",
+     "Azsh'ir"
+    ],
+    "inside": [
+     "Zin-Azshari adore."
+    ]
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "azshari",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Zin-Azshari"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "zin-azshari"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [
+     "Zin-Azshari adore."
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "belore",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Fandu-dath-belore?"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "fandu-dath-belore"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "anar'alah belore",
+     "anar'anel belore",
+     "anar'sin arkhana! anar'endal belore!",
+     "anu belore dela'na",
+     "belono sil'aru, belore'dorei",
+     "belore",
+     "belore'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dor",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Arcan'dor"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "andu-falah-dor",
+     "dor"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Arcan'dor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ethil",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ande'thoras-ethil."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "ande'thoras-ethil",
+     "irana'ethil"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Aran'ethil"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kal",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [],
+    "inside": [
+     "Kaldorei"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "kal"
+    ],
+    "inside": [
+     "kaldorei"
+    ]
+   },
+   "shalassian": {
+    "exact": [
+     "Kal'theros maldin"
+    ],
+    "inside": []
+   }
+  },
+  "controls": [
+   "zandali"
+  ]
+ },
+ {
+  "part": "nal",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tor ilisar'thera'nal!"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "tor ilisar'thera'nal"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "fora'nal"
+    ],
+    "inside": [
+     "aranal"
+    ]
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "nar",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Nar'thalas"
+    ],
+    "inside": [
+     "Mennar"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "nar'valas",
+     "shal'nar"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Nar'thala vas manari",
+     "Nar'thalas vas manari",
+     "Thala nar'valas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "quel",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Quel'Dormir",
+     "Quel'Serrar",
+     "Quel'dorei"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Quel'vala thonos",
+     "quel'vala thonos"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "quel",
+     "quel'dorei",
+     "quel'thalas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shen",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shen'dralar"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "shen'dralar",
+     "shen'dralas"
+    ],
+    "inside": []
+   },
+   "skyborne": {
+    "exact": [
+     "shen",
+     "shen'dar",
+     "shen'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tel",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tel'arn"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "tel"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Tel'anor",
+     "Tel'vasha",
+     "Tel'velath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thero",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Thero'shan"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "thero"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [
+     "Ash'thero sanguine!",
+     "Ash-thero-sauguine!"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thoras",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ande'thoras-ethil."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "ande'thoras-ethil"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Ash'thoras danil",
+     "Ash'thoras denil"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tor",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shalla'tor",
+     "Tor ilisar'thera'nal!"
+    ],
+    "inside": [
+     "Toreth"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "shalla'tor",
+     "tor ilisar'thera'nal"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Tor'theras falar"
+    ],
+    "inside": [
+     "Ishnal toreth"
+    ]
+   }
+  },
+  "controls": [
+   "zandali"
+  ]
+ },
+ {
+  "part": "zin",
+  "tier": 1,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Zin-Azshari",
+     "Zin-Malor"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "zin",
+     "zin-azshari"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [
+     "Zin'jatar",
+     "Zin-Azshari adore."
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ana",
+  "tier": 2,
+  "branches": {
+   "nazja": {
+    "exact": [],
+    "inside": [
+     "Ash'valana thure."
+    ]
+   },
+   "shalassian": {
+    "exact": [
+     "N'eth ana"
+    ],
+    "inside": []
+   },
+   "skyborne": {
+    "exact": [
+     "eluvi'ana"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "ana",
+     "doral ana'diel"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shal",
+  "tier": 2,
+  "branches": {
+   "darnassian": {
+    "exact": [
+     "shal'nar"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Ru shanna shal'dorei",
+     "Ru-shanna shal'dorei",
+     "Shal'Aran",
+     "Shal'asan torah",
+     "Shal'dorei",
+     "Shal'san Tora",
+     "ru shanna shal'dorei",
+     "shal",
+     "shal'dorei"
+    ],
+    "inside": []
+   },
+   "skyborne": {
+    "exact": [
+     "shal'nan"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "shal'na"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "anu",
+  "tier": 2,
+  "branches": {
+   "darnassian": {
+    "exact": [
+     "anu'dorini talah"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Rath, anu'telar",
+     "Rath-anu'tanos"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "anu belore dela'na",
+     "tal anu'men no sin'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ash",
+  "tier": 2,
+  "branches": {
+   "darnassian": {
+    "exact": [
+     "ash karath"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [
+     "Ash'thero sanguine!",
+     "Ash'valana thure.",
+     "Ash-thero-sauguine!"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Ash'thoras danil",
+     "Ash'thoras denil",
+     "Ash’toras denil"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tal",
+  "tier": 2,
+  "branches": {
+   "darnassian": {
+    "exact": [
+     "tal'doren"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "An'ratha... an'tal-thandros!",
+     "Tal'ashar",
+     "tal'ashar"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "tal",
+     "tal anu'men no sin'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ameth",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ameth'Aran"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "bel'ameth"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ande",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ande'thoras-ethil."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "ande'thoras-ethil"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ara",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ara-Hinam"
+    ],
+    "inside": [
+     "Azshara"
+    ]
+   },
+   "thalassian": {
+    "exact": [],
+    "inside": [
+     "aranal"
+    ]
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "arcan",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Arcan'dor"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Arcan'dor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "aru",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Aru-Talis"
+    ],
+    "inside": []
+   },
+   "thalassian": {
+    "exact": [
+     "belono sil'aru, belore'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": [
+   "zandali"
+  ]
+ },
+ {
+  "part": "bandu",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Bandu Thoribas!",
+     "Bandu thoribas!"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "bandu thoribas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dal",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Sharas'dal"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "dal",
+     "ishnu-dal-dieb"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dath",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Dath'Remar Sunstrider",
+     "Fandu-dath-belore?"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "fandu-dath-belore"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dralar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shen'dralar"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "dralar",
+     "shen'dralar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dris",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Elun'dris"
+    ],
+    "inside": [
+     "Shandris Feathermoon"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "dris",
+     "elun'dris"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "eldre",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Eldre'Thalas",
+     "Eldre'thar"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "eldre'thalas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ellemayne",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ellemayne"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "ellemayne"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "elun",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Elun'dris"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "elun'dris"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "elune",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Elune-Adore."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "elune-adore"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "eth",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [],
+    "inside": [
+     "Loreth'Aran",
+     "Toreth"
+    ]
+   },
+   "shalassian": {
+    "exact": [
+     "N'eth ana"
+    ],
+    "inside": [
+     "Ishnal toreth"
+    ]
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "fandu",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Fandu-dath-belore?"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "fandu-dath-belore"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ilisar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tor ilisar'thera'nal!"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "tor ilisar'thera'nal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ishnu",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ishnu-alah."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "ishnu",
+     "ishnu-alah",
+     "ishnu-dal-dieb"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kaldorei",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kaldorei"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "kaldorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "lathar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lathar'Lazal"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "lathar'lazal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "lazal",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lathar'Lazal"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "lathar'lazal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "lor",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shaha... lor'ma..."
+    ],
+    "inside": [
+     "Loreth'Aran"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "shaha lor'ma"
+    ],
+    "inside": []
+   }
+  },
+  "controls": [
+   "zandali"
+  ]
+ },
+ {
+  "part": "men",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [],
+    "inside": [
+     "Mennar"
+    ]
+   },
+   "thalassian": {
+    "exact": [
+     "tal anu'men no sin'dorei"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "serrar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Quel'Serrar"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "serrar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shaha",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shaha... lor'ma..."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "shaha lor'ma"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shalla",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shalla'tor"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "shalla",
+     "shalla'tor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shan",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shan'do",
+     "Thero'shan"
+    ],
+    "inside": [
+     "Shandris Feathermoon"
+    ]
+   },
+   "darnassian": {
+    "exact": [
+     "ama'shan",
+     "shan"
+    ],
+    "inside": []
+   }
+  },
+  "controls": [
+   "zandali"
+  ]
+ },
+ {
+  "part": "shu",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "shu dalees-na."
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "shu dalas na"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "suramar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Suramar"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Nor'bethos Suramar",
+     "Nor'thonos Suramar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thera",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kalo'thera",
+     "Tor ilisar'thera'nal!"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "tor ilisar'thera'nal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thoribas",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Bandu Thoribas!",
+     "Bandu thoribas!"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "bandu thoribas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "toreth",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Toreth"
+    ],
+    "inside": []
+   },
+   "shalassian": {
+    "exact": [
+     "Ishnal toreth"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "val",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Val'sharah"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [],
+    "inside": [
+     "Ash'valana thure."
+    ]
+   }
+  },
+  "controls": [
+   "titan"
+  ]
+ },
+ {
+  "part": "vashj",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lestharia Vashj",
+     "Vashj",
+     "Vashj'ir"
+    ],
+    "inside": []
+   },
+   "nazja": {
+    "exact": [
+     "Vashj'elan"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "vor",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Vor'Illian"
+    ],
+    "inside": []
+   },
+   "darnassian": {
+    "exact": [
+     "vor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "aellis",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Aellis"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "althalaxx",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Althalaxx"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "altius",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kir'altius"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "arn",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Peroth'arn",
+     "Tel'arn"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "asterion",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Asterion"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "aszune",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Aszune"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "athrikus",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Athrikus Narassin"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "azshara",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Azshara"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "azsuna",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Azsuna"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "bashal",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Bashal'Aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "benel",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Benel'derath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "beth",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Beth'mora"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "biel",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Biel'aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "constellas",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Constellas"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dalees",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "shu dalees-na."
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dejahna",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Dejahna"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "del",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Del'theon"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "derath",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Benel'derath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "desdel",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Desdel Stareye"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dormir",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Quel'Dormir"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "dranath",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Thal'dranath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "eldarath",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Eldarath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "elisande",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Elisande"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ethel",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ethel Rethor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "falanaar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Falanaar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "faronaar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Faronaar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "farondis",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Farondis"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "feathermoon",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shandris Feathermoon"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "feleor",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Feleor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "galar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Galar'thus Rivertree"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "galhara",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Galhara"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "garo",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Garo'thal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "garuhod",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Garuhod"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "hajiri",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Hajiri"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "hargo",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Hargo'then"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "hinam",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ara-Hinam"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "hyjal",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Hyjal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "illian",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Vor'Illian"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "illidan",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Illidan Stormrage"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "isildien",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Isildien"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "jarod",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Jarod Shadowsong"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kalimdor",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kalimdor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": [
+   "titan"
+  ]
+ },
+ {
+  "part": "kalo",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kalo'thera"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kalytha",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kalytha"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "karius",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Karius"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kel",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kel'Theril"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kelorn",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kelorn Nightblade"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kir",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kir'altius",
+     "Tarsis Kir-Moldir"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "koltharius",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Koltharius"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "kur",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kur'talos Ravencrest"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "latosius",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Latosius"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "lestharia",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lestharia Vashj"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "loreth",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Loreth'Aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "lorlathil",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lorlathil"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "lornesta",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lornesta"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "maiev",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Maiev Shadowsong"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "malfurion",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Malfurion Stormrage"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "malor",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Zin-Malor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "mathystra",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Mathystra"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "mavrana",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Mavrana Mooncrest"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "meitre",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Meitre"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "mennar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Mennar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "millicent",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Millicent Serene"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "minate",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ro'minate"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "moldir",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tarsis Kir-Moldir"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "mooncrest",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Mavrana Mooncrest"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "moonfang",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Nerus Moonfang"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "mora",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Beth'mora"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "morlos",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Morlos'Aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "najak",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Sarath'Najak"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "narassin",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Athrikus Narassin"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "nerus",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Nerus Moonfang"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "nightblade",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kelorn Nightblade"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "oneiros",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Oneiros"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ordil",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ordil'Aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "peroth",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Peroth'arn"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "quin",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Quin'thatano"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ralore",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Then'Ralore"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "ravencrest",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kur'talos Ravencrest"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "remar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Dath'Remar Sunstrider"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "rethor",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Ethel Rethor"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "rivertree",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Galar'thus Rivertree"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "rol",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Rol'tharak"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "sarath",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Sarath'Najak"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "sargath",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Sargath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "serene",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Millicent Serene"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shadowsong",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Jarod Shadowsong",
+     "Maiev Shadowsong"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shandaral",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shandaral"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "shandris",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Shandris Feathermoon"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "sharah",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Val'sharah"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "sharas",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Sharas'dal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "siralen",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Siralen"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "solarsal",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Solarsal"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "stareye",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Desdel Stareye"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "stormrage",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Illidan Stormrage",
+     "Malfurion Stormrage"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "sunstrider",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Dath'Remar Sunstrider",
+     "Sunstrider"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "talis",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Aru-Talis"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "talos",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kur'talos Ravencrest"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tarsis",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tarsis Kir-Moldir"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tethris",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tethris Aran"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thal",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Garo'thal",
+     "Thal'dranath"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thandae",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Thandae-alah..."
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thar",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Eldre'thar"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tharak",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Rol'tharak"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thatano",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Quin'thatano"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thelserai",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Thelserai"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "then",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Hargo'then",
+     "Then'Ralore",
+     "Varo'then"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "theon",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Del'theon"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "theril",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Kel'Theril"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "theryssia",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Theryssia"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "thus",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Galar'thus Rivertree"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tithian",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Yol'Tithian"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tortheldrin",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tortheldrin"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "tyrande",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tyrande Whisperwind"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "valarian",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Valarian"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "vandros",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Vandros"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "varo",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Varo'then"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "vellian",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Lo'Vellian"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "whisperwind",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Tyrande Whisperwind"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "xavius",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Xavius"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "yol",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Yol'Tithian"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ },
+ {
+  "part": "zoram",
+  "tier": 3,
+  "branches": {
+   "ancient": {
+    "exact": [
+     "Zoram"
+    ],
+    "inside": []
+   }
+  },
+  "controls": []
+ }
+]
