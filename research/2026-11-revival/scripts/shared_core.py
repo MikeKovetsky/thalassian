@@ -67,7 +67,7 @@ def without_quotations(forms):
 
 
 def witnesses(forms):
-    """part -> branch -> {"exact": [forms], "inside": [forms]}."""
+    """part -> branch -> {"exact": {forms}, "inside": {forms}}: sets of the forms that show the part."""
     whole = defaultdict(lambda: defaultdict(set))  # part -> branch -> forms having it as a whole part
     for f in without_quotations(forms):
         for p in parts(f["form"]):
