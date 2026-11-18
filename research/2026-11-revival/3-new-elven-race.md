@@ -263,7 +263,7 @@ None of the new data contradicts a canon entry outright. Six points are worth no
 
 Phase 2 ran every lookup that the dump can answer; the results are in "Client check (phase 2)" above. Four lookups need data the dump does not have:
 
-1. **Transcribe the 10 voice files** listed in the client-check section. Done on 2026-11-18 by three machine listeners ([report 5](5-voice-transcription.md)); a person listening to the 12 elvish files would still settle their vowels.
+1. **Transcribe the 10 voice files** listed in the client-check section. Done on 2026-11-18 by three machine listeners ([report 5](5-voice-transcription.md)); a person has since listened for the stress of *banu* and the *h* of *alah*, and more listening would still settle their vowels.
 2. **Zephras Isle quest and book text.** This needs a Skyborne character to play the zone so the quest and page caches fill. Then search `wdb_strings.jsonl` for:
    1. *Shal'nan* and the four "Rebellion in Eldre'Thalas" crystals.
    2. Rorian's line in quest 92474, to settle *shan'dorei* against *shen'dorei*.

@@ -151,7 +151,7 @@ Sixteen more requests were rejected (HTTP 422, which fal does not bill) or faile
 
 ## Next steps
 
-1. **More listening by a person to the 12 elvish files** (24 seconds of audio, in `.wowf-extract/skyborne_vo/`) would settle the vowels, the *aradash* middle word, *aeesha'el* and file 7745197. The stress of *banu* and the final *h* of *alah* are settled.
+1. **More listening by a person to the 12 elvish files** (24 seconds of audio, in `.wowf-extract/skyborne_vo/`) would settle the vowels, the *aradash* middle word, *aeesha'el* and file 7745197. The stress of *banu* is settled; the final *h* of *alah* is usually heard, but not clearly.
 2. **The 392 unextracted files.**
    - The 11 aggro lines and the alert lines are the likeliest to hold more battle cries.
    - `tools/wowf/run_all.sh` can extract them on the Mac mini.

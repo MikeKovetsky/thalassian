@@ -6047,7 +6047,7 @@
         "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
       },
       {
-        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "quote": "stress always ba-NU. H is usually heard but it is not clear",
         "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
@@ -6088,7 +6088,7 @@
         "where": "client voice file sound/creature/7478494/7478494_greetings_7744875.ogg (FileDataID 7744875), transcribed 2026-11-18 by Wizper only; report 5"
       },
       {
-        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "quote": "stress always ba-NU. H is usually heard but it is not clear",
         "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
@@ -6121,7 +6121,7 @@
         "where": "client voice file sound/creature/7478494/7478494_greetings_7744878.ogg (FileDataID 7744878), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       },
       {
-        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "quote": "stress always ba-NU. H is usually heard but it is not clear",
         "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
@@ -6154,7 +6154,7 @@
         "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
       },
       {
-        "quote": "Stress always ba-NU. H is usually heard but it is not clear.",
+        "quote": "stress always ba-NU. H is usually heard but it is not clear",
         "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
