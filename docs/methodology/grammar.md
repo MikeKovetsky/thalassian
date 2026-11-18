@@ -35,7 +35,7 @@ This is the core feature of Thalassian grammar:
   - `a` = you
   - `na` = us/we
   - *Example:* `dela'na` (guides us).
-- **Prepositions:** The translator drops "for", "to", "in", "on", "with" and "but", and uses an attested word for the rest. The canon has prepositions (*anar* "by", *ashal* "for" as the audit reads it), so dropping is the engine's convention, not a rule of the language.
+- **Prepositions:** The translator drops "for", "to", "in", "on", "with", "of" and "but", and the articles. Any other preposition is looked up like any word: "by" gives *anar'*, "from" gives Darnassian *bessae*, and one the lexicon lacks stays in brackets ("[at]"). The canon has prepositions (*anar* "by", *ashal* "for" as the audit reads it), so dropping is the engine's convention, not a rule of the language.
   - "by" is the proclitic *anar'*: "by the light" is *Anar'alah*, and "by the breath of the dragon" is *Anar'endal dracon*.
   - "and" is *rea*.
   - *Example:* `Selama ashal'anore` (Justice for our people). The audit reads *ashal* as "for", so this example does keep a preposition.

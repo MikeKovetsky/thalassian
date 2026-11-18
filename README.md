@@ -36,7 +36,7 @@ Our engine matches whole canon phrases first. Word by word, pronouns attach to v
 *   **English:** *"Children of the void"*
     **Thalassian:** `Ren'dorei` *(Canon match; word by word it is also built as void + children)*
 *   **English:** *"Rise, dead ones!"*
-    **Thalassian:** `Aranal, ledel!` *(Extrapolated from Prince Keleseth)*
+    **Thalassian:** `Aranal, ledel ore!` *(Extrapolated from Prince Keleseth; "ones" is the generated word ore)*
 *   **English:** *"Justice for our people."*
     **Thalassian:** `Selama ashal'anore.` *(Canon match)*
 

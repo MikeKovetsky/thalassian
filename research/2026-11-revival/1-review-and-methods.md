@@ -296,7 +296,7 @@ Worst cases:
 
 The cheapest large win is a phrasebook that matches whole canon phrases first.
 
-**Status on 2026-11-18:** bugs 1 to 4 and 12 are fixed, and both engines match whole canon phrases first. The scores below come from [scripts/evaltranslator.py](scripts/evaltranslator.py), on the current lexicon. "Before" is the code on `main` before the fix, scored the same way. With the phrasebook on, a phrase whose gloss is in the lexicon is reproduced by lookup, so 39 of 39 only shows that the lookup works. The phrasebook-off column shows the word-by-word rules on their own.
+**Status on 2026-11-18:** bugs 1 to 4 and 12 are fixed, and both engines match whole canon phrases first. The scores below come from [scripts/evaltranslator.py](scripts/evaltranslator.py), on the current lexicon. "Before" is the code on `main` before the fix, scored the same way. With the phrasebook on, a phrase whose gloss is in the lexicon is reproduced by lookup, so 39 of 39 only shows that the lookup works. The phrasebook-off column shows the word-by-word rules on their own. "Exact" compares the words in order and ignores case, punctuation and apostrophes, as the March evaluation did, so 4 of the 20 phrasebook-off matches lack the canon apostrophe (*Alar annalas*, *Ban dinoriel*, *Felo melorn*, *Quel thalas*).
 
 | Engine | Before | Phrasebook on | Phrasebook off |
 |---|---|---|---|
@@ -304,7 +304,7 @@ The cheapest large win is a phrasebook that matches whole canon phrases first.
 | Web, English → Thalassian | 9 exact, F1 0.743 | 39 exact, F1 1.0 | 20 exact, F1 0.806 |
 | Web, Thalassian → English | 6 exact, F1 0.439 | 32 exact, F1 0.902 | (no switch) |
 
-The rules behind the phrasebook-off gain all come from section 6:
+The 11 phrases gained word by word come from these rules. The compounds (5 phrases) and *anar'* (3) follow section 6; *rea* (1) is bug 1, and the lookup (2: *dinoriel* for "keeper", *Shorel'aran* for "farewell") is bug 2.
 - "X of [the] Y", where X is a noun and the "of" phrase ends at Y, becomes the compound Y'X (*Sin'dorei*, *Ren'dorei*, *Thas'alah*, *Thas'dorah*). A verb after Y ends the phrase: "the children of the blood guide us" is *Sin'dorei dela'na*.
 - "by [the] X" becomes *anar'X* (*Anar'alah*, *Anar'endal*). A following "of the Y" stays a free genitive, head first (*Anar'alah belore*, *Anar'endal dracon*).
 - A longer "of" phrase, where Y is not a noun or a noun follows it, also stays free and head first (*falor talah*, "the chill of true death").
