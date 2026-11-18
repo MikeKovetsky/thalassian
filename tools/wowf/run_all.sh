@@ -38,6 +38,8 @@ if [ -z "${SKIP_PULL:-}" ]; then
   grep -E ';sound/(character/skyborne_elf_(male|female)/vo_skyborne_elf_(male|female)_(hello|bye|thank|welcome|yw|no|nod|apologize|congratulate|flirt|joke|cheer|charge|follow|flee|healme|helpme|incoming|openfire|attackmytarget|wait|train|beg|threaten|taunt|whoa|oops|oom|rasp|violin|bored)_|creature/(7478487|7478494)/[0-9]+_(greetings|farewell|pissed)_)' \
     "$OUT/raw/listfile-lf.csv" > "$OUT/raw/vo_list.txt"
   rm -f "$OUT/raw/listfile-lf.csv"
+  # delete the remote scratch folder however this ends (set -e stops at the first failed step)
+  trap 'ssh "$HOST" "rm -rf ~/thalassian-scratch" || echo "could not delete ~/thalassian-scratch on $HOST" >&2' EXIT
   ssh "$HOST" 'mkdir -p ~/thalassian-scratch'
   scp -q "$REPO/tools/wowf/casc.py" "$OUT/_vendor/TACTKeys-WoW.txt" "$OUT/raw/db2list.txt" "$OUT/raw/vo_list.txt" \
     "$HOST:thalassian-scratch/"
@@ -53,6 +55,7 @@ if [ -z "${SKIP_PULL:-}" ]; then
   rsync -a "$HOST:$Q/Cache/ADB/enUS/DBCache.bin" "$HOST:$Q/Cache/WDB/enUS/" "$OUT/raw/cache/"
   rsync -a "$HOST:$Q/Logs/Hotfix.log" "$HOST:$Q/Logs/Sound.log" "$HOST:$Q/Logs/QuestCache.log" "$HOST:$Q/Logs/Tact.log" "$OUT/raw/logs/"
   ssh "$HOST" 'rm -rf ~/thalassian-scratch'
+  trap - EXIT
 fi
 
 if [ -z "$BUILD" ]; then

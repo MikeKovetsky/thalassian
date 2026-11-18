@@ -497,6 +497,37 @@ def cdn_get(hosts, path, key, rng=None, timeout=60):
 
 
 # --------------------------------------------------------------------------
+# Writing extracted files
+# --------------------------------------------------------------------------
+def safe_dest(out, rel):
+    """The file under `out` for a listfile path, or None if the path would land outside `out`.
+    The community listfile is downloaded, so its paths are not trusted."""
+    root = os.path.abspath(out)
+    dst = os.path.abspath(os.path.join(root, rel.replace("\\", "/")))
+    return dst if dst.startswith(root + os.sep) else None
+
+
+def extract_file(casc, ckey, out, rel, data=None):
+    """Write one file (its bytes in `data`, or read by content key) to out/rel.
+    Returns None when written, otherwise why it was not."""
+    dst = safe_dest(out, rel)
+    if dst is None:
+        return "path leaves the output folder"
+    if data is None:
+        try:
+            data = casc.read_ckey(ckey) if ckey else None
+        except MissingKey as e:
+            # a single-chunk file has no size table, so it cannot be zero-filled like the others
+            return "encrypted with unknown key %s" % e
+    if data is None:
+        return "not on disk"
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    with open(dst, "wb") as g:
+        g.write(data)
+    return None
+
+
+# --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
 def main(argv=None):
@@ -561,19 +592,12 @@ def main(argv=None):
             print("fetched from CDN:", len(remote), "of", len(need), "not on disk")
         for fd_s, rel in items:
             fd = int(fd_s)
-            ck = fmap.get(fd)
-            data = remote.get(fd)
-            if data is None:
-                data = c.read_ckey(ck) if ck else None
-            if data is None:
+            why = extract_file(c, fmap.get(fd), a.out, rel, remote.get(fd))
+            if why:
                 miss += 1
-                print("MISSING", fd, rel)
-                continue
-            dst = os.path.join(a.out, rel.replace("\\", "/"))
-            os.makedirs(os.path.dirname(dst) or ".", exist_ok=True)
-            with open(dst, "wb") as g:
-                g.write(data)
-            ok += 1
+                print("MISSING", fd, rel, "(%s)" % why)
+            else:
+                ok += 1
         print("extracted", ok, "missing", miss)
         if c.missing_keys:
             print("unknown TACT keys (zeroed chunks):", " ".join(sorted(c.missing_keys)))
