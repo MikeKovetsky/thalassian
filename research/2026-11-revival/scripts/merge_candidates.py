@@ -14,10 +14,11 @@ Policy (decided in the main session, recorded in research/2026-11-revival/merge-
 - Decisions the files leave open are in MANUAL, and notes or parts of speech that still describe a gloss
   the audit replaced are fixed by CORRECTIONS; both are logged.
 
-The merge runs once, on the pre-revival lexicon (commit 42eb9cf). To reproduce lexicon.json and
-merge-log.md, from the repo root:
+The merge runs once, on the pre-revival lexicon (commit 42eb9cf). apply_localization.py then applies
+4-candidates.json on top. To reproduce lexicon.json and merge-log.md, from the repo root:
   git show 42eb9cf:src/thalassian/data/lexicon.json > src/thalassian/data/lexicon.json
   python3 research/2026-11-revival/scripts/merge_candidates.py
+  python3 research/2026-11-revival/scripts/apply_localization.py
 """
 import json
 import os

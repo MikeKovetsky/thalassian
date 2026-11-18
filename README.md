@@ -75,7 +75,8 @@ We treat conlanging as software engineering. The project is structured as a prop
 - [x] **WoW Forever client mining**: Read the game client's tables, hotfixes and caches (`tools/wowf/`).
 - [x] **Canon audit**: Every canon entry checked against its source; wrong meanings fixed (November 2026).
 - [x] **Skyborne (Shen'dorei)**: Vocabulary of the new WoW Forever elven race.
-- [ ] **Localized text mining**: Chinese and Korean clients sometimes translate elven lines; mine them for new meanings.
+- [x] **Localized text mining**: Blizzard's Chinese and Korean dialogue tables, mined for the elven lines the localizers translated ([report](research/2026-11-revival/4-localization-mining.md)).
+- [ ] **Server-side localized lines**: the TBC Kael'thas lines whose Chinese glosses the wiki reports are not in the client's tables, so those glosses are still unverified.
 - [ ] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`).
 - [x] **Typography Engine**: Integrated Elvish Runic fonts for visual rendering in the web app.
 - [x] **Reverse Translator**: Auto-detects Elvish and translates back to English.

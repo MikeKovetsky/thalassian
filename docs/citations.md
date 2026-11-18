@@ -7,8 +7,11 @@ This document lists the primary canonical sources, community resources, and data
   - *Eversong Woods & Silvermoon City (The Burning Crusade)*: In-game dialogue, NPC greetings, and interactable environmental objects (e.g., "Anar'alah Belore" shrines).
   - *Suramar (Legion)*: Shalassian dialogue, spellcasting quotes, and Ancient Nightborne Tomes. Quotes from First Arcanist Thalyssra, Chief Telemancer Oculeth, and Arcanist Valtrois.
   - *Tempest Keep & Magister's Terrace (The Burning Crusade)*: Boss combat dialogue (Kael'thas Sunstrider, High Astromancer Solarian, Nethermancer Sepethrea).
-- **World of Warcraft: The War Within and Midnight (patches 11.2.7 to 12.1.5)**
+- **World of Warcraft: The War Within and Midnight (patches 11.2.7 to 12.1.7)**
   - *Shal'na* ("aunt"): Arator to Vereesa in the quest [What Might Come](https://warcraft.wiki.gg/wiki/What_Might_Come#Notes) (11.2.7). Blizzard's zhCN localization renders it 阿姨, "auntie".
+  - *Selama ashal'anore* ("Justice for our people"): Vereesa says it and glosses it herself in the quest [A Favor for Kinduru](https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru) (12.0.7), a second Blizzard source after the 2006 Warcraft Encyclopedia.
+  - *Vendel'o eranu* and *Elu'meniel mal alann*: sung by Sylvanas in the quest [Repent of the Highborne](https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne) (11.2.7).
+  - *Blizzard's localizations*: the zhCN, zhTW and koKR dialogue tables ([BroadcastText](https://wago.tools/db2/BroadcastText), retail 12.1.7.70892), mined for the elven lines the localizers translated. See the [localization mining report](../research/2026-11-revival/4-localization-mining.md).
   - *Anu'shalla*: the mount [Anu'shalla, Shadow's Guidance](https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance), an epithet rather than a translation.
   - *Correction (November 2026):* earlier versions of this page cited "leaked Midnight broadcast text" from Vereesa, Halduron and Lor'themar, and an "Anu'shalla Void Owl". Neither existed; the scraper that was meant to collect them was a stub. See the [canon audit](../research/2026-11-revival/1-review-and-methods.md).
 - **World of Warcraft: Forever (client 1.60.1.70938, November 2026)**

@@ -241,7 +241,7 @@ The wiki talk page reports zhTW glosses for three more Kael'thas lines: *Balamor
 **Limits:**
 - wago's text search covers only part of the table: "Silvermoon" returns just 7 rows.
 - Wowhead blocks scripted access (HTTP 403).
-- Mining at scale needs the full localized BroadcastText export, which I did not download. See next steps.
+- Mining at scale needs the full localized BroadcastText export, which I did not download. See next steps. (Update, same day: with Mike's go, the zhCN, zhTW and koKR tables were downloaded and mined; see [report 4](4-localization-mining.md).)
 
 ### Method 6: WoW Forever client scan (`.wowf-extract/`, build 1.60.1.70938, read-only)
 
@@ -310,6 +310,7 @@ These replace parts of `grammar.md`.
 3. **Localization mining at scale.**
    - **Mike's go is needed:** downloading the [wago.tools BroadcastText CSV](https://wago.tools/db2/BroadcastText) for zhTW, zhCN and koKR is a file download. The size is not advertised; it is likely tens of MB per locale.
    - Then filter for lines with elven tokens and back-translate the ones the localizers rendered. This is the only untried source of new official meanings, and two of three sampled lines confirmed it works.
+   - **Done on 2026-11-17** for the 10,888 rows shipped in the client (about 1 MB per locale): [report 4](4-localization-mining.md). The server-side lines are still open.
 4. **Correct the README, `lexicon.md`, `citations.md` and `grammar.md` claims** listed in section 3.
 5. **Replace the Markov generator** with the KN-plus-filter generator. Regenerate the Swadesh list with collision checks, and record `method` on every generated entry.
 6. **Data-integrity tests:**
