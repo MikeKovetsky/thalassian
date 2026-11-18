@@ -1,6 +1,6 @@
 # Skyborne voice transcription
 
-Run on 2026-11-18 over the 196 Skyborne voice files extracted from the WoW Forever client (1.60.1.70938), using four speech-to-text listeners on fal.ai. The spend cap was $3, and the run spent $1.61.
+Run on 2026-11-18 over all 588 Skyborne voice files in the WoW Forever client (1.60.1.70938), using four speech-to-text listeners on fal.ai. The spend cap was $3. The first 196 files cost $1.61, and the other 392 cost $0.98, so $2.59 in all.
 
 ## Findings
 
@@ -18,6 +18,11 @@ Run on 2026-11-18 over the 196 Skyborne voice files extracted from the WoW Forev
    - *shen'dorei* is "shen-dor-eye", ending in "eye", in the /charge "For the Shen'dorei!". Where the stress falls is unclear.
    - *Zephras* has two syllables, "ZEF-ras", in 14 of its 20 readings; the rest give *Zephyrus* or *Zephyros*.
    - *Shen'dar* is in "Shen'dar will not fall".
+6. **The other 392 files hold no elvish word.** Wizper heard all of them:
+   - The 106 player error lines are English sentences, such as "My inventory is full." and "I'm out of range." (55 distinct).
+   - The 286 combat and emote sounds are grunts, screams, laughs, kisses, a chicken's "bawk", and single syllables such as "Hyah!".
+
+   A second family, Gemini 3.8 Flash, heard the 52 NPC combat lines most likely to hold a word: all 11 aggro lines, and every line where Wizper heard a syllable that is not a common English interjection. Flash found no speech in 45, English in 3 ("No!", "Sure", "Cat"), and a single syllable in 4 (*choo*, *da*, *ka*, *shiya*), which its own notes call likely effort sounds. Wizper agreed on two of those four (*da* and *ka*), and an attack sound gives a syllable no meaning, so nothing was added to the lexicon.
 
 Applied to the lexicon (314 entries, up from 310) by [scripts/apply_voice.py](scripts/apply_voice.py):
 - **4 new entries:** *banu*, *banu alah*, *banu adora* and *aeesha'el banu zephrali*.
@@ -32,7 +37,12 @@ Every candidate, with the readings behind it, is in [5-candidates.json](5-candid
 - Every player emote line for both sexes.
 - All 30 greetings and 29 farewells of the two Skyborne NPC voice sets (folders 7478487 and 7478494, played through `NPCSounds` 3764, 3773 to 3776 and 3820).
 
-The client lists 392 more Skyborne voice files that were not extracted. Most are combat sounds: attack 57, alert 43, critical attack 41, wound 36, wind-up 27, death 21 and aggro 11.
+The client lists 392 more Skyborne voice files, extracted later the same day (8.2 minutes):
+- 236 combat sounds of the two NPC voice sets: attack 57, alert 43, critical attack 41, wound 36, wind-up 27, death 21 and aggro 11.
+- 106 player error lines, such as a full inventory or a target out of range.
+- 50 emote sounds: 40 player ones (cackle, applaud, chicken, sigh, roar, kiss, cry, yawn) and 10 "stand" lines of the NPC sets.
+
+To extract them, the files of `.wowf-extract/skyborne_vo_files.csv` not yet in `.wowf-extract/skyborne_vo/` went into a list of `fdid;path` lines. `tools/wowf/casc.py extract` then read them from the Mac mini's own CASC storage (no CDN download), in a scratch folder deleted afterwards. All 392 decode with ffmpeg, and none is silent.
 
 **Listeners.** The four listeners come from three model families: OpenAI's Whisper, ElevenLabs and Google's Gemini. Two Gemini models count as one family.
 - Wizper (fal's Whisper v3).
@@ -45,6 +55,7 @@ The Gemini models got a blind prompt (in [scripts/transcribe.py](scripts/transcr
 1. Three listeners (Wizper, Scribe v2 and Gemini 3.1 Pro) heard the 10 lines that report 3 listed as most worth hearing. All 10 turned out to be English. Gemini 3.8 Flash's 10 requests were rejected, because they turned reasoning off, which the router refuses, and they were not repeated.
 2. Wizper, the cheapest listener, heard the other 186 lines.
 3. The other three listeners heard 22 lines: the 20 where Wizper's reading was not English or had an elvish name, the line it heard as "The sky site will guide you" (it is "The Skysight will guide you"), and the one line where Wizper had timed out, which turned out to be English ("For the Windshapers!").
+4. Wizper heard the other 392 files. Gemini 3.8 Flash then heard the 52 NPC combat lines in finding 6. Wizper's one failure (HTTP 503) was retried and reads "Ugh!".
 
 **Readings.** A form is accepted when listeners from at least two families agree on it. Where the letter, an item name or a Darnassian phrase already writes the word, its spelling is kept, even against the listeners' vowels (see the spelling choices below). Meanings come only from the slot that plays the line (the emote, or the NPC's greeting or farewell list) and from the English lines in the same slot. They never come from the listeners.
 
@@ -141,19 +152,15 @@ Totals from the run's ledger (local, in `.wowf-extract/transcripts/ledger.jsonl`
 
 | Listener | Calls completed | Cost (USD) | How the cost is known |
 |---|---|---|---|
-| Wizper | 196 | 0.57 | $0.00111 a second, times wall time including upload: an upper bound (fal's Wizper page listed $0 a compute second when checked on 2026-11-18); one timeout is logged at its $0.006 estimate |
+| Wizper | 588 (196 + 392) | 1.42 (0.57 + 0.85) | $0.00111 a second, times wall time including upload: an upper bound (fal's Wizper page listed $0 a compute second when checked on 2026-11-18); a timeout and an HTTP 503 are logged at their $0.006 estimate |
 | ElevenLabs Scribe v2 | 32 | 0.26 | fal's listed $0.008 a minute, counted as a whole minute per call: an upper bound |
 | Gemini 3.1 Pro | 32 | 0.74 | The router's reported cost per call, $0.008 to $0.049 depending on how long the model reasoned |
-| Gemini 3.8 Flash | 22 | 0.04 | The router's reported cost per call |
-| **Total** | 282 | **1.61** | Cap $3.00 |
+| Gemini 3.8 Flash | 74 (22 + 52) | 0.17 (0.04 + 0.13) | The router's reported cost per call |
+| **Total** | 726 | **2.59** (1.61 + 0.98) | Cap $3.00 |
 
 Sixteen more requests were rejected (HTTP 422, which fal does not bill) or failed locally before reaching fal, and are logged at $0. The total is not independently confirmed: the API key cannot read fal's billing page, so the figure rests on the router's reports and on fal's listed prices.
 
 ## Next steps
 
 1. **More listening by a person to the 12 elvish files** (24 seconds of audio, in `.wowf-extract/skyborne_vo/`) would settle the vowels, the *aradash* middle word, *aeesha'el* and file 7745197. The stress of *banu* is settled; the final *h* of *alah* is usually heard, but not clearly.
-2. **The 392 unextracted files.**
-   - The 11 aggro lines and the alert lines are the likeliest to hold more battle cries.
-   - `tools/wowf/run_all.sh` can extract them on the Mac mini.
-   - Wizper would transcribe them for about $1 at this run's rate.
-3. **A Skyborne play session on the Mac mini** would cache the Zephras Isle quest text. That text is served by Blizzard's servers, so the client files on disk don't have it.
+2. **A Skyborne play session on the Mac mini** would cache the Zephras Isle quest text. That text is served by Blizzard's servers, so the client files on disk don't have it.

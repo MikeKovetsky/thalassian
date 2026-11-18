@@ -276,7 +276,7 @@ Phase 2 ran every lookup that the dump can answer; the results are in "Client ch
 ## What could not be found
 
 1. **A translation of "Aeesha'el banu zepharaalis".** Neither the web nor the client translates it. The client has the letter (`MailTemplate` 652) and the matching surname Zephraalis, but nothing for *aeesha'el* or *banu*.
-2. **Skyborne voice-line transcripts and battle cries.** None are online. The 196 extracted voice files were machine-transcribed on 2026-11-18 ([report 5](5-voice-transcription.md)); the 392 combat files listed in the client were not extracted.
+2. **Skyborne voice-line transcripts and battle cries.** None are online. The 196 extracted voice files were machine-transcribed on 2026-11-18 ([report 5](5-voice-transcription.md)); the other 392 files listed in the client, mostly combat sounds, were extracted and transcribed the same day and hold no elvish word.
 3. **Meanings for place names and given names.** Blizzard gives none: not for Valanaar, Thendal, Shen'dar, Ban'aethal, Falaath, Zephras, Eluvi'tor, Saeyleenan or Ur'seris.
 4. **The BlizzCon "Found Photographs" panel video.** It was not watched; the Blizzard written recap was used.
 5. **Wowhead and MMO-Champion.** Neither had a datamining post on Skyborne vocabulary. The Icy Veins lore article returned HTTP 403.
