@@ -2,7 +2,9 @@
 and the 39 official Thalassian phrases as gold. The Python engine is src/thalassian/syntax/parser.py; the web
 engine is web/translator.js, run under node. No test expects output the canon contradicts.
 """
+import json
 import os
+import subprocess
 import sys
 import unittest
 from types import SimpleNamespace
@@ -15,10 +17,13 @@ from thalassian.core.lexicon import load_lexicon  # noqa: E402
 from thalassian.syntax import parser  # noqa: E402
 from thalassian.syntax.parser import compile_sentence_en, compile_sentence_uk  # noqa: E402
 from thalassian.morphology.agglutination import (  # noqa: E402
-    PRONOUN_FORMS_EN, PRONOUN_FORMS_UK, POSSESSIVES_EN, POSSESSIVES_UK)
+    PRONOUN_FORMS_EN, PRONOUN_FORMS_UK, POSSESSIVES_EN, POSSESSIVES_UK, SUBJECTS_EN, SUBJECTS_UK)
 
-UKRAINIAN = ["сонце і ліс", "справедливість для тебе", "ми ведемо їх", "твоє серце", "я веду тебе"]
-UKRAINIAN_GOLD = ["Belore rea thas", "Selama a", "Na [ведемо]'dan", "Mal alann", "O [веду]'a"]
+WEB_ENGINE = os.path.join(E.REPO, "web", "translator.js")
+UKRAINIAN = ["сонце і ліс", "справедливість для тебе", "ми ведемо їх", "твоє серце", "я веду тебе", "вічно ми",
+             "з нами", "нашу кров", "наш шляхетний народ"]
+UKRAINIAN_GOLD = ["Belore rea thas", "Selama a", "Na [ведемо]'dan", "Mal alann", "O [веду]'a", "Bindel na", "Na",
+                  "Sin na", "Quel anore na"]
 PHRASES = [p for p, _ in E.GOLD]
 GLOSSES = [g for _, g in E.GOLD]
 # Word by word (phrasebook off), the rules alone must give these canon forms, apostrophes included. A name
@@ -53,12 +58,12 @@ class EngineCases:
         self.assertEqual(self.translate(["and", "the sun and the forest"]), ["Rea", "Belore rea thas"])
 
     def test_by_is_anar_only_where_it_opens_an_oath(self):
-        # Grammar 7.2: anar' is the "by" of oaths and invocations, a "By" that opens a clause. Any other "by" is
-        # left out. The "by" of a passive is not anar': the canon line "Saved by magic" is Ama noral'arkhana,
-        # which only the phrasebook gives.
-        self.assertEqual(self.translate(["By the light", "We rise by the light", "Rise, by the light!", "by"],
-                                        phrasebook=False),
-                         ["Anar'alah", "Na aranal alah", "Aranal, anar'alah!", ""])
+        # Grammar 7.2: anar' is the "by" of oaths and invocations, a "By" that opens a clause, even before a
+        # possessive. Any other "by" is left out. The "by" of a passive is not anar': the canon line "Saved by
+        # magic" is Ama noral'arkhana, which only the phrasebook gives.
+        self.assertEqual(self.translate(["By the light", "We rise by the light", "Rise, by the light!", "by",
+                                         "By our blood", "By my heart"], phrasebook=False),
+                         ["Anar'alah", "Na aranal alah", "Aranal, anar'alah!", "", "Anar'sin na", "Anar'alann o"])
         self.assertEqual(self.tr("Saved by magic"), "Ama noral'arkhana")
 
     def test_lookup_prefers_canon(self):
@@ -70,16 +75,20 @@ class EngineCases:
         self.assertEqual(self.tr("Justice for you"), "Selama a")
 
     def test_pronouns_follow_grammar_section_5(self):
-        # Object pronouns join the verb; a subject pronoun is the same form as a free word before it. anu is a
-        # wish particle and danu is gone, so neither is a pronoun.
+        # Object pronouns join the verb; a subject pronoun is the same form as a free word before it, even
+        # after an adverb. anu is a wish particle and danu is gone, so neither is a pronoun.
         self.assertEqual(self.translate(["We guide them", "I guide you", "guide us", "help me", "guide her",
-                                         "and you", "we", "they"]),
-                         ["Na dela'dan", "O dela'a", "Dela'na", "Vendel'o", "Dela'dan", "Rea a", "Na", "Dan"])
+                                         "and you", "we", "they", "Forever we rise", "Forever I guide you"]),
+                         ["Na dela'dan", "O dela'a", "Dela'na", "Vendel'o", "Dela'dan", "Rea a", "Na", "Dan",
+                          "Bindel na aranal", "Bindel o dela'a"])
 
     def test_possessives(self):
-        # Grammar 5.2: Thalassian mal "your" before the noun (Mal alann), not Darnassian dal; na "our" after it.
-        self.assertEqual(self.translate(["Your heart", "Our hearts", "guide her heart"]),
-                         ["Mal alann", "Alann na", "Dela alann dan"])
+        # Grammar 5.2: Thalassian mal "your" before the noun (Mal alann), not Darnassian dal; na "our" after it,
+        # and after any adjective before the noun (grammar 4). "yours" is mal too, never dal.
+        self.assertEqual(self.translate(["Your heart", "Our hearts", "guide her heart", "our noble heart",
+                                         "your noble heart", "yours", "hers"]),
+                         ["Mal alann", "Alann na", "Dela alann dan", "Quel alann na", "Mal quel alann", "Mal",
+                          "Dan"])
 
     def test_nouns_have_no_plural(self):
         # Grammar 3.2: number is unmarked, so neither engine adds -i or -ei.
@@ -180,6 +189,16 @@ class TestWebEngine(EngineCases, unittest.TestCase):
     def test_ukrainian_matches_the_python_engine(self):
         self.assertEqual(self.translate(UKRAINIAN), UKRAINIAN_GOLD)
 
+    def test_pronoun_tables_match_the_python_ones(self):
+        script = ("const T = require(process.argv[1]); const o = Object.fromEntries;"
+                  "process.stdout.write(JSON.stringify({forms: o(T.PRONOUN_FORMS), possessives: o(T.POSSESSIVES),"
+                  " subjects: [...T.SUBJECTS]}))")
+        web = json.loads(subprocess.run([E.NODE, "-e", script, WEB_ENGINE], capture_output=True, text=True,
+                                        check=True).stdout)
+        self.assertEqual(web["forms"], {**PRONOUN_FORMS_EN, **PRONOUN_FORMS_UK})
+        self.assertEqual({k: tuple(v) for k, v in web["possessives"].items()}, {**POSSESSIVES_EN, **POSSESSIVES_UK})
+        self.assertEqual(set(web["subjects"]), SUBJECTS_EN | SUBJECTS_UK)
+
     def test_words_named_like_object_properties(self):
         # "constructor" once found Object.prototype.constructor in the pronoun tables.
         self.assertEqual(self.translate(["guide constructor"]), ["Dela [constructor]"])
@@ -197,8 +216,9 @@ class TestWebEngine(EngineCases, unittest.TestCase):
 
     def test_reverse_reads_pronouns_and_no_plural(self):
         # The free pronouns and mal are not lexicon entries; a noun has no plural form to undo.
-        self.assertEqual(self.reverse(["O dela'a", "Mal alann", "Na dela'dan", "doreii"]),
-                         ["I/me/my guide you", "your heart", "us/our guide him/her/it/them", "[doreii]"])
+        self.assertEqual(self.reverse(["O dela'a", "Mal alann", "Na dela'dan", "Alann dan", "doreii"]),
+                         ["I/me/my guide you", "your heart", "us/our guide him/her/it/them",
+                          "heart he/she/it/they/his/her/its/their", "[doreii]"])
 
     def test_reverse_matches_whole_phrases_first(self):
         self.assertEqual(self.reverse(["Bal'a dash, malanore!", "Al diel shala", "Doral ana'diel?"]),

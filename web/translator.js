@@ -2,7 +2,8 @@
 // test them (tests/web/run_translator.js runs them for tests/test_syntax/test_translator_canon.py).
 // The forward rules mirror src/thalassian/syntax/parser.py and docs/methodology/grammar.md: whole canon
 // phrases first, then "By X" opening a clause -> anar'X, then names "X of the Y" -> Y'X, then possessives,
-// then pronoun suffixes, and word lookup that prefers what Blizzard glossed. Nouns have no plural.
+// then "By" again before a possessive, then pronoun suffixes, and word lookup that prefers what Blizzard
+// glossed. Nouns have no plural.
 (function (root) {
     "use strict";
 
@@ -20,22 +21,34 @@
     const PRONOUN_FORMS = new Map(Object.entries({
         "we": "na", "us": "na", "i": "o", "me": "o", "you": "a",
         "he": "dan", "she": "dan", "it": "dan", "they": "dan", "him": "dan", "her": "dan", "them": "dan",
-        "ми": "na", "нас": "na", "нам": "na", "я": "o", "мене": "o", "мені": "o",
-        "ти": "a", "тебе": "a", "тобі": "a", "ви": "a", "вас": "a", "вам": "a",
-        "він": "dan", "вона": "dan", "воно": "dan", "вони": "dan",
-        "його": "dan", "її": "dan", "їх": "dan", "йому": "dan", "їй": "dan", "їм": "dan"
+        "ми": "na", "нас": "na", "нам": "na", "нами": "na", "я": "o", "мене": "o", "мені": "o", "мною": "o",
+        "ти": "a", "тебе": "a", "тобі": "a", "тобою": "a", "ви": "a", "вас": "a", "вам": "a", "вами": "a",
+        "він": "dan", "вона": "dan", "воно": "dan", "вони": "dan", "його": "dan", "її": "dan", "їх": "dan",
+        "йому": "dan", "їй": "dan", "їм": "dan", "ним": "dan", "нею": "dan", "ними": "dan", "нього": "dan",
+        "неї": "dan", "них": "dan", "ньому": "dan", "ній": "dan"
     }));
+    // A subject is a free word before its verb, so these subject forms never join the word before them:
+    // "then we guide them" is [then] na dela'dan, not [then]'na.
+    const SUBJECTS = new Set(["i", "we", "he", "she", "they", "я", "ми", "ти", "ви", "він", "вона", "воно", "вони"]);
     // Possessives: [form, before the noun]. mal "your" comes first (canon: mal alann, "your heart"); na "our"
-    // follows the noun; o "my" and dan "his, her, its, their" follow it by analogy (invented).
+    // follows the noun; o "my" and dan "his, her, its, their" follow it by analogy (invented). "yours" and the
+    // other independent forms take the same forms, and the Ukrainian ones are listed in every case.
     const POSSESSIVES = new Map([
-        ...["your", "твій", "твоя", "твоє", "твої", "ваш", "ваша", "ваше", "ваші"].map(w => [w, ["mal", true]]),
-        ...["our", "наш", "наша", "наше", "наші"].map(w => [w, ["na", false]]),
-        ...["my", "мій", "моя", "моє", "мої"].map(w => [w, ["o", false]]),
-        ...["his", "her", "its", "their", "його", "її", "їхній", "їхня", "їхнє", "їхні"].map(w => [w, ["dan", false]])
+        ...["your", "yours", "твій", "твого", "твоєму", "твоїм", "твоя", "твоєї", "твоїй", "твою", "твоєю", "твоє",
+            "твої", "твоїх", "твоїми", "ваш", "вашого", "вашому", "вашим", "ваша", "вашої", "вашій", "вашу", "вашою",
+            "ваше", "ваші", "ваших", "вашими"].map(w => [w, ["mal", true]]),
+        ...["our", "ours", "наш", "нашого", "нашому", "нашим", "наша", "нашої", "нашій", "нашу", "нашою", "наше",
+            "наші", "наших", "нашими"].map(w => [w, ["na", false]]),
+        ...["my", "мій", "мого", "моєму", "моїм", "моя", "моєї", "моїй", "мою", "моєю", "моє", "мої", "моїх",
+            "моїми"].map(w => [w, ["o", false]]),
+        ...["his", "her", "hers", "its", "their", "theirs", "його", "її", "їхній", "їхнього", "їхньому", "їхнім",
+            "їхня", "їхньої", "їхню", "їхньою", "їхнє", "їхні", "їхніх", "їхніми"].map(w => [w, ["dan", false]])
     ]);
     const PRONOUN_ENCLITICS = new Map(Object.entries({ "na": "us", "a": "you", "o": "me", "dan": "him/her/it/them" }));
     // Free pronouns and possessives the lexicon lacks (na "us/our" is an entry).
-    const FREE_PRONOUNS = new Map(Object.entries({ "o": "I/me/my", "a": "you", "dan": "he/she/it/they", "mal": "your" }));
+    const FREE_PRONOUNS = new Map(Object.entries({
+        "o": "I/me/my", "a": "you", "dan": "he/she/it/they/his/her/its/their", "mal": "your"
+    }));
     const BASIS_RANK = new Map(Object.entries({ attested: 0, segment: 1, name: 2, epithet: 2, inferred: 3, unverified: 4, generated: 5 }));
     const NOUN_POS = new Set(["noun", "proper noun"]);
     const CONTRACTIONS = [[/'re\b/gi, " are"], [/'m\b/gi, " am"], [/'ve\b/gi, " have"], [/'ll\b/gi, " will"]];
@@ -226,17 +239,23 @@
         return out;
     }
 
-    // A possessive before a content word: mal goes before it, na, o and dan after it. Anywhere else a
+    // A possessive before a noun phrase: mal goes before it, na, o and dan after it. The noun phrase is the
+    // next content word, with any adjectives before it: "our noble heart" is quel alann na. Anywhere else a
     // possessive word is a pronoun ("guide her" -> dela'dan).
-    function applyPossessives(items) {
+    function applyPossessives(items, isAdjective) {
         const out = [];
         for (let i = 0; i < items.length; i++) {
             const item = items[i];
-            if (isWord(item) && POSSESSIVES.has(item.lower) && i + 1 < items.length && isContent(items[i + 1])) {
-                const [form, before] = POSSESSIVES.get(item.lower);
-                out.push({ kind: "possessive", form, before, target: items[i + 1] });
-                i++;
-                continue;
+            if (isWord(item) && POSSESSIVES.has(item.lower)) {
+                let end = i + 1;
+                while (end + 1 < items.length && isContent(items[end]) && isAdjective(items[end]) &&
+                    isContent(items[end + 1])) end++;
+                if (end < items.length && isContent(items[end])) {
+                    const [form, before] = POSSESSIVES.get(item.lower);
+                    out.push({ kind: "possessive", word: item, form, before, targets: items.slice(i + 1, end + 1) });
+                    i = end;
+                    continue;
+                }
             }
             out.push(item);
         }
@@ -249,14 +268,16 @@
 
     // A word followed by an object pronoun takes it as a suffix ("guide us" -> dela'na). A function word
     // does not ("justice for you" keeps its "you"), nor does a pronoun: "I guide you" is o dela'a, with the
-    // subject a free word before the verb.
+    // subject a free word before the verb. For the same reason a subject form ("we", "ми") never joins the
+    // word before it.
     function pairPronouns(items) {
         const out = [];
         for (let i = 0; i < items.length; i++) {
             const item = items[i];
-            if (isWord(item) && !FUNCTION_WORDS.has(item.lower) && !isPronoun(item) && i + 1 < items.length &&
-                isPronoun(items[i + 1])) {
-                out.push({ ...item, suffix: "'" + pronounForm(items[i + 1].lower) });
+            const next = items[i + 1];
+            if (isWord(item) && !FUNCTION_WORDS.has(item.lower) && !isPronoun(item) && next !== undefined &&
+                isPronoun(next) && !SUBJECTS.has(next.lower)) {
+                out.push({ ...item, pronoun: next });
                 i++;
                 continue;
             }
@@ -272,7 +293,15 @@
         const tokens = (expandContractions(text).match(/[A-Za-zА-Яа-яЄєІіЇїҐґ\']+|[.,!?;]/g) || [])
             .map(t => ({ kind: "token", text: t, lower: t.toLowerCase(), punct: PUNCT.test(t) }));
         const book = options.phrasebook === false ? new Map() : buildPhrasebook(lexicon, canonOnly);
-        const items = pairPronouns(applyPossessives(applyCompounds(applyProclitics(applyPhrasebook(tokens, book)))));
+        // Whether a word is an adjective tells how far a possessive's noun phrase goes, whatever Canon Only
+        // shows of the word itself.
+        const isAdjective = item => {
+            const found = isWord(item) ? findWord(lexicon, item.lower, false) : null;
+            return !!found && found.pos === "adjective";
+        };
+        const steps = applyPossessives(applyCompounds(applyProclitics(applyPhrasebook(tokens, book))), isAdjective);
+        // "By" again after the possessives, for "By our blood" (anar'sin na).
+        const items = pairPronouns(applyProclitics(steps));
 
         // "" for a dropped word; [word] for one the lexicon lacks.
         const word = item => {
@@ -291,7 +320,7 @@
             if (item.kind === "fixed") return item.text;
             if (item.kind === "proclitic") return attach(by ? by.word : "", render(item.target));
             if (item.kind === "possessive") {
-                const target = render(item.target);
+                const target = item.targets.map(render).filter(Boolean).join(" ");
                 return (item.before ? [item.form, target] : [target, item.form]).filter(Boolean).join(" ");
             }
             if (item.kind === "compound") {
@@ -302,7 +331,10 @@
                 return [render(item.head), render(item.modifier)].filter(Boolean).join(" ");
             }
             const w = word(item);
-            return w && w + (item.suffix || "");
+            if (!item.pronoun) return w;
+            // A dropped base must not take the pronoun with it.
+            if (!w) return word(item.pronoun);
+            return `${w}'${pronounForm(item.pronoun.lower)}`;
         };
 
         const translated = [];
@@ -400,7 +432,11 @@
         return translated.join(" ").replace(/ ([.,!?;])/g, "$1");
     }
 
-    const Translator = { strictTranslate, reverseTranslate, findWord, buildPhrasebook, glossProper, canonRank };
+    // The pronoun tables are exported so a test can check them against the Python ones.
+    const Translator = {
+        strictTranslate, reverseTranslate, findWord, buildPhrasebook, glossProper, canonRank,
+        PRONOUN_FORMS, POSSESSIVES, SUBJECTS
+    };
     if (typeof module !== "undefined" && module.exports) module.exports = Translator;
     else root.Translator = Translator;
 })(this);
