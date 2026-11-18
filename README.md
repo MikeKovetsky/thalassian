@@ -29,10 +29,12 @@ Try the language engine directly in your browser:
 
 ## 📚 Examples of Elven Grammar at Work
 
-Our engine understands agglutinative grammar (pronouns attach to verbs, prepositions are dropped, adjectives precede nouns).
+Our engine matches whole canon phrases first. Word by word, pronouns attach to verbs, most prepositions are dropped (but "by" is *anar'* and "and" is *rea*), and "X of the Y" becomes a modifier-first compound.
 
 *   **English:** *"The sun guides us."*
-    **Thalassian:** `Belore dela'na.` *(Canon match)*
+    **Thalassian:** `Anu belore dela'na.` *(Canon match)*
+*   **English:** *"Children of the void"*
+    **Thalassian:** `Ren'dorei` *(Canon match; word by word it is also built as void + children)*
 *   **English:** *"Rise, dead ones!"*
     **Thalassian:** `Aranal, ledel!` *(Extrapolated from Prince Keleseth)*
 *   **English:** *"Justice for our people."*
@@ -77,7 +79,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 - [x] **Skyborne (Shen'dorei)**: Vocabulary of the new WoW Forever elven race.
 - [x] **Localized text mining**: Blizzard's Chinese and Korean dialogue tables, mined for the elven lines the localizers translated ([report](research/2026-11-revival/4-localization-mining.md)).
 - [ ] **Server-side localized lines**: the TBC Kael'thas lines whose Chinese glosses the wiki reports are not in the client's tables, so those glosses are still unverified.
-- [ ] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`).
+- [x] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`) ([scores](research/2026-11-revival/1-review-and-methods.md#method-8-translator-evaluation-on-canon-phrases)).
 - [x] **Typography Engine**: Integrated Elvish Runic fonts for visual rendering in the web app.
 - [x] **Reverse Translator**: Auto-detects Elvish and translates back to English.
 - [x] **Syntax Tree Visualizer**: D3.js interactive parse trees for Elven grammar.

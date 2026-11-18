@@ -1,11 +1,7 @@
 import unittest
-import json
-import os
-import sys
 
 from thalassian.core.lexicon import load_lexicon
 from thalassian.syntax.parser import compile_sentence_en
-from thalassian.morphology.pluralization import apply_plural
 
 class TestThalassianGrammar(unittest.TestCase):
     
@@ -43,8 +39,9 @@ class TestThalassianGrammar(unittest.TestCase):
         self.assertEqual(res.strip().lower(), "dela'a")
         
     def test_pronoun_agglutination_me(self):
-        res = compile_sentence_en("bind me", self.lexicon)
-        self.assertEqual(res.strip().lower(), "[bind]'o")
+        # Canon Vendel'o eranu = "help me forget". The old test expected "[bind]'o", an untranslated word.
+        res = compile_sentence_en("help me", self.lexicon)
+        self.assertEqual(res.strip().lower(), "vendel'o")
         
     def test_punctuation_preservation(self):
         res = compile_sentence_en("sun, guide us!", self.lexicon)
@@ -54,9 +51,10 @@ class TestThalassianGrammar(unittest.TestCase):
         res = compile_sentence_en("The computer guides us.", self.lexicon)
         self.assertEqual(res.strip().lower(), "[computer] dela'na.")
         
-    def test_adjective_capitalization(self):
+    def test_high_home_is_quel_thalas(self):
+        # Canon Quel'Thalas; the old test expected "Quel thalas".
         res = compile_sentence_en("high home", self.lexicon)
-        self.assertEqual(res.strip(), "Quel thalas")
+        self.assertEqual(res.strip().lower(), "quel'thalas")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

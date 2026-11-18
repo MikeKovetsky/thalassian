@@ -35,9 +35,13 @@ This is the core feature of Thalassian grammar:
   - `a` = you
   - `na` = us/we
   - *Example:* `dela'na` (guides us).
-- **Prepositions:** Elves generally drop prepositions ("for", "of", "to") for brevity. The relationship is conveyed by context or compounding.
+- **Prepositions:** The translator drops "for", "to", "in", "on", "with" and "but", and uses an attested word for the rest. The canon has prepositions (*anar* "by", *ashal* "for" as the audit reads it), so dropping is the engine's convention, not a rule of the language.
+  - "by" is the proclitic *anar'*: "by the light" is *Anar'alah*, and "by the breath of the dragon" is *Anar'endal dracon*.
+  - "and" is *rea*.
   - *Example:* `Selama ashal'anore` (Justice for our people). The audit reads *ashal* as "for", so this example does keep a preposition.
 
 ## 6. Adjectives
 Adjectives can precede the noun when they merge into a term (e.g., *Quel'dorei* - High elves), or follow the noun in poetic contexts.
 For the conlang, the base rule for compound words is: **Adjective + Noun**.
+
+"X of [the] Y" becomes the compound **Y'X**, modifier first and head last, when X is a noun and both are single words: "children of the blood" is *Sin'dorei*, and "light of the forest" is *Thas'alah*. Two cases stay free, with the head first and no apostrophe: "of" before a longer phrase ("the chill of true death", *falor talah*), and "of" after "by X" ("by the light of the sun", *Anar'alah belore*).

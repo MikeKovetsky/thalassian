@@ -29,6 +29,7 @@ Two smaller findings:
    - Compounds come out in English order (`Dorei sin` instead of `Sin'dorei`).
    - "and" and "by" are on the drop list, so canon *rea* and *anar* can never be produced.
    - The reverse translator splits every word at the apostrophe, so `Bal'a` becomes "[bal] you".
+   - **Fixed on 2026-11-18** in both engines, with a phrasebook added; see [Method 8](#method-8-translator-evaluation-on-canon-phrases) for the scores.
 
 ## 1. Errors in the current lexicon, with fixes
 
@@ -108,6 +109,8 @@ The check behind this table is an edit-distance scan against 273 attested forms 
 | 16 | `src/thalassian/data/lexicon.json` | `root` values invent shared roots (`dela`/`delar` "del"; `thalas`/`thal`/`thala` "thal"; `malanore` "mal") | Misleading etymology. Line numbers of the flagged entries: alar 3, anu 27, ashal 39, dash 63, bash'a 255, delar 279, el 315, talah 327, anar 579, aran 759, shal'na 903, anu'shalla 915, rutaani 939, isera 1275. |
 | 17 | `tests/test_syntax/test_parser.py:47,57-59` | Tests lock in bugs: `[bind]'o` and `Quel thalas` (canon is `Quel'Thalas`) | Fixing order or compounding will "break" tests. `tests/test_morphology/` and `tests/test_phonetics/` are empty, and `test_ast.py` duplicates `test_parser.py`. |
 | 18 | `pyproject.toml:39,32,35` | Homepage is `github.com/Portal-OS/thalassian` (the repo is MikeKovetsky/thalassian); the spaCy model is pinned 3.7.1 while spaCy is unpinned; `mkdocs-material` is a runtime dependency | Install and version drift. |
+
+Bugs 1 to 4, 12 and 17 were fixed on 2026-11-18. The web translator now lives in `web/translator.js`, so node can test it.
 
 ## 3. Docs and claims that do not hold
 
@@ -293,6 +296,23 @@ Worst cases:
 
 The cheapest large win is a phrasebook that matches whole canon phrases first.
 
+**Status on 2026-11-18:** bugs 1 to 4 and 12 are fixed, and both engines match whole canon phrases first. The scores below come from [scripts/evaltranslator.py](scripts/evaltranslator.py), on the current lexicon. "Before" is the code on `main` before the fix, scored the same way. With the phrasebook on, a phrase whose gloss is in the lexicon is reproduced by lookup, so 39 of 39 only shows that the lookup works. The phrasebook-off column shows the word-by-word rules on their own.
+
+| Engine | Before | Phrasebook on | Phrasebook off |
+|---|---|---|---|
+| Python, English → Thalassian | 9 exact, F1 0.716 | 39 exact, F1 1.0 | 20 exact, F1 0.779 |
+| Web, English → Thalassian | 9 exact, F1 0.743 | 39 exact, F1 1.0 | 20 exact, F1 0.806 |
+| Web, Thalassian → English | 6 exact, F1 0.439 | 32 exact, F1 0.902 | (no switch) |
+
+The rules behind the phrasebook-off gain all come from section 6:
+- "X of [the] Y", where X and Y are single words and X is a noun, becomes the compound Y'X (*Sin'dorei*, *Ren'dorei*, *Thas'alah*, *Thas'dorah*).
+- "by [the] X" becomes *anar'X* (*Anar'alah*, *Anar'endal*). A following "of the Y" stays a free genitive, head first (*Anar'alah belore*, *Anar'endal dracon*).
+- "of" before a longer phrase also stays free and head first (*falor talah*, "the chill of true death").
+- "and" gives *rea*.
+- Lookup prefers attested entries over segments, then names, then inferred, unverified and generated words, and Thalassian over the other dialects.
+
+The phrasebook and these rules run in the regex builder. The spaCy builder, which runs only when spaCy is installed, still has neither (bug 6).
+
 ## 6. Grammar findings from the canon
 
 These replace parts of `grammar.md`.
@@ -306,7 +326,7 @@ These replace parts of `grammar.md`.
 ## 7. Recommended next steps, ranked by value
 
 1. **Apply the JSON in one reviewed change.** That means the fixes, demotions and removals, plus the 83 canon phrase and compound adds. Then add a phrasebook-first lookup and a `canon_basis` field (attested word / segment / localization / epithet / inferred) that drives the "Canon only" toggle. This removes the wrong output for death, light, you, no, keeper and great.
-2. **Fix translator bugs 1–4 and 12** (drop lists, canon-first lookup, pronoun loss, modifier-first compounds, apostrophe lookup). Add regression tests that use the 39 canon phrases as gold, and retire the tests that lock in bugs.
+2. **Fix translator bugs 1–4 and 12** (drop lists, canon-first lookup, pronoun loss, modifier-first compounds, apostrophe lookup). Add regression tests that use the 39 canon phrases as gold, and retire the tests that lock in bugs. **Done on 2026-11-18:** the tests are in `tests/test_syntax/test_translator_canon.py`, and the scores are in [Method 8](#method-8-translator-evaluation-on-canon-phrases).
 3. **Localization mining at scale.**
    - **Mike's go is needed:** downloading the [wago.tools BroadcastText CSV](https://wago.tools/db2/BroadcastText) for zhTW, zhCN and koKR is a file download. The size is not advertised; it is likely tens of MB per locale.
    - Then filter for lines with elven tokens and back-translate the ones the localizers rendered. This is the only untried source of new official meanings, and two of three sampled lines confirmed it works.
@@ -325,7 +345,8 @@ These replace parts of `grammar.md`.
   - `corpus.py`: the corpus
   - `align.py`: alignment
   - `phono.py`: phonotactics
-  - `evalpy.py` and `evaljs.js`: translator evaluation (`evaljs.js` holds a copy of the March web translator)
+  - `evalpy.py` and `evaljs.js`: translator evaluation (`evaljs.js` holds a copy of the March web translator). `evalpy.py` imports the current parser, so it reproduces this report's numbers only with the parser of that time as well.
+  - `evaltranslator.py`: the November 2026 scores of both engines, with the phrasebook on and off, on the current lexicon and code
   - `make_candidates.py`: generates the JSON, against the pre-merge lexicon
 - **No paid APIs were called.** Sources were warcraft.wiki.gg (raw wikitext), wago.tools pages and the local `.wowf-extract/` files.
 - **Lyrics are described, not reproduced.**

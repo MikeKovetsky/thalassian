@@ -517,6 +517,7 @@
         </div>
     </div>
 
+    <script src="translator.js"></script>
     <script>
         let lexiconData = [];
 
@@ -617,119 +618,10 @@
             return matches >= 3;
         }
 
-        // The gloss without commentary: parentheses go first, because they may hold a ';'
-        // ("the Veiled One (title of ...; rebel battle cry)"), then everything after the first ';'.
-        function glossProper(s) {
-            return s.replace(/\([^)]*\)/g, " ").split(";")[0];
-        }
-
-        function reverseTranslate(text) {
-            const pronounPrefixes = { "na": "us", "anu": "we", "a": "you", "o": "me", "dan": "them", "danu": "they" };
-            
-            // Split keeping punctuation
-            const tokens = text.match(/[A-Za-z\']+|[.,!?;]/g) || [];
-            let translated = [];
-
-            const canonOnly = document.getElementById('canon-toggle').checked;
-            
-            for (let word of tokens) {
-                if (/[.,!?;]/.test(word)) {
-                    if (translated.length > 0) translated[translated.length-1] += word;
-                    continue;
-                }
-
-                let subWords = word.toLowerCase().split("'");
-                for (let i=0; i<subWords.length; i++) {
-                    let w = subWords[i];
-                    if (i > 0 && pronounPrefixes[w]) {
-                        translated.push(pronounPrefixes[w]);
-                        continue;
-                    }
-
-                    let found = lexiconData.find(e => {
-                        if (canonOnly && !e.canon) return false;
-                        return e.word === w || e.word + "i" === w || e.word.slice(0,-1)+"ei" === w;
-                    });
-                    // An entry whose meaning is unknown (empty gloss proper) shows as [word], like a missing one.
-                    let t = found ? glossProper(found.translation.en).trim() : "";
-                    if (t) {
-                        if (w.endsWith("i") && found.pos === "noun") t += "(s)";
-                        translated.push(t);
-                    } else {
-                        translated.push(`[${w}]`);
-                    }
-                }
-            }
-            return translated.join(" ").replace(/ ([.,!?;])/g, "$1");
-        }
-
-        function strictTranslate(text) {
-            const dropWords = ["для", "в", "до", "на", "з", "за", "від", "про", "і", "та", "але", "for", "to", "the", "a", "an", "and", "of", "in", "on", "with", "by", "but"];
-            const pronounSuffixes = {
-                "нас": "na", "ми": "anu", "нам": "na", "us": "na", "we": "anu",
-                "ти": "a", "тобі": "a", "тебе": "a", "you": "a",
-                "я": "o", "мені": "o", "мене": "o", "i": "o", "me": "o",
-                "їх": "dan", "вони": "danu", "them": "dan", "they": "danu"
-            };
-
-            const tokens = text.match(/[A-Za-zА-Яа-яЄєІіЇїҐґ\']+|[.,!?;]/g) || [];
-            let translated = [];
-            
-            for (let i = 0; i < tokens.length; i++) {
-                let word = tokens[i];
-                if (/[.,!?;]/.test(word)) {
-                    if (translated.length > 0) translated[translated.length-1] += word;
-                    continue;
-                }
-
-                let lower = word.toLowerCase();
-                if (dropWords.includes(lower)) continue;
-
-                let suffix = "";
-                if (i + 1 < tokens.length) {
-                    let nextWord = tokens[i+1].toLowerCase();
-                    if (pronounSuffixes[nextWord]) {
-                        suffix = "'" + pronounSuffixes[nextWord];
-                        i++; 
-                    }
-                }
-
-                const canonOnly = document.getElementById('canon-toggle').checked;
-                // Gloss proper only: text inside parentheses and after ';' is commentary.
-                const glossSenses = s => glossProper(s).toLowerCase().split(/[\/,]/).map(x => x.trim()).filter(Boolean);
-                // Words a gloss mentions, from its short senses only (at most three words, like "break through");
-                // a longer sense is a description: "Valanaar: the Skyborne town..." must not translate "town".
-                const mentionWords = (s, splitter) => glossSenses(s)
-                    .map(sense => sense.split(splitter).filter(Boolean))
-                    .filter(words => words.length <= 3).flat();
-                const usable = e => !(canonOnly && !e.canon) &&
-                    // Whole phrases (e.g. anar'alah = "by the Light") are not used word by word.
-                    !(e.pos === "phrase" || e.word.includes(" "));
-                // An entry whose sense is exactly the word wins over one that only mentions it.
-                const senses = e => [e.translation.en, e.translation.uk].flatMap(glossSenses);
-                let found = lexiconData.find(e => usable(e) && senses(e).includes(lower)) ||
-                    lexiconData.find(e => {
-                    if (!usable(e)) return false;
-                    let uk = mentionWords(e.translation.uk, /[^\wа-яєіїґ\']+/);
-                    let en = mentionWords(e.translation.en, /[^\w']+/);
-                    return uk.includes(lower) || en.includes(lower) ||
-                           (lower.endsWith('и') && uk.includes(lower.slice(0,-1))) ||
-                           (lower.endsWith('s') && en.includes(lower.slice(0,-1)));
-                });
-
-                if (found) {
-                    let elven = found.word;
-                    if (translated.length === 0 || (translated.length > 0 && /[.!?;]$/.test(translated[translated.length-1]))) {
-                        elven = elven.charAt(0).toUpperCase() + elven.slice(1);
-                    }
-                    translated.push(elven + suffix);
-                } else {
-                    translated.push(`[${word}]${suffix}`);
-                }
-            }
-
-            return translated.join(" ").replace(/ ([.,!?;])/g, "$1");
-        }
+        // The Strict engine lives in translator.js, where node tests it.
+        const isCanonOnly = () => document.getElementById('canon-toggle').checked;
+        const reverseTranslate = text => Translator.reverseTranslate(lexiconData, text, { canonOnly: isCanonOnly() });
+        const strictTranslate = text => Translator.strictTranslate(lexiconData, text, { canonOnly: isCanonOnly() });
 
         async function translateText() {
             const input = document.getElementById('input-text').value.trim();
