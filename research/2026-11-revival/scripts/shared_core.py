@@ -11,10 +11,12 @@ A form is split into parts at spaces, apostrophes and hyphens. A part is atteste
 that branch has it as a whole part ("exact"), or when a longer part of that branch is it plus another known part
 ("inside": kaldorei is kal + dorei). Parts shorter than three letters are left out, because they match by chance.
 A phrase found word for word in several daughter branches is one quotation, not several witnesses: it counts only
-for the first of them in the order below (Thalyssra's "Tor ilisar'thera'nal" is Darnassian, not Shalassian).
+for the first of them in the order below (Thalyssra's "Tor ilisar'thera'nal" is Darnassian, not Shalassian). A
+one-word form such as "alah" is never a quotation: the same word in two branches is what the core looks for.
 
-The five daughter branches are Darnassian, Thalassian, Shalassian, Skyborne and Nazja. Names and speech from before the Sundering are a sixth witness, "ancient". Any other branch (Titan,
-Zandali) is a control: it shows how often unrelated words match by chance.
+The five daughter branches are Darnassian, Thalassian, Shalassian, Skyborne and Nazja. Names and speech from before
+the Sundering are a sixth witness, "ancient". Any other branch (Titan, Zandali) is a control: it shows how often
+unrelated words match by chance.
 """
 import json
 import os
@@ -22,16 +24,23 @@ import re
 import sys
 from collections import defaultdict
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from merge_candidates import LEX  # noqa: E402
+
 DAUGHTERS = ("darnassian", "thalassian", "shalassian", "skyborne", "nazja")
 ANCIENT = {"ancient-name": "ancient", "ancient-speech": "ancient"}
-LEX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "src", "thalassian", "data",
-                   "lexicon.json")
 MIN_PART = 3
 
 
+def text(form):
+    """The form's letters only, for spotting the same phrase twice:
+    "Tor ilisar'thera'nal!" -> "tor ilisar thera nal"."""
+    return " ".join(re.findall(r"[a-z]+", form.lower()))
+
+
 def parts(form):
-    """'Ba'anthalso-dorei!' -> ['ba', 'anthalso', 'dorei']."""
-    return [p for p in re.split(r"[^a-z]+", form.lower().replace("’", "'")) if len(p) >= MIN_PART]
+    """The words of text() that are MIN_PART letters or longer: "Ba'anthalso-dorei!" -> ["anthalso", "dorei"]."""
+    return [p for p in text(form).split() if len(p) >= MIN_PART]
 
 
 def lexicon_forms(path=LEX):
@@ -42,20 +51,19 @@ def lexicon_forms(path=LEX):
             if e.get("source") in DAUGHTERS and e.get("canon_basis") not in ("generated", "unverified")]
 
 
-def text(form):
-    """The form's letters only, for spotting the same phrase twice: "Tor ilisar'thera'nal!" -> "tor ilisar thera nal"."""
-    return " ".join(p for p in re.split(r"[^a-z]+", form.lower()) if p)
-
-
 def without_quotations(forms):
-    """Drop a daughter-branch form whose text an earlier daughter branch (in DAUGHTERS order) already has."""
+    """Drop a daughter-branch phrase whose text an earlier daughter branch (in DAUGHTERS order) already has. One-word
+    forms are kept: Thalassian alah "light" is not a quotation of Darnassian alah "to you"."""
+    def quotable(f):
+        return f["branch"] in DAUGHTERS and " " in text(f["form"])
+
     first = {}
     for f in forms:
-        if f["branch"] in DAUGHTERS:
+        if quotable(f):
             t = text(f["form"])
             if t not in first or DAUGHTERS.index(f["branch"]) < DAUGHTERS.index(first[t]):
                 first[t] = f["branch"]
-    return [f for f in forms if f["branch"] not in DAUGHTERS or first[text(f["form"])] == f["branch"]]
+    return [f for f in forms if not quotable(f) or first[text(f["form"])] == f["branch"]]
 
 
 def witnesses(forms):
