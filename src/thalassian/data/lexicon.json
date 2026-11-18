@@ -25,13 +25,13 @@
   {
     "word": "anore",
     "translation": {
-      "uk": "народ/нація",
-      "en": "people/nation"
+      "en": "people, kin (our people)",
+      "uk": "народ, родичі (наш народ)"
     },
     "pos": "noun",
     "canon": true,
     "root": "anor",
-    "notes": "Used in 'Selama ashal'anore' (Justice for our people).",
+    "notes": "Used in 'Selama ashal'anore' (Justice for our people) and 'Ann'da anore' (father of our people). zhTW renders 'our people' in Vereesa's gloss as 族人 'kinsfolk', koKR as 우리 동족 'our kin'.",
     "source": "thalassian",
     "canon_basis": "segment"
   },
@@ -342,7 +342,7 @@
     "pos": "noun",
     "canon": true,
     "root": "selam",
-    "notes": "Selama ashal'anore (Justice for our people).",
+    "notes": "Selama ashal'anore (Justice for our people; Encyclopedia 2006 and Vereesa in A Favor for Kinduru, 12.0.7); Lu'selama (Light's Justice).",
     "source": "thalassian",
     "canon_basis": "segment"
   },
@@ -1327,6 +1327,10 @@
       {
         "quote": "阿姨！快醒醒啊。 (zhCN localization of BroadcastText 302349; 阿姨 = 'auntie')",
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
+      },
+      {
+        "quote": "Shal'na！快醒醒！ (zhTW keeps the word); 샬나! 돌아오십시오. (koKR transliterates)",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 302349 and koKR"
       }
     ]
   },
@@ -3292,7 +3296,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "elu'meniel + mal + alann",
-    "notes": "Loreology tweet 451393978949062656 (dead link).",
+    "notes": "Loreology tweet 451393978949062656 (dead link). Sung by Sylvanas in Repent of the Highborne (11.2.7, BroadcastText 302501).",
     "source": "thalassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -3301,6 +3305,18 @@
       {
         "quote": "Elu'meniel mal alann = May peace calm your heart.",
         "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Elu'meniel mal alann. (enUS BroadcastText 302501; zhCN/zhTW keep it, koKR transliterates 엘루메니엘 말 알란)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302501"
+      },
+      {
+        "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+      },
+      {
+        "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+        "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
       }
     ]
   },
@@ -3464,7 +3480,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "selama + ashal + anore",
-    "notes": "Vow or farewell.",
+    "notes": "Vow or farewell. Vereesa Windrunner says it with its own English gloss ('Justice for our people.') in A Favor for Kinduru (12.0.7, BroadcastText 309952).",
     "source": "thalassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -3473,6 +3489,26 @@
       {
         "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
         "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+      },
+      {
+        "quote": "Vereesa Windrunner says: Selama ashal'anore, Blood Knight. Justice for our people.",
+        "where": "https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru"
+      },
+      {
+        "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+      },
+      {
+        "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+      },
+      {
+        "quote": "Selama ashal'anore，血骑士。我只求正义得以昭雪。 (zhCN: 'I only ask that justice be done'; looser)",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 309952"
       }
     ]
   },
@@ -3544,6 +3580,10 @@
       {
         "quote": "再會了... (zhTW localization of BroadcastText 321680 'Shorel'aran...')",
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
+      },
+      {
+        "quote": "Shorel'aran…… (zhCN keeps the word); 쇼렐러란... (koKR transliterates)",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 321680 and koKR"
       }
     ]
   },
@@ -3648,7 +3688,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "vendel + o + eranu",
-    "notes": "Beyond the Dark Portal pp.204, 238.",
+    "notes": "Beyond the Dark Portal pp.204, 238. Sung by Sylvanas in Repent of the Highborne (11.2.7, BroadcastText 302497-302498); used as a farewell by Dark Ranger Velonara.",
     "source": "thalassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -3657,6 +3697,22 @@
       {
         "quote": "Vendel'o eranu = Help me forget.",
         "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Vendel'o eranu, (enUS BroadcastText 302497 and 302498; zhCN/zhTW keep 'Vendel'o eranu', koKR transliterates 벤델로 에라누)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302497"
+      },
+      {
+        "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+      },
+      {
+        "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+        "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+      },
+      {
+        "quote": "Farewell ... Al diel shala. ... Vendel'o eranu. (quote list of the Garrison follower)",
+        "where": "https://warcraft.wiki.gg/wiki/Dark_Ranger_Velonara"
       }
     ]
   },
@@ -3883,7 +3939,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "andu + falah + dor",
-    "notes": "War cry after the Sundering.",
+    "notes": "War cry after the Sundering; also used as a parting blessing ('Andu-falah-dor, old friend. Watch her well.', BroadcastText 215394). No locale translates it.",
     "source": "darnassian",
     "canon_basis": "attested",
     "confidence": "high",

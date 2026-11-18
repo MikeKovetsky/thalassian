@@ -1,0 +1,463 @@
+[
+ {
+  "action": "fix",
+  "word": "selama ashal'anore",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Selama ashal'anore. || Justice for our people. || Used as either a vow or a farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   },
+   {
+    "quote": "Vereesa Windrunner says: Selama ashal'anore, Blood Knight. Justice for our people.",
+    "where": "https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru"
+   },
+   {
+    "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+   },
+   {
+    "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+   },
+   {
+    "quote": "Selama ashal'anore，血骑士。我只求正义得以昭雪。 (zhCN: 'I only ask that justice be done'; looser)",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 309952"
+   }
+  ],
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   },
+   {
+    "quote": "Vereesa Windrunner says: Selama ashal'anore, Blood Knight. Justice for our people.",
+    "where": "https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru"
+   },
+   {
+    "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+   },
+   {
+    "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+   },
+   {
+    "quote": "Selama ashal'anore，血骑士。我只求正义得以昭雪。 (zhCN: 'I only ask that justice be done'; looser)",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 309952"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Second, independent Blizzard source for the gloss: Vereesa speaks the phrase and glosses it herself in the 12.0.7 quest A Favor for Kinduru. zhTW and koKR translate the gloss sentence as 'justice for our kin/people'. All three locales keep the Thalassian unchanged.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "selama ashal'anore",
+  "field": "notes",
+  "old": "Vow or farewell.",
+  "new": "Vow or farewell. Vereesa Windrunner says it with its own English gloss ('Justice for our people.') in A Favor for Kinduru (12.0.7, BroadcastText 309952).",
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   },
+   {
+    "quote": "Vereesa Windrunner says: Selama ashal'anore, Blood Knight. Justice for our people.",
+    "where": "https://warcraft.wiki.gg/wiki/A_Favor_for_Kinduru"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Adds the in-game attestation.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "anore",
+  "field": "notes",
+  "old": "Used in 'ashal'anore' (great people).",
+  "new": "Used in 'Selama ashal'anore' (Justice for our people) and 'Ann'da anore' (father of our people). zhTW renders 'our people' in Vereesa's gloss as 族人 'kinsfolk', koKR as 우리 동족 'our kin'.",
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   },
+   {
+    "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+   },
+   {
+    "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+   }
+  ],
+  "confidence": "high",
+  "reason": "The old note says 'great people'; no source has 'great'.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "anore",
+  "field": "translation",
+  "old": {
+   "uk": "народ/нація",
+   "en": "people/nation"
+  },
+  "new": {
+   "en": "people, kin (our people)",
+   "uk": "народ, родичі (наш народ)"
+  },
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   },
+   {
+    "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+   },
+   {
+    "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "'nation' has no source; Blizzard's zhTW and koKR renderings of 'our people' use kinship words (族人, 동족).",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "selama",
+  "field": "notes",
+  "old": "Selama ashal'anore (Justice for our great people).",
+  "new": "Selama ashal'anore (Justice for our people; Encyclopedia 2006 and Vereesa in A Favor for Kinduru, 12.0.7); Lu'selama (Light's Justice).",
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   }
+  ],
+  "confidence": "high",
+  "reason": "The old note says 'Justice for our great people'; the canon gloss has no 'great'.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "ashal",
+  "field": "notes",
+  "old": "Used in 'Selama ashal'anore' (Justice for our great people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
+  "new": "Used in 'Selama ashal'anore' (Justice for our people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
+  "evidence": [
+   {
+    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+   }
+  ],
+  "confidence": "high",
+  "reason": "The note still quotes the old wrong gloss with 'great'.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "vendel'o eranu",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Vendel'o eranu = Help me forget.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Vendel'o eranu = Help me forget.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Vendel'o eranu, (enUS BroadcastText 302497 and 302498; zhCN/zhTW keep 'Vendel'o eranu', koKR transliterates 벤델로 에라누)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302497"
+   },
+   {
+    "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+   },
+   {
+    "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+    "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+   },
+   {
+    "quote": "Farewell ... Al diel shala. ... Vendel'o eranu. (quote list of the Garrison follower)",
+    "where": "https://warcraft.wiki.gg/wiki/Dark_Ranger_Velonara"
+   }
+  ],
+  "evidence": [
+   {
+    "quote": "Vendel'o eranu, (enUS BroadcastText 302497 and 302498; zhCN/zhTW keep 'Vendel'o eranu', koKR transliterates 벤델로 에라누)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302497"
+   },
+   {
+    "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+   },
+   {
+    "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+    "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+   },
+   {
+    "quote": "Farewell ... Al diel shala. ... Vendel'o eranu. (quote list of the Garrison follower)",
+    "where": "https://warcraft.wiki.gg/wiki/Dark_Ranger_Velonara"
+   }
+  ],
+  "confidence": "high",
+  "reason": "First in-game attestation (sung by Sylvanas, patch 11.2.7). It confirms the form, not the meaning: no locale translates it. Dark Ranger Velonara also uses it as a farewell line.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "vendel'o eranu",
+  "field": "notes",
+  "old": "Beyond the Dark Portal pp.204, 238.",
+  "new": "Beyond the Dark Portal pp.204, 238. Sung by Sylvanas in Repent of the Highborne (11.2.7, BroadcastText 302497-302498); used as a farewell by Dark Ranger Velonara.",
+  "evidence": [
+   {
+    "quote": "Vendel'o eranu, (enUS BroadcastText 302497 and 302498; zhCN/zhTW keep 'Vendel'o eranu', koKR transliterates 벤델로 에라누)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302497"
+   },
+   {
+    "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+   },
+   {
+    "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+    "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+   },
+   {
+    "quote": "Farewell ... Al diel shala. ... Vendel'o eranu. (quote list of the Garrison follower)",
+    "where": "https://warcraft.wiki.gg/wiki/Dark_Ranger_Velonara"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Adds the in-game attestation and usage.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "elu'meniel mal alann",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Elu'meniel mal alann = May peace calm your heart.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Elu'meniel mal alann = May peace calm your heart.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Elu'meniel mal alann. (enUS BroadcastText 302501; zhCN/zhTW keep it, koKR transliterates 엘루메니엘 말 알란)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302501"
+   },
+   {
+    "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+   },
+   {
+    "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+    "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+   }
+  ],
+  "evidence": [
+   {
+    "quote": "Elu'meniel mal alann. (enUS BroadcastText 302501; zhCN/zhTW keep it, koKR transliterates 엘루메니엘 말 알란)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302501"
+   },
+   {
+    "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+   },
+   {
+    "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+    "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+   }
+  ],
+  "confidence": "high",
+  "reason": "First in-game attestation (same song, patch 11.2.7). Confirms the form; no locale translates it.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "elu'meniel mal alann",
+  "field": "notes",
+  "old": "Loreology tweet 451393978949062656 (dead link).",
+  "new": "Loreology tweet 451393978949062656 (dead link). Sung by Sylvanas in Repent of the Highborne (11.2.7, BroadcastText 302501).",
+  "evidence": [
+   {
+    "quote": "Elu'meniel mal alann. (enUS BroadcastText 302501; zhCN/zhTW keep it, koKR transliterates 엘루메니엘 말 알란)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302501"
+   },
+   {
+    "quote": "(singing in Thalassian) (enUS BroadcastText 302496; zhCN （用萨拉斯语吟唱）, zhTW （用薩拉斯語歌唱）, koKR (하이엘프어 노래))",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302496"
+   },
+   {
+    "quote": "Sylvanas, sitting on a rock, plays her lyre and sings a song in Thalassian as Arator and the adventurer approach.",
+    "where": "https://warcraft.wiki.gg/wiki/Repent_of_the_Highborne"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Adds the in-game attestation.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "andu-falah-dor",
+  "field": "notes",
+  "old": "War cry after the Sundering.",
+  "new": "War cry after the Sundering; also used as a parting blessing ('Andu-falah-dor, old friend. Watch her well.', BroadcastText 215394). No locale translates it.",
+  "evidence": [
+   {
+    "quote": "Andu-falah-dor, old friend. Watch her well. (enUS BroadcastText 215394; all locales keep the Darnassian)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A215394"
+   },
+   {
+    "quote": "Sylvanas! Your foul deeds desecrate this sacred place! Andu-falah-dor! (enUS BroadcastText 158529)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A158529"
+   },
+   {
+    "quote": "Andu-falah-dor. (enUS BroadcastText 215215)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A215215"
+   }
+  ],
+  "confidence": "medium",
+  "reason": "In-game usage goes beyond a war cry.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "shal'na",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Shal'na = Aunt.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Arator: Shal'na! Come back to us.",
+    "where": "https://warcraft.wiki.gg/wiki/What_Might_Come#Notes"
+   },
+   {
+    "quote": "阿姨！快醒醒啊。 (zhCN localization of BroadcastText 302349; 阿姨 = 'auntie')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Shal'na = Aunt.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Arator: Shal'na! Come back to us.",
+    "where": "https://warcraft.wiki.gg/wiki/What_Might_Come#Notes"
+   },
+   {
+    "quote": "阿姨！快醒醒啊。 (zhCN localization of BroadcastText 302349; 阿姨 = 'auntie')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A302349&locale=zhCN"
+   },
+   {
+    "quote": "Shal'na！快醒醒！ (zhTW keeps the word); 샬나! 돌아오십시오. (koKR transliterates)",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 302349 and koKR"
+   }
+  ],
+  "evidence": [
+   {
+    "quote": "阿姨！快醒醒啊。",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 302349"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Verified in the shipped 12.1.7 tables: zhCN translates (阿姨 'auntie'), zhTW keeps, koKR transliterates.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "fix",
+  "word": "shorel'aran",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Shorel'aran. || Farewell. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "再會了... (zhTW localization of BroadcastText 321680 'Shorel'aran...')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Shorel'aran. || Farewell. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "再會了... (zhTW localization of BroadcastText 321680 'Shorel'aran...')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
+   },
+   {
+    "quote": "Shorel'aran…… (zhCN keeps the word); 쇼렐러란... (koKR transliterates)",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 321680 and koKR"
+   }
+  ],
+  "evidence": [
+   {
+    "quote": "再會了...",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 321680"
+   }
+  ],
+  "confidence": "high",
+  "reason": "Verified in the shipped 12.1.7 tables: zhTW translates (再會了 'farewell'), zhCN keeps, koKR transliterates.",
+  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
+ },
+ {
+  "action": "add",
+  "word": "anar'alash denal",
+  "translation": {
+   "en": "(untranslated oath of exasperation, 'By the …!'; anar = by)",
+   "uk": "(неперекладений вигук роздратування, 'Клянусь …!')"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "anar + alash + denal",
+  "notes": "Lor'themar Theron in One Last Grasp (MoP). No locale translates it: zhCN and zhTW keep the Latin text, koKR transliterates 아날라쉬 데날. Meaning only from context and anar = by.",
+  "source": "thalassian",
+  "evidence": [
+   {
+    "quote": "Anar'alash denal! Will someone tell me WHAT is going on in Dalaran? (enUS BroadcastText 69644)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A69644"
+   },
+   {
+    "quote": "Anar’alash denal！谁来告诉我达拉然怎么了？",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 69644"
+   },
+   {
+    "quote": "아날라쉬 데날! 달라란이 대체 어떻게 된 건지 누가 좀 말해주겠나?",
+    "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 69644"
+   },
+   {
+    "quote": "Anar'alash denal! — Said by Lor'themar Theron during One Last Grasp.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "method": "context (all three localizations keep the text)",
+  "confidence": "low"
+ }
+]
