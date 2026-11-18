@@ -22,6 +22,6 @@ High- and medium-confidence changes were applied; low-confidence ones stay in th
 ## Open items
 
 1. Localized text mining beyond the client: the shipped tables hold only 14 elven lines, and only 2 of their 42 renderings translate. The older Kael'thas lines whose Chinese glosses the wiki reports are server-side, so those glosses are still unverified.
-2. Skyborne voice lines: the 196 extracted files are machine-transcribed ([report 5](5-voice-transcription.md)). A person has listened to the 12 elvish files: *banu* is stressed ba-NU every time, and the final *h* of *alah* is usually heard, but not clearly. More listening would settle their vowels and the middle word of *aradash ... banu*. The 392 combat files listed in the client are not extracted yet.
+2. Skyborne voice lines: the 196 extracted files are machine-transcribed ([report 5](5-voice-transcription.md)). A person has listened to the 12 elvish files: *banu* is stressed ba-NU every time, and the final *h* of *alah* is usually heard, but not clearly. More listening would settle their vowels and the middle word of *aradash ... banu*. The other 392 files (236 combat sounds, 106 error lines, 50 emote sounds) are extracted but not transcribed.
 3. Zephras Isle quest text is served by Blizzard's servers and is cached only after a Skyborne character plays the zone.
 4. Translator: match whole canon phrases first, build modifier-first compounds, and fix the reverse translator's apostrophe handling (bugs 1 to 4 and 12 in report 1).

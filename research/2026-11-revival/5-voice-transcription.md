@@ -32,7 +32,10 @@ Every candidate, with the readings behind it, is in [5-candidates.json](5-candid
 - Every player emote line for both sexes.
 - All 30 greetings and 29 farewells of the two Skyborne NPC voice sets (folders 7478487 and 7478494, played through `NPCSounds` 3764, 3773 to 3776 and 3820).
 
-The client lists 392 more Skyborne voice files that were not extracted. Most are combat sounds: attack 57, alert 43, critical attack 41, wound 36, wind-up 27, death 21 and aggro 11.
+The client lists 392 more Skyborne voice files. They were extracted on 2026-11-18 (8.2 minutes, all from the Mac mini's disk) and are not transcribed yet:
+- 236 combat sounds of the two NPC voice sets: attack 57, alert 43, critical attack 41, wound 36, wind-up 27, death 21 and aggro 11.
+- 106 player error lines, such as a full inventory or a target out of range.
+- 50 emote sounds: 40 player ones (cackle, applaud, chicken, sigh, roar, kiss, cry, yawn) and 10 "stand" lines of the NPC sets.
 
 **Listeners.** The four listeners come from three model families: OpenAI's Whisper, ElevenLabs and Google's Gemini. Two Gemini models count as one family.
 - Wizper (fal's Whisper v3).
@@ -152,8 +155,8 @@ Sixteen more requests were rejected (HTTP 422, which fal does not bill) or faile
 ## Next steps
 
 1. **More listening by a person to the 12 elvish files** (24 seconds of audio, in `.wowf-extract/skyborne_vo/`) would settle the vowels, the *aradash* middle word, *aeesha'el* and file 7745197. The stress of *banu* is settled; the final *h* of *alah* is usually heard, but not clearly.
-2. **The 392 unextracted files.**
-   - The 11 aggro lines and the alert lines are the likeliest to hold more battle cries.
-   - `tools/wowf/run_all.sh` can extract them on the Mac mini.
-   - Wizper would transcribe them for about $1 at this run's rate.
+2. **The other 392 files**, extracted on 2026-11-18 but not transcribed.
+   - The 11 aggro lines and the 43 alert lines are the likeliest to hold more battle cries. Most of the rest are grunts, or error lines that are probably English.
+   - Wizper would transcribe all 392 for about $1.10 at this run's rate ($0.0029 a file).
+   - How they were extracted: the files of `.wowf-extract/skyborne_vo_files.csv` not yet in `.wowf-extract/skyborne_vo/` went into a list of `fdid;path` lines, and `tools/wowf/casc.py extract` read them from the Mac mini's own CASC storage (no CDN download), in a scratch folder deleted afterwards. All 392 decode with ffmpeg and none is silent.
 3. **A Skyborne play session on the Mac mini** would cache the Zephras Isle quest text. That text is served by Blizzard's servers, so the client files on disk don't have it.
