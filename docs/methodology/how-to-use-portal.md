@@ -9,6 +9,7 @@ Instead of manual copy-pasting, the agent dynamically utilized tools like **Brav
 - **Web Navigation (Browserless & Browser-based):** The agent parsed complex wikis (like Wowpedia) using headless browser extraction methods and directly searched for obscure datamining threads on Reddit (`r/wow`, `r/warcraftlore`) and MMO-Champion.
 - **Wayback Machine Integration:** The agent recognized that current wikis lacked origin context. It autonomously scraped the *2006 World of Warcraft Encyclopedia* (`576.xml`) via `web.archive.org` using `curl` and `grep` inside its Linux sandbox to establish the foundational canon roots.
 - **WoW: Midnight (12.0) Parsing:** It spawned four concurrent subagents to extract brand-new, unreleased vocabulary (like `Shal'na` and `Anu'shalla`) directly from leaked "Broadcast Text" dumps.
+  - *Correction (November 2026):* the [canon audit](../../research/2026-11-revival/1-review-and-methods.md) found no such dumps. The scraper was a stub, *Shal'na* comes from the 11.2.7 quest What Might Come, and *Anu'shalla* is a mount name.
 
 ## 2. Secure GitHub Integration & Zero-Touch Deployment
 The human operator never had to open a terminal or an IDE. 

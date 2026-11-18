@@ -36,7 +36,7 @@ This document lists the primary canonical sources, community resources, and data
   - *Shalassian Page*: [warcraft.wiki.gg/wiki/Shalassian](https://warcraft.wiki.gg/wiki/Shalassian)
 - **Wowhead Database (wowhead.com)**
   - *Sounds Database*: Extracted NPC Greeting sound files for Blood Elves and Nightborne.
-  - *Broadcast Text / Spells*: Datamined 12.0.1 (Midnight) strings.
+  - *Broadcast Text / Spells*: no Midnight (12.0.1) strings were datamined; earlier versions of this page said so in error (see the correction in section 1).
 - **MMO-Champion Forums**
   - Lore discussions regarding the linguistic drift from Darnassian to Thalassian and the translation of boss quotes.
 

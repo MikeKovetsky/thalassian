@@ -319,13 +319,11 @@ These replace parts of `grammar.md`.
 
 ## Appendix: reproducibility
 
-- **Scripts are temporary.** The analysis scripts live in the session scratchpad (`/private/tmp/claude-501/-Users-mike--claude-spares-spare-bcRzf9/26af46ef-cb7c-4895-a02e-20c6ebd185be/scratchpad/analysis/`) and may be cleared:
+- **Scripts.** The analysis scripts are in [scripts/](scripts/) and take their folders as command-line arguments. The ones that read the lexicon reproduce this report only against the pre-revival lexicon (commit 42eb9cf):
   - `corpus.py`: the corpus
   - `align.py`: alignment
   - `phono.py`: phonotactics
-  - `evalpy.py` and `evaljs.js`: translator evaluation
-  - `make_candidates.py`: generates the JSON
-
-  Ask the main session to copy them into `research/2026-11-revival/scripts/` if they should be kept.
+  - `evalpy.py` and `evaljs.js`: translator evaluation (`evaljs.js` holds a copy of the March web translator)
+  - `make_candidates.py`: generates the JSON, against the pre-merge lexicon
 - **No paid APIs were called.** Sources were warcraft.wiki.gg (raw wikitext), wago.tools pages and the local `.wowf-extract/` files.
 - **Lyrics are described, not reproduced.**

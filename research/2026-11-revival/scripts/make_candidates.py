@@ -1,4 +1,4 @@
-import json, sys
+import json, os, sys
 W = "https://warcraft.wiki.gg/wiki/"
 TP = W + "Thalassian#Thalassian_primer_(official_translations)"
 TU = W + "Thalassian#Untranslated_words_or_phrases"
@@ -290,7 +290,9 @@ inf("arcana", "magic (Shalassian cognate of Thalassian arkhana)", "магія", 
 inf("shaha lor'ma", "thank you (predicted Thalassian form)", "дякую (передбачена талассійська форма)", "phrase", "shaha + lor'ma", "Darnassian 'thank you'. Shared Darnassian/Thalassian vocabulary is mostly identical (quel, dorei, felo'melorn, ishnu'alah used by Kael'thas), so the predicted Thalassian form is unchanged. Intentional homograph of the Darnassian add with the same spelling.", "thalassian",
     [ev("Shaha lor'ma = Thank you.", DP), ev("Darnassian, Thalassian, and Najza seem to have many common phrases, as is evidenced by Prince Kael'thas' use of \"Ishnu'alah\"", W + "Darnassian#Related_languages")], "comparative method (identity prediction)", "low")
 
-LEX = {e["word"]: e for e in json.load(open("/Users/mike/repos/mike/thalassian/src/thalassian/data/lexicon.json"))}
+# Fills each fix's "old" value from the lexicon, so it has to run against the pre-merge lexicon (commit 42eb9cf).
+LEX_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "src", "thalassian", "data", "lexicon.json")
+LEX = {e["word"]: e for e in json.load(open(LEX_PATH, encoding="utf-8"))}
 for c in C:
     if c["action"] == "fix":
         c["old"] = LEX[c["word"]][c["field"]]

@@ -23,6 +23,12 @@ Five additions are canon (`canon: true`) because a Blizzard source states their 
 
 Tagging them `skyborne` keeps them filterable. If the main session prefers one `darnassian` tag, it only needs to change the field, because each `notes` field already says "Darnassian (Skyborne dialect)". Three entries are tagged `darnassian` because they are older or shared Darnassian: `shen'dralar`, `dralar` and `naar`. `naar` was changed to `darnassian` to match 2-candidates.json.
 
+**After the merge.** This report was written before the canon audit's fixes were applied, so some of its references to the lexicon are out of date (details in [merge-log.md](merge-log.md)):
+
+1. `el` "peace" was removed as a mis-segmentation of *diel*, so the "peace" reading of *aeesha'el* below has no support. The lexicon entry for the letter's closing line now reads "may the winds of Zephras go with you".
+2. `ban` means "gate" only, without "passage"; `aran` is no longer canon; `thalas` means "home", not "kingdom"; and `shal'na` means "aunt", not "no! / please".
+3. *Eluvi'ana* went into the lexicon as canon with basis `epithet`, because the wiki's Darnassian primer lists it, rather than as the inferred entry proposed here.
+
 **Status:** phase 1 (web) and phase 2 (client dump, `.wowf-extract/` per its README, build 1.60.1.70938) are both done. Two things remain open. The voice files need transcription, which needs the user's go for a speech-to-text model. Zephras Isle quest and book text is server-side, so it needs a Skyborne character to play the zone and fill the cache.
 
 ## Client check (phase 2)
