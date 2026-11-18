@@ -307,12 +307,12 @@
             renderTable(lexiconData);
         };
 
-        // Non-canon entries are either invented (generated) or inferred from canon; see canon_basis in lexicon.json.
+        // Non-canon entries show their canon_basis (generated, inferred, unverified or name);
+        // see docs/methodology/lexicon.md.
         function statusText(entry) {
             if (entry.canon) return 'Canon';
-            if (entry.canon_basis === 'unverified') return 'Unverified';
-            if (entry.canon_basis === 'inferred') return 'Inferred';
-            return 'Generated';
+            const basis = entry.canon_basis || 'generated';
+            return basis.charAt(0).toUpperCase() + basis.slice(1);
         }
 
         function renderTable(data) {
