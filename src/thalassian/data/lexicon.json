@@ -33,7 +33,21 @@
     "root": "anor",
     "notes": "Used in 'Selama ashal'anore' (Justice for our people) and 'Ann'da anore' (father of our people). zhTW renders 'our people' in Vereesa's gloss as 族人 'kinsfolk', koKR as 우리 동족 'our kin'.",
     "source": "thalassian",
-    "canon_basis": "segment"
+    "canon_basis": "segment",
+    "evidence": [
+      {
+        "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+      },
+      {
+        "quote": "Selama ashal'anore，血騎士。為族人伸張正義。 (zhTW: 'uphold justice for our kinsfolk')",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 309952"
+      },
+      {
+        "quote": "셀라마 아샬라노레, 혈기사여. 우리 동족에게 정의를. (koKR: 'justice for our kin')",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.koKR.csv, ID 309952"
+      }
+    ]
   },
   {
     "word": "anu",
@@ -344,7 +358,13 @@
     "root": "selam",
     "notes": "Selama ashal'anore (Justice for our people; Encyclopedia 2006 and Vereesa in A Favor for Kinduru, 12.0.7); Lu'selama (Light's Justice).",
     "source": "thalassian",
-    "canon_basis": "segment"
+    "canon_basis": "segment",
+    "evidence": [
+      {
+        "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+      }
+    ]
   },
   {
     "word": "shindu",
@@ -1331,6 +1351,10 @@
       {
         "quote": "Shal'na！快醒醒！ (zhTW keeps the word); 샬나! 돌아오십시오. (koKR transliterates)",
         "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 302349 and koKR"
+      },
+      {
+        "quote": "阿姨！快醒醒啊。",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 302349"
       }
     ]
   },
@@ -3584,6 +3608,10 @@
       {
         "quote": "Shorel'aran…… (zhCN keeps the word); 쇼렐러란... (koKR transliterates)",
         "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhCN.csv, ID 321680 and koKR"
+      },
+      {
+        "quote": "再會了...",
+        "where": ".wowf-extract/localized/BroadcastText.12.1.7.70892.zhTW.csv, ID 321680"
       }
     ]
   },
@@ -3948,6 +3976,18 @@
       {
         "quote": "Andu-falah-dor = Let balance be restored. (A war cry.)",
         "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Andu-falah-dor, old friend. Watch her well. (enUS BroadcastText 215394; all locales keep the Darnassian)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A215394"
+      },
+      {
+        "quote": "Sylvanas! Your foul deeds desecrate this sacred place! Andu-falah-dor! (enUS BroadcastText 158529)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A158529"
+      },
+      {
+        "quote": "Andu-falah-dor. (enUS BroadcastText 215215)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A215215"
       }
     ]
   },

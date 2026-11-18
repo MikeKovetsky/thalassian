@@ -85,7 +85,7 @@
   "action": "fix",
   "word": "anore",
   "field": "notes",
-  "old": "Used in 'ashal'anore' (great people).",
+  "old": "Used in 'Selama ashal'anore' (Justice for our people).",
   "new": "Used in 'Selama ashal'anore' (Justice for our people) and 'Ann'da anore' (father of our people). zhTW renders 'our people' in Vereesa's gloss as 族人 'kinsfolk', koKR as 우리 동족 'our kin'.",
   "evidence": [
    {
@@ -139,7 +139,7 @@
   "action": "fix",
   "word": "selama",
   "field": "notes",
-  "old": "Selama ashal'anore (Justice for our great people).",
+  "old": "Selama ashal'anore (Justice for our people).",
   "new": "Selama ashal'anore (Justice for our people; Encyclopedia 2006 and Vereesa in A Favor for Kinduru, 12.0.7); Lu'selama (Light's Justice).",
   "evidence": [
    {
@@ -149,22 +149,6 @@
   ],
   "confidence": "high",
   "reason": "The old note says 'Justice for our great people'; the canon gloss has no 'great'.",
-  "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
- },
- {
-  "action": "fix",
-  "word": "ashal",
-  "field": "notes",
-  "old": "Used in 'Selama ashal'anore' (Justice for our great people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
-  "new": "Used in 'Selama ashal'anore' (Justice for our people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
-  "evidence": [
-   {
-    "quote": "Selama ashal'anore, Blood Knight. Justice for our people. (enUS BroadcastText 309952)",
-    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
-   }
-  ],
-  "confidence": "high",
-  "reason": "The note still quotes the old wrong gloss with 'great'.",
   "method": "Blizzard localization (BroadcastText 12.1.7.70892)"
  },
  {
