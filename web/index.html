@@ -696,18 +696,22 @@
 
                 const canonOnly = document.getElementById('canon-toggle').checked;
                 // Gloss proper only: text inside parentheses and after ';' is commentary.
-                const glossWords = (s, splitter) => glossProper(s).toLowerCase().split(splitter);
+                const glossSenses = s => glossProper(s).toLowerCase().split(/[\/,]/).map(x => x.trim()).filter(Boolean);
+                // Words a gloss mentions, from its short senses only (at most three words, like "break through");
+                // a longer sense is a description: "Valanaar: the Skyborne town..." must not translate "town".
+                const mentionWords = (s, splitter) => glossSenses(s)
+                    .map(sense => sense.split(splitter).filter(Boolean))
+                    .filter(words => words.length <= 3).flat();
                 const usable = e => !(canonOnly && !e.canon) &&
                     // Whole phrases (e.g. anar'alah = "by the Light") are not used word by word.
                     !(e.pos === "phrase" || e.word.includes(" "));
                 // An entry whose sense is exactly the word wins over one that only mentions it.
-                const senses = e => [e.translation.en, e.translation.uk]
-                    .flatMap(s => glossWords(s, /[\/,]/)).map(s => s.trim());
+                const senses = e => [e.translation.en, e.translation.uk].flatMap(glossSenses);
                 let found = lexiconData.find(e => usable(e) && senses(e).includes(lower)) ||
                     lexiconData.find(e => {
                     if (!usable(e)) return false;
-                    let uk = glossWords(e.translation.uk, /[^\wа-яєіїґ\']+/);
-                    let en = glossWords(e.translation.en, /[^\w']+/);
+                    let uk = mentionWords(e.translation.uk, /[^\wа-яєіїґ\']+/);
+                    let en = mentionWords(e.translation.en, /[^\w']+/);
                     return uk.includes(lower) || en.includes(lower) ||
                            (lower.endsWith('и') && uk.includes(lower.slice(0,-1))) ||
                            (lower.endsWith('s') && en.includes(lower.slice(0,-1)));

@@ -30,13 +30,22 @@ def gloss_proper(gloss: str) -> str:
     ("the Veiled One (title of ...; rebel battle cry)"), then everything after the first ';'."""
     return re.sub(r"\([^)]*\)", " ", gloss.lower()).split(";")[0]
 
-def gloss_words(gloss: str, pattern: str) -> List[str]:
-    """Words of the gloss proper."""
-    return re.findall(pattern, gloss_proper(gloss))
-
 def gloss_senses(gloss: str) -> List[str]:
     """Whole senses of the gloss proper: "guide/lead, show" -> ["guide", "lead", "show"]."""
     return [s.strip() for s in re.split(r"[/,]", gloss_proper(gloss)) if s.strip()]
+
+MAX_MENTION_WORDS = 3
+
+def mention_words(gloss: str, pattern: str) -> List[str]:
+    """Words a gloss mentions, from its short senses only ("break through"). A longer sense is a
+    description, not a translation: "Valanaar: the Skyborne town and skydocks on Zephras Isle"
+    must not translate "town" or "isle"."""
+    words = []
+    for sense in gloss_senses(gloss):
+        sense_words = re.findall(pattern, sense)
+        if len(sense_words) <= MAX_MENTION_WORDS:
+            words += sense_words
+    return words
 
 def _find_word(lexicon: List[Dict], target: str, lang: str, pattern: str) -> Optional[Dict]:
     target = target.lower()
@@ -46,7 +55,7 @@ def _find_word(lexicon: List[Dict], target: str, lang: str, pattern: str) -> Opt
         if target in gloss_senses(entry["translation"][lang]):
             return entry
     for entry in candidates:
-        if target in gloss_words(entry["translation"][lang], pattern):
+        if target in mention_words(entry["translation"][lang], pattern):
             return entry
     return None
 
