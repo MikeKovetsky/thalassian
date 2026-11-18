@@ -38,7 +38,7 @@ scripts: `.wowf-extract/` (local only, see its README) and `tools/wowf/`.
 4. **Hidden content.** Three TACT keys are not public (`0DA4670DB36FB2A9`, `DA0E7785727A0A65`,
    `3146BA4C4ECDBFAB`); they hide 61 DB2 sections, including parts of AreaTable, Map, QuestV2,
    Spell, SpellName and ItemSparse.
-5. **The words of the voice lines.** They are audio; someone has to listen and transcribe.
+5. **The words of the voice lines.** They are audio; someone has to listen and transcribe. Done for the 196 extracted files on 2026-11-18, by four machine listeners ([report 5](5-voice-transcription.md)).
 
 ## 2. How the data was read
 
@@ -171,7 +171,7 @@ for Shen'dralar (from *Chronicle* Vol. 1) is not in the client, but fits *shen* 
 
 ## 7. What is worth mining next
 
-1. **Transcribe the Skyborne voice lines.** 87 of the 196 extracted files have a meaning the game
+1. **Transcribe the Skyborne voice lines** (done on 2026-11-18: [report 5](5-voice-transcription.md)). 87 of the 196 extracted files have a meaning the game
    fixes: NPC greetings (30) and farewells (29), and player hello (8), bye (6), thank you (6),
    welcome (4) and you're welcome (4). This is how *Bal'a dash, malanore* became known for blood
    elves. Files: `.wowf-extract/skyborne_vo/`, list with categories in

@@ -29,7 +29,7 @@ Tagging them `skyborne` keeps them filterable. If the main session prefers one `
 2. `ban` means "gate" only, without "passage"; `aran` is no longer canon; `thalas` means "home", not "kingdom"; and `shal'na` means "aunt", not "no! / please".
 3. *Eluvi'ana* went into the lexicon as canon with basis `epithet`, because the wiki's Darnassian primer lists it, rather than as the inferred entry proposed here.
 
-**Status:** phase 1 (web) and phase 2 (client dump, `.wowf-extract/` per its README, build 1.60.1.70938) are both done. Two things remain open. The voice files need transcription, which needs the user's go for a speech-to-text model. Zephras Isle quest and book text is server-side, so it needs a Skyborne character to play the zone and fill the cache.
+**Status:** phase 1 (web) and phase 2 (client dump, `.wowf-extract/` per its README, build 1.60.1.70938) are both done. The voice files were transcribed on 2026-11-18 ([report 5](5-voice-transcription.md)). One thing remains open: Zephras Isle quest and book text is server-side, so it needs a Skyborne character to play the zone and fill the cache.
 
 ## Client check (phase 2)
 
@@ -98,7 +98,7 @@ All are in `.wowf-extract/skyborne_vo/sound/`. The meaning of each comes from th
 | 9 | `creature/7478487/7478487_greetings_7744809.ogg` (NPCSounds 3775, the longest NPC greeting) | Skyborne NPC greeting | What a Skyborne NPC says when clicked |
 | 10 | `creature/7478487/7478487_farewell_7744803.ogg` (NPCSounds 3775, the longest NPC farewell) | Skyborne NPC farewell | What a Skyborne NPC says when you leave, perhaps the letter's farewell blessing |
 
-No speech-to-text model is installed, and none was downloaded. A person can also listen to these ten files (228 KB in all) and write down what they hear.
+**Result (2026-11-18, [report 5](5-voice-transcription.md)):** all ten are English. For example, /hello 1 and 2 are "Gale's greetings, friend", /bye 3 and 4 are "May the winds guide you", and /charge 7 is "Show them the storm's fury". The elvish is in other files of the same slots. The female /hello says *banu alah*, and the NPC farewells say *aeesha'el banu zephrali*.
 
 ## Sources used
 
@@ -235,7 +235,7 @@ The client's 86 Skyborne family names are almost all English wind compounds, suc
 1. What *aeesha* means, and whether *banu* is a noun ("path") or a verb ("go, guide").
 2. Whether *zepharaalis* refers to the recipient ("Zephran!") or modifies the blessing ("...of Zephras").
 3. Who *Ur'seris* is.
-4. **The best remaining source is the Skyborne voice files.** The dump has `skyborne_vo/`: 196 files extracted, out of 588 listed in `skyborne_vo_files.csv`. They include /hello, /bye and /thank recordings for both sexes. A forum post on the [Skyborne backstory thread](https://us.forums.blizzard.com/en/wow/t/2353964) says some Skyborne voice lines are in an elvish language its author could not identify as Darnassian. If /bye or /thank says "Aeesha'el" or "banu", that would settle these words. The 10 files most worth hearing are listed in the client-check section. They have not been transcribed, because that needs the user's go for a speech-to-text model.
+4. **The best remaining source is the Skyborne voice files.** The dump has `skyborne_vo/`: 196 files extracted, out of 588 listed in `skyborne_vo_files.csv`. They include /hello, /bye and /thank recordings for both sexes. A forum post on the [Skyborne backstory thread](https://us.forums.blizzard.com/en/wow/t/2353964) says some Skyborne voice lines are in an elvish language its author could not identify as Darnassian. If /bye or /thank says "Aeesha'el" or "banu", that would settle these words. **Done on 2026-11-18 ([report 5](5-voice-transcription.md)):** both Skyborne NPC voice sets say *aeesha'el banu zephrali* as a farewell, and *banu* also opens their greetings *banu alah* and *banu adora*. So *banu* is what the blessings invoke, the winds or their blessing (medium), not "way, passage". *aeesha'el* is still unexplained.
 
 ## Sound-change notes compared with Thalassian, Darnassian and Shalassian
 
@@ -263,7 +263,7 @@ None of the new data contradicts a canon entry outright. Six points are worth no
 
 Phase 2 ran every lookup that the dump can answer; the results are in "Client check (phase 2)" above. Four lookups need data the dump does not have:
 
-1. **Transcribe the 10 voice files** listed in the client-check section. This needs the user's go to install a speech-to-text model, or a person to listen.
+1. **Transcribe the 10 voice files** listed in the client-check section. Done on 2026-11-18 by four machine listeners ([report 5](5-voice-transcription.md)); a person listening to the 12 elvish files would still settle their vowels.
 2. **Zephras Isle quest and book text.** This needs a Skyborne character to play the zone so the quest and page caches fill. Then search `wdb_strings.jsonl` for:
    1. *Shal'nan* and the four "Rebellion in Eldre'Thalas" crystals.
    2. Rorian's line in quest 92474, to settle *shan'dorei* against *shen'dorei*.
@@ -276,7 +276,7 @@ Phase 2 ran every lookup that the dump can answer; the results are in "Client ch
 ## What could not be found
 
 1. **A translation of "Aeesha'el banu zepharaalis".** Neither the web nor the client translates it. The client has the letter (`MailTemplate` 652) and the matching surname Zephraalis, but nothing for *aeesha'el* or *banu*.
-2. **Skyborne voice-line transcripts and battle cries.** None are online. The client has 196 voice files, but they are audio and have not been transcribed (see the voice-file list).
+2. **Skyborne voice-line transcripts and battle cries.** None are online. The 196 extracted voice files were machine-transcribed on 2026-11-18 ([report 5](5-voice-transcription.md)); the 392 combat files listed in the client were not extracted.
 3. **Meanings for place names and given names.** Blizzard gives none: not for Valanaar, Thendal, Shen'dar, Ban'aethal, Falaath, Zephras, Eluvi'tor, Saeyleenan or Ur'seris.
 4. **The BlizzCon "Found Photographs" panel video.** It was not watched; the Blizzard written recap was used.
 5. **Wowhead and MMO-Champion.** Neither had a datamining post on Skyborne vocabulary. The Icy Veins lore article returned HTTP 403.

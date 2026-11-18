@@ -4264,7 +4264,7 @@
     "pos": "noun",
     "canon": true,
     "root": "shen + dorei",
-    "notes": "Darnassian (Skyborne dialect). Self-name of the Skyborne. Used for one person ('I am shen'dorei') and for the people; adjectival in 33 item names (ItemSparse 271722 onward). The client lists it as the lore name of both Skyborne races (ChrRaces 95, 96), beside Kaldorei, Sin'dorei, Shal'dorei and Ren'dorei, and as the name of their language (Languages 310; its 102 garble words are identical to Darnassian's). Same entry as 2-candidates.json shen'dorei.",
+    "notes": "Darnassian (Skyborne dialect). Self-name of the Skyborne. Used for one person ('I am shen'dorei') and for the people; adjectival in 33 item names (ItemSparse 271722 onward). The client lists it as the lore name of both Skyborne races (ChrRaces 95, 96), beside Kaldorei, Sin'dorei, Shal'dorei and Ren'dorei, and as the name of their language (Languages 310; its 102 garble words are identical to Darnassian's). Same entry as 2-candidates.json shen'dorei. Pronounced shen-DOR-eye in the Skyborne battle cry 'For the Shen'dorei!' (/charge; report 5); the female voice's first vowel is closer to shin-.",
     "source": "skyborne",
     "canon_basis": "attested",
     "confidence": "high",
@@ -4329,6 +4329,14 @@
       {
         "quote": "Shen'dorei = hidden people.",
         "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "/charge emote, male player voice: 'For the Shendorai!' / 'For the Shen Dorai' / \"for the shen'dorai\" [ʃɛn.dɔ.ɹaɪ] / \"for the shen'dorai\"",
+        "where": "client voice file sound/character/skyborne_elf_male/vo_skyborne_elf_male_charge_7744476.ogg (FileDataID 7744476), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "/charge emote, female player voice: 'For the Shindorai!' / 'For the Shindo Rai' / \"for the shin'durai\" / \"for the sin'dorei\"",
+        "where": "client voice file sound/character/skyborne_elf_female/vo_skyborne_elf_female_charge_7744883.ogg (FileDataID 7744883), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       }
     ]
   },
@@ -5361,7 +5369,7 @@
     "pos": "phrase",
     "canon": false,
     "root": "adore",
-    "notes": "Elune-adore = Elune be with you; Shalassian farewell An'ratha adore uses the same word.",
+    "notes": "Elune-adore = Elune be with you; Shalassian farewell An'ratha adore uses the same word. The Skyborne greeting banu adora (report 5) has the same shape, with banu in Elune's place, and ends in -a.",
     "source": "darnassian",
     "canon_basis": "inferred",
     "confidence": "medium",
@@ -5374,6 +5382,14 @@
       {
         "quote": "An'ratha ador and An'ratha adore - Said by Silgryn and First Arcanist Thalyssra as a farewell.",
         "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Adora.' / 'Banu Adora' / 'banu adora' / 'Banu Adorha'",
+        "where": "client voice file sound/creature/7478487/7478487_greetings_7744796.ogg (FileDataID 7744796), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3820): 'Banu Adora.' / 'バヌー・アドラ' (banū adora) / 'banu adura' / 'banu adora'",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_8268710.ogg (FileDataID 8268710), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       }
     ]
   },
@@ -5555,7 +5571,7 @@
     "pos": "proper noun",
     "canon": true,
     "root": "shen",
-    "notes": "Shares 'shen' with shen'dorei; 'dar' is not explained.",
+    "notes": "Shares 'shen' with shen'dorei; 'dar' is not explained. A Skyborne NPC greeting says 'Shen'dar will not fall' (report 5).",
     "source": "skyborne",
     "canon_basis": "name",
     "confidence": "medium",
@@ -5568,6 +5584,10 @@
       {
         "quote": "I'm in charge of Shen'dar Village operations",
         "where": "BroadcastText#300665 (hotfix push 112709)"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3820): 'Shendar will not fall.' / 'Shendar will not fall' / 'shindal will not fall' / 'shandal will not fall'",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_8268889.ogg (FileDataID 8268889), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       }
     ]
   },
@@ -5613,7 +5633,7 @@
     "pos": "noun",
     "canon": true,
     "root": "zephr + -as",
-    "notes": "Darnassian (Skyborne dialect). Island lifted into Skywall by the wind spirits; capital Valanaar. Built like the other Skyborne islands, Siroccas and Anvilas: a weather word + place suffix -as. Spelled 'Zephras Isle' in AreaTable 16593, Map 2991 and UiMap 2521; the UI atlas is named 'skyborne-zephras-isles'. 2-candidates.json rates zephras low; this file keeps high because the referent is stated by Blizzard.",
+    "notes": "Darnassian (Skyborne dialect). Island lifted into Skywall by the wind spirits; capital Valanaar. Built like the other Skyborne islands, Siroccas and Anvilas: a weather word + place suffix -as. Spelled 'Zephras Isle' in AreaTable 16593, Map 2991 and UiMap 2521; the UI atlas is named 'skyborne-zephras-isles'. 2-candidates.json rates zephras low; this file keeps high because the referent is stated by Blizzard. Spoken as two syllables, ZEF-ras (heard as Zephrys, Zephyrus or Zafras), in the /cheer 'For the glory of Zephras Isle!' and the NPC greetings 'Zephras will not fall' and 'Zephras will endure' (report 5).",
     "source": "skyborne",
     "canon_basis": "name",
     "confidence": "high",
@@ -5638,6 +5658,14 @@
       {
         "quote": "a band of high elven exiles has remained safe / and hidden upon their flying sanctuary of Zephras Isle.",
         "where": "BroadcastText#316346, #316348"
+      },
+      {
+        "quote": "/cheer emote, male player voice: 'For the glory of Zephrys Isle!' (all four listeners; IPA [ˈzɛf.ɹɪs])",
+        "where": "client voice file sound/character/skyborne_elf_male/vo_skyborne_elf_male_cheer_7744477.ogg (FileDataID 7744477), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3773): 'Zephrys will not fall.' / 'Zephyrus will not fall' / 'Zafres will not fall.' / 'Zafras will not fall.'",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_7745200.ogg (FileDataID 7745200), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       }
     ]
   },
@@ -5650,7 +5678,7 @@
     "pos": "interjection",
     "canon": false,
     "root": "aeesha'el + banu + zephara-alis",
-    "notes": "Darnassian (Skyborne dialect). The only Skyborne sentence in the client: the valediction of MailTemplate 652, from the Valanaar druid trainer Lotheluum Starbreeze to a young Skyborne druid ($n) after the Bear Form quests, in the slot where other letters close with 'Regards,' or 'Light be with you.' zepharaalis = Zephraalis, a Skyborne surname built on Zephras. aeesha'el and banu are attested nowhere else; their glosses are guesses. An earlier 'peace' reading of aeesha'el rested on el 'peace', which the audit removed. 2-candidates.json has the same phrase at low ('not translated'); this file rates the gloss medium because of the Zephraalis match and the letter's closing slot.",
+    "notes": "Darnassian (Skyborne dialect). The only written Skyborne sentence in the client: the valediction of MailTemplate 652, from the Valanaar druid trainer Lotheluum Starbreeze to a young Skyborne druid ($n) after the Bear Form quests, in the slot where other letters close with 'Regards,' or 'Light be with you.' zepharaalis = Zephraalis, a Skyborne surname built on Zephras. Skyborne NPCs speak the same farewell with zephrali as the last word (aeesha'el banu zephrali, report 5), and banu also opens their greetings banu alah and banu adora, so banu is what the blessing invokes (the winds, or their blessing); aeesha'el is still unexplained. An earlier 'peace' reading of aeesha'el rested on el 'peace', which the audit removed. 2-candidates.json has the same phrase at low ('not translated'); this file rates the gloss medium because of the Zephraalis match and the letter's closing slot.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "medium",
@@ -5683,6 +5711,14 @@
       {
         "quote": "Zephraalis",
         "where": "NameGen#25277, #25363, #25449, #25535 (races 95/96)"
+      },
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3776): 'I share Banu Zafrali.' / 'Ayesha Banu Zafraly' / 'ai shei el banu, zefrali' / 'ai sheyel banu zafrali'",
+        "where": "client voice file sound/creature/7478487/7478487_farewell_7744790.ogg (FileDataID 7744790), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3773): 'Harshael Bono Zafrali' / \"Hi, I'm Shael Bonu Zephrali.\" / 'a sheal banu zafra li' / \"ha'she'al bonu zefrali\"",
+        "where": "client voice file sound/creature/7478494/7478494_farewell_7745188.ogg (FileDataID 7745188), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       }
     ]
   },
@@ -5831,7 +5867,7 @@
     "pos": "adjective",
     "canon": false,
     "root": "zephra + -li",
-    "notes": "Darnassian (Skyborne dialect). Prefix of 32 common-quality level-14 items in the starting zone (Zephrali Chainmail, Zephrali Greatstaff, etc.), the way Darnassian and Thalassian are used in English item names. Built with a demonym -i like Zandalar > Zandalari and Rohash > Rohashi Spires; the stem keeps the island's a and drops -s: Zephra(s) > Zephra-li.",
+    "notes": "Darnassian (Skyborne dialect). Prefix of 32 common-quality level-14 items in the starting zone (Zephrali Chainmail, Zephrali Greatstaff, etc.), the way Darnassian and Thalassian are used in English item names. Built with a demonym -i like Zandalar > Zandalari and Rohash > Rohashi Spires; the stem keeps the island's a and drops -s: Zephra(s) > Zephra-li. Also spoken as the last word of the NPC farewell aeesha'el banu zephrali (report 5), heard as zafrali, zefrali or zephrali: ZEF-ra-li.",
     "source": "skyborne",
     "canon_basis": "inferred",
     "confidence": "high",
@@ -5848,6 +5884,14 @@
       {
         "quote": "Zephrali Chainmail",
         "where": "client db2:ItemSparse#277080.Display_lang"
+      },
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3776): 'I share Banu Zafrali.' / 'Ayesha Banu Zafraly' / 'ai shei el banu, zefrali' / 'ai sheyel banu zafrali'",
+        "where": "client voice file sound/creature/7478487/7478487_farewell_7744790.ogg (FileDataID 7744790), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3773): 'Harshael Bono Zafrali' / \"Hi, I'm Shael Bonu Zephrali.\" / 'a sheal banu zafra li' / \"ha'she'al bonu zefrali\"",
+        "where": "client voice file sound/creature/7478494/7478494_farewell_7745188.ogg (FileDataID 7745188), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
       }
     ]
   },
@@ -5960,6 +6004,142 @@
       {
         "quote": "Shen'dralar",
         "where": "client db2:Faction#809.Name_lang"
+      }
+    ]
+  },
+  {
+    "word": "banu",
+    "translation": {
+      "en": "the winds, or their blessing (what Skyborne greetings and farewells invoke)",
+      "uk": "вітри або їхнє благословення (те, що закликають привітання і прощання небесонароджених)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "banu",
+    "notes": "Darnassian (Skyborne dialect). In every elvish formula of the Skyborne voice files: banu alah and banu adora (greetings), aradash ... banu (a greeting) and aeesha'el banu zephrali (a farewell), and written once in the letter MailTemplate 652. It takes the place of Elune in Darnassian Elune-adore 'Elune be with you' and of ishnu 'good fortune' in Ishnu-alah 'good fortune to you', so it names what the blessing wishes on the listener. Nearly every English greeting and farewell of the same NPC voices invokes the winds ('Favorable winds to you, friend', 'Winds welcome you', 'Blessing of the winds upon you', 'May the winds guide your path'), and the letter that ends with it says 'I am unsure where the winds will lead you'. Whether banu is the winds themselves or their blessing is open. Replaces the low 'way, passage' guess of report 3.",
+    "source": "skyborne",
+    "canon_basis": "inferred",
+    "confidence": "medium",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "evidence": [
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Allah.' / 'Banu Allah' / 'banu ala' / 'banu ala'",
+        "where": "client voice file sound/creature/7478487/7478487_greetings_7744800.ogg (FileDataID 7744800), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Adora.' / 'Banu Adora' / 'banu adora' / 'Banu Adorha'",
+        "where": "client voice file sound/creature/7478487/7478487_greetings_7744796.ogg (FileDataID 7744796), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3776): 'I share Banu Zafrali.' / 'Ayesha Banu Zafraly' / 'ai shei el banu, zefrali' / 'ai sheyel banu zafrali'",
+        "where": "client voice file sound/creature/7478487/7478487_farewell_7744790.ogg (FileDataID 7744790), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Aradash Ishtalah Banu' / 'Aradash i Talha Banu' / 'aradash ith tala banu' / 'aradash ith dala banu'",
+        "where": "client voice file sound/creature/7478487/7478487_greetings_7744799.ogg (FileDataID 7744799), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3764), English: 'Favorable wins to you, friend.' (Wizper; the line is 'Favorable winds to you, friend')",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_7744875.ogg (FileDataID 7744875), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "I am unsure where the winds will lead you ... Aeesha'el banu zepharaalis, Lotheluum Starbreeze",
+        "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
+      }
+    ]
+  },
+  {
+    "word": "banu alah",
+    "translation": {
+      "en": "(greeting; the Skyborne /hello) roughly 'winds to you' or 'blessing to you'",
+      "uk": "(привітання; /hello небесонароджених) приблизно 'вітри тобі' або 'благословення тобі'"
+    },
+    "pos": "phrase",
+    "canon": false,
+    "root": "banu + alah",
+    "notes": "Darnassian (Skyborne dialect). The female player voice says it for /hello, beside the English hellos 'Hello', 'Land with grace' and 'Gale's greetings, friend'; two Skyborne NPC voice sets say it as a greeting. The male /hello was heard as 'anu ala' by three of four listeners and 'Benu Allah' by one: probably the same phrase with a weak b. Built like Darnassian Ishnu-alah 'good fortune to you', with alah 'to you'; compare the English greeting of the same NPC voice, 'Favorable winds to you, friend'. Spelled alah after Ishnu-alah; the listeners heard ala or alah.",
+    "source": "skyborne",
+    "canon_basis": "inferred",
+    "confidence": "medium",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "evidence": [
+      {
+        "quote": "/hello emote, female player voice: 'Banu Allah' / 'Banu Allah' / 'banu ala' / 'banu ala'",
+        "where": "client voice file sound/character/skyborne_elf_female/vo_skyborne_elf_female_hello_7744899.ogg (FileDataID 7744899), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Allah.' / 'Banu Allah' / 'banu ala' / 'banu ala'",
+        "where": "client voice file sound/creature/7478487/7478487_greetings_7744800.ogg (FileDataID 7744800), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3773): 'Banu Allah' / (no reading) / 'banu ala' / 'banu alah'",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_7745203.ogg (FileDataID 7745203), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "/hello emote, male player voice: 'Anu Allah' / 'Benu Allah' / 'anu ala' / 'anu ala'",
+        "where": "client voice file sound/character/skyborne_elf_male/vo_skyborne_elf_male_hello_7744493.ogg (FileDataID 7744493), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3764), English: 'Favorable wins to you, friend.' (Wizper; the line is 'Favorable winds to you, friend')",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_7744875.ogg (FileDataID 7744875), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      }
+    ]
+  },
+  {
+    "word": "banu adora",
+    "translation": {
+      "en": "(greeting) roughly 'may the winds be with you'",
+      "uk": "(привітання) приблизно 'хай вітри будуть з тобою'"
+    },
+    "pos": "phrase",
+    "canon": false,
+    "root": "banu + adora (compare Darnassian adore)",
+    "notes": "Darnassian (Skyborne dialect). A greeting of both Skyborne NPC voice sets. A fourth file (FileDataID 7745197) was heard as 'The new Adura' by all four listeners and may be the same line. Built like Darnassian Elune-adore 'Elune be with you' and Shalassian An'ratha adore (a farewell), with banu in Elune's place. Spelled as heard: the twelve readings give adora eight times, adara three times and adura once, never adore.",
+    "source": "skyborne",
+    "canon_basis": "inferred",
+    "confidence": "medium",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "evidence": [
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3776): 'Banu Adora.' / 'Banu Adora' / 'banu adora' / 'Banu Adorha'",
+        "where": "client voice file sound/creature/7478487/7478487_greetings_7744796.ogg (FileDataID 7744796), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3820): 'Banu Adora.' / 'バヌー・アドラ' (banū adora) / 'banu adura' / 'banu adora'",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_8268710.ogg (FileDataID 8268710), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC greeting (NPCSounds 3764): 'Banu Adara.' / 'Banu Adhara' / 'panu adara' / 'banu adora'",
+        "where": "client voice file sound/creature/7478494/7478494_greetings_7744878.ogg (FileDataID 7744878), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      }
+    ]
+  },
+  {
+    "word": "aeesha'el banu zephrali",
+    "translation": {
+      "en": "(farewell) roughly 'may the winds of Zephras go with you'",
+      "uk": "(прощання) приблизно 'хай вітри Зефраса будуть з тобою'"
+    },
+    "pos": "phrase",
+    "canon": false,
+    "root": "aeesha'el + banu + zephrali",
+    "notes": "Darnassian (Skyborne dialect). The spoken farewell of two Skyborne NPC voice sets: the letter's closing line aeesha'el banu zepharaalis, with zephrali 'of Zephras' (the item-name adjective) as the last word. aeesha'el is spelled as in the letter; it sounds like ai-SHAY-el. Its meaning is still unknown.",
+    "source": "skyborne",
+    "canon_basis": "inferred",
+    "confidence": "medium",
+    "method": "voice transcription by 4 listeners from 3 model families (blind prompt) + the emote or NPC slot that plays the line + comparison with Darnassian blessings",
+    "evidence": [
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3776): 'I share Banu Zafrali.' / 'Ayesha Banu Zafraly' / 'ai shei el banu, zefrali' / 'ai sheyel banu zafrali'",
+        "where": "client voice file sound/creature/7478487/7478487_farewell_7744790.ogg (FileDataID 7744790), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "Skyborne NPC farewell (NPCSounds 3773): 'Harshael Bono Zafrali' / \"Hi, I'm Shael Bonu Zephrali.\" / 'a sheal banu zafra li' / \"ha'she'al bonu zefrali\"",
+        "where": "client voice file sound/creature/7478494/7478494_farewell_7745188.ogg (FileDataID 7745188), transcribed 2026-11-18 by Wizper, Scribe v2, Gemini 3.1 Pro, Gemini 3.8 Flash; report 5"
+      },
+      {
+        "quote": "I am unsure where the winds will lead you ... Aeesha'el banu zepharaalis, Lotheluum Starbreeze",
+        "where": "client db2:MailTemplate#652.Body_lang (.wowf-extract/corpus.jsonl)"
       }
     ]
   }

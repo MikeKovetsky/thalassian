@@ -15,10 +15,12 @@ Policy (decided in the main session, recorded in research/2026-11-revival/merge-
   the audit replaced are fixed by CORRECTIONS; both are logged.
 
 The merge runs once, on the pre-revival lexicon (commit 42eb9cf). apply_localization.py then applies
-4-candidates.json on top. To reproduce lexicon.json and merge-log.md, from the repo root:
+4-candidates.json on top, and apply_voice.py applies 5-candidates.json. To reproduce lexicon.json and
+merge-log.md, from the repo root:
   git show 42eb9cf:src/thalassian/data/lexicon.json > src/thalassian/data/lexicon.json
   python3 research/2026-11-revival/scripts/merge_candidates.py
   python3 research/2026-11-revival/scripts/apply_localization.py
+  python3 research/2026-11-revival/scripts/apply_voice.py
 """
 import json
 import os
