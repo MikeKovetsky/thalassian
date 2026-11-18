@@ -38,7 +38,7 @@ scripts: `.wowf-extract/` (local only, see its README) and `tools/wowf/`.
 4. **Hidden content.** Three TACT keys are not public (`0DA4670DB36FB2A9`, `DA0E7785727A0A65`,
    `3146BA4C4ECDBFAB`); they hide 61 DB2 sections, including parts of AreaTable, Map, QuestV2,
    Spell, SpellName and ItemSparse.
-5. **The words of the voice lines.** They are audio; someone has to listen and transcribe. Done for the 196 extracted files on 2026-11-18, by four machine listeners ([report 5](5-voice-transcription.md)).
+5. **The words of the voice lines.** They are audio; someone has to listen and transcribe. Done for the 196 extracted files on 2026-11-18, by up to four machine listeners ([report 5](5-voice-transcription.md)).
 
 ## 2. How the data was read
 

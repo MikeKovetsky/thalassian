@@ -98,7 +98,7 @@ All are in `.wowf-extract/skyborne_vo/sound/`. The meaning of each comes from th
 | 9 | `creature/7478487/7478487_greetings_7744809.ogg` (NPCSounds 3775, the longest NPC greeting) | Skyborne NPC greeting | What a Skyborne NPC says when clicked |
 | 10 | `creature/7478487/7478487_farewell_7744803.ogg` (NPCSounds 3775, the longest NPC farewell) | Skyborne NPC farewell | What a Skyborne NPC says when you leave, perhaps the letter's farewell blessing |
 
-**Result (2026-11-18, [report 5](5-voice-transcription.md)):** all ten are English. For example, /hello 1 and 2 are "Gale's greetings, friend", /bye 3 and 4 are "May the winds guide you", and /charge 7 is "Show them the storm's fury". The elvish is in other files of the same slots. The female /hello says *banu alah*, and the NPC farewells say *aeesha'el banu zephrali*.
+**Result (2026-11-18, [report 5](5-voice-transcription.md)):** all ten are English. For example, /hello 1 and 2 are "Gale's greetings, friend", /bye 3 and 4 are "May the winds guide you", and /charge 7 is "Show them the storm's fury". The elvish is in other files of the same slots. The female /hello says *banu alah*, and two NPC farewells say *aeesha'el banu zephrali*.
 
 ## Sources used
 
@@ -263,7 +263,7 @@ None of the new data contradicts a canon entry outright. Six points are worth no
 
 Phase 2 ran every lookup that the dump can answer; the results are in "Client check (phase 2)" above. Four lookups need data the dump does not have:
 
-1. **Transcribe the 10 voice files** listed in the client-check section. Done on 2026-11-18 by four machine listeners ([report 5](5-voice-transcription.md)); a person listening to the 12 elvish files would still settle their vowels.
+1. **Transcribe the 10 voice files** listed in the client-check section. Done on 2026-11-18 by three machine listeners ([report 5](5-voice-transcription.md)); a person listening to the 12 elvish files would still settle their vowels.
 2. **Zephras Isle quest and book text.** This needs a Skyborne character to play the zone so the quest and page caches fill. Then search `wdb_strings.jsonl` for:
    1. *Shal'nan* and the four "Rebellion in Eldre'Thalas" crystals.
    2. Rorian's line in quest 92474, to settle *shan'dorei* against *shen'dorei*.
