@@ -88,6 +88,15 @@
 
     const allowed = (e, canonOnly) => !(canonOnly && !e.canon);
 
+    // Canon Only keeps a pronoun form only when the lexicon has it as a canon word (na, "us/our"). The rest
+    // ('a and 'dan, o "I/my", and 'o and mal while the lexicon calls them inferred or lacks them) stay in
+    // brackets, like any other word that is not canon.
+    function pronounFormAllowed(lexicon, canonOnly) {
+        if (!canonOnly) return () => true;
+        const canon = new Set(lexicon.filter(e => e.canon).map(e => e.word.toLowerCase().replace(/^'/, "")));
+        return form => canon.has(form);
+    }
+
     function expandContractions(text) {
         text = text.replace(/’/g, "'");
         for (const [contraction, full] of CONTRACTIONS) text = text.replace(contraction, full);
@@ -303,11 +312,12 @@
         // "By" again after the possessives, for "By our blood" (anar'sin na).
         const items = pairPronouns(applyProclitics(steps));
 
-        // "" for a dropped word; [word] for one the lexicon lacks.
+        const formAllowed = pronounFormAllowed(lexicon, canonOnly);
+        // "" for a dropped word; [word] for one the lexicon lacks, or for a pronoun form Canon Only leaves out.
         const word = item => {
             if (DROP_WORDS.has(item.lower)) return "";
             const form = pronounForm(item.lower);
-            if (form) return form;
+            if (form) return formAllowed(form) ? form : `[${item.text}]`;
             const found = findWord(lexicon, item.lower, canonOnly);
             return found ? found.word : `[${item.text}]`;
         };
@@ -321,6 +331,7 @@
             if (item.kind === "proclitic") return attach(by ? by.word : "", render(item.target));
             if (item.kind === "possessive") {
                 const target = item.targets.map(render).filter(Boolean).join(" ");
+                if (!formAllowed(item.form)) return [`[${item.word.text}]`, target].filter(Boolean).join(" ");
                 return (item.before ? [item.form, target] : [target, item.form]).filter(Boolean).join(" ");
             }
             if (item.kind === "compound") {
@@ -334,7 +345,8 @@
             if (!item.pronoun) return w;
             // A dropped base must not take the pronoun with it.
             if (!w) return word(item.pronoun);
-            return `${w}'${pronounForm(item.pronoun.lower)}`;
+            const form = pronounForm(item.pronoun.lower);
+            return formAllowed(form) ? `${w}'${form}` : `${w} [${item.pronoun.text}]`;
         };
 
         const translated = [];
@@ -383,11 +395,12 @@
             return t || `[${w}]`;
         };
         // Nouns have no plural, so a word is looked up as it is; a free pronoun the lexicon lacks reads
-        // from the pronoun table.
+        // from the pronoun table, unless Canon Only leaves its form out.
+        const formAllowed = pronounFormAllowed(lexicon, canonOnly);
         const lookup = w => {
             const exact = usable.filter(e => e.word.toLowerCase() === w);
             if (exact.length) return gloss(best(exact), w, false);
-            return FREE_PRONOUNS.has(w) ? FREE_PRONOUNS.get(w) : null;
+            return FREE_PRONOUNS.has(w) && formAllowed(w) ? FREE_PRONOUNS.get(w) : null;
         };
 
         const tokens = plainApostrophes(text).match(/[A-Za-z\']+|[.,!?;]/g) || [];
@@ -423,8 +436,11 @@
                 translated.push(whole);
             } else {
                 w.split("'").filter(Boolean).forEach((part, n) => {
-                    if (n > 0 && PRONOUN_ENCLITICS.has(part)) translated.push(PRONOUN_ENCLITICS.get(part));
-                    else translated.push(lookup(part) || `[${part}]`);
+                    if (n > 0 && PRONOUN_ENCLITICS.has(part) && formAllowed(part)) {
+                        translated.push(PRONOUN_ENCLITICS.get(part));
+                    } else {
+                        translated.push(lookup(part) || `[${part}]`);
+                    }
                 });
             }
             i++;

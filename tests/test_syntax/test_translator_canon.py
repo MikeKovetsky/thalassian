@@ -186,6 +186,15 @@ class TestWebEngine(EngineCases, unittest.TestCase):
         self.assertEqual(self.translate(inputs), ["Morin'aminor", "Dorah", "Vendel'o eranu"])
         self.assertEqual(self.translate(inputs, canonOnly=True), ["[quiet] [serenity]", "[valor]", "Vendel'o eranu"])
 
+    def test_canon_only_keeps_only_canon_pronoun_forms(self):
+        # na ("us/our") is a canon entry; 'a, 'dan and o "my" are invented, so Canon Only leaves them in brackets
+        # in both directions, like any other word that is not canon.
+        inputs = ["guide us", "our heart", "guide you", "guide them", "you", "my heart"]
+        self.assertEqual(self.translate(inputs, canonOnly=True),
+                         ["Dela'na", "Alann na", "Dela [you]", "Dela [them]", "[you]", "[my] alann"])
+        self.assertEqual(self.reverse(["Dela'na", "Dela'a", "A dela'dan"], canonOnly=True),
+                         ["guide us", "guide [a]", "[a] guide [dan]"])
+
     def test_ukrainian_matches_the_python_engine(self):
         self.assertEqual(self.translate(UKRAINIAN), UKRAINIAN_GOLD)
 
