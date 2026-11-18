@@ -1,0 +1,5645 @@
+[
+ {
+  "form": "Athero bath'rilas!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Naga Sea Witches (Warcraft III: The Frozen Throne)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Phonetic spelling, said by Naga Sea Witches in Warcraft III: The Frozen Throne.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#Naga_Sea_Witch",
+    "page": "Quotes of Warcraft III/Neutral Heroes",
+    "speaker": "Naga Sea Witch (Warcraft III), warcry",
+    "line": "Athero bath'rilas! [LadyVashjWarcry1.wav]"
+   }
+  ]
+ },
+ {
+  "form": "Alana be'lendor!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Fathom-Lord Karathress (on killing a player); Harjatan (Commanding Roar); Azsh'ari naga and other naga NPCs",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Yelled by Fathom-Lord Karathress upon killing a player and by Harjatan when casting Commanding Roar.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Elementalist#Quotes",
+    "page": "Azsh'ari Elementalist",
+    "speaker": "Azsh'ari Elementalist",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Deepstalker#Quotes",
+    "page": "Azsh'ari Deepstalker",
+    "speaker": "Azsh'ari Deepstalker",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Stormsurger#Quotes",
+    "page": "Azsh'ari Stormsurger",
+    "speaker": "Azsh'ari Stormsurger",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Tempest#Quotes",
+    "page": "Azsh'ari Tempest",
+    "speaker": "Azsh'ari Tempest",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Neophyte#Quotes",
+    "page": "Azsh'ari Neophyte",
+    "speaker": "Azsh'ari Neophyte",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Oracle#Quotes",
+    "page": "Azsh'ari Oracle",
+    "speaker": "Azsh'ari Oracle",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Invoker#Quotes",
+    "page": "Azsh'ari Invoker",
+    "speaker": "Azsh'ari Invoker",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Summoner#Quotes",
+    "page": "Azsh'ari Summoner",
+    "speaker": "Azsh'ari Summoner",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Azsh'ari_Wavebreaker#Quotes",
+    "page": "Azsh'ari Wavebreaker",
+    "speaker": "Azsh'ari Wavebreaker",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Fathom-Lord_Karathress#Quotes",
+    "page": "Fathom-Lord Karathress",
+    "speaker": "Fathom-Lord Karathress",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Imperial_Shaper#Quotes",
+    "page": "Imperial Shaper",
+    "speaker": "Imperial Shaper",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Shalan'ali_Stormtongue#Quotes",
+    "page": "Shalan'ali Stormtongue",
+    "speaker": "Shalan'ali Stormtongue",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Glacier_Mage_Zhiela#Quotes",
+    "page": "Glacier Mage Zhiela",
+    "speaker": "Glacier Mage Zhiela",
+    "line": "Alana be'lendor!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Harjatan#Quotes",
+    "page": "Harjatan",
+    "speaker": "Harjatan",
+    "line": "Alana be'lendor!"
+   }
+  ]
+ },
+ {
+  "form": "Ash-thero-sauguine!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Naga Myrmidon in \"The Broken Isles\" (Warcraft III)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Probably a battle cry, said by a Naga Myrmidon in \"The Broken Isles\" in Warcraft III.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Broken_Isles_(WC3_Night_Elf)#During_the_Mission",
+    "page": "The Broken Isles (WC3 Night Elf)",
+    "speaker": "Naga",
+    "line": "Ash-thero-sauguine! Ba'anthalso-dorei!"
+   }
+  ]
+ },
+ {
+  "form": "Ash'thero sanguine!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Harjatan",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Yelled by Harjatan.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Harjatan#Quotes",
+    "page": "Harjatan",
+    "speaker": "Harjatan (aggro)",
+    "line": "Ash'thero sanguine!"
+   }
+  ]
+ },
+ {
+  "form": "Ba'anthalso-dorei!",
+  "branch": "nazja",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Warlord Kalithresh; Naga Myrmidon in \"The Broken Isles\" (Warcraft III)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Said by Warlord Kalithresh as well as by a Naga Myrmidon in \"The Broken Isles\" in Warcraft III.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Warlord_Kalithresh#Quotes",
+    "page": "Warlord Kalithresh",
+    "speaker": "Warlord Kalithresh",
+    "line": "Ba'anthalso-dorei!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Broken_Isles_(WC3_Night_Elf)#During_the_Mission",
+    "page": "The Broken Isles (WC3 Night Elf)",
+    "speaker": "Naga",
+    "line": "Ash-thero-sauguine! Ba'anthalso-dorei!"
+   }
+  ]
+ },
+ {
+  "form": "Bal, lamer zhita!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "High Warlord Naj'entus; Harjatan",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Yelled by High Warlord Naj'entus and Harjatan.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Harjatan#Quotes",
+    "page": "Harjatan",
+    "speaker": "Harjatan (Commanding Roar)",
+    "line": "Bal, lamer zhita!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/High_Warlord_Naj'entus#Quotes",
+    "page": "High Warlord Naj'entus",
+    "speaker": "High Warlord Naj'entus",
+    "line": "Bal, lamer zhita!"
+   }
+  ]
+ },
+ {
+  "form": "Be'lanen dalorai!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "High Warlord Naj'entus; Shirakess naga",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Yelled by High Warlord Naj'entus.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/High_Warlord_Naj'entus#Quotes",
+    "page": "High Warlord Naj'entus",
+    "speaker": "High Warlord Naj'entus",
+    "line": "Be'lanen dalorai!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Shirakess_Overseer#Quotes",
+    "page": "Shirakess Overseer",
+    "speaker": "Shirakess Overseer",
+    "line": "Be'lanen dalorai!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Shirakess_Apprentice#Quotes",
+    "page": "Shirakess Apprentice",
+    "speaker": "Shirakess Apprentice",
+    "line": "Be'lanen dalorai!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Shirakess_Enthraller#Quotes",
+    "page": "Shirakess Enthraller",
+    "speaker": "Shirakess Enthraller",
+    "line": "Be'lanen dalorai!"
+   }
+  ]
+ },
+ {
+  "form": "Be'lemer an-delei!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Lady Vashj (Serpentshrine Cavern); Baroness Vashj (Straight to the Heart)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Yelled by Lady Vashj during her encounter in Serpentshrine Cavern and in Straight to the Heart.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Lady_Vashj_(tactics)#Quotes",
+    "page": "Lady Vashj (tactics)",
+    "speaker": "Lady Vashj (killing a player)",
+    "line": "Be'lemer an-delei!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Straight_to_the_Heart#Notes",
+    "page": "Straight to the Heart",
+    "speaker": "Baroness Vashj",
+    "line": "Be'lemer an-delei! Such is the price for your treachery!"
+   }
+  ]
+ },
+ {
+  "form": "Fara dena'lay!",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Zhahara Darksquall",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": "Pearl of Pandaria, chapter 5",
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Spoken by Zhahara Darksquall to call down a lightning strike on Wanyo's fishing boat.",
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Osh'bala-tharei",
+  "branch": "nazja",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Naga Sirens (Warcraft III)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Phonetic spelling, said by Naga Sirens in Warcraft III.",
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Therazjasha!",
+  "branch": "nazja",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Naga Sea Witches (Warcraft III)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": "Straight to the Heart",
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "said by Naga Sea Witches in Warcraft III.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Straight_to_the_Heart#Beta_version",
+    "page": "Straight to the Heart",
+    "speaker": "quest description text (beta version)",
+    "line": "We are the powerful! Therazjasha!"
+   }
+  ]
+ },
+ {
+  "form": "Zin-Azshari adore.",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Illidari naga NPCs (dismiss line)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Phrases",
+  "wiki_note": "Said by Illidari naga NPCs.",
+  "caveat": "The NPC quotes page adds its own guess, not a Blizzard gloss: (Possibly “The glory of Azshara be with you.”)",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Naga",
+    "page": "NPC quotes",
+    "speaker": "Illidari naga NPCs (dismiss)",
+    "line": "Zin-Azshari adore."
+   }
+  ]
+ },
+ {
+  "form": "Era'sazjar!",
+  "branch": "nazja",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Naga Sea Witch (Warcraft III), attack line",
+  "source_url": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#Naga_Sea_Witch",
+  "reference": null,
+  "wiki_section": "Quotes of Warcraft III > Naga Sea Witch > Attack",
+  "wiki_note": "Not listed on the Nazja page.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#Naga_Sea_Witch",
+    "page": "Quotes of Warcraft III/Neutral Heroes",
+    "speaker": "Naga Sea Witch (Warcraft III)",
+    "line": "Era'sazjar! [LadyVashjYesAttack3.wav]"
+   }
+  ]
+ },
+ {
+  "form": "Ash'valana thure.",
+  "branch": "nazja",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Naga Siren (Warcraft III), acknowledgement line",
+  "source_url": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral#Naga_Siren",
+  "reference": null,
+  "wiki_section": "Quotes of Warcraft III > Naga Siren > Yes",
+  "wiki_note": "Not listed on the Nazja page.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral#Naga_Siren",
+    "page": "Quotes of Warcraft III/Neutral",
+    "speaker": "Naga Siren (Warcraft III)",
+    "line": "Ash'valana thure. [NagaSirenYes3.wav]"
+   }
+  ]
+ },
+ {
+  "form": "Akiris",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A species of ocean reed.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": "Akiris by the Bundle (Classic): \"I got a friend named Groy who makes a killing selling what the naga call akiris reed ...\"",
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Azsh'ari",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga tribe in Nazjatar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Azsh'ir",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga army in the Shimmering Expanse.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Nazjatar",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The naga capital, located beneath the Maelstrom.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Nazj'vel",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga-inhabited island in Darkshore.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Ranazjar",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga-inhabited island in Desolace.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Rethress",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Abandoned naga camp in Azshara.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Shirakess",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga tribe in Nazjatar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Strashaz",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga tribe on Alcaz Island.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Zanj'ir",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga tribe in Nazjatar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Zeth'jir",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Naga tribe in Stormsong Valley.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazja#Proper_nouns",
+  "reference": null,
+  "wiki_section": "Untranslated Nazja words and phrases > Proper nouns",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Idra'kess",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Idra'kess are a group of naga found in Shimmering Expanse.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Idra'kess",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Naz'jar",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Naz'jar are a group of naga found at Throne of the Tides in Abyssal Maw and in Shimmering Expanse.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Naz'jar",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Nazeshi",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Nazeshi are a group of naga operating in the Dreadpearl Shallows in Zuldazar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazeshi",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Nazjarine",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Nazjarine naga were initially planned for Battle for Azeroth to appear in Nazjatar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nazjarine",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Sashj'tar",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Sashj'tar are a group of naga invading the vrykul of Jandvik in Suramar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Sashj'tar",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Reef_Lord_Raj'his#Quotes",
+    "page": "Reef Lord Raj'his",
+    "speaker": "Reef Lord Raj'his",
+    "line": "Sashj'tar attack!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Sashj'tar_Deep_Witch#Quotes",
+    "page": "Sashj'tar Deep Witch",
+    "speaker": "Sashj'tar Deep Witch",
+    "line": "My life for the Sashj'tar..."
+   }
+  ]
+ },
+ {
+  "form": "Sira'kess",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Sira'kess are a group of naga found in Abyssal Depths and Shimmering Expanse.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Sira'kess",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Vashj'elan",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Vashj'elan are a group of naga found at Ruins of Vashj'elan in Lost Isles.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Vashj'elan",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Zin'jatar",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Zin'jatar are a group of naga found in Kelp'thar Forest attacks Horde and Alliance forces after Ozumat sinks the ship carrying them.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zin'jatar",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Zithreenai",
+  "branch": "nazja",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Zithreenai are a group of naga located in the Shimmering Expanse.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zithreenai",
+  "reference": "Category:Naga tribes",
+  "wiki_section": "Category:Naga tribes (page lead)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Erana-dora isil",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": "A thousand thanks upon you.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Suramar Refugee (One Day at a Time)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)",
+  "reference": "One Day at a Time",
+  "wiki_section": "Shalassian primer (official translations)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/One_Day_at_a_Time#Notes",
+    "page": "One Day at a Time",
+    "speaker": "Suramar Refugee",
+    "line": "Erana-dora isil. A thousand thanks upon you."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Suramar_Refugee#Quotes",
+    "page": "Suramar Refugee",
+    "speaker": "Suramar Refugee",
+    "line": "Erana-dora isil. A thousand thanks upon you."
+   }
+  ]
+ },
+ {
+  "form": "Quel'vala thonos",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": "Nobility through tradition.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Arcanist Valtrois (Honoring the Past)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)",
+  "reference": "Honoring the Past",
+  "wiki_section": "Shalassian primer (official translations)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Honoring_the_Past#Completion",
+    "page": "Honoring the Past",
+    "speaker": "Arcanist Valtrois",
+    "line": "Quel'vala thonos. Nobility through tradition. I thank you, outlander."
+   }
+  ]
+ },
+ {
+  "form": "Ru shanna shal'dorei",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": "The nightborne will survive.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Arcanist Valtrois (Feed Valtrois)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)",
+  "reference": "Feed Valtrois",
+  "wiki_section": "Shalassian primer (official translations)",
+  "wiki_note": "Listed together with the spelling Ru-shanna shal'dorei; the gloss carries the Aggressive Reconnaisance reference.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Feed_Valtrois#Notes",
+    "page": "Feed Valtrois",
+    "speaker": "Arcanist Valtrois (quest NPC)",
+    "line": "Ru shanna shal'dorei."
+   }
+  ]
+ },
+ {
+  "form": "Ru-shanna shal'dorei",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": "The nightborne will survive.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "First Arcanist Thalyssra (Aggressive Reconnaisance)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)",
+  "reference": "Aggressive Reconnaisance",
+  "wiki_section": "Shalassian primer (official translations)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Aggressive_Reconnaisance#Completion",
+    "page": "Aggressive Reconnaisance",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Ru-shanna shal'dorei. The Nightborne will survive."
+   }
+  ]
+ },
+ {
+  "form": "Shal'dorei",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": "Nightborne.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "the nightborne (self-name)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)",
+  "reference": "Magic Message",
+  "wiki_section": "Shalassian primer (official translations)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Tal'ashar",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": "An honor duel.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Coryn (In the Bag); Ly'leth Lunastre (Ly'leth's Champion)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)",
+  "reference": "Ly'leth's Champion",
+  "wiki_section": "Shalassian primer (official translations)",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/In_the_Bag#Notes",
+    "page": "In the Bag",
+    "speaker": "Coryn",
+    "line": "I will reclaim my honor! I invoke the ancient rite- Tal'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ly'leth's_Champion#Notes",
+    "page": "Ly'leth's Champion",
+    "speaker": "Ly'leth Lunastre",
+    "line": "Tal'ashar it is. I name my friend here as my champion."
+   }
+  ]
+ },
+ {
+  "form": "Anar'amenos",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Chief Telemancer Oculeth (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Wowhead voice file VO_703_Chief_Telemancer_Oculeth_64 https://www.wowhead.com/sound=67941/vo-703-chief-telemancer-oculeth-64",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Greeting said by Chief Telemancer Oculeth.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Chief_Telemancer_Oculeth#On-click",
+    "page": "Chief Telemancer Oculeth",
+    "speaker": "Chief Telemancer Oculeth",
+    "line": "Anar'amenos."
+   }
+  ]
+ },
+ {
+  "form": "An'ah",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (time stop spell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Trail of Echoes",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by First Arcanist Thalyssra to cast a time stop spell.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Trail_of_Echoes#Notes",
+    "page": "Trail of Echoes",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "An'ah!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Echo_of_First_Arcanist_Thalyssra#Quotes",
+    "page": "Echo of First Arcanist Thalyssra",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "An'ah!"
+   }
+  ]
+ },
+ {
+  "form": "An'anora",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Ly'leth Lunastre (frost trap on Anarys Lunastre)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Blood of My Blood",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Ly'leth Lunastre when casting a frost trap on Anarys Lunastre.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Blood_of_My_Blood#Notes",
+    "page": "Blood of My Blood",
+    "speaker": "Ly'leth Lunastre",
+    "line": "An'anora!"
+   }
+  ]
+ },
+ {
+  "form": "An'ratha ador",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Silgryn; First Arcanist Thalyssra (farewell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Wowhead voice file VO_703_Silgryn_17 https://www.wowhead.com/sound=67964/vo-703-silgryn-17; Wowhead voice file VO_703_First_Arcanist_Thalyssra_154 https://www.wowhead.com/sound=67949/vo-703-first-arcanist-thalyssra-154",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "An'ratha ador and An'ratha adore - Said by Silgryn and First Arcanist Thalyssra as a farewell.",
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "An'ratha adore",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Silgryn; First Arcanist Thalyssra (farewell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Wowhead voice file VO_703_Silgryn_17 https://www.wowhead.com/sound=67964/vo-703-silgryn-17; Wowhead voice file VO_703_First_Arcanist_Thalyssra_154 https://www.wowhead.com/sound=67949/vo-703-first-arcanist-thalyssra-154",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "An'ratha ador and An'ratha adore - Said by Silgryn and First Arcanist Thalyssra as a farewell.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Silgryn#On-click",
+    "page": "Silgryn",
+    "speaker": "Silgryn",
+    "line": "An'ratha adore."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Thalyssra#On-click",
+    "page": "Thalyssra",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "An'ratha adore."
+   }
+  ]
+ },
+ {
+  "form": "An'ratha... an'tal-thandros!",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Warpcaster Thwen (casting a spell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Network Security",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Warpcaster Thwen when casting a spell.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Network_Security#Notes",
+    "page": "Network Security",
+    "speaker": "Warpcaster Thwen",
+    "line": "An'ratha... an'tal-thandros!"
+   }
+  ]
+ },
+ {
+  "form": "Anath'ashar",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne mobs (when attacking)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by nightborne mobs when attacking.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Callus#Quotes",
+    "page": "Callus",
+    "speaker": "Callus",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Punisher#Quotes",
+    "page": "Duskwatch Punisher",
+    "speaker": "Duskwatch Punisher",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Spell-Fencer#Quotes",
+    "page": "Duskwatch Spell-Fencer",
+    "speaker": "Duskwatch Spell-Fencer",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Adjudicator#Quotes",
+    "page": "Duskwatch Adjudicator",
+    "speaker": "Duskwatch Adjudicator",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Highblade#Quotes",
+    "page": "Duskwatch Highblade",
+    "speaker": "Duskwatch Highblade",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Observer#Quotes",
+    "page": "Duskwatch Observer",
+    "speaker": "Duskwatch Observer",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Battlemaster#Quotes",
+    "page": "Duskwatch Battlemaster",
+    "speaker": "Duskwatch Battlemaster",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Auditor#Quotes",
+    "page": "Duskwatch Auditor",
+    "speaker": "Duskwatch Auditor",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Orbitist#Quotes",
+    "page": "Duskwatch Orbitist",
+    "speaker": "Duskwatch Orbitist",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Moonscythe#Quotes",
+    "page": "Duskwatch Moonscythe",
+    "speaker": "Duskwatch Moonscythe",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Executor#Quotes",
+    "page": "Duskwatch Executor",
+    "speaker": "Duskwatch Executor",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Felblade#Quotes",
+    "page": "Duskwatch Felblade",
+    "speaker": "Duskwatch Felblade",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Moonmage#Quotes",
+    "page": "Duskwatch Moonmage",
+    "speaker": "Duskwatch Moonmage",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Felblade_Protector#Quotes",
+    "page": "Felblade Protector",
+    "speaker": "Felblade Protector",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Felborne_Abjurer#Quotes",
+    "page": "Felborne Abjurer",
+    "speaker": "Felborne Abjurer",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Captain_Fiora#Quotes",
+    "page": "Captain Fiora",
+    "speaker": "Captain Fiora",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Garion#Quotes",
+    "page": "Garion",
+    "speaker": "Garion",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Imperial_Arcbinder#Quotes",
+    "page": "Imperial Arcbinder",
+    "speaker": "Imperial Arcbinder",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Channeler#Quotes",
+    "page": "Ley Line Channeler",
+    "speaker": "Ley Line Channeler",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Researcher#Quotes",
+    "page": "Ley Line Researcher",
+    "speaker": "Ley Line Researcher",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Hunter#Quotes",
+    "page": "Ley Line Hunter",
+    "speaker": "Ley Line Hunter",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Leyline_Hunter#Quotes",
+    "page": "Leyline Hunter",
+    "speaker": "Leyline Hunter",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Leyline_Researcher#Quotes",
+    "page": "Leyline Researcher",
+    "speaker": "Leyline Researcher",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Magisterial_Sleuth#Quotes",
+    "page": "Magisterial Sleuth",
+    "speaker": "Magisterial Sleuth",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Loyalist_Sycophant#Quotes",
+    "page": "Loyalist Sycophant",
+    "speaker": "Loyalist Sycophant",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Scion#Quotes",
+    "page": "Nightborne Scion",
+    "speaker": "Nightborne Scion",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Warpcaster#Quotes",
+    "page": "Nightborne Warpcaster",
+    "speaker": "Nightborne Warpcaster",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Saboteur#Quotes",
+    "page": "Nightborne Saboteur",
+    "speaker": "Nightborne Saboteur",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Infiltrator#Quotes",
+    "page": "Nightborne Infiltrator",
+    "speaker": "Nightborne Infiltrator",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Envoy_(Suramar)#Quotes",
+    "page": "Nightborne Envoy (Suramar)",
+    "speaker": "Nightborne Envoy (Suramar)",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Enforcer#Quotes",
+    "page": "Nightborne Enforcer",
+    "speaker": "Nightborne Enforcer",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Siegecaster#Quotes",
+    "page": "Nightborne Siegecaster",
+    "speaker": "Nightborne Siegecaster",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Trapper#Quotes",
+    "page": "Nightborne Trapper",
+    "speaker": "Nightborne Trapper",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Skulking_Assassin#Quotes",
+    "page": "Skulking Assassin",
+    "speaker": "Skulking Assassin",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskrider_Silaryn#Quotes",
+    "page": "Duskrider Silaryn",
+    "speaker": "Duskrider Silaryn",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Conjurer_Thalerian#Quotes",
+    "page": "Conjurer Thalerian",
+    "speaker": "Conjurer Thalerian",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Suramar_Loyalist#Quotes",
+    "page": "Suramar Loyalist",
+    "speaker": "Suramar Loyalist",
+    "line": "Anath'ashar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Vineyard_Warden#Quotes",
+    "page": "Vineyard Warden",
+    "speaker": "Vineyard Warden",
+    "line": "Anath'ashar!"
+   }
+  ]
+ },
+ {
+  "form": "Aran'arcana",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra and Silgryn (greeting); Valtrois (farewell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Tweet by World of Warcraft, 2018-02-02, https://twitter.com/warcraft/status/959469789017075713 (text: \"Aran'arcana!\")",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said as a greeting by First Arcanist Thalyssra and Silgryn, and as a farewell by Valtrois.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Silgryn#On-click",
+    "page": "Silgryn",
+    "speaker": "Silgryn",
+    "line": "Aran'arcana."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Thalyssra#On-click",
+    "page": "Thalyssra",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Aran'arcana."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Arcanist_Valtrois#On-click",
+    "page": "Arcanist Valtrois",
+    "speaker": "Arcanist Valtrois",
+    "line": "Aran'arcana."
+   }
+  ]
+ },
+ {
+  "form": "Aran'ethil",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Vanthir (after being freed)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Waxing Crescent; Wowhead voice file VO_71_Vanthir_06_M https://www.wowhead.com/sound=78597/vo-71-vanthir-06-m",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Vanthir after being freed.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Waxing_Crescent#Notes",
+    "page": "Waxing Crescent",
+    "speaker": "Vanthir",
+    "line": "Aran'ethil... The nightmare is over!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Severed_Thread#Notes",
+    "page": "The Severed Thread",
+    "speaker": "Timeweaver Delormi",
+    "line": "Aran'ethil, Delormi. Withering away... I would not wish such a fate on anyone."
+   }
+  ]
+ },
+ {
+  "form": "Arash-falas",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne mobs (upon death)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by nightborne mobs upon death.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Arcane_Engineer#Quotes",
+    "page": "Arcane Engineer",
+    "speaker": "Arcane Engineer",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Callus#Quotes",
+    "page": "Callus",
+    "speaker": "Callus",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Punisher#Quotes",
+    "page": "Duskwatch Punisher",
+    "speaker": "Duskwatch Punisher",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Arcblade#Quotes",
+    "page": "Duskwatch Arcblade",
+    "speaker": "Duskwatch Arcblade",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Spell-Fencer#Quotes",
+    "page": "Duskwatch Spell-Fencer",
+    "speaker": "Duskwatch Spell-Fencer",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Adjudicator#Quotes",
+    "page": "Duskwatch Adjudicator",
+    "speaker": "Duskwatch Adjudicator",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Astralite#Quotes",
+    "page": "Duskwatch Astralite",
+    "speaker": "Duskwatch Astralite",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Highblade#Quotes",
+    "page": "Duskwatch Highblade",
+    "speaker": "Duskwatch Highblade",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Marauder#Quotes",
+    "page": "Duskwatch Marauder",
+    "speaker": "Duskwatch Marauder",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Observer#Quotes",
+    "page": "Duskwatch Observer",
+    "speaker": "Duskwatch Observer",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Battlemaster#Quotes",
+    "page": "Duskwatch Battlemaster",
+    "speaker": "Duskwatch Battlemaster",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Ley-Warden#Quotes",
+    "page": "Duskwatch Ley-Warden",
+    "speaker": "Duskwatch Ley-Warden",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Auditor#Quotes",
+    "page": "Duskwatch Auditor",
+    "speaker": "Duskwatch Auditor",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Orbitist#Quotes",
+    "page": "Duskwatch Orbitist",
+    "speaker": "Duskwatch Orbitist",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Moonscythe#Quotes",
+    "page": "Duskwatch Moonscythe",
+    "speaker": "Duskwatch Moonscythe",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Executor#Quotes",
+    "page": "Duskwatch Executor",
+    "speaker": "Duskwatch Executor",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Felblade#Quotes",
+    "page": "Duskwatch Felblade",
+    "speaker": "Duskwatch Felblade",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Felblade_Protector#Quotes",
+    "page": "Felblade Protector",
+    "speaker": "Felblade Protector",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Warpcaster#Quotes",
+    "page": "Duskwatch Warpcaster",
+    "speaker": "Duskwatch Warpcaster",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Subjugator#Quotes",
+    "page": "Duskwatch Subjugator",
+    "speaker": "Duskwatch Subjugator",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Warcaster#Quotes",
+    "page": "Duskwatch Warcaster",
+    "speaker": "Duskwatch Warcaster",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Felborne_Trapper#Quotes",
+    "page": "Felborne Trapper",
+    "speaker": "Felborne Trapper",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Captain_Fiora#Quotes",
+    "page": "Captain Fiora",
+    "speaker": "Captain Fiora",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Captain_Ilessa#Quotes",
+    "page": "Captain Ilessa",
+    "speaker": "Captain Ilessa",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Garion#Quotes",
+    "page": "Garion",
+    "speaker": "Garion",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Imperial_Arcbinder#Quotes",
+    "page": "Imperial Arcbinder",
+    "speaker": "Imperial Arcbinder",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Fist_of_the_Duskwatch#Quotes",
+    "page": "Fist of the Duskwatch",
+    "speaker": "Fist of the Duskwatch",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Channeler#Quotes",
+    "page": "Ley Line Channeler",
+    "speaker": "Ley Line Channeler",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Researcher#Quotes",
+    "page": "Ley Line Researcher",
+    "speaker": "Ley Line Researcher",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Hunter#Quotes",
+    "page": "Ley Line Hunter",
+    "speaker": "Ley Line Hunter",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Leyline_Researcher#Quotes",
+    "page": "Leyline Researcher",
+    "speaker": "Leyline Researcher",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Accomplice#Quotes",
+    "page": "Nightborne Accomplice",
+    "speaker": "Nightborne Accomplice",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Menagerie_Keeper#Quotes",
+    "page": "Menagerie Keeper",
+    "speaker": "Menagerie Keeper",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Loyalist_Sycophant#Quotes",
+    "page": "Loyalist Sycophant",
+    "speaker": "Loyalist Sycophant",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Scion#Quotes",
+    "page": "Nightborne Scion",
+    "speaker": "Nightborne Scion",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Warpcaster#Quotes",
+    "page": "Nightborne Warpcaster",
+    "speaker": "Nightborne Warpcaster",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Saboteur#Quotes",
+    "page": "Nightborne Saboteur",
+    "speaker": "Nightborne Saboteur",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Infiltrator#Quotes",
+    "page": "Nightborne Infiltrator",
+    "speaker": "Nightborne Infiltrator",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Envoy_(Suramar)#Quotes",
+    "page": "Nightborne Envoy (Suramar)",
+    "speaker": "Nightborne Envoy (Suramar)",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Vintner#Quotes",
+    "page": "Nightborne Vintner",
+    "speaker": "Nightborne Vintner",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Enforcer#Quotes",
+    "page": "Nightborne Enforcer",
+    "speaker": "Nightborne Enforcer",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Steward#Quotes",
+    "page": "Nightborne Steward",
+    "speaker": "Nightborne Steward",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Siegecaster#Quotes",
+    "page": "Nightborne Siegecaster",
+    "speaker": "Nightborne Siegecaster",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Trapper#Quotes",
+    "page": "Nightborne Trapper",
+    "speaker": "Nightborne Trapper",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Skulking_Assassin#Quotes",
+    "page": "Skulking Assassin",
+    "speaker": "Skulking Assassin",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskrider_Silaryn#Quotes",
+    "page": "Duskrider Silaryn",
+    "speaker": "Duskrider Silaryn",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Lieutenant_Strathmar#Quotes",
+    "page": "Lieutenant Strathmar",
+    "speaker": "Lieutenant Strathmar",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Suramar_Loyalist#Quotes",
+    "page": "Suramar Loyalist",
+    "speaker": "Suramar Loyalist",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Vineyard_Warden#Quotes",
+    "page": "Vineyard Warden",
+    "speaker": "Vineyard Warden",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Alsian_Vistreth#Quotes",
+    "page": "Alsian Vistreth",
+    "speaker": "Alsian Vistreth",
+    "line": "Arash-falas..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Dawnguard_Magus#Quotes",
+    "page": "Dawnguard Magus",
+    "speaker": "Dawnguard Magus",
+    "line": "Arash-falas..."
+   }
+  ]
+ },
+ {
+  "form": "Ash'thoras denil",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne NPCs (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Greeting used by nightborne NPCs.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Civilian_2",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (civilian greeting/dismiss)",
+    "line": "Ash'thoras denil."
+   }
+  ]
+ },
+ {
+  "form": "E'rath omnas",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (arcane shield bubble)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "The Only Way Out is Through",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by First Arcanist Thalyssra while casting an arcane shield bubble.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Only_Way_Out_is_Through#Notes",
+    "page": "The Only Way Out is Through",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "E'rath omnas!"
+   }
+  ]
+ },
+ {
+  "form": "In'alah",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (powering lights on the outer wall)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Shal'Aran (quest)",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by First Arcanist Thalyssra while casting a spell that powers up lights all over the outer wall.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Shal'Aran_(quest)#Notes",
+    "page": "Shal'Aran (quest)",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "In'alah!"
+   }
+  ]
+ },
+ {
+  "form": "Ishnal toreth",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne NPCs (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Greeting used by nightborne NPCs.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Civilian_2",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (civilian greeting/dismiss)",
+    "line": "Ishnal toreth."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Subjugator#On_click",
+    "page": "Duskwatch Subjugator",
+    "speaker": "Duskwatch Subjugator",
+    "line": "Ishnal Toreth."
+   }
+  ]
+ },
+ {
+  "form": "Ith'el kanesh",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (start of magical recordings)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Magic Message",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by First Arcanist Thalyssra to start her magical recordings.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Magic_Message#Notes",
+    "page": "Magic Message",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Ith'el kanesh!"
+   }
+  ]
+ },
+ {
+  "form": "Ith'nala kanesh",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (end of magical recordings)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Magic Message; Trail of Echoes",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by First Arcanist Thalyssra to end her magical recordings.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Magic_Message#Notes",
+    "page": "Magic Message",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Ith'nala kanesh!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Trail_of_Echoes#Notes",
+    "page": "Trail of Echoes",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Ith'nala kanesh!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Echo_of_First_Arcanist_Thalyssra#Quotes",
+    "page": "Echo of First Arcanist Thalyssra",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Ith'nala kanesh!"
+   }
+  ]
+ },
+ {
+  "form": "Kal'theros maldin",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne NPCs (farewell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "\"VO_703_NightBorne_Female_Citizen_25\" Voicefile (Wowhead) https://www.wowhead.com/sound=74920/vo-703-nightborne-citizen-female-farewells",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Farewell phrase used by nightborne NPCs.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Civilian_2",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (civilian greeting/dismiss)",
+    "line": "Kal’theros maldin."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Military_3",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (military greeting/dismiss)",
+    "line": "Kal’theros maldin."
+   }
+  ]
+ },
+ {
+  "form": "N'eth ana",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Chief Telemancer Oculeth (ending arcane stasis)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Oculeth's Workshop (quest); Descent (Horde)",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Chief Telemancer Oculeth to end his arcane stasis spells.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Oculeth's_Workshop_(quest)#Notes",
+    "page": "Oculeth's Workshop (quest)",
+    "speaker": "Chief Telemancer Oculeth",
+    "line": "N'eth ana!"
+   }
+  ]
+ },
+ {
+  "form": "Nar'thalas vas manari",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (weaving her essence with Theryn)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Scenes from a Memory",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Thalyssra during a spell to weave her arcane essence together with Theryn and project his memories as visions.",
+  "caveat": "The quest page spells it Nar'thala vas manari; see that entry.",
+  "attestations": []
+ },
+ {
+  "form": "Thala nar'valas",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (weaving her essence with Theryn)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Scenes from a Memory",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Thalyssra during a spell to weave her arcane essence together with Theryn and project his memories as visions.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Scenes_from_a_Memory#Notes",
+    "page": "Scenes from a Memory",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Thala nar'valas."
+   }
+  ]
+ },
+ {
+  "form": "Nor'bethos Suramar",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne NPCs (farewell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Farewell phrase used by nightborne NPCs.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Civilian_2",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (civilian greeting/dismiss)",
+    "line": "Nor’bethos Suramar."
+   }
+  ]
+ },
+ {
+  "form": "Rath",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (arcane missiles)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Trail of Echoes",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Rath and Rath-domaas - Said by First Arcanist Thalyssra to fire arcane missiles at enemies.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Trail_of_Echoes#Notes",
+    "page": "Trail of Echoes",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Rath!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Echo_of_First_Arcanist_Thalyssra#Quotes",
+    "page": "Echo of First Arcanist Thalyssra",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Rath!"
+   }
+  ]
+ },
+ {
+  "form": "Rath-domaas",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (arcane missiles)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Trail of Echoes",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Rath and Rath-domaas - Said by First Arcanist Thalyssra to fire arcane missiles at enemies.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Trail_of_Echoes#Notes",
+    "page": "Trail of Echoes",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Rath-domaas!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Echo_of_First_Arcanist_Thalyssra#Quotes",
+    "page": "Echo of First Arcanist Thalyssra",
+    "speaker": "Echo of First Arcanist Thalyssra",
+    "line": "Rath-domaas!"
+   }
+  ]
+ },
+ {
+  "form": "Rath-anu'tanos",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (exploding an arcane shield)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "The Only Way Out is Through",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by First Arcanist Thalyssra to cause an arcane shield to explode with force.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Only_Way_Out_is_Through#Notes",
+    "page": "The Only Way Out is Through",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Rath-anu'tanos!"
+   }
+  ]
+ },
+ {
+  "form": "Shal'asan torah",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Arcanist Valtrois (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Arcanist Valtrois as a greeting.",
+  "caveat": "Valtrois's own page spells it Shal'san Tora; see that entry.",
+  "attestations": []
+ },
+ {
+  "form": "Shanar daloras",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (on seeing the Chronomatic Anomaly)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Chronomatic Anomaly#Quotes",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Exclamation said by First Arcanist Thalyssra upon seeing the Chronomatic Anomaly.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Chronomatic_Anomaly#Quotes",
+    "page": "Chronomatic Anomaly",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Shanar daloras! I have no idea how such an entity came to be, but the essence of the Nightwell is surging through it."
+   }
+  ]
+ },
+ {
+  "form": "Tel'vasha",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Chief Telemancer Oculeth (teleport to the Great Sea)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Oculeth's Workshop (quest); Wowhead voice file VO_703_Chief_Telemancer_Oculeth_39 https://www.wowhead.com/sound=67426/vo-703-chief-telemancer-oculeth-39",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by Chief Telemancer Oculeth to teleport the player to the bottom of the Great Sea.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Oculeth's_Workshop_(quest)#Notes",
+    "page": "Oculeth's Workshop (quest)",
+    "speaker": "Chief Telemancer Oculeth",
+    "line": "I did warn you. Tel'vasha!"
+   }
+  ]
+ },
+ {
+  "form": "Tel'velath",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Chief Telemancer Oculeth (farewell)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Wowhead voice file VO_703_Chief_Telemancer_Oculeth_59 https://www.wowhead.com/sound=67936/vo-703-chief-telemancer-oculeth-59",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Farewell said by Chief Telemancer Oculeth.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Chief_Telemancer_Oculeth#On-click",
+    "page": "Chief Telemancer Oculeth",
+    "speaker": "Chief Telemancer Oculeth",
+    "line": "Tel'velath."
+   }
+  ]
+ },
+ {
+  "form": "Tenu'balah",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne NPCs (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": "Wowhead voice file VO_71_Victoire_11_F https://www.wowhead.com/sound=78500/vo-71-victoire-11-f",
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Greeting used by nightborne NPCs.",
+  "caveat": "Victoire's own page (the referenced voice file's NPC) spells it Tanu'balah; see that entry.",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Civilian_2",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (civilian greeting/dismiss)",
+    "line": "Tenu'balah."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Military_3",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (military greeting/dismiss)",
+    "line": "Tenu'balah."
+   }
+  ]
+ },
+ {
+  "form": "Tor'theras falar",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne mobs (upon death)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases",
+  "reference": null,
+  "wiki_section": "Untranslated Shalassian phrases",
+  "wiki_note": "Said by nightborne mobs upon death.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Punisher#Quotes",
+    "page": "Duskwatch Punisher",
+    "speaker": "Duskwatch Punisher",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Infiltrator#Quotes",
+    "page": "Duskwatch Infiltrator",
+    "speaker": "Duskwatch Infiltrator",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Arcblade#Quotes",
+    "page": "Duskwatch Arcblade",
+    "speaker": "Duskwatch Arcblade",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Spell-Fencer#Quotes",
+    "page": "Duskwatch Spell-Fencer",
+    "speaker": "Duskwatch Spell-Fencer",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Adjudicator#Quotes",
+    "page": "Duskwatch Adjudicator",
+    "speaker": "Duskwatch Adjudicator",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Astralite#Quotes",
+    "page": "Duskwatch Astralite",
+    "speaker": "Duskwatch Astralite",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Highblade#Quotes",
+    "page": "Duskwatch Highblade",
+    "speaker": "Duskwatch Highblade",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Marauder#Quotes",
+    "page": "Duskwatch Marauder",
+    "speaker": "Duskwatch Marauder",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Battlemaster#Quotes",
+    "page": "Duskwatch Battlemaster",
+    "speaker": "Duskwatch Battlemaster",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Auditor#Quotes",
+    "page": "Duskwatch Auditor",
+    "speaker": "Duskwatch Auditor",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Orbitist#Quotes",
+    "page": "Duskwatch Orbitist",
+    "speaker": "Duskwatch Orbitist",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Moonscythe#Quotes",
+    "page": "Duskwatch Moonscythe",
+    "speaker": "Duskwatch Moonscythe",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Executor#Quotes",
+    "page": "Duskwatch Executor",
+    "speaker": "Duskwatch Executor",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Felblade#Quotes",
+    "page": "Duskwatch Felblade",
+    "speaker": "Duskwatch Felblade",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Felblade_Protector#Quotes",
+    "page": "Felblade Protector",
+    "speaker": "Felblade Protector",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Captain_Fiora#Quotes",
+    "page": "Captain Fiora",
+    "speaker": "Captain Fiora",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Garion#Quotes",
+    "page": "Garion",
+    "speaker": "Garion",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Imperial_Arcbinder#Quotes",
+    "page": "Imperial Arcbinder",
+    "speaker": "Imperial Arcbinder",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Fist_of_the_Duskwatch#Quotes",
+    "page": "Fist of the Duskwatch",
+    "speaker": "Fist of the Duskwatch",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Channeler#Quotes",
+    "page": "Ley Line Channeler",
+    "speaker": "Ley Line Channeler",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Researcher#Quotes",
+    "page": "Ley Line Researcher",
+    "speaker": "Ley Line Researcher",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Ley_Line_Hunter#Quotes",
+    "page": "Ley Line Hunter",
+    "speaker": "Ley Line Hunter",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Leyline_Hunter#Quotes",
+    "page": "Leyline Hunter",
+    "speaker": "Leyline Hunter",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Leyline_Researcher#Quotes",
+    "page": "Leyline Researcher",
+    "speaker": "Leyline Researcher",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Loyalist_Sycophant#Quotes",
+    "page": "Loyalist Sycophant",
+    "speaker": "Loyalist Sycophant",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Scion#Quotes",
+    "page": "Nightborne Scion",
+    "speaker": "Nightborne Scion",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Warpcaster#Quotes",
+    "page": "Nightborne Warpcaster",
+    "speaker": "Nightborne Warpcaster",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Saboteur#Quotes",
+    "page": "Nightborne Saboteur",
+    "speaker": "Nightborne Saboteur",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Infiltrator#Quotes",
+    "page": "Nightborne Infiltrator",
+    "speaker": "Nightborne Infiltrator",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Envoy_(Suramar)#Quotes",
+    "page": "Nightborne Envoy (Suramar)",
+    "speaker": "Nightborne Envoy (Suramar)",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Vintner#Quotes",
+    "page": "Nightborne Vintner",
+    "speaker": "Nightborne Vintner",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Enforcer#Quotes",
+    "page": "Nightborne Enforcer",
+    "speaker": "Nightborne Enforcer",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Siegecaster#Quotes",
+    "page": "Nightborne Siegecaster",
+    "speaker": "Nightborne Siegecaster",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Nightborne_Trapper#Quotes",
+    "page": "Nightborne Trapper",
+    "speaker": "Nightborne Trapper",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Skulking_Assassin#Quotes",
+    "page": "Skulking Assassin",
+    "speaker": "Skulking Assassin",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskrider_Silaryn#Quotes",
+    "page": "Duskrider Silaryn",
+    "speaker": "Duskrider Silaryn",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Conjurer_Thalerian#Quotes",
+    "page": "Conjurer Thalerian",
+    "speaker": "Conjurer Thalerian",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Suramar_Loyalist#Quotes",
+    "page": "Suramar Loyalist",
+    "speaker": "Suramar Loyalist",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Vineyard_Warden#Quotes",
+    "page": "Vineyard Warden",
+    "speaker": "Vineyard Warden",
+    "line": "Tor'theras falar!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Dawnguard_Magus#Quotes",
+    "page": "Dawnguard Magus",
+    "speaker": "Dawnguard Magus",
+    "line": "Tor'theras falar!"
+   }
+  ]
+ },
+ {
+  "form": "Suramari",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "something originating from Suramar",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Other",
+  "reference": "The Thread of Souls",
+  "wiki_section": "Other",
+  "wiki_note": "Something originating from Suramar is called \"Suramari\" or \"Suramarian\".",
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Suramarian",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "something originating from Suramar",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Other",
+  "reference": "Suramarian Sapphire",
+  "wiki_section": "Other",
+  "wiki_note": "Something originating from Suramar is called \"Suramari\" or \"Suramarian\".",
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Shan'do",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "\"honored teacher\" (term used by nightborne)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Other",
+  "reference": "Network Security",
+  "wiki_section": "Other",
+  "wiki_note": "Though the Shalassian word is unknown, nightborne do use the term \"honored teacher\" like the night elves.",
+  "caveat": "The wiki says the Shalassian word is unknown; Shan'do is the night elf term its link points to, not an attested Shalassian form.",
+  "attestations": []
+ },
+ {
+  "form": "Tor ilisar'thera'nal",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra (once)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalassian#Other",
+  "reference": "Wowhead voice file VO_703_First_Arcanist_Thalyssra_143 https://www.wowhead.com/sound=67743/vo-703-first-arcanist-thalyssra-143; The Warcraft Encyclopedia/Darnassian",
+  "wiki_section": "Other",
+  "wiki_note": "\"Tor ilisar'thera'nal\" is said by First Arcanist Thalyssra on one occasion. The phrase is officially considered Darnassian but is said to be \"ancient\".",
+  "caveat": "Officially Darnassian per the wiki. Also Maiev Shadowsong's Warcraft III warcry (attestation below).",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Night_Elf_Sentinels#Maiev_Shadowsong",
+    "page": "Quotes of Warcraft III/Night Elf Sentinels",
+    "speaker": "Maiev Shadowsong (Warcraft III), warcry",
+    "line": "Tor ilisar'thera'nal! [MaievWarcry1.wav]"
+   }
+  ]
+ },
+ {
+  "form": "Rath, anu'telar",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra",
+  "source_url": "https://warcraft.wiki.gg/wiki/All_In#Final_Stage:_Weather_the_Storm",
+  "reference": null,
+  "wiki_section": "All In > Final Stage: Weather the Storm",
+  "wiki_note": "Not listed on the Shalassian page.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/All_In#Final_Stage:_Weather_the_Storm",
+    "page": "All In",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Rath, anu'telar!"
+   }
+  ]
+ },
+ {
+  "form": "Tanu'balah",
+  "branch": "shalassian",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Victoire; Vintner Iltheux; Duskwatch Subjugator (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Victoire#Quotes",
+  "reference": null,
+  "wiki_section": "Victoire > Quotes",
+  "wiki_note": "Spelling on these NPC pages; the Shalassian page lists Tenu'balah.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Victoire#Quotes",
+    "page": "Victoire",
+    "speaker": "Victoire",
+    "line": "Tanu'balah."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Vintner_Iltheux#Quotes",
+    "page": "Vintner Iltheux",
+    "speaker": "Vintner Iltheux",
+    "line": "Tanu'balah. The Nightwell once nourished us, but we have evolved beyond. Now I, Chef Iltheux, and my team of chefs do our best to nourish our people. We seek to do so with high quality ingredients and precise culinary technique."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Subjugator#On_click",
+    "page": "Duskwatch Subjugator",
+    "speaker": "Duskwatch Subjugator",
+    "line": "Tanu'balah."
+   }
+  ]
+ },
+ {
+  "form": "Nor'thonos Suramar",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Apprentice Ardrias",
+  "source_url": "https://warcraft.wiki.gg/wiki/Apprentice_Ardrias#Quotes",
+  "reference": null,
+  "wiki_section": "Apprentice Ardrias > Quotes",
+  "wiki_note": "Spelling on this NPC page; the Shalassian page lists Nor'bethos Suramar.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Apprentice_Ardrias#Quotes",
+    "page": "Apprentice Ardrias",
+    "speaker": "Apprentice Ardrias",
+    "line": "Nor'thonos Suramar."
+   }
+  ]
+ },
+ {
+  "form": "Nar'thala vas manari",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "First Arcanist Thalyssra",
+  "source_url": "https://warcraft.wiki.gg/wiki/Scenes_from_a_Memory#Notes",
+  "reference": null,
+  "wiki_section": "Scenes from a Memory > Notes",
+  "wiki_note": "Spelling on the quest page; the Shalassian page lists Nar'thalas vas manari.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Scenes_from_a_Memory#Notes",
+    "page": "Scenes from a Memory",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "Nar'thala vas manari..."
+   }
+  ]
+ },
+ {
+  "form": "Shal'san Tora",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Arcanist Valtrois (on-click)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Arcanist_Valtrois#On-click",
+  "reference": null,
+  "wiki_section": "Arcanist Valtrois > On-click",
+  "wiki_note": "Spelling on Valtrois's page; the Shalassian page lists Shal'asan torah.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Arcanist_Valtrois#On-click",
+    "page": "Arcanist Valtrois",
+    "speaker": "Arcanist Valtrois",
+    "line": "Shal'san Tora."
+   }
+  ]
+ },
+ {
+  "form": "Ash’toras denil",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "nightborne NPCs (military greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Military_3",
+  "reference": null,
+  "wiki_section": "NPC quotes > Nightborne > Military",
+  "wiki_note": "Spelling in the military list; the civilian list and the Shalassian page have Ash'thoras denil.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/NPC_quotes#Military_3",
+    "page": "NPC quotes",
+    "speaker": "Nightborne NPCs (military greeting/dismiss)",
+    "line": "Ash’toras denil."
+   }
+  ]
+ },
+ {
+  "form": "Ash'thoras danil",
+  "branch": "shalassian",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Duskwatch Subjugator (greeting)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Subjugator#On_click",
+  "reference": null,
+  "wiki_section": "Duskwatch Subjugator > On click",
+  "wiki_note": "Spelling on this NPC page; the Shalassian page has Ash'thoras denil.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Duskwatch_Subjugator#On_click",
+    "page": "Duskwatch Subjugator",
+    "speaker": "Duskwatch Subjugator",
+    "line": "Ash'thoras danil."
+   }
+  ]
+ },
+ {
+  "form": "Shal'Aran",
+  "branch": "shalassian",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Shal'Aran is an underground ruin in Meredil in Suramar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shal'Aran",
+  "reference": null,
+  "wiki_section": "page lead (name found in nightborne quotes)",
+  "wiki_note": null,
+  "caveat": "Not on the Shalassian page; included because nightborne NPCs say it.",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Defending_Shal'aran#Description",
+    "page": "Defending Shal'aran",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "The Legion's patrols edge ever closer to Shal'Aran. Kill them before they discover our location!"
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/A_Dance_With_Dragons#Notes",
+    "page": "A Dance With Dragons",
+    "speaker": "Arcanist Valtrois",
+    "line": "I must rest before we make our way back to Shal'Aran. That was more taxing than I expected..."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Trial_by_Demonfire#Notes",
+    "page": "Trial by Demonfire",
+    "speaker": "Silgryn",
+    "line": "Come, we must stop the pitlord before he discovers Shal'Aran."
+   }
+  ]
+ },
+ {
+  "form": "Tel'anor",
+  "branch": "shalassian",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "Tel'anor is a massive graveyard and ritual site overlooking Suramar City.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Tel'anor",
+  "reference": null,
+  "wiki_section": "page lead (name found in nightborne quotes)",
+  "wiki_note": null,
+  "caveat": "Not on the Shalassian page; included because nightborne NPCs say it.",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Fiends_of_Tel'anor#Description",
+    "page": "Fiends of Tel'anor",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "The sacred peace at Tel'anor is broken by harpy and spirit alike. Restore the tranquility that my people's ancestors deserve."
+   },
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Honoring_the_Past#Description",
+    "page": "Honoring the Past",
+    "speaker": "Arcanist Valtrois",
+    "line": "We Nightborne owe our unmatched grace and intellect to a noble heritage. The ancestors at rest in Tel'Anor [sic] deserve proper tribute."
+   }
+  ]
+ },
+ {
+  "form": "Fal'adora",
+  "branch": "shalassian",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The Temple of Fal'adora is an underground temple of Elune located in the town ruins of Falanaar within the region of Suramar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Temple_of_Fal'adora",
+  "reference": null,
+  "wiki_section": "page lead (name found in nightborne quotes)",
+  "wiki_note": null,
+  "caveat": "Not on the Shalassian page; included because nightborne NPCs say it.",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Valewalker's_Burden#Notes",
+    "page": "The Valewalker's Burden",
+    "speaker": "Chief Telemancer Oculeth",
+    "line": "Ah, the Temple of Fal'adora. Those halls once glowed with prayers to Elune."
+   }
+  ]
+ },
+ {
+  "form": "Arcan'dor",
+  "branch": "shalassian",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "An arcan'dor (or mana tree) is a type of magical fruit tree that balances nature and arcane magic by feeding on ley lines.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Arcan'dor",
+  "reference": null,
+  "wiki_section": "page lead (name found in nightborne quotes)",
+  "wiki_note": null,
+  "caveat": "Not on the Shalassian page; included because nightborne NPCs say it.",
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Moths_to_a_Flame#Notes",
+    "page": "Moths to a Flame",
+    "speaker": "First Arcanist Thalyssra",
+    "line": "I have seen first hand what Arcan'dor's energies do for the Withered. I have faith that it is worth the risk."
+   }
+  ]
+ },
+ {
+  "form": "Aesir",
+  "branch": "titan",
+  "kind": "word",
+  "gloss": "Storm Giants.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Storm Giants (dialect/people)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Titan_primer",
+  "reference": "Tribunal of Ages",
+  "wiki_section": "Titan primer",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Kalimdor",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": "Land of eternal starlight.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "the continent Kalimdor",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Titan_primer",
+  "reference": "The Old Gods and the Ordering of Azeroth; Dragon Hunt",
+  "wiki_section": "Titan primer",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Midnir",
+  "branch": "titan",
+  "kind": "word",
+  "gloss": "Vessel.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Saezurah (Music of the Spheres)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Titan_primer",
+  "reference": "Music of the Spheres",
+  "wiki_section": "Titan primer",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Music_of_the_Spheres#Notes",
+    "page": "Music of the Spheres",
+    "speaker": "Saezurah",
+    "line": "(Titanic) Midnir."
+   }
+  ]
+ },
+ {
+  "form": "Nalak",
+  "branch": "titan",
+  "kind": "word",
+  "gloss": "Serpent.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "root word (the Storm Lord Nalak is linked)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Titan_primer",
+  "reference": "Tweet by Dave Kosak, 2013-08-19, https://twitter.com/DaveKosak/status/369489189575733248 (text: The root word \"Nalak\" means something in either the Titan tongue or Mogu language. Probably \"Serpent.\")",
+  "wiki_section": "Titan primer",
+  "wiki_note": "Serpent. May be specific to the mogu.",
+  "caveat": "The cited tweet hedges: \"Probably\", and \"either the Titan tongue or Mogu language\".",
+  "attestations": []
+ },
+ {
+  "form": "Vanir",
+  "branch": "titan",
+  "kind": "word",
+  "gloss": "Earth Giants.",
+  "gloss_basis": "official",
+  "speaker_or_referent": "Earth Giants (dialect/people)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Titan_primer",
+  "reference": "Tribunal of Ages",
+  "wiki_section": "Titan primer",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Aggramar",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Aggramar)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Aman'Thul",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Aman'Thul)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Argus",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Argus (titan))",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Azeroth",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. She was given her name by the Pantheon of Order. (wiki page: Azeroth (titan))",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 30",
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Echomok",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A cavern located inside Uldaman. (wiki page: Echomok Cavern)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Eonar",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Eonar)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Gni'kiv",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A component of the Staff of Prehistoria. (wiki page: Gni'kiv Medallion)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Goaz",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "tablet and scrolls found at Whelgar's Excavation Site. (wiki page: Goaz Stone)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Golganneth",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Golganneth)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Gorridar",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A sword connected to the Sword of Sargeras. (wiki page: Gorridar, Darkblade of the Sunderer)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Khaz'goroth",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Khaz'goroth)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Khaz'mul",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A chamber containing the secrets of Uldaman, unlocked by the Staff of Prehistoria. (wiki page: Chamber of Khaz'mul)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "M'thorus",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titanic dagger. (wiki page: M'thorus, Dagger of the Grand Design)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Norgannon",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Norgannon)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Sargeras",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan. (wiki page: Sargeras)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Seetheras",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A sword connected to the Sword of Sargeras. (wiki page: Seetheras, Broadsword of the Sunderer)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Taesavir",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titanic sword. (wiki page: Taesavir, Sword of the Grand Design)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Terramok",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A vault of the titans located deep within Maraudon. (wiki page: Terramok)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Tsol",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A component of the Staff of Prehistoria. (wiki page: The Shaft of Tsol)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Uldaman",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan-forged complex in the Badlands. (wiki page: Uldaman)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Uldaz",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A location mentioned by the Maiden of Vitality. (wiki page: Uldaz)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Uldir",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan research and quarantine facility in Nazmir where experiments on the Old Gods were conducted. (wiki page: Uldir)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Uldis",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan facility located beneath the Temple of Storms in the Storm Peaks. (wiki page: Uldis)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Uldorus",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A titan facility in Thaldraszus. (wiki page: Tyrhold)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Ulduar",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "The largest titan-forged complex on Azeroth. (wiki page: Ulduar)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Uldum",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A zone in southern Kalimdor that acts as a titan superweapon with the capability of scouring all life from Azeroth. (wiki page: Uldum)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Val'anyr",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A hammer crafted by the titans themselves and given to Urel Stoneheart. (wiki page: Val'anyr, Hammer of Ancient Kings)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": null,
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": null,
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Taeshalach",
+  "branch": "titan",
+  "kind": "name",
+  "gloss": null,
+  "gloss_basis": "wiki-description",
+  "speaker_or_referent": "A sword wielded by Aggramar. (wiki page: Taeshalach)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": "Shadows & Light, pg. 112 (RPG gloss)",
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": "In the RPG: Taeshalach = \"Flame Rend\" (Shadows & Light, pg. 112). RPG gloss, not a Blizzard translation.",
+  "caveat": null,
+  "attestations": []
+ },
+ {
+  "form": "Kol-tharish",
+  "branch": "titan",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Kologarn (when killing a player)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": "Kologarn#Quotes",
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": "A phrase yelled by Kologarn when killing a player.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Kologarn#Quotes",
+    "page": "Kologarn",
+    "speaker": "Kologarn",
+    "line": "KOL-THARISH!"
+   }
+  ]
+ },
+ {
+  "form": "Revola ruk maez amir",
+  "branch": "titan",
+  "kind": "phrase",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "Magni Bronzebeard (opening the Primordial Observatory door)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": "The Sunken Vault (quest)",
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": "Said by Magni Bronzebeard to open the door to the Primordial Observatory.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/The_Sunken_Vault_(quest)#Stage_2:_The_Lost_Observatory",
+    "page": "The Sunken Vault (quest)",
+    "speaker": "Magni Bronzebeard",
+    "line": "Revola ruk maez amir."
+   }
+  ]
+ },
+ {
+  "form": "Thraegar",
+  "branch": "titan",
+  "kind": "word",
+  "gloss": null,
+  "gloss_basis": "none",
+  "speaker_or_referent": "the Speaker, Magni Bronzebeard, and others like him (as used by the Oracles and earthen)",
+  "source_url": "https://warcraft.wiki.gg/wiki/Titan_(language)#Untranslated_Titan_words_or_phrases",
+  "reference": "Recompense (quest); Exploring Azeroth: Northrend, pg. 120",
+  "wiki_section": "Titan primer > Untranslated Titan words or phrases",
+  "wiki_note": "A word used by the Oracles and the earthen of Khaz Algar to refer to the Speaker, Magni Bronzebeard, and others like him. Magni and his brothers took the word to be titan in origin.",
+  "caveat": null,
+  "attestations": [
+   {
+    "source_url": "https://warcraft.wiki.gg/wiki/Recompense_(quest)#Notes",
+    "page": "Recompense (quest)",
+    "speaker": "Merrix",
+    "line": "Having a thraegar here in Dornogal... It is an auspicious sign indeed!"
+   }
+  ]
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Zin-Azshari",
+  "kind": "place",
+  "gloss": "The glory of Azshara.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Zin-Azshari",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Lands of Mystery, pg. 74"
+  },
+  "era_evidence": "Zin-Azshari (\"the Glory of Azshara\" in Darnassian) used to be the capital city of the night elven Kaldorei Empire.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zin-Azshari",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 94; The Well of Eternity, pg. 56",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Elun'dris",
+  "kind": "place",
+  "gloss": "the Eye of Elune.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Elun'dris",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "World of Warcraft: Chronicle Volume 1, pg. 94"
+  },
+  "era_evidence": "Originally named Elun'dris, or \"the Eye of Elune\", it was renamed when the elves' then beloved Queen Azshara ascended to the throne.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zin-Azshari",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 94; The Well of Eternity, pg. 56"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lathar'Lazal",
+  "kind": "place",
+  "gloss": "Seat of the Sky.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Lathar'Lazal",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "World of Warcraft: Chronicle Volume 1, pg. 95"
+  },
+  "era_evidence": "Lathar'Lazal (meaning the \"Seat of the Sky\" in Darnassian) was a night elven temple dedicated to Elune, built on the western edge of ancient Kalimdor.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Blackfathom_Deeps#Ancient_Kalimdor",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 95; Twilight Falls (Classic)",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kalimdor",
+  "kind": "place",
+  "gloss": "land of eternal starlight",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Kalimdor",
+   "source_url": "https://warcraft.wiki.gg/wiki/Kalimdor",
+   "reference": "The Old Gods and the Ordering of Azeroth",
+   "wiki_wording": "Kalimdor (Titan and Darnassian for land of eternal starlight)"
+  },
+  "era_evidence": "The titan-forged then named the continent \"Kalimdor\": the \"Land of Eternal Starlight\" in their language.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kalimdor_(landmass)",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 105; Warcraft III: Reign of Chaos Game Manual, pg. 50",
+  "reference_scope": "next citation in the same paragraph",
+  "note": "The wiki's Ancient Kalimdor page says the titan-forged named it in their own language."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Suramar",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Suramar was a great Kaldorei city ten thousand years ago.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Suramar#In_Lands_of_Conflict",
+  "reference": "Lands of Mystery, pg. 69",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Eldre'Thalas",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Built twelve thousand years ago by a covert sect of night elf sorcerers, the ancient city of Eldre'Thalas was used to protect Queen Azshara's most prized arcane secrets.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Dire_Maul#History",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Eldarath",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Before the Great Sundering, Eldarath was a flourishing city—a mighty stronghold, even.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ruins_of_Eldarath",
+  "reference": "Game Guide/Raid Areas#Azuregos; Pearl of Pandaria; Arcane Runes",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Nar'thalas",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "During the War of the Ancients, Farondis was one of the few Highborne rulers who dared defy Queen Azshara, resulting in the destruction of his city Nar'thalas and most of Azsuna at her hands.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Prince_Farondis",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Azsuna",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Regional leaders subordinate to the Queen were styled as princes/princesses, such as Princess Aszune, Prince Tortheldrin of Eldre'Thalas, Prince Farondis of Azsuna, Prince Toreth of Loreth'Aran, and the ruling princes and princesses in Suramar, although by the time of the demonic invasion the city was led by Elisande...",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire",
+  "reference": "Crown Jewels of Suramar; World of Warcraft: Chronicle Volume 1, pg. 103"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Ameth'Aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Before the time of the Great Sundering, Queen Azshara brought her favored servitors, those of the Highborne, to the twin towns of Ameth'Aran and Bashal'Aran.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ameth%27Aran#Ancient_times",
+  "reference": "The Lay of Ameth'Aran; Bashal'Aran (4)"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Bashal'Aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Before the time of the Great Sundering, Queen Azshara brought her favored servitors, those of the Highborne, to the twin towns of Ameth'Aran and Bashal'Aran.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Bashal%27Aran#Ancient_times",
+  "reference": "The Lay of Ameth'Aran; Bashal'Aran (4)"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Althalaxx",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Athrikus was at first loyal to his queen, but eventually he grew bored of his post, and would spend most of his days in the Tower of Althalaxx, some ways removed from the towns.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Tower_of_Althalaxx#History",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Mathystra",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Mathystra used to be a night elven city before the Great Sundering, but it was utterly decimated by the destruction of the Well of Eternity, and has long since been abandoned by the night elves in favor of the smaller coastal villages further south.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ruins_of_Mathystra",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Morlos'Aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Morlos'Aran was once a great night elf settlement, long before the Great Sundering. It is located at the southern edge of Felwood.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Morlos%27Aran",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kel'Theril",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "It was destroyed long ago during the Great Sundering, and now lies in complete ruin, haunted by the tormented spirits of the Highborne who did not survive the disaster.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ruins_of_Kel%27Theril",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Loreth'Aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Prior to the War of the Ancients in 10,000 BDP, the night elves who inhabited this city had been blessed by Ysera, the Dragon Aspect of the green dragonflight, who allowed Prince Toreth and the Dragon Riders of Loreth'Aran to ride the noble green dragons into battle, as well as to live alongside them for centuries in...",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ruins_of_Loreth%27Aran#History",
+  "reference": "Prince Toreth"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Isildien",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "It was destroyed 10,000 years ago.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ruins_of_Isildien",
+  "reference": "Traveler, chapter 24"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Zoram",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Prior its destruction during the Great Sundering, it was a night elven city named Zoram.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zoram_Strand",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Hajiri",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Hajiri was a city in northwestern Kalimdor prior to the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Hajiri",
+  "reference": "The Sundering, pg. 53",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Ara-Hinam",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "It was a village destroyed during the War of the Ancients by the Burning Legion.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ara-Hinam",
+  "reference": "City of Drowned Friends (Alliance); The Demon Soul, pg. 67"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Aru-Talis",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Aru-Talis is said to have been a mythical city that was destroyed many generations before the Great Sundering.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Aru-Talis",
+  "reference": "The Sundering, chapter 16, pg. 230",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Galhara",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Galhara was a great night elven city some distance away, on the opposing side of the Well of Eternity, from Zin-Azshari.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Galhara",
+  "reference": "The Well of Eternity, pg. 252",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Then'Ralore",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Then'Ralore was a night elven outpost founded in the lush central wilds of Kalimdor (the area that would later become known as the Barrens) on the behest of Queen Azshara.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Then%27Ralore",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 95"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Shandaral",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The outpost of Shandaral was established during the height of the Kaldorei Empire, around 10,000 BDP, in the northern reaches of Ancient Kalimdor.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ruins_of_Shandaral#History",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 121",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Vashj'ir",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Born the daughter of Lestharia Vashj, ruler of the city of Vashj'ir, Vashj was once the foremost of Queen Azshara's Highborne handmaidens.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Vashj",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Quel'Dormir",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "High Priestess Siralen was, according to a plaque on her statue, promoted into service as Queen Azshara's personal high priestess of Vashj'ir after performing exceptionally in the Quel'Dormir Temple.",
+  "source_url": "https://warcraft.wiki.gg/wiki/High_Priestess_Siralen",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Zin-Malor",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The temple has at least one underground royal vault, which contains a chest of pandaren design, the last gift the pandaren gave to the Highborne before cutting ties with the night elves.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Temple_of_Zin-Malor",
+  "reference": "Pearl of Pandaria",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Falanaar",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Falanaar (or the Ruins of Falanaar) is a small ruined town behind Ambervale in Suramar that was heavily damaged in the Sundering, the destruction of the Tidestone of Golganneth, the loss of the first Arcan'dor, or some combination thereof.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Falanaar",
+  "reference": "Too Many Legs"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Faronaar",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Faronaar is a large island found in western Azsuna, covered in the ruins of a majestic city that used to be on the road to the Well of Eternity and Zin-Azshari.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Faronaar",
+  "reference": "Scroll of Town Portal: Faronaar"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Eldre'thar",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's major settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Major_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Tethris Aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Ordil'Aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Constellas",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Ethel Rethor",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lornesta",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Oneiros",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Solarsal",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Thelserai",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Beth'mora",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Biel'aran",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed among the Kaldorei Empire's minor settlements under 'Empire territories' on the Kaldorei Empire page.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire#Minor_settlements",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kaldorei",
+  "kind": "group",
+  "gloss": "Children of the stars, people of the stars.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Kaldorei",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "Warcraft III: Reign of Chaos manual, pg. 47; The Warcraft Encyclopedia: Darnassian"
+  },
+  "era_evidence": "The Kaldorei Empire (or kaldorei empire and Night Elf Empire) was an ancient night elf civilization spanning most of the continent of ancient Kalimdor, from Lathar'Lazal in the far west to the halls of Uldaman in the east.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire",
+  "reference": "Ultimate Visual Guide, Updated and Expanded, pg. 188: Azshara - Queen of the Kaldorei Empire; The Nightborne Pact"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Quel'dorei",
+  "kind": "group",
+  "gloss": "Children of Noble Birth (Highborne, High-borne, high elves).",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Quel'dorei",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Warcraft III: Reign of Chaos manual, pg. 48"
+  },
+  "era_evidence": "The Highborne, or quel'dorei (meaning \"children of noble birth\" in Darnassian), were the night elven upper class and highest aristocratic caste in the ancient Kaldorei Empire, composed largely of the favored servitors of Queen Azshara.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Highborne",
+  "reference": "The Warcraft Encyclopedia/Darnassian; Wolfheart, chapter 5; World of Warcraft: Chronicle Volume 3, pg. 69"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Shen'dralar",
+  "kind": "group",
+  "gloss": "Those Who Remain Hidden.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Shen'dralar",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "World of Warcraft: Chronicle Volume 1, pg. 139"
+  },
+  "era_evidence": "The Shen'dralar defended their city as best they could during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shen%27dralar#History",
+  "reference": "The Warcraft Encyclopedia/Highborne",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Sunstrider",
+  "kind": "group",
+  "gloss": "He who walks the day.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Sunstrider",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; The Founding of Quel'Thalas"
+  },
+  "era_evidence": "The Sunstriders served the throne of the Kaldorei Empire as Highborne for twenty generations up until the War of the Ancients, where current head Dath'Remar instead chose to rebuke the Burning Legion, as such carrying on his family's tradition of boldness with pride.",
+  "source_url": "https://warcraft.wiki.gg/wiki/House_of_Sunstrider#History",
+  "reference": "The Sundering, chapter 10; World of Warcraft: Chronicle Volume 1, pg. 118"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Sharas'dal",
+  "kind": "artifact",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "As masons constructed the temple, Azshara shaped the waters around it with the scepter Sharas'dal.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Blackfathom_Deeps#Ancient_Kalimdor",
+  "reference": "Words of Wind and Earth",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Jewels of Aellis",
+  "kind": "artifact",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "During the War of the Ancients, her crown was stolen by rival nobles who removed and sold its jewels.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Mavrana_Mooncrest",
+  "reference": "Crown of Mavrana Mooncrest; Sifting Through the Rubble",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Azshara",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Once the ruler of the Kaldorei Empire over ten thousand years ago, she was entrancingly beautiful and beloved by her people.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Queen_Azshara",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Xavius",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Lord Xavius was one of the Highborne's most powerful sorcerers and the high councilor to Queen Azshara during the time of the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Xavius",
+  "reference": "World of Warcraft: Chronicle Volume 1, pg. 100"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Varo'then",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Varo'then was the leader of Queen Azshara's personal guard during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Varo%27then",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Peroth'arn",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "He was the first person given the \"gift\" of becoming a satyr by Xavius.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Peroth%27arn#Background",
+  "reference": "The Demon Soul, pg. 99-106",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Vashj",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Born the daughter of Lestharia Vashj, ruler of the city of Vashj'ir, Vashj was once the foremost of Queen Azshara's Highborne handmaidens.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Vashj",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lestharia Vashj",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed as 'Lady Lestharia Vashj' among the rulers in the Kaldorei Empire page's infobox; her own page calls her 'the matron and benevolent leader of Vashj'ir'.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kur'talos Ravencrest",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Kur'talos Ravencrest was the master of Black Rook Hold and the first leader of the Kaldorei Resistance during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kur%27talos_Ravencrest",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Jarod Shadowsong",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Jarod Shadowsong is the younger brother of Maiev Shadowsong, the former Captain of Suramar's Guard, and was commander of the Kaldorei Resistance during the War of the Ancients, notably surviving a direct encounter with Archimonde himself.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Jarod_Shadowsong",
+  "reference": "The Sundering, pg. 118",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Maiev Shadowsong",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Maiev grew up in the ancient Kaldorei Empire, eventually joining the esteemed Sisterhood of Elune and rising through its ranks to become a senior priestess.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Maiev_Shadowsong",
+  "reference": "The Well of Eternity, chapter 3"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Malfurion Stormrage",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Malfurion Stormrage was the first mortal druid on Azeroth, and the night elf who initiated the mainstream use of druidism among the kaldorei people ten millennia ago under the tutelage of the demigod Cenarius.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Malfurion_Stormrage",
+  "reference": "World of Warcraft: Chronicle Volume 1; The Warcraft Encyclopedia/Druid; Micky Neilson on Twitter (https://web.archive.org/web/20210222183528/https://twitter.com/MickyNeilson/status/304347421272596481): \"Mal was indeed the first druid.\"; World of Warcraft: Chronicle Volume 1, pg. 98"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Illidan Stormrage",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Originally a powerful night elf sorcerer, Illidan officially betrayed his people by defecting to the demonic Burning Legion during the War of the Ancients, though his reasons for doing so were noble as he secretly aimed to repel the Legion's invasion.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Illidan_Stormrage",
+  "reference": "March Badness (https://worldofwarcraft.com/en-us/news/20056283)"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Tyrande Whisperwind",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "In the years prior to the Burning Legion's first invasion, Tyrande was the object of both Malfurion and his brother Illidan's affections.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Tyrande_Whisperwind",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Shandris Feathermoon",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "During the War of the Ancients, Shandris lost her entire family to demons, after which she was adopted by Tyrande and took up arms herself as a priestess of the moon.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shandris_Feathermoon",
+  "reference": "Ultimate Visual Guide, pg. 105",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Dath'Remar Sunstrider",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Dath'Remar Sunstrider was the leader of the Highborne who survived the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Dath%27Remar_Sunstrider",
+  "reference": "Arthas: Rise of the Lich King, chapter 24",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Sarath'Najak",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Sarath'Najak was a Highborne sorcerer who assisted Dath'Remar Sunstrider in the escape from Zin-Azshari.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Sarath%27Najak",
+  "reference": "The Sundering, pg. 233"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Yol'Tithian",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Yol'Tithian was a Highborne sorcerer who assisted Dath'Remar Sunstrider in the escape from Zin-Azshari.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Yol%27Tithian",
+  "reference": "The Sundering, pg. 233"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Quin'thatano",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Quin'thatano was part of a group of Highborne elves who had become disenchanted with Queen Azshara and fled the night elven capital.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Quin%27thatano",
+  "reference": "The Sundering, pg. 231",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Elisande",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Prior to the War of the Ancients, Elisande served as a highly influential member of the Highborne caste in the ancient Kaldorei Empire, acting directly at the behest of Queen Azshara herself.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Elisande",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Farondis",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "During the War of the Ancients, Farondis was one of the few Highborne rulers who dared defy Queen Azshara, resulting in the destruction of his city Nar'thalas and most of Azsuna at her hands.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Prince_Farondis",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Toreth",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Some time around the War of the Ancients, Toreth was the prince of what would eventually come to be known as Bloodmyst Isle, and a member of the Dragon Riders of Loreth'Aran, a group of night elves allowed to ride upon Ysera's brood.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Prince_Toreth",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Tortheldrin",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Prince Tothreldrin and his followers conjured a spell that shielded the city from the destructive forces of the Sundering.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Dire_Maul#Eldre%27Thalas",
+  "reference": "World of Warcraft: Chronicle Volume 1",
+  "note": "The wiki spells the name 'Tothreldrin' in this sentence; its page title is Prince Tortheldrin."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Aszune",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Regional leaders subordinate to the Queen were styled as princes/princesses, such as Princess Aszune, Prince Tortheldrin of Eldre'Thalas, Prince Farondis of Azsuna, Prince Toreth of Loreth'Aran, and the ruling princes and princesses in Suramar, although by the time of the demonic invasion the city was led by Elisande...",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kaldorei_Empire",
+  "reference": "Crown Jewels of Suramar; World of Warcraft: Chronicle Volume 1, pg. 103"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Athrikus Narassin",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "In the War of the Ancients, he was near the Well of Eternity when it exploded, blasting him far away.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Athrikus_Narassin#Background",
+  "reference": "Athrikus' Ring of Power",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Asterion",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "His second, a mage known for his prowess in the arcane arts as much as with his physical abilities, was Asterion, who lived among the people of Bashal'Aran, and went many times to Ameth'Aran to see to the needs and wants of its people.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Bashal%27Aran#Ancient_times",
+  "reference": "The Lay of Ameth'Aran"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Sargath",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Athrikus claimed he would help him after the Sundering, but instead he trapped Sargath and several other Highborne within soul gems.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Sargath",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Mavrana Mooncrest",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Mavrana Mooncrest was a Grand Magistrix and ruling princess of Suramar prior to the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Mavrana_Mooncrest",
+  "reference": "Jewel of Aellis; Crown Jewels of Suramar"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Meitre",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Meitre lived during the height of the night elf empire, and he was one of his race's most gifted sorcerers.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Meitre#Life",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Tarsis Kir-Moldir",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Tarsis was one of the few surviving Highborne, dating back to the era before the Great Sundering, as he mentioned remembering Queen Azshara.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Archmage_Tarsis_Kir-Moldir",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Dejahna",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Dejahna was the high priestess of Elune at the Temple of Elune in Suramar before and during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Dejahna",
+  "reference": "Seeds of Faith, pg. 11; The Well of Eternity, pg. 137"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Desdel Stareye",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Secure in his aristocratic lineage, Desdel was proud of his high rank and, in the absence of armed conflict, had formed a high opinion of his combat abilities by the time the War of the Ancients began.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Desdel_Stareye#Background",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kalo'thera",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Kalo'thera was a celebrated high priestess in the Sisterhood of Elune centuries before the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kalo%27thera",
+  "reference": "War of the Ancients Trilogy book 3, The Sundering, pg. 53",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Galar'thus Rivertree",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Galar'thus Rivertree was a member of the Moon Guard during the War of the Ancients up until the third invasion.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Galar%27thus_Rivertree",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Hargo'then",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Hargo'then was a night elf sorcerer of the Moon Guard who was searching for the orc Broxigar during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Hargo%27then",
+  "reference": "The Well of Eternity, pg. 181",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kir'altius",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Kir'altius was a Moon Guard sorcerer who was fighting against the Burning Legion during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kir%27altius",
+  "reference": "The Sundering, pg. 102",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Koltharius",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Koltharius was one of the soldiers of Varo'then during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Koltharius",
+  "reference": "The Well of Eternity, pg. 57-59",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Latosius",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Latosius was one of the senior members of the Moon Guard when the War of the Ancients began.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Latosius",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kelorn Nightblade",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Kelorn Nightblade was a night elf dispatched by Captain Varo'then to assassinate Lord Kur'talos Ravencrest on behest of Queen Azshara during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Kelorn_Nightblade",
+  "reference": "Black Rook Hold: Traitor's Demise"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Karius",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "It is unknown whether he or his wife survived the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Karius",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lord Del'theon",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "He was one of many leaders killed during the fight against the Burning Legion.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Lord_Del%27theon",
+  "reference": "The Sundering, pg. 113",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Garo'thal",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Garo'thal was a night elf soldier under the command of the noble Ravencrest.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Garo%27thal",
+  "reference": "The Well of Eternity, pg. 297",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Rol'tharak",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Rol'tharak was a night elf officer under the command of Kur'talos Ravencrest.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Rol%27tharak",
+  "reference": "The Well of Eternity, pg. 175"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lord Ro'minate",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Lady Benel'derath says: I heard Lord Xavius left today for his tower in Ashenvale.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Lady_Benel%27derath#Quotes",
+  "reference": null,
+  "note": "A line spoken by the ghost of Lady Benel'derath to Lord Ro'minate in the Ruins of Eldre'thar."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Benel'derath",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Lady Benel'derath says: I heard Lord Xavius left today for his tower in Ashenvale.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Lady_Benel%27derath#Quotes",
+  "reference": null,
+  "note": "The ghost's own line, naming Lord Xavius as alive."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Siralen",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "High Priestess Siralen was, according to a plaque on her statue, promoted into service as Queen Azshara's personal high priestess of Vashj'ir after performing exceptionally in the Quel'Dormir Temple.",
+  "source_url": "https://warcraft.wiki.gg/wiki/High_Priestess_Siralen",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Valarian",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The Tel'anor page's notes cite High Ranger Valarian, Ranger General Feleor, Magister Garuhod and the Nar'thalas Magisters as indicating 'that rangers and Magisters both existed in ancient night elf society' (the Kaldorei Empire).",
+  "source_url": "https://warcraft.wiki.gg/wiki/Tel%27anor#Notes_and_trivia",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Feleor",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The Tel'anor page's notes cite High Ranger Valarian, Ranger General Feleor, Magister Garuhod and the Nar'thalas Magisters as indicating 'that rangers and Magisters both existed in ancient night elf society' (the Kaldorei Empire).",
+  "source_url": "https://warcraft.wiki.gg/wiki/Tel%27anor#Notes_and_trivia",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Garuhod",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The Tel'anor page's notes cite High Ranger Valarian, Ranger General Feleor, Magister Garuhod and the Nar'thalas Magisters as indicating 'that rangers and Magisters both existed in ancient night elf society' (the Kaldorei Empire).",
+  "source_url": "https://warcraft.wiki.gg/wiki/Tel%27anor#Notes_and_trivia",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Millicent Serene",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "One of these powerful Highborne was Millicent Serene whose crowning achievement was the Fruit of Fertility, a magical vine imbued with an aura of protection and growth.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Dire_Maul#Eldre%27Thalas",
+  "reference": "Rabine Saturna's quotes; Tendris Warpwood#Adventure Guide",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Mennar",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The mages of Mennar Academy, who were among the first in the Kaldorei Empire to study the arcane and realize the Well's potential, worried about the possibility of arcane addiction and advocated caution, but this only put them in conflict with Queen Azshara and the Highborne in Zin-Azshari.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Highborne#Ancient_times",
+  "reference": "Malynea Skyreaver quotes"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Kalytha",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Listed under 'Known Members' of the Mennar Academy, whose mages the Highborne page calls 'among the first in the Kaldorei Empire to study the arcane'.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Mennar_Academy#Known_Members",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Vandros",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Unfortunately, a loyal noble to Azshara in his court betrayed him.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Highborne#War_of_the_Ancients",
+  "reference": "Ancient Highborne Tome; Mystery of the Sarcen Stone",
+  "reference_scope": "next citation in the same paragraph",
+  "note": "'him' is Prince Farondis; the wiki links 'a loyal noble' to the page Vandros."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Nerus Moonfang",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "During the War of the Ancients, he made a hasty and panicked deal with a similarly minded man to himself, offering protection for his family from the Burning Legion.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#Biography",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Theryssia",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Lord Ravencrest appointed me as Queen Azshara's personal guard.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Theryssia#Quotes",
+  "reference": null,
+  "note": "Her own line as a released banshee at Black Rook Hold; infobox affiliation Queen's Royal Guard, Rooksguard."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Thal'dranath",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Ten thousand years ago, the Broken Shore, or Thal'dranath, was a portion of the city of Suramar, and the location of the Temple of Elune, which was built upon a site of ancient power.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Broken_Shore#History",
+  "reference": "Chamber of the Moon#Quotes"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Hyjal",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The kaldorei have held this great mountain sacred and it remained untouched by their sprawling empire by the orders of Queen Azshara.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Mount_Hyjal#Early_history_and_War_of_the_Ancients",
+  "reference": null
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Val'sharah",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "The region saw heavy fighting during the War of the Ancients.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Val%27sharah#War_of_the_Ancients",
+  "reference": "Tome of the Ancients",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lorlathil",
+  "kind": "place",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Lorlathil was the birthplace of the Stormrage twins, Malfurion and Illidan, though they grew up in Suramar.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Lorlathil#Notes_and_trivia",
+  "reference": "Awakenings; The Well of Eternity"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Shan'do",
+  "kind": "title",
+  "gloss": "Honored Teacher. (A title and term of respect.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Shan'do",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "era_evidence": "Rhonin, while trapped in the past of the War of the Ancients, was at one point addressed as shan'do by Illidan Stormrage, who often studied Rhonin's spellcasting.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shan%27do#People_referred_to_as_shan%27do",
+  "reference": "The Well of Eternity, pg. 320"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Thero'shan",
+  "kind": "title",
+  "gloss": "Honored student. (A title and term of respect.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Thero'shan",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "era_evidence": "The wiki's first citation for the term is The Well of Eternity (War of the Ancients Trilogy), pg. 369.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Thero%27shan",
+  "reference": "The Well of Eternity, pg. 369"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Shalla'tor",
+  "kind": "artifact",
+  "gloss": "Shadow Render.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Shalla'tor",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "Flashback, pg. 22"
+  },
+  "era_evidence": "Shalla'tor and Ellemayne were a pair of magic elven blades forged during the War of the Ancients and wielded by the night elf twins Vor'Illian and Lo'Vellian.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalamayne#Shalla%27tor_and_Ellemayne",
+  "reference": "World of Warcraft: The Comic #13 Flashback; World of Warcraft: Ultimate Visual Guide, pg. 71",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Ellemayne",
+  "kind": "artifact",
+  "gloss": "Reaver.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Ellemayne",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "Flashback, pg. 22"
+  },
+  "era_evidence": "Shalla'tor and Ellemayne were a pair of magic elven blades forged during the War of the Ancients and wielded by the night elf twins Vor'Illian and Lo'Vellian.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalamayne#Shalla%27tor_and_Ellemayne",
+  "reference": "World of Warcraft: The Comic #13 Flashback; World of Warcraft: Ultimate Visual Guide, pg. 71",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Vor'Illian",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Shalla'tor and Ellemayne were a pair of magic elven blades forged during the War of the Ancients and wielded by the night elf twins Vor'Illian and Lo'Vellian.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalamayne#Shalla%27tor_and_Ellemayne",
+  "reference": "World of Warcraft: The Comic #13 Flashback; World of Warcraft: Ultimate Visual Guide, pg. 71",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Lo'Vellian",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Shalla'tor and Ellemayne were a pair of magic elven blades forged during the War of the Ancients and wielded by the night elf twins Vor'Illian and Lo'Vellian.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Shalamayne#Shalla%27tor_and_Ellemayne",
+  "reference": "World of Warcraft: The Comic #13 Flashback; World of Warcraft: Ultimate Visual Guide, pg. 71",
+  "reference_scope": "next citation in the same paragraph"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Quel'Serrar",
+  "kind": "artifact",
+  "gloss": "The High Blade.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Quel'Serrar",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": null
+  },
+  "era_evidence": "It was forged by the combined effort of the five dragonflights and the night elves, specifically the magesmith Luminarian, and was gifted to the kaldorei long ago.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Quel%27Serrar",
+  "reference": "Arsenal: Skyborn Blades; World of Warcraft: Exploring Azeroth: The Eastern Kingdoms, pg. 93",
+  "note": "The Kaldorei Empire page's notes cite 'the Aspects helping the magesmith Luminarian forge the Prismatic Blades' as a sign of the empire's ties to dragons; the Quel'Serrar page calls it 'one of the first Prismatic Blades'."
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Crystal of Zin-Malor",
+  "kind": "artifact",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Kel'Theril suffered until the Great Sundering destroyed it for good, and now the dead wander the ruins as ghosts.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Crystal_of_Zin-Malor#History",
+  "reference": "Pride of the Highborne; The Ruins of Kel'Theril (Classic)"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Arcan'dor",
+  "kind": "artifact",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Thousands of years ago, as the Highborne were just beginning to unravel the mysteries of the arcane, a small enclave of \"keepers\" who were not full druids met with the first of the elven magi.",
+  "source_url": "https://warcraft.wiki.gg/wiki/Arcan%27dor#History",
+  "reference": "Don Adams on Twitter (https://twitter.com/_DonAdams/status/779416528332525568): \"malfurion is indeed the first druid. this was poor wording on my part. the \"keepers\" of farodin's order were not full druids.\"",
+  "note": "A type of magical tree, not a made object; the page also says 'Farodin kept watch over an arcan'dor seed in the wilds of Suramar for 10,000 years.'"
+ },
+ {
+  "branch": "ancient-name",
+  "form": "Tel'arn",
+  "kind": "person",
+  "gloss": null,
+  "gloss_basis": "none",
+  "era_evidence": "Rensar Greathoof, quoted in a citation on the Ranger General Feleor page: 'General Tel'arn... One of the great heroes of the War of the Ancients.'",
+  "source_url": "https://warcraft.wiki.gg/wiki/Ranger_General_Feleor",
+  "reference": "Black Rook Hold: The Sorrow"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Bandu Thoribas!",
+  "speaker": "Nar'thalas Nightwatcher",
+  "gloss": "Prepare to fight. (A challenge to an enemy.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Bandu Thoribas",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Nar%27thalas_Nightwatcher#Quotes",
+  "reference": null,
+  "speaker_context": "I've been waiting over ten thousand years for this!",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Nar%27thalas_Nightwatcher#Quotes",
+  "note": "Night elf ghosts in Azsuna; the same quote set includes 'For Nar'thalas!'.",
+  "form": "Bandu Thoribas!"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Our people... shu dalees-na.",
+  "speaker": "Disturbed Spectre",
+  "gloss": null,
+  "gloss_basis": "none",
+  "source_url": "https://warcraft.wiki.gg/wiki/Disturbed_Spectre#Quotes",
+  "reference": null,
+  "speaker_context": "Disturbed Spectres are night elf ghosts located in Tel'anor in Suramar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Disturbed_Spectre",
+  "note": "The Darnassian page lists this as 'Shu dales-na' and calls it 'Presumably a variant of Shu dalas na' ('Heavy are our hearts', Hearthstone Sunken City lyrics); that is the wiki's guess, not a Blizzard gloss.",
+  "form": "Our people... shu dalees-na."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Thandae-alah...",
+  "speaker": "Disturbed Spectre",
+  "gloss": null,
+  "gloss_basis": "none",
+  "source_url": "https://warcraft.wiki.gg/wiki/Disturbed_Spectre#Quotes",
+  "reference": null,
+  "speaker_context": "Disturbed Spectres are night elf ghosts located in Tel'anor in Suramar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Disturbed_Spectre",
+  "form": "Thandae-alah..."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Shaha... lor'ma...",
+  "speaker": "Crazed Quel'dorei",
+  "gloss": "Thank you.",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Shaha lor'ma",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "War Crimes, chapter 6; Christie Golden on Twitter (https://twitter.com/ChristieGolden/status/464499511889780736)"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Crazed_Quel%27dorei#Quotes",
+  "reference": null,
+  "speaker_context": "Crazed Quel'dorei are banshees located in Nazjatar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Crazed_Quel%27dorei",
+  "note": "Infobox affiliation: Highborne. Other lines in the set: 'Glory to Azshara!', 'I serve the queen!'.",
+  "form": "Shaha... lor'ma..."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Tor ilisar'thera'nal!",
+  "speaker": "Fel-Blessed Highborne",
+  "gloss": "Let our enemies beware. (A war cry used against enemies since ancient times.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Tor ilisar'thera'nal",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Fel-Blessed_Highborne#Quotes",
+  "reference": null,
+  "speaker_context": "Fel-Blessed Highborne is a night elf located in the Passage of Time in Thaldraszus.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Fel-Blessed_Highborne",
+  "note": "Infobox affiliation: Highborne; ability 'Time-displaced: Charged with temporal energies from the nearby time rifts.' The same quote set has the English 'Let our enemies beware!'.",
+  "form": "Tor ilisar'thera'nal!"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Fandu-dath-belore?",
+  "speaker": "Fel-Blessed Highborne",
+  "gloss": "Who goes there?",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Fandu-dath-belore?",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Fel-Blessed_Highborne#Quotes",
+  "reference": null,
+  "speaker_context": "Fel-Blessed Highborne is a night elf located in the Passage of Time in Thaldraszus.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Fel-Blessed_Highborne",
+  "note": "The same quote set has the English 'Who goes there?'.",
+  "form": "Fandu-dath-belore?"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Fandu-dath-belore?",
+  "speaker": "Fel Queen's Guard",
+  "gloss": "Who goes there?",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Fandu-dath-belore?",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Fel_Queen%27s_Guard#Quotes",
+  "reference": null,
+  "speaker_context": "Fel Queen's Guards are night elves located in the Passage of Time in Thaldraszus.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Fel_Queen%27s_Guard",
+  "note": "Same quote set: 'For her Glory!', 'In Azshara's name!', 'Who goes there?'. Time-rift NPC like the Fel-Blessed Highborne.",
+  "form": "Fandu-dath-belore?"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Our people... shu dalees-na.",
+  "speaker": "Disturbed Apparition",
+  "gloss": null,
+  "gloss_basis": "none",
+  "source_url": "https://warcraft.wiki.gg/wiki/Disturbed_Apparition#Quotes",
+  "reference": null,
+  "speaker_context": "Disturbed Apparitions are spectres located in Tel'anor in Suramar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Disturbed_Apparition",
+  "note": "Same lines as the Disturbed Spectre; the Darnassian page's 'variant of Shu dalas na' remark is the wiki's guess, not a Blizzard gloss.",
+  "form": "Our people... shu dalees-na."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Thandae-alah...",
+  "speaker": "Disturbed Apparition",
+  "gloss": null,
+  "gloss_basis": "none",
+  "source_url": "https://warcraft.wiki.gg/wiki/Disturbed_Apparition#Quotes",
+  "reference": null,
+  "speaker_context": "Disturbed Apparitions are spectres located in Tel'anor in Suramar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Disturbed_Apparition",
+  "form": "Thandae-alah..."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Our people... shu dalees-na.",
+  "speaker": "Haunting Protector",
+  "gloss": null,
+  "gloss_basis": "none",
+  "source_url": "https://warcraft.wiki.gg/wiki/Haunting_Protector#Quotes",
+  "reference": null,
+  "speaker_context": "Haunting Protectors are spectres located in Suramar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Haunting_Protector",
+  "note": "Same lines as the Disturbed Spectre; the Darnassian page's 'variant of Shu dalas na' remark is the wiki's guess, not a Blizzard gloss.",
+  "form": "Our people... shu dalees-na."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Thandae-alah...",
+  "speaker": "Haunting Protector",
+  "gloss": null,
+  "gloss_basis": "none",
+  "source_url": "https://warcraft.wiki.gg/wiki/Haunting_Protector#Quotes",
+  "reference": null,
+  "speaker_context": "Haunting Protectors are spectres located in Suramar.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Haunting_Protector",
+  "form": "Thandae-alah..."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Ishnu-alah.",
+  "speaker": "Nerus Moonfang",
+  "gloss": "Good fortune to you. (A greeting.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Ishnu-alah",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#On-click",
+  "reference": null,
+  "speaker_context": "During the War of the Ancients, he made a hasty and panicked deal with a similarly minded man to himself, offering protection for his family from the Burning Legion.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#Biography",
+  "note": "Legion class-hall champion (Sanctum of Light); wiki infobox 'faffiliation' includes Kaldorei Empire; listed in the Night elf ghosts category.",
+  "form": "Ishnu-alah."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Elune-Adore.",
+  "speaker": "Nerus Moonfang",
+  "gloss": "Elune be with you. (A greeting.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Elune-Adore",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#On-click",
+  "reference": null,
+  "speaker_context": "During the War of the Ancients, he made a hasty and panicked deal with a similarly minded man to himself, offering protection for his family from the Burning Legion.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#Biography",
+  "form": "Elune-Adore."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Ande'thoras-ethil.",
+  "speaker": "Nerus Moonfang",
+  "gloss": "May your troubles be diminished. (A farewell.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Ande'thoras-ethil",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128; Call Down the Thunder; A Humble Offering (Silithus)"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#On-click",
+  "reference": null,
+  "speaker_context": "During the War of the Ancients, he made a hasty and panicked deal with a similarly minded man to himself, offering protection for his family from the Burning Legion.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#Biography",
+  "form": "Ande'thoras-ethil."
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Bandu Thoribas!",
+  "speaker": "Nerus Moonfang",
+  "gloss": "Prepare to fight. (A challenge to an enemy.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Bandu Thoribas",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#Combat_ally",
+  "reference": null,
+  "speaker_context": "During the War of the Ancients, he made a hasty and panicked deal with a similarly minded man to himself, offering protection for his family from the Burning Legion.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Nerus_Moonfang#Biography",
+  "form": "Bandu Thoribas!"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Bandu thoribas!",
+  "speaker": "Risen Scout",
+  "gloss": "Prepare to fight. (A challenge to an enemy.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Bandu Thoribas",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Risen_Scout_(Val%27sharah)#Quotes",
+  "reference": null,
+  "speaker_context": "Risen Scouts are undead night elves located in Val'sharah.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Risen_Scout_(Val%27sharah)",
+  "note": "Infobox affiliation: Rooksguard, which the wiki describes as 'an elite force of night elf soldiers who served the House of Ravencrest during the time of the Kaldorei Empire'. Same quote set: 'In the master's name!'.",
+  "form": "Bandu thoribas!"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Bandu thoribas!",
+  "speaker": "Risen Assassin",
+  "gloss": "Prepare to fight. (A challenge to an enemy.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Bandu Thoribas",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Risen_Assassin#Quotes",
+  "reference": null,
+  "speaker_context": "Risen Assassins are undead night elves located around Bradensbrook and Marl's Stead in Val'sharah.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Risen_Assassin",
+  "note": "Infobox affiliation: Rooksguard, which the wiki describes as 'an elite force of night elf soldiers who served the House of Ravencrest during the time of the Kaldorei Empire'. Same quote set: 'In the master's name!'. The wiki adds '(Prepare to fight!)' after the line.",
+  "form": "Bandu thoribas!"
+ },
+ {
+  "branch": "ancient-speech",
+  "line": "Bandu thoribas!",
+  "speaker": "Captain Tevaris",
+  "gloss": "Prepare to fight. (A challenge to an enemy.)",
+  "gloss_basis": "official",
+  "gloss_source": {
+   "term": "Bandu Thoribas",
+   "source_url": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)",
+   "reference": "The Warcraft Encyclopedia: Darnassian; Alliance Player's Guide, pg. 128"
+  },
+  "source_url": "https://warcraft.wiki.gg/wiki/Captain_Tevaris#Quotes",
+  "reference": null,
+  "speaker_context": "Though he appears corporeal, he is part of the ghostly forces from Black Rook Hold, working unknowingly as agents of Gul'dan.",
+  "speaker_context_url": "https://warcraft.wiki.gg/wiki/Captain_Tevaris",
+  "note": "Infobox affiliation: Rooksguard, which the wiki describes as 'an elite force of night elf soldiers who served the House of Ravencrest during the time of the Kaldorei Empire'. Same quote set: 'In the master's name!'.",
+  "form": "Bandu thoribas!"
+ },
+ {
+  "form": "Alai",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Atal'ai",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ban",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Basengo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Bwon'tulak",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Dazdooga",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "De",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Den",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Doba quzhu ta tawbo! Metah bo chu!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "E'ko",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Fa'da",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Fetna",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Fetna Alai-nazdo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "File",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Fele",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Gogeh",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Gokinye",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Hida",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Kele",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Kile",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ko",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ma'da",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Maze selo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mo keke",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Moi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Midi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Muisek",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Na",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Nazdo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Nekan",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ney lakamo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ni",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Noa",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Onze",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Peran",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Poran",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Raza",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Roa",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Shan'aten",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Shera Ali'kh",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Sho",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Tokobo'ne na Amani'Zar.",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Untoh de alanke tono",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Vize",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Wa'aru po",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Waikempo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Watha-nekan",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Weta",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Weta-den",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zen",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "aka",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Juju",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Loa",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mojo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Voodoo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "An'daka taz no shada. Ke zulo numra kan! Ne'hideh. Ne'hideh!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Azzaga choogo zinn!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Chaga... choka'jinn.",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Da Amani de chuka!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Da'kala koraste...",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Da'kala di'chuka HORRIDON! Kalimaste!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Di chuka Rezan!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Di chuka Zandalar!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Gachaga",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Guzincha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ikambokem",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Kon'sahwe",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ma'ako! Ma'ako ka shadra!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mado'ru",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ma'tuba!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Oraka'zul!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Pohkiza",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Sendulo ma'das na khu'das, kuba zinn awe.",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Tazaga-choo!",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Taz'dingo",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Taz'okun",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zagota",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Dahazi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Hash'ey",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Hash'ura",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Rush'kah",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Serak",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zuvembi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Amani",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Amani'shi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Atal-Mhuto",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Gurubashi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Atal'alarion",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Bwonsamdi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Dazar",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Elortha no Shadra",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Eraka no Kimbul",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Farastu",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Hakkar",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jin'do",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jin'rokh",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jin'sora",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jin'Zallah",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jin'Zil",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Kai'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Kai'ju",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mai'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ohgan",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Orik'ando",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Samedi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Sen'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Shango",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Tai'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Thresh'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ty'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ueetay no Mueh'zala",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Vol'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Vosh'gajin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Yayo'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zanza",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'arek",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'brin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Lor",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Marosh",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Agol'watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Amani'Zar",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Atal'Aman",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Hiri'watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jintha'Alor",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mazra'Alor",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Shadra'Alor",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Shaol'watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Tazz'Alor",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Tor'Watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zeb'Nowa",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zeb'Sora",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zeb'Tela",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zeb'Watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Mashar",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zun'watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Aboraz",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Balia'mah",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Bal'lal",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Jubuwal",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Kal'ai",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Malaka'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mizjah",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Nazferiti",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Nek'mani",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Tkashi",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zabra'jin",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Ziata'jai",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Gurub",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Kunda",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Mamwe",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zuuldaia",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Dazar'alor",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Dol'watha",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mugamba",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Mugambala",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Shaol'mara",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Za'Tual",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zandalar",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zeb'ahari",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zeb'tula",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zuldazar",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Gundrak",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Yojamba",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Dare",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Drak",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ },
+ {
+  "form": "Zul'Farrak",
+  "branch": "zandali",
+  "kind": "word",
+  "source_url": "https://warcraft.wiki.gg/wiki/Zandali"
+ }
+]
