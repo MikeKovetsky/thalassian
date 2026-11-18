@@ -4,12 +4,15 @@ gold. The Python engine is src/thalassian/syntax/parser.py; the web engine is we
 import os
 import sys
 import unittest
+from types import SimpleNamespace
+from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "research", "2026-11-revival", "scripts"))
 import evaltranslator as E  # noqa: E402
 
 from thalassian.core.lexicon import load_lexicon  # noqa: E402
-from thalassian.syntax.parser import compile_sentence_uk  # noqa: E402
+from thalassian.syntax import parser  # noqa: E402
+from thalassian.syntax.parser import compile_sentence_en, compile_sentence_uk  # noqa: E402
 
 PHRASES = [p for p, _ in E.GOLD]
 GLOSSES = [g for _, g in E.GOLD]
@@ -86,6 +89,31 @@ class TestPythonEngine(EngineCases, unittest.TestCase):
         self.assertEqual(compile_sentence_uk("сонце і ліс", lexicon), "Belore rea thas")
         self.assertEqual(compile_sentence_uk("справедливість для тебе", lexicon),
                          "Selama " + compile_sentence_uk("ти", lexicon).lower())
+
+
+class TestSpacyBuilder(unittest.TestCase):
+    """With spaCy installed, the English builder takes spaCy's lemmas but must run the same passes. spaCy is
+    not installed here, so a stand-in gives the lemmas and tags spaCy gives these words."""
+    LEMMAS = {"guided": ("guide", "VBD", "VERB"), "us": ("we", "PRP", "PRON")}
+
+    def nlp(self, text):
+        tokens, start = [], 0
+        for word in text.split(" "):
+            lemma, tag, pos = self.LEMMAS.get(word.lower(), (word.lower(), "NN", "NOUN"))
+            tokens.append(SimpleNamespace(text=word, idx=start, lemma_=lemma, tag_=tag, pos_=pos))
+            start += len(word) + 1
+        return tokens
+
+    def test_spacy_lemmas_with_the_canon_passes(self):
+        lexicon = load_lexicon()
+        with mock.patch.object(parser, "nlp", self.nlp, create=True), mock.patch.object(parser, "USE_EN_NLP", True):
+            self.assertEqual(compile_sentence_en("The sun guides us.", lexicon), "Anu belore dela'na.")
+            # "guided" is dela only through spaCy's lemma; anar' and the compound are the regex builder's rules.
+            self.assertEqual(compile_sentence_en("By the light of the forest guided us", lexicon, phrasebook=False),
+                             "Anar'alah thas dela'na")
+            self.assertEqual(compile_sentence_en("The light of the forest guided us", lexicon, phrasebook=False),
+                             "Thas'alah dela'na")
+        self.assertEqual(compile_sentence_en("guided us", lexicon), "[guided]'na")
 
 
 @unittest.skipUnless(E.NODE, "node is not installed")

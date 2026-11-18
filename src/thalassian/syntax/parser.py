@@ -367,92 +367,54 @@ class Sentence(ASTNode):
             return " ".join(sentences)
         return text.capitalize() if text else ""
 
-def build_ast_en_fallback(en_sentence: str, phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
-    """The regex builder, in canon order of passes: whole phrases first, then "by X" (anar'X), then
-    "X of the Y" compounds (Y'X), then pronoun suffixes."""
-    raw_tokens = re.findall(r"[A-Za-z']+|[.,!?;]", expand_contractions(en_sentence))
+def tokens_en(en_sentence: str) -> List[WordNode]:
+    """Words and punctuation. The plural guess is a final -s on a word of four letters or more."""
     tokens = []
-    for t in raw_tokens:
+    for t in re.findall(r"[A-Za-z']+|[.,!?;]", expand_contractions(en_sentence)):
         if re.match(r"[.,!?;]", t):
             tokens.append(WordNode(t, t, False, True))
         else:
             is_pl = t.endswith('s') and len(t) > 3 and not t.endswith('ss')
             lemma = t[:-1].lower() if is_pl else t.lower()
             tokens.append(WordNode(t, lemma, is_pl, False))
+    return tokens
 
+def canon_passes_en(tokens: List[WordNode], phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
+    """The passes in canon order: whole phrases first, then "by X" (anar'X), then "X of the Y" compounds
+    (Y'X), then pronoun suffixes. Word order follows the input."""
     nodes = apply_phrasebook(tokens, phrasebook or {}, "en")
     nodes = apply_compounds_en(apply_proclitics_en(nodes))
     return Sentence(front=pair_pronouns(nodes, set(PRONOUN_SUFFIXES_EN), FUNCTION_WORDS_EN))
 
-def build_ast_en_spacy(en_sentence: str) -> Sentence:
-    doc = nlp(en_sentence)
-    root = next((t for t in doc if t.dep_ == "ROOT"), None)
-    
-    if not root:
-        return Sentence(front=[WordNode(t.text, t.lemma_.lower(), False, t.is_punct) for t in doc])
+def build_ast_en_fallback(en_sentence: str, phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
+    """The regex builder."""
+    return canon_passes_en(tokens_en(en_sentence), phrasebook)
 
-    chunks = {"subject": [], "verb": [root], "obj": [], "prep_phrases": [], "front": [], "back": []}
-
-    for child in root.children:
-        subtree = list(child.subtree)
-        if child.dep_ in ["nsubj", "nsubjpass", "csubj", "csubjpass"]:
-            chunks["subject"].extend(subtree)
-        elif child.dep_ in ["dobj", "pobj", "attr"] and child.head == root:
-            chunks["obj"].extend(subtree)
-        elif child.dep_ == "prep":
-            chunks["prep_phrases"].append(subtree)
-        else:
-            if child.is_punct:
-                if child.i < root.i: chunks["front"].extend(subtree)
-                else: chunks["back"].extend(subtree)
-            elif child.i < root.i:
-                chunks["front"].extend(subtree)
-            else:
-                chunks["verb"].extend(subtree)
-
-    used = set()
-    used.add(root.i)
-    for group in ["subject", "obj", "front", "back"]:
-        used.update([t.i for t in chunks[group]])
-    for pp in chunks["prep_phrases"]:
-        used.update([t.i for t in pp])
-    used.update([t.i for t in chunks["verb"]])
-    
-    for t in doc:
-        if t.i not in used:
-            if t.i < root.i:
-                chunks["front"].append(t)
-            else:
-                chunks["back"].append(t)
-
-    def to_words(tokens):
-        tokens = sorted(tokens, key=lambda t: t.i)
-        return [WordNode(t.text, t.lemma_.lower(), t.tag_ in ["NNS", "NNPS"], t.is_punct, pos=t.pos_) for t in tokens]
-
-    subject = Subject(to_words(chunks["subject"])) if chunks["subject"] else None
-    obj = Object(to_words(chunks["obj"])) if chunks["obj"] else None
-    verb = Verb(to_words(chunks["verb"])) if chunks["verb"] else None
-    prep_phrases = [PrepositionalPhrase(to_words(pp)) for pp in chunks["prep_phrases"]]
-    front = to_words(chunks["front"])
-    back = to_words(chunks["back"])
-    
-    PRONOUNS_EN = set(PRONOUN_SUFFIXES_EN.keys())
-    if obj and len(obj.words) == 1 and (obj.words[0].lemma in PRONOUNS_EN or obj.words[0].original.lower() in PRONOUNS_EN) and verb:
-        verb.pronoun = obj.words[0]
-        obj = None
-
-    return Sentence(subject, verb, obj, prep_phrases, front, back)
+def build_ast_en_spacy(en_sentence: str, phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:
+    """The regex builder's words and passes, with spaCy's lemma, plural tag and part of speech for each
+    word that spaCy reads as the same token ("guided" -> guide). So the canon phrases, anar' and the
+    compounds apply when spaCy is installed too, as the pymorphy3 builder does for Ukrainian."""
+    tokens = tokens_en(en_sentence)
+    by_start = {t.idx: t for t in nlp(" ".join(node.original for node in tokens))}
+    start = 0
+    for node in tokens:
+        token = by_start.get(start)
+        if not node.is_punct and token is not None and token.text == node.original:
+            node.lemma, node.pos = token.lemma_.lower(), token.pos_
+            node.is_plural = token.tag_ in ("NNS", "NNPS")
+        start += len(node.original) + 1
+    return canon_passes_en(tokens, phrasebook)
 
 def compile_sentence_en(en_sentence: str, lexicon: List[Dict] = None, phrasebook: bool = True) -> str:
     """phrasebook=False translates word by word, to score the rules without the canon phrases they are
-    checked against. The phrasebook and the anar'/compound rules run in the regex builder only; the spaCy
-    builder (used when spaCy is installed) keeps its own chunking."""
+    checked against."""
     if lexicon is None:
         lexicon = load_lexicon()
+    book = build_phrasebook(lexicon, "en") if phrasebook else None
     if USE_EN_NLP:
-        ast = build_ast_en_spacy(en_sentence)
+        ast = build_ast_en_spacy(en_sentence, book)
     else:
-        ast = build_ast_en_fallback(en_sentence, build_phrasebook(lexicon, "en") if phrasebook else None)
+        ast = build_ast_en_fallback(en_sentence, book)
     return ast.compile(lexicon, lang='en')
 
 def build_ast_uk_fallback(uk_sentence: str, phrasebook: Optional[Dict[tuple, Dict]] = None) -> Sentence:

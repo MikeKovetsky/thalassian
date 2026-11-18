@@ -56,7 +56,7 @@ Because Elves don't use modern words like "chains" or "confession", translating 
 We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
 - `src/thalassian/data/lexicon.json` - The single source of truth: 314 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
-- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler (using AST and `spaCy` to parse English and compile SVO Elven grammar).
+- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler: whole canon phrases first, then word by word with the canon rules (*anar'*, modifier-first compounds, pronoun suffixes), in the input's word order. `spaCy`, when installed, supplies the lemmas. `web/translator.js` runs the same rules in the browser.
 - `src/thalassian/phonetics/markov.py` - A character Markov-chain engine that generates new vocabulary from canon letter patterns. The November 2026 audit found its words easy to tell apart from canon and describes a better generator ([Method 7](research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model)).
 - `src/thalassian/morphology/` - Rules for agglutination and vocalic mutation (pluralization).
 

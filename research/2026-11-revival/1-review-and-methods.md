@@ -311,7 +311,7 @@ The rules behind the phrasebook-off gain all come from section 6:
 - "and" gives *rea*.
 - Lookup prefers attested entries over segments, then names, then inferred, unverified and generated words, and Thalassian over the other dialects.
 
-The phrasebook and these rules run in the regex builder. The spaCy builder, which runs only when spaCy is installed, still has neither (bug 6).
+Both English builders run the phrasebook and these rules. The spaCy builder, used when spaCy is installed, only adds spaCy's lemmas and plural tags, and keeps the input's word order. It is tested with a stand-in for spaCy, not with spaCy itself, which is not installed here (bug 6).
 
 ## 6. Grammar findings from the canon
 
