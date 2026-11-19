@@ -59,7 +59,7 @@
       "uk": "(частка звертання/побажання; точне значення невідоме)",
       "en": "(invocation/blessing particle; exact meaning unknown)"
     },
-    "pos": "interjection",
+    "pos": "particle",
     "canon": false,
     "root": "anu",
     "notes": "Used in 'Anu belore dela'na'. Not canon (2026-11 audit): No Blizzard source gives 'hail/greetings'; meaning unknown (see fix).",
@@ -93,7 +93,7 @@
     "pos": "preposition",
     "canon": false,
     "root": "ashal",
-    "notes": "Used in 'Selama ashal'anore' (Justice for our people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment.",
+    "notes": "Used in 'Selama ashal'anore' (Justice for our people). Not canon (2026-11 audit): The canon gloss is 'Justice for our people'; 'great/glorious' is unsupported and the replacement 'for' is inferred by alignment. A second attestation, 'Felomin ashal!' = 'Fire consumes!' (zhTW, reported on the wiki talk page; lexicon entry 'felomin ashal', inferred), does not fit 'for', so the gloss covers Selama ashal'anore only.",
     "source": "thalassian",
     "canon_basis": "unverified",
     "evidence": [
@@ -444,7 +444,7 @@
     },
     "pos": "verb",
     "canon": true,
-    "root": "anar",
+    "root": "anaria",
     "notes": "Anaria shola (Speak your business).",
     "source": "thalassian",
     "canon_basis": "segment"
@@ -517,12 +517,12 @@
   {
     "word": "delar",
     "translation": {
-      "uk": "меч/охоронець",
-      "en": "sword/keeper"
+      "en": "(unknown; second part of the sword name Quel'Delar, 'the Sister Blade')",
+      "uk": "(невідомо; друга частина назви меча Quel'Delar, 'Сестра-клинок')"
     },
     "pos": "noun",
     "canon": false,
-    "root": "del",
+    "root": "delar",
     "notes": "Quel'Delar. Not canon (2026-11 audit): No source glosses 'delar' as sword or keeper. The weapon's epithet is 'the Sister Blade', which does not decompose with quel = high.",
     "source": "thalassian",
     "canon_basis": "unverified",
@@ -825,7 +825,7 @@
     },
     "pos": "noun",
     "canon": true,
-    "root": "an",
+    "root": "an'da",
     "notes": "An'da",
     "source": "darnassian",
     "canon_basis": "attested",
@@ -857,7 +857,7 @@
     },
     "pos": "noun",
     "canon": true,
-    "root": "shal",
+    "root": "shala",
     "notes": "Al diel shala (Safe travels)",
     "source": "thalassian",
     "canon_basis": "segment",
@@ -961,7 +961,7 @@
     },
     "pos": "verb",
     "canon": true,
-    "root": "aran",
+    "root": "aranal",
     "notes": "Aranal (Rise)",
     "source": "thalassian",
     "canon_basis": "attested"
@@ -1122,8 +1122,8 @@
   {
     "word": "aran",
     "translation": {
-      "uk": "місто/поселення",
-      "en": "town/settlement"
+      "en": "(unknown; ends seven ancient place names, Shorel'aran 'farewell' and Shalassian Aran'arcana)",
+      "uk": "(невідомо; закінчення семи давніх назв місць, Shorel'aran 'прощавай' і шаласького Aran'arcana)"
     },
     "pos": "noun",
     "canon": false,
@@ -1200,8 +1200,8 @@
   {
     "word": "vala",
     "translation": {
-      "uk": "через/шлях",
-      "en": "through"
+      "en": "through",
+      "uk": "через"
     },
     "pos": "preposition",
     "canon": true,
@@ -1284,8 +1284,8 @@
   {
     "word": "rath",
     "translation": {
-      "uk": "щит/ракета",
-      "en": "shield/missile"
+      "en": "(unknown; said by Thalyssra with arcane missiles and in E'rath omnas; also a scrambler word)",
+      "uk": "(невідомо; Талісра каже це з чародійними стрілами та в E'rath omnas; також слово скремблера)"
     },
     "pos": "noun",
     "canon": false,
@@ -1311,8 +1311,8 @@
   {
     "word": "kanesh",
     "translation": {
-      "uk": "запис/магія",
-      "en": "record/magic"
+      "en": "(unknown; said by Thalyssra to start and end her recordings; also a scrambler word)",
+      "uk": "(невідомо; Талісра каже це на початку й наприкінці записів; також слово скремблера)"
     },
     "pos": "noun",
     "canon": false,
@@ -1413,28 +1413,28 @@
   {
     "word": "alon",
     "translation": {
-      "uk": "вічність/вічний",
-      "en": "eternal/eternity"
+      "en": "(unknown; last word of the untranslated 'Anu bala belore alon')",
+      "uk": "(невідомо; останнє слово неперекладеного 'Anu bala belore alon')"
     },
     "pos": "adjective",
     "canon": false,
     "root": "alon",
     "notes": "Extrapolated from Nethermancer Sepethrea dying quote: 'Anu bala belore alon!' (an old fan reading, 'Hail the sun's eternal blessing'; the phrase is untranslated, and no source gives anu = 'hail')",
     "source": "extrapolated",
-    "canon_basis": "inferred"
+    "canon_basis": "unverified"
   },
   {
     "word": "ledel",
     "translation": {
-      "uk": "мертвий/слуга",
-      "en": "dead/servant"
+      "en": "(unknown; addressed to raised skeletons in 'Aranal, ledel!', where aranal = rise)",
+      "uk": "(невідомо; звертання до піднятих скелетів в 'Aranal, ledel!', де aranal = встань)"
     },
     "pos": "noun",
     "canon": false,
     "root": "ledel",
     "notes": "Extrapolated from Prince Keleseth summoning skeletons: 'Aranal, ledel!' (Rise, dead ones!)",
     "source": "extrapolated",
-    "canon_basis": "inferred"
+    "canon_basis": "unverified"
   },
   {
     "word": "doral",
@@ -1463,17 +1463,33 @@
     "canon_basis": "segment"
   },
   {
-    "word": "carth",
+    "word": "sharius",
     "translation": {
-      "uk": "працювати/робити",
-      "en": "work/do"
+      "en": "work",
+      "uk": "працювати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "carth",
-    "notes": "Generated for modern conversational conlang",
+    "root": "sharius",
+    "notes": "Replaced carth: a poor fit ('rth' is in no attested form), and an echo of Darnassian karath 'do it' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 967421964117 (SHA-256 of 'work'); -1.08 nats per character, at percentile 100 of the attested parts",
+    "evidence": [
+      {
+        "quote": "carth: KN -4.60 nats/char, 1.5th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 6.2th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "ash karath = do it (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "neal",
@@ -1489,36 +1505,10 @@
     "canon_basis": "generated"
   },
   {
-    "word": "sira",
-    "translation": {
-      "uk": "сьогодні/день",
-      "en": "today/day"
-    },
-    "pos": "noun",
-    "canon": false,
-    "root": "sir",
-    "notes": "Generated",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "thala",
-    "translation": {
-      "uk": "жити/існувати",
-      "en": "live/exist"
-    },
-    "pos": "verb",
-    "canon": false,
-    "root": "thal",
-    "notes": "From Thalas (home)",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
     "word": "tana",
     "translation": {
-      "uk": "торкатися/відчувати",
-      "en": "touch/feel"
+      "en": "touch",
+      "uk": "торкатися"
     },
     "pos": "verb",
     "canon": false,
@@ -1528,69 +1518,103 @@
     "canon_basis": "generated"
   },
   {
-    "word": "mith",
+    "word": "ral",
     "translation": {
-      "uk": "говорити/сказати (просто)",
-      "en": "speak/say (simple)"
+      "en": "find",
+      "uk": "знаходити"
     },
     "pos": "verb",
     "canon": false,
-    "root": "mith",
-    "notes": "Phonotactically generated (contrast with anaria - formal speak)",
+    "root": "ral",
+    "notes": "Replaced ashad: one letter from ashal (Selama ashal'anore) and from Shalassian ashar 'duel' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 253317404439981 (SHA-256 of 'find'); -1.83 nats per character, at percentile 57 of the attested parts",
+    "evidence": [
+      {
+        "quote": "ashal = for (in ashal'anore 'for our people') (lexicon, unverified, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "ashar = duel (lexicon, segment, shalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "tal'ashar = an honor duel (lexicon, attested, shalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "ashad",
+    "word": "ethore",
     "translation": {
-      "uk": "шукати/знаходити",
-      "en": "find/seek"
+      "en": "love",
+      "uk": "любити"
     },
     "pos": "verb",
     "canon": false,
-    "root": "ashad",
-    "notes": "Phonotactically generated",
+    "root": "ethore",
+    "notes": "Replaced iel: iel was also the Swadesh words' suffix 'small' and the end of canon dinoriel, so thas'iel read 'forest-love' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 114827903800758 (SHA-256 of 'love'); -1.38 nats per character, at percentile 88 of the attested parts",
+    "evidence": [
+      {
+        "quote": "thas'iel = leaf (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "roval'iel = feather (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "loriel = long (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "dinoriel = keeper (lexicon, segment, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: morphology_conflict, canon_morpheme",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "iel",
-    "translation": {
-      "uk": "любити/бажати",
-      "en": "love/desire"
-    },
-    "pos": "verb",
-    "canon": false,
-    "root": "iel",
-    "notes": "Phonotactically generated",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "doras",
-    "translation": {
-      "uk": "розуміти/знати",
-      "en": "understand/know"
-    },
-    "pos": "verb",
-    "canon": false,
-    "root": "doras",
-    "notes": "Phonotactically generated",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "sir",
+    "word": "latore",
     "translation": {
       "uk": "день",
       "en": "day"
     },
     "pos": "noun",
     "canon": false,
-    "root": "sir",
-    "notes": "Phonotactically generated",
+    "root": "latore",
+    "notes": "Replaced sir: English 'sir', and Ukrainian сир 'cheese' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 163054807791994 (SHA-256 of 'day'); -1.42 nats per character, at percentile 87 of the attested parts",
+    "evidence": [
+      {
+        "quote": "sir: /usr/share/dict/words",
+        "where": ".wowf-extract/audit/vocab-checks.json"
+      },
+      {
+        "quote": "sir: KN -2.52 nats/char, 24.2th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 15.0th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: real_word",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "lura",
@@ -1616,56 +1640,95 @@
     ]
   },
   {
-    "word": "fa",
+    "word": "thu",
     "translation": {
-      "uk": "дерево/ліс",
-      "en": "tree/wood"
+      "en": "food",
+      "uk": "їжа"
     },
     "pos": "noun",
     "canon": false,
-    "root": "fa",
-    "notes": "Phonotactically generated",
+    "root": "thu",
+    "notes": "Replaced reom: a poor fit (the vowel pair 'eo' is in no attested form) (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 213237179625446 (SHA-256 of 'food'); -1.84 nats per character, at percentile 57 of the attested parts",
+    "evidence": [
+      {
+        "quote": "reom: KN -3.53 nats/char, 5.9th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 16.1th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics, gloss",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "reom",
+    "word": "thath",
     "translation": {
-      "uk": "їжа/хліб",
-      "en": "food/bread"
+      "en": "fortress",
+      "uk": "фортеця"
     },
     "pos": "noun",
     "canon": false,
-    "root": "reom",
-    "notes": "Phonotactically generated",
+    "root": "thath",
+    "notes": "Replaced isbab: a poor fit (final -b and 'bab' are almost absent from attested forms) (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 46763523593116 (SHA-256 of 'fortress'); -1.39 nats per character, at percentile 88 of the attested parts",
+    "evidence": [
+      {
+        "quote": "isbab: KN -4.08 nats/char, 2.6th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 3.3th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "thalas = home (lexicon, segment, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "dor = land, home (lexicon, inferred, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Kalimdor"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics, gloss",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "isbab",
+    "word": "shinath",
     "translation": {
-      "uk": "фортеця/дім",
-      "en": "fortress/house"
-    },
-    "pos": "noun",
-    "canon": false,
-    "root": "isbab",
-    "notes": "Phonotactically generated",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "dara",
-    "translation": {
-      "uk": "добрий/хороший",
-      "en": "good/pleasant"
+      "en": "good",
+      "uk": "добрий"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "dara",
-    "notes": "Phonotactically generated",
+    "root": "shinath",
+    "notes": "Replaced dara: a night elf and Skyborne name in the game's name generator, one letter from Shalassian dora 'thanks' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 130903631602902 (SHA-256 of 'good'); -1.22 nats per character, at percentile 97 of the attested parts",
+    "evidence": [
+      {
+        "quote": "Dara: NameGen RaceID 4 (Night Elf) and 96 (Windshaper Skyborne)",
+        "where": ".wowf-extract/NameGen.csv (WoW Forever; local, gitignored)"
+      },
+      {
+        "quote": "dora = thanks (lexicon, segment, shalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "diel = safe/well (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: namegen, collision_edit1, uk_gloss",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "astor",
@@ -1681,30 +1744,62 @@
     "canon_basis": "generated"
   },
   {
-    "word": "nubu",
+    "word": "shius",
     "translation": {
       "uk": "швидкий",
       "en": "fast/quick"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "nub",
-    "notes": "Phonotactically generated",
+    "root": "shius",
+    "notes": "Replaced nubu: the least canon-like invented word, one letter from the Orcish scrambler word nobu (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 144708419371682 (SHA-256 of 'fast/quick'); -1.49 nats per character, at percentile 83 of the attested parts",
+    "evidence": [
+      {
+        "quote": "nubu: KN -4.71 nats/char, 1.5th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 3.3th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "Kazum'nobu (in-game scrambler word, Orcish 1)",
+        "where": ".wowf-extract/LanguageWords.csv (WoW Forever 1.60.1.70938; local, gitignored)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics, scrambler_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "morn",
+    "word": "shindel",
     "translation": {
       "uk": "чорний/темний",
       "en": "black/dark"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "morn",
-    "notes": "Phonotactically generated",
+    "root": "shindel",
+    "notes": "Replaced morn: Sindarin (Tolkien) for 'black, dark' and English 'morning', one letter from canon morin (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 230955006765815 (SHA-256 of 'black/dark'); -1.26 nats per character, at percentile 95 of the attested parts",
+    "evidence": [
+      {
+        "quote": "morin'aminor = (in) quiet serenity (lexicon, inferred, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "morn: English 'morning' (/usr/share/dict/words); Sindarin morn 'black, dark'",
+        "where": ".wowf-extract/audit/vocab-checks.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: real_word, collision_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "nu",
@@ -1717,30 +1812,40 @@
     "root": "nu",
     "notes": "Phonotactically generated",
     "source": "generated",
-    "canon_basis": "generated",
-    "evidence": [
-      {
-        "quote": "Anar'alah = By the light.",
-        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
-      },
-      {
-        "quote": "Lu'selama = Light's Justice.",
-        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
-      }
-    ]
+    "canon_basis": "generated"
   },
   {
-    "word": "san",
+    "word": "zithil",
     "translation": {
       "uk": "червоний",
       "en": "red"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "san",
-    "notes": "Phonotactically generated (related to sin/blood)",
+    "root": "zithil",
+    "notes": "Replaced san: the san of Shalassian Shal'san Tora, an untranslated line (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 195666266627869 (SHA-256 of 'red'); -1.41 nats per character, at percentile 88 of the attested parts",
+    "evidence": [
+      {
+        "quote": "Shal'san Tora (untranslated) (shalassian, Arcanist Valtrois (on-click))",
+        "where": "https://warcraft.wiki.gg/wiki/Arcanist_Valtrois#On-click"
+      },
+      {
+        "quote": "Shal'asan torah (untranslated) (shalassian, Arcanist Valtrois (greeting))",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+      },
+      {
+        "quote": "sin = blood (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_exact, blocks_gloss, root",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "aroth",
@@ -1756,44 +1861,12 @@
     "canon_basis": "generated"
   },
   {
-    "word": "isera",
-    "translation": {
-      "uk": "зелений",
-      "en": "green"
-    },
-    "pos": "adjective",
-    "canon": false,
-    "root": "iser",
-    "notes": "Ysera (Green Aspect) -> isera (green). Not canon (2026-11 audit): No source glosses 'isera' as green. Ysera's name is not glossed, and 'Isera'duna' is a word from the in-game language scrambler.",
-    "source": "darnassian",
-    "canon_basis": "unverified",
-    "evidence": [
-      {
-        "quote": "Ten-letter words | Thero'shan, Isera'duna, Ash'therod, Dorados'no, Shar'adore",
-        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
-      }
-    ]
-  },
-  {
-    "word": "on",
-    "translation": {
-      "uk": "я (називний)",
-      "en": "I (nominative)"
-    },
-    "pos": "pronoun",
-    "canon": false,
-    "root": "on",
-    "notes": "Independent pronoun (derived from suffix 'o)",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
     "word": "la",
     "translation": {
       "uk": "ні/не",
       "en": "no/not"
     },
-    "pos": "adverb",
+    "pos": "particle",
     "canon": false,
     "root": "la",
     "notes": "Negative particle",
@@ -1840,17 +1913,37 @@
     "canon_basis": "generated"
   },
   {
-    "word": "ubelala",
+    "word": "zius",
     "translation": {
       "uk": "темрява",
       "en": "darkness"
     },
     "pos": "noun",
     "canon": false,
-    "root": "ubelala",
-    "notes": "Mass phonotactic expansion",
+    "root": "zius",
+    "notes": "Replaced ubelala: initial u- and 'lala' are in no attested word, and it held bel- of belore 'sun' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 22158471553481 (SHA-256 of 'darkness'); -1.80 nats per character, at percentile 60 of the attested parts",
+    "evidence": [
+      {
+        "quote": "ubelala: KN -3.46 nats/char, 5.9th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 1.8th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "shalla = shadow (lexicon, segment, darnassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "shal = night/shadow/veil (lexicon, segment, shalassian)",
+        "where": "object 658840, https://warcraft.wiki.gg/wiki/The_Rebellion_In_Eldre%27Thalas,_Part_3"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics, canon_morpheme, sense_overlap",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "lelora",
@@ -1892,30 +1985,66 @@
     "canon_basis": "generated"
   },
   {
-    "word": "sindor",
+    "word": "enu",
     "translation": {
       "uk": "золото",
       "en": "gold"
     },
     "pos": "noun",
     "canon": false,
-    "root": "sindor",
-    "notes": "Mass phonotactic expansion",
+    "root": "enu",
+    "notes": "Replaced sindor: sin 'blood' + dor 'land' read 'blood-land', like Sin'dorei (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 40509867134403 (SHA-256 of 'gold'); -1.84 nats per character, at percentile 56 of the attested parts",
+    "evidence": [
+      {
+        "quote": "sin = blood (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "dor = land, home (lexicon, inferred, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Kalimdor"
+      },
+      {
+        "quote": "sin'dorei = children of the blood (lexicon, attested, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: canon_morpheme",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "felash",
+    "word": "aminu",
     "translation": {
       "uk": "срібло",
       "en": "silver"
     },
     "pos": "noun",
     "canon": false,
-    "root": "felash",
-    "notes": "Mass phonotactic expansion",
+    "root": "aminu",
+    "notes": "Replaced felash: it read fel + ash, 'fire-ash' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 132825727385159 (SHA-256 of 'silver'); -1.54 nats per character, at percentile 78 of the attested parts",
+    "evidence": [
+      {
+        "quote": "felo = fire/flame (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "felo'melorn = Flamestrike (Sunstrider runeblade) (lexicon, attested, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: canon_morpheme",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "misi",
@@ -2022,43 +2151,91 @@
     "canon_basis": "generated"
   },
   {
-    "word": "talu",
+    "word": "farono",
     "translation": {
       "uk": "місто",
       "en": "city"
     },
     "pos": "noun",
     "canon": false,
-    "root": "talu",
-    "notes": "Mass phonotactic expansion",
+    "root": "farono",
+    "notes": "Replaced talu: it began with tal 'death' and was one letter from Shalassian tanu (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 19405402751275 (SHA-256 of 'city'); -1.46 nats per character, at percentile 84 of the attested parts",
+    "evidence": [
+      {
+        "quote": "tal = death (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "Tanu'balah (untranslated) (shalassian, Victoire; Vintner Iltheux; Duskwatch Subjugator (greeting))",
+        "where": "https://warcraft.wiki.gg/wiki/Victoire#Quotes"
+      },
+      {
+        "quote": "naar = place, settlement (suffix of elven place names) (lexicon, inferred, darnassian)",
+        "where": "AreaTable#186 (Teldrassil)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1, canon_morpheme, confusable",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "llarana",
+    "word": "azs",
     "translation": {
       "uk": "стіна",
       "en": "wall"
     },
     "pos": "noun",
     "canon": false,
-    "root": "llarana",
-    "notes": "Mass phonotactic expansion",
+    "root": "azs",
+    "notes": "Replaced llarana: initial ll- is in no attested word, and it was one letter from the Skyborne name Larana (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 85257959569029 (SHA-256 of 'wall'); -1.96 nats per character, at percentile 48 of the attested parts",
+    "evidence": [
+      {
+        "quote": "llarana: KN -2.04 nats/char, 45.1th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 17.9th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "Larana: NameGen RaceID 96 (Windshaper Skyborne)",
+        "where": ".wowf-extract/NameGen.csv (WoW Forever; local, gitignored)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics, namegen",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "ururann",
+    "word": "mendu",
     "translation": {
       "uk": "книга",
       "en": "book"
     },
     "pos": "noun",
     "canon": false,
-    "root": "ururann",
-    "notes": "Mass phonotactic expansion",
+    "root": "mendu",
+    "notes": "Replaced ururann: a poor fit ('uru' is in no attested form) (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 161016711270284 (SHA-256 of 'book'); -1.59 nats per character, at percentile 73 of the attested parts",
+    "evidence": [
+      {
+        "quote": "ururann: KN -3.92 nats/char, 3.7th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 4.0th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "inalla",
@@ -2100,17 +2277,37 @@
     "canon_basis": "generated"
   },
   {
-    "word": "onar",
+    "word": "thann",
     "translation": {
       "uk": "хоробрий",
       "en": "brave"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "onar",
-    "notes": "Mass phonotactic expansion",
+    "root": "thann",
+    "notes": "Replaced onar: one letter from canon anar 'by' (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 177825091627963 (SHA-256 of 'brave'); -1.57 nats per character, at percentile 75 of the attested parts",
+    "evidence": [
+      {
+        "quote": "anar = by (lexicon, segment, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "anar'alah = by the Light (lexicon, attested, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "dorah = valor (lexicon, inferred, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "anortha",
@@ -2165,17 +2362,41 @@
     "canon_basis": "generated"
   },
   {
-    "word": "tora",
+    "word": "sas",
     "translation": {
       "uk": "захищати",
       "en": "protect"
     },
     "pos": "verb",
     "canon": false,
-    "root": "tora",
-    "notes": "Mass phonotactic expansion",
+    "root": "sas",
+    "notes": "Replaced tora: the Tora of Shalassian Shal'san Tora, an untranslated line; it also reads as Torah (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 114408506473905 (SHA-256 of 'protect'); -1.97 nats per character, at percentile 48 of the attested parts",
+    "evidence": [
+      {
+        "quote": "Shal'san Tora (untranslated) (shalassian, Arcanist Valtrois (on-click))",
+        "where": "https://warcraft.wiki.gg/wiki/Arcanist_Valtrois#On-click"
+      },
+      {
+        "quote": "Shal'asan torah (untranslated) (shalassian, Arcanist Valtrois (greeting))",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+      },
+      {
+        "quote": "Ash'toras denil (untranslated) (shalassian, nightborne NPCs (military greeting))",
+        "where": "https://warcraft.wiki.gg/wiki/NPC_quotes#Military_3"
+      },
+      {
+        "quote": "dora = thanks (lexicon, segment, shalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_exact, blocks_gloss, real_word",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "irora",
@@ -2204,43 +2425,29 @@
     "canon_basis": "generated"
   },
   {
-    "word": "lanelot",
+    "word": "garus",
     "translation": {
       "uk": "літати",
       "en": "fly"
     },
     "pos": "verb",
     "canon": false,
-    "root": "lanelot",
-    "notes": "Mass phonotactic expansion",
+    "root": "garus",
+    "notes": "Replaced lanelot: one letter from 'Lancelot', and a poor fit (November 2026 audit).",
     "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "tala",
-    "translation": {
-      "uk": "бачити",
-      "en": "see"
-    },
-    "pos": "verb",
-    "canon": false,
-    "root": "tala",
-    "notes": "Mass phonotactic expansion",
-    "source": "generated",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "selorue",
-    "translation": {
-      "uk": "чути",
-      "en": "hear"
-    },
-    "pos": "verb",
-    "canon": false,
-    "root": "selorue",
-    "notes": "Mass phonotactic expansion",
-    "source": "generated",
-    "canon_basis": "generated"
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 269237502847869 (SHA-256 of 'fly'); -1.59 nats per character, at percentile 73 of the attested parts",
+    "evidence": [
+      {
+        "quote": "lanelot: KN -3.47 nats/char, 5.9th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 1.1th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: phonotactics, real_word",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "ondore",
@@ -2282,43 +2489,29 @@
     "canon_basis": "segment"
   },
   {
-    "word": "al'ore",
-    "translation": {
-      "uk": "я",
-      "en": "I"
-    },
-    "pos": "pronoun",
-    "canon": false,
-    "root": "anu + ore",
-    "notes": "From anu (self) + ore (one/being), contraction al'ore = 'the self'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "il'ore",
-    "translation": {
-      "uk": "ти",
-      "en": "you"
-    },
-    "pos": "pronoun",
-    "canon": false,
-    "root": "il + ore",
-    "notes": "il- prefix denoting second person, modeled on al'ore pattern",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "era",
+    "word": "rero",
     "translation": {
       "uk": "це",
       "en": "this"
     },
     "pos": "pronoun",
     "canon": false,
-    "root": "era",
-    "notes": "Short demonstrative proximal; soft vowel-initial, typical Thalassian deictic",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "rero",
+    "notes": "Replaced era: the Era of the untranslated Nazja line Era'sazjar!, and English 'era' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 33773844578590 (SHA-256 of 'this'); -2.13 nats per character, at percentile 37 of the attested parts",
+    "evidence": [
+      {
+        "quote": "Era'sazjar! (untranslated) (nazja, Naga Sea Witch (Warcraft III), attack line)",
+        "where": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#Naga_Sea_Witch"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_exact, blocks_gloss, real_word",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "theli",
@@ -2329,35 +2522,46 @@
     "pos": "pronoun",
     "canon": false,
     "root": "theli",
-    "notes": "Interrogative animate; th- onset common in Thalassian question words",
+    "notes": "Interrogative animate.",
     "source": "generated_swadesh",
     "canon_basis": "generated"
   },
   {
-    "word": "nath",
-    "translation": {
-      "uk": "не",
-      "en": "not"
-    },
-    "pos": "particle",
-    "canon": false,
-    "root": "nath",
-    "notes": "Negation particle; soft nasal onset, echoes shindu (failing) in semantic field",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
-  },
-  {
-    "word": "ore",
+    "word": "akus",
     "translation": {
       "uk": "один",
       "en": "one"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "ore",
-    "notes": "Base numeral; also used as 'being/individual' in compounds",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "akus",
+    "notes": "Replaced ore: ore ends six canon words (belore, anore, malanore ...), inviting parses such as bel-ore; English 'ore' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 130372720211264 (SHA-256 of 'one'); -2.00 nats per character, at percentile 45 of the attested parts",
+    "evidence": [
+      {
+        "quote": "belore = sun (lexicon, attested, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "anore = people (our people) (lexicon, segment, thalassian)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+      },
+      {
+        "quote": "malanore = traveler (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "denalore = oblivion, devastation (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: canon_morpheme",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "elai",
@@ -2412,17 +2616,45 @@
     "canon_basis": "generated"
   },
   {
-    "word": "dorin",
+    "word": "denos",
     "translation": {
       "uk": "людина",
       "en": "person"
     },
     "pos": "noun",
     "canon": false,
-    "root": "dor + -in",
-    "notes": "From dorei (children/people) stem dor- + singular -in",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "denos",
+    "notes": "Replaced dorin: one letter from Darnassian dorini (Anu'dorini talah), with an invented singular -in on dorei (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 62294717884310 (SHA-256 of 'person'); -1.58 nats per character, at percentile 74 of the attested parts",
+    "evidence": [
+      {
+        "quote": "anu'dorini talah = let my will be known (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Dorini (in-game scrambler word, Thalassian 10, Darnassian 2, Shen'dorei 310)",
+        "where": ".wowf-extract/LanguageWords.csv (WoW Forever 1.60.1.70938; local, gitignored)"
+      },
+      {
+        "quote": "tal'doren = the wild home (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "dorei = children/born of/people (lexicon, segment, thalassian)",
+        "where": "ChrRaces#95, #96 Lore_name_lang (Name_lang 'High Order Skyborne', 'Windshaper Skyborne')"
+      },
+      {
+        "quote": "dorin: KN -1.11 nats/char, 96.3th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 89.7th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1, blocks_gloss, root, scrambler_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "lura'thiel",
@@ -2433,7 +2665,7 @@
     "pos": "noun",
     "canon": false,
     "root": "lura + thiel",
-    "notes": "Compound: lura (water) + thiel (small) = 'small water-creature'",
+    "notes": "Compound: lura (sea) + thiel (small) = 'small sea-creature'",
     "source": "generated_swadesh",
     "canon_basis": "generated"
   },
@@ -2464,17 +2696,29 @@
     "canon_basis": "generated"
   },
   {
-    "word": "thas'ore",
+    "word": "thas'akus",
     "translation": {
       "uk": "дерево",
       "en": "tree"
     },
     "pos": "noun",
     "canon": false,
-    "root": "thas + ore",
-    "notes": "Compound: thas (forest) + ore (one) = 'one of the forest, a single tree'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "thas'akus",
+    "notes": "Replaced thas'ore: it was built on ore 'one', which was regenerated (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "rebuilt with the regenerated ore -> akus (generate_words.py)",
+    "evidence": [
+      {
+        "quote": "ore = one (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: dependency",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "sorin",
@@ -2503,17 +2747,33 @@
     "canon_basis": "generated"
   },
   {
-    "word": "thas'nor",
+    "word": "lel",
     "translation": {
       "uk": "корінь",
       "en": "root (plant)"
     },
     "pos": "noun",
     "canon": false,
-    "root": "thas + nor",
-    "notes": "Compound: thas (forest) + nor (beneath/deep) = 'forest-deep'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "lel",
+    "notes": "Replaced thas'nor: canon nor is 'heavens', so thas'nor read 'forest-heavens' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 133283432121782 (SHA-256 of 'root (plant)'); -2.16 nats per character, at percentile 37 of the attested parts",
+    "evidence": [
+      {
+        "quote": "nor = heavens (lexicon, segment, darnassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "thas = forest (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: canon_morpheme, root",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "rethis",
@@ -2594,17 +2854,37 @@
     "canon_basis": "generated"
   },
   {
-    "word": "dris'al",
+    "word": "suro",
     "translation": {
       "uk": "голова",
       "en": "head"
     },
     "pos": "noun",
     "canon": false,
-    "root": "dris + al",
-    "notes": "From dris (eye/sight) + al (the/of) = 'the seeing one, crown of body'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "suro",
+    "notes": "Replaced dris'al: al 'the/of' is invented, and dris'al was one letter from dris'ael 'see' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 175021749412721 (SHA-256 of 'head'); -2.20 nats per character, at percentile 35 of the attested parts",
+    "evidence": [
+      {
+        "quote": "al diel shala = safe travels (lexicon, attested, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "al'anath = Frostsoul (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "dris'ael = see (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: root, confusable",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "thelis",
@@ -2643,30 +2923,62 @@
     ]
   },
   {
-    "word": "rashis",
+    "word": "isius",
     "translation": {
       "uk": "ніс",
       "en": "nose"
     },
     "pos": "noun",
     "canon": false,
-    "root": "rashis",
-    "notes": "New root; rash- (breath/air sense) + -is body-part suffix",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "isius",
+    "notes": "Replaced rashis: it reads as Ukrainian рашист, a wartime pejorative (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 236936737472100 (SHA-256 of 'nose'); -1.60 nats per character, at percentile 72 of the attested parts",
+    "evidence": [
+      {
+        "quote": "rashis: KN -2.79 nats/char, 17.2th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 0.4th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "lashis = tongue (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: real_word, phonotactics, confusable",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "oris",
+    "word": "malath",
     "translation": {
       "uk": "рот",
       "en": "mouth"
     },
     "pos": "noun",
     "canon": false,
-    "root": "oris",
-    "notes": "New root for mouth; or- (voice/speech) + -is body suffix",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "malath",
+    "notes": "Replaced oris: Latin oris 'of the mouth' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 84608120550453 (SHA-256 of 'mouth'); -1.44 nats per character, at percentile 85 of the attested parts",
+    "evidence": [
+      {
+        "quote": "dris = eye (lexicon, inferred, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "oris: KN -1.91 nats/char, 52.7th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 2.6th percentile",
+        "where": ".wowf-extract/audit/vocab-checks.json (phono.py's order-4 Kneser-Ney model, 273 attested forms)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: real_word, collision_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "nethis",
@@ -2695,43 +3007,103 @@
     "canon_basis": "generated"
   },
   {
-    "word": "talor",
+    "word": "thurama",
     "translation": {
       "uk": "стопа",
       "en": "foot"
     },
     "pos": "noun",
     "canon": false,
-    "root": "talor",
-    "notes": "New root for foot; tal- (path/walk) + -or agent-like suffix",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "thurama",
+    "notes": "Replaced talor: one letter from canon falor 'chill', and it began with tal 'death' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 38366784596585 (SHA-256 of 'foot'); -1.29 nats per character, at percentile 94 of the attested parts",
+    "evidence": [
+      {
+        "quote": "falor = chill (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "Zin-Malor (untranslated) (ancient-name, place)",
+        "where": "https://warcraft.wiki.gg/wiki/Temple_of_Zin-Malor"
+      },
+      {
+        "quote": "alor'el = lover's leaf (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1, canon_morpheme",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "shalis",
+    "word": "irar",
     "translation": {
       "uk": "нога",
       "en": "leg"
     },
     "pos": "noun",
     "canon": false,
-    "root": "shalis",
-    "notes": "New root; shal- (stride/step) + -is body suffix",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "irar",
+    "notes": "Replaced shalis: it gave shal- the invented sense 'stride'; canon shal is 'night, shadow' (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 219666044791736 (SHA-256 of 'leg'); -2.26 nats per character, at percentile 32 of the attested parts",
+    "evidence": [
+      {
+        "quote": "shal = night/shadow/veil (lexicon, segment, shalassian)",
+        "where": "object 658840, https://warcraft.wiki.gg/wiki/The_Rebellion_In_Eldre%27Thalas,_Part_3"
+      },
+      {
+        "quote": "shal'dorei = Nightborne (lexicon, attested, shalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Shalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "thalis = belly (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: root, canon_morpheme, confusable",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "ethis",
+    "word": "meil",
     "translation": {
       "uk": "рука",
       "en": "hand"
     },
     "pos": "noun",
     "canon": false,
-    "root": "ethis",
-    "notes": "New root for hand; eth- (craft/grasp) + -is body suffix",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "meil",
+    "notes": "Replaced ethis: one letter from ethil, a part of the shared core (Ande'thoras-ethil) (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 29687200261144 (SHA-256 of 'hand'); -2.14 nats per character, at percentile 37 of the attested parts",
+    "evidence": [
+      {
+        "quote": "ande'thoras-ethil = may your troubles be diminished (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "irana'ethil = shield against the Shadow (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Aran'ethil (untranslated) (shalassian, Vanthir (after being freed))",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "roval",
@@ -2747,17 +3119,33 @@
     "canon_basis": "generated"
   },
   {
-    "word": "thalis",
+    "word": "ilos",
     "translation": {
       "uk": "живіт",
       "en": "belly"
     },
     "pos": "noun",
     "canon": false,
-    "root": "thalas + -is",
-    "notes": "From thalas (home/hearth) + -is body suffix = 'body-home'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "ilos",
+    "notes": "Replaced thalis: it gave thalas the invented sense 'hearth', and was one letter from thalas (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 97884412405330 (SHA-256 of 'belly'); -2.10 nats per character, at percentile 40 of the attested parts",
+    "evidence": [
+      {
+        "quote": "thalas = home (lexicon, segment, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Aru-Talis (untranslated) (ancient-name, place)",
+        "where": "https://warcraft.wiki.gg/wiki/Aru-Talis"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: root, collision_edit1, confusable",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "enaris",
@@ -2773,17 +3161,37 @@
     "canon_basis": "generated"
   },
   {
-    "word": "lura'sin",
+    "word": "azsil",
     "translation": {
       "uk": "пити",
       "en": "drink"
     },
     "pos": "verb",
     "canon": false,
-    "root": "lura + sin",
-    "notes": "Compound: lura (water) + sin (blood/take in) = 'take water'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "azsil",
+    "notes": "Replaced lura'sin: lura is 'sea' and sin 'blood', so it read 'sea-blood', a noun (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "high",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 36880459778406 (SHA-256 of 'drink'); -1.61 nats per character, at percentile 71 of the attested parts",
+    "evidence": [
+      {
+        "quote": "lura = sea (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "sin = blood (lexicon, segment, thalassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "sin'dorei = children of the blood (lexicon, attested, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: root, canon_morpheme",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "nethael",
@@ -2838,17 +3246,33 @@
     "canon_basis": "generated"
   },
   {
-    "word": "elara",
+    "word": "surai",
     "translation": {
       "uk": "сміятися",
       "en": "laugh"
     },
     "pos": "verb",
     "canon": false,
-    "root": "elara",
-    "notes": "New root; bright vowels evoke joy, el- (light/bright) + -ara",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "surai",
+    "notes": "Replaced elara: one letter from Darnassian alara (Alara'shinu), and built on el, a removed mis-segmentation (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 54849046918760 (SHA-256 of 'laugh'); -1.62 nats per character, at percentile 71 of the attested parts",
+    "evidence": [
+      {
+        "quote": "alara'shinu = finding beauty in imperfection (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "t'lara = (derogatory) a warrior armed only with words (lexicon, attested, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1, root, real_word",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "dris'ael",
@@ -2877,43 +3301,87 @@
     "canon_basis": "generated"
   },
   {
-    "word": "ishari",
+    "word": "menir",
     "translation": {
       "uk": "знати",
       "en": "know"
     },
     "pos": "verb",
     "canon": false,
-    "root": "ish + ari",
-    "notes": "From ish- (inner/deep) + -ari (hold) = 'hold within'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "menir",
+    "notes": "Replaced ishari: it held the scrambler word Shari, the reason shari was removed in November (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 225518851009487 (SHA-256 of 'know'); -1.63 nats per character, at percentile 71 of the attested parts",
+    "evidence": [
+      {
+        "quote": "Shari, Shari'fal, Shari'adune (in-game scrambler word, Thalassian 10, Darnassian 2, Shen'dorei 310)",
+        "where": ".wowf-extract/LanguageWords.csv (WoW Forever 1.60.1.70938; local, gitignored)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: scrambler_edit1, root",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "ish'thero",
+    "word": "kas",
     "translation": {
       "uk": "думати",
       "en": "think"
     },
     "pos": "verb",
     "canon": false,
-    "root": "ish + thero",
-    "notes": "Compound: ish- (inner) + thero (student/study) = 'study inwardly'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "kas",
+    "notes": "Replaced ish'thero: canon thero is 'student', so it read '(inner) student', a noun (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 242097669902286 (SHA-256 of 'think'); -2.17 nats per character, at percentile 36 of the attested parts",
+    "evidence": [
+      {
+        "quote": "thero = student (lexicon, segment, darnassian)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "Thero'shan = Honored student. (A title and term of respect.) (ancient-name, title)",
+        "where": "https://warcraft.wiki.gg/wiki/Thero%27shan"
+      },
+      {
+        "quote": "Thero'shan, Esh'thero'mannash (in-game scrambler word, Thalassian 10, Darnassian 2, Shen'dorei 310)",
+        "where": ".wowf-extract/LanguageWords.csv (WoW Forever 1.60.1.70938; local, gitignored)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: canon_morpheme, root",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
-    "word": "rashis'ael",
+    "word": "isius'ael",
     "translation": {
       "uk": "нюхати",
       "en": "smell"
     },
     "pos": "verb",
     "canon": false,
-    "root": "rashis + ael",
-    "notes": "Compound: rashis (nose) + ael (action) = 'to use nose'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "isius'ael",
+    "notes": "Replaced rashis'ael: it was built on rashis 'nose', which was regenerated (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "rebuilt with the regenerated rashis -> isius (generate_words.py)",
+    "evidence": [
+      {
+        "quote": "rashis = nose (lexicon, generated, generated_swadesh)",
+        "where": "src/thalassian/data/lexicon.json"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: dependency",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "shindara",
@@ -2929,17 +3397,41 @@
     "canon_basis": "generated"
   },
   {
-    "word": "anor'ael",
+    "word": "sae",
     "translation": {
       "uk": "жити",
       "en": "live"
     },
     "pos": "verb",
     "canon": false,
-    "root": "anore + ael",
-    "notes": "From anore (people/nation) + ael (action) = 'to be of the people, live'",
-    "source": "generated_swadesh",
-    "canon_basis": "generated"
+    "root": "sae",
+    "notes": "Replaced anor'ael: anor is the Suramar place name Tel'anor, one letter from anar and anore (November 2026 audit).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 40089509224157 (SHA-256 of 'live'); -2.17 nats per character, at percentile 36 of the attested parts",
+    "evidence": [
+      {
+        "quote": "anar = by (lexicon, segment, thalassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "anore = people (our people) (lexicon, segment, thalassian)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A309952"
+      },
+      {
+        "quote": "Tel'anor (untranslated) (shalassian, Tel'anor is a massive graveyard and ritual site overlooking Suramar City.)",
+        "where": "https://warcraft.wiki.gg/wiki/Tel'anor"
+      },
+      {
+        "quote": "An'anora (untranslated) (shalassian, Ly'leth Lunastre (frost trap on Anarys Lunastre))",
+        "where": "https://warcraft.wiki.gg/wiki/Shalassian#Untranslated_Shalassian_phrases"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: collision_edit1, root, collision_exact",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
   },
   {
     "word": "alar'annalas",
@@ -6158,5 +6650,1846 @@
         "where": "a person listening to the 12 elvish voice files, each twice, on 2026-11-18 (report 5, \"A person's listening\")"
       }
     ]
+  },
+  {
+    "word": "thelath",
+    "translation": {
+      "en": "green",
+      "uk": "зелений"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "thelath",
+    "notes": "Replaced isera: it is Ysera's name and part of the scrambler word Isera'duna, with the guess 'green'; 'green' gets a generated word (November 2026 audit). Swadesh-207 item 173.",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 204816398821034 (SHA-256 of 'green'); -1.23 nats per character, at percentile 97 of the attested parts",
+    "evidence": [
+      {
+        "quote": "isera = green (lexicon, unverified, darnassian)",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_word_parser"
+      },
+      {
+        "quote": "Isera'duna (in-game scrambler word, Thalassian 10, Darnassian 2, Shen'dorei 310)",
+        "where": ".wowf-extract/LanguageWords.csv (WoW Forever 1.60.1.70938; local, gitignored)"
+      },
+      {
+        "quote": "Iseradune banthalos (untranslated, Darnassian); Ishera-do (untranslated, Thalassian)",
+        "where": "research/2026-11-revival/scripts/phono.py (UNTR list of untranslated attested phrases)"
+      },
+      {
+        "quote": "November 2026 vocabulary audit: gloss, scrambler, blocks_gloss",
+        "where": "research/2026-11-revival/8-audit/vocab-findings.md"
+      }
+    ]
+  },
+  {
+    "word": "'a",
+    "translation": {
+      "en": "you (2nd person object enclitic)",
+      "uk": "тебе, вас (енклітика)"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "'a",
+    "notes": "Object enclitic, joined to the verb by an apostrophe (dela'a 'guides you'). Before the verb, the free form a is the subject 'you' (grammar section 5.3). No Thalassian form for 'you' is attested.",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "invented by convention: docs/methodology/grammar.md section 5.1 (no generator, no seed)",
+    "evidence": []
+  },
+  {
+    "word": "'dan",
+    "translation": {
+      "en": "him, her, it, them (3rd person object enclitic)",
+      "uk": "його, її, їх (енклітика)"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "'dan",
+    "notes": "Object enclitic, joined to the verb by an apostrophe (dela'dan 'guides them'), for every gender, number and role (grammar section 10, item 3). Before the verb, the free form dan is the subject (section 5.3). Covers Swadesh-207 item 3, 'he'.",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "invented by convention: docs/methodology/grammar.md section 5.1 (no generator, no seed)",
+    "evidence": []
+  },
+  {
+    "word": "dees",
+    "translation": {
+      "en": "that",
+      "uk": "той"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "dees",
+    "notes": "Swadesh-207 item 8, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 156679335537396 (SHA-256 of 'that'); -2.14 nats per character, at percentile 37 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "onen",
+    "translation": {
+      "en": "here",
+      "uk": "тут"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "onen",
+    "notes": "Swadesh-207 item 9, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 278092980459353 (SHA-256 of 'here'); -2.11 nats per character, at percentile 40 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "jaha",
+    "translation": {
+      "en": "what",
+      "uk": "що"
+    },
+    "pos": "pronoun",
+    "canon": false,
+    "root": "jaha",
+    "notes": "Swadesh-207 item 12, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 128207772766316 (SHA-256 of 'what'); -2.15 nats per character, at percentile 37 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "rin",
+    "translation": {
+      "en": "where",
+      "uk": "де"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "rin",
+    "notes": "Swadesh-207 item 13, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 198466441645157 (SHA-256 of 'where'); -2.21 nats per character, at percentile 34 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zas",
+    "translation": {
+      "en": "when",
+      "uk": "коли"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "zas",
+    "notes": "Swadesh-207 item 14, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 24097573716142 (SHA-256 of 'when'); -2.27 nats per character, at percentile 32 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "aeess",
+    "translation": {
+      "en": "many",
+      "uk": "багато"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "aeess",
+    "notes": "Swadesh-207 item 18, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 18930896500631 (SHA-256 of 'many'); -1.64 nats per character, at percentile 71 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lus",
+    "translation": {
+      "en": "some",
+      "uk": "деякі"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "lus",
+    "notes": "Swadesh-207 item 19, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 183293866725806 (SHA-256 of 'some'); -2.29 nats per character, at percentile 32 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "hil",
+    "translation": {
+      "en": "few",
+      "uk": "небагато"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "hil",
+    "notes": "Swadesh-207 item 20, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 275521699580034 (SHA-256 of 'few'); -2.30 nats per character, at percentile 31 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ilin",
+    "translation": {
+      "en": "other",
+      "uk": "інший"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "ilin",
+    "notes": "Swadesh-207 item 21, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 238772433244592 (SHA-256 of 'other'); -2.22 nats per character, at percentile 34 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "aen",
+    "translation": {
+      "en": "three",
+      "uk": "три"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "aen",
+    "notes": "Swadesh-207 item 24, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 153225603891517 (SHA-256 of 'three'); -2.35 nats per character, at percentile 28 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "sarr",
+    "translation": {
+      "en": "four",
+      "uk": "чотири"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "sarr",
+    "notes": "Swadesh-207 item 25, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 5427480235866 (SHA-256 of 'four'); -2.15 nats per character, at percentile 37 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "beir",
+    "translation": {
+      "en": "five",
+      "uk": "п'ять"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "beir",
+    "notes": "Swadesh-207 item 26, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 37568277454798 (SHA-256 of 'five'); -2.23 nats per character, at percentile 34 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "dralen",
+    "translation": {
+      "en": "big",
+      "uk": "великий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "dralen",
+    "notes": "Swadesh-207 item 27, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 46325490866474 (SHA-256 of 'big'); -1.43 nats per character, at percentile 86 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "thess",
+    "translation": {
+      "en": "wide",
+      "uk": "широкий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "thess",
+    "notes": "Swadesh-207 item 29, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 11796732383299 (SHA-256 of 'wide'); -1.61 nats per character, at percentile 71 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "amera",
+    "translation": {
+      "en": "thick",
+      "uk": "товстий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "amera",
+    "notes": "Swadesh-207 item 30, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 135319687523722 (SHA-256 of 'thick'); -1.66 nats per character, at percentile 70 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "azsus",
+    "translation": {
+      "en": "short",
+      "uk": "короткий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "azsus",
+    "notes": "Swadesh-207 item 33, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 274534436134389 (SHA-256 of 'short'); -1.59 nats per character, at percentile 73 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "thurion",
+    "translation": {
+      "en": "narrow",
+      "uk": "вузький"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "thurion",
+    "notes": "Swadesh-207 item 34, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 104292905033182 (SHA-256 of 'narrow'); -1.35 nats per character, at percentile 91 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "tei",
+    "translation": {
+      "en": "thin",
+      "uk": "тонкий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "tei",
+    "notes": "Swadesh-207 item 35, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 28646394279338 (SHA-256 of 'thin'); -2.37 nats per character, at percentile 27 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "amenil",
+    "translation": {
+      "en": "man (adult male)",
+      "uk": "чоловік"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "amenil",
+    "notes": "Swadesh-207 item 37, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 98488057809988 (SHA-256 of 'man (adult male)'); -1.44 nats per character, at percentile 85 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "vah",
+    "translation": {
+      "en": "wife",
+      "uk": "дружина"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "vah",
+    "notes": "Swadesh-207 item 40, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 172978260731094 (SHA-256 of 'wife'); -2.37 nats per character, at percentile 27 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "aminel",
+    "translation": {
+      "en": "husband",
+      "uk": "чоловік (у шлюбі)"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "aminel",
+    "notes": "Swadesh-207 item 41, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 175846959135034 (SHA-256 of 'husband'); -1.44 nats per character, at percentile 85 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zos",
+    "translation": {
+      "en": "animal",
+      "uk": "тварина"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "zos",
+    "notes": "Swadesh-207 item 44, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 188642080134351 (SHA-256 of 'animal'); -2.37 nats per character, at percentile 27 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "illo",
+    "translation": {
+      "en": "louse",
+      "uk": "воша"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "illo",
+    "notes": "Swadesh-207 item 48, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 133736523853144 (SHA-256 of 'louse'); -2.21 nats per character, at percentile 34 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "leos",
+    "translation": {
+      "en": "snake",
+      "uk": "змія"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "leos",
+    "notes": "Swadesh-207 item 49, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 91867163125646 (SHA-256 of 'snake'); -2.29 nats per character, at percentile 32 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "iri",
+    "translation": {
+      "en": "worm",
+      "uk": "черв'як"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "iri",
+    "notes": "Swadesh-207 item 50, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 204161667780549 (SHA-256 of 'worm'); -2.44 nats per character, at percentile 25 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "shiral",
+    "translation": {
+      "en": "stick",
+      "uk": "палиця"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "shiral",
+    "notes": "Swadesh-207 item 53, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 157590362344685 (SHA-256 of 'stick'); -1.48 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "fah",
+    "translation": {
+      "en": "fruit",
+      "uk": "плід"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "fah",
+    "notes": "Swadesh-207 item 54, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 160568735083105 (SHA-256 of 'fruit'); -2.44 nats per character, at percentile 25 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "kes",
+    "translation": {
+      "en": "bark (of a tree)",
+      "uk": "кора"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "kes",
+    "notes": "Swadesh-207 item 58, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 229479572665475 (SHA-256 of 'bark (of a tree)'); -2.40 nats per character, at percentile 27 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "nazess",
+    "translation": {
+      "en": "flower",
+      "uk": "квітка"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "nazess",
+    "notes": "Swadesh-207 item 59, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 211566012009669 (SHA-256 of 'flower'); -1.44 nats per character, at percentile 85 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "jaras",
+    "translation": {
+      "en": "grass",
+      "uk": "трава"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "jaras",
+    "notes": "Swadesh-207 item 60, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 271357561035617 (SHA-256 of 'grass'); -1.64 nats per character, at percentile 71 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "seros",
+    "translation": {
+      "en": "rope",
+      "uk": "мотузка"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "seros",
+    "notes": "Swadesh-207 item 61, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 279608104189861 (SHA-256 of 'rope'); -1.68 nats per character, at percentile 68 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "thereth",
+    "translation": {
+      "en": "fat (noun)",
+      "uk": "жир"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thereth",
+    "notes": "Swadesh-207 item 66, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 253863510818578 (SHA-256 of 'fat (noun)'); -1.34 nats per character, at percentile 91 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "thi",
+    "translation": {
+      "en": "horn",
+      "uk": "ріг"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "thi",
+    "notes": "Swadesh-207 item 68, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 164115155719940 (SHA-256 of 'horn'); -2.45 nats per character, at percentile 25 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "yos",
+    "translation": {
+      "en": "tail",
+      "uk": "хвіст"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "yos",
+    "notes": "Swadesh-207 item 69, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 13619214872349 (SHA-256 of 'tail'); -2.47 nats per character, at percentile 24 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "kei",
+    "translation": {
+      "en": "fingernail",
+      "uk": "ніготь"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "kei",
+    "notes": "Swadesh-207 item 79, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 171699517919348 (SHA-256 of 'fingernail'); -2.49 nats per character, at percentile 23 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "sharion",
+    "translation": {
+      "en": "knee",
+      "uk": "коліно"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "sharion",
+    "notes": "Swadesh-207 item 82, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 116476737007655 (SHA-256 of 'knee'); -1.36 nats per character, at percentile 90 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "najir",
+    "translation": {
+      "en": "guts",
+      "uk": "нутрощі"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "najir",
+    "notes": "Swadesh-207 item 86, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 60194653465301 (SHA-256 of 'guts'); -1.65 nats per character, at percentile 70 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "menai",
+    "translation": {
+      "en": "back (of the body)",
+      "uk": "спина"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "menai",
+    "notes": "Swadesh-207 item 88, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 66280527164277 (SHA-256 of 'back'); -1.64 nats per character, at percentile 71 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "drion",
+    "translation": {
+      "en": "breast",
+      "uk": "груди"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "drion",
+    "notes": "Swadesh-207 item 89, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 61656091472952 (SHA-256 of 'breast'); -1.66 nats per character, at percentile 69 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "omn",
+    "translation": {
+      "en": "liver",
+      "uk": "печінка"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "omn",
+    "notes": "Swadesh-207 item 91, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 259138070868567 (SHA-256 of 'liver'); -2.50 nats per character, at percentile 23 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "tah",
+    "translation": {
+      "en": "suck",
+      "uk": "смоктати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "tah",
+    "notes": "Swadesh-207 item 95, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 237615738069978 (SHA-256 of 'to suck'); -2.57 nats per character, at percentile 19 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "althil",
+    "translation": {
+      "en": "spit",
+      "uk": "плювати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "althil",
+    "notes": "Swadesh-207 item 96, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 110685215332620 (SHA-256 of 'to spit'); -1.46 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "illas",
+    "translation": {
+      "en": "vomit",
+      "uk": "блювати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "illas",
+    "notes": "Swadesh-207 item 97, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 24477963578630 (SHA-256 of 'to vomit'); -1.67 nats per character, at percentile 69 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ishnos",
+    "translation": {
+      "en": "hunt",
+      "uk": "полювати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ishnos",
+    "notes": "Swadesh-207 item 112, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 15590690819015 (SHA-256 of 'to hunt'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "thoriel",
+    "translation": {
+      "en": "cut",
+      "uk": "різати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "thoriel",
+    "notes": "Swadesh-207 item 114, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 233987396368132 (SHA-256 of 'to cut'); -1.29 nats per character, at percentile 93 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zephen",
+    "translation": {
+      "en": "split",
+      "uk": "розколювати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "zephen",
+    "notes": "Swadesh-207 item 115, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 225033316228455 (SHA-256 of 'to split'); -1.47 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ine",
+    "translation": {
+      "en": "stab",
+      "uk": "колоти"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ine",
+    "notes": "Swadesh-207 item 116, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 18423562989721 (SHA-256 of 'to stab'); -2.52 nats per character, at percentile 21 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ene",
+    "translation": {
+      "en": "scratch",
+      "uk": "дряпати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ene",
+    "notes": "Swadesh-207 item 117, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 258616075753713 (SHA-256 of 'to scratch'); -2.50 nats per character, at percentile 23 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lem",
+    "translation": {
+      "en": "dig",
+      "uk": "копати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "lem",
+    "notes": "Swadesh-207 item 118, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 15835182884792 (SHA-256 of 'to dig'); -2.47 nats per character, at percentile 24 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zaalas",
+    "translation": {
+      "en": "swim",
+      "uk": "плавати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "zaalas",
+    "notes": "Swadesh-207 item 119, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 125858573551676 (SHA-256 of 'to swim'); -1.48 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "seril",
+    "translation": {
+      "en": "come",
+      "uk": "приходити"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "seril",
+    "notes": "Swadesh-207 item 122, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 37917852753542 (SHA-256 of 'to come'); -1.70 nats per character, at percentile 66 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "balen",
+    "translation": {
+      "en": "lie (down)",
+      "uk": "лежати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "balen",
+    "notes": "Swadesh-207 item 123, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 80627636057035 (SHA-256 of 'to lie (as in a bed)'); -1.70 nats per character, at percentile 66 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "elurion",
+    "translation": {
+      "en": "sit",
+      "uk": "сидіти"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "elurion",
+    "notes": "Swadesh-207 item 124, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 102424271781899 (SHA-256 of 'to sit'); -1.34 nats per character, at percentile 91 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "surion",
+    "translation": {
+      "en": "turn (around)",
+      "uk": "повертатися"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "surion",
+    "notes": "Swadesh-207 item 126, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 224799880922021 (SHA-256 of 'to turn (intransitive)'); -1.47 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "shinos",
+    "translation": {
+      "en": "fall",
+      "uk": "падати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "shinos",
+    "notes": "Swadesh-207 item 127, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 16364457891164 (SHA-256 of 'to fall'); -1.49 nats per character, at percentile 82 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lein",
+    "translation": {
+      "en": "give",
+      "uk": "давати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "lein",
+    "notes": "Swadesh-207 item 128, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 154646285948553 (SHA-256 of 'to give'); -2.40 nats per character, at percentile 26 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "elso",
+    "translation": {
+      "en": "hold",
+      "uk": "тримати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "elso",
+    "notes": "Swadesh-207 item 129, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 213130923013362 (SHA-256 of 'to hold'); -2.31 nats per character, at percentile 31 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lamari",
+    "translation": {
+      "en": "squeeze",
+      "uk": "стискати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "lamari",
+    "notes": "Swadesh-207 item 130, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 150669187420664 (SHA-256 of 'to squeeze'); -1.47 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "kelas",
+    "translation": {
+      "en": "rub",
+      "uk": "терти"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "kelas",
+    "notes": "Swadesh-207 item 131, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 147537866267218 (SHA-256 of 'to rub'); -1.69 nats per character, at percentile 67 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "therius",
+    "translation": {
+      "en": "wash",
+      "uk": "мити"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "therius",
+    "notes": "Swadesh-207 item 132, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 58816681258108 (SHA-256 of 'to wash'); -1.26 nats per character, at percentile 95 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "karos",
+    "translation": {
+      "en": "wipe",
+      "uk": "витирати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "karos",
+    "notes": "Swadesh-207 item 133, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 26096389895923 (SHA-256 of 'to wipe'); -1.68 nats per character, at percentile 67 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lae",
+    "translation": {
+      "en": "pull",
+      "uk": "тягнути"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "lae",
+    "notes": "Swadesh-207 item 134, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 61939442500732 (SHA-256 of 'to pull'); -2.56 nats per character, at percentile 20 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ellah",
+    "translation": {
+      "en": "push",
+      "uk": "штовхати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ellah",
+    "notes": "Swadesh-207 item 135, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 217698436706492 (SHA-256 of 'to push'); -1.67 nats per character, at percentile 68 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ethian",
+    "translation": {
+      "en": "throw",
+      "uk": "кидати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "ethian",
+    "notes": "Swadesh-207 item 136, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 190744197044166 (SHA-256 of 'to throw'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "fol",
+    "translation": {
+      "en": "tie",
+      "uk": "зв'язувати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "fol",
+    "notes": "Swadesh-207 item 137, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 230387363265426 (SHA-256 of 'to tie'); -2.57 nats per character, at percentile 19 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "alamar",
+    "translation": {
+      "en": "sew",
+      "uk": "шити"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "alamar",
+    "notes": "Swadesh-207 item 138, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 110637439840674 (SHA-256 of 'to sew'); -1.48 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "amarius",
+    "translation": {
+      "en": "count",
+      "uk": "рахувати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "amarius",
+    "notes": "Swadesh-207 item 139, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 87066519548674 (SHA-256 of 'to count'); -1.23 nats per character, at percentile 97 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "kae",
+    "translation": {
+      "en": "sing",
+      "uk": "співати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "kae",
+    "notes": "Swadesh-207 item 141, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 135611839500268 (SHA-256 of 'to sing'); -2.50 nats per character, at percentile 22 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "vella",
+    "translation": {
+      "en": "play",
+      "uk": "грати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "vella",
+    "notes": "Swadesh-207 item 142, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 39734866273560 (SHA-256 of 'to play'); -1.69 nats per character, at percentile 67 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "tyrn",
+    "translation": {
+      "en": "float",
+      "uk": "триматися на воді"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "tyrn",
+    "notes": "Swadesh-207 item 143, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 263683283018688 (SHA-256 of 'to float'); -2.41 nats per character, at percentile 26 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "thelso",
+    "translation": {
+      "en": "flow",
+      "uk": "текти"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "thelso",
+    "notes": "Swadesh-207 item 144, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 92020091096774 (SHA-256 of 'to flow'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "annari",
+    "translation": {
+      "en": "swell",
+      "uk": "набрякати"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "annari",
+    "notes": "Swadesh-207 item 146, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 109519003903285 (SHA-256 of 'to swell'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "suramen",
+    "translation": {
+      "en": "moon",
+      "uk": "місяць"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "suramen",
+    "notes": "Swadesh-207 item 148, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 174241257267214 (SHA-256 of 'moon'); -1.36 nats per character, at percentile 89 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "morlath",
+    "translation": {
+      "en": "water",
+      "uk": "вода"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "morlath",
+    "notes": "Swadesh-207 item 150, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 16773596909112 (SHA-256 of 'water'); -1.29 nats per character, at percentile 94 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "nazel",
+    "translation": {
+      "en": "rain",
+      "uk": "дощ"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "nazel",
+    "notes": "Swadesh-207 item 151, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 54542943482020 (SHA-256 of 'rain'); -1.70 nats per character, at percentile 66 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "jate",
+    "translation": {
+      "en": "river",
+      "uk": "річка"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "jate",
+    "notes": "Swadesh-207 item 152, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 104842548277561 (SHA-256 of 'river'); -2.27 nats per character, at percentile 32 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "alanos",
+    "translation": {
+      "en": "lake",
+      "uk": "озеро"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "alanos",
+    "notes": "Swadesh-207 item 153, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 122054900869333 (SHA-256 of 'lake'); -1.48 nats per character, at percentile 84 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "illil",
+    "translation": {
+      "en": "salt",
+      "uk": "сіль"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "illil",
+    "notes": "Swadesh-207 item 155, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 109159191583241 (SHA-256 of 'salt'); -1.74 nats per character, at percentile 63 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "derai",
+    "translation": {
+      "en": "sand",
+      "uk": "пісок"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "derai",
+    "notes": "Swadesh-207 item 157, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 272255781459331 (SHA-256 of 'sand'); -1.72 nats per character, at percentile 65 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zaai",
+    "translation": {
+      "en": "dust",
+      "uk": "пил"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "zaai",
+    "notes": "Swadesh-207 item 158, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 188785941877117 (SHA-256 of 'dust'); -2.31 nats per character, at percentile 31 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "bia",
+    "translation": {
+      "en": "cloud",
+      "uk": "хмара"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "bia",
+    "notes": "Swadesh-207 item 160, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 95004946118483 (SHA-256 of 'cloud'); -2.51 nats per character, at percentile 22 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "beus",
+    "translation": {
+      "en": "fog",
+      "uk": "туман"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "beus",
+    "notes": "Swadesh-207 item 161, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 193797888958551 (SHA-256 of 'fog'); -2.39 nats per character, at percentile 27 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "gah",
+    "translation": {
+      "en": "ice",
+      "uk": "лід"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "gah",
+    "notes": "Swadesh-207 item 165, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 84321789593125 (SHA-256 of 'ice'); -2.57 nats per character, at percentile 19 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "amius",
+    "translation": {
+      "en": "smoke",
+      "uk": "дим"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "amius",
+    "notes": "Swadesh-207 item 166, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 5315169567160 (SHA-256 of 'smoke'); -1.68 nats per character, at percentile 68 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "mallar",
+    "translation": {
+      "en": "ash",
+      "uk": "попіл"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "mallar",
+    "notes": "Swadesh-207 item 168, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 3836362937583 (SHA-256 of 'ash'); -1.53 nats per character, at percentile 81 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "amelo",
+    "translation": {
+      "en": "burn",
+      "uk": "горіти"
+    },
+    "pos": "verb",
+    "canon": false,
+    "root": "amelo",
+    "notes": "Swadesh-207 item 169, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 190346383999141 (SHA-256 of 'to burn'); -1.74 nats per character, at percentile 64 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "medin",
+    "translation": {
+      "en": "mountain",
+      "uk": "гора"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "medin",
+    "notes": "Swadesh-207 item 171, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 65424491247238 (SHA-256 of 'mountain'); -1.72 nats per character, at percentile 66 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "urei",
+    "translation": {
+      "en": "yellow",
+      "uk": "жовтий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "urei",
+    "notes": "Swadesh-207 item 174, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 218277264079538 (SHA-256 of 'yellow'); -2.23 nats per character, at percentile 34 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "theldir",
+    "translation": {
+      "en": "year",
+      "uk": "рік"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "theldir",
+    "notes": "Swadesh-207 item 179, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 84339906140220 (SHA-256 of 'year'); -1.39 nats per character, at percentile 88 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zephath",
+    "translation": {
+      "en": "warm",
+      "uk": "теплий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "zephath",
+    "notes": "Swadesh-207 item 180, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 16538376126851 (SHA-256 of 'warm'); -1.37 nats per character, at percentile 89 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "annas",
+    "translation": {
+      "en": "full",
+      "uk": "повний"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "annas",
+    "notes": "Swadesh-207 item 182, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 177620630843009 (SHA-256 of 'full'); -1.70 nats per character, at percentile 66 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "karei",
+    "translation": {
+      "en": "bad",
+      "uk": "поганий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "karei",
+    "notes": "Swadesh-207 item 186, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 51702090074578 (SHA-256 of 'bad'); -1.73 nats per character, at percentile 64 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "zephi",
+    "translation": {
+      "en": "rotten",
+      "uk": "гнилий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "zephi",
+    "notes": "Swadesh-207 item 187, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 261294630962814 (SHA-256 of 'rotten'); -1.74 nats per character, at percentile 64 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lorash",
+    "translation": {
+      "en": "dirty",
+      "uk": "брудний"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "lorash",
+    "notes": "Swadesh-207 item 188, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 229562452954198 (SHA-256 of 'dirty'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "arama",
+    "translation": {
+      "en": "straight",
+      "uk": "прямий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "arama",
+    "notes": "Swadesh-207 item 189, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 46464171878471 (SHA-256 of 'straight'); -1.75 nats per character, at percentile 63 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "drali",
+    "translation": {
+      "en": "round",
+      "uk": "круглий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "drali",
+    "notes": "Swadesh-207 item 190, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 186345900307214 (SHA-256 of 'round'); -1.74 nats per character, at percentile 63 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ien",
+    "translation": {
+      "en": "sharp (as a knife)",
+      "uk": "гострий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "ien",
+    "notes": "Swadesh-207 item 191, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 92202531370227 (SHA-256 of 'sharp (as a knife)'); -2.57 nats per character, at percentile 19 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "bessil",
+    "translation": {
+      "en": "dull (as a knife)",
+      "uk": "тупий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "bessil",
+    "notes": "Swadesh-207 item 192, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 256784288333474 (SHA-256 of 'dull (as a knife)'); -1.52 nats per character, at percentile 81 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "eluel",
+    "translation": {
+      "en": "smooth",
+      "uk": "гладкий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "eluel",
+    "notes": "Swadesh-207 item 193, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 212143326369490 (SHA-256 of 'smooth'); -1.76 nats per character, at percentile 62 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "tholar",
+    "translation": {
+      "en": "wet",
+      "uk": "мокрий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "tholar",
+    "notes": "Swadesh-207 item 194, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 91587256350576 (SHA-256 of 'wet'); -1.52 nats per character, at percentile 81 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "lemath",
+    "translation": {
+      "en": "dry",
+      "uk": "сухий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "lemath",
+    "notes": "Swadesh-207 item 195, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 201579108273212 (SHA-256 of 'dry'); -1.53 nats per character, at percentile 80 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ner",
+    "translation": {
+      "en": "correct",
+      "uk": "правильний"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "ner",
+    "notes": "Swadesh-207 item 196, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 125984189182219 (SHA-256 of 'correct (right)'); -2.59 nats per character, at percentile 18 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "azsera",
+    "translation": {
+      "en": "near",
+      "uk": "близько"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "azsera",
+    "notes": "Swadesh-207 item 197, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 77765558078412 (SHA-256 of 'near'); -1.54 nats per character, at percentile 79 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "aszus",
+    "translation": {
+      "en": "far",
+      "uk": "далеко"
+    },
+    "pos": "adverb",
+    "canon": false,
+    "root": "aszus",
+    "notes": "Swadesh-207 item 198, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 89261940854451 (SHA-256 of 'far'); -1.75 nats per character, at percentile 63 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "hyus",
+    "translation": {
+      "en": "right (side)",
+      "uk": "правий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "hyus",
+    "notes": "Swadesh-207 item 199, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 274049065102015 (SHA-256 of 'right (side)'); -2.51 nats per character, at percentile 22 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "malfus",
+    "translation": {
+      "en": "left (side)",
+      "uk": "лівий"
+    },
+    "pos": "adjective",
+    "canon": false,
+    "root": "malfus",
+    "notes": "Swadesh-207 item 200, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 59440267221314 (SHA-256 of 'left'); -1.52 nats per character, at percentile 81 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ror",
+    "translation": {
+      "en": "at",
+      "uk": "біля, при"
+    },
+    "pos": "preposition",
+    "canon": false,
+    "root": "ror",
+    "notes": "Swadesh-207 item 201, missing before the November 2026 audit (report 8). A proclitic: join it to the next word with an apostrophe, as anar' 'by' (grammar section 10, item 13).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 195535786698690 (SHA-256 of 'at'); -2.54 nats per character, at percentile 21 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "elil",
+    "translation": {
+      "en": "in",
+      "uk": "у, в"
+    },
+    "pos": "preposition",
+    "canon": false,
+    "root": "elil",
+    "notes": "Swadesh-207 item 202, missing before the November 2026 audit (report 8). A proclitic: join it to the next word with an apostrophe, as anar' 'by' (grammar section 10, item 13).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 96934850415887 (SHA-256 of 'in'); -2.20 nats per character, at percentile 34 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "pel",
+    "translation": {
+      "en": "if",
+      "uk": "якщо"
+    },
+    "pos": "conjunction",
+    "canon": false,
+    "root": "pel",
+    "notes": "Swadesh-207 item 205, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 162037979258191 (SHA-256 of 'if'); -2.56 nats per character, at percentile 20 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ae",
+    "translation": {
+      "en": "because",
+      "uk": "бо, тому що"
+    },
+    "pos": "conjunction",
+    "canon": false,
+    "root": "ae",
+    "notes": "Swadesh-207 item 206, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 181495367907489 (SHA-256 of 'because'); -2.33 nats per character, at percentile 30 of the attested parts",
+    "evidence": []
+  },
+  {
+    "word": "ethrin",
+    "translation": {
+      "en": "name",
+      "uk": "ім'я"
+    },
+    "pos": "noun",
+    "canon": false,
+    "root": "ethrin",
+    "notes": "Swadesh-207 item 207, missing before the November 2026 audit (report 8).",
+    "source": "generated",
+    "canon_basis": "generated",
+    "confidence": "medium",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 143637992173787 (SHA-256 of 'name'); -1.52 nats per character, at percentile 81 of the attested parts",
+    "evidence": []
   }
 ]

@@ -1,4 +1,5 @@
 """Data checks for lexicon.json, against the canon_basis table in docs/methodology/lexicon.md."""
+import re
 import unittest
 from collections import Counter
 
@@ -34,10 +35,32 @@ class TestLexiconIntegrity(unittest.TestCase):
         self.assertEqual([k for k, n in counts.items() if n > 1], [])
 
     def test_revival_entries_carry_evidence(self):
+        # A generated word has no source to quote: it names its generator and seed instead, and its evidence list
+        # may be empty (report 8).
         for e in self.lexicon:
             if "confidence" in e:
                 self.assertIn(e["confidence"], ("high", "medium"), e["word"])
-                self.assertTrue(e.get("evidence"), e["word"])
+                if e["canon_basis"] == "generated":
+                    self.assertIsInstance(e.get("evidence"), list, e["word"])
+                    self.assertTrue(e.get("method"), e["word"])
+                else:
+                    self.assertTrue(e.get("evidence"), e["word"])
+
+    def test_no_generated_word_is_an_attested_word(self):
+        # A generated form must not take an attested form's place (report 8; report 1, next step 6).
+        attested = {e["word"].lower() for e in self.lexicon if e["canon_basis"] != "generated"}
+        self.assertEqual([e["word"] for e in self.lexicon
+                          if e["canon_basis"] == "generated" and e["word"].lower() in attested], [])
+
+    def test_no_two_generated_words_share_a_sense(self):
+        senses = {}
+        for e in self.lexicon:
+            if e["canon_basis"] != "generated":
+                continue
+            for sense in re.split(r"[/,]", re.sub(r"\([^)]*\)", " ", e["translation"]["en"].lower())):
+                if sense.strip():
+                    senses.setdefault(sense.strip(), []).append(e["word"])
+        self.assertEqual({s: ws for s, ws in senses.items() if len(ws) > 1}, {})
 
 
 if __name__ == "__main__":
