@@ -146,6 +146,8 @@ python3 research/2026-11-revival/scripts/apply_voice.py
 python3 research/2026-11-revival/scripts/apply_audit.py
 ```
 
+These five give this report's files, with 416 entries. Reports 9 to 11 add a sixth command, `python3 research/2026-11-revival/scripts/apply_wc3_midnight.py`; the docstring of [merge_candidates.py](scripts/merge_candidates.py) has the current recipe.
+
 To redraw 8-candidates.json, run the first four, then `python3 research/2026-11-revival/scripts/generate_words.py`. It needs the local `.wowf-extract/` folder and takes about a minute.
 
 ## Translator score
