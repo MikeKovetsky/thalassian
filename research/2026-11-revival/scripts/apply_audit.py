@@ -6,9 +6,9 @@ log. The actions:
   removal of anything else is refused.
 - fix: sets a field only while its "old" value still matches; a "new" of null deletes the field. The audit's evidence
   is about the old value, so it stays in 8-candidates.json and is not merged into the entry.
-- regenerate: gives an existing generated entry that still has the old form its new form. The meaning, part of
-  speech and glosses stay; the root becomes the new form, and the source, method, confidence, evidence and notes are
-  those of the candidate.
+- regenerate: gives an existing generated entry that still has the old form its new form, when no entry of any source
+  has that form yet. The meaning, part of speech and glosses stay; the root becomes the new form, and the source,
+  method, confidence, evidence and notes are those of the candidate.
 - add: appends the entry when no entry has the same word and source. A canon add is refused.
 - note: changes nothing and is listed.
 Any other action is refused. Appends a section to merge-log.md. From the repo root:
@@ -94,7 +94,7 @@ def apply_audit(lexicon, candidates):
                 hits[0][c["field"]] = c["new"]
             log["fixed"].append(f"{c['word']}.{c['field']} ({c['confidence']}): {change(c)}")
         elif act == "regenerate":
-            taken = [e for e in lexicon if key(e["word"]) == key(c["new"]) and e.get("source") == "generated"]
+            taken = any(key(e["word"]) == key(c["new"]) for e in lexicon)
             if len(hits) != 1 or hits[0].get("canon_basis") != "generated" or taken:
                 log["stale"].append(f"{label(c)}: no single generated entry with the old form, or the new form "
                                     "is taken")

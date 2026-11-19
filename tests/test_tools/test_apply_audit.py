@@ -88,11 +88,13 @@ class TestActions(unittest.TestCase):
         self.assertEqual(log["regenerated"], ["carth -> sharius (medium): work; why"])
 
     def test_regenerate_needs_a_generated_entry_and_a_free_form(self):
-        lexicon = [entry("isera", source="darnassian", basis="unverified"), entry("carth"), entry("sharius")]
+        # The new form is taken by a generated entry (sharius), or by an attested one of another source (shius).
+        lexicon = [entry("isera", source="darnassian", basis="unverified"), entry("carth"), entry("sharius"),
+                   entry("nubu"), entry("shius", source="thalassian", basis="attested")]
         before = copy.deepcopy(lexicon)
         log = apply_audit.apply_audit(lexicon, [regenerate("isera", "vemon", source="darnassian"),
-                                                regenerate("carth", "sharius")])
-        self.assertEqual((lexicon, len(log["stale"])), (before, 2))
+                                                regenerate("carth", "sharius"), regenerate("nubu", "Shius")])
+        self.assertEqual((lexicon, len(log["stale"])), (before, 3))
 
     def test_add_appends_the_entry_fields_once(self):
         lexicon = [entry("morlath")]
