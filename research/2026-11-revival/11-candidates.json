@@ -42,11 +42,11 @@
   "canon": false,
   "root": "morothoray + katal",
   "source": "darnassian",
-  "notes": "Unglossed. Blizzard's subtitle spelling for the Warden's HeroWardenYes3 line (report 9); no wiki page has it. The classic voice says it as written: Wizper and Gemini 3.8 Flash both heard 'moro thore katal' (report 11). No source pairs it with English.",
+  "notes": "Unglossed. Blizzard's subtitle spelling for the Warden's HeroWardenYes3 line (report 9); no wiki page has it. The classic voice says it as written: Wizper and Gemini 3.8 Flash both heard 'moro thore katal' (report 11). No source pairs it with English. Same line as the low-confidence note in 9-candidates.json, whose subtitle evidence this entry repeats.",
   "evidence": [
    {
     "quote": "Morothoray katal",
-    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNightElfBase.fdf line 173 (NIGHTELF_UNIT_HERO_WARDEN_YES3); report 9"
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNightElfBase.fdf line 173 (NIGHTELF_UNIT_HERO_WARDEN_YES3, sound Units/NightElf/HeroWarden/HeroWardenYes3.flac)"
    },
    {
     "quote": "Moro thore katal. (Wizper) / moro thore katal, IPA [ˈmɔːɹoʊ ˈθɔːɹeɪ kəˈtɑːl] (Gemini 3.8 Flash)",
@@ -67,7 +67,7 @@
   "canon": false,
   "root": "anu? + dunah? + thalore? + iseradune? + banthalos?",
   "source": "darnassian",
-  "notes": "Unglossed. The wiki's by-ear spelling of a Sentinel line in the orc mission The Spirits of Ashenvale (Orc04), which has no subtitle. Two families agree on roughly 'anaduna ?alore isera duna ban?os': Gemini 3.8 Flash heard 'ana duna valore isera duna bandolos' and Scribe v2 'Anaduna farore i sera duna banthros'. Wizper turned it into English ('I'm going to make a flower. And you're going to make a bunch.'), but its 'a flower' also has an f. All three listeners hear f or v where the wiki writes thalore, and a- where it writes anu; machine listeners often confuse f and th, so a person should settle that consonant. The wiki's list of WoW's Darnassian scrambler words has Anoduna and Banthalos, close to this line's first and last words. So a WoW line that uses them may be scrambler output, and banthalos may be Blizzard's own spelling (not confirmed; report 11).",
+  "notes": "Unglossed. The wiki's by-ear spelling of a Sentinel line in the orc mission The Spirits of Ashenvale (Orc04), which has no subtitle. Two families agree on roughly 'anaduna ?alore isera duna ban?os': Gemini 3.8 Flash heard 'ana duna valore isera duna bandolos' and Scribe v2 'Anaduna farore i sera duna banthros'. Wizper turned it into English ('I'm going to make a flower. And you're going to make a bunch.'), but its 'a flower' also has an f. All three listeners hear f or v where the wiki writes thalore, and the two that heard elvish hear ana- where it writes anu; machine listeners often confuse f and th, so a person should settle that consonant. The wiki's list of WoW's Darnassian scrambler words (its In-game parser section) has Banthalos as the wiki spells it, Isera'duna, close to its Iseradune (the two families heard isera duna and i sera duna), and Anoduna, close to its Anu dunah. So a WoW line that uses them may be scrambler output. If the scrambler drew on Warcraft III, as report 9's al'shar suggests, these may be Blizzard's own spellings; the wiki's by-ear spelling may instead have borrowed from the list. Neither is confirmed (report 11).",
   "evidence": [
    {
     "quote": "Anu dunah thalore. Iseradune banthalos (phonetic spelling) - Spoken by Sentinels in Ashenvale spying on the Warsong clan",
@@ -92,7 +92,7 @@
   "canon": false,
   "root": "ash'therod? + nethanas?",
   "source": "darnassian",
-  "notes": "Unglossed. The wiki's by-ear spelling of the second Sentinel line in Orc04, which has no subtitle. Two families agree on roughly 'ash-te-rod ne-fanas': Gemini 3.8 Flash heard 'esh te rod ne fanas' and Scribe v2 'Asteroth Nefanas'. Wizper heard no words. Both hear f where the wiki writes nethanas; machine listeners often confuse f and th, so a person should settle it (report 11).",
+  "notes": "Unglossed. The wiki's by-ear spelling of the second Sentinel line in Orc04, which has no subtitle. Two families agree on roughly 'ash-te-rod ne-fanas': Gemini 3.8 Flash heard 'esh te rod ne fanas' and Scribe v2 'Asteroth Nefanas'. Wizper heard no words. Both hear f where the wiki writes nethanas; machine listeners often confuse f and th, so a person should settle it. The wiki's list of WoW's Darnassian scrambler words (its In-game parser section) has Ash'therod as the wiki spells it, and Neph'anis, close to nethanas as both families heard it (ne fanas, Nefanas), with ph where they heard f. So a WoW line that uses them may be scrambler output. If the scrambler drew on Warcraft III, as report 9's al'shar suggests, these may be Blizzard's own spellings; the wiki's by-ear spelling may instead have borrowed from the list. Neither is confirmed (report 11).",
   "evidence": [
    {
     "quote": "Ash'therod nethanas (phonetic spelling) - Spoken by Sentinels in Ashenvale spying on the Warsong clan",
