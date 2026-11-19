@@ -142,7 +142,7 @@ Keep *no* in canon phrases. Using it in new sentences is optional **[convention]
 | *o* | my | after the noun | [invented] | By analogy with *na* |
 | *dan* | his, her, its, their | after the noun | [invented] | By analogy with *na* |
 
-Thalassian *mal* is preferred to Darnassian *dal* (*Ishnu-dal-dieb*) **[loan: Darnassian]**.
+Thalassian *mal* is preferred to Darnassian *dal* (*Ishnu-dal-dieb*) **[loan: Darnassian]**. The lexicon does not list *mal*: its meaning rests on elimination within this one phrase, so it stays held back ([report 8](../../research/2026-11-revival/8-reconstruction-audit.md)).
 
 ### 5.3 Subject pronouns [invented]
 
@@ -150,7 +150,7 @@ The canon has no Thalassian subject pronoun.
 1. Leave a subject pronoun out when the context makes it clear, as in *Shindu fallah na* "They are breaking through".
 2. When one is needed, use the object form as a free word before the verb: *na* "we", *o* "I", *a* "you", *dan* "he, she, it, they". Like nouns, pronouns then have one form for every role (section 3.1).
 
-The generated *on*, *al'ore* and *il'ore* are then unnecessary.
+The generated *on*, *al'ore* and *il'ore* were therefore removed in the [November 2026 audit](../../research/2026-11-revival/8-reconstruction-audit.md).
 
 **Not pronouns:**
 - *anu* is the wish particle (section 2.5), not "we".
@@ -241,16 +241,16 @@ The canon is silent on the points below. Each convention is the smallest one tha
 2. **"You"** is *'a* after a verb and *a* before it. "Your" is the canon *mal* (section 5.2).
 3. **Third person** is *dan* for every gender, number and role.
 4. **"My", "his", "their"** are *o* and *dan* after the noun, like *na* "our".
-5. **Plural, when it matters:** add a number or a word such as "many" or "all" before the noun. Those words are not attested; generate them with the [Method 7 generator](../../research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model). Never add *-i*.
+5. **Plural, when it matters:** add a number or a word such as *aeess* "many" before the noun. Those words are not attested; they come from the [Method 7 generator](../../research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model) (report 8). Never add *-i*.
 6. **Past tense, when it matters:** add a time word. There is no verb ending.
-7. **Negation:** one particle before the verb. The lexicon holds two generated negators, *la* and *nath*. Keep *nath* and drop *la*. (*nath* is one letter from Darnassian *anath*, so check it before you rely on it.)
+7. **Negation:** one particle before the verb, the generated *la*. The [November 2026 audit](../../research/2026-11-revival/8-reconstruction-audit.md) removed the second negator, *nath*: it is one letter from Darnassian *anath* and part of an Orcish scrambler word.
 8. **Yes/no questions** keep statement order and end in "?". Question words come first (section 2.3).
 9. **"X is Y"** has no verb "to be": write *X Y*, with the predicate first for emphasis, following Darnassian *Shu dalas na* "Heavy are our hearts".
 10. **Relative clauses** follow the noun, with no word for "who" or "which".
 11. **"Or"** has no attested form; generate one. Never use *rea*, which means "and".
 12. **The agent of a passive** ("by magic"): rephrase as an active sentence. Keep *noral'* for the canon phrase *Ama noral'arkhana* only, until its meaning is settled.
-13. **Prepositions other than *anar'* and *ashal'*:** leave them out when the meaning stays clear, or generate a proclitic and join it by an apostrophe, as with *anar'*.
-14. **Numbers:** not attested in Thalassian. Generate them; the generated *ore* "one" is one example.
+13. **Prepositions other than *anar'* and *ashal'*:** leave them out when the meaning stays clear, or use a generated proclitic joined by an apostrophe, as with *anar'*. "In" is *elil'* and "at" is *ror'* (report 8).
+14. **Numbers:** not attested in Thalassian. Generate them; the generated *akus* "one" is one example. It replaced *ore*, which ends six canon words (*belore*, *anore* ...) and so invited false parses.
 
 ## 11. Worked examples
 
