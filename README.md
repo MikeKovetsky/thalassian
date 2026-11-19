@@ -12,6 +12,8 @@ The project follows a **Canon-First** methodology: every word says whether Blizz
 
 **November 2026 revival.** A [canon audit](research/2026-11-revival/1-review-and-methods.md) corrected wrong meanings (for example *bash'a* is "taste", not "death"; *shal'na* is "aunt") and found that the March 2026 "Midnight datamine" never happened. The lexicon grew from 206 to 310 entries, including the [Skyborne words](research/2026-11-revival/3-new-elven-race.md) of WoW Forever (*shen'dorei*, "hidden people"). Every change and its evidence is in [the merge log](research/2026-11-revival/merge-log.md).
 
+**Reconstruction audit.** [Report 8](research/2026-11-revival/8-reconstruction-audit.md) checked the grammar and the invented words against the canon. The grammar was rewritten with a label on every rule. In the lexicon, 12 flawed words were removed, 37 got new forms from a collision-checked generator, and 114 generated words filled every gap in the 207-word Swadesh list. The lexicon now has 416 entries.
+
 This project was conceived by **Mike Kovetsky** and architected by an autonomous agent powered by **Portal OS** ([Portal AI](https://portal.ai)).
 
 ---
@@ -34,18 +36,12 @@ Our engine understands agglutinative grammar (pronouns attach to verbs, preposit
 *   **English:** *"The sun guides us."*
     **Thalassian:** `Belore dela'na.` *(Canon match)*
 *   **English:** *"Rise, dead ones!"*
-    **Thalassian:** `Aranal, ledel!` *(Extrapolated from Prince Keleseth)*
+    **Thalassian:** `Aranal, ledel!` *(Prince Keleseth's own line: only "aranal" (rise) is glossed, so the English is a guess)*
 *   **English:** *"Justice for our people."*
     **Thalassian:** `Selama ashal'anore.` *(Canon match)*
 
 ### Poetic Translation (Song Adaptation)
-Because Elves don't use modern words like "chains" or "confession", translating modern songs requires poetic adaptation of the roots. Here is a translation of a famous rock song (*Foo Fighters - Best of You*) using our LLM-Hybrid engine:
-
-*   *"I've got another confession to make"* -> `Mith'o dalah'shola` (I speak my truth/business)
-*   *"I'm your fool"* -> `On dal'thielin` (I am your little one)
-*   *"Everyone's got their chains to break"* -> `Ethala shindu doren` (All break their bonds)
-*   *"Holding you"* -> `Ari'a` (Hold'you)
-*   *"Were you born to resist or be abused?"* -> `Dorei'a menta rea shindara?` (Born'you to oppose or fear?)
+The March 2026 README showed a rock song translated in the LLM-Hybrid mode. That example used words the audits removed (*mith*, *on*, *ethala*) and rules the canon contradicts, so it was taken out ([grammar findings, item 7](research/2026-11-revival/8-audit/grammar-findings.md#7-the-readme-song-translation-breaks-both-the-rules-and-the-lexicon)).
 
 ---
 
@@ -53,9 +49,9 @@ Because Elves don't use modern words like "chains" or "confession", translating 
 
 We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
-- `src/thalassian/data/lexicon.json` - The single source of truth: 314 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
+- `src/thalassian/data/lexicon.json` - The single source of truth: 416 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
 - `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler (using AST and `spaCy` to parse English and compile SVO Elven grammar).
-- `src/thalassian/phonetics/markov.py` - A character Markov-chain engine that generates new vocabulary from canon letter patterns. The November 2026 audit found its words easy to tell apart from canon and describes a better generator ([Method 7](research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model)).
+- `src/thalassian/phonetics/markov.py` - A character Markov-chain engine that generates new vocabulary from canon letter patterns. The November 2026 audit found its words easy to tell apart from canon. New words now come from a Kneser-Ney generator with collision checks ([generate_words.py](research/2026-11-revival/scripts/generate_words.py), [report 8](research/2026-11-revival/8-reconstruction-audit.md#5-the-generator)).
 - `src/thalassian/morphology/` - Rules for agglutination and vocalic mutation (pluralization).
 
 ### Dive deeper into our methodology:
@@ -65,6 +61,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 4. 📚 **[Bibliography & Sources (Citations)](docs/citations.md)**
 5. 🤖 **[Architecting with Portal OS (How an AI built this)](docs/methodology/how-to-use-portal.md)**
 6. 🔎 **[November 2026 revival: audit, client mining and the Skyborne](research/2026-11-revival/)**
+7. 🧪 **[Reconstruction audit: grammar and invented words checked, basic vocabulary completed](research/2026-11-revival/8-reconstruction-audit.md)**
 
 ---
 
@@ -75,6 +72,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 - [x] **WoW Forever client mining**: Read the game client's tables, hotfixes and caches (`tools/wowf/`).
 - [x] **Canon audit**: Every canon entry checked against its source; wrong meanings fixed (November 2026).
 - [x] **Skyborne (Shen'dorei)**: Vocabulary of the new WoW Forever elven race.
+- [x] **Reconstruction audit**: Grammar and invented words checked against the canon; the Swadesh-207 list is fully covered ([report 8](research/2026-11-revival/8-reconstruction-audit.md)).
 - [x] **Localized text mining**: Blizzard's Chinese and Korean dialogue tables, mined for the elven lines the localizers translated ([report](research/2026-11-revival/4-localization-mining.md)).
 - [ ] **Server-side localized lines**: the TBC Kael'thas lines whose Chinese glosses the wiki reports are not in the client's tables, so those glosses are still unverified.
 - [ ] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`).

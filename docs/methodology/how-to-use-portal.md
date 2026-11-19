@@ -20,7 +20,7 @@ The human operator never had to open a terminal or an IDE.
 
 ## 3. Multi-Model Delegation
 Portal OS allows agents to self-delegate complex tasks to other models based on cost and capability. 
-To generate the 100-word Swadesh list expansion, the primary agent (running on Gemini 3.1 Pro) spawned an isolated subagent running **Claude 3 Opus**. The Opus agent was provided with the canonical roots and instructed to act as an anthropologist, using Markov-chain phonotactics to mathematically extrapolate new roots (e.g., `lura'sin` for *drink*). 
+To generate the 100-word Swadesh list expansion, the primary agent (running on Gemini 3.1 Pro) spawned an isolated subagent running **Claude 3 Opus**. The Opus agent was provided with the canonical roots and instructed to act as an anthropologist, using Markov-chain phonotactics to mathematically extrapolate new roots (e.g., `lura'sin` for *drink*). The [November 2026 reconstruction audit](../../research/2026-11-revival/8-reconstruction-audit.md) replaced `lura'sin`, which reads "sea-blood" because canon *lura* is "sea" and *sin* is "blood", gave 17 more of these words new forms and removed three. 
 
 ## 4. Sandboxed Code Execution & Test-Driven Development (TDD)
 The agent wrote, executed, and debugged Python code natively within its isolated Linux workspace (`/workspace`).
