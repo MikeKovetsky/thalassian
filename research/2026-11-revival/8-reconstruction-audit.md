@@ -164,6 +164,8 @@ Three probes changed, two for the worse, because the Python engine still uses th
 - "the dead rise" gives "[dead] aranal", since *ledel* no longer claims "dead".
 - "you" gives *'a*, the new clitic, where it gave *Il'ore*.
 
+The translator fixes merged later on 2026-11-18 use the section 5 forms in both engines: "I rise" is *O aranal*, "you" is *A*, and "the dead rise" is still *[dead] aranal*. Their scores are in [report 1, Method 8](1-review-and-methods.md#method-8-translator-evaluation-on-canon-phrases).
+
 ## Limits
 
 1. **The real-word check is partial.** It covers the English word list and names, plus one reading of the output for the major European languages, Ukrainian, Russian, Latin, Greek and a few others. It is not a systematic multilingual check.
@@ -171,7 +173,7 @@ Three probes changed, two for the worse, because the Python engine still uses th
 3. **Short words fit worse.** Most three-letter strings are already attested, English or scrambler words, so few remain to choose from. The 60 three- and four-letter words sit at a median percentile of 31, against 84 for six-letter words. Part of the gap is the measure, which favours longer words.
 4. **The Ukrainian glosses were not reviewed by a native speaker.**
 5. **59 older generated words keep their forms.** Five had a field fixed (*tana*, *nu*, *la*, *theli*, *lura'thiel*), and 27 carry audit proposals that are held back or undecided. None of them records a method, seed or evidence.
-6. **The engines were not updated.** parser.py, morphology/ and web/ still use the March pronoun tables (*on*, *anu*, *danu*), plurals and dropped prepositions.
+6. **The engines were not updated in this pass.** parser.py, morphology/ and web/ still used the March pronoun tables (*on*, *anu*, *danu*), plurals and dropped prepositions. The translator fixes merged the same day bring both engines to this grammar (see [Translator score](#translator-score)).
 7. **Collisions are checked only against what the repo holds.** Server-side elven lines are not in the client, so a new word may still match one.
 8. **The held-back items stay open:** *mal*, the four low new forms, the five low fixes and the 18 low notes. They are listed in the [merge log](merge-log.md#reconstruction-audit-8-candidatesjson).
 9. **A change to the filters moves many words.** Each meaning takes the best form among its own samples, but the best forms recur from meaning to meaning, so barring one word passes forms down the draw order. Barring seven words late in the work (six that held a three-letter part with a known meaning, such as *min*, and the name *lem*) gave 25 entries a different form.

@@ -293,8 +293,8 @@ The canon is silent on the points below. Each convention is the smallest one tha
 
 ## For the engines
 
-To match this grammar:
-1. `pluralization.py` should stop changing nouns.
-2. `agglutination.py` and the tables in `web/index.html` should use the forms in section 5. That means dropping *anu* and *danu*, and making the English and Ukrainian tables agree.
-3. The Pure LLM prompt should state sections 2 to 7 in place of "SVO word order, drop prepositions".
-4. The translator's "X of the Y" rule should build a compound only for names, titles and epithets, and a head-first phrase otherwise.
+Both translators follow this grammar since 2026-11-18 ([report 1, Method 8](../../research/2026-11-revival/1-review-and-methods.md#method-8-translator-evaluation-on-canon-phrases)):
+1. No engine adds or undoes a plural, and `pluralization.py` is gone.
+2. `morphology/agglutination.py` and `web/translator.js` hold the forms of section 5, with no *anu* or *danu*, and their English and Ukrainian tables agree.
+3. The Pure LLM prompt states sections 2 to 7 in place of "SVO word order, drop prepositions".
+4. "X of the Y" becomes a compound only for a capitalized name, and a head-first phrase otherwise.

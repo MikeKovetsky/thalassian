@@ -110,7 +110,7 @@ The check behind this table is an edit-distance scan against 273 attested forms 
 | 17 | `tests/test_syntax/test_parser.py:47,57-59` | Tests lock in bugs: `[bind]'o` and `Quel thalas` (canon is `Quel'Thalas`) | Fixing order or compounding will "break" tests. `tests/test_morphology/` and `tests/test_phonetics/` are empty, and `test_ast.py` duplicates `test_parser.py`. |
 | 18 | `pyproject.toml:39,32,35` | Homepage is `github.com/Portal-OS/thalassian` (the repo is MikeKovetsky/thalassian); the spaCy model is pinned 3.7.1 while spaCy is unpinned; `mkdocs-material` is a runtime dependency | Install and version drift. |
 
-Bugs 1 to 4, 12 and 17 were fixed on 2026-11-18. The web translator now lives in `web/translator.js`, so node can test it. The same day both engines followed the grammar audit, which fixed bugs 7 and 13 and the code half of bug 8: *anu* and *danu* are no longer pronouns (*dan* stays, as the grammar's labelled invention), and no engine adds or undoes a plural ending. `grammar.md` states the plural until the audit's rewrite of it lands.
+Bugs 1 to 4, 12 and 17 were fixed on 2026-11-18. The web translator now lives in `web/translator.js`, so node can test it. The same day both engines followed the grammar audit, which fixed bugs 7 and 13 and the code half of bug 8: *anu* and *danu* are no longer pronouns (*dan* stays, as the grammar's labelled invention), and no engine adds or undoes a plural ending. The audit's rewrite of `grammar.md` has no plural either (section 3.2).
 
 ## 3. Docs and claims that do not hold
 

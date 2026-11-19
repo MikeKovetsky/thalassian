@@ -107,7 +107,7 @@
     const phraseKey = text => (expandContractions(text).toLowerCase().match(WORD) || []).filter(w => !ARTICLES.has(w));
 
     // An entry whose sense is exactly the word, or its singular, wins over one that only mentions it
-    // ("ones" is ore "one", not shal'nan "the Veiled One"); among equals the most canon entry wins
+    // ("ones" is akus "one", not shal'nan "the Veiled One"); among equals the most canon entry wins
     // ("keeper" is dinoriel, not delar).
     function findWord(lexicon, lower, canonOnly) {
         const usable = lexicon.filter(e => allowed(e, canonOnly) && !isPhrase(e));
