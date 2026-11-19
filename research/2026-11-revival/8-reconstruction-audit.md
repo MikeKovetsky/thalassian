@@ -74,7 +74,7 @@ These were decided during the work:
 | Action | Count | Examples |
 |---|---|---|
 | Removed | 12 | the 9 audit removals (*sira*, *thala*, *mith*, *doras*, *fa*, *tala*, *selorue*, *al'ore*, *nath*), plus *on*, *il'ore* and *isera* |
-| Fixed | 27 fields | *delar*, *aran*, *rath*, *kanesh*, *alon* and *ledel* now say "(unknown; ...)"; five invented shared roots are gone; *la* is a particle; 6 two-sense glosses narrowed |
+| Fixed | 27 fields | *delar*, *aran*, *rath*, *kanesh*, *alon* and *ledel* now say "(unknown; ...)"; five invented shared roots are gone; *la* is a particle; 7 two-sense glosses narrowed |
 | New form | 37 | *ore* → *akus* "one", *rashis* → *azsil* "nose", *thas'nor* → *lel* "root", *lura'sin* → *surai* "drink" |
 | Added | 114 | 111 Swadesh meanings, "green", *'a* and *'dan* |
 | Noted, no change | 4 | *othina*, *aluta*, *thas'iel*, *ro'shin*: decisions nobody has taken yet |
@@ -170,7 +170,7 @@ Three probes changed, two for the worse, because the Python engine still uses th
 2. **The fit figures are optimistic.** The generator learned from the same attested parts the classifier and percentiles use. The best-of-10,000 choice also favours blends of canon pieces: *sharius* "work" is at the 100th percentile.
 3. **Short words fit worse.** Most three-letter strings are already attested, English or scrambler words, so few remain to choose from. The 60 three- and four-letter words sit at a median percentile of 31, against 84 for six-letter words. Part of the gap is the measure, which favours longer words.
 4. **The Ukrainian glosses were not reviewed by a native speaker.**
-5. **59 older generated words were left as they were.** The audit found no flaw specific to them, but they still lack a method, seed or evidence.
+5. **59 older generated words keep their forms.** Five had a field fixed (*tana*, *nu*, *la*, *theli*, *lura'thiel*), and 27 carry audit proposals that are held back or undecided. None of them records a method, seed or evidence.
 6. **The engines were not updated.** parser.py, morphology/ and web/ still use the March pronoun tables (*on*, *anu*, *danu*), plurals and dropped prepositions.
 7. **Collisions are checked only against what the repo holds.** Server-side elven lines are not in the client, so a new word may still match one.
 8. **The held-back items stay open:** *mal*, the four low new forms, the five low fixes and the 18 low notes. They are listed in the [merge log](merge-log.md#reconstruction-audit-8-candidatesjson).
