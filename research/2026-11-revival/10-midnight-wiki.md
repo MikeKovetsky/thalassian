@@ -189,6 +189,10 @@ None of these has a spoken gloss. They are listed for completeness.
 
 Every `old` value was copied from the current lexicon.json. [Report 9](9-warcraft-iii.md) also proposes an evidence fix for *sin'dorei*, in [9-candidates.json](9-candidates.json); the two merge.
 
+Two candidates were corrected on 2026-11-18, when [scripts/apply_wc3_midnight.py](scripts/apply_wc3_midnight.py) applied them:
+1. The *sin'dorei* evidence fix now starts from report 9's result, because report 9's fix is applied first and would otherwise leave this one stale.
+2. *Alah'endal* and *Belo'melorn* are now glossed as "an axe" and "a dagger" whose epithets are "the Dawnsong" and "the Shattered Talon", because both translators read a gloss of three words or fewer as a translation and turned "talon" into *Belo'melorn*.
+
 ## Reproduce
 
 From the repo root, with any cache folder outside the repo. A first run makes about 1,400 requests at one a second, so it takes about 25 minutes; this cache holds 1,440 answers. Later runs read the cache. A first run reads the live wiki, which keeps changing, so its counts will drift from these.

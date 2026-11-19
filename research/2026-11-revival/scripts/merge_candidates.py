@@ -15,14 +15,15 @@ Policy (decided in the main session, recorded in research/2026-11-revival/merge-
   the audit replaced are fixed by CORRECTIONS; both are logged.
 
 The merge runs once, on the pre-revival lexicon (commit 42eb9cf). apply_localization.py then applies
-4-candidates.json on top, apply_voice.py applies 5-candidates.json, and apply_audit.py applies 8-candidates.json
-(report 8; generate_words.py wrote that file and is not part of the recipe). To reproduce lexicon.json and
-merge-log.md, from the repo root:
+4-candidates.json on top, apply_voice.py applies 5-candidates.json, apply_audit.py applies 8-candidates.json
+(report 8; generate_words.py wrote that file and is not part of the recipe), and apply_wc3_midnight.py applies
+9-, 10- and 11-candidates.json (reports 9 to 11). To reproduce lexicon.json and merge-log.md, from the repo root:
   git show 42eb9cf:src/thalassian/data/lexicon.json > src/thalassian/data/lexicon.json
   python3 research/2026-11-revival/scripts/merge_candidates.py
   python3 research/2026-11-revival/scripts/apply_localization.py
   python3 research/2026-11-revival/scripts/apply_voice.py
   python3 research/2026-11-revival/scripts/apply_audit.py
+  python3 research/2026-11-revival/scripts/apply_wc3_midnight.py
 """
 import json
 import os

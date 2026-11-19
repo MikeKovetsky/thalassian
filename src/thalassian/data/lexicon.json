@@ -1394,6 +1394,10 @@
       {
         "quote": "Reins of Anu'relos, Flame's Guidance teach Anu'relos, Flame's Guidance, a fiery somnowl mount. This item drops from Fyrakk the Blazing in Mythic Amirdrassil, the Dream's Hope.",
         "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+      },
+      {
+        "quote": "Anu'shalla, Shadow's Guidance | Her wings cut through the sky like shadows on a moonlit night. (Mount 2917 Name_lang and Description_lang, build 12.1.7.70986)",
+        "where": "https://wago.tools/db2/Mount?filter%5BID%5D=exact%3A2917"
       }
     ]
   },
@@ -3497,6 +3501,14 @@
       {
         "quote": "Al diel shala. || Safe travels. || A farewell.",
         "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "Al diel shala, <name>. (Aethas Sunreaver, last line of the quest completion, patch 12.0.7)",
+        "where": "https://warcraft.wiki.gg/wiki/An_Original_Path_Through_Time_(Midnight)#Completion"
+      },
+      {
+        "quote": "Farewell: Al diel shala. (on-click line; patch 12.0.1 'Unique On-clicks added')",
+        "where": "https://warcraft.wiki.gg/wiki/Lord_Saltheril#On-click"
       }
     ]
   },
@@ -3644,6 +3656,18 @@
       {
         "quote": "Minn'da = Mama/Mother.",
         "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "A Meeting with Minn'da (CriteriaTree 211364 Description_lang, a criterion of achievement 42299 Visions of a Shadowed Sun, whose Criteria_tree is 211359; build 12.1.7.70986)",
+        "where": "https://wago.tools/db2/CriteriaTree?filter%5BID%5D=exact%3A211364"
+      },
+      {
+        "quote": "A Meeting with Minn'da (criterion of the achievement Visions of a Shadowed Sun, patch 11.2.7)",
+        "where": "https://warcraft.wiki.gg/wiki/Visions_of_a_Shadowed_Sun#A_Meeting_with_Minn%27da"
+      },
+      {
+        "quote": "A Meeting with Minn'da: Arator has traveled to K'aresh to find his mother, Alleria Windrunner, in the hopes of convincing her to aid Silvermoon City in its hour of need. (in-game Lore Book chapter, as the wiki transcribes it)",
+        "where": "https://warcraft.wiki.gg/wiki/Lore_Book_(The_War_Within)#A_Meeting_with_Minn%27da"
       }
     ]
   },
@@ -3656,7 +3680,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "anu + belore + dela + na",
-    "notes": "Greeting among blood and high elves.",
+    "notes": "Greeting among blood and high elves. In Midnight (12.0.1) it is also a toast (Lord Saltheril) and a parting wish (Lor'themar Theron).",
     "source": "thalassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -3665,6 +3689,26 @@
       {
         "quote": "Anu belore dela'na. || The sun guides us. || A greeting exchanged only with blood elves or high elves.",
         "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "Lord Saltheril yells: A toast to the Magisters, masters of the arcane, and defenders of Eversong! Anu belore dela'na! (patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/Fortify_the_Runestones:_Magisters#Notes"
+      },
+      {
+        "quote": "Lord Saltheril says: A toast to our... traders, masters of... discretion, and defenders of Eversong! Anu belore dela'na! (patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/Fortify_the_Runestones:_Shades_of_the_Row#Notes"
+      },
+      {
+        "quote": "Lor'themar Theron says: ... may rest on the outcome of this mission. Anu belore dela'na. (patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/No_Fear_of_the_Dark#Notes"
+      },
+      {
+        "quote": "I hope you find him soon. Anu belore dela'na, <Name>. (Lor'themar Theron, quest completion, patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/Fractured#Completion"
+      },
+      {
+        "quote": "Greetings: Anu belore dela'na. (on-click line; the page's patch note for 12.0.1 says 'Unique On-clicks added')",
+        "where": "https://warcraft.wiki.gg/wiki/Lord_Saltheril#On-click"
       }
     ]
   },
@@ -3686,6 +3730,14 @@
       {
         "quote": "Bal'a dash, malanore. || Greetings, traveler. || A greeting.",
         "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "Bal'a dash, malanore <name>. Welcome to Silvermoon. (Aethas Sunreaver, gossip, patch 12.0.5)",
+        "where": "https://warcraft.wiki.gg/wiki/Enchanted_Naga_Scroll_(quest)#Notes"
+      },
+      {
+        "quote": "Bal'a dash, malanore. The Royal Exchange serves as a sense of normalcy during this time. (Magistrix Nizara, gossip, patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/Paved_in_Ash_(Horde)#Notes"
       }
     ]
   },
@@ -3945,7 +3997,7 @@
     "pos": "noun",
     "canon": true,
     "root": "quel + thalas",
-    "notes": "Chronicle Vol. 1 p.120.",
+    "notes": "Chronicle Vol. 1 p.120. Spoken twice in Warcraft III's Forsaken Kingdom campaign (patch 3.0), by the dark ranger Anya ('And for the fall of Quel'Thalas!') and by Ilastar ('Quel'Thalas has fallen, and the Sunwell is gone'). Gemini 3.8 Flash hears it as kwel-THA-las, stressed on the second syllable; Wizper writes it Quel'Thalas but gives no stress (report 11).",
     "source": "thalassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -3954,6 +4006,14 @@
       {
         "quote": "Quel'Thalas = High Home.",
         "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "And for the fall of Quel'Thalas! (Wizper) / And for the fall of kwel'thalas, IPA [ænd fɔːɹ ðə fɔːl əv kʷɛlˈθɑːlɑːs] (Gemini 3.8 Flash)",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Sound/Dialogue/UndeadRECamp/undeadre03m2/A3M2-C020-050-ANYA.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
+      },
+      {
+        "quote": "Embrace the truth, as I have, Dark Ranger. Quel'Thalas has fallen, and the Sunwell is gone. (Wizper and Gemini 3.8 Flash, IPA kwɛlˈθɑːlɑːs)",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Sound/Dialogue/UndeadRECamp/undeadre03m2/A3M2-T500-ILASTAR.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
       }
     ]
   },
@@ -3996,6 +4056,18 @@
       {
         "quote": "sin'dorei || children of the blood || Can also be interpreted as \"people of the bloodline\".",
         "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+      },
+      {
+        "quote": "The sin'dorei, or children of the blood, renamed themselves in honor of those whom Arthas slaughtered…",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Units/ItemStrings.txt line 3289 (item [ebsd])"
+      },
+      {
+        "quote": "The blood elves, or sin'dorei, will never forget that loss. Let us remember them as well. (quest description, Lorewalker Cho, patch 11.2.7)",
+        "where": "https://warcraft.wiki.gg/wiki/Lorewalking:_Children_of_the_Blood#Description"
+      },
+      {
+        "quote": "The blood elves took their name in remembrance of their fallen kin, to ensure that they are never forgotten. (Lorewalker Cho, patch 11.2.7)",
+        "where": "https://warcraft.wiki.gg/wiki/Lorewalking:_Children_of_the_Blood#Notes"
       }
     ]
   },
@@ -4116,6 +4188,18 @@
       {
         "quote": "쇼렐러란... (koKR localization of BroadcastText 321680, build 12.1.7.70892; transliterates the word)",
         "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=koKR"
+      },
+      {
+        "quote": "Prove yourself by challenging the deadliest of places. Shorel'aran. (Aethas Sunreaver, end of the quest description, patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/Emissary_of_War_(Midnight)#Description"
+      },
+      {
+        "quote": "Farewell: Shorel'aran. (Magister Astalor Bloodsworn on-click line, in a section the wiki marks as Midnight)",
+        "where": "https://warcraft.wiki.gg/wiki/Magister_Astalor_Bloodsworn#On-click"
+      },
+      {
+        "quote": "Lor'themar bid farewell to his old friend with a final \"shorel'aran.\" (the wiki's biography of Lady Liadrin, Midnight section, citing The Unbinding of Kith'ix, patch 12.1.5; the quest pages do not transcribe the line)",
+        "where": "https://warcraft.wiki.gg/wiki/Lady_Liadrin#The_Promise_of_Tomorrow"
       }
     ]
   },
@@ -4141,6 +4225,10 @@
       {
         "quote": "Sinu a'manore, <class>.",
         "where": "https://warcraft.wiki.gg/wiki/The_World_Awaits_(Midnight)#Description"
+      },
+      {
+        "quote": "Greetings: Sinu a'manore. (Magister Astalor Bloodsworn on-click line, in a section the wiki marks as Midnight; patch 12.0.1 'unique on-click voice-lines added')",
+        "where": "https://warcraft.wiki.gg/wiki/Magister_Astalor_Bloodsworn#On-click"
       }
     ]
   },
@@ -4588,7 +4676,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "tor + ilisar + thera + nal",
-    "notes": "Ancient war cry.",
+    "notes": "Ancient war cry. Maiev's war cry in Warcraft III (MaievWarcry1, classic voice) is spoken as written: heard as 'Tor Ilyasar Tharanol!' by Wizper and 'tor ilis ar theran al' by Gemini 3.8 Flash (report 11).",
     "source": "darnassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -4597,6 +4685,10 @@
       {
         "quote": "Tor ilisar'thera'nal = Let our enemies beware. (A war cry used against enemies since ancient times.)",
         "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Tor Ilyasar Tharanol! (Wizper) / tor ilis ar theran al, IPA [tɔːɹ ˈɪl.ɪs ɑːɹ ˈθɛɹ.ən ɑːl] (Gemini 3.8 Flash)",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Units/NightElf/Maiev/MaievWarcry1.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
       }
     ]
   },
@@ -4609,7 +4701,7 @@
     "pos": "phrase",
     "canon": true,
     "root": "anu + dorini + talah",
-    "notes": "Malfurion's war cry; Loreology tweet 465903699592626176.",
+    "notes": "Malfurion's war cry; Loreology tweet 465903699592626176. Warcraft III's own subtitle spells it Ana'doreini talah (Malfurion's ready and war-cry lines).",
     "source": "darnassian",
     "canon_basis": "attested",
     "confidence": "high",
@@ -4618,6 +4710,14 @@
       {
         "quote": "Anu'dorini Talah = Let my will be known.",
         "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Ana'doreini talah!",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNightElfBase.fdf line 138 (NIGHTELF_UNIT_HERO_MALFURION_STORMRAGE_WARCRY1, sound Units/NightElf/Furion/FurionWarcry1.flac / Units/NightElf/MalFurion/MalfurionWarcry1.flac / Units/NightElf/Malfurion/MalfurionReady1.flac)"
+      },
+      {
+        "quote": "Anu'dorini Talah! (MalfurionWarcry1.wav)",
+        "where": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Night_Elf_Sentinels#Malfurion_Stormrage"
       }
     ]
   },
@@ -5463,6 +5563,14 @@
       {
         "quote": "\"Light's Justice\" is likely the literal translation of \"Lu'selama\".",
         "where": "https://warcraft.wiki.gg/wiki/Lu%27selama,_Light%27s_Justice"
+      },
+      {
+        "quote": "Lu'ashal has grown to gargantuan size from the surging Holy energy (Adventure Guide entry for the Eversong world boss, a Light-infused dragonhawk; JournalEncounter 2827, build 12.1.7.70986)",
+        "where": "https://wago.tools/db2/JournalEncounter?filter%5BName_lang%5D=Lu%27ashal"
+      },
+      {
+        "quote": "Lu'ashal has grown to gargantuan size from the surging Holy energy",
+        "where": "https://warcraft.wiki.gg/wiki/Lu%27ashal#Adventure_Guide"
       }
     ]
   },
@@ -5484,6 +5592,14 @@
       {
         "quote": "Lu'selama = Light's Justice.",
         "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Lu'selama, Light's Justice (ItemSparse 280799 Display_lang, build 12.1.7.70986)",
+        "where": "https://wago.tools/db2/ItemSparse?filter%5BID%5D=exact%3A280799"
+      },
+      {
+        "quote": "Lu'selama, Light's Justice (item page; patch 12.1.5)",
+        "where": "https://warcraft.wiki.gg/wiki/Lu%27selama,_Light%27s_Justice"
       }
     ]
   },
@@ -5717,6 +5833,10 @@
       {
         "quote": "Anar'anel belore — ... May translate to \"By the power of the sun,\" another line Kael'thas says for the same ability.",
         "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+      },
+      {
+        "quote": "Anar'anel belore! You love to hear it. This news is sure to warm a few hearts for our cause. (Knight-Lord Sunguard, quest completion, patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/Sunfire_to_the_Blade#Completion"
       }
     ]
   },
@@ -8491,5 +8611,166 @@
     "confidence": "medium",
     "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 143637992173787 (SHA-256 of 'name'); -1.52 nats per character, at percentile 81 of the attested parts",
     "evidence": []
+  },
+  {
+    "word": "shan'do",
+    "translation": {
+      "en": "honored teacher (a title)",
+      "uk": "шановний учитель (звертання)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "shan + do",
+    "notes": "Malfurion's title in Warcraft III (Shan'do Stormrage), in 21 Reforged campaign strings (20 in the classic maps), said by Maiev Shadowsong (14), Druid of the Claw (3), Druid of the Talon (1), Dryad (1), Runner (1), no speaker (1). zhTW renders it 尊師 'honored teacher' and zhCN 大导师 'grand teacher' in all 21; koKR transliterates it in 20 and ruRU in 20. The lexicon had only its parts, shan 'honored' and do 'teacher'.",
+    "source": "darnassian",
+    "canon_basis": "attested",
+    "confidence": "high",
+    "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); matched to the wiki by text and speaker; zhTW and zhCN map string tables",
+    "evidence": [
+      {
+        "quote": "Shan'do = Honored Teacher. (A title and term of respect.)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "Shan'do Stormrage will be defenseless!",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:Campaign/Reforged/ROC/NightElf03.w3x, war3map.wts STRING 186 (speaker Dryad; sound N03Dryad15)"
+      },
+      {
+        "quote": "這樣怒風尊師會毫無防備！",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:Campaign/Reforged/ROC/NightElf03.w3x, zhTW war3map.wts STRING 186"
+      },
+      {
+        "quote": "怒风大导师岌岌可危！",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:Campaign/Reforged/ROC/NightElf03.w3x, zhCN war3map.wts STRING 186"
+      }
+    ]
+  },
+  {
+    "word": "thero'shan",
+    "translation": {
+      "en": "honored student (a title)",
+      "uk": "шановний учень (звертання)"
+    },
+    "pos": "noun",
+    "canon": true,
+    "root": "thero + shan",
+    "notes": "Warcraft III spells it thero-shan: Malfurion to the druids of the claw (NightElf05). zhTW renders it 愛徒 'beloved disciple'; zhCN keeps the Latin text, koKR and ruRU transliterate. Head first (thero 'student' + shan 'honored'), the reverse of shan'do. Thero'shan is also in WoW's Darnassian, Thalassian and Shen'dorei scrambler lists (LanguageWords), so WoW occurrences of it may be garble.",
+    "source": "darnassian",
+    "canon_basis": "attested",
+    "confidence": "high",
+    "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); matched to the wiki by text and speaker; zhTW map string table",
+    "evidence": [
+      {
+        "quote": "Thero'shan = Honored student. (A title and term of respect.)",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
+      },
+      {
+        "quote": "All is well, thero-shan.",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:Campaign/Reforged/ROC/NightElf05.w3x, war3map.wts STRING 139 (speaker Malfurion Stormrage; sound N05Furion68)"
+      },
+      {
+        "quote": "愛徒，別在意。",
+        "where": "Warcraft III 3.0.1.24371, War3.w3mod:Campaign/Reforged/ROC/NightElf05.w3x, zhTW war3map.wts STRING 139"
+      }
+    ]
+  },
+  {
+    "word": "alah'endal",
+    "translation": {
+      "en": "Alah'endal: an axe whose epithet is 'the Dawnsong' (perhaps not a literal translation)",
+      "uk": "Алах'ендал: сокира з епітетом «Пісня Світанку» (можливо, не дослівний переклад)"
+    },
+    "pos": "proper noun",
+    "canon": true,
+    "root": "alah + endal",
+    "notes": "Thalassian. A two-handed axe from Midnight Falls in the March on Quel'Danas raid (item 249296, patch 12.0.1). The epithet may not be a literal translation: the parts read alah 'light' (inferred) + endal 'breath' (segment). The wiki's 'Lightbreath' is in its Speculation section, an editor's guess.",
+    "source": "thalassian",
+    "canon_basis": "epithet",
+    "confidence": "medium",
+    "method": "item name with English epithet (client ItemSparse via wago.tools, and the wiki item page)",
+    "evidence": [
+      {
+        "quote": "Alah'endal, the Dawnsong (ItemSparse 249296 Display_lang, build 12.1.7.70986)",
+        "where": "https://wago.tools/db2/ItemSparse?filter%5BID%5D=exact%3A249296"
+      },
+      {
+        "quote": "Alah'endal, the Dawnsong drops from Midnight Falls in the March on Quel'Danas.",
+        "where": "https://warcraft.wiki.gg/wiki/Alah%27endal,_the_Dawnsong"
+      },
+      {
+        "quote": "though not official, \"endal\" may translate to \"breath\", making the name perhaps mean \"Lightbreath\" (editor's speculation)",
+        "where": "https://warcraft.wiki.gg/wiki/Alah%27endal,_the_Dawnsong#Speculation"
+      },
+      {
+        "quote": "Alah'endal — An axe.",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Proper_nouns"
+      }
+    ]
+  },
+  {
+    "word": "belo'melorn",
+    "translation": {
+      "en": "Belo'melorn: a dagger whose epithet is 'the Shattered Talon' (not a literal translation)",
+      "uk": "Бело'мелорн: кинджал з епітетом «Розбитий Кіготь» (не дослівний переклад)"
+    },
+    "pos": "proper noun",
+    "canon": true,
+    "root": "belo + melorn",
+    "notes": "Thalassian. A dagger from the March on Quel'Danas raid (item 249283, patch 12.0.1). The epithet is not a literal translation. In beta it was named Belo'ren's Mystic Talon (wiki trivia), so belo- probably comes from the phoenix Belo'ren; melorn 'strike' is a segment of Felo'melorn. The wiki's 'Sunstrike' is an editor's guess.",
+    "source": "thalassian",
+    "canon_basis": "epithet",
+    "confidence": "medium",
+    "method": "item name with English epithet (client ItemSparse via wago.tools, and the wiki item page)",
+    "evidence": [
+      {
+        "quote": "Belo'melorn, the Shattered Talon (ItemSparse 249283 Display_lang, build 12.1.7.70986)",
+        "where": "https://wago.tools/db2/ItemSparse?filter%5BID%5D=exact%3A249283"
+      },
+      {
+        "quote": "During beta, it was renamed from Belo'ren's Mystic Talon.",
+        "where": "https://warcraft.wiki.gg/wiki/Belo%27melorn,_the_Shattered_Talon#Trivia"
+      },
+      {
+        "quote": "the name likely translates to \"Sunstrike\" (editor's guess)",
+        "where": "https://warcraft.wiki.gg/wiki/Belo%27melorn,_the_Shattered_Talon#Trivia"
+      },
+      {
+        "quote": "Belo'melorn — A dagger.",
+        "where": "https://warcraft.wiki.gg/wiki/Thalassian#Proper_nouns"
+      }
+    ]
+  },
+  {
+    "word": "arcan'dor",
+    "translation": {
+      "en": "Arcan'dor: the nightborne's mana tree, whose fruit cleanses magic",
+      "uk": "Аркан'дор: мана-дерево нічнонароджених, чий плід очищує магію"
+    },
+    "pos": "proper noun",
+    "canon": true,
+    "root": "arcan'dor",
+    "notes": "Shalassian (nightborne). First Arcanist Thalyssra names it in Midnight (In Times of Need, patch 12.0.1): her people overcame their addiction to the Nightwell by transmuting its power through it, and she brings its fruit to cleanse the Darkwell. The wiki lists it among Darnassian's untranslated words. The in-game Lore Book for Legion (patch 11.2.5) spells it Arc'andor, which the wiki marks as sic. Its parts are not explained.",
+    "source": "shalassian",
+    "canon_basis": "name",
+    "confidence": "medium",
+    "method": "Referent stated in Midnight NPC speech (wiki) + wago.tools BroadcastText lookup by text",
+    "evidence": [
+      {
+        "quote": "In order to overcome that addiction, we learned to transmute the power throuh [sic] a mana tree we call the Arcan'dor. (First Arcanist Thalyssra, gossip, patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/In_Times_of_Need#Notes"
+      },
+      {
+        "quote": "The fruit of the Arcan'dor can cleanse all manner of magic. I'm certain it will do so here. (First Arcanist Thalyssra, patch 12.0.1)",
+        "where": "https://warcraft.wiki.gg/wiki/In_Times_of_Need#Notes"
+      },
+      {
+        "quote": "Arcan'dor - A type of magical fruit tree that balances nature and arcane magic by feeding on ley lines.",
+        "where": "https://warcraft.wiki.gg/wiki/Darnassian#Untranslated_words"
+      },
+      {
+        "quote": "Now the power of the arcan'dor is mine! (enUS BroadcastText 118587, build 12.1.7.70986; an older line, the speaker is not in the row)",
+        "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A118587"
+      }
+    ]
   }
 ]

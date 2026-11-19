@@ -289,12 +289,20 @@
    {
     "quote": "sin'dorei || children of the blood || Can also be interpreted as \"people of the bloodline\".",
     "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "The sin'dorei, or children of the blood, renamed themselves in honor of those whom Arthas slaughtered…",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Units/ItemStrings.txt line 3289 (item [ebsd])"
    }
   ],
   "new": [
    {
     "quote": "sin'dorei || children of the blood || Can also be interpreted as \"people of the bloodline\".",
     "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "The sin'dorei, or children of the blood, renamed themselves in honor of those whom Arthas slaughtered…",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Units/ItemStrings.txt line 3289 (item [ebsd])"
    },
    {
     "quote": "The blood elves, or sin'dorei, will never forget that loss. Let us remember them as well. (quest description, Lorewalker Cho, patch 11.2.7)",
@@ -307,7 +315,7 @@
   ],
   "confidence": "high",
   "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
-  "reason": "Lorewalker Cho explains the word in English: the sin'dorei are the blood elves, named in remembrance of their fallen kin. This confirms what the word names and why, not the literal gloss 'children of the blood'. Report 9 proposes a separate evidence fix for the same entry; the two merge. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+  "reason": "Lorewalker Cho explains the word in English: the sin'dorei are the blood elves, named in remembrance of their fallen kin. This confirms what the word names and why, not the literal gloss 'children of the blood'. Report 9's evidence fix for the same entry is applied first, so this fix starts from its result and adds Cho's lines to it. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
  },
  {
   "action": "fix",
@@ -417,10 +425,10 @@
   "action": "add",
   "word": "alah'endal",
   "translation": {
-   "en": "the Dawnsong (an axe's epithet)",
-   "uk": "Пісня Світанку (епітет сокири)"
+   "en": "Alah'endal: an axe whose epithet is 'the Dawnsong' (perhaps not a literal translation)",
+   "uk": "Алах'ендал: сокира з епітетом «Пісня Світанку» (можливо, не дослівний переклад)"
   },
-  "pos": "noun",
+  "pos": "proper noun",
   "canon": true,
   "root": "alah + endal",
   "notes": "Thalassian. A two-handed axe from Midnight Falls in the March on Quel'Danas raid (item 249296, patch 12.0.1). The epithet may not be a literal translation: the parts read alah 'light' (inferred) + endal 'breath' (segment). The wiki's 'Lightbreath' is in its Speculation section, an editor's guess.",
@@ -452,10 +460,10 @@
   "action": "add",
   "word": "belo'melorn",
   "translation": {
-   "en": "the Shattered Talon (a dagger's epithet)",
-   "uk": "Розбитий Кіготь (епітет кинджала)"
+   "en": "Belo'melorn: a dagger whose epithet is 'the Shattered Talon' (not a literal translation)",
+   "uk": "Бело'мелорн: кинджал з епітетом «Розбитий Кіготь» (не дослівний переклад)"
   },
-  "pos": "noun",
+  "pos": "proper noun",
   "canon": true,
   "root": "belo + melorn",
   "notes": "Thalassian. A dagger from the March on Quel'Danas raid (item 249283, patch 12.0.1). The epithet is not a literal translation. In beta it was named Belo'ren's Mystic Talon (wiki trivia), so belo- probably comes from the phoenix Belo'ren; melorn 'strike' is a segment of Felo'melorn. The wiki's 'Sunstrike' is an editor's guess.",
