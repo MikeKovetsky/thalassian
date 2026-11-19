@@ -12,7 +12,9 @@ The project follows a **Canon-First** methodology: every word says whether Blizz
 
 **November 2026 revival.** A [canon audit](research/2026-11-revival/1-review-and-methods.md) corrected wrong meanings (for example *bash'a* is "taste", not "death"; *shal'na* is "aunt") and found that the March 2026 "Midnight datamine" never happened. The lexicon grew from 206 to 310 entries, including the [Skyborne words](research/2026-11-revival/3-new-elven-race.md) of WoW Forever (*shen'dorei*, "hidden people"). Every change and its evidence is in [the merge log](research/2026-11-revival/merge-log.md).
 
-**Reconstruction audit.** [Report 8](research/2026-11-revival/8-reconstruction-audit.md) checked the grammar and the invented words against the canon. The grammar was rewritten with a label on every rule. In the lexicon, 12 flawed words were removed, 37 got new forms from a collision-checked generator, and 114 generated words filled every gap in the 207-word Swadesh list. The lexicon now has 416 entries.
+**Reconstruction audit.** [Report 8](research/2026-11-revival/8-reconstruction-audit.md) checked the grammar and the invented words against the canon. The grammar was rewritten with a label on every rule. In the lexicon, 12 flawed words were removed, 37 got new forms from a collision-checked generator, and 114 generated words filled every gap in the 207-word Swadesh list, which took the lexicon to 416 entries.
+
+**Warcraft III and Midnight.** [Report 9](research/2026-11-revival/9-warcraft-iii.md) read Warcraft III: Reforged's own game files, [report 10](research/2026-11-revival/10-midnight-wiki.md) Midnight's text as the wiki quotes it, and [report 11](research/2026-11-revival/11-forsaken-kingdom-voice.md) the voice of Warcraft III's new campaign. They add the Darnassian titles *shan'do* "honored teacher" and *thero'shan* "honored student", the nightborne mana tree *Arcan'dor* and two Midnight item names, and new evidence to 14 entries. The lexicon now has 421 entries.
 
 This project was conceived by **Mike Kovetsky** and architected by an autonomous agent powered by **Portal OS** ([Portal AI](https://portal.ai)).
 
@@ -55,7 +57,7 @@ The March 2026 README showed a rock song translated in the LLM-Hybrid mode. That
 
 We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
-- `src/thalassian/data/lexicon.json` - The single source of truth: 416 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
+- `src/thalassian/data/lexicon.json` - The single source of truth: 421 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
 - `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler: whole canon phrases first, then word by word with the grammar's rules (*anar'* in oaths, compounds for names, head-first "of" phrases, possessives, pronoun suffixes), in the input's word order. `spaCy`, when installed, supplies the lemmas. `web/translator.js` runs the same rules in the browser.
 - `src/thalassian/phonetics/markov.py` - A character Markov-chain engine that generates new vocabulary from canon letter patterns. The November 2026 audit found its words easy to tell apart from canon. New words now come from a Kneser-Ney generator with collision checks ([generate_words.py](research/2026-11-revival/scripts/generate_words.py), [report 8](research/2026-11-revival/8-reconstruction-audit.md#5-the-generator)).
 - `src/thalassian/morphology/` - The pronoun and possessive tables (grammar section 5). Nouns have no plural, so there is no plural rule.

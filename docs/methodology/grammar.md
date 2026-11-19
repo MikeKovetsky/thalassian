@@ -77,7 +77,7 @@ Two words joined by an apostrophe make a compound, and the modifier comes first.
 - *Ban'dinoriel* "Gatekeeper";
 - *Lu'selama* "Light's Justice".
 
-It holds in 13 Darnassian and Shalassian compounds too. The one exception is the Darnassian title *Thero'shan* "honored student".
+It holds in 13 Darnassian and Shalassian compounds too. The one exception is the Darnassian title *Thero'shan* "honored student", which puts the head first: *thero* "student", then *shan* "honored". Its pair *Shan'do* "honored teacher" follows the rule. Blizzard's Warcraft Encyclopedia glosses both titles (quoted in the wiki's [Darnassian primer](https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations))), and Warcraft III's zhTW localization renders Malfurion's *thero-shan* as 愛徒 "beloved disciple" ([report 9](../../research/2026-11-revival/9-warcraft-iii.md)). No Thalassian compound breaks the rule, so it stands: both translators give *Thero'shan* whole from the lexicon, and word by word they would build *Shan thero*.
 
 The modifier can be an adjective (*Quel'*) or a noun (*Sin'*, *Thas'*). Compounds name things: peoples, places, weapons, titles and fixed epithets.
 
