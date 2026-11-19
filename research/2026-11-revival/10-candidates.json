@@ -1,0 +1,466 @@
+[
+ {
+  "action": "fix",
+  "word": "anu belore dela'na",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us. || A greeting exchanged only with blood elves or high elves.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Anu belore dela'na. || The sun guides us. || A greeting exchanged only with blood elves or high elves.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Lord Saltheril yells: A toast to the Magisters, masters of the arcane, and defenders of Eversong! Anu belore dela'na! (patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Fortify_the_Runestones:_Magisters#Notes"
+   },
+   {
+    "quote": "Lord Saltheril says: A toast to our... traders, masters of... discretion, and defenders of Eversong! Anu belore dela'na! (patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Fortify_the_Runestones:_Shades_of_the_Row#Notes"
+   },
+   {
+    "quote": "Lor'themar Theron says: ... may rest on the outcome of this mission. Anu belore dela'na. (patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/No_Fear_of_the_Dark#Notes"
+   },
+   {
+    "quote": "I hope you find him soon. Anu belore dela'na, <Name>. (Lor'themar Theron, quest completion, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Fractured#Completion"
+   },
+   {
+    "quote": "Greetings: Anu belore dela'na. (on-click line; the page's patch note for 12.0.1 says 'Unique On-clicks added')",
+    "where": "https://warcraft.wiki.gg/wiki/Lord_Saltheril#On-click"
+   }
+  ],
+  "confidence": "high",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "Midnight uses the phrase five more times: twice as a toast, once to wish a party well before a mission, once as a parting line and once as an on-click greeting. The Encyclopedia gloss stays. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "anu belore dela'na",
+  "field": "notes",
+  "old": "Greeting among blood and high elves.",
+  "new": "Greeting among blood and high elves. In Midnight (12.0.1) it is also a toast (Lord Saltheril) and a parting wish (Lor'themar Theron).",
+  "confidence": "medium",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "The new Midnight lines show uses beyond a greeting; see the evidence fix. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "al diel shala",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Al diel shala. || Safe travels. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Al diel shala. || Safe travels. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Al diel shala, <name>. (Aethas Sunreaver, last line of the quest completion, patch 12.0.7)",
+    "where": "https://warcraft.wiki.gg/wiki/An_Original_Path_Through_Time_(Midnight)#Completion"
+   },
+   {
+    "quote": "Farewell: Al diel shala. (on-click line; patch 12.0.1 'Unique On-clicks added')",
+    "where": "https://warcraft.wiki.gg/wiki/Lord_Saltheril#On-click"
+   }
+  ],
+  "confidence": "high",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "Two Midnight uses, both as a farewell, which matches the Encyclopedia's 'A farewell.' Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "bal'a dash, malanore",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Bal'a dash, malanore. || Greetings, traveler. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Bal'a dash, malanore. || Greetings, traveler. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Bal'a dash, malanore <name>. Welcome to Silvermoon. (Aethas Sunreaver, gossip, patch 12.0.5)",
+    "where": "https://warcraft.wiki.gg/wiki/Enchanted_Naga_Scroll_(quest)#Notes"
+   },
+   {
+    "quote": "Bal'a dash, malanore. (Bloodguard Nelric, gossip, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Bloodguard_Nelric#Quotes"
+   },
+   {
+    "quote": "Bal'a dash, malanore. The Royal Exchange serves as a sense of normalcy during this time. (Magistrix Nizara, gossip, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Paved_in_Ash_(Horde)#Notes"
+   }
+  ],
+  "confidence": "high",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "Three Midnight speakers open gossip with it; Aethas follows it with 'Welcome to Silvermoon.', which fits the gloss 'Greetings, traveler.' Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "sinu a'manore",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Sinu a'manore. || Well met. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Sinu a'manore, <class>.",
+    "where": "https://warcraft.wiki.gg/wiki/The_World_Awaits_(Midnight)#Description"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Sinu a'manore. || Well met. || A greeting.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "Sinu a'manore, <class>.",
+    "where": "https://warcraft.wiki.gg/wiki/The_World_Awaits_(Midnight)#Description"
+   },
+   {
+    "quote": "Greetings: Sinu a'manore. (Magister Astalor Bloodsworn on-click line, in a section the wiki marks as Midnight; patch 12.0.1 'unique on-click voice-lines added')",
+    "where": "https://warcraft.wiki.gg/wiki/Magister_Astalor_Bloodsworn#On-click"
+   }
+  ],
+  "confidence": "high",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "A second Midnight speaker uses it as a greeting. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "shorel'aran",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Shorel'aran. || Farewell. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "再會了... (zhTW localization of BroadcastText 321680 'Shorel'aran...')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
+   },
+   {
+    "quote": "Shorel'aran…… (zhCN localization of BroadcastText 321680, build 12.1.7.70892; keeps the word)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhCN"
+   },
+   {
+    "quote": "쇼렐러란... (koKR localization of BroadcastText 321680, build 12.1.7.70892; transliterates the word)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=koKR"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Shorel'aran. || Farewell. || A farewell.",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "再會了... (zhTW localization of BroadcastText 321680 'Shorel'aran...')",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhTW"
+   },
+   {
+    "quote": "Shorel'aran…… (zhCN localization of BroadcastText 321680, build 12.1.7.70892; keeps the word)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=zhCN"
+   },
+   {
+    "quote": "쇼렐러란... (koKR localization of BroadcastText 321680, build 12.1.7.70892; transliterates the word)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A321680&locale=koKR"
+   },
+   {
+    "quote": "Prove yourself by challenging the deadliest of places. Shorel'aran. (Aethas Sunreaver, end of the quest description, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Emissary_of_War_(Midnight)#Description"
+   },
+   {
+    "quote": "Farewell: Shorel'aran. (Magister Astalor Bloodsworn on-click line, in a section the wiki marks as Midnight)",
+    "where": "https://warcraft.wiki.gg/wiki/Magister_Astalor_Bloodsworn#On-click"
+   }
+  ],
+  "confidence": "high",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "Two more Midnight uses, both as a sign-off, which matches 'Farewell.' Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "anar'anel belore",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "Anar'anel belore — ... May translate to \"By the power of the sun,\" another line Kael'thas says for the same ability.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "new": [
+   {
+    "quote": "(p4, Taking matter into own hands) Balamore shanal = Prepare to die",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(p4 summon phonex) Anara'nel belore = For the sun (pretty obvious actually)",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "(Flamestrike when Zombie mode at MgT) Felomin ashal! = Fire consumes!",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "For example, playing in WoW-TW will see this: (薩拉斯語)準備道別吧!, which roughly translate to \"(Thalassian)Prepare to farewell!\".",
+    "where": "https://warcraft.wiki.gg/wiki/Talk:Thalassian#Making_a_wild_guess..."
+   },
+   {
+    "quote": "Anar'anel belore — ... May translate to \"By the power of the sun,\" another line Kael'thas says for the same ability.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   },
+   {
+    "quote": "Anar'anel belore! You love to hear it. This news is sure to warm a few hearts for our cause. (Knight-Lord Sunguard, quest completion, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/Sunfire_to_the_Blade#Completion"
+   }
+  ],
+  "confidence": "medium",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "Midnight's only other use of the phrase: a cheer at good news. That fits 'For the sun!', but no source glosses it, so the entry stays inferred. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "lu",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "\"Light's Justice\" is likely the literal translation of \"Lu'selama\".",
+    "where": "https://warcraft.wiki.gg/wiki/Lu%27selama,_Light%27s_Justice"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "\"Light's Justice\" is likely the literal translation of \"Lu'selama\".",
+    "where": "https://warcraft.wiki.gg/wiki/Lu%27selama,_Light%27s_Justice"
+   },
+   {
+    "quote": "Lu'ashal has grown to gargantuan size from the surging Holy energy (Adventure Guide entry for the Eversong world boss, a Light-infused dragonhawk; JournalEncounter 2827, build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/JournalEncounter?filter%5BName_lang%5D=Lu%27ashal"
+   },
+   {
+    "quote": "Lu'ashal has grown to gargantuan size from the surging Holy energy",
+    "where": "https://warcraft.wiki.gg/wiki/Lu%27ashal#Adventure_Guide"
+   }
+  ],
+  "confidence": "medium",
+  "method": "Midnight wiki mining + wago.tools JournalEncounter lookup by name",
+  "reason": "A second Midnight name in which lu- marks something touched by the Light; the wiki's Lu'selama note already points to it. It supports the reading but is not a gloss, so the entry stays inferred."
+ },
+ {
+  "action": "fix",
+  "word": "lu'selama",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Lu'selama = Light's Justice.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "Lu'selama, Light's Justice (ItemSparse 280799 Display_lang, build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/ItemSparse?filter%5BID%5D=exact%3A280799"
+   },
+   {
+    "quote": "Lu'selama, Light's Justice (item page; patch 12.1.5)",
+    "where": "https://warcraft.wiki.gg/wiki/Lu%27selama,_Light%27s_Justice"
+   }
+  ],
+  "confidence": "high",
+  "method": "wago.tools ItemSparse lookup by ID",
+  "reason": "The client's own item table carries the name with its English epithet, a source independent of the wiki primer."
+ },
+ {
+  "action": "fix",
+  "word": "anu'shalla",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Anu'shalla, Shadow's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance"
+   },
+   {
+    "quote": "A purple recolor of this mount, Anu'shalla, Shadow's Guidance, is an achievement reward from Insurmountable Collection, granted by collecting at least 600 mounts usable by a single character.",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   },
+   {
+    "quote": "Reins of Anu'relos, Flame's Guidance teach Anu'relos, Flame's Guidance, a fiery somnowl mount. This item drops from Fyrakk the Blazing in Mythic Amirdrassil, the Dream's Hope.",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Anu'shalla, Shadow's Guidance",
+    "where": "https://warcraft.wiki.gg/wiki/Anu%27shalla,_Shadow%27s_Guidance"
+   },
+   {
+    "quote": "A purple recolor of this mount, Anu'shalla, Shadow's Guidance, is an achievement reward from Insurmountable Collection, granted by collecting at least 600 mounts usable by a single character.",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   },
+   {
+    "quote": "Reins of Anu'relos, Flame's Guidance teach Anu'relos, Flame's Guidance, a fiery somnowl mount. This item drops from Fyrakk the Blazing in Mythic Amirdrassil, the Dream's Hope.",
+    "where": "https://warcraft.wiki.gg/wiki/Reins_of_Anu%27relos,_Flame%27s_Guidance"
+   },
+   {
+    "quote": "Anu'shalla, Shadow's Guidance | Her wings cut through the sky like shadows on a moonlit night. (Mount 2917 Name_lang and Description_lang, build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/Mount?filter%5BID%5D=exact%3A2917"
+   }
+  ],
+  "confidence": "medium",
+  "method": "wago.tools Mount lookup by ID",
+  "reason": "The client's Mount table confirms the name and epithet (patch 12.0.0), and its description is about shadows, which fits shalla 'shadow'. This does not settle the basis question raised in the merge log (epithet versus unverified)."
+ },
+ {
+  "action": "add",
+  "word": "alah'endal",
+  "translation": {
+   "en": "the Dawnsong (an axe's epithet)",
+   "uk": "Пісня Світанку (епітет сокири)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "alah + endal",
+  "notes": "Thalassian. A two-handed axe from Midnight Falls in the March on Quel'Danas raid (item 249296, patch 12.0.1). The epithet may not be a literal translation: the parts read alah 'light' (inferred) + endal 'breath' (segment). The wiki's 'Lightbreath' is in its Speculation section, an editor's guess.",
+  "source": "thalassian",
+  "canon_basis": "epithet",
+  "evidence": [
+   {
+    "quote": "Alah'endal, the Dawnsong (ItemSparse 249296 Display_lang, build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/ItemSparse?filter%5BID%5D=exact%3A249296"
+   },
+   {
+    "quote": "Alah'endal, the Dawnsong drops from Midnight Falls in the March on Quel'Danas.",
+    "where": "https://warcraft.wiki.gg/wiki/Alah%27endal,_the_Dawnsong"
+   },
+   {
+    "quote": "though not official, \"endal\" may translate to \"breath\", making the name perhaps mean \"Lightbreath\" (editor's speculation)",
+    "where": "https://warcraft.wiki.gg/wiki/Alah%27endal,_the_Dawnsong#Speculation"
+   },
+   {
+    "quote": "Alah'endal — An axe.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Proper_nouns"
+   }
+  ],
+  "method": "item name with English epithet (client ItemSparse via wago.tools, and the wiki item page)",
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "belo'melorn",
+  "translation": {
+   "en": "the Shattered Talon (a dagger's epithet)",
+   "uk": "Розбитий Кіготь (епітет кинджала)"
+  },
+  "pos": "noun",
+  "canon": true,
+  "root": "belo + melorn",
+  "notes": "Thalassian. A dagger from the March on Quel'Danas raid (item 249283, patch 12.0.1). The epithet is not a literal translation. In beta it was named Belo'ren's Mystic Talon (wiki trivia), so belo- probably comes from the phoenix Belo'ren; melorn 'strike' is a segment of Felo'melorn. The wiki's 'Sunstrike' is an editor's guess.",
+  "source": "thalassian",
+  "canon_basis": "epithet",
+  "evidence": [
+   {
+    "quote": "Belo'melorn, the Shattered Talon (ItemSparse 249283 Display_lang, build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/ItemSparse?filter%5BID%5D=exact%3A249283"
+   },
+   {
+    "quote": "During beta, it was renamed from Belo'ren's Mystic Talon.",
+    "where": "https://warcraft.wiki.gg/wiki/Belo%27melorn,_the_Shattered_Talon#Trivia"
+   },
+   {
+    "quote": "the name likely translates to \"Sunstrike\" (editor's guess)",
+    "where": "https://warcraft.wiki.gg/wiki/Belo%27melorn,_the_Shattered_Talon#Trivia"
+   },
+   {
+    "quote": "Belo'melorn — A dagger.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Proper_nouns"
+   }
+  ],
+  "method": "item name with English epithet (client ItemSparse via wago.tools, and the wiki item page)",
+  "confidence": "medium"
+ },
+ {
+  "action": "note",
+  "word": "quel'falan danas",
+  "translation": null,
+  "source": "thalassian",
+  "canon_basis": null,
+  "notes": "Unglossed. The closing line of the Silversun Compact (patch 12.0.1), a pact for mages to work together, signed by Vereesa Windrunner and Aethas Sunreaver. Only quel 'high' is known.",
+  "evidence": [
+   {
+    "quote": "In memory of Theramore, Dalaran, and the Sunwell. Quel'falan danas!",
+    "where": "https://warcraft.wiki.gg/wiki/The_Silversun_Compact_(object)#Content"
+   },
+   {
+    "quote": "Quel'falan danas! — Phrase used at the end of The Silversun Compact.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
+   }
+  ],
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "confidence": "low",
+  "reason": "On the wiki, not in the lexicon. No character, quest text or item explains it in English. Not independently confirmed: the compact's text is server-side."
+ },
+ {
+  "action": "note",
+  "word": "belo'ren",
+  "translation": null,
+  "source": "thalassian",
+  "canon_basis": "name",
+  "notes": "Name of a phoenix boss, Belo'ren, Child of Al'ar (March on Quel'Danas, patch 12.0.1); Blizzard states the referent but not a meaning. The parts could read belo(re) 'sun' + ren 'void', which fits a phoenix of the Sunwell that the Adventure Guide says was irradiated by Void, but that is this report's guess. Belo- also starts Belo'melorn (whose beta name was Belo'ren's Mystic Talon) and the old name Belo'vir.",
+  "evidence": [
+   {
+    "quote": "Belo'ren, Child of Al'ar | One of the last clutch of Al'ar ... Belo'ren has been irradiated by Void. (JournalEncounter 2739, build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/JournalEncounter?filter%5BName_lang%5D=Belo%27ren"
+   },
+   {
+    "quote": "Belo'ren — A phoenix, child of Al'ar, guarding the Sunwell on the Isle of Quel'Danas.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Proper_nouns"
+   }
+  ],
+  "method": "Midnight wiki mining + wago.tools JournalEncounter lookup by name",
+  "confidence": "low",
+  "reason": "A Midnight name on the wiki's list, not in the lexicon. No gloss; the segmentation is a guess."
+ }
+]
