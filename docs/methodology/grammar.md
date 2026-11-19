@@ -241,7 +241,7 @@ The canon is silent on the points below. Each convention is the smallest one tha
 2. **"You"** is *'a* after a verb and *a* before it. "Your" is the canon *mal* (section 5.2).
 3. **Third person** is *dan* for every gender, number and role.
 4. **"My", "his", "their"** are *o* and *dan* after the noun, like *na* "our".
-5. **Plural, when it matters:** add a number or a word such as *aeess* "many" before the noun. Those words are not attested; they come from the [Method 7 generator](../../research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model) (report 8). Never add *-i*.
+5. **Plural, when it matters:** add a number or a word such as *jaras* "many" before the noun. Those words are not attested; they come from the [Method 7 generator](../../research/2026-11-revival/1-review-and-methods.md#method-7-phonotactic-model) (report 8). Never add *-i*.
 6. **Past tense, when it matters:** add a time word. There is no verb ending.
 7. **Negation:** one particle before the verb, the generated *la*. The [November 2026 audit](../../research/2026-11-revival/8-reconstruction-audit.md) removed the second negator, *nath*: it is one letter from Darnassian *anath* and part of an Orcish scrambler word.
 8. **Yes/no questions** keep statement order and end in "?". Question words come first (section 2.3).

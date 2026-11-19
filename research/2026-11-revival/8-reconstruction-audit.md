@@ -8,7 +8,7 @@ Date: 2026-11-18. The owner's request: "audit the existing reconstruction - it w
 2. **The invented vocabulary still had the flaws report 1 found, and more.** The audit reviewed 118 entries: 107 generated words, 2 extrapolated and 9 unverified. It made 98 proposals: 9 removals, 42 new forms, 23 fixes and 24 notes.
 3. **The fixes are applied.** 12 entries were removed, 27 fields fixed and 37 forms replaced. 4 notes changed nothing, and 28 low-confidence proposals are held back.
 4. **The basic vocabulary is now complete.** 114 generated words were added. Before, 112 of the 207 Swadesh meanings had no entry; now none is missing.
-5. **The lexicon grew from 314 to 416 entries.** 210 of them are generated. The 151 made in this pass record how: 147 name their generator, seed and score, and four say they are conventions or rebuilt compounds.
+5. **The lexicon grew from 314 to 416 entries.** 210 of them are generated. The 151 made in this pass record how: 149 name their generator and seed (147 drawn words with their score, and two compounds rebuilt on a drawn word), and the two object clitics cite grammar section 5.1.
 6. **The translator scores a little higher.** On the 39 official Thalassian glosses, exact matches rose from 9 to 10 and the mean F1 from 0.716 to 0.729 (see [Translator score](#translator-score)).
 
 The audit's own write-ups are the appendices: [vocabulary findings](8-audit/vocab-findings.md) and [grammar findings](8-audit/grammar-findings.md). Every action is in [8-candidates.json](8-candidates.json), and the [merge log](merge-log.md#reconstruction-audit-8-candidatesjson) lists what was applied.
@@ -65,7 +65,7 @@ These decisions were taken before the work started:
 These were decided during the work:
 1. **mal "your" is not added.** November held it back at low confidence, because its meaning comes from elimination within one phrase, *Elu'meniel mal alann* "May peace calm your heart". That still holds. The in-game line (report 4) confirms the form, not the meaning. The split is also not unique: Thalassian often leaves "your" unsaid (*Anaria shola* "Speak your business"), so *mal* could as well be "calm". It is listed as a held-back add.
 2. **isera is removed, and "green" gets a generated word.** The audit proposed a new form for *isera*, but *isera* is an attested Darnassian form (Ysera's name, the scrambler word *Isera'duna*), not a generated word. So the proposal became a removal plus an add.
-3. **Two compounds were rebuilt.** The audit's notes on *thas'ore* "tree" and *rashis'ael* "smell" say to rebuild them if their part gets a new form. Both parts did, so they are now *thas'akus* and *isius'ael*.
+3. **Two compounds were rebuilt.** The audit's notes on *thas'ore* "tree" and *rashis'ael* "smell" say to rebuild them if their part gets a new form. Both parts did, so they are now *thas'akus* and *azsil'ael*.
 4. **Six regenerated words keep one sense.** Their glosses joined two senses (vocabulary findings, section 4): *carth* "work/do" became "work", and likewise *ashad* "find", *iel* "love", *reom* "food", *isbab* "fortress" and *dara* "good".
 5. **A fix does not copy the audit's evidence into the entry.** That evidence describes the old value (for example "delar = sword/keeper"), so it stays in 8-candidates.json.
 
@@ -75,7 +75,7 @@ These were decided during the work:
 |---|---|---|
 | Removed | 12 | the 9 audit removals (*sira*, *thala*, *mith*, *doras*, *fa*, *tala*, *selorue*, *al'ore*, *nath*), plus *on*, *il'ore* and *isera* |
 | Fixed | 27 fields | *delar*, *aran*, *rath*, *kanesh*, *alon* and *ledel* now say "(unknown; ...)"; five invented shared roots are gone; *la* is a particle; 6 two-sense glosses narrowed |
-| New form | 37 | *ore* → *akus* "one", *rashis* → *isius* "nose", *thas'nor* → *lel* "root", *lura'sin* → *azsil* "drink" |
+| New form | 37 | *ore* → *akus* "one", *rashis* → *azsil* "nose", *thas'nor* → *lel* "root", *lura'sin* → *surai* "drink" |
 | Added | 114 | 111 Swadesh meanings, "green", *'a* and *'dan* |
 | Noted, no change | 4 | *othina*, *aluta*, *thas'iel*, *ro'shin*: decisions nobody has taken yet |
 | Held back | 28 | 18 low notes, 5 low fixes, 4 low new forms (*neal*, *tabe*, *oranuer*, *eralleb*) and *mal* |
@@ -92,19 +92,21 @@ Each new form's entry records why the old one went: "Replaced carth: a poor fit 
 
 **Filters.** A sample is rejected if it:
 1. uses a rare letter (q, x, c), ends in *-is* or *-ael*, has no vowel, or breaks report 1's phonotactic filter;
-2. is an English word or name, or a real word in another language (126 listed: 19 the audit flagged, 107 found by reading the output, such as *nos*, *rei* and *shinel*);
+2. is an English word or name, a real word in another language (128 listed: 19 the audit flagged, 109 found by reading the output, such as *nos*, *rei* and *shinel*), or a name in the game's name generator;
 3. equals an attested elven form or part, or is one letter from one (at four letters or more);
-4. contains an attested part with a known meaning, or any attested part of four letters or more, or sits inside an attested form;
-5. equals a scrambler word of any in-game language, or a Titan or Zandali form, or is one letter from one;
+4. contains an attested part with a known meaning (such as *min* of *min'da* "mama"), or any attested part of four letters or more, or sits inside an attested form;
+5. equals a scrambler word of any in-game language, or a Titan or Zandali form, or is one letter from one (at four letters or more);
 6. equals a lexicon word or another new word, or is one letter from one, when either has four letters or more.
 
-Filters 4 and 6 go further than the plan. Without them, the model drew pieces of names (*divh* from Medivh, *elunos* from Elune) and minimal pairs such as *irar* "leg" and *rar*.
+Filters 4 and 6 and the name check go further than the plan. Without them, the model drew pieces of names (*divh* from Medivh, *elunos* from Elune), minimal pairs such as *irar* "leg" and *rar*, and *lem*, a gnome name in the name generator (the audit's reason to drop *dara* and *tala*).
+
+One rule is narrower than the plan. The plan rejected a word one letter from a scrambler word, a Titan or Zandali form, a lexicon word or another new word at any length. The generator counts one letter only from four letters up, as the audit's own checks do (vocabulary findings, section 1). Under the plan's wording, all 37 two- and three-letter words drawn here would fail, and so would 92% of the model's three-letter samples and all of its two-letter ones: the plan's two-to-four-letter function words could not exist.
 
 **Selection.** The length comes first, drawn from the lengths of attested words: 2 to 4 letters for function words (question words, conjunctions, numbers, demonstratives, the two prepositions), 3 to 7 for content words. Then the best-scoring of 10,000 samples of that length wins. Without the length draw, every content word came out at seven letters, because the score per letter rewards length.
 
-**Fit.** The 147 drawn forms sit at a median percentile of 66 among the attested parts, scored leave-one-out (range 18 to 100). A naive-Bayes classifier with report 1's features tells them from the attested parts with an AUC of 0.66. On the same parts, the 92 older invented morphemes score 0.71, and two random halves of the attested parts 0.50. So the new words fit better, but they are still not indistinguishable.
+**Fit.** The 147 drawn forms sit at a median percentile of 66 among the attested parts, scored leave-one-out (range 18 to 100). A naive-Bayes classifier with report 1's features tells them from the attested parts with an AUC of 0.68 (mean of 20 cross-validation seeds). On the same parts, the 92 older invented morphemes score 0.71, and two random halves of the attested parts 0.50. So the new words fit better, but they are still not indistinguishable.
 
-**Inputs that stay local.** The scrambler lists, the audit's own files and the system word list are not in git. That is why 8-candidates.json is committed: it is the reviewable input, and the recipe never runs the generator. Run on the lexicon that apply_voice.py leaves, the generator rebuilds 8-candidates.json byte for byte.
+**Inputs that stay local.** The scrambler lists, the name generator's names, the audit's own files and the system word list are not in git. That is why 8-candidates.json is committed: it is the reviewable input, and the recipe never runs the generator. Run on the lexicon that apply_voice.py leaves, the generator rebuilds 8-candidates.json byte for byte.
 
 ## 6. The extension
 
@@ -125,7 +127,7 @@ Some new words:
 |---|---|---|---|
 | water | *morlath* | one, three, four, five | *akus*, *aen*, *sarr*, *beir* |
 | moon | *suramen* | what, where, when | *jaha*, *rin*, *zas* |
-| rain | *nazel* | if, because | *pel*, *ae* |
+| rain | *nazel* | if, because | *enn*, *ae* |
 | mountain | *medin* | in, at (proclitics: *elil'thalas*) | *elil'*, *ror'* |
 | name | *ethrin* | you, him/her/it/them (clitics) | *'a*, *'dan* |
 | year | *theldir* | green, yellow | *thelath*, *urei* |
@@ -172,3 +174,4 @@ Three probes changed, two for the worse, because the Python engine still uses th
 6. **The engines were not updated.** parser.py, morphology/ and web/ still use the March pronoun tables (*on*, *anu*, *danu*), plurals and dropped prepositions.
 7. **Collisions are checked only against what the repo holds.** Server-side elven lines are not in the client, so a new word may still match one.
 8. **The held-back items stay open:** *mal*, the four low new forms, the five low fixes and the 18 low notes. They are listed in the [merge log](merge-log.md#reconstruction-audit-8-candidatesjson).
+9. **A change to the filters moves many words.** Each meaning takes the best form among its own samples, but the best forms recur from meaning to meaning, so barring one word passes forms down the draw order. Barring seven words late in the work (six that held a three-letter part with a known meaning, such as *min*, and the name *lem*) gave 25 entries a different form.

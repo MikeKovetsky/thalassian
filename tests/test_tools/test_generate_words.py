@@ -20,10 +20,12 @@ def entry(word, source="thalassian", basis="segment", en="x"):
     return {"word": word, "source": source, "canon_basis": basis, "translation": {"en": en, "uk": "x"}}
 
 
-def inventory(lexicon=None, forms=(), scramblers=(), english=(), foreign=None, alphabet="abdefghijklmnoprstuvwyz"):
+def inventory(lexicon=None, forms=(), scramblers=(), english=(), foreign=None, alphabet="abdefghijklmnoprstuvwyz",
+              names=()):
     """A toy inventory. The toy training set is too small for MIN_LETTER_PARTS, so the alphabet is set by hand."""
     lexicon = lexicon if lexicon is not None else [entry(w) for w in TRAIN]
-    inv = g.Inventory(lexicon, list(forms), list(scramblers), set(english), foreign={} if foreign is None else foreign)
+    inv = g.Inventory(lexicon, list(forms), list(scramblers), set(english), foreign={} if foreign is None else foreign,
+                      names=names)
     if alphabet:
         inv.alphabet = set(alphabet)
     return inv
@@ -85,6 +87,10 @@ class TestFilters(unittest.TestCase):
         self.assertIsNone(g.near("tel", {"tal"}))
         self.assertIsNone(g.near("tolar", {"tal"}))
         self.assertEqual(g.near("talor", {"falor"}), "falor")
+        # symmetric (lexicon and new words): the four letters may be the other word's, as in irar "leg" and rar.
+        self.assertIsNone(g.near("rar", {"irar"}))
+        self.assertEqual(g.near("rar", {"irar"}, symmetric=True), "irar")
+        self.assertIsNone(g.near("rar", {"ral"}, symmetric=True))
 
     def test_phonotactics(self):
         for word in ("thalas", "shindel", "drali", "anu"):
@@ -97,18 +103,21 @@ class TestFilters(unittest.TestCase):
 
     def test_each_reason(self):
         lexicon = [entry(w) for w in TRAIN] + [entry("nubu", "generated", "generated", "fast"),
-                                               entry("delar", "thalassian", "unverified", "(unknown)")]
+                                               entry("delar", "thalassian", "unverified", "(unknown)"),
+                                               entry("min'da", "darnassian", "attested", "mama")]
         forms = [{"form": "Thala nar'valas", "branch": "shalassian"}, {"form": "Fa'da", "branch": "zandali"}]
         inv = inventory(lexicon, forms, scramblers=["Kazum'nobu", "Shari"], english={"moon", "sir"},
-                        foreign={"meir": "given name"})
+                        foreign={"meir": "given name"}, names=["Lem"])
         cases = {
             "qalas": "alphabet",  # q is in no training part
             "thelis": "ending -is or -ael", "dris'ael".replace("'", ""): "ending -is or -ael",
             "rthala": "phonotactics", "sir": "English word", "meir": "word in another language",
+            "lem": "name in the name generator",
             "thala": "attested form", "delar": "attested form", "valas": "attested form",
             "selamo": "attested form",  # one edit from selama
             "ishelor": "contains a part with a known meaning",  # elor
             "vadiel": "contains a part with a known meaning",  # diel
+            "aminu": "contains a part with a known meaning",  # min, the one part of min'da "mama"
             "ovalasi": "contains an attested part of four letters or more",  # valas, meaning unknown
             "orel": "is inside an attested form",  # shorel
             "fada": "Titan or Zandali form", "nobu": "scrambler word", "shari": "scrambler word",
@@ -124,6 +133,7 @@ class TestFilters(unittest.TestCase):
         self.assertIsNone(inv.reject("ves"))
         self.assertEqual(inv.reject("ves", ["ves"]), "another new word")
         self.assertIsNone(inv.reject("ves", ["vas"]))
+        self.assertEqual(inv.reject("ves", ["vesa"]), "another new word")
 
     def test_english_name_parts_are_not_learned_but_still_block(self):
         forms = [{"form": "Maiev Shadowsong", "branch": "ancient-name"}]
@@ -214,6 +224,23 @@ class TestCommittedCandidates(unittest.TestCase):
             for b in forms[i + 1:]:
                 self.assertIsNone(g.near(a, {b}), (a, b))
 
+    def test_no_drawn_form_holds_a_part_with_a_known_meaning(self):
+        # Recomputed from the lexicon with shared_core.parts(), not with g.known_parts(): a glossed elven entry that
+        # parts() splits into one part (min'da gives min) gives a part no new word may contain. The lexicon after the
+        # audit glosses no part that it did not gloss when the words were drawn, so this is a fair check.
+        with open(g.LEX, encoding="utf-8") as fh:
+            lexicon = json.load(fh)
+        known = set()
+        for e in lexicon:
+            if (e["source"] in g.ELVEN and e["canon_basis"] not in ("generated", "unverified")
+                    and not e["translation"]["en"].startswith("(unknown")):
+                found = g.parts(e["word"])
+                if len(found) == 1:
+                    known.add(found[0])
+        self.assertTrue({"min", "ann", "bal"} <= known)
+        for _, form, _ in self.drawn():
+            self.assertEqual([p for p in known if p in form], [], form)
+
     def test_every_missing_swadesh_meaning_gets_one_add(self):
         items = Counter(c.get("swadesh") for c in self.candidates if c["action"] == "add" and c["confidence"] != "low")
         self.assertEqual(set(items.values()), {1})
@@ -231,6 +258,9 @@ class TestCommittedCandidates(unittest.TestCase):
         self.assertIn(("add", "'dan"), by)
         ore = by[("regenerate", "ore")]["new"]
         self.assertEqual(by[("regenerate", "thas'ore")]["new"], f"thas'{ore}")
+        # A rebuilt compound names the seed its new part was drawn with.
+        self.assertIn(f"seed {g.seed_for('one')} (SHA-256 of 'one')", by[("regenerate", "thas'ore")]["method"])
+        self.assertIn(f"seed {g.seed_for('nose')} (SHA-256 of 'nose')", by[("regenerate", "rashis'ael")]["method"])
 
 
 if __name__ == "__main__":

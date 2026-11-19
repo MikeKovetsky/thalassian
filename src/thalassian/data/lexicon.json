@@ -2018,19 +2018,19 @@
     ]
   },
   {
-    "word": "aminu",
+    "word": "isius",
     "translation": {
       "uk": "срібло",
       "en": "silver"
     },
     "pos": "noun",
     "canon": false,
-    "root": "aminu",
+    "root": "isius",
     "notes": "Replaced felash: it read fel + ash, 'fire-ash' (November 2026 audit).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 132825727385159 (SHA-256 of 'silver'); -1.54 nats per character, at percentile 78 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 132825727385159 (SHA-256 of 'silver'); -1.60 nats per character, at percentile 72 of the attested parts",
     "evidence": [
       {
         "quote": "felo = fire/flame (lexicon, segment, thalassian)",
@@ -2277,19 +2277,19 @@
     "canon_basis": "generated"
   },
   {
-    "word": "thann",
+    "word": "thess",
     "translation": {
       "uk": "хоробрий",
       "en": "brave"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "thann",
+    "root": "thess",
     "notes": "Replaced onar: one letter from canon anar 'by' (November 2026 audit).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 177825091627963 (SHA-256 of 'brave'); -1.57 nats per character, at percentile 75 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 177825091627963 (SHA-256 of 'brave'); -1.61 nats per character, at percentile 71 of the attested parts",
     "evidence": [
       {
         "quote": "anar = by (lexicon, segment, thalassian)",
@@ -2708,7 +2708,7 @@
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "rebuilt with the regenerated ore -> akus (generate_words.py)",
+    "method": "generate_words.py: rebuilt with the regenerated ore -> akus, drawn with seed 130372720211264 (SHA-256 of 'one')",
     "evidence": [
       {
         "quote": "ore = one (lexicon, generated, generated_swadesh)",
@@ -2923,19 +2923,19 @@
     ]
   },
   {
-    "word": "isius",
+    "word": "azsil",
     "translation": {
       "uk": "ніс",
       "en": "nose"
     },
     "pos": "noun",
     "canon": false,
-    "root": "isius",
+    "root": "azsil",
     "notes": "Replaced rashis: it reads as Ukrainian рашист, a wartime pejorative (November 2026 audit).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 236936737472100 (SHA-256 of 'nose'); -1.60 nats per character, at percentile 72 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 236936737472100 (SHA-256 of 'nose'); -1.61 nats per character, at percentile 71 of the attested parts",
     "evidence": [
       {
         "quote": "rashis: KN -2.79 nats/char, 17.2th percentile of canon (leave-one-out; canon median -1.97); naive-Bayes 0.4th percentile",
@@ -3161,19 +3161,19 @@
     "canon_basis": "generated"
   },
   {
-    "word": "azsil",
+    "word": "surai",
     "translation": {
       "uk": "пити",
       "en": "drink"
     },
     "pos": "verb",
     "canon": false,
-    "root": "azsil",
+    "root": "surai",
     "notes": "Replaced lura'sin: lura is 'sea' and sin 'blood', so it read 'sea-blood', a noun (November 2026 audit).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "high",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 36880459778406 (SHA-256 of 'drink'); -1.61 nats per character, at percentile 71 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 36880459778406 (SHA-256 of 'drink'); -1.62 nats per character, at percentile 71 of the attested parts",
     "evidence": [
       {
         "quote": "lura = sea (lexicon, attested, darnassian)",
@@ -3246,19 +3246,19 @@
     "canon_basis": "generated"
   },
   {
-    "word": "surai",
+    "word": "aeess",
     "translation": {
       "uk": "сміятися",
       "en": "laugh"
     },
     "pos": "verb",
     "canon": false,
-    "root": "surai",
+    "root": "aeess",
     "notes": "Replaced elara: one letter from Darnassian alara (Alara'shinu), and built on el, a removed mis-segmentation (November 2026 audit).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 54849046918760 (SHA-256 of 'laugh'); -1.62 nats per character, at percentile 71 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 54849046918760 (SHA-256 of 'laugh'); -1.64 nats per character, at percentile 71 of the attested parts",
     "evidence": [
       {
         "quote": "alara'shinu = finding beauty in imperfection (lexicon, attested, darnassian)",
@@ -3359,19 +3359,19 @@
     ]
   },
   {
-    "word": "isius'ael",
+    "word": "azsil'ael",
     "translation": {
       "uk": "нюхати",
       "en": "smell"
     },
     "pos": "verb",
     "canon": false,
-    "root": "isius'ael",
+    "root": "azsil'ael",
     "notes": "Replaced rashis'ael: it was built on rashis 'nose', which was regenerated (November 2026 audit).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "rebuilt with the regenerated rashis -> isius (generate_words.py)",
+    "method": "generate_words.py: rebuilt with the regenerated rashis -> azsil, drawn with seed 236936737472100 (SHA-256 of 'nose')",
     "evidence": [
       {
         "quote": "rashis = nose (lexicon, generated, generated_swadesh)",
@@ -6797,14 +6797,14 @@
     "evidence": []
   },
   {
-    "word": "aeess",
+    "word": "jaras",
     "translation": {
       "en": "many",
       "uk": "багато"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "aeess",
+    "root": "jaras",
     "notes": "Swadesh-207 item 18, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
@@ -6925,19 +6925,19 @@
     "evidence": []
   },
   {
-    "word": "thess",
+    "word": "drion",
     "translation": {
       "en": "wide",
       "uk": "широкий"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "thess",
+    "root": "drion",
     "notes": "Swadesh-207 item 29, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 11796732383299 (SHA-256 of 'wide'); -1.61 nats per character, at percentile 71 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 11796732383299 (SHA-256 of 'wide'); -1.66 nats per character, at percentile 69 of the attested parts",
     "evidence": []
   },
   {
@@ -7037,19 +7037,19 @@
     "evidence": []
   },
   {
-    "word": "aminel",
+    "word": "ishnos",
     "translation": {
       "en": "husband",
       "uk": "чоловік (у шлюбі)"
     },
     "pos": "noun",
     "canon": false,
-    "root": "aminel",
+    "root": "ishnos",
     "notes": "Swadesh-207 item 41, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 175846959135034 (SHA-256 of 'husband'); -1.44 nats per character, at percentile 85 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 175846959135034 (SHA-256 of 'husband'); -1.51 nats per character, at percentile 82 of the attested parts",
     "evidence": []
   },
   {
@@ -7181,14 +7181,14 @@
     "evidence": []
   },
   {
-    "word": "jaras",
+    "word": "amenu",
     "translation": {
       "en": "grass",
       "uk": "трава"
     },
     "pos": "noun",
     "canon": false,
-    "root": "jaras",
+    "root": "amenu",
     "notes": "Swadesh-207 item 60, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
@@ -7325,19 +7325,19 @@
     "evidence": []
   },
   {
-    "word": "drion",
+    "word": "illas",
     "translation": {
       "en": "breast",
       "uk": "груди"
     },
     "pos": "noun",
     "canon": false,
-    "root": "drion",
+    "root": "illas",
     "notes": "Swadesh-207 item 89, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 61656091472952 (SHA-256 of 'breast'); -1.66 nats per character, at percentile 69 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 61656091472952 (SHA-256 of 'breast'); -1.67 nats per character, at percentile 69 of the attested parts",
     "evidence": []
   },
   {
@@ -7389,35 +7389,35 @@
     "evidence": []
   },
   {
-    "word": "illas",
+    "word": "amius",
     "translation": {
       "en": "vomit",
       "uk": "блювати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "illas",
+    "root": "amius",
     "notes": "Swadesh-207 item 97, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 24477963578630 (SHA-256 of 'to vomit'); -1.67 nats per character, at percentile 69 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 24477963578630 (SHA-256 of 'to vomit'); -1.68 nats per character, at percentile 68 of the attested parts",
     "evidence": []
   },
   {
-    "word": "ishnos",
+    "word": "ethrei",
     "translation": {
       "en": "hunt",
       "uk": "полювати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "ishnos",
+    "root": "ethrei",
     "notes": "Swadesh-207 item 112, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 15590690819015 (SHA-256 of 'to hunt'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 15590690819015 (SHA-256 of 'to hunt'); -1.52 nats per character, at percentile 81 of the attested parts",
     "evidence": []
   },
   {
@@ -7485,19 +7485,19 @@
     "evidence": []
   },
   {
-    "word": "lem",
+    "word": "kae",
     "translation": {
       "en": "dig",
       "uk": "копати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "lem",
+    "root": "kae",
     "notes": "Swadesh-207 item 118, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 15835182884792 (SHA-256 of 'to dig'); -2.47 nats per character, at percentile 24 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 15835182884792 (SHA-256 of 'to dig'); -2.50 nats per character, at percentile 22 of the attested parts",
     "evidence": []
   },
   {
@@ -7533,19 +7533,19 @@
     "evidence": []
   },
   {
-    "word": "balen",
+    "word": "derai",
     "translation": {
       "en": "lie (down)",
       "uk": "лежати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "balen",
+    "root": "derai",
     "notes": "Swadesh-207 item 123, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 80627636057035 (SHA-256 of 'to lie (as in a bed)'); -1.70 nats per character, at percentile 66 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 80627636057035 (SHA-256 of 'to lie (as in a bed)'); -1.72 nats per character, at percentile 65 of the attested parts",
     "evidence": []
   },
   {
@@ -7789,19 +7789,19 @@
     "evidence": []
   },
   {
-    "word": "kae",
+    "word": "pel",
     "translation": {
       "en": "sing",
       "uk": "співати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "kae",
+    "root": "pel",
     "notes": "Swadesh-207 item 141, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 135611839500268 (SHA-256 of 'to sing'); -2.50 nats per character, at percentile 22 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 135611839500268 (SHA-256 of 'to sing'); -2.56 nats per character, at percentile 20 of the attested parts",
     "evidence": []
   },
   {
@@ -7853,19 +7853,19 @@
     "evidence": []
   },
   {
-    "word": "annari",
+    "word": "malfus",
     "translation": {
       "en": "swell",
       "uk": "набрякати"
     },
     "pos": "verb",
     "canon": false,
-    "root": "annari",
+    "root": "malfus",
     "notes": "Swadesh-207 item 146, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 109519003903285 (SHA-256 of 'to swell'); -1.51 nats per character, at percentile 82 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 109519003903285 (SHA-256 of 'to swell'); -1.52 nats per character, at percentile 81 of the attested parts",
     "evidence": []
   },
   {
@@ -7965,19 +7965,19 @@
     "evidence": []
   },
   {
-    "word": "derai",
+    "word": "amelo",
     "translation": {
       "en": "sand",
       "uk": "пісок"
     },
     "pos": "noun",
     "canon": false,
-    "root": "derai",
+    "root": "amelo",
     "notes": "Swadesh-207 item 157, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 272255781459331 (SHA-256 of 'sand'); -1.72 nats per character, at percentile 65 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 272255781459331 (SHA-256 of 'sand'); -1.74 nats per character, at percentile 64 of the attested parts",
     "evidence": []
   },
   {
@@ -8045,19 +8045,19 @@
     "evidence": []
   },
   {
-    "word": "amius",
+    "word": "dienu",
     "translation": {
       "en": "smoke",
       "uk": "дим"
     },
     "pos": "noun",
     "canon": false,
-    "root": "amius",
+    "root": "dienu",
     "notes": "Swadesh-207 item 166, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 5315169567160 (SHA-256 of 'smoke'); -1.68 nats per character, at percentile 68 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 5315169567160 (SHA-256 of 'smoke'); -1.73 nats per character, at percentile 64 of the attested parts",
     "evidence": []
   },
   {
@@ -8077,19 +8077,19 @@
     "evidence": []
   },
   {
-    "word": "amelo",
+    "word": "eldel",
     "translation": {
       "en": "burn",
       "uk": "горіти"
     },
     "pos": "verb",
     "canon": false,
-    "root": "amelo",
+    "root": "eldel",
     "notes": "Swadesh-207 item 169, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 190346383999141 (SHA-256 of 'to burn'); -1.74 nats per character, at percentile 64 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 190346383999141 (SHA-256 of 'to burn'); -1.75 nats per character, at percentile 63 of the attested parts",
     "evidence": []
   },
   {
@@ -8157,19 +8157,19 @@
     "evidence": []
   },
   {
-    "word": "annas",
+    "word": "zephi",
     "translation": {
       "en": "full",
       "uk": "повний"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "annas",
+    "root": "zephi",
     "notes": "Swadesh-207 item 182, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 177620630843009 (SHA-256 of 'full'); -1.70 nats per character, at percentile 66 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 177620630843009 (SHA-256 of 'full'); -1.74 nats per character, at percentile 64 of the attested parts",
     "evidence": []
   },
   {
@@ -8189,19 +8189,19 @@
     "evidence": []
   },
   {
-    "word": "zephi",
+    "word": "altir",
     "translation": {
       "en": "rotten",
       "uk": "гнилий"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "zephi",
+    "root": "altir",
     "notes": "Swadesh-207 item 187, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 261294630962814 (SHA-256 of 'rotten'); -1.74 nats per character, at percentile 64 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 261294630962814 (SHA-256 of 'rotten'); -1.77 nats per character, at percentile 61 of the attested parts",
     "evidence": []
   },
   {
@@ -8285,14 +8285,14 @@
     "evidence": []
   },
   {
-    "word": "eluel",
+    "word": "isian",
     "translation": {
       "en": "smooth",
       "uk": "гладкий"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "eluel",
+    "root": "isian",
     "notes": "Swadesh-207 item 193, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
@@ -8397,19 +8397,19 @@
     "evidence": []
   },
   {
-    "word": "malfus",
+    "word": "menius",
     "translation": {
       "en": "left (side)",
       "uk": "лівий"
     },
     "pos": "adjective",
     "canon": false,
-    "root": "malfus",
+    "root": "menius",
     "notes": "Swadesh-207 item 200, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 59440267221314 (SHA-256 of 'left'); -1.52 nats per character, at percentile 81 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 59440267221314 (SHA-256 of 'left'); -1.53 nats per character, at percentile 81 of the attested parts",
     "evidence": []
   },
   {
@@ -8445,19 +8445,19 @@
     "evidence": []
   },
   {
-    "word": "pel",
+    "word": "enn",
     "translation": {
       "en": "if",
       "uk": "якщо"
     },
     "pos": "conjunction",
     "canon": false,
-    "root": "pel",
+    "root": "enn",
     "notes": "Swadesh-207 item 205, missing before the November 2026 audit (report 8).",
     "source": "generated",
     "canon_basis": "generated",
     "confidence": "medium",
-    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 162037979258191 (SHA-256 of 'if'); -2.56 nats per character, at percentile 20 of the attested parts",
+    "method": "generate_words.py: order-4 Kneser-Ney character model, best of 10000 samples, seed 162037979258191 (SHA-256 of 'if'); -2.58 nats per character, at percentile 19 of the attested parts",
     "evidence": []
   },
   {

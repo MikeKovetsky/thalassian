@@ -16,18 +16,20 @@ Filters. A sample is rejected if it:
 1. uses a letter that fewer than five attested parts use (q, x and c), ends in -is or -ael, has no vowel, or breaks
    report 1's phonotactic filter (three consonants in a row, a tripled letter, an ending other than a vowel or
    l r n s h th sh m d x, or a word-initial cluster other than th, sh and dr);
-2. is an English word or name of three letters or more (/usr/share/dict/words and propernames), or a word in FOREIGN:
-   the real words in other languages that the audit flagged, and those a reading of this script's output found;
+2. is an English word or name of three letters or more (/usr/share/dict/words and propernames), a word in FOREIGN
+   (the real words in other languages that the audit flagged, and those a reading of this script's output found), or
+   a name in the game's name generator, for any race (the audit's finding 1e: dara and tala);
 3. equals, or (at four letters or more) is one edit from, an attested elven form or part, names and words of unknown
    meaning included;
-4. contains an attested part of three letters or more whose meaning is known, or any attested part of four letters
-   or more, or (at four letters or more) is itself inside an attested form, like sira in Sira'kess;
+4. contains an attested part of three letters or more whose meaning is known (a glossed entry that shared_core.parts()
+   splits into one part, so min'da "mama" gives min), or any attested part of four letters or more, or (at four
+   letters or more) is itself inside an attested form, like sira in Sira'kess;
 5. equals, or (at four letters or more) is one edit from, a scrambler word of any in-game language or a Titan or
    Zandali form;
 6. equals, or is one edit from, a word of the lexicon or another new word, when either word has four letters or more
    (the audit's test for minimal pairs: tala ~ tal).
-Below four letters only equality counts, as in the audit: 94% of the model's three-letter words are one edit from some
-scrambler word.
+Below four letters only equality counts, as in the audit: more than 90% of the model's three-letter words, and all its
+two-letter words, are one edit from some scrambler word.
 
 Selection. The length is drawn first, from the lengths of the attested words within the range (function words 2 to 4
 letters, content words 3 to 7). Of SAMPLES samples, the one of that length with the best Kneser-Ney log-probability
@@ -35,9 +37,10 @@ per character (end symbol included) is kept. Its score and its percentile among 
 leave-one-out) go into the entry's method.
 
 Inputs that are not in git. The scrambler lists (.wowf-extract/LanguageWords.csv and
-.wowf-extract/origins/scramblers.json), the audit's candidates and coverage table (.wowf-extract/audit/) and the
-system word list are local. That is why the output, 8-candidates.json, is committed: it is the reviewable input of
-apply_audit.py, and the recipe in merge_candidates.py's docstring never runs this script.
+.wowf-extract/origins/scramblers.json), the name generator's names (.wowf-extract/NameGen.csv), the audit's
+candidates and coverage table (.wowf-extract/audit/) and the system word list are local. That is why the output,
+8-candidates.json, is committed: it is the reviewable input of apply_audit.py, and the recipe in merge_candidates.py's
+docstring never runs this script.
 
 To rebuild 8-candidates.json, run the first four commands of that recipe (the lexicon as apply_voice.py leaves it),
 then, from the repo root:
@@ -56,7 +59,7 @@ from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from corpus import CORPUS  # noqa: E402
-from merge_candidates import LEX, LOG, RES, ROOT, key  # noqa: E402
+from merge_candidates import APPLY, LEX, LOG, RES, ROOT, key  # noqa: E402
 from shared_core import parts  # noqa: E402
 
 WX = os.path.join(ROOT, ".wowf-extract")
@@ -64,6 +67,7 @@ AUDIT = os.path.join(WX, "audit", "vocab-candidates.json")
 COVERAGE = os.path.join(WX, "audit", "coverage.json")
 LANGUAGE_WORDS = os.path.join(WX, "LanguageWords.csv")
 SCRAMBLERS = os.path.join(WX, "origins", "scramblers.json")
+NAME_GEN = os.path.join(WX, "NameGen.csv")
 ENGLISH = ("/usr/share/dict/words", "/usr/share/dict/propernames")
 FORMS = os.path.join(RES, "7-forms.json")
 OUT = os.path.join(RES, "8-candidates.json")
@@ -276,14 +280,14 @@ FOREIGN = {
     "karal": "Russian карал 'punished'", "onu": "Turkish 'him'", "vir": "Latin 'man'", "aas": "Dutch 'carrion'",
     "zes": "Dutch 'six'", "bita": "Swedish 'bite'", "hus": "Swedish 'house'", "zia": "Italian 'aunt'",
     "vin": "French 'wine'", "dia": "Spanish 'day'", "kia": "a car brand", "rir": "Portuguese 'to laugh'",
-    "hos": "Swedish 'at'",
+    "hos": "Swedish 'at'", "tyr": "the Titan-forged Tyr, and Tyr's Hand", "amiel": "given name",
 }
 
 
 class Inventory:
     """Everything a new word is checked against, with the reason each check gives."""
 
-    def __init__(self, lexicon, forms, scrambler_words, english, foreign=FOREIGN, extra_attested=()):
+    def __init__(self, lexicon, forms, scrambler_words, english, foreign=FOREIGN, extra_attested=(), names=()):
         elven_forms = [f for f in forms if f["branch"] not in CONTROLS and f.get("kind") != "scrambler"]
         control_forms = [f for f in forms if f["branch"] in CONTROLS]
         self.train = sorted({p for f in training_forms(lexicon, forms) for p in parts(f)} - ENGLISH_NAME_PARTS)
@@ -309,6 +313,7 @@ class Inventory:
         lengths = Counter(len(k) for k in attested)
         self.length_weights = {n: lengths[n] for n in range(1, max(lengths) + 1)}
         self.foreign = dict(foreign)
+        self.names = {n.lower() for n in names}
 
     def reject(self, word, new_words=()):
         """The first reason the word is rejected, or None if it passes."""
@@ -322,6 +327,8 @@ class Inventory:
             return "English word"
         if word in self.foreign:
             return "word in another language"
+        if word in self.names:
+            return "name in the name generator"
         if near(word, self.pools["attested"]):
             return "attested form"
         if any(p in word for p in self.known):
@@ -349,17 +356,18 @@ def training_forms(lexicon, forms):
 
 
 def known_parts(lexicon):
-    """One-part elven entries of three letters or more whose meaning is known (not generated, not unverified, not
-    glossed '(unknown ...')."""
+    """The parts whose meaning is known: elven entries (not generated, not unverified, not glossed '(unknown ...') that
+    shared_core.parts() splits into one part. parts() drops parts under three letters, so min'da "mama" gives min and
+    bal'a "greetings" gives bal."""
     out = set()
     for e in lexicon:
         if e.get("source") not in ELVEN or e.get("canon_basis") in ("generated", "unverified"):
             continue
         if e["translation"]["en"].startswith("(unknown"):
             continue
-        letters = re.findall(r"[a-z]+", e["word"].lower())
-        if len(letters) == 1 and len(letters[0]) >= 3:
-            out.add(letters[0])
+        found = parts(e["word"])
+        if len(found) == 1:
+            out.add(found[0])
     return out
 
 
@@ -432,8 +440,10 @@ def load_inputs(lexicon_path=LEX):
     for path in ENGLISH:
         with open(path, encoding="utf-8") as fh:
             english |= {w.strip().lower() for w in fh}
+    with open(NAME_GEN, encoding="utf-8") as fh:
+        names = [r["Name"] for r in csv.DictReader(fh)]
     extra = [ph for _, ph, *_ in CORPUS] + phono_list("UNTR")
-    return lexicon, Inventory(lexicon, forms, scrambler, english, extra_attested=extra)
+    return lexicon, Inventory(lexicon, forms, scrambler, english, extra_attested=extra, names=names)
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -729,10 +739,12 @@ def build(lexicon, inventory, audit, yardstick=None, samples=SAMPLES):
                                 confidence=c["confidence"], reason=c["reason"], evidence=list(c.get("evidence", []))))
         elif act == "note" and word in REBUILD:
             part, pattern = REBUILD[word]
-            new = pattern.format(regenerated[part])
+            drawn, part_meaning = regenerated[part]
+            new = pattern.format(drawn["word"])
             entry = entries[(word, c["source"])]
             out.append(dict(base, action="regenerate", new=new, confidence=c["confidence"],
-                            method=f"rebuilt with the regenerated {part} -> {regenerated[part]} (generate_words.py)",
+                            method=(f"generate_words.py: rebuilt with the regenerated {part} -> {drawn['word']}, "
+                                    f"drawn with seed {drawn['seed']} (SHA-256 of '{part_meaning}')"),
                             notes=f"Replaced {c['word']}: {short(word)} (November 2026 audit).",
                             reason=c["reason"], summary=short(word), evidence=finding_evidence(c),
                             meaning=entry["translation"]["en"]))
@@ -740,7 +752,7 @@ def build(lexicon, inventory, audit, yardstick=None, samples=SAMPLES):
         elif act == "note":
             out.append(dict(base, action="note", confidence=c["confidence"], reason=c["reason"],
                             evidence=list(c.get("evidence", []))))
-        elif act == "regenerate" and c["confidence"] not in ("high", "medium"):
+        elif act == "regenerate" and c["confidence"] not in APPLY:
             out.append(dict(base, action="regenerate", new=None, confidence=c["confidence"], reason=c["reason"],
                             summary=c["reason"].split(". ")[0], evidence=finding_evidence(c), meaning=c["meaning"]))
         elif act == "regenerate":
@@ -755,7 +767,7 @@ def build(lexicon, inventory, audit, yardstick=None, samples=SAMPLES):
                                     evidence=[{"quote": "Glosses that join two senses: " + entry["translation"]["en"],
                                                "where": FINDINGS + "#4-sense-problems"}]))
             choice = draw(en, "function" if word in FUNCTION_WORDS else "content")
-            regenerated[word] = choice["word"]
+            regenerated[word] = (choice, en)
             out.append(dict(base, action="regenerate", new=choice["word"], confidence=c["confidence"],
                             method=method(choice, en), notes=f"Replaced {c['word']}: {short(word)} "
                                                               "(November 2026 audit).",
@@ -784,7 +796,7 @@ def build(lexicon, inventory, audit, yardstick=None, samples=SAMPLES):
 
 def coverage_counts(coverage, candidates):
     """Swadesh-207 statuses before and after the candidates (high and medium confidence only)."""
-    applied = [c for c in candidates if c["confidence"] in ("high", "medium")]
+    applied = [c for c in candidates if c["confidence"] in APPLY]
     removed = {key(c["word"]) for c in applied if c["action"] == "remove"}
     added = {c["swadesh"] for c in applied if c["action"] == "add" and c.get("swadesh")}
     after = Counter()
