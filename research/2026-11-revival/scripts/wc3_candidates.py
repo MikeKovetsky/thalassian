@@ -17,6 +17,10 @@ import json
 import os
 import re
 import sys
+from collections import Counter
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "tools", "wc3"))
+import mine  # noqa: E402  (tools/wc3/mine.py: the same subtitle and string-table parsers the miner uses)
 
 REPO = sys.argv[1] if len(sys.argv) > 1 else "."
 OUT_MD = sys.argv[2] if len(sys.argv) > 2 else None
@@ -25,6 +29,8 @@ BUILD = "Warcraft III 3.0.1.24371"
 EN = "War3.w3mod:_Locales/enUS.w3mod:"
 NE_Q = "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Night_Elf_Sentinels#"
 HU_Q = "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Human_Alliance#"
+NEUTRAL_Q = "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral#"
+HEROES_Q = "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#"
 DARN_U = "https://warcraft.wiki.gg/wiki/Darnassian#Untranslated_phrases"
 DARN_P = "https://warcraft.wiki.gg/wiki/Darnassian#Darnassian_primer_(official_translations)"
 THAL_U = "https://warcraft.wiki.gg/wiki/Thalassian#Untranslated_words_or_phrases"
@@ -36,17 +42,15 @@ METHOD_TEXT = BASE + "; matched to the wiki by text and speaker"
 
 def fdf_lines():
     out = {}
-    for f in glob.glob(os.path.join(X, "casc/War3.w3mod/_Locales/enUS.w3mod/Strings/Dialogue*Base.fdf")):
-        for i, line in enumerate(open(f, encoding="utf-8", errors="replace"), 1):
-            m = re.match(r'\s*([A-Z0-9_]+)\s+"(.*)",?\s*$', line)
-            if m:
-                out[m.group(1)] = (os.path.basename(f), i, m.group(2))
+    for f in sorted(glob.glob(os.path.join(X, "casc/War3.w3mod/_Locales/enUS.w3mod/Strings/Dialogue*Base.fdf"))):
+        for i, key, text in mine.parse_fdf(mine.read_text(f)):
+            out[key] = (os.path.basename(f), i, text)
     return out
 
 
 def slk_sounds():
     out = {}
-    for f in glob.glob(os.path.join(X, "casc/War3.w3mod/UI/SoundInfo/Dialogue*Base.slk")):
+    for f in sorted(glob.glob(os.path.join(X, "casc/War3.w3mod/UI/SoundInfo/Dialogue*Base.slk"))):
         cur = {}
         for line in open(f, encoding="utf-8", errors="replace"):
             if not line.startswith("C;"):
@@ -68,10 +72,18 @@ def slk_sounds():
     return out
 
 
-def wts(path):
-    t = open(path, encoding="utf-8-sig", errors="replace").read().replace("\r", "")
-    return {int(m.group(1)): m.group(2).strip()
-            for m in re.finditer(r"STRING (\d+)\n(?://[^\n]*\n)*\{\n(.*?)\n\}", t, re.S)}
+REFORGED = os.path.join(X, "maps/War3.w3mod/Campaign/Reforged")
+
+
+def map_strings(mp, locale=None):
+    """{string id: text} of a Reforged campaign map's string table, enUS or one locale."""
+    path = os.path.join(REFORGED, mp + ".w3x", ("_Locales/%s.w3mod/" % locale if locale else "") + "war3map.wts")
+    return {sid: text.strip() for sid, _c, text in mine.parse_wts(mine.read_text(path))}
+
+
+def wav_stems(text):
+    """Voice file names (lowercase, no folder or extension) in a wiki quote or a sound table path."""
+    return set(m.lower() for m in re.findall(r"([A-Za-z0-9]+)\.(?:wav|flac|ogg|mp3)\b", text))
 
 
 FDF = fdf_lines()
@@ -89,10 +101,9 @@ def unit_ev(key, quote=None):
 
 def map_ev(mp, sid, quote, locale=None, speaker=None, sound=None):
     path = "War3.w3mod:Campaign/Reforged/%s.w3x" % mp
-    full = os.path.join(X, "maps/War3.w3mod/Campaign/Reforged/%s.w3x" % mp,
-                        ("_Locales/%s.w3mod/" % locale if locale else "") + "war3map.wts")
-    text = wts(full).get(sid, "")
-    assert quote.rstrip(".…").split("…")[0].strip() in text, (mp, sid, quote, text)
+    text = map_strings(mp, locale).get(sid, "")
+    if quote.rstrip(".…").split("…")[0].strip() not in text:
+        raise SystemExit("quote not found in %s STRING %d (%s): %r" % (mp, sid, locale or "enUS", quote))
     bits = [x for x in (speaker and "speaker " + speaker, sound and "sound " + sound) if x]
     where = "%s, %s, %swar3map.wts STRING %d%s" % (BUILD, path, (locale + " ") if locale else "", sid,
                                                     " (" + "; ".join(bits) + ")" if bits else "")
@@ -114,6 +125,31 @@ cands = []
 rows = []  # markdown rows: (class, blizzard, speaker, where, wiki, meaning)
 
 # ---------------------------------------------------------------- (b) with a meaning: two adds
+# Every Reforged campaign string with Shan'do, its speaker, and its zhTW, zhCN, koKR and ruRU renderings.
+SHAN = []
+for d in sorted(glob.glob(os.path.join(REFORGED, "*", "*.w3x"))):
+    mp = os.path.relpath(d, REFORGED)[:-4]
+    en = map_strings(mp)
+    ids = [sid for sid, t in sorted(en.items()) if re.search(r"shan['’]do", t, re.I)]
+    if not ids:
+        continue
+    conv_path = os.path.join(d, "conversation.json")
+    conv = mine.parse_conversation(conv_path) if os.path.exists(conv_path) else {}
+    loc = {l: map_strings(mp, l) for l in ("zhTW", "zhCN", "koKR", "ruRU")}
+    for sid in ids:
+        nid = conv.get(sid, (None,))[0]
+        SHAN.append({"map": mp, "sid": sid, "speaker": en.get(nid, "") if isinstance(nid, int) else "",
+                     "zhTW": "尊師" in loc["zhTW"].get(sid, ""), "zhCN": "大导师" in loc["zhCN"].get(sid, ""),
+                     "koKR": "샨도" in loc["koKR"].get(sid, ""),
+                     "ruRU": bool(re.search(r"шан['’]до", loc["ruRU"].get(sid, ""), re.I))})
+N_SHAN = len(SHAN)
+if not all(r["zhTW"] and r["zhCN"] for r in SHAN):
+    raise SystemExit("a Shan'do string without 尊師 (zhTW) or 大导师 (zhCN)")
+N_CLASSIC = sum(1 for f in glob.glob(os.path.join(X, "maps/War3.w3mod/Campaign/Classic/*/*.w3[mx]/war3map.wts"))
+                for _i, _c, t in mine.parse_wts(mine.read_text(f)) if re.search(r"shan['’]do", t, re.I))
+SHAN_SPEAKERS = Counter(r["speaker"] or "no speaker" for r in SHAN)
+SHAN_WHO = ", ".join("%s (%d)" % kv for kv in sorted(SHAN_SPEAKERS.items(),
+                                                     key=lambda kv: (-kv[1], kv[0] == "no speaker", kv[0])))
 shan_ev = [
     {"quote": "Shan'do = Honored Teacher. (A title and term of respect.)", "where": DARN_P},
     map_ev("ROC/NightElf03", 186, "Shan'do Stormrage will be defenseless!", speaker="Dryad",
@@ -125,17 +161,20 @@ cands.append({
     "action": "add", "word": "shan'do",
     "translation": {"en": "honored teacher (a title)", "uk": "шановний учитель (звертання)"},
     "pos": "noun", "canon": True, "root": "shan + do",
-    "notes": ("Malfurion's title in Warcraft III (Shan'do Stormrage), in 15 Reforged campaign strings. "
-              "zhTW renders it 尊師 'honored teacher' and zhCN 大导师 'grand teacher' in all 15; koKR and "
-              "ruRU transliterate it. The lexicon had only its parts, shan 'honored' and do 'teacher'."),
+    "notes": ("Malfurion's title in Warcraft III (Shan'do Stormrage), in %d Reforged campaign strings (%d in "
+              "the classic maps), said by %s. zhTW renders it 尊師 'honored teacher' and zhCN 大导师 'grand "
+              "teacher' in all %d; koKR transliterates it in %d and ruRU in %d. The lexicon had only its "
+              "parts, shan 'honored' and do 'teacher'." % (
+                  N_SHAN, N_CLASSIC, SHAN_WHO, N_SHAN, sum(r["koKR"] for r in SHAN),
+                  sum(r["ruRU"] for r in SHAN))),
     "source": "darnassian", "canon_basis": "attested", "evidence": shan_ev, "method": METHOD_TEXT +
     "; zhTW and zhCN map string tables", "confidence": "high",
     "reason": ("Blizzard glosses it twice, independently: the Warcraft Encyclopedia and APG (via the wiki "
                "primer) and the Warcraft III zhTW localization (尊師, every time)."),
 })
-rows.append(("b", "Shan'do", "Druid of the Claw, Dryad (NightElf03, NightElf05)",
-             "Reforged/ROC/NightElf03.w3x STRING 186, and 14 more strings", "Shan'do",
-             "**honored teacher**: wiki primer, and zhTW 尊師 in all 15 strings (attested, confirmed)"))
+rows.append(("b", "Shan'do", SHAN_WHO,
+             "Reforged/ROC/NightElf03.w3x STRING 186, and %d more strings" % (N_SHAN - 1), "Shan'do",
+             "**honored teacher**: wiki primer, and zhTW 尊師 in all %d strings (attested, confirmed)" % N_SHAN))
 
 thero_ev = [
     {"quote": "Thero'shan = Honored student. (A title and term of respect.)", "where": DARN_P},
@@ -255,7 +294,7 @@ UNIT = [
      NE_Q + "Tyrande_Whisperwind", "b", ""),
     ("NIGHTELF_UNIT_HERO_MALFURION_STORMRAGE_ATTACK1", "darnassian", "Malfurion",
      "Tor falah-no dorah! (MalfurionYesAttack1.wav)", NE_Q + "Malfurion_Stormrage", "b",
-     "On the quotes page only, not on the Darnassian page."),
+     "The Darnassian page lists it too, as Tor falah-no dorah."),
     ("NIGHTELF_UNIT_HERO_MALFURION_STORMRAGE_YES2", "darnassian", "Malfurion",
      "Ash'thero danador. (MalfurionYes2.wav)", NE_Q + "Malfurion_Stormrage", "b", ""),
     ("NIGHTELF_UNIT_HERO_MAIEV_ATTACK3", "darnassian", "Maiev", "Ashal thera'das! (MaievYesAttack3.wav)",
@@ -273,10 +312,14 @@ UNIT = [
      "Blizzard: Anu'dor anu'dor, again the anu'dor- of anu'dora and anu'dorini talah."),
     ("NIGHTELF_UNIT_NAISHA_WARCRY1", "darnassian", "Naisha", "Ara'denu thelore! (NaishaWarcry1.wav)",
      NE_Q + "Naisha", "b", ""),
-    ("NAGA_UNIT_SIREN_YES3", "nazja", "Naga Siren", "Ash'valana thure.", NAZJA, "b", ""),
-    ("NAGA_UNIT_LADYVASHJ_YESATTACK3", "nazja", "Lady Vashj", "Era'sazjar!", NAZJA, "b", ""),
-    ("NAGA_UNIT_LADYVASHJ_WARCRY1", "nazja", "Lady Vashj", "Athero bath'rilas! (phonetic, Naga Sea Witches)",
-     NAZJA, "b", ""),
+    ("NAGA_UNIT_SIREN_YES3", "nazja", "Naga Siren", "Ash'valana thure. (NagaSirenYes3.wav)",
+     NEUTRAL_Q + "Naga_Siren", "b",
+     "The Nazja page has no such line; it lists Osh'bala-tharei, by ear, for the Naga Siren in Warcraft III, "
+     "probably the same line, since it is the Siren's only non-English one (inferred)."),
+    ("NAGA_UNIT_LADYVASHJ_YESATTACK3", "nazja", "Lady Vashj", "Era'sazjar! (LadyVashjYesAttack3.wav)",
+     HEROES_Q + "Naga_Sea_Witch", "b", "Not on the Nazja page."),
+    ("NAGA_UNIT_LADYVASHJ_WARCRY1", "nazja", "Lady Vashj", "Athero bath'rilas! (LadyVashjWarcry1.wav)",
+     HEROES_Q + "Naga_Sea_Witch", "b", "The Nazja page lists it too, as a phonetic spelling."),
     ("NIGHTELF_UNIT_HERO_WARDEN_YES3", "darnassian", "Warden", None, NE_Q + "Warden", "c",
      "The wiki's Warden list skips HeroWardenYes3, and no wiki page has the phrase."),
 ]
@@ -286,13 +329,16 @@ for key, src, spk, wiki, wiki_where, cls, extra in UNIT:
     evidence = [ev]
     if wiki:
         evidence.append({"quote": wiki, "where": wiki_where})
+    # same voice file in the game's sound table and on the wiki: the same line; otherwise text and speaker
+    same_file = bool(wiki) and bool(wav_stems(wiki) & wav_stems(" ".join(SND.get(key, []))))
+    method = METHOD if same_file else METHOD_TEXT if wiki else BASE
     note = ("Unglossed. Blizzard's subtitle spelling for a %s line%s." % (spk, (
         "; the wiki spells it " + wiki.split(" (")[0].rstrip(".!")) if wiki else ", on no wiki page"))
     if extra:
         note += " " + extra
     cands.append({
         "action": "note", "word": word, "translation": None, "source": src, "canon_basis": None,
-        "notes": note, "evidence": evidence, "method": METHOD_TEXT if wiki_where == NAZJA else METHOD,
+        "notes": note, "evidence": evidence, "method": method,
         "confidence": "low",
         "reason": ("New to both the lexicon and the wiki." if cls == "c" else
                    "On the wiki, not in the lexicon.") + " No source pairs it with English.",

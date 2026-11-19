@@ -9,7 +9,7 @@
   "pos": "noun",
   "canon": true,
   "root": "shan + do",
-  "notes": "Malfurion's title in Warcraft III (Shan'do Stormrage), in 15 Reforged campaign strings. zhTW renders it 尊師 'honored teacher' and zhCN 大导师 'grand teacher' in all 15; koKR and ruRU transliterate it. The lexicon had only its parts, shan 'honored' and do 'teacher'.",
+  "notes": "Malfurion's title in Warcraft III (Shan'do Stormrage), in 21 Reforged campaign strings (20 in the classic maps), said by Maiev Shadowsong (14), Druid of the Claw (3), Druid of the Talon (1), Dryad (1), Runner (1), no speaker (1). zhTW renders it 尊師 'honored teacher' and zhCN 大导师 'grand teacher' in all 21; koKR transliterates it in 20 and ruRU in 20. The lexicon had only its parts, shan 'honored' and do 'teacher'.",
   "source": "darnassian",
   "canon_basis": "attested",
   "evidence": [
@@ -216,7 +216,7 @@
     "where": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Human_Alliance#Blood_Mage"
    }
   ],
-  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); line matched to the wiki's quote list by unit and sound file",
+  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); matched to the wiki by text and speaker",
   "confidence": "low",
   "reason": "On the wiki, not in the lexicon. No source pairs it with English."
  },
@@ -352,7 +352,7 @@
   "translation": null,
   "source": "darnassian",
   "canon_basis": null,
-  "notes": "Unglossed. Blizzard's subtitle spelling for a Malfurion line; the wiki spells it Tor falah-no dorah. On the quotes page only, not on the Darnassian page.",
+  "notes": "Unglossed. Blizzard's subtitle spelling for a Malfurion line; the wiki spells it Tor falah-no dorah. The Darnassian page lists it too, as Tor falah-no dorah.",
   "evidence": [
    {
     "quote": "Tor fal-anu'dora!",
@@ -520,18 +520,18 @@
   "translation": null,
   "source": "nazja",
   "canon_basis": null,
-  "notes": "Unglossed. Blizzard's subtitle spelling for a Naga Siren line; the wiki spells it Ash'valana thure.",
+  "notes": "Unglossed. Blizzard's subtitle spelling for a Naga Siren line; the wiki spells it Ash'valana thure. The Nazja page has no such line; it lists Osh'bala-tharei, by ear, for the Naga Siren in Warcraft III, probably the same line, since it is the Siren's only non-English one (inferred).",
   "evidence": [
    {
     "quote": "Ash'valana thure.",
     "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNagaBase.fdf line 24 (NAGA_UNIT_SIREN_YES3, sound Units/Naga/NagaSiren/NagaSirenYes3.flac)"
    },
    {
-    "quote": "Ash'valana thure.",
-    "where": "https://warcraft.wiki.gg/wiki/Nazja#Phrases"
+    "quote": "Ash'valana thure. (NagaSirenYes3.wav)",
+    "where": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral#Naga_Siren"
    }
   ],
-  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); matched to the wiki by text and speaker",
+  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); line matched to the wiki's quote list by unit and sound file",
   "confidence": "low",
   "reason": "On the wiki, not in the lexicon. No source pairs it with English."
  },
@@ -541,18 +541,18 @@
   "translation": null,
   "source": "nazja",
   "canon_basis": null,
-  "notes": "Unglossed. Blizzard's subtitle spelling for a Lady Vashj line; the wiki spells it Era'sazjar.",
+  "notes": "Unglossed. Blizzard's subtitle spelling for a Lady Vashj line; the wiki spells it Era'sazjar. Not on the Nazja page.",
   "evidence": [
    {
     "quote": "Era'sazjar!",
     "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNagaBase.fdf line 81 (NAGA_UNIT_LADYVASHJ_YESATTACK3, sound Units/Naga/LadyVashj/LadyVashjYesAttack3.flac)"
    },
    {
-    "quote": "Era'sazjar!",
-    "where": "https://warcraft.wiki.gg/wiki/Nazja#Phrases"
+    "quote": "Era'sazjar! (LadyVashjYesAttack3.wav)",
+    "where": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#Naga_Sea_Witch"
    }
   ],
-  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); matched to the wiki by text and speaker",
+  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); line matched to the wiki's quote list by unit and sound file",
   "confidence": "low",
   "reason": "On the wiki, not in the lexicon. No source pairs it with English."
  },
@@ -562,18 +562,18 @@
   "translation": null,
   "source": "nazja",
   "canon_basis": null,
-  "notes": "Unglossed. Blizzard's subtitle spelling for a Lady Vashj line; the wiki spells it Athero bath'rilas.",
+  "notes": "Unglossed. Blizzard's subtitle spelling for a Lady Vashj line; the wiki spells it Athero bath'rilas. The Nazja page lists it too, as a phonetic spelling.",
   "evidence": [
    {
     "quote": "Athero bathre'las!",
     "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNagaBase.fdf line 95 (NAGA_UNIT_LADYVASHJ_WARCRY1, sound Units/Naga/LadyVashj/LadyVashjWarcry1.flac)"
    },
    {
-    "quote": "Athero bath'rilas! (phonetic, Naga Sea Witches)",
-    "where": "https://warcraft.wiki.gg/wiki/Nazja#Phrases"
+    "quote": "Athero bath'rilas! (LadyVashjWarcry1.wav)",
+    "where": "https://warcraft.wiki.gg/wiki/Quotes_of_Warcraft_III/Neutral_Heroes#Naga_Sea_Witch"
    }
   ],
-  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); matched to the wiki by text and speaker",
+  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); line matched to the wiki's quote list by unit and sound file",
   "confidence": "low",
   "reason": "On the wiki, not in the lexicon. No source pairs it with English."
  },
@@ -590,7 +590,7 @@
     "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNightElfBase.fdf line 173 (NIGHTELF_UNIT_HERO_WARDEN_YES3, sound Units/NightElf/HeroWarden/HeroWardenYes3.flac)"
    }
   ],
-  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py); line matched to the wiki's quote list by unit and sound file",
+  "method": "Warcraft III 3.0 file mining (tools/wc3/extract_text.py, tools/wc3/mine.py)",
   "confidence": "low",
   "reason": "New to both the lexicon and the wiki. No source pairs it with English."
  },
