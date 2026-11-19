@@ -1,9 +1,13 @@
 """Mine warcraft.wiki.gg's Midnight-era pages for elvish words and phrases (report 10).
 
 Midnight-era means added in patches 11.2.5 to 12.1.7, or filed under a Midnight zone, instance or storyline
-category, or carrying a Midnight level ({{Level|Mn...}}). The script reads only the wiki's public API (api.php),
-with a generic User-Agent, one request at a time and at least a second apart, and caches every response in CACHE,
-a folder outside the repo. Standard library only, Python 3.9.
+category, or carrying a Midnight level ({{Level|Mn...}}). A line counts as Midnight text when the wiki marks it
+Midnight ({{Mn-section}}, {{Mn-inline}}, {{Expac|Midnight}}; see era_spans), or when it carries no era marker and its
+page was added in the range, or is filed under a Midnight category or level with no patch note older than 11.2.5.
+Text the wiki marks as removed from the beta, alpha or PTR, or files under a Beta, Alpha or PTR heading, never counts:
+it was not released. The script reads only the wiki's public API (api.php), with a generic User-Agent, one request at
+a time and at least a second apart, and caches every successful response in CACHE, a folder outside the repo.
+Standard library only, Python 3.9.
 
 From the repo root:
   python3 research/2026-11-revival/scripts/midnight_wiki.py enumerate CACHE
@@ -17,8 +21,9 @@ enumerate  writes CACHE/titles.json: every page found, with how it was found ("a
            categories, pages that use a {{Patch X}} template of the range, pages that use the wiki's Midnight markers
            {{Mn-section}} and {{Mn-inline}} (the latter also through {{Expac|Midnight}}), a walk of the Midnight
            categories (four levels down), and CirrusSearch insource: queries for Midnight level templates.
-fetch      writes CACHE/pages/b*.json, the raw wikitext of every title (50 titles per request), and the wiki's
-           Thalassian, Darnassian and Shalassian pages to CACHE/lang/.
+fetch      writes CACHE/pages/b*.json, the raw wikitext of every title (50 titles per request; a page the API
+           leaves out of a full batch is asked for again), and the wiki's Thalassian, Darnassian and Shalassian
+           pages to CACHE/lang/.
 speakers   fetches the pages of speakers the corpus quotes but did not fetch, so their race can be read.
 extract    reads the cache, the lexicon (REPO/src/thalassian/data/lexicon.json) and the scrambler word list
            (REPO/.wowf-extract/LanguageWords.csv, local and gitignored; without it the scrambler check is skipped),
@@ -27,6 +32,8 @@ extract    reads the cache, the lexicon (REPO/src/thalassian/data/lexicon.json) 
            (contractions, possessives and dropped g's excluded), or are lexicon or language-page words that are
            not English, or, in quoted speech, are not English (macOS /usr/share/dict). The output is a review list:
            which phrases are elvish, and which have an in-game gloss, is decided by reading the lines (report 10).
+           OUT.json's "review" holds the Midnight phrases to read (those of the apostrophe or lexicon tier that
+           are not names only), split into in the lexicon, on the wiki's language pages only, and in neither.
 check      a completeness test of the enumeration: searches the whole wiki for every elvish lexicon form of four or
            more letters and the wiki's untranslated Thalassian phrases, then fetches each page outside titles.json
            that holds one of the rarer forms (60 hits or fewer) and lists those that carry a Midnight marker (a
@@ -37,7 +44,6 @@ import csv
 import hashlib
 import json
 import os
-import random
 import re
 import sys
 import time
@@ -74,6 +80,22 @@ SEARCHES = ['insource:"Mn-max"', 'insource:/\\{\\{[Ll]evel\\|Mn/', 'insource:"le
 
 # ---------------------------------------------------------------- API with cache
 
+def write_json(path, data, **kw):
+    """Write JSON through a temporary file, so an interrupted run never leaves a truncated file behind."""
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(data, fh, **kw)
+    os.replace(tmp, path)
+
+
+class ApiError(RuntimeError):
+    pass
+
+
+# API error codes worth asking again for; any other error is a fault in the request
+TRANSIENT = {"maxlag", "ratelimited", "readonly"}
+
+
 class Wiki:
     def __init__(self, cache):
         self.dir = os.path.join(cache, "api-cache")
@@ -81,6 +103,8 @@ class Wiki:
         self.last = 0.0
 
     def get(self, **params):
+        """The API's answer to one request. Answers are cached, but an API error never is: a cached error would
+        come back on every later run."""
         params.setdefault("format", "json")
         params.setdefault("formatversion", "2")
         query = urllib.parse.urlencode(sorted(params.items()))
@@ -96,16 +120,23 @@ class Wiki:
             try:
                 with urllib.request.urlopen(req, timeout=60) as r:
                     data = json.load(r)
-                self.last = time.time()
-                break
             except Exception as e:  # network hiccup: back off and retry
                 self.last = time.time()
                 print("retry", attempt, e, file=sys.stderr)
                 time.sleep(5 * (attempt + 1))
+                continue
+            self.last = time.time()
+            err = data.get("error") if isinstance(data, dict) else None
+            if not err:
+                break
+            code = str(err.get("code", ""))
+            if code not in TRANSIENT and not code.startswith("internal_api_error"):
+                raise ApiError("API error %s: %s (%s)" % (code, err.get("info", ""), query))
+            print("retry", attempt, "API error", code, file=sys.stderr)
+            time.sleep(5 * (attempt + 1))
         else:
-            raise RuntimeError("request failed: " + query)
-        with open(path, "w", encoding="utf-8") as fh:
-            json.dump(data, fh)
+            raise ApiError("request failed: " + query)
+        write_json(path, data)
         return data
 
     def iterate(self, **params):
@@ -158,23 +189,43 @@ def enumerate_pages(cache):
             for p in d["query"]["search"]:
                 add(p["title"], "search:" + q)
     out = {k: sorted(v) for k, v in sorted(found.items())}
-    with open(os.path.join(cache, "titles.json"), "w", encoding="utf-8") as fh:
-        json.dump(out, fh, ensure_ascii=False, indent=0)
-    with open(os.path.join(cache, "categories-walked.json"), "w", encoding="utf-8") as fh:
-        json.dump(sorted(seen), fh, ensure_ascii=False, indent=0)
+    write_json(os.path.join(cache, "titles.json"), out, ensure_ascii=False, indent=0)
+    write_json(os.path.join(cache, "categories-walked.json"), sorted(seen), ensure_ascii=False, indent=0)
     print(len(out), "titles;", len(seen), "categories walked")
+
+
+def page_files(pdir):
+    """The page batch files of the cache, in order (a stray .tmp from an interrupted write is skipped)."""
+    return sorted(f for f in os.listdir(pdir) if f.endswith(".json")) if os.path.isdir(pdir) else []
 
 
 def fetched_titles(cache):
     have = set()
     pdir = os.path.join(cache, "pages")
-    if os.path.isdir(pdir):
-        for f in os.listdir(pdir):
-            with open(os.path.join(pdir, f), encoding="utf-8") as fh:
-                for p in json.load(fh):
-                    have.add(p["title"])
-                    have.update(p.get("aliases", []))
+    for f in page_files(pdir):
+        with open(os.path.join(pdir, f), encoding="utf-8") as fh:
+            for p in json.load(fh):
+                have.add(p["title"])
+                have.update(p.get("aliases", []))
     return have
+
+
+def revisions(wiki, titles, tries=3, **params):
+    """The "query" part of a prop=revisions answer for every 50 titles. The API leaves a page's text out when a
+    batch passes its result-size limit; such a page is asked for again in a later batch, up to `tries` times,
+    and reported if it still comes back without text."""
+    todo, asked = list(titles), {}
+    while todo:
+        batch, todo = todo[:50], todo[50:]
+        q = wiki.get(action="query", prop="revisions", rvslots="main", titles="|".join(batch), **params)["query"]
+        for p in q.get("pages", []):
+            if not (p.get("missing") or p.get("invalid") or "revisions" in p):
+                asked[p["title"]] = asked.get(p["title"], 0) + 1
+                if asked[p["title"]] <= tries:
+                    todo.append(p["title"])
+                else:
+                    print("no text returned for", p["title"], file=sys.stderr)
+        yield q
 
 
 def fetch_titles(cache, titles):
@@ -184,18 +235,14 @@ def fetch_titles(cache, titles):
     have = fetched_titles(cache)
     todo = [t for t in titles if t not in have]
     print(len(todo), "to fetch of", len(titles))
-    for i in range(0, len(todo), 50):
-        batch = todo[i:i + 50]
-        d = wiki.get(action="query", prop="revisions", rvprop="content|timestamp|ids", rvslots="main",
-                     titles="|".join(batch), redirects="1")
-        q = d["query"]
-        alias = {}
+    alias, done = {}, 0  # kept across batches: a page asked for again comes back under its resolved title
+    for q in revisions(wiki, todo, rvprop="content|timestamp|ids", redirects="1"):
         for k in ("normalized", "redirects"):
             for r in q.get(k, []):
                 alias.setdefault(r["to"], []).append(r["from"])
         for to in list(alias):  # normalized -> redirect chains
             for frm in list(alias[to]):
-                alias[to].extend(alias.get(frm, []))
+                alias[to].extend(a for a in alias.get(frm, []) if a not in alias[to])
         recs = []
         for p in q["pages"]:
             if p.get("missing") or p.get("invalid"):
@@ -204,11 +251,10 @@ def fetch_titles(cache, titles):
                 rv = p["revisions"][0]
                 recs.append({"title": p["title"], "pageid": p["pageid"], "revid": rv["revid"], "timestamp": rv["timestamp"],
                              "text": rv["slots"]["main"]["content"], "aliases": alias.get(p["title"], [])})
-        name = "b%05d.json" % len(os.listdir(pdir))
-        with open(os.path.join(pdir, name), "w", encoding="utf-8") as fh:
-            json.dump(recs, fh, ensure_ascii=False)
-        if i and i % 2500 == 0:
-            print(i, flush=True)
+        write_json(os.path.join(pdir, "b%05d.json" % len(page_files(pdir))), recs, ensure_ascii=False)
+        done += 1
+        if done % 50 == 0:
+            print(done * 50, flush=True)
 
 
 def fetch(cache):
@@ -313,10 +359,11 @@ def link_targets(text):
 
 
 def sections(text):
+    """(name, start, end) of the lead and of every section; a section starts at its heading line."""
     out, name, pos = [], "(lead)", 0
     for m in SECTION.finditer(text):
         out.append((name, pos, m.start()))
-        name, pos = plain(m.group(2)).strip(), m.end()
+        name, pos = plain(m.group(2)).strip(), m.start()
     out.append((name, pos, len(text)))
     return out
 
@@ -328,46 +375,116 @@ def section_at(secs, pos):
     return secs[-1][0]
 
 
-ERA_MARK = re.compile(r"\{\{\s*([A-Za-z]+)-(?:section|inline)\b|\{\{\s*[Ee]xpac\s*\|\s*([A-Za-z: ]+?)\s*[|}]")
-ERA_CODES = {"wow", "bc", "wotlk", "cata", "mop", "wod", "legion", "bfa", "sl", "df", "tww", "mn", "novel", "comic", "rpg",
-             "manga", "hs", "hots", "film", "movie"}
-ERA_NAMES = {"midnight": "mn", "the war within": "tww", "dragonflight": "df", "shadowlands": "sl", "battle for azeroth": "bfa",
-             "legion": "legion", "warlords of draenor": "wod", "mists of pandaria": "mop", "cataclysm": "cata",
-             "wrath of the lich king": "wotlk", "the burning crusade": "bc"}
+# the wiki's era markers: {{X-section}}, {{X-inline}} and {{Expac|Name}}
+ERA_MARK = re.compile(r"\{\{\s*([A-Za-z][A-Za-z0-9 /]*?)-(section|inline)\s*[|}]|\{\{\s*[Ee]xpac\s*\|\s*([A-Za-z: ]+?)\s*[|}]")
+# markers that name no era: maintenance and icon templates, and {{Rfg-section}} (removed from the live game, so live once)
+NOT_ERA = {"stub", "stub/lore", "cleanup", "ood", "outdated", "rfg", "scarab", "shop", "test", "blizzcon"}
+ERA_NAMES = {"midnight": "mn", "the war within": "tww", "war within": "tww", "dragonflight": "df", "shadowlands": "sl",
+             "battle for azeroth": "bfa", "warlords of draenor": "wod", "mists of pandaria": "mop", "cataclysm": "cata",
+             "wrath of the lich king": "wotlk", "the burning crusade": "bc", "burning crusade": "bc", "tbc": "bc",
+             "vanilla": "wow", "rfb": "unreleased", "rfa": "unreleased", "rfptr": "unreleased"}
+HATNOTES = {"main", "see also", "seealso", "for", "further", "details", "clear"}
+SUBHEAD = re.compile(r"^;[^\n]*$", re.M)
+
+
+def era_of(m):
+    """The era an ERA_MARK match names: "mn" for Midnight; "unreleased" for text removed from the beta, alpha or PTR
+    ({{Rfb-section}}, {{Rfa-section}}, {{Rfptr-section}}); the marker's own code for any other expansion or product
+    (wotlk, classic only, forever, wc3, novel...); "" for a marker that names no era (NOT_ERA)."""
+    name = " ".join((m.group(1) or m.group(3) or "").lower().split())
+    return "" if name in NOT_ERA else ERA_NAMES.get(name, name)
+
+
+def merge_eras(eras):
+    """One era for markers that apply together: unreleased wins, then Midnight, then the first."""
+    eras = [e for e in eras if e]
+    for e in ("unreleased", "mn"):
+        if e in eras:
+            return e
+    return eras[0] if eras else ""
+
+
+def line_at(text, pos):
+    """(start, end) of the line that holds pos."""
+    b = text.find("\n", pos)
+    return text.rfind("\n", 0, pos) + 1, len(text) if b < 0 else b
+
+
+def bare(line):
+    """A line without its era markers, hatnotes ({{Main}}, {{See also}}...), HTML tags, comments and bullets: empty
+    when the line holds no content."""
+    out, pos = [], 0
+    for s, e, name, _ in top_templates(line):
+        out.append(line[pos:s])
+        if not (ERA_MARK.match(line, s) or tname(name) in HATNOTES):
+            out.append(line[s:e])
+        pos = e
+    out.append(line[pos:])
+    return re.sub(r"<!--.*?-->|<[^<>]*>", "", "".join(out)).strip(" \t*:#;")
 
 
 def era_spans(text):
-    """(start, end, era) for sections and ';' sub-headings whose opening lines carry an expansion marker such as
-    {{Mn-section}}, {{Sl-section}}, {{Mn-inline}} or {{Expac|Midnight}}. Later (inner) spans win."""
-    heads = [(m.start(), m.end()) for m in SECTION.finditer(text)]
-    subs = [(m.start(), m.end()) for m in re.finditer(r"^;[^\n]*$", text, re.M)]
-    bounds = sorted([h[0] for h in heads] + [s0 for s0, _ in subs] + [len(text)])
+    """(start, end, era) of the stretches of a page that the wiki marks with an era (see era_of).
+
+    A section marker ({{X-section}}, or an inline marker that stands alone on its line or sits on a heading or ';'
+    line) marks the text from its line to the next section marker, heading or ';' sub-heading. Markers on
+    consecutive lines with nothing else on them apply together. When the markers come before any content of a
+    section, they mark the whole section, sub-sections included, up to the next heading of the same or a higher
+    level. Inline markers elsewhere mark only their own line (segments reads those)."""
+    heads = [(m.start(), len(m.group(1))) for m in SECTION.finditer(text)]
+    subs = {m.start() for m in SUBHEAD.finditer(text)}
+    bounds = sorted({h for h, _ in heads} | subs)
+    marks = {}
+    for m in ERA_MARK.finditer(text):
+        era = era_of(m)
+        if era:
+            a, b = line_at(text, m.start())
+            if m.group(2) == "section" or a in bounds or not bare(text[a:b]):
+                marks.setdefault(a, []).append(era)
+    groups = []  # [first line, last line, eras]
+    for a in sorted(marks):
+        if groups and a not in bounds:
+            g = groups[-1]
+            _, gb = line_at(text, g[1])
+            if not bare(text[g[1]:gb]) and all(not bare(ln) for ln in text[gb + 1:a].split("\n")):
+                g[1] = a
+                g[2] += marks[a]
+                continue
+        groups.append([a, a, list(marks[a])])
     spans = []
-    for start in [0] + [h[0] for h in heads] + [s0 for s0, _ in subs]:
-        end = min([b for b in bounds if b > start] or [len(text)])
-        if start in [h[0] for h in heads]:  # a heading's span runs to the next heading, over its ';' sub-headings
-            end = min([h[0] for h in heads if h[0] > start] or [len(text)])
-        head = text[start:min(end, start + 400)]
-        lines = []
-        for i, ln in enumerate(head.split("\n")[:3]):
-            if i and ln.startswith((";", "=")):
-                break  # stop at the next sub-heading: its marker is its own
-            lines.append(ln)
-        for m in ERA_MARK.finditer("\n".join(lines)):
-            era = (m.group(1) or "").lower() or ERA_NAMES.get((m.group(2) or "").strip().lower(), "")
-            era = {"midnight": "mn", "shadowlands": "sl", "tbc": "bc", "vanilla": "wow"}.get(era, era)
-            if era in ERA_CODES:
-                spans.append((start, end, era))
-                break
+    for i, (a, last, eras) in enumerate(groups):
+        era = merge_eras(eras)
+        nxt = [x for x in bounds if x > last] + [g[0] for g in groups[i + 1:i + 2]]
+        spans.append((a, min(nxt + [len(text)]), era))
+        head = max((h for h in heads if h[0] <= a), default=None)
+        if head and a not in subs:  # a ';' line's markers are that sub-heading's own
+            _, hb = line_at(text, head[0])
+            if a == head[0] or all(not bare(ln) for ln in text[hb + 1:a].split("\n")):
+                spans.append((head[0], min([x for x, lvl in heads if x > head[0] and lvl <= head[1]] + [len(text)]), era))
     return spans
 
 
 def era_at(spans, pos):
-    best = None
+    """The era at pos: that of the innermost (latest-starting) span that holds it."""
+    best, eras = -1, []
     for s0, e0, era in spans:
-        if s0 <= pos < e0 and (best is None or s0 >= best[0]):
-            best = (s0, era)
-    return best[1] if best else ""
+        if s0 <= pos < e0:
+            if s0 > best:
+                best, eras = s0, [era]
+            elif s0 == best:
+                eras.append(era)
+    return merge_eras(eras)
+
+
+# a section about the beta, alpha or PTR ("Beta", "Beta version", "PTR version", "Alpha/Beta testing"...) holds unreleased text
+BETA_HEADING = re.compile(r"^(?:removed from )?(?:[a-z ]+ )?(?:alpha|beta|ptr)(?:/(?:alpha|beta|ptr))?(?: version| description| testing)?$"
+                          r"|^on the ptr$", re.I)
+
+
+def inline_era(text, pos, seg_text):
+    """The era of the inline markers on the line where a segment starts, or in the segment's own text."""
+    a, b = line_at(text, pos)
+    return merge_eras([era_of(m) for m in ERA_MARK.finditer(text[a:b] + "\n" + seg_text) if m.group(2) != "section"])
 
 
 def tname(n):
@@ -381,7 +498,8 @@ TEXT_KEYS = {"name", "title", "flavor", "flavortext", "description", "desc", "te
 
 
 def segments(title, text):
-    """Lines of a page with their context: kind (speech:say, gossip, quote, field:..., prose), speaker, section."""
+    """Lines of a page with their context: kind (speech:say, gossip, quote, field:..., prose, heading), speaker,
+    section, and era (the inline markers on the line, else the era_spans span; "unreleased" under a Beta heading)."""
     secs = sections(text)
     segs, covered = [], []
 
@@ -434,12 +552,16 @@ def segments(title, text):
             off = pos
             for line in text[pos:s].split("\n"):
                 if line.strip() and not line.lstrip().startswith(("[[Category:", "[[File:", "[[Image:", "__")):
-                    segs.append({"kind": "prose", "speaker": "", "section": section_at(secs, off), "text": line, "pos": off})
+                    kind = "heading" if SECTION.fullmatch(line) else "prose"
+                    segs.append({"kind": kind, "speaker": "", "section": section_at(secs, off), "text": line, "pos": off})
                 off += len(line) + 1
         pos = max(pos, e)
     spans = era_spans(text)
     for sg in segs:
-        sg["era"] = era_at(spans, sg["pos"])
+        if BETA_HEADING.match(sg["section"]):
+            sg["era"] = "unreleased"
+        else:
+            sg["era"] = inline_era(text, sg["pos"], sg["text"]) or era_at(spans, sg["pos"])
     segs.sort(key=lambda d: d["pos"])
     return segs
 
@@ -607,7 +729,7 @@ ELF_RACE = re.compile(r"elf|elves|elven|dorei|highborne|nightborne|skyborne|san'
 def load_pages(cache):
     pages = {}
     pdir = os.path.join(cache, "pages")
-    for f in sorted(os.listdir(pdir)):
+    for f in page_files(pdir):
         with open(os.path.join(pdir, f), encoding="utf-8") as fh:
             for p in json.load(fh):
                 if not p.get("missing"):
@@ -623,6 +745,22 @@ def older_page(p):
     """True when a {{Patch}} template says the page's subject was added before 11.2.5."""
     return any(vtuple(m.group(1)) < vtuple(PATCHES[0]) and re.search(r"added\s*=|note\s*=\s*Added", m.group(2), re.I)
                for m in PATCHRE.finditer(p["text"]))
+
+
+UNRELEASED_PAGE = re.compile(r"\{\{\s*(?:removed ?from ?(?:beta|alpha|ptr)|rf(?:b|a|ptr))\s*[|}]", re.I)
+
+
+def unreleased_page(text):
+    """True when the page's lead says its subject was removed from the beta, alpha or PTR, so never released."""
+    m = SECTION.search(text)
+    return bool(UNRELEASED_PAGE.search(text[:m.start()] if m else text))
+
+
+def midnight_line(era, status, older, unreleased):
+    """Whether a line counts as Midnight text (see the module docstring)."""
+    if unreleased:
+        return False
+    return era == "mn" or (not era and (status == "added" or (status in ("midnight-cat", "midnight-level") and not older)))
 
 
 def page_status(p, src):
@@ -685,7 +823,7 @@ def extract(cache, repo, out_path):
             name_words.update(norm(m.group(0)) for m in TOK.finditer(t))
     recs, seen = [], set()
     status_count = {}
-    mn_pages, mn_segments = set(), 0
+    mn_pages, mn_segments, unreleased_pages, unreleased_segments = set(), 0, 0, 0
     for title in sorted(pages):
         p = pages[title]
         src = enum.get(title, [])
@@ -694,16 +832,18 @@ def extract(cache, repo, out_path):
         st = page_status(p, src)
         status_count[st[0]] = status_count.get(st[0], 0) + 1
         older = older_page(p)
+        unreleased = unreleased_page(p["text"])
+        unreleased_pages += unreleased
         for sg in segments(title, p["text"]):
             line = clean(sg["text"])
             if len(line) < 2:
                 continue
-            mline = sg["era"] == "mn" or (not sg["era"] and (st[0] == "added" or
-                                                              (st[0] in ("midnight-cat", "midnight-level") and not older)))
+            mline = midnight_line(sg["era"], st[0], older, unreleased)
+            unreleased_segments += sg["era"] == "unreleased"
             if mline:
                 mn_pages.add(title)
                 mn_segments += 1
-            speechy = sg["kind"].startswith(SPEECHY) or sg["section"].lower() in SPEECHY_SECTIONS
+            speechy = sg["kind"] != "heading" and (sg["kind"].startswith(SPEECHY) or sg["section"].lower() in SPEECHY_SECTIONS)
             toks = []
             for m in TOK.finditer(line):
                 ti = clf.token(m.group(0))
@@ -766,17 +906,37 @@ def extract(cache, repo, out_path):
                     "kind": sg["kind"], "speaker": spk,
                     "speaker_race": races.get(spk, ""), "phrase": phrase, "line": line[:600],
                     "tier": min((t["tier"] for t in rt), default=0), "max_tier": max((t["tier"] for t in rt), default=0),
-                    "all_names": bool(rt) and all(t["name"] or (t["cap"] and t["apost"] and t["low"] in name_words) for t in rt),
+                    "all_names": bool(rt) and all(t["name"] for t in rt),
                     "in_lexicon": low in clf.lex, "parts_in_lexicon": bool(lowparts) and all(x in clf.lexparts for x in lowparts),
                     "on_wiki_language_pages": low in clf.wiki, "parts_on_wiki": bool(lowparts) and all(x in clf.wikiparts for x in lowparts),
                     "all_scrambler": bool(rt) and all(t["low"] in clf.scr_elf or all(x in clf.scr_elf for x in parts(t["low"])) for t in rt),
                     "tag": tag, "gloss_cue": cue.group(0) if cue else ""})
+    review = review_lists(recs)
     summary = {"pages_fetched": len(pages), "titles_enumerated": len(enum), "page_status": status_count,
+               "unreleased_pages": unreleased_pages, "unreleased_segments": unreleased_segments,
                "pages_with_midnight_text": len(mn_pages), "midnight_segments": mn_segments, "records": len(recs),
-               "midnight_records": sum(1 for r in recs if r["midnight_line"]), "scrambler_words_loaded": len(clf.scr_elf)}
-    with open(out_path, "w", encoding="utf-8") as fh:
-        json.dump({"summary": summary, "records": recs}, fh, ensure_ascii=False, indent=0)
+               "midnight_records": sum(1 for r in recs if r["midnight_line"]),
+               "midnight_all_scrambler_records": sum(1 for r in recs if r["midnight_line"] and r["all_scrambler"]),
+               "scrambler_words_loaded": len(clf.scr_elf), "midnight_phrases": review["phrases"],
+               "midnight_name_phrases": review["names"]}
+    summary.update({"to_read_" + k: len(review[k]) for k in ("in_lexicon", "on_wiki_only", "in_neither")})
+    write_json(out_path, {"summary": summary, "review": review, "records": recs}, ensure_ascii=False, indent=0)
     print(json.dumps(summary, indent=1))
+
+
+def review_lists(recs):
+    """The distinct phrases of Midnight records (case-folded) that have a token of the apostrophe or lexicon tier,
+    less those made only of names, split into in the lexicon, on the wiki's language pages only, and in neither."""
+    groups = {}
+    for r in recs:
+        if r["midnight_line"]:
+            groups.setdefault(r["phrase"].lower(), []).append(r)
+    tier1 = {k: v for k, v in groups.items() if any(r["max_tier"] == 1 for r in v)}
+    read = {k: v for k, v in tier1.items() if not all(r["all_names"] for r in v)}
+    lex = sorted(k for k, v in read.items() if any(r["in_lexicon"] for r in v))
+    wiki = sorted(k for k, v in read.items() if k not in lex and any(r["on_wiki_language_pages"] for r in v))
+    return {"phrases": len(tier1), "names": len(tier1) - len(read), "in_lexicon": lex, "on_wiki_only": wiki,
+            "in_neither": sorted(set(read) - set(lex) - set(wiki))}
 
 
 def check(cache, repo):
@@ -799,18 +959,18 @@ def check(cache, repo):
                                                      srnamespace="0", srprop="") for p in d["query"]["search"]]
     rare = [f for f, v in hits.items() if len(v) <= 60]
     outside = sorted({t for f in rare for t in hits[f] if t not in titles})
-    marked = {}
-    for i in range(0, len(outside), 50):
-        d = wiki.get(action="query", prop="revisions", rvprop="content", rvslots="main", titles="|".join(outside[i:i + 50]))
-        for p in d["query"]["pages"]:
-            if "revisions" in p and MIDNIGHT_MARK.search(p["revisions"][0]["slots"]["main"]["content"]):
-                marked[p["title"]] = sorted(f for f in rare if p["title"] in hits[f])
+    marked, read = {}, set()
+    for q in revisions(wiki, outside, rvprop="content"):
+        for p in q["pages"]:
+            if "revisions" in p:
+                read.add(p["title"])
+                if MIDNIGHT_MARK.search(p["revisions"][0]["slots"]["main"]["content"]):
+                    marked[p["title"]] = sorted(f for f in rare if p["title"] in hits[f])
     result = {"forms": len(forms), "page_hits": sum(len(v) for v in hits.values()),
               "pages_outside_set_any_form": len({t for v in hits.values() for t in v if t not in titles}),
-              "rare_forms": len(rare), "outside_pages_checked": len(outside), "outside_with_midnight_marker": marked,
-              "hits": hits}
-    with open(os.path.join(cache, "check.json"), "w", encoding="utf-8") as fh:
-        json.dump(result, fh, ensure_ascii=False, indent=0)
+              "rare_forms": len(rare), "outside_pages_checked": len(outside), "outside_pages_read": len(read),
+              "outside_with_midnight_marker": marked, "hits": hits}
+    write_json(os.path.join(cache, "check.json"), result, ensure_ascii=False, indent=0)
     print(json.dumps({k: v for k, v in result.items() if k != "hits"}, ensure_ascii=False, indent=1))
 
 
@@ -838,5 +998,4 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    random.seed(0)
     sys.exit(main(sys.argv))
