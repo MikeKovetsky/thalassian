@@ -1,0 +1,109 @@
+[
+ {
+  "action": "fix",
+  "word": "quel'thalas",
+  "field": "notes",
+  "old": "Chronicle Vol. 1 p.120.",
+  "new": "Chronicle Vol. 1 p.120. Spoken twice in Warcraft III's Forsaken Kingdom campaign (patch 3.0), by the dark ranger Anya ('And for the fall of Quel'Thalas!') and by Ilastar ('Quel'Thalas has fallen, and the Sunwell is gone'). Gemini 3.8 Flash hears it as kwel-THA-las, stressed on the second syllable; Wizper writes it Quel'Thalas but gives no stress (report 11).",
+  "evidence": [
+   {
+    "quote": "And for the fall of Quel'Thalas! (Wizper) / And for the fall of kwel'thalas, IPA [ænd fɔːɹ ðə fɔːl əv kʷɛlˈθɑːlɑːs] (Gemini 3.8 Flash)",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Sound/Dialogue/UndeadRECamp/undeadre03m2/A3M2-C020-050-ANYA.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
+   },
+   {
+    "quote": "Embrace the truth, as I have, Dark Ranger. Quel'Thalas has fallen, and the Sunwell is gone. (Wizper and Gemini 3.8 Flash, IPA kwɛlˈθɑːlɑːs)",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Sound/Dialogue/UndeadRECamp/undeadre03m2/A3M2-T500-ILASTAR.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "fix",
+  "word": "tor ilisar'thera'nal",
+  "field": "notes",
+  "old": "Ancient war cry.",
+  "new": "Ancient war cry. Maiev's war cry in Warcraft III (MaievWarcry1, classic voice) is spoken as written: heard as 'Tor Ilyasar Tharanol!' by Wizper and 'tor ilis ar theran al' by Gemini 3.8 Flash (report 11).",
+  "evidence": [
+   {
+    "quote": "Tor Ilyasar Tharanol! (Wizper) / tor ilis ar theran al, IPA [tɔːɹ ˈɪl.ɪs ɑːɹ ˈθɛɹ.ən ɑːl] (Gemini 3.8 Flash)",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Units/NightElf/Maiev/MaievWarcry1.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "action": "add",
+  "word": "morothoray katal",
+  "translation": {
+   "en": "(unglossed Warden line in Warcraft III)",
+   "uk": "(неперекладений рядок Наглядачки у Warcraft III)"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "morothoray + katal",
+  "source": "darnassian",
+  "notes": "Unglossed. Blizzard's subtitle spelling for the Warden's HeroWardenYes3 line (report 9); no wiki page has it. The classic voice says it as written: Wizper and Gemini 3.8 Flash both heard 'moro thore katal' (report 11). No source pairs it with English.",
+  "evidence": [
+   {
+    "quote": "Morothoray katal",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Strings/DialogueNightElfBase.fdf line 173 (NIGHTELF_UNIT_HERO_WARDEN_YES3); report 9"
+   },
+   {
+    "quote": "Moro thore katal. (Wizper) / moro thore katal, IPA [ˈmɔːɹoʊ ˈθɔːɹeɪ kəˈtɑːl] (Gemini 3.8 Flash)",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:_Locales/enUS.w3mod:Units/NightElf/HeroWarden/HeroWardenYes3.ogg, transcribed 2026-11-18 by Wizper and Gemini 3.8 Flash; report 11"
+   }
+  ],
+  "method": "voice transcription by 2 listeners from 2 model families (blind prompt) + Blizzard's subtitle",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "anu dunah thalore iseradune banthalos",
+  "translation": {
+   "en": "(unglossed Sentinel line in Warcraft III, mission Orc04)",
+   "uk": "(неперекладений рядок Вартових у Warcraft III, місія Orc04)"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "anu? + dunah? + thalore? + iseradune? + banthalos?",
+  "source": "darnassian",
+  "notes": "Unglossed. The wiki's by-ear spelling of a Sentinel line in the orc mission The Spirits of Ashenvale (Orc04), which has no subtitle. Two families agree on roughly 'anaduna ?alore isera duna ban?os': Gemini 3.8 Flash heard 'ana duna valore isera duna bandolos' and Scribe v2 'Anaduna farore i sera duna banthros'. Wizper turned it into English ('I'm going to make a flower. And you're going to make a bunch.'), but its 'a flower' also has an f. All three listeners hear f or v where the wiki writes thalore, and a- where it writes anu; machine listeners often confuse f and th, so a person should settle that consonant. The wiki's list of WoW's Darnassian scrambler words has Anoduna and Banthalos, close to this line's first and last words. So a WoW line that uses them may be scrambler output, and banthalos may be Blizzard's own spelling (not confirmed; report 11).",
+  "evidence": [
+   {
+    "quote": "Anu dunah thalore. Iseradune banthalos (phonetic spelling) - Spoken by Sentinels in Ashenvale spying on the Warsong clan",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Untranslated_phrases"
+   },
+   {
+    "quote": "ana duna valore isera duna bandolos, IPA [anaˈduna vaˈloɾe | ˈisɛɾaˌduna banˈdolos] (Gemini 3.8 Flash) / Anaduna farore i sera duna banthros (Scribe v2) / I'm going to make a flower. And you're going to make a bunch. (Wizper)",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:Sound/Dialogue/OrcCampaign/Orc04/O04FemaleNEA04.ogg, transcribed 2026-11-18 by Wizper, Gemini 3.8 Flash and Scribe v2; report 11"
+   }
+  ],
+  "method": "voice transcription by 3 listeners from 3 model families (blind prompt) + the wiki's by-ear spelling",
+  "confidence": "low"
+ },
+ {
+  "action": "add",
+  "word": "ash'therod nethanas",
+  "translation": {
+   "en": "(unglossed Sentinel line in Warcraft III, mission Orc04)",
+   "uk": "(неперекладений рядок Вартових у Warcraft III, місія Orc04)"
+  },
+  "pos": "phrase",
+  "canon": false,
+  "root": "ash'therod? + nethanas?",
+  "source": "darnassian",
+  "notes": "Unglossed. The wiki's by-ear spelling of the second Sentinel line in Orc04, which has no subtitle. Two families agree on roughly 'ash-te-rod ne-fanas': Gemini 3.8 Flash heard 'esh te rod ne fanas' and Scribe v2 'Asteroth Nefanas'. Wizper heard no words. Both hear f where the wiki writes nethanas; machine listeners often confuse f and th, so a person should settle it (report 11).",
+  "evidence": [
+   {
+    "quote": "Ash'therod nethanas (phonetic spelling) - Spoken by Sentinels in Ashenvale spying on the Warsong clan",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Untranslated_phrases"
+   },
+   {
+    "quote": "esh te rod ne fanas, IPA [ɛʃ tɛ ˈɾɔd nɛ ˈfa.nas] (Gemini 3.8 Flash) / Asteroth Nefanas. [laughs] (Scribe v2) / - (Wizper)",
+    "where": "Warcraft III 3.0.1.24371, War3.w3mod:Sound/Dialogue/OrcCampaign/Orc04/O04FemaleNEB05.ogg, transcribed 2026-11-18 by Wizper, Gemini 3.8 Flash and Scribe v2; report 11"
+   }
+  ],
+  "method": "voice transcription by 3 listeners from 3 model families (blind prompt) + the wiki's by-ear spelling",
+  "confidence": "low"
+ }
+]
