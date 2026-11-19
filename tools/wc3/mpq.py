@@ -40,9 +40,25 @@ CRYPT = _crypt_table()
 HASH_OFFSET, HASH_A, HASH_B, HASH_KEY = 0, 1, 2, 3
 
 
+def name_bytes(name):
+    """A member name as the archive stores it: str names round-trip through surrogateescape."""
+    return name if isinstance(name, bytes) else name.encode("utf-8", "surrogateescape")
+
+
+def display_name(name):
+    """A member name that is safe to print or use as a file name (bytes that are not UTF-8 become U+FFFD)."""
+    return name_bytes(name).decode("utf-8", "replace")
+
+
 def hash_string(s, kind):
+    """Storm's name hash. Like Storm, it upper-cases ASCII letters only, maps '/' to '\\' and
+    hashes the raw bytes, so non-ASCII names hash as the archive's own bytes."""
     seed1, seed2 = 0x7FED7FED, 0xEEEEEEEE
-    for ch in s.upper().replace("/", "\\").encode("latin-1", "replace"):
+    for ch in name_bytes(s):
+        if 0x61 <= ch <= 0x7A:
+            ch -= 0x20
+        elif ch == 0x2F:
+            ch = 0x5C
         seed1 = CRYPT[(kind << 8) + ch] ^ ((seed1 + seed2) & _M32)
         seed2 = (ch + seed1 + seed2 + (seed2 << 5) + 3) & _M32
     return seed1
@@ -77,12 +93,18 @@ class Unsupported(Exception):
     pass
 
 
+class NotMPQ(ValueError):
+    """The data holds no MPQ header at a 512-byte boundary."""
+
+
 def _decompress(buf, expected):
     """Decompress one MPQ sector with a leading compression-mask byte."""
     if not buf:
         return buf
     mask = buf[0]
     data = buf[1:]
+    if mask == 0x12:
+        raise Unsupported("LZMA")  # 0x12 is LZMA on its own, not bzip2 (0x10) plus zlib (0x02)
     if mask & ~(0x02 | 0x10):
         raise Unsupported("compression mask 0x%02x" % mask)
     if mask & 0x10:
@@ -99,7 +121,7 @@ class MPQ(object):
         while True:
             base = data.find(b"MPQ\x1a", base)
             if base < 0:
-                raise ValueError("no MPQ header")
+                raise NotMPQ("no MPQ header")
             if base % 512 == 0:
                 break
             base += 1
@@ -144,7 +166,7 @@ class MPQ(object):
         start = self.base + off
         key = 0
         if flags & FILE_ENCRYPTED:
-            key = hash_string(name.replace("/", "\\").split("\\")[-1], HASH_KEY)
+            key = hash_string(name_bytes(name).replace(b"/", b"\\").split(b"\\")[-1], HASH_KEY)
             if flags & FILE_FIX_KEY:
                 key = ((key + off) ^ fsize) & _M32
         if flags & FILE_SINGLE_UNIT:
@@ -179,10 +201,11 @@ class MPQ(object):
         """Names from the archive's own (listfile), if it has one."""
         try:
             raw = self.read("(listfile)")
-        except (KeyError, Unsupported, zlib.error, OSError, ValueError):
+        except (KeyError, Unsupported, zlib.error, OSError, ValueError, EOFError, struct.error, IndexError):
             return []
         names = []
-        for line in raw.decode("utf-8", "replace").replace("\r", "\n").split("\n"):
+        # surrogateescape keeps names that are not UTF-8 (older maps use the system code page) hashable
+        for line in raw.decode("utf-8", "surrogateescape").replace("\r", "\n").split("\n"):
             line = line.strip().split(";")[0]
             if line:
                 names.append(line)
@@ -200,10 +223,10 @@ def main(argv=None):
         m = MPQ(f.read())
     if a.cmd == "list":
         for n in m.listfile():
-            print(n)
+            print(display_name(n))
         return
     for n in a.names:
-        dst = os.path.abspath(os.path.join(a.out, n.replace("\\", "/")))
+        dst = os.path.abspath(os.path.join(a.out, display_name(n).replace("\\", "/")))
         if not dst.startswith(os.path.abspath(a.out) + os.sep):
             print("SKIP", n, "(path leaves the output folder)")
             continue

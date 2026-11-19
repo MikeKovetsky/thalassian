@@ -14,8 +14,10 @@ Writes:
   maps/<map path>/<member>     text members of every .w3m/.w3x map: war3map.wts, war3map.j,
                                war3map.lua, war3campaign.wts, *.txt, and the readable strings of
                                the binary object files (<member>.strings.txt)
-  maps_index.tsv               per map: status (ok, encrypted, error), members found, members written
-  summary.json                 counts
+  maps_index.tsv               per map: status, members found, members written. Status is ok;
+                               encrypted for a .w3xd map with no MPQ header (its bytes are
+                               ciphertext); or error, with the reason, for a map that cannot be read
+  summary.json                 counts, and the names of any storage keys that were missing
 
 Usage:
   python3 tools/wc3/extract_text.py --install "/Applications/Warcraft III" --out .wc3-extract
@@ -24,6 +26,7 @@ import argparse
 import json
 import os
 import re
+import struct
 import sys
 import zlib
 
@@ -39,7 +42,7 @@ MAP_EXT = {"w3m", "w3x", "w3n"}
 # map members that are text
 MAP_TEXT = ["war3map.wts", "war3map.j", "scripts\\war3map.j", "war3map.lua", "war3campaign.wts",
             "war3mapSkin.txt", "war3mapMisc.txt", "war3mapExtra.txt", "war3campaignSkin.txt",
-            "war3campaignMisc.txt", "war3mapUnits.doo"]
+            "war3campaignMisc.txt"]
 # binary members whose readable strings can hold names and tooltips written inline
 MAP_BINARY = ["war3map.w3i", "war3map.w3u", "war3map.w3t", "war3map.w3a", "war3map.w3b", "war3map.w3d",
               "war3map.w3h", "war3map.w3q", "war3map.wtg", "war3map.wct", "war3map.imp",
@@ -84,7 +87,7 @@ def main(argv=None):
     counts = {"build": st.build_name, "root_entries": len(st.entries), "present_locally": 0,
               "text_files": 0, "text_bytes": 0, "facefx_files": 0, "maps": 0, "maps_ok": 0,
               "maps_encrypted": 0, "maps_error": 0, "map_members_written": 0, "skipped_not_local": 0,
-              "skipped_other_locale": 0}
+              "skipped_encrypted": 0, "skipped_other_locale": 0}
     idx_rows = []
     with open(os.path.join(a.out, "filelist.tsv"), "w", encoding="utf-8") as fl:
         fl.write("path\tckey\ttags\tlocale\tsize\tlocal\n")
@@ -103,7 +106,12 @@ def main(argv=None):
             if not local:
                 counts["skipped_not_local"] += 1
                 continue
-            data = st.read(e)
+            try:
+                data = st.read(e)
+            except w3casc.casc.MissingKey:
+                # encrypted with a key this storage lacks: skipped, never written as zero bytes
+                counts["skipped_encrypted"] += 1
+                continue
             if data is None:
                 counts["skipped_not_local"] += 1
                 continue
@@ -118,7 +126,7 @@ def main(argv=None):
                     counts["facefx_files"] += 1
             else:
                 counts["maps"] += 1
-                status, found, written = extract_map(data, os.path.join(a.out, "maps", rel))
+                status, found, written = extract_map(data, os.path.join(a.out, "maps", rel), ext)
                 counts["maps_" + status] += 1
                 counts["map_members_written"] += written
                 idx_rows.append((e.path, status, len(data), found, written))
@@ -126,17 +134,25 @@ def main(argv=None):
         f.write("map\tstatus\tbytes\tmembers_found\tmembers_written\n")
         for r in idx_rows:
             f.write("%s\t%s\t%d\t%s\t%d\n" % r)
+    counts["missing_keys"] = sorted(st.casc.missing_keys)
     with open(os.path.join(a.out, "summary.json"), "w", encoding="utf-8") as f:
         json.dump(counts, f, indent=1)
     print(json.dumps(counts, indent=1))
 
 
-def extract_map(data, out_dir):
+READ_ERRORS = (KeyError, mpq.Unsupported, zlib.error, OSError, ValueError, EOFError, struct.error, IndexError)
+
+
+def extract_map(data, out_dir, map_ext=""):
     """Write the text members of one map. Returns (status, members found, members written)."""
     try:
         m = mpq.MPQ(data)
-    except ValueError:
-        return "encrypted", "", 0
+    except mpq.NotMPQ:
+        if map_ext == "w3xd":
+            return "encrypted", "", 0
+        return "error", "NotMPQ", 0
+    except (ValueError, struct.error, IndexError) as ex:
+        return "error", type(ex).__name__, 0
     names = set(m.listfile())
     for n in MAP_TEXT + MAP_BINARY:
         if m.has(n):
@@ -147,17 +163,16 @@ def extract_map(data, out_dir):
         ext = ext_of(n)
         binary = n in MAP_BINARY or ext in ("w3u", "w3t", "w3a", "w3b", "w3d", "w3h", "w3q", "w3i", "wtg",
                                              "wct", "imp", "w3f")
-        if not binary and ext not in TEXT_EXT and ext not in ("wts", "doo"):
+        if not binary and ext not in TEXT_EXT:
             continue
-        if ext == "doo":
-            continue
+        shown = mpq.display_name(n)
         try:
             raw = m.read(n)
-        except (KeyError, mpq.Unsupported, zlib.error, OSError, ValueError, EOFError) as ex:
-            found.append("%s(!%s)" % (n, type(ex).__name__))
+        except READ_ERRORS as ex:
+            found.append("%s(!%s)" % (shown, type(ex).__name__))
             continue
-        found.append(n)
-        rel = n.replace("\\", "/")
+        found.append(shown)
+        rel = shown.replace("\\", "/")
         if binary:
             raw = ("\n".join(readable_strings(raw)) + "\n").encode("utf-8")
             rel += ".strings.txt"

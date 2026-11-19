@@ -71,7 +71,9 @@ class W3Storage(object):
         return r[0], any(self.casc.has_ekey(e) for e in r[1])
 
     def read(self, entry):
-        return self.casc.read_ckey(entry.ckey)
+        """The file's bytes, or None if it is not on disk. Raises casc.MissingKey when part of it is
+        encrypted with a key the storage lacks, instead of returning zero bytes for that part."""
+        return self.casc.read_ckey(entry.ckey, zero_missing=False)
 
 
 def out_name(path):
@@ -88,6 +90,8 @@ def main(argv=None):
     ap.add_argument("--locales", default="enUS",
                     help="comma list of locales to keep for localized files (default enUS); 'all' keeps every one")
     a = ap.parse_args(argv)
+    if a.cmd in ("files", "extract") and not a.out:
+        ap.error("%s needs --out" % a.cmd)
     st = W3Storage(a.install)
     if a.cmd == "info":
         print("product", st.casc.info.get("Product"), "version", st.casc.info.get("Version"),
@@ -115,7 +119,14 @@ def main(argv=None):
                 continue
             if keep is not None and e.locale and e.locale not in keep:
                 continue
-            why = casc.extract_file(st.casc, e.ckey, a.out, out_name(e.path))
+            try:
+                data = st.read(e)
+            except casc.MissingKey as ex:
+                data, why = None, "encrypted with unknown key %s" % ex
+            else:
+                why = "not on disk" if data is None else None
+            if data is not None:
+                why = casc.extract_file(st.casc, e.ckey, a.out, out_name(e.path), data=data)
             if why:
                 skipped += 1
                 print("SKIP", e.path, "(%s)" % why)
