@@ -31,10 +31,16 @@ Try the language engine directly in your browser:
 
 ## 📚 Examples of Elven Grammar at Work
 
-Our engine understands agglutinative grammar (pronouns attach to verbs, prepositions are dropped, adjectives precede nouns).
+Our engine matches whole canon phrases first. Word by word it follows the [grammar](docs/methodology/grammar.md):
+- object pronouns join the verb (*dela'na*, "guides us"), and a subject pronoun is a free word before it (*na*, "we");
+- *mal* "your" comes before its noun, *na* "our" after it, and nouns take no plural;
+- "and" is *rea*, and a "By" that opens a clause, as an oath does, is *anar'*;
+- an "of" phrase puts its head first (*alah belore*, "the light of the sun"). Only a capitalized name becomes a modifier-first compound (*Sin'dorei*, "Children of the Blood").
 
 *   **English:** *"The sun guides us."*
-    **Thalassian:** `Belore dela'na.` *(Canon match)*
+    **Thalassian:** `Anu belore dela'na.` *(Canon match)*
+*   **English:** *"Children of the Void"*
+    **Thalassian:** `Ren'dorei` *(Canon match; word by word, the name is also built as void + children)*
 *   **English:** *"Rise, dead ones!"*
     **Thalassian:** `Aranal, ledel!` *(Prince Keleseth's own line: only "aranal" (rise) is glossed, so the English is a guess)*
 *   **English:** *"Justice for our people."*
@@ -50,9 +56,9 @@ The March 2026 README showed a rock song translated in the LLM-Hybrid mode. That
 We treat conlanging as software engineering. The project is structured as a proper Python NLP framework:
 
 - `src/thalassian/data/lexicon.json` - The single source of truth: 416 entries, each with `canon`, `canon_basis` and, for entries added since November 2026, `evidence` (exact quote and where it is).
-- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler (using AST and `spaCy` to parse English and compile SVO Elven grammar).
+- `src/thalassian/syntax/parser.py` - The NLP Grammar Compiler: whole canon phrases first, then word by word with the grammar's rules (*anar'* in oaths, compounds for names, head-first "of" phrases, possessives, pronoun suffixes), in the input's word order. `spaCy`, when installed, supplies the lemmas. `web/translator.js` runs the same rules in the browser.
 - `src/thalassian/phonetics/markov.py` - A character Markov-chain engine that generates new vocabulary from canon letter patterns. The November 2026 audit found its words easy to tell apart from canon. New words now come from a Kneser-Ney generator with collision checks ([generate_words.py](research/2026-11-revival/scripts/generate_words.py), [report 8](research/2026-11-revival/8-reconstruction-audit.md#5-the-generator)).
-- `src/thalassian/morphology/` - Rules for agglutination and vocalic mutation (pluralization).
+- `src/thalassian/morphology/` - The pronoun and possessive tables (grammar section 5). Nouns have no plural, so there is no plural rule.
 
 ### Dive deeper into our methodology:
 1. 📖 **[Lexicon Methodology (Canon-First)](docs/methodology/lexicon.md)**
@@ -67,7 +73,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 
 ## 🚀 Future Roadmap
 - [x] **Lexicon Combiner**: Script to automatically merge roots into complex nouns.
-- [x] **Grammar Compiler**: Syntax rules (SVO, pluralization, pronoun agglutination).
+- [x] **Grammar Compiler**: Syntax rules (word order, compounds, pronoun agglutination; no plurals since the November 2026 grammar audit).
 - [x] **Web Interface**: Multi-mode translator hosted on GitHub Pages.
 - [x] **WoW Forever client mining**: Read the game client's tables, hotfixes and caches (`tools/wowf/`).
 - [x] **Canon audit**: Every canon entry checked against its source; wrong meanings fixed (November 2026).
@@ -75,7 +81,7 @@ We treat conlanging as software engineering. The project is structured as a prop
 - [x] **Reconstruction audit**: Grammar and invented words checked against the canon; the Swadesh-207 list is fully covered ([report 8](research/2026-11-revival/8-reconstruction-audit.md)).
 - [x] **Localized text mining**: Blizzard's Chinese and Korean dialogue tables, mined for the elven lines the localizers translated ([report](research/2026-11-revival/4-localization-mining.md)).
 - [ ] **Server-side localized lines**: the TBC Kael'thas lines whose Chinese glosses the wiki reports are not in the client's tables, so those glosses are still unverified.
-- [ ] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`).
+- [x] **Phrasebook-first translator**: Match whole canon phrases first and build modifier-first compounds (`Sin'dorei`, not `Dorei sin`) ([scores](research/2026-11-revival/1-review-and-methods.md#method-8-translator-evaluation-on-canon-phrases)).
 - [x] **Typography Engine**: Integrated Elvish Runic fonts for visual rendering in the web app.
 - [x] **Reverse Translator**: Auto-detects Elvish and translates back to English.
 - [x] **Syntax Tree Visualizer**: D3.js interactive parse trees for Elven grammar.
