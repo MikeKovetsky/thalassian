@@ -208,3 +208,6 @@ __marimo__/
 
 # Raw WoW Forever client extracts (Blizzard data, local only)
 .wowf-extract/
+
+# Raw Warcraft III extracts (Blizzard data, local only)
+.wc3-extract/
