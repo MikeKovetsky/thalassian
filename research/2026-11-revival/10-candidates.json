@@ -97,17 +97,13 @@
     "where": "https://warcraft.wiki.gg/wiki/Enchanted_Naga_Scroll_(quest)#Notes"
    },
    {
-    "quote": "Bal'a dash, malanore. (Bloodguard Nelric, gossip, patch 12.0.1)",
-    "where": "https://warcraft.wiki.gg/wiki/Bloodguard_Nelric#Quotes"
-   },
-   {
     "quote": "Bal'a dash, malanore. The Royal Exchange serves as a sense of normalcy during this time. (Magistrix Nizara, gossip, patch 12.0.1)",
     "where": "https://warcraft.wiki.gg/wiki/Paved_in_Ash_(Horde)#Notes"
    }
   ],
   "confidence": "high",
   "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
-  "reason": "Three Midnight speakers open gossip with it; Aethas follows it with 'Welcome to Silvermoon.', which fits the gloss 'Greetings, traveler.' Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+  "reason": "Two Midnight speakers open gossip with it, Aethas Sunreaver and Magistrix Nizara; Aethas follows it with 'Welcome to Silvermoon.', which fits the gloss 'Greetings, traveler.' Bloodguard Nelric's gossip line is left out: the wiki marks it as removed from the beta. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
  },
  {
   "action": "fix",
@@ -187,11 +183,15 @@
    {
     "quote": "Farewell: Shorel'aran. (Magister Astalor Bloodsworn on-click line, in a section the wiki marks as Midnight)",
     "where": "https://warcraft.wiki.gg/wiki/Magister_Astalor_Bloodsworn#On-click"
+   },
+   {
+    "quote": "Lor'themar bid farewell to his old friend with a final \"shorel'aran.\" (the wiki's biography of Lady Liadrin, Midnight section, citing The Unbinding of Kith'ix, patch 12.1.5; the quest pages do not transcribe the line)",
+    "where": "https://warcraft.wiki.gg/wiki/Lady_Liadrin#The_Promise_of_Tomorrow"
    }
   ],
   "confidence": "high",
   "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
-  "reason": "Two more Midnight uses, both as a sign-off, which matches 'Farewell.' Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+  "reason": "Three more Midnight uses, all as a farewell or sign-off, which matches 'Farewell.' The third, Lor'themar Theron's last word to the dying Liadrin, is reported by the wiki's biography; the line itself is not transcribed. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
  },
  {
   "action": "fix",
@@ -248,6 +248,66 @@
   "confidence": "medium",
   "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
   "reason": "Midnight's only other use of the phrase: a cheer at good news. That fits 'For the sun!', but no source glosses it, so the entry stays inferred. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
+ },
+ {
+  "action": "fix",
+  "word": "minn'da",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "Minn'da = Mama/Mother.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   }
+  ],
+  "new": [
+   {
+    "quote": "Minn'da = Mama/Mother.",
+    "where": "https://warcraft.wiki.gg/wiki/Thalassian#Thalassian_primer_(official_translations)"
+   },
+   {
+    "quote": "A Meeting with Minn'da (CriteriaTree 211364 Description_lang, a criterion of achievement 42299 Visions of a Shadowed Sun, whose Criteria_tree is 211359; build 12.1.7.70986)",
+    "where": "https://wago.tools/db2/CriteriaTree?filter%5BID%5D=exact%3A211364"
+   },
+   {
+    "quote": "A Meeting with Minn'da (criterion of the achievement Visions of a Shadowed Sun, patch 11.2.7)",
+    "where": "https://warcraft.wiki.gg/wiki/Visions_of_a_Shadowed_Sun#A_Meeting_with_Minn%27da"
+   },
+   {
+    "quote": "A Meeting with Minn'da: Arator has traveled to K'aresh to find his mother, Alleria Windrunner, in the hopes of convincing her to aid Silvermoon City in its hour of need. (in-game Lore Book chapter, as the wiki transcribes it)",
+    "where": "https://warcraft.wiki.gg/wiki/Lore_Book_(The_War_Within)#A_Meeting_with_Minn%27da"
+   }
+  ],
+  "confidence": "medium",
+  "method": "Midnight wiki mining + wago.tools CriteriaTree and Achievement lookups by name and ID",
+  "reason": "Midnight's 11.2.7 prelude names a chapter 'A Meeting with Minn'da', and the chapter is Arator's search for his mother, Alleria Windrunner. That fits 'mother', but no line glosses the word. The client's CriteriaTree and Achievement tables confirm the chapter name; that the chapter is about his mother comes from the Lore Book text the wiki transcribes."
+ },
+ {
+  "action": "fix",
+  "word": "sin'dorei",
+  "field": "evidence",
+  "old": [
+   {
+    "quote": "sin'dorei || children of the blood || Can also be interpreted as \"people of the bloodline\".",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   }
+  ],
+  "new": [
+   {
+    "quote": "sin'dorei || children of the blood || Can also be interpreted as \"people of the bloodline\".",
+    "where": "https://warcraft.wiki.gg/wiki/The_Warcraft_Encyclopedia/Thalassian"
+   },
+   {
+    "quote": "The blood elves, or sin'dorei, will never forget that loss. Let us remember them as well. (quest description, Lorewalker Cho, patch 11.2.7)",
+    "where": "https://warcraft.wiki.gg/wiki/Lorewalking:_Children_of_the_Blood#Description"
+   },
+   {
+    "quote": "The blood elves took their name in remembrance of their fallen kin, to ensure that they are never forgotten. (Lorewalker Cho, patch 11.2.7)",
+    "where": "https://warcraft.wiki.gg/wiki/Lorewalking:_Children_of_the_Blood#Notes"
+   }
+  ],
+  "confidence": "high",
+  "method": "Midnight wiki mining (research/2026-11-revival/scripts/midnight_wiki.py): Midnight quest and NPC pages read through the wiki API",
+  "reason": "Lorewalker Cho explains the word in English: the sin'dorei are the blood elves, named in remembrance of their fallen kin. This confirms what the word names and why, not the literal gloss 'children of the blood'. Report 9 proposes a separate evidence fix for the same entry; the two merge. Not independently confirmed outside the wiki: these are server-side quest, gossip and NPC lines, and neither the local 12.1.7 BroadcastText tables nor wago.tools (the same 10,888 client rows) hold them."
  },
  {
   "action": "fix",
@@ -385,7 +445,8 @@
    }
   ],
   "method": "item name with English epithet (client ItemSparse via wago.tools, and the wiki item page)",
-  "confidence": "medium"
+  "confidence": "medium",
+  "reason": "A Midnight item name on the wiki's proper-noun list, not in the lexicon. The client's ItemSparse confirms the name and its epithet."
  },
  {
   "action": "add",
@@ -419,7 +480,43 @@
    }
   ],
   "method": "item name with English epithet (client ItemSparse via wago.tools, and the wiki item page)",
-  "confidence": "medium"
+  "confidence": "medium",
+  "reason": "A Midnight item name on the wiki's proper-noun list, not in the lexicon. The client's ItemSparse confirms the name and its epithet."
+ },
+ {
+  "action": "add",
+  "word": "arcan'dor",
+  "translation": {
+   "en": "Arcan'dor: the nightborne's mana tree, whose fruit cleanses magic",
+   "uk": "Аркан'дор: мана-дерево нічнонароджених, чий плід очищує магію"
+  },
+  "pos": "proper noun",
+  "canon": true,
+  "root": "arcan'dor",
+  "notes": "Shalassian (nightborne). First Arcanist Thalyssra names it in Midnight (In Times of Need, patch 12.0.1): her people overcame their addiction to the Nightwell by transmuting its power through it, and she brings its fruit to cleanse the Darkwell. The wiki lists it among Darnassian's untranslated words. The in-game Lore Book for Legion (patch 11.2.5) spells it Arc'andor, which the wiki marks as sic. Its parts are not explained.",
+  "source": "shalassian",
+  "canon_basis": "name",
+  "evidence": [
+   {
+    "quote": "In order to overcome that addiction, we learned to transmute the power throuh [sic] a mana tree we call the Arcan'dor. (First Arcanist Thalyssra, gossip, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/In_Times_of_Need#Notes"
+   },
+   {
+    "quote": "The fruit of the Arcan'dor can cleanse all manner of magic. I'm certain it will do so here. (First Arcanist Thalyssra, patch 12.0.1)",
+    "where": "https://warcraft.wiki.gg/wiki/In_Times_of_Need#Notes"
+   },
+   {
+    "quote": "Arcan'dor - A type of magical fruit tree that balances nature and arcane magic by feeding on ley lines.",
+    "where": "https://warcraft.wiki.gg/wiki/Darnassian#Untranslated_words"
+   },
+   {
+    "quote": "Now the power of the arcan'dor is mine! (enUS BroadcastText 118587, build 12.1.7.70986; an older line, the speaker is not in the row)",
+    "where": "https://wago.tools/db2/BroadcastText?filter%5BID%5D=exact%3A118587"
+   }
+  ],
+  "method": "Referent stated in Midnight NPC speech (wiki) + wago.tools BroadcastText lookup by text",
+  "confidence": "medium",
+  "reason": "Thalyssra explains in English what the word names, a mana tree. On the wiki's Darnassian page, not in the lexicon. Her Midnight lines are server-side and not independently confirmed; the client's BroadcastText confirms the word itself in an older line."
  },
  {
   "action": "note",
