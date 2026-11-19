@@ -140,6 +140,10 @@ These are inferred from spelling alone. None of them is a gloss, and none is pro
 3. **Transcribing the two Orc04 Sentinel lines** (119 KB) and the 23 elvish unit lines. That would settle their spellings against the voice. It costs a few cents on the same service.
 4. **The new campaign's text** would need the decrypted maps. This pass does not try that.
 
+## Applied
+
+[scripts/apply_wc3_midnight.py](scripts/apply_wc3_midnight.py) applied the high- and medium-confidence candidates after the audit ([merge log](merge-log.md#warcraft-iii-game-files-9-candidatesjson)). One was corrected first, on 2026-11-19: the Ukrainian gloss of *shan'do* is "шановний вчитель", spelled as in the gloss of *do*, "вчитель". Both translators read each word of a two-word gloss as a translation, so "учитель", which *do* lacks, had turned into the title.
+
 ## Reproduce
 
 From the repo root. The first command takes about 8 seconds. The second takes about 45 seconds, writes `.wc3-extract/analysis/` (`records.tsv` is 443 MB) and prints the voice-file counts. Save the raw [Thalassian](https://warcraft.wiki.gg/index.php?title=Thalassian&action=raw) and [Darnassian](https://warcraft.wiki.gg/index.php?title=Darnassian&action=raw) pages as `Thalassian.txt` and `Darnassian.txt` first; the miner stops if a file it is given is missing.
@@ -155,6 +159,8 @@ python3 -I tools/wc3/mine.py --base .wc3-extract --lexicon src/thalassian/data/l
 ```
 python3 -I research/2026-11-revival/scripts/wc3_candidates.py .
 ```
+
+The script takes the fixes' old values from lexicon.json, so it rebuilds 9-candidates.json byte for byte only on the lexicon that apply_audit.py leaves (416 entries). Run the recipe in the docstring of [merge_candidates.py](scripts/merge_candidates.py) up to apply_audit.py first, and apply_wc3_midnight.py after.
 
 The tests for the readers, parsers and miner need no game files:
 

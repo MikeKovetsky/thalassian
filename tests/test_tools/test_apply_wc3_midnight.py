@@ -3,6 +3,7 @@ nothing, and the lexicon it produced from reports 9 to 11."""
 import copy
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -10,10 +11,12 @@ from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "research", "2026-11-revival", "scripts"))
 import apply_wc3_midnight as W  # noqa: E402
+import evaltranslator as E  # noqa: E402
 
 from thalassian.core.lexicon import load_lexicon  # noqa: E402
-from thalassian.syntax.parser import compile_sentence_en  # noqa: E402
+from thalassian.syntax.parser import compile_sentence_en, compile_sentence_uk, gloss_senses  # noqa: E402
 
+LETTERS = re.compile(r"[^\W\d_]+")  # the words of a gloss, split at apostrophes and hyphens too
 EV_OLD = {"quote": "Shan'do = Honored Teacher.", "where": "https://warcraft.wiki.gg/wiki/Darnassian"}
 EV_NEW = {"quote": "Shan'do Stormrage will be defenseless!", "where": "NightElf03.w3x STRING 186"}
 
@@ -235,14 +238,40 @@ class TestReportsInLexicon(unittest.TestCase):
             self.assertEqual(len(hits), 1, c["word"])
             self.assertNotEqual(hits[0][c["field"]], c["new"], c["word"])
 
-    def test_an_added_name_or_epithet_does_not_translate_the_words_of_its_gloss(self):
-        # An epithet is not a translation (docs/methodology/lexicon.md, section 3): "talon" must not become
-        # Belo'melorn, nor "dawnsong" Alah'endal.
-        for c in (c for f in self.files for c in f if c["action"] == "add" and c["confidence"] in W.APPLY
-                  and c["canon_basis"] in ("name", "epithet")):
-            for word in set(c["translation"]["en"].replace("'", " ").replace(":", " ").split()):
-                self.assertNotEqual(compile_sentence_en(word, self.lexicon).lower(), c["word"].lower(),
-                                    f"{word} -> {c['word']}")
+    def applied_adds(self, *bases):
+        return [c for f in self.files for c in f if c["action"] == "add" and c["confidence"] in W.APPLY
+                and (not bases or c["canon_basis"] in bases)]
+
+    def gloss_words(self, *langs):
+        return sorted({w for c in self.applied_adds() for lang in langs
+                       for w in LETTERS.findall(c["translation"][lang])})
+
+    def test_no_word_of_an_added_gloss_turns_into_an_added_entry(self):
+        # Each word of a gloss sense of three words or fewer is a translation (parser.mention_words), so an added
+        # title, name or epithet could take over an ordinary word of its gloss. An epithet is not a translation
+        # (docs/methodology/lexicon.md, section 3): "talon" must not become Belo'melorn, nor "dawnsong" Alah'endal.
+        # Nor may the ordinary Ukrainian "учитель" (teacher) become the title Shan'do.
+        added = {c["word"].lower() for c in self.applied_adds()}
+        for lang, translate in (("en", compile_sentence_en), ("uk", compile_sentence_uk)):
+            for word in self.gloss_words(lang):
+                self.assertNotIn(translate(word, self.lexicon).lower(), added, f"{word} ({lang})")
+
+    @unittest.skipUnless(E.NODE, "node is not installed")
+    def test_no_word_of_an_added_gloss_turns_into_an_added_entry_on_the_web(self):
+        # The web engine looks a word up in both glosses at once, English and Ukrainian.
+        added = {c["word"].lower() for c in self.applied_adds()}
+        words = self.gloss_words("en", "uk")
+        for canon_only in (False, True):
+            for word, elven in zip(words, E.web_translate(words, phrasebook=False, canonOnly=canon_only)):
+                self.assertNotIn(elven.lower(), added, f"{word} (canonOnly {canon_only})")
+
+    def test_an_added_name_or_epithet_is_glossed_as_one_sense(self):
+        # A comma or a slash splits a gloss into senses, and each sense of two words or more translates whole
+        # (parser.build_phrasebook): with a comma, "whose fruit cleanses magic" was a translation of Arcan'dor. A
+        # name's description goes after a ';', where the gloss proper ends.
+        for c in self.applied_adds("name", "epithet"):
+            for lang in ("en", "uk"):
+                self.assertEqual(len(gloss_senses(c["translation"][lang])), 1, f"{c['word']} ({lang})")
 
 
 if __name__ == "__main__":

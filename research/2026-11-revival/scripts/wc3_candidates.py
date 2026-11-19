@@ -6,7 +6,9 @@ each one matches, and which class it is in (a: in the lexicon, b: on the wiki on
 The script looks up each line's exact text, file, line number and sound file in the gitignored
 .wc3-extract/ folder (written by tools/wc3/extract_text.py) and the lexicon's current values for
 the fixes, then writes the candidates file. With a second argument it also writes report 9's
-findings table. From the repo root:
+findings table. The fixes' old values come from the lexicon that apply_audit.py leaves (416 entries): since
+apply_wc3_midnight.py applied this file, run the merge recipe up to apply_audit.py first (see the docstring of
+merge_candidates.py), or the fixes repeat their own evidence. From the repo root:
 
   python3 -I research/2026-11-revival/scripts/wc3_candidates.py . [table.md]
 
@@ -159,7 +161,9 @@ shan_ev = [
 ]
 cands.append({
     "action": "add", "word": "shan'do",
-    "translation": {"en": "honored teacher (a title)", "uk": "шановний учитель (звертання)"},
+    # вчитель, as in do's gloss: both translators read each word of a two-word gloss as a translation, and with
+    # учитель, which do lacks, that ordinary word became the title.
+    "translation": {"en": "honored teacher (a title)", "uk": "шановний вчитель (звертання)"},
     "pos": "noun", "canon": True, "root": "shan + do",
     "notes": ("Malfurion's title in Warcraft III (Shan'do Stormrage), in %d Reforged campaign strings (%d in "
               "the classic maps), said by %s. zhTW renders it 尊師 'honored teacher' and zhCN 大导师 'grand "

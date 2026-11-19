@@ -8616,7 +8616,7 @@
     "word": "shan'do",
     "translation": {
       "en": "honored teacher (a title)",
-      "uk": "шановний учитель (звертання)"
+      "uk": "шановний вчитель (звертання)"
     },
     "pos": "noun",
     "canon": true,
@@ -8743,8 +8743,8 @@
   {
     "word": "arcan'dor",
     "translation": {
-      "en": "Arcan'dor: the nightborne's mana tree, whose fruit cleanses magic",
-      "uk": "Аркан'дор: мана-дерево нічнонароджених, чий плід очищує магію"
+      "en": "Arcan'dor: the nightborne's mana tree; its fruit cleanses magic",
+      "uk": "Аркан'дор: мана-дерево нічнонароджених; його плід очищує магію"
     },
     "pos": "proper noun",
     "canon": true,

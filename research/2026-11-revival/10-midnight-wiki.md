@@ -187,11 +187,12 @@ None of these has a spoken gloss. They are listed for completeness.
 | note | quel'falan danas | low | Untranslated |
 | note | belo'ren | low | A phoenix's name; the "sun + void" reading is a guess |
 
-Every `old` value was copied from the current lexicon.json. [Report 9](9-warcraft-iii.md) also proposes an evidence fix for *sin'dorei*, in [9-candidates.json](9-candidates.json); the two merge.
+Every `old` value except the *sin'dorei* fix's was copied from lexicon.json as it stood before reports 9 to 11 were applied. [Report 9](9-warcraft-iii.md) also proposes an evidence fix for *sin'dorei*, in [9-candidates.json](9-candidates.json); the two merge.
 
-Two candidates were corrected on 2026-11-18, when [scripts/apply_wc3_midnight.py](scripts/apply_wc3_midnight.py) applied them:
+Four candidates were corrected before [scripts/apply_wc3_midnight.py](scripts/apply_wc3_midnight.py) applied them, on 2026-11-18 and 2026-11-19:
 1. The *sin'dorei* evidence fix now starts from report 9's result, because report 9's fix is applied first and would otherwise leave this one stale.
-2. *Alah'endal* and *Belo'melorn* are now glossed as "an axe" and "a dagger" whose epithets are "the Dawnsong" and "the Shattered Talon", because both translators read a gloss of three words or fewer as a translation and turned "talon" into *Belo'melorn*.
+2. *Alah'endal* and *Belo'melorn* are now proper nouns glossed as "an axe" and "a dagger" whose epithets are "the Dawnsong" and "the Shattered Talon", because both translators read a gloss of three words or fewer as a translation and turned "talon" into *Belo'melorn*.
+3. *Arcan'dor*'s gloss gives its fruit after a semicolon, not a comma, because a comma splits a gloss into senses and both translators turned "whose fruit cleanses magic" into *Arcan'dor*.
 
 ## Reproduce
 
