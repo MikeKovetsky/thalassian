@@ -10,13 +10,14 @@ Reads what extract_text.py wrote and writes, under <base>/analysis/:
   hits.tsv      records holding at least one elvish-looking token, with the flags that fired
   tokens.tsv    one row per elvish-looking token: count, flags, lexicon / wiki status, first places
   locales.tsv   for every map string-table hit, the same string in the 13 other locales the maps carry
-  audio.tsv     voice files of elven speakers: unit voice sets and campaign dialogue, with sizes
+  audio.tsv     voice files whose file name names an elven speaker: unit voice sets and campaign
+                dialogue, with sizes
 
-A token counts as elvish-looking when it is not an English dictionary word and at least one of
-these holds: it or one of its apostrophe/hyphen parts is a lexicon form (lex); it contains a known
-elvish root (root); the speaker is an elf (elf); it is joined by an apostrophe or hyphen (joined);
-or a character-trigram model trained on Blizzard's elvish forms scores it high (model). Names and
-English words pass too; the report separates them by hand.
+A token counts as elvish-looking when it is not an English dictionary word or a hyphenated compound
+of them, and at least one of these holds: it or one of its apostrophe/hyphen parts is a lexicon form
+(lex); it contains a known elvish root (root); the speaker is an elf (elf); it is joined by an
+apostrophe or hyphen (joined); or a character-trigram model trained on Blizzard's elvish forms scores
+it high (model). Names and English words pass too; the report separates them by hand.
 Standard library only, Python 3.9 compatible.
 """
 import argparse
@@ -40,23 +41,25 @@ ELF_SPEAKER = re.compile(
     r"TYRANDE|ILLIDAN|FURION|MALFURION|WARDEN|PRIESTESS|SENTINEL|HUNTRESS|ARCHER|DRUID|DEMON_HUNTER|"
     r"FORSAKENRANGER|HIGHELF|HIGH_ELF|\bELF\b|\bELVES\b|VEREESA|ALLERIA|LIADRIN|ANASTERIAN|ROMMATH|"
     r"LOR'THEMAR|LORTHEMAR|DATH'REMAR", re.I)
-# campaign speaker unit IDs of elves (Warcraft III raw codes)
+# Speaker unit IDs (Warcraft III raw codes, case-sensitive) of elves, the night elves' allies and the
+# naga: every ID that speaks for one of them in the campaign maps' conversation.json files of build
+# 3.0.1.24371, plus the four melee hero codes Edem, Ewar, Emoo and Hblm.
 ELF_UNIT_IDS = {
-    "Hkal": "Kael'thas", "Hvwd": "Sylvanas", "Hvsh": "Lady Vashj", "Uvng": "Sylvanas (banshee)",
-    "Etyr": "Tyrande", "Efur": "Furion", "Ekgg": "Malfurion", "Eill": "Illidan", "Eevi": "Illidan (demon)",
-    "Ewrd": "Maiev", "Ewar": "Warden", "Eshd": "Shandris", "Emoo": "Priestess of the Moon",
-    "Edem": "Demon Hunter", "Ekee": "Keeper of the Grove", "Ecen": "Cenarius", "Ekgg2": "Malfurion",
-    "Hblm": "Blood Mage", "hspt": "Spell Breaker", "hdhw": "Dragonhawk Rider", "nhea": "High Elf Archer",
-    "nhef": "High Elf Female", "nhem": "High Elf Male", "nbee": "Blood Elf Engineer", "nbel": "Blood Elf",
-    "Udth": "Sylvanas", "Usyl": "Sylvanas", "Nbbc": "Kael'thas", "Hgar": "Garithos", "Hvwd2": "Sylvanas",
+    "Hkal": "Kael'thas", "Hvwd": "Sylvanas", "Usyl": "Sylvanas", "Hvsh": "Lady Vashj",
+    "Etyr": "Tyrande", "Efur": "Malfurion", "Emfr": "Malfurion", "Emns": "Malfurion", "Eill": "Illidan",
+    "Eevi": "Illidan (demon)", "Eidm": "Illidan", "E000": "Illidan", "Ewrd": "Maiev", "eshd": "Shandris",
+    "ensh": "Naisha", "enec": "Runner", "Ekee": "Keeper of the Grove", "Ecen": "Cenarius",
+    "Edem": "Demon Hunter", "Ewar": "Warden", "Emoo": "Priestess of the Moon", "Hblm": "Blood Mage",
     "earc": "Archer", "esen": "Huntress", "edry": "Dryad", "edot": "Druid of the Talon",
-    "edoc": "Druid of the Claw", "Ntin": "Tinker",
+    "edoc": "Druid of the Claw", "hspt": "Spell Breaker", "sloc": "Spell Breaker",
+    "hhes": "Blood Elf Swordsman", "hdhw": "Dragonhawk Rider", "nhea": "High Elf Archer",
+    "nhef": "High Elf Villager", "nbee": "Blood Elf Engineer", "nmyr": "Naga Myrmidon", "nsnp": "Naga",
+    "Nswt": "Sea Witch",
 }
 GLOSS_CUES = re.compile(r"\b(mean(s|ing)?|translat\w*|tongue|language|word for|called|known as|"
                         r"thalassian|darnassian|elvish|elven tongue|in the old|ancient tongue)\b", re.I)
 LOCALES = ["deDE", "esES", "esMX", "frFR", "itIT", "jaJP", "koKR", "plPL", "ptBR", "ruRU", "thTH", "zhCN",
            "zhTW"]
-ORCISH_GARBLE_IDS = {"1"}  # Orcish in LanguageWords; used only as negative training data
 
 
 def norm(t):
@@ -98,9 +101,18 @@ class NB(object):
 def read_text(path):
     with open(path, "rb") as f:
         raw = f.read()
-    if raw.startswith(b"\xef\xbb\xbf"):
-        raw = raw[3:]
+    # a byte-order mark, or one encoded twice (740 of the locale string tables start with that)
+    for bom in (b"\xef\xbb\xbf", b"\xc3\xaf\xc2\xbb\xc2\xbf"):
+        if raw.startswith(bom):
+            raw = raw[len(bom):]
+            break
     return raw.decode("utf-8", "replace")
+
+
+def split_lines(text):
+    """Lines split at \\r\\n, \\r or \\n only, so line numbers match an editor's. (str.splitlines
+    also splits at form feeds and other separators that some of the files hold.)"""
+    return text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
 
 
 FDF_LINE = re.compile(r'^\s*([A-Za-z0-9_]+)\s+"(.*)",?\s*$')
@@ -110,28 +122,36 @@ SLOT = re.compile(r"_(WHAT|YES|YESATTACK|WARCRY|READY|PISSED|DEATH|TAUNT|ATTACK|
 
 
 def parse_fdf(text):
-    for i, line in enumerate(text.splitlines(), 1):
+    for i, line in enumerate(split_lines(text), 1):
         m = FDF_LINE.match(line)
         if m:
             yield i, m.group(1), m.group(2)
 
 
+WTS_HEADER = re.compile(r"\s*STRING\s+(\d+)\b")
+
+
 def parse_wts(text):
-    """Yield (string id, comment, text) from a war3map.wts / war3campaign.wts string table."""
-    lines = text.splitlines()
+    """Yield (string id, comment, text) from a war3map.wts / war3campaign.wts string table.
+
+    A header with no {...} body before the next header (one ruRU table has "#VALUE!" there) is
+    skipped, so it cannot take the next string's text."""
+    lines = split_lines(text)
     i = 0
     while i < len(lines):
-        m = re.match(r"\s*STRING\s+(\d+)", lines[i])
+        m = WTS_HEADER.match(lines[i])
         if not m:
             i += 1
             continue
         sid = int(m.group(1))
         i += 1
         comment = []
-        while i < len(lines) and lines[i].strip() != "{":
+        while i < len(lines) and lines[i].strip() != "{" and not WTS_HEADER.match(lines[i]):
             if lines[i].strip().startswith("//"):
                 comment.append(lines[i].strip()[2:].strip())
             i += 1
+        if i >= len(lines) or lines[i].strip() != "{":
+            continue
         i += 1
         body = []
         while i < len(lines) and lines[i].rstrip() != "}":
@@ -142,8 +162,8 @@ def parse_wts(text):
 
 
 def parse_srt(text):
-    for block in re.split(r"\r?\n\s*\r?\n", text):
-        ls = [l for l in block.splitlines() if l.strip()]
+    for block in re.split(r"\n\s*\n", "\n".join(split_lines(text))):
+        ls = [l for l in block.split("\n") if l.strip()]
         if len(ls) >= 3 and "-->" in ls[1]:
             yield ls[0].strip(), ls[1].strip(), " ".join(ls[2:])
 
@@ -187,7 +207,7 @@ def collect(base):
                     yield {"kind": "srt", "file": rel, "loc": "cue %s %s" % (n, tc), "speaker": "", "unit": "",
                            "sound": "", "text": s, "context": ""}
                 continue
-            for ln, line in enumerate(text.splitlines(), 1):
+            for ln, line in enumerate(split_lines(text), 1):
                 if line.strip():
                     yield {"kind": "text", "file": rel, "loc": str(ln), "speaker": "", "unit": "", "sound": "",
                            "text": line.strip()[:2000], "context": ""}
@@ -213,7 +233,7 @@ def collect(base):
                            "sound": sound, "text": s, "context": (comment + " " + cname).strip()}
             elif fn.endswith((".txt", ".fdf", ".j", ".lua", ".toc", ".strings.txt")):
                 text = read_text(p)
-                for ln, line in enumerate(text.splitlines(), 1):
+                for ln, line in enumerate(split_lines(text), 1):
                     # scripts: only string literals matter; other text: whole line
                     if fn.endswith((".j", ".lua")):
                         lits = re.findall(r'"((?:[^"\\]|\\.)*)"', line)
@@ -228,7 +248,7 @@ def collect(base):
         for fn in sorted(fns):
             p = os.path.join(dp, fn)
             rel = os.path.relpath(p, base)
-            for ln, line in enumerate(read_text(p).splitlines(), 1):
+            for ln, line in enumerate(split_lines(read_text(p)), 1):
                 if line.strip():
                     yield {"kind": "facefx", "file": rel, "loc": str(ln), "speaker": "", "unit": "", "sound": "",
                            "text": line.strip(), "context": ""}
@@ -257,8 +277,6 @@ def load_wiki(paths):
     """Bolded forms and every lowercase token of the wiki language pages."""
     forms, toks = set(), set()
     for p in paths or []:
-        if not os.path.exists(p):
-            continue
         t = read_text(p)
         for m in re.finditer(r"'''(.+?)'''", t):
             forms.add(norm(re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", m.group(1))).strip(" !.?"))
@@ -276,6 +294,9 @@ def main(argv=None):
     ap.add_argument("--words", nargs="*", default=["/usr/share/dict/words", "/usr/share/dict/web2a"])
     ap.add_argument("--threshold", type=float, default=0.6)
     a = ap.parse_args(argv)
+    missing = [p for p in [a.lexicon] + a.wiki if not os.path.exists(p)]
+    if missing:
+        ap.error("not found: " + ", ".join(missing))
     random.seed(7)
     out_dir = os.path.join(a.base, "analysis")
     os.makedirs(out_dir, exist_ok=True)
@@ -290,7 +311,8 @@ def main(argv=None):
 
     # model: positive = canon elvish lexicon forms (+ WoW elvish garble words), negative = other garble + English
     pos = set(p for w in canon_pos for p in re.split(r"[' \-]+", w) if len(p) > 2)
-    neg = set(random.sample(sorted(w for w in english if len(w) > 3), 30000))
+    pool = sorted(w for w in english if len(w) > 3)
+    neg = set(random.sample(pool, min(30000, len(pool))))
     lw = os.path.join(a.wowf, "LanguageWords.csv")
     if os.path.exists(lw):
         for r in csv.DictReader(open(lw, encoding="utf-8")):
@@ -334,9 +356,12 @@ def main(argv=None):
                     continue
                 parts = [p for p in re.split(r"['\-]", k) if p]
                 joined = len(parts) > 1
-                if not joined and english_word(k):
+                if english_word(k):
                     continue
-                if joined and all(english_word(p) for p in parts):
+                # a hyphenated compound of English words (well-known) is English; an apostrophe inside
+                # a word is not English spelling (contractions were dropped above), so shan'do stays
+                # although shan and do are both in the word list
+                if joined and "'" not in k and all(english_word(p) for p in parts):
                     continue
                 flags = []
                 if k in lexwords or any(p in lexwords or p in lexparts for p in parts if len(p) >= 3):
@@ -388,8 +413,10 @@ def main(argv=None):
                                " || ".join(st["where"]).replace("\t", " ").replace("\n", " "),
                                " || ".join(st["gloss"]).replace("\t", " ").replace("\n", " ")]) + "\n")
     write_locales(a.base, out_dir, hits)
-    write_audio(a.base, out_dir)
+    audio = write_audio(a.base, out_dir)
     print("records", nrec, "hit records", len(hits), "tokens", len(tokens), "model pos/neg", len(pos), len(neg))
+    for kind, (n, size) in sorted(audio.items()):
+        print("elven %s voice files (base copies)" % kind, n, "%.1f MB" % (size / 1e6))
 
 
 def write_locales(base, out_dir, hits):
@@ -413,32 +440,49 @@ def write_locales(base, out_dir, hits):
                     f.write("%s\t%d\t%s\t%s\n" % (r["file"], sid, loc, t.replace("\n", " \\n ").replace("\t", " ")))
 
 
+# Elves, night elf and blood elf units, and the naga, by the name in a voice file's name. Bare
+# "Priest" and "Sorceress" are left out: in the campaigns they are mostly human units.
 AUDIO_SPEAKER = re.compile(
-    r"(BloodElf|BloodMage|HeroBloodElf|SpellBreaker|DragonHawk|Kael|Sylvanas|HighElf|Sorceress|Priest|"
+    r"(BloodElf|BloodMage|HeroBloodElf|SpellBreaker|DragonHawk|Kael|Sylvanas|HighElf|"
     r"NightElf|Archer|Huntress|Sentinel|Dryad|Druid|DemonHunter|Illidan|Furion|Malfurion|Tyrande|Maiev|Shandris|"
     r"Naisha|Warden|PriestessOfTheMoon|HeroMoonPriestess|KeeperOfTheGrove|Cenarius|DarkRanger|Banshee|"
-    r"HippogryphRider|ForsakenRanger|Vashj)", re.I)
+    r"HippogryphRider|ForsakenRanger|Vashj|Naga|SeaWitch)", re.I)
+AUDIO_EXT = re.compile(r"\.(flac|ogg|mp3|wav)$", re.I)
 
 
 def write_audio(base, out_dir):
-    """Voice files whose path names an elven speaker (enUS and unlocalized only)."""
+    """List the voice files whose file name names an elven speaker, enUS and unlocalized only: the
+    unit voice sets (<locale>:Units/...) and the campaign dialogue (Sound/Dialogue/...). The _HD and
+    _DE folders hold other-quality copies of the same lines. Returns {kind: [files, bytes]} for the
+    base copies."""
     fl = os.path.join(base, "filelist.tsv")
+    totals = {"unit": [0, 0], "dialogue": [0, 0]}
     if not os.path.exists(fl):
-        return
+        return totals
     with open(fl, encoding="utf-8") as f, open(os.path.join(out_dir, "audio.tsv"), "w", encoding="utf-8") as g:
-        g.write("path\tspeaker\tsize\tlocal\n")
+        g.write("path\tspeaker\tsize\tlocal\tkind\tcopy\n")
         next(f)
         for line in f:
             p = line.rstrip("\n").split("\t")
             path, loc = p[0], p[3]
-            if loc and loc != "enUS":
+            if loc and loc != "enUS" or not AUDIO_EXT.search(path):
                 continue
-            if not re.search(r"\.(flac|ogg|mp3|wav)$", path, re.I) or "/Dialogue/" not in path.replace("\\", "/") \
-                    and "/Units/" not in path.replace("\\", "/"):
+            slashed = path.replace("\\", "/").replace(":", "/")
+            if "/Sound/Dialogue/" in slashed:
+                kind = "dialogue"
+            elif loc == "enUS" and "/Units/" in slashed:  # unlocalized Sound/Units/ holds sound effects
+                kind = "unit"
+            else:
                 continue
-            m = AUDIO_SPEAKER.search(path.rsplit("/", 1)[-1]) or AUDIO_SPEAKER.search(path)
-            if m:
-                g.write("%s\t%s\t%s\t%s\n" % (path, m.group(1), p[4], p[5]))
+            m = AUDIO_SPEAKER.search(slashed.rsplit("/", 1)[-1])
+            if not m:
+                continue
+            copy = "HD" if "_HD.w3mod" in path else "DE" if "_DE.w3mod" in path else ""
+            g.write("%s\t%s\t%s\t%s\t%s\t%s\n" % (path, m.group(1), p[4], p[5], kind, copy))
+            if not copy:
+                totals[kind][0] += 1
+                totals[kind][1] += max(0, int(p[4]))
+    return totals
 
 
 if __name__ == "__main__":
